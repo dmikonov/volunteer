@@ -61,12 +61,23 @@ for i in range(10):
             continue
         if toks and toks[-1][0].endswith('-'): toks[-1][0] += t; toks[-1][2] = a1; continue
         toks.append([t, a0, a1])
-    chunks, cur = [], []
+    # phrases split at punctuation; long phrases halved; 1-word phrases merged into a short neighbour
+    phrases, cur = [], []
     for w in toks:
         cur.append(w)
-        if len(cur) == 3 or re.search(r'[?,.]$', w[0]):
-            chunks.append(cur); cur = []
-    if cur: chunks.append(cur)
+        if re.search(r'[?,.]$', w[0]): phrases.append(cur); cur = []
+    if cur: phrases.append(cur)
+    merged = []
+    for ph in phrases:
+        if merged and len(ph) == 1 and len(merged[-1]) <= 2 and not merged[-1][-1][0].endswith(('?', '.')):
+            merged[-1] = merged[-1] + ph
+        else:
+            merged.append(ph)
+    chunks = []
+    for ph in merged:
+        if len(ph) <= 4: chunks.append(ph)
+        else:
+            h = (len(ph) + 1) // 2; chunks += [ph[:h], ph[h:]]
     for c in chunks:
         txt = ' '.join(w[0] for w in c)
         for kx, v in NUM.items(): txt = re.sub(kx, v, txt, flags=re.I)
