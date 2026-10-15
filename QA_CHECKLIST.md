@@ -7,10 +7,10 @@ The reviewer checks THESE rules first, general quality second. "Looks good" is n
 1. No full stop at the end of any headline, title, card, pill or on-screen line. (Captions under the post may use normal punctuation.)
 2. No em dash or en dash anywhere, on screen or in caption. Hyphen-minus only.
 3. No emoji anywhere.
-4. Headlines in Rubik weight 800 (not 900). Same font in every reel.
-5. Body text at least 44 px on the 1080 canvas; nothing smaller except the @handle footer.
+4. Headlines in Rubik weight 800 (not 900). Same font in every reel. Subtitles must really render in Rubik: check the renderer log for font fallback (libass falls back to DejaVu with the variable Rubik file and Bold=-1; use the static RubikExtraBold.ttf).
+5. Body text at least 44 px on the 1080 canvas; nothing smaller except the @handle footer. This includes text inside app screens and cards: do not paste raw app screenshots with small text, rebuild the card large.
 6. Safe zone for reels: key text inside y 230-1440 and x 70-850 (right 230 px is the like/share rail). Measure with getBoundingClientRect, report numbers.
-7. Text never covers a face or the subject of the shot. Report bbox of text vs subject.
+7. Text never covers a face or the key detail of the beat (the gear the line talks about). Subtitles over a torso or legs are acceptable; over a face never. Report bbox of text vs faces (Haar or similar) and vs the key detail.
 8. Coral #FF5150 only as an accent, never the dominant colour of a frame.
 9. Texts sound human: no "unlock, master, level up, game changer", no AI phrasing.
 
@@ -27,7 +27,7 @@ The reviewer checks THESE rules first, general quality second. "Looks good" is n
 17. Every shot checked at 0.1 s steps for AI artifacts: extra limbs, fingers, morphing boards, fins on the deck, leash attached to nobody, objects or people popping in, logos or text on clothes, melting foam, fake droplets.
 18. People look 25+ and do not resemble a real celebrity.
 19. No shot longer than about 2.5 s without a change; first frame has motion and the hook text.
-20. Loop: last frame vs frame 0 SSIM at least 0.95 (if the reel is meant to loop).
+20. Loop: last frame vs frame 0 SSIM (not pixel difference) at least 0.95 on the background region, and no double exposure during the crossfade.
 
 ## D. Sound
 21. Voice natural, not robotic, not hoarse or "generated" sounding. Dima approves the voice before the full build.
@@ -42,3 +42,12 @@ The reviewer checks THESE rules first, general quality second. "Looks good" is n
 28. Caption: hook in the first 125 characters, max 5 hashtags, no emoji, no dashes.
 29. Any date in copy verified with the clock tool and written with its weekday.
 30. Nothing is published without Dima's explicit OK for that exact version.
+
+## F. Lessons from rejected versions (do not repeat)
+31. Slideshow of carousel slides is not a reel (rejected 15 Oct).
+32. Loud music under the voice (rejected 15 Oct).
+33. Fake-looking AI clip (zipping a wetsuit) shown to Dima (rejected 15 Oct). Hand to mouth reads as smoking.
+34. Full stops in reel headlines (rejected 15 Oct).
+35. Hoarse generic voice (rejected 15 Oct); voice is chosen by Dima from samples before the build.
+36. No mention of who we are (rejected 15 Oct).
+37. Burned-in subtitles are mandatory on reels (most viewers watch muted).
