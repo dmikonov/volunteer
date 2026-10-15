@@ -22,8 +22,8 @@ def token():
     return t
 
 
-def fetch(friday, days=2):
-    url = f'{API}?token={token()}&days={days}&start={friday}'
+def fetch(start, days=2):
+    url = f'{API}?token={token()}&days={days}&start={start}'
     with urllib.request.urlopen(url, timeout=40) as r:
         return json.loads(r.read().decode())
 
@@ -153,6 +153,42 @@ def build(friday, outdir, api_file=None):
     (out / 'data.json').write_text(json.dumps({'days': days, 'pick': pick['date'] if surfable else None}, ensure_ascii=False), encoding='utf-8')
 
 
+def build_today(day, outdir, api_file=None):
+    """Daily morning story 1080x1920: today's sea."""
+    api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(day, 1)
+    f = api['forecast'][0]
+    qn, qc, _ = Q.get(f['quality'], (f['quality'], FOAM, 0))
+    wk = WIND.get(f['wind_kind'], (f['wind_kind'], 0))[0]
+    bg = b64(HERE / 'bg_lines.jpg')
+    cell = lambda l, v, sub='': (f'<div class=cell><div class=lbl style="font-size:36px">{l}</div><div class=val style="font-size:88px">{v}</div>'
+                                 + (f'<div style="font-size:38px;margin-top:6px">{sub}</div>' if sub else '') + '</div>')
+    uv = (f'<div style="margin-top:34px;font-size:42px;color:{SUN}">UV {L(f["uv_max"])}: קרם הגנה ולייקרה</div>'
+          if f.get('uv_max', 0) >= 6 else '')
+    html = page(
+        f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.3)"></div>'
+        '<div style="position:absolute;left:80px;right:80px;top:260px">'
+        f'<div class=k style="font-size:44px">{label(f["date"])} · חוף המרכז</div>'
+        '<div class=h style="font-size:130px;margin-top:10px">הים היום</div>'
+        f'<div class=h style="font-size:230px;color:{qc};margin-top:10px">{qn}</div>'
+        f'<div style="font-size:52px;margin-top:10px">הכי טוב בסביבות {L(f["best_window"])}</div>'
+        '<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:60px;margin-top:40px">'
+        + cell('גלים', f'{L(wh(f))} מ׳') + cell('פריוד', f'{L(f["wave_period_s"])} שנ׳')
+        + cell('רוח', f'{L(f["wind_kmh"])} קמ״ש', wk) + cell('מים', L(str(f['water_temp_c']) + '°C')) +
+        f'</div>{uv}'
+        '<div style="font-size:44px;font-weight:700;margin-top:60px">תחזית לחוף שלכם ב-SurfTribe</div>'
+        f'<div style="font-size:40px;margin-top:12px">עקבו אחרי {L("@surftribe_il")}</div></div>', 0, 0, h=1920)
+    from playwright.sync_api import sync_playwright
+    out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
+    with sync_playwright() as p:
+        br = p.chromium.launch(); pg = br.new_page(viewport={'width': 1080, 'height': 1920})
+        pg.set_content(html); pg.wait_for_timeout(300)
+        pg.screenshot(path=str(out / 'today.jpg'), type='jpeg', quality=92); br.close()
+    (out / 'today.json').write_text(json.dumps(f, ensure_ascii=False), encoding='utf-8')
+
+
 if __name__ == '__main__':
-    build(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+    if sys.argv[1] == 'today':
+        build_today(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None)
+    else:
+        build(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
     print('ok')
