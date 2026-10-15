@@ -1,5 +1,5 @@
 # Run inside the Composio REMOTE_WORKBENCH kernel:  exec(open('/mnt/files/forecast/run_week.py').read())
-# Optional: set FRIDAY = 'YYYY-MM-DD' before exec. Prints JSON with caption, image URLs and story URL.
+# Needs /mnt/files/forecast/token.txt (SurfTribe forecast API token). Optional: set FRIDAY = 'YYYY-MM-DD' before exec. Prints JSON with caption, image URLs and story URL.
 import subprocess, json, os, datetime as _dt, urllib.request
 _dir = '/mnt/files/forecast'
 os.makedirs(_dir, exist_ok=True)
@@ -31,5 +31,5 @@ def _direct(path):
 _imgs = [_direct(f'{_out}/HE_{i}.jpg') for i in range(1, 6)]
 _story = _direct(f'{_out}/story.jpg')
 FORECAST = {'friday': FRIDAY, 'caption': open(f'{_out}/caption.txt', encoding='utf-8').read(),
-            'images': _imgs, 'story': _story, 'summary': json.load(open(f'{_out}/summary.json', encoding='utf-8'))['best']}
+            'images': _imgs, 'story': _story, 'data': json.load(open(f'{_out}/data.json', encoding='utf-8'))}
 print(json.dumps(FORECAST, ensure_ascii=False))
