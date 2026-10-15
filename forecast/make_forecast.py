@@ -68,7 +68,7 @@ def summarize(m, w, day):
 
 def fmt_h(a, b):
     a, b = round(a, 1), round(b, 1)
-    return f'{a:.1f}' if a == b else f'{a:.1f}–{b:.1f}'
+    return f'{a:.1f}' if a == b else f'{a:.1f}-{b:.1f}'
 
 
 def b64(p):
@@ -100,13 +100,16 @@ def mark():
     return '<div class=mark dir=ltr>Surf<b>Tribe</b></div>'
 
 
-def build(friday, outdir):
+def build(friday, outdir, from_summary=None):
     fri = dt.date.fromisoformat(friday); sat = fri + dt.timedelta(days=1)
     days = [fri.isoformat(), sat.isoformat()]
     data = {}
-    for name, lat, lon in SPOTS:
-        m, w = fetch(lat, lon, days[0], days[1])
-        data[name] = {d: summarize(m, w, d) for d in days}
+    if from_summary:
+        data = json.loads(Path(from_summary).read_text(encoding='utf-8'))['spots']
+    else:
+        for name, lat, lon in SPOTS:
+            m, w = fetch(lat, lon, days[0], days[1])
+            data[name] = {d: summarize(m, w, d) for d in days}
     dlabel = {d: f'{DAYS_HE[dt.date.fromisoformat(d).weekday()]} {dt.date.fromisoformat(d):%d.%m}' for d in days}
     best = {d: max(SPOTS, key=lambda s: data[s[0]][d]['score'])[0] for d in days}
     best = {d: (b if data[b][d]['score'] > -99 else None) for d, b in best.items()}
@@ -129,15 +132,15 @@ def build(friday, outdir):
         rows = ''
         for name, _, _ in SPOTS:
             r = data[name][d]
-            rows += ('<div style="padding:24px 0;border-top:2px solid rgba(245,241,247,.14)">'
+            rows += ('<div style="padding:36px 0;border-top:2px solid rgba(245,241,247,.14)">'
                      '<div style="display:flex;justify-content:space-between;align-items:center">'
-                     f'<div class=h style="font-size:54px">{name}</div>'
+                     f'<div class=h style="font-size:58px">{name}</div>'
                      f'<div style="font-size:30px;font-weight:700;color:#2D242A;background:{r["col"]};padding:10px 22px;border-radius:999px">{r["label"]}</div></div>'
-                     f'<div style="font-size:34px;margin-top:12px;opacity:.92">גלים <span dir=ltr>{fmt_h(r["hs_min"], r["hs_max"])}</span> מ׳ · '
+                     f'<div style="font-size:37px;margin-top:14px;opacity:.92">גלים <span dir=ltr>{fmt_h(r["hs_min"], r["hs_max"])}</span> מ׳ · '
                      f'פריוד <span dir=ltr>{round(r["per"])}</span> שנ׳ · רוח <span dir=ltr>{round(r["wind"])}</span> קמ״ש, {r["wtype"]}</div></div>')
         pages.append(page(
             mark() + '<div style="position:absolute;left:80px;right:80px;top:120px">'
-            f'<div class=k>{dlabel[d]} · בוקר <span dir=ltr>06:00–11:00</span></div>'
+            f'<div class=k>{dlabel[d]} · בוקר <span dir=ltr>06:00-11:00</span></div>'
             f'<div class=h style="font-size:80px;margin:12px 0 30px">{"שישי" if n == 0 else "שבת"} בים</div>'
             f'{rows}<div style="border-top:2px solid rgba(245,241,247,.14)"></div></div>', n + 2, total))
     # 4 best picks
@@ -168,15 +171,15 @@ def build(friday, outdir):
         'עקבו אחרי <span dir=ltr>@surftribe_il</span></span></div>'
         '<div style="font-size:34px;margin-top:40px;opacity:.85">תחזית לפי הרמה שלכם, שעה אחרי שעה, באפליקציית SurfTribe. הקישור בביו</div></div>', 5, total))
     # story
-    sp = ''.join(f'<div style="margin-top:36px"><div class=k style="font-size:38px">{dlabel[d]}</div>'
-                 f'<div class=h style="font-size:104px;color:{CYAN};margin-top:8px">{best[d] or "ים שקט"}</div></div>' for d in days)
+    sp = ''.join(f'<div style="margin-top:50px"><div class=k style="font-size:46px">{dlabel[d]}</div>'
+                 f'<div class=h style="font-size:130px;color:{CYAN};margin-top:8px">{best[d] or "ים שקט"}</div></div>' for d in days)
     story = page(
         f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.4)"></div>'
         '<div style="position:absolute;left:80px;right:80px;top:300px">'
-        '<div class=h style="font-size:120px">תחזית לסופ״ש</div>'
-        f'<div style="font-size:44px;margin-top:20px">הבחירה שלנו לבוקר:</div>{sp}'
-        '<div style="font-size:46px;font-weight:700;margin-top:80px">התחזית המלאה בפוסט האחרון</div>'
-        '<div style="font-size:38px;margin-top:16px">עקבו אחרי <span dir=ltr>@surftribe_il</span></div></div>', 0, 0, h=1920)
+        '<div class=h style="font-size:140px">תחזית לסופ״ש</div>'
+        f'<div style="font-size:52px;margin-top:24px">הבחירה שלנו לבוקר:</div>{sp}'
+        '<div style="font-size:54px;font-weight:700;margin-top:100px">התחזית המלאה בפוסט האחרון</div>'
+        '<div style="font-size:46px;margin-top:20px">עקבו אחרי <span dir=ltr>@surftribe_il</span></div></div>', 0, 0, h=1920)
     # render
     from playwright.sync_api import sync_playwright
     out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
@@ -214,4 +217,4 @@ if __name__ == '__main__':
     fri = today + dt.timedelta(days=(4 - today.weekday()) % 7)
     friday = sys.argv[1] if len(sys.argv) > 1 else fri.isoformat()
     outdir = sys.argv[2] if len(sys.argv) > 2 else str(HERE / 'out' / friday)
-    print(json.dumps(build(friday, outdir)))
+    print(json.dumps(build(friday, outdir, sys.argv[3] if len(sys.argv) > 3 else None)))
