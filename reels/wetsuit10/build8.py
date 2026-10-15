@@ -23,11 +23,13 @@ HC = 'crop=820:1458:260:231,scale=1080:1920,'
 B = [('n_chest.mp4', 0.0, 1.0, 'o1', '', False), ('n_wade.mp4', 0.0, 1.0, 'o2', BL, True),
      ('n_warm.mp4', 0.0, 1.0, 'r0', '', True), ('n_spring.mp4', 0.0, 1.0, 'r1', 'crop=900:1600:90:0,scale=1080:1920,', True),
      ('n_walk2.mp4', 0.0, 1.0, 'r2', '', True), ('n_booties.mp4', 1.25, 2.0, 'r3', 'SLOW', True),
-     ('n_hood.mp4', 0.0, 1.0, 'r4', HC, True), ('n_hood.mp4', 1.0, 1.0, 'o8', HC + BL, True),
+     ('n_hood.mp4', 0.0, 1.0, 'r4', 'crop=820:1458:260:0,scale=1080:1920,', True), ('n_hood.mp4', 1.0, 1.0, 'o8', HC + BL, True),
      ('n_walkout.mp4', 0.0, 1.0, 'o8b', BL, True), ('n_chest.mp4', 0.0, 1.0, 'o9', 'LOOP', True)]
 FADE = 'format=rgba,fade=t=in:st=0.03:d=0.15:alpha=1'
 OVF = "overlay=x=0:y='if(lt(t,0.18),max(0,46*(0.18-t)/0.15),0)'"
+REB = [int(x) for x in os.environ.get('REBUILD', '0,1,2,3,4,5,6,7,8,9').split(',')]
 for i, (clip, ss, k, ov, ex, fade) in enumerate(B):
+    if i not in REB and os.path.exists(f'b{i}.mp4'): continue
     cap = f'[1:v]{FADE}[c];[v][c]{OVF}' if fade else '[1:v]format=rgba[c];[v][c]overlay=0:0'
     ovin = ['-loop', '1', '-t', f'{d[i] + 0.5:.3f}', '-i', f'{ov}.png']
     if ex == 'LOOP':
@@ -54,23 +56,28 @@ ev = []
 for i in range(10):
     toks = []
     for t, a0, a1 in words[i]:
-        if re.fullmatch(r"[\W_]+", t) and toks and t not in ('?',):
-            toks[-1][0] += t if t in ('-',) else ''; continue
-        if t == '?' and toks: toks[-1][0] += '?'; continue
+        if re.fullmatch(r"[^\w']+", t):
+            if toks: toks[-1][0] += t.strip()
+            continue
         if toks and toks[-1][0].endswith('-'): toks[-1][0] += t; toks[-1][2] = a1; continue
         toks.append([t, a0, a1])
     chunks, cur = [], []
     for w in toks:
         cur.append(w)
-        if len(cur) == 3 or w[0][-1:] in '?,.' or w[0].lower().strip('?,.') in ('but',):
+        if len(cur) == 3 or re.search(r'[?,.]$', w[0]):
             chunks.append(cur); cur = []
     if cur: chunks.append(cur)
     for c in chunks:
         txt = ' '.join(w[0] for w in c)
         for kx, v in NUM.items(): txt = re.sub(kx, v, txt, flags=re.I)
-        txt = re.sub(r'[.,]+(\s|$)', r'\1', txt).strip()
-        s0 = vstart[i] + c[0][1]; s1 = min(vstart[i] + c[-1][2] + 0.12, st[i] + d[i])
-        ev.append(f"Dialogue: 0,{ts(s0)},{ts(s1)},Sub,,0,0,0,,{{\\an8\\pos(540,{SUBY[i]})\\fad(60,0)\\fscx92\\fscy92\\t(0,120,\\fscx100\\fscy100)}}{txt}")
+        txt = re.sub(r'[.,]+$', '', txt.strip())
+        ev.append([vstart[i] + c[0][1], vstart[i] + c[-1][2] + 0.15, st[i] + d[i], SUBY[i], txt])
+lines = []
+for j, (s0, s1, lim, y, txt) in enumerate(ev):
+    nxt = ev[j + 1][0] if j + 1 < len(ev) else 1e9
+    s1 = min(s1, lim, nxt - 0.02)
+    lines.append(f"Dialogue: 0,{ts(s0)},{ts(s1)},Sub,,0,0,0,,{{\\an8\\pos(540,{y})\\fad(60,0)\\fscx92\\fscy92\\t(0,120,\\fscx100\\fscy100)}}{txt}")
+ev = lines
 ass = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 0\n\n[V4+ Styles]\n"
        "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
        "Style: Sub,Rubik,64,&H00FFFFFF,&H00FFFFFF,&H00201820,&H80000000,-1,0,0,0,100,100,0,0,1,6,2,8,140,140,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n" + '\n'.join(ev) + '\n')
@@ -93,6 +100,6 @@ meas = sp.run([F, '-hide_banner', '-i', 'mix.wav', '-af', 'loudnorm=I=-14:TP=-1.
 J = json.loads(meas[meas.rindex('{'):meas.rindex('}') + 1])
 ln = (f"loudnorm=I=-14:TP=-1.5:LRA=9:measured_I={J['input_i']}:measured_TP={J['input_tp']}:measured_LRA={J['input_lra']}:"
       f"measured_thresh={J['input_thresh']}:offset={J['target_offset']}:linear=true,aresample=48000")
-run('-i', 'vs.mp4', '-i', 'mix.wav', '-filter_complex', f'[1:a]{ln}[a]', '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', 'wetsuit_v10.mp4')
+run('-i', 'vs.mp4', '-i', 'mix.wav', '-filter_complex', f'[1:a]{ln}[a]', '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', 'wetsuit_v11.mp4')
 info = {'T': round(T, 2), 'd': [round(x, 2) for x in d], 'music_start': best, 'loudnorm_in': J['input_i'], 'subs': len(ev)}
 json.dump(info, open('info.json', 'w')); print('BUILD_OK', info)
