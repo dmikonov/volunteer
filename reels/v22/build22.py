@@ -21,7 +21,7 @@ vstart = [s + (0.0 if i == 0 else 0.05) for i, s in enumerate(st)]
 FADE = 'format=rgba,fade=t=in:st=0.03:d=0.15:alpha=1'
 OVF = "overlay=x=0:y='if(lt(t,0.18),max(0,46*(0.18-t)/0.15),0)'"
 NORM = 'scale=1080:1920,setsar=1,'
-B = ['n_chest3.mp4', 'n_warm.mp4', 'n_spring.mp4', 'n_macro.mp4', 'n_wade.mp4', 'BOOTIES', 'n_hood6.mp4', 'LOOP']
+B = ['n_chest3.mp4', 'n_warm.mp4', 'n_spring.mp4', 'MACRO_A', 'MACRO_B', 'BOOTIES', 'n_hood6.mp4', 'LOOP']
 HOOK = 'n_chest3.mp4'  # regenerated from frame 0 of chest with the chest badge inpainted; arms stay crossed
 OV = ['h0', 'r0', 'r1', 'r2', 'r3', 'r4', 'r5', 'end']
 REB = [int(x) for x in os.environ.get('REBUILD', ','.join(map(str, range(N)))).split(',')]
@@ -42,6 +42,14 @@ for i in range(N):
                f'[2:v]crop=760:1351:160:569,{NORM}trim=0:0.95,setpts={b / 0.95:.3f}*(PTS-STARTPTS),minterpolate=fps=30:mi_mode=blend,tpad=stop_mode=clone:stop_duration=1,trim=0:{b:.3f},setpts=PTS-STARTPTS,format=yuv420p[sb];'
                f'[sa][sb]concat=n=2:v=1:a=0[v]')
         enc(['-i', f'{C}/n_booties.mp4', *ovin, '-i', f'{C}/n_bstand.mp4', '-filter_complex', f'{pre};{cap}', '-t', f'{d[i]:.3f}'], f'b{i}.mp4')
+    elif B[i] in ('MACRO_A', 'MACRO_B'):
+        # the wade clip has foam artifacts at every speed, so rows 3 and 4 share the clean, nearly static macro back:
+        # wide for 3/2 (source 0-1.75 s), punch-in for 4/3 (source 1.75-3.5 s). Low motion, so the slow-down stays clean
+        s0, crop = (0.0, '') if B[i] == 'MACRO_A' else (1.75, 'crop=830:1476:125:120,' + NORM)
+        k = d[i] / 1.75
+        pre = (f'[0:v]trim=start={s0},setpts=PTS-STARTPTS,{crop}setpts={k:.3f}*PTS,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc,'
+               f'tpad=stop_mode=clone:stop_duration=1,trim=0:{d[i]:.3f},setpts=PTS-STARTPTS[v]')
+        enc(['-i', f'{C}/n_macro.mp4', *ovin, '-filter_complex', f'{pre};{cap}', '-t', f'{d[i]:.3f}'], f'b{i}.mp4')
     elif B[i] == 'LOOP':
         # recap over the opening clip played backwards: blurred while the card is up, sharp for the last 0.35 s,
         # so the reel ends exactly on frame 0 of the hook (seamless loop)
