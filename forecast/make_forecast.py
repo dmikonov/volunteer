@@ -247,7 +247,9 @@ def build_week(sunday, outdir, api_file=None):
         '<div style="position:absolute;left:80px;right:80px;top:230px">'
         '<div class=h style="font-size:130px">תחזית לשבוע</div>'
         f'<div class=k style="font-size:44px;margin:16px 0 30px">{L(rng)}</div>{srows}'
-        '<div style="font-size:52px;font-weight:700;margin-top:60px">כל הפרטים בפוסט האחרון</div></div>', 0, 0, h=1920)
+        + (f'<div style="font-size:52px;font-weight:700;margin-top:60px;color:{CYAN}">הבחירה שלנו: '
+           + ' ו'.join(DAYS_HE[dt.date.fromisoformat(f["date"]).weekday()] for f in sorted(ranked, key=lambda f: f['date'])) + '</div>' if ranked else '')
+        + '<div style="font-size:40px;margin-top:24px;opacity:.85">עדכון כל בוקר בסטורי</div></div>', 0, 0, h=1920)
     from playwright.sync_api import sync_playwright
     out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
