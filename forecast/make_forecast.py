@@ -10,6 +10,11 @@ HERE = Path(__file__).resolve().parent
 API = 'https://staging.surftribe.rest/api/story/forecast'
 CYAN, CORAL, GREEN, FOAM, GREY, SUN = '#00CDFE', '#FF5150', '#68C090', '#F5F1F7', '#9A8F98', '#FFC857'
 DAYS_HE = ['שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת', 'ראשון']
+def qk(f):
+    w = (f.get('quality_word') or f.get('quality') or '').lower()
+    return w if w in Q else ('flat' if w in ('poor',) else w)
+
+
 Q = {'epic': ('אפי', CORAL, 3), 'good': ('טוב', GREEN, 2), 'fair': ('בינוני', SUN, 1), 'flat': ('פלאט', GREY, 0)}
 WIND = {'offshore': ('אופשור', 2), 'cross-shore': ('רוח צד', 1), 'onshore': ('אונשור', 0)}
 
@@ -64,14 +69,14 @@ def label(d):
 
 
 def rank(f):
-    return (Q.get(f['quality'], ('', '', 0))[2], WIND.get(f['wind_kind'], ('', 0))[1], -abs(f['wave_height_m'] - 1.0))
+    return (Q.get(qk(f), ('', '', 0))[2], WIND.get(f['wind_kind'], ('', 0))[1], -abs(f['wave_height_m'] - 1.0))
 
 
 def build(friday, outdir, api_file=None):
     api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(friday)
     days = [f for f in api['forecast']][:2]
     pick = max(days, key=rank)
-    surfable = Q.get(pick['quality'], ('', '', 0))[2] >= 1
+    surfable = Q.get(qk(pick), ('', '', 0))[2] >= 1
     total = 5
     bg = b64(HERE / 'bg_lines.jpg')
     pages = []
@@ -83,10 +88,10 @@ def build(friday, outdir, api_file=None):
         f'<div class=k style="font-size:40px;margin-top:26px">{" · ".join(label(f["date"]) for f in days)}</div>'
         '<div style="font-size:40px;margin-top:18px">מה מחכה בים, ומתי הכי כדאי לצאת</div></div>', 1, total))
     for i, f in enumerate(days):
-        qn, qc, _ = Q.get(f['quality'], (f['quality'], FOAM, 0))
+        qn, qc, _ = Q.get(qk(f), (qk(f), FOAM, 0))
         wk = WIND.get(f['wind_kind'], (f['wind_kind'], 0))[0]
         uv = (f'<div style="margin-top:30px;font-size:34px;color:{SUN}">UV {L(f["uv_max"])}: קרם הגנה ולייקרה</div>'
-              if f.get('uv_max', 0) >= 6 else '')
+              if (f.get('uv_max') or 0) >= 6 else '')
         grid = (
             '<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:60px;margin-top:40px">'
             f'<div class=cell><div class=lbl>גלים</div><div class=val>{L(wh(f))} מ׳</div></div>'
@@ -120,7 +125,7 @@ def build(friday, outdir, api_file=None):
         '<div style="font-size:34px;margin-top:40px;opacity:.85">תחזית לחוף שלכם ולפי הרמה שלכם, שעה אחרי שעה, באפליקציית SurfTribe. הקישור בביו</div></div>', 5, total))
     rows = ''.join(
         f'<div style="margin-top:46px"><div class=k style="font-size:46px">{label(f["date"])}</div>'
-        f'<div class=h style="font-size:130px;color:{Q.get(f["quality"], ("", FOAM, 0))[1]};margin-top:6px">{Q.get(f["quality"], (f["quality"], "", 0))[0]}</div>'
+        f'<div class=h style="font-size:130px;color:{Q.get(qk(f), ("", FOAM, 0))[1]};margin-top:6px">{Q.get(qk(f), (qk(f), "", 0))[0]}</div>'
         f'<div style="font-size:44px;margin-top:6px">{L(wh(f))} מ׳ · {WIND.get(f["wind_kind"], ("", 0))[0]} · {L(f["best_window"])}</div></div>' for f in days)
     story = page(
         f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.38)"></div>'
@@ -139,11 +144,11 @@ def build(friday, outdir, api_file=None):
         pg.screenshot(path=str(out / 'story.jpg'), type='jpeg', quality=92); br.close()
     lines = [f'תחזית לסופ״ש: {" ו".join(label(f["date"]) for f in days)}. מה מחכה בים?', '']
     for f in days:
-        lines.append(f'{label(f["date"])}: {Q.get(f["quality"], (f["quality"],))[0]}. גלים {f["wave_height_m"]:.1f} מ׳, פריוד {f["wave_period_s"]} שנ׳, '
+        lines.append(f'{label(f["date"])}: {Q.get(qk(f), (qk(f),))[0]}. גלים {f["wave_height_m"]:.1f} מ׳, פריוד {f["wave_period_s"]} שנ׳, '
                      f'{WIND.get(f["wind_kind"], ("",))[0]} {f["wind_kmh"]} קמ״ש, מים {f["water_temp_c"]}°C. הכי טוב בסביבות {f["best_window"]}.')
     if surfable:
         lines += ['', f'הבחירה שלנו: {DAYS_HE[dt.date.fromisoformat(pick["date"]).weekday()]} בבוקר.']
-    if any(f.get('uv_max', 0) >= 6 for f in days):
+    if any((f.get('uv_max') or 0) >= 6 for f in days):
         lines.append('UV גבוה, אל תשכחו קרם הגנה.')
     lines += ['', 'ממוצע לאורך החוף המרכזי. התחזית משתנה, בדקו שוב בבוקר.', '',
               'שמרו את הפוסט ושלחו לחבר שגולש איתכם.', 'עקבו אחרי @surftribe_il לתחזית חדשה כל יום חמישי.',
@@ -157,13 +162,13 @@ def build_today(day, outdir, api_file=None):
     """Daily morning story 1080x1920: today's sea."""
     api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(day, 1)
     f = api['forecast'][0]
-    qn, qc, _ = Q.get(f['quality'], (f['quality'], FOAM, 0))
+    qn, qc, _ = Q.get(qk(f), (qk(f), FOAM, 0))
     wk = WIND.get(f['wind_kind'], (f['wind_kind'], 0))[0]
     bg = b64(HERE / 'bg_lines.jpg')
     cell = lambda l, v, sub='': (f'<div class=cell><div class=lbl style="font-size:36px">{l}</div><div class=val style="font-size:88px">{v}</div>'
                                  + (f'<div style="font-size:38px;margin-top:6px">{sub}</div>' if sub else '') + '</div>')
     uv = (f'<div style="margin-top:34px;font-size:42px;color:{SUN}">UV {L(f["uv_max"])}: קרם הגנה ולייקרה</div>'
-          if f.get('uv_max', 0) >= 6 else '')
+          if (f.get('uv_max') or 0) >= 6 else '')
     html = page(
         f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.3)"></div>'
         '<div style="position:absolute;left:80px;right:80px;top:260px">'
@@ -186,8 +191,88 @@ def build_today(day, outdir, api_file=None):
     (out / 'today.json').write_text(json.dumps(f, ensure_ascii=False), encoding='utf-8')
 
 
+def build_week(sunday, outdir, api_file=None):
+    """Weekly overview (Sun-Sat): cover, week table, best days, CTA + story."""
+    api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(sunday, 7)
+    days = api['forecast'][:7]
+    total = 4
+    bg = b64(HERE / 'bg_lines.jpg')
+    ranked = sorted([f for f in days if Q.get(qk(f), ('', '', 0))[2] >= 1], key=rank, reverse=True)[:2]
+    rng = f'{dt.date.fromisoformat(days[0]["date"]):%d.%m}-{dt.date.fromisoformat(days[-1]["date"]):%d.%m}'
+    pages = [page(
+        f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover"></div>'
+        '<div style="position:absolute;left:0;right:0;top:640px;bottom:0;background:linear-gradient(180deg,rgba(45,36,42,0),#2D242A 55%)"></div>'
+        + MARK + '<div style="position:absolute;left:80px;right:80px;bottom:100px">'
+        '<div class=h style="font-size:118px">תחזית לשבוע</div>'
+        f'<div class=k style="font-size:40px;margin-top:26px">{L(rng)}</div>'
+        '<div style="font-size:40px;margin-top:18px">באיזה יום שווה לקום מוקדם</div></div>', 1, total)]
+    rows = ''
+    for f in days:
+        qn, qc, _ = Q.get(qk(f), (qk(f), FOAM, 0))
+        wk = WIND.get(f['wind_kind'], (f['wind_kind'], 0))[0]
+        rows += ('<div style="display:flex;align-items:center;gap:26px;padding:20px 0;border-top:2px solid rgba(245,241,247,.14)">'
+                 f'<div style="width:230px;flex:none"><div class=h style="font-size:46px">{DAYS_HE[dt.date.fromisoformat(f["date"]).weekday()]}</div>'
+                 f'<div style="font-size:26px;opacity:.7">{dt.date.fromisoformat(f["date"]):%d.%m}</div></div>'
+                 f'<div style="width:170px;flex:none"><span style="font-size:30px;font-weight:700;color:#2D242A;background:{qc};padding:8px 20px;border-radius:999px">{qn}</span></div>'
+                 f'<div style="font-size:34px;flex:1">{L(wh(f))} מ׳ · {wk} · {L(f["best_window"])}</div></div>')
+    pages.append(page(
+        MARK + '<div style="position:absolute;left:80px;right:80px;top:120px">'
+        '<div class=k>השבוע בים · חוף המרכז</div><div class=h style="font-size:80px;margin:12px 0 26px">יום אחרי יום</div>'
+        f'{rows}<div style="border-top:2px solid rgba(245,241,247,.14)"></div></div>', 2, total))
+    if ranked:
+        best = ''.join(
+            f'<div style="padding:34px 0;border-top:2px solid rgba(245,241,247,.14)"><div class=k>{label(f["date"])}</div>'
+            f'<div class=h style="font-size:120px;color:{CYAN};margin:8px 0 10px">{DAYS_HE[dt.date.fromisoformat(f["date"]).weekday()]}</div>'
+            f'<div style="font-size:40px">{L(wh(f))} מ׳, פריוד {L(f["wave_period_s"])} שנ׳, {WIND.get(f["wind_kind"], ("", 0))[0]}, הכי טוב ב-{L(f["best_window"])}</div></div>'
+            for f in ranked)
+    else:
+        best = '<div class=h style="font-size:100px;color:#9A8F98;margin-top:30px">שבוע שקט</div><div style="font-size:42px;margin-top:16px">זמן טוב לאימון על הרצפה</div>'
+    pages.append(page(
+        MARK + '<div style="position:absolute;left:80px;right:80px;top:0;bottom:110px;display:flex;flex-direction:column;justify-content:center">'
+        '<div class=k>הבחירה שלנו</div><div class=h style="font-size:84px;margin:12px 0 20px">הימים הכי טובים</div>'
+        f'{best}<div style="font-size:28px;margin-top:40px;opacity:.6">ממוצע לאורך החוף המרכזי. התחזית משתנה, נעדכן כל בוקר בסטורי</div></div>', 3, total))
+    pages.append(page(
+        MARK + '<div style="position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">'
+        '<div class=h style="font-size:92px">שמרו את השבוע</div>'
+        '<div style="font-size:42px;margin-top:30px;line-height:1.3">תחזית לשבוע כל יום ראשון, לסופ״ש כל חמישי, ו״הים היום״ כל בוקר בסטורי</div>'
+        '<div style="margin-top:44px"><span style="font-size:32px;font-weight:700;color:#2D242A;background:#00CDFE;padding:16px 28px;border-radius:999px">'
+        f'עקבו אחרי {L("@surftribe_il")}</span></div>'
+        '<div style="font-size:34px;margin-top:40px;opacity:.85">תחזית לחוף שלכם ולפי הרמה שלכם באפליקציית SurfTribe. הקישור בביו</div></div>', 4, total))
+    srows = ''.join(
+        f'<div style="display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-top:2px solid rgba(245,241,247,.2)">'
+        f'<div class=h style="font-size:58px">{DAYS_HE[dt.date.fromisoformat(f["date"]).weekday()]}</div>'
+        f'<div style="font-size:44px;font-weight:700;color:{Q.get(qk(f), ("", FOAM, 0))[1]}">{Q.get(qk(f), (qk(f), "", 0))[0]} · {L(wh(f))} מ׳</div></div>' for f in days)
+    story = page(
+        f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.3)"></div>'
+        '<div style="position:absolute;left:80px;right:80px;top:230px">'
+        '<div class=h style="font-size:130px">תחזית לשבוע</div>'
+        f'<div class=k style="font-size:44px;margin:16px 0 30px">{L(rng)}</div>{srows}'
+        '<div style="font-size:52px;font-weight:700;margin-top:60px">כל הפרטים בפוסט האחרון</div></div>', 0, 0, h=1920)
+    from playwright.sync_api import sync_playwright
+    out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
+    with sync_playwright() as p:
+        br = p.chromium.launch()
+        for i, html in enumerate(pages, 1):
+            pg = br.new_page(viewport={'width': 1080, 'height': 1350}); pg.set_content(html); pg.wait_for_timeout(300)
+            pg.screenshot(path=str(out / f'HE_{i}.jpg'), type='jpeg', quality=92); pg.close()
+        pg = br.new_page(viewport={'width': 1080, 'height': 1920}); pg.set_content(story); pg.wait_for_timeout(300)
+        pg.screenshot(path=str(out / 'story.jpg'), type='jpeg', quality=92); br.close()
+    lines = [f'תחזית לשבוע, {rng}. באיזה יום שווה לקום מוקדם?', '']
+    for f in days:
+        lines.append(f'{label(f["date"])}: {Q.get(qk(f), (qk(f),))[0]}, {wh(f)} מ׳, {WIND.get(f["wind_kind"], ("",))[0]}, הכי טוב ב-{f["best_window"]}.')
+    if ranked:
+        lines += ['', 'הבחירה שלנו: ' + ' ו'.join(DAYS_HE[dt.date.fromisoformat(f["date"]).weekday()] for f in ranked) + '.']
+    lines += ['', 'ממוצע לאורך החוף המרכזי. התחזית משתנה, נעדכן כל בוקר בסטורי.', '',
+              'שמרו את הפוסט ושלחו לחבר שגולש איתכם.', 'עקבו אחרי @surftribe_il: תחזית לשבוע כל ראשון, לסופ״ש כל חמישי.',
+              'תחזית לחוף שלכם, שעה אחרי שעה, ב-SurfTribe. הקישור בביו.', '', 'התמונה נוצרה ב-AI', '',
+              '#גלישה #תחזיתגלים #surfisrael #גלישהבישראל #surftribe_il']
+    (out / 'caption.txt').write_text('\n'.join(lines), encoding='utf-8')
+
+
 if __name__ == '__main__':
-    if sys.argv[1] == 'today':
+    if sys.argv[1] == 'week':
+        build_week(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None)
+    elif sys.argv[1] == 'today':
         build_today(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None)
     else:
         build(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
