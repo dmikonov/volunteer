@@ -51,3 +51,6 @@ The reviewer checks THESE rules first, general quality second. "Looks good" is n
 35. Hoarse generic voice (rejected 15 Oct); voice is chosen by Dima from samples before the build.
 36. No mention of who we are (rejected 15 Oct).
 37. Burned-in subtitles are mandatory on reels (most viewers watch muted).
+38. Subtitles sit where subtitles belong: horizontally centred (centre x = 540, measure left and right margins, difference at most 20 px) and at ONE fixed height for the whole reel (same y on every line, lower third, around y 1360). Never shifted to the left, never jumping between beats (rejected 15 Oct). Measure the bbox of every subtitle line and report.
+39. No dead air: no gap in the voice longer than 0.6 s anywhere between the first and the last word, and no beat that holds a card longer than 0.6 s after the voice ends (rejected 15 Oct: 2 s of silence after "Save this"). Measure voice gaps on the voice-only track and report the longest one.
+40. No clock time on @surftribe_world creatives (worldwide audience, "6 PM" means nothing): story pill says "NEW POST TODAY" with no time (rejected 15 Oct, EN story p02). Times are fine on @surftribe_il (one time zone). Open fix: GitHub issue dmikonov/volunteer#1 (EN_p03 to EN_p14).
