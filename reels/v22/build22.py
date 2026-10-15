@@ -21,7 +21,8 @@ vstart = [s + (0.0 if i == 0 else 0.05) for i, s in enumerate(st)]
 FADE = 'format=rgba,fade=t=in:st=0.03:d=0.15:alpha=1'
 OVF = "overlay=x=0:y='if(lt(t,0.18),max(0,46*(0.18-t)/0.15),0)'"
 NORM = 'scale=1080:1920,setsar=1,'
-B = ['n_chest.mp4', 'n_warm.mp4', 'n_spring.mp4', 'n_macro.mp4', 'n_wade.mp4', 'BOOTIES', 'n_hood5.mp4', 'LOOP']
+B = ['n_chest3.mp4', 'n_warm.mp4', 'n_spring.mp4', 'n_macro.mp4', 'n_wade.mp4', 'BOOTIES', 'n_hood6.mp4', 'LOOP']
+HOOK = 'n_chest3.mp4'  # regenerated from frame 0 of chest with the chest badge inpainted; arms stay crossed
 OV = ['h0', 'r0', 'r1', 'r2', 'r3', 'r4', 'r5', 'end']
 REB = [int(x) for x in os.environ.get('REBUILD', ','.join(map(str, range(N)))).split(',')]
 for i in range(N):
@@ -33,7 +34,7 @@ for i in range(N):
         a = min(2.0, d[0] / 2 + 0.2); b = d[0] - a
         pre = (f'[0:v]split[p][q];[p]trim=0:{a:.3f},setpts=PTS-STARTPTS,setsar=1[x];'
                f'[q]trim=start={a - 0.45:.3f},setpts=PTS-STARTPTS,crop=760:1351:160:150,{NORM}tpad=stop_mode=clone:stop_duration=3,trim=0:{b:.3f},setpts=PTS-STARTPTS[y];[x][y]concat=n=2:v=1:a=0[v]')
-        enc(['-i', f'{C}/{B[0]}', *ovin, '-filter_complex', f'{pre};{cap}', '-t', f'{d[0]:.3f}'], f'b{i}.mp4')
+        enc(['-i', f'{C}/{HOOK}', *ovin, '-filter_complex', f'{pre};{cap}', '-t', f'{d[0]:.3f}'], f'b{i}.mp4')
     elif B[i] == 'BOOTIES':
         # A: walk, n_booties 1.25-2.10 s slowed (clean span); B: standing split-toe booties, first 0.95 s
         a = round(d[i] * 0.55, 3); b = d[i] - a; k = a / 0.85
@@ -44,16 +45,16 @@ for i in range(N):
     elif B[i] == 'LOOP':
         # recap over the opening clip played backwards: blurred while the card is up, sharp for the last 0.35 s,
         # so the reel ends exactly on frame 0 of the hook (seamless loop)
-        e = d[i] - 0.35
-        pre = (f"[0:v]trim=0:{d[i]:.3f},setpts=PTS-STARTPTS,reverse,boxblur=14:2:enable='lt(t,{e:.3f})',"
-               f"eq=brightness=-0.2:saturation=0.7:enable='lt(t,{e:.3f})',format=yuv420p[v]")
-        capl = f"[1:v]{FADE},fade=t=out:st={e - 0.3:.3f}:d=0.3:alpha=1[c];[v][c]{OVF}"
-        enc(['-i', f'{C}/n_chest.mp4', *ovin, '-filter_complex', f'{pre};{capl}', '-t', f'{d[i]:.3f}'], f'b{i}.mp4')
+        e = d[i] - 0.3
+        pre = (f"[0:v]trim=0:{d[i]:.3f},setpts=PTS-STARTPTS,reverse,format=yuv420p,split[s][q];"
+               f"[q]boxblur=34:3,eq=brightness=-0.3:saturation=0.6,format=rgba,fade=t=out:st={e:.3f}:d=0.3:alpha=1[bl];[s][bl]overlay=0:0,format=yuv420p[v]")
+        capl = f"[1:v]{FADE},fade=t=out:st={e - 0.35:.3f}:d=0.3:alpha=1[c];[v][c]{OVF}"
+        enc(['-i', f'{C}/{HOOK}', *ovin, '-filter_complex', f'{pre};{capl}', '-t', f'{d[i]:.3f}'], f'b{i}.mp4')
     else:
-        ex = {'n_spring.mp4': 'crop=900:1600:90:0,' + NORM, 'n_hood5.mp4': ''}.get(B[i], '')
+        ex = {'n_spring.mp4': 'crop=900:1600:90:0,' + NORM, 'n_warm.mp4': 'eq=saturation=0.82,'}.get(B[i], '')
         k = 1.0
-        if B[i] == 'n_hood5.mp4': k = max(1.0, d[i] / 2.0)  # only the first 2.0 s are clean
         if B[i] == 'n_spring.mp4': k = max(1.0, d[i] / 2.0)  # foam turns to a mesh after ~2 s
+        if B[i] == 'n_wade.mp4': k = max(1.0, d[i] / 1.35)   # a loose dark lump appears in the foam from ~1.4 s
         mi = ',minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc' if k > 1.01 else ''
         pre = f'[0:v]{ex}setpts={k:.3f}*(PTS-STARTPTS){mi},tpad=stop_mode=clone:stop_duration=3,trim=0:{d[i]:.3f},setpts=PTS-STARTPTS[v]'
         enc(['-i', f'{C}/{B[i]}', *ovin, '-filter_complex', f'{pre};{cap}', '-t', f'{d[i]:.3f}'], f'b{i}.mp4')
