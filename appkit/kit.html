@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>SurfTribe app screen kit</title>
+<style>
+@font-face{font-family:Rubik;src:url(Rubik.ttf);font-weight:100 900}
+/* SurfTribe app look (from staging app_screen_kit.html). Edit DATA at the bottom, screenshot #analysis / #forecast / #chat. */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Rubik,Arial,sans-serif}
+body{background:#1b2030;display:flex;flex-wrap:wrap;gap:40px;justify-content:center;padding:40px}
+.phone{width:390px;height:844px;border-radius:52px;overflow:hidden;position:relative;
+  background:linear-gradient(#332b27 0%,#3c3840 26%,#484d6b 60%,#565073 100%);color:#f8fbff;flex:0 0 auto}
+.glowc{position:absolute;left:-20%;top:40%;width:140%;height:50%;
+  background:radial-gradient(circle,rgba(0,212,255,.18),transparent 60%);pointer-events:none}
+.statusbar{display:flex;justify-content:space-between;align-items:center;padding:14px 26px 6px;font-size:15px;font-weight:500}
+.title{text-align:center;font-size:22px;font-weight:700;padding:6px 0 14px}
+.scroll{padding:0 18px 90px;height:calc(100% - 60px);overflow:hidden}
+.card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:28px;padding:22px;margin-bottom:16px}
+.pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
+  border-radius:18px;padding:7px 14px;font-size:15px;margin:4px 6px 0 0}
+.muted{color:#a9b1c6}.dim{color:#7c8499}
+.label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#a9b1c6;font-weight:500}
+.cyan{color:#00d4ff}.amber{color:#f5a623}.teal{color:#2ecc9b}.coral{color:#e8564f}
+.ring{width:132px;height:132px;position:relative;flex:0 0 auto}
+.ring svg{transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .num b{font-size:46px;color:#f5a623;line-height:1}
+.ring .num span{font-size:15px;color:#a9b1c6;text-align:center;margin-top:2px}
+.cta{background:#00d4ff;color:#07121a;border-radius:30px;padding:16px;text-align:center;font-weight:700;font-size:19px;margin-top:14px}
+.tabbar{position:absolute;left:0;right:0;bottom:0;height:78px;background:rgba(12,16,26,.78);
+  display:flex;justify-content:space-around;align-items:center;padding-bottom:10px;border-top:1px solid rgba(255,255,255,.08)}
+.tab{font-size:12px;color:#7c8499;text-align:center}.tab.on{color:#00d4ff}
+.row{display:flex;gap:16px;align-items:flex-start}
+.big{font-size:40px;font-weight:700}
+.fcrow{display:flex;justify-content:space-between;align-items:center;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
+.fcrow:last-child{border-bottom:none}
+.qpill{border-radius:14px;padding:4px 12px;font-size:14px;font-weight:500}
+.q-good{background:rgba(46,204,155,.18);color:#2ecc9b}.q-fair{background:rgba(245,166,35,.18);color:#f5a623}
+.q-epic{background:rgba(0,212,255,.18);color:#00d4ff}.q-flat{background:rgba(124,132,153,.18);color:#a9b1c6}
+h3{font-size:22px;font-weight:700}
+p{font-size:18px;line-height:1.4;margin-top:8px}
+.bubble{max-width:78%;padding:14px 18px;border-radius:22px;font-size:17px;line-height:1.4;margin-bottom:12px}
+.bot{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-bottom-left-radius:6px}
+.me{background:#00d4ff;color:#07121a;margin-left:auto;border-bottom-right-radius:6px}
+</style></head><body>
+
+<div class="phone" id="analysis"><div class="glowc"></div>
+<div class="statusbar"><span id="a_time">12:35</span><span>5G</span></div>
+<div class="title">Analysis</div>
+<div class="scroll">
+  <div class="card">
+    <div class="row">
+      <div class="ring"><svg width="132" height="132"><circle cx="66" cy="66" r="56" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="10"/><circle id="a_arc" cx="66" cy="66" r="56" fill="none" stroke="#f5a623" stroke-width="10" stroke-linecap="round"/></svg><div class="num"><b id="a_score">53</b><span>Technique<br>Rating</span></div></div>
+      <div style="flex:1">
+        <div class="muted" style="font-weight:700;font-size:19px" id="a_head"></div>
+        <p class="muted" id="a_sub"></p>
+        <p class="muted">Avg Angle <b style="color:#f8fbff" id="a_angle"></b></p>
+      </div>
+    </div>
+    <div class="cta">&#9654;&nbsp; Watch your ride</div>
+    <div style="margin-top:12px">
+      <span class="pill">Best <b class="teal" id="a_best"></b></span>
+      <span class="pill">Fix <b class="amber" id="a_fix"></b></span>
+      <span class="pill"><b id="a_pocket"></b>&nbsp;<span class="muted">in pocket</span></span>
+    </div>
+  </div>
+  <div class="card"><div class="label">What happened</div><p id="a_text"></p></div>
+</div>
+<div class="tabbar"><div class="tab">Profile</div><div class="tab on">Analysis</div><div class="tab">Surf Lab</div><div class="tab">Forecast</div><div class="tab">Cams</div><div class="tab">Chat</div></div>
+</div>
+
+<div class="phone" id="forecast"><div class="glowc"></div>
+<div class="statusbar"><span>12:35</span><span>5G</span></div>
+<div class="title">Forecast</div>
+<div class="scroll">
+  <div class="card">
+    <div class="label" id="f_spot"></div>
+    <div class="row" style="align-items:baseline;margin-top:6px"><div class="big cyan" id="f_wave"></div><div class="muted" style="margin-top:6px" id="f_cond"></div></div>
+    <div style="margin-top:10px"><span class="pill">Water <b id="f_water"></b></span><span class="pill">UV <b id="f_uv"></b></span><span class="pill">Best <b class="cyan" id="f_best"></b></span></div>
+  </div>
+  <div class="card"><div class="label">This week</div><div id="f_week"></div></div>
+</div>
+<div class="tabbar"><div class="tab">Profile</div><div class="tab">Analysis</div><div class="tab">Surf Lab</div><div class="tab on">Forecast</div><div class="tab">Cams</div><div class="tab">Chat</div></div>
+</div>
+
+<div class="phone" id="chat"><div class="glowc"></div>
+<div class="statusbar"><span>12:35</span><span>5G</span></div>
+<div class="title">Surf Chat</div>
+<div class="scroll" id="c_thread" style="padding-top:10px"></div>
+<div class="tabbar"><div class="tab">Profile</div><div class="tab">Analysis</div><div class="tab">Surf Lab</div><div class="tab">Forecast</div><div class="tab">Cams</div><div class="tab on">Chat</div></div>
+</div>
+
+<script>
+const DATA = window.KIT_DATA || {
+  analysis: {time:"12:35", score:53, head:"The ride was good but the score was lowered by penalties",
+    sub:"Technique stood at 78, the fall cost 25", angle:"130.3°", best:"Deepest crouch", fix:"power", pocket:"100%",
+    text:"On the take-off you started strong, but straight legs and poor compression hurt the next phase. After the cutback you reached your deepest crouch, then the knees collapsed inward and the flow dropped."},
+  forecast: {spot:"Tel Aviv - Hilton", wave:"1.2m", cond:"8s period, offshore wind 12 km/h", water:"26°", uv:"6", best:"08:00",
+    week:[["Thu","good","1.2m"],["Fri","good","1.1m"],["Sat","fair","0.8m"],["Sun","flat","0.5m"]]},
+  // me = the surfer (right, cyan), bot = the AI coach (left)
+  chat: [["me","What should I work on from my last ride?"],["bot","Your knees collapse inward on the bottom turn. Drive them out over the board."],["me","Got it, thanks!"]]
+};
+function set(id,v){const e=document.getElementById(id);if(e)e.textContent=v;}
+const a=DATA.analysis;
+set("a_time",a.time);set("a_score",a.score);set("a_head",a.head);set("a_sub",a.sub);
+document.getElementById("a_angle").innerHTML=a.angle;set("a_best",a.best);set("a_fix",a.fix);set("a_pocket",a.pocket);set("a_text",a.text);
+const r=56,c=2*Math.PI*r,arc=document.getElementById("a_arc");arc.style.strokeDasharray=c;arc.style.strokeDashoffset=c*(1-a.score/100);
+const f=DATA.forecast;set("f_spot",f.spot);set("f_wave",f.wave);set("f_cond",f.cond);
+document.getElementById("f_water").innerHTML=f.water;set("f_uv",f.uv);set("f_best",f.best);
+document.getElementById("f_week").innerHTML=f.week.map(([d,q,w])=>`<div class="fcrow"><b>${d}</b><span class="muted">${w}</span><span class="qpill q-${q}">${q}</span></div>`).join("");
+document.getElementById("c_thread").innerHTML=DATA.chat.map(([who,t])=>`<div class="bubble ${who}">${t}</div>`).join("");
+</script>
+</body></html>
