@@ -175,7 +175,7 @@ def build_today(day, outdir, api_file=None):
         f'<div class=k style="font-size:44px">{label(f["date"])} · חוף המרכז</div>'
         '<div class=h style="font-size:130px;margin-top:10px">הים היום</div>'
         f'<div class=h style="font-size:230px;color:{qc};margin-top:10px">{qn}</div>'
-        f'<div style="font-size:52px;margin-top:10px">הכי טוב בסביבות {L(f["best_window"])}</div>'
+        + (f'<div style="font-size:52px;margin-top:10px">הכי טוב בסביבות {L(f["best_window"])}</div>' if f.get("best_window") else '') +
         '<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:60px;margin-top:40px">'
         + cell('גלים', f'{L(wh(f))} מ׳') + cell('פריוד', f'{L(f["wave_period_s"])} שנ׳')
         + cell('רוח', f'{L(f["wind_kmh"])} קמ״ש', wk) + cell('מים', L(str(f['water_temp_c']) + '°C')) +
