@@ -93,7 +93,7 @@ with sync_playwright() as p:
         l2 = f"<br><b>{t['l2']}</b>" if t.get('l2') else ''
         if t.get('hook'):
             img = render(f"<div class=hook>{t['l1']}{l2}</div>", f'title{i}')
-            layers.append((0.0, e, img, 0.0, 0.0, 0))
+            layers.append((s['a'], e, img, 0.0 if s['a'] == 0 else 0.1, 0.0, 0))
         else:
             num = f"<div class=n>{t['n']}</div>" if t.get('n') else ''
             top = f" style='top:{t['top']}px'" if t.get('top') else ''
