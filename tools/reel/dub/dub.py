@@ -129,7 +129,7 @@ while True:
         if ti['a'] <= t < ti['b']:
             ca = ramp(t, ti['a'], ti['b'], fi=0, fo=0.12 if ti['b'] == last_t else 0)
             card(fr, titles[i]['rect'], ca)
-            paste(fr, titles[i]['img'], ca * ramp(t, ti['a'], ti['b'], fi=0.12 if i else 0))
+            paste(fr, titles[i]['img'], ca * ramp(t, ti['a'], ti['b'], fi=0.07 if i else 0))
     for s in subs:
         if s['t'] <= t < s['e']:
             card(fr, s['rect'], 1.0, r=22, tint=0.93); paste(fr, s['img'], 1.0)
