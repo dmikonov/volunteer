@@ -50,7 +50,7 @@ with sync_playwright() as p:
 
     for i, t in enumerate(S['titles']):
         x0, y0, x1, y1 = HOOK if t.get('hook') else STEP
-        fs = 86 if t.get('hook') else 68
+        fs = 88 if t.get('hook') else 74
         num = f"<div class=n>{t['n']}</div>" if t.get('n') else ''
         l2 = f"<br><b>{t['l2']}</b>" if t.get('l2') else ''
         html = f"<div class=card style='left:{x0}px;top:{y0}px;width:{x1 - x0}px;height:{y1 - y0}px'>{num}<div class=t style='font-size:{fs}px'>{t['l1']}{l2}</div></div>"
@@ -89,10 +89,10 @@ def rmask(w, h, r):
 NV = np.array(NAVY, np.float32)
 
 
-def card(fr, rect, al, r=28, tint=0.86):
+def card(fr, rect, al, r=28, tint=0.93):
     x0, y0, x1, y1 = rect; p = 48
     X0, Y0, X1, Y1 = max(0, x0 - p), max(0, y0 - p), min(W, x1 + p), min(H, y1 + p)
-    bl = cv2.GaussianBlur(fr[Y0:Y1, X0:X1], (0, 0), 22)[y0 - Y0:y1 - Y0, x0 - X0:x1 - X0].astype(np.float32)
+    bl = cv2.GaussianBlur(fr[Y0:Y1, X0:X1], (0, 0), 28)[y0 - Y0:y1 - Y0, x0 - X0:x1 - X0].astype(np.float32)
     c = bl * (1 - tint) + NV * tint
     m = rmask(x1 - x0, y1 - y0, r) * al
     reg = fr[y0:y1, x0:x1].astype(np.float32)
@@ -132,7 +132,7 @@ while True:
             paste(fr, titles[i]['img'], ca * ramp(t, ti['a'], ti['b'], fi=0.12 if i else 0))
     for s in subs:
         if s['t'] <= t < s['e']:
-            card(fr, s['rect'], 1.0, r=22, tint=0.88); paste(fr, s['img'], 1.0)
+            card(fr, s['rect'], 1.0, r=22, tint=0.93); paste(fr, s['img'], 1.0)
     enc.stdin.write(fr.tobytes()); n += 1
 enc.stdin.close(); enc.wait(); dec.wait()
 print('frames', n, 'T', T)
