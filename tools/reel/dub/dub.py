@@ -13,7 +13,8 @@ WT = json.load(open(S['wt']))
 VO = {k: t for k, t in S['vo']}
 SRC_T = float(sp.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', S['src']], capture_output=True, text=True).stdout)
 SF, SL = S['slow_from'], S['slow']
-T = round(SF + (SRC_T - SF) / SL, 3)
+SE = S.get('src_end', SRC_T)
+T = round(SF + (SE - SF) / SL, 3)
 STEP = (36, 984, 876, 1238); HOOK = (36, 900, 876, 1250)
 SUB_Y0, SUB_Y1, SUB_MIN = 1316, 1408, 680
 
@@ -54,15 +55,18 @@ with sync_playwright() as p:
         num = f"<div class=n>{t['n']}</div>" if t.get('n') else ''
         l2 = f"<br><b>{t['l2']}</b>" if t.get('l2') else ''
         html = f"<div class=card style='left:{x0}px;top:{y0}px;width:{x1 - x0}px;height:{y1 - y0}px'>{num}<div class=t style='font-size:{fs}px'>{t['l1']}{l2}</div></div>"
-        fn = f'{O}/ov/title{i}.png'; shot(html, fn)
+        pg.set_content(page(html)); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(80)
+        pg.evaluate("() => { const c = document.querySelector('.card'), t = document.querySelector('.t'), n = document.querySelector('.n'); const mx = c.clientWidth - 80 - (n ? 122 : 0); let f = parseFloat(getComputedStyle(t).fontSize); while (t.scrollWidth > mx && f > 40) { f -= 2; t.style.fontSize = f + 'px'; } }")
+        fn = f'{O}/ov/title{i}.png'; pg.screenshot(path=fn, omit_background=True)
         # shrink check: text must fit the card
         titles.append(dict(t, rect=(x0, y0, x1, y1), img=crop_rgba(fn)))
-    for i, (k, wi, txt) in enumerate(S['subs']):
+    for i, (k, wi, txt, *force) in enumerate(S['subs']):
         html = f"<div class=sub style='top:{SUB_Y0}px;height:{SUB_Y1 - SUB_Y0}px;line-height:{SUB_Y1 - SUB_Y0}px'><span id=s>{txt}</span></div>"
         pg.set_content(page(html)); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(60)
         w = pg.evaluate("document.getElementById('s').getBoundingClientRect().width")
         fn = f'{O}/ov/sub{i}.png'; pg.screenshot(path=fn, omit_background=True)
         ws = WT[k]['w']; st = round(VO[k] + ws[min(wi, len(ws) - 1)][1], 3)
+        if force: st = min(st, force[0])
         pw = max(SUB_MIN, int(w) + 70)
         subs.append({'t': st, 'txt': txt, 'rect': (540 - pw // 2, SUB_Y0, 540 + pw // 2, SUB_Y1), 'img': crop_rgba(fn)})
     b.close()
@@ -114,7 +118,7 @@ def ramp(t, a, b, fi=0.12, fo=0.0):
 
 
 vf = (f"[0:v]split[a][b];[a]trim=end={SF},setpts=PTS-STARTPTS[a1];"
-      f"[b]trim=start={SF},setpts=(PTS-STARTPTS)/{SL},minterpolate=fps={FPS}:mi_mode=blend[b1];"
+      f"[b]trim=start={SF}:end={SE},setpts=(PTS-STARTPTS)/{SL},minterpolate=fps={FPS}:mi_mode=blend[b1];"
       f"[a1][b1]concat=n=2:v=1:a=0,scale={W}:{H}:flags=lanczos,unsharp=5:5:0.35,fps={FPS},format=rgb24")
 dec = sp.Popen(['ffmpeg', '-v', 'error', '-i', S['src'], '-filter_complex', vf, '-f', 'rawvideo', '-'], stdout=sp.PIPE)
 enc = sp.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
