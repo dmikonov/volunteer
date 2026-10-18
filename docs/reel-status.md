@@ -7,8 +7,9 @@
 | Ср 21.10 | Грести раньше (2 ИИ-кадра) | reel_paddle_he.mp4, reel_paddle_en.mp4 | review/reel_paddle_*.mp4 | собран 18.10 (v2: свой видеоряд у каждого), ждёт ок |
 
 ## Клипы по рилсам (не повторять в течение недели)
-| Рилс | Реальные клипы | Сгенерированные |
-|---|---|---|
-| 19.10 look | C0188, C0169 | нет |
-| 20.10 knees | C0179 (0.3-3.6, 6.6-8), C0159 (0.3-2.5, 5-6.4) | k_stiff, k_bend, k_legs, k_arms |
-| 21.10 paddle | нет | p1, p2, p_back, p_miss, p_front, p_hand, p_ride, p_end |
+v3 (18.10, после ревизора): реальные клипы 17.10 не используем (повтор с «Как падать» v11 и техника в кадре не совпадала с советом). Все кадры сёрфинга сгенерированы (Z-Image Turbo + Wan 2.2), /s17/gen2/.
+| Рилс | Сгенерированные |
+|---|---|
+| 19.10 look | l_down, l_nose, l_chin, l_along, l_along2, l_turn, l_turn2, l_recap |
+| 20.10 knees | k_stiff, k_low, k_center, k_arms (gen2), k_arms (gen, FLUX) |
+| 21.10 paddle | p_under, p_start, p_long, p_catch, p_ride |
