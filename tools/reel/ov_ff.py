@@ -13,7 +13,7 @@ afc.append(f"{''.join(mixin)}amix=inputs={len(mixin)}:normalize=0:duration=longe
 sp.run(['ffmpeg', '-v', 'error', '-y'] + ains + ['-filter_complex', ';'.join(afc), '-map', '[aout]', '-t', str(T), '-ar', '48000', '-ac', '2', f'{W}/mix.wav'], check=True)
 OUT = f"{W}/{S['out']}"
 # 19.10: overlays in passes of 12 (1 GB RAM sandbox; 48 inputs at once was OOM-killed)
-src = f'{W}/cat.mp4'; CH = 12; parts = [ON[i:i + CH] for i in range(0, len(ON), CH)]
+src = f'{W}/cat.mp4'; CH = 8; parts = [ON[i:i + CH] for i in range(0, len(ON), CH)]
 for pi, part in enumerate(parts):
     last = pi == len(parts) - 1; ins = ['-i', src]; fcs = []; prev = '0:v'
     for i, (kk, a, b) in enumerate(part):
