@@ -10,7 +10,7 @@
   "One. Start paddling before it reaches you.",
   "Two. Long strokes, all the way back to your hips.",
   "Three. When you feel the push, take two more strokes, then pop up.",
-  "By the way, a long period in the SurfTribe forecast means start even earlier.",
+  "By the way, the SurfTribe forecast shows the wave period. When it's long, start even earlier.",
   "Save this for your next session."
  ],
  "titles": {
@@ -63,146 +63,135 @@
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/p2.mp4",
+    "src": "/s17/gen2/p_under.mp4",
     "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.5
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_under.mp4",
+    "a": 2.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.7
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_start.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.7
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_long.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.5,
+    "dd": 2.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_catch.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.5
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_catch.mp4",
+    "a": 0.3,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.6,
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_ride.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "spd": 0.55
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen2/p_start.mp4",
+    "a": 1.6,
     "z": 1.3,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.61,
-     0.61
-    ],
-    "dd": 1.6,
-    "shk": [
-     0.5,
-     1.0
-    ]
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p_back.mp4",
-    "a": 0.0,
-    "z": 1.05,
-    "cx": [
      0.5,
      0.5
     ],
-    "cy": [
-     0.55,
-     0.55
-    ]
-   }
-  ],
-  "L2": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p_miss.mp4",
-    "a": 0.0,
-    "z": 1.05,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.55,
-     0.55
-    ]
-   }
-  ],
-  "L3": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p_front.mp4",
-    "a": 0.0,
-    "z": 1.05,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
-   }
-  ],
-  "L4": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p_hand.mp4",
-    "a": 0.0,
-    "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ],
-    "dd": 0.9
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p1.mp4",
-    "a": 0.0,
-    "z": 1.5,
-    "cx": [
-     0.51,
-     0.51
-    ],
-    "cy": [
-     0.62,
-     0.62
-    ]
-   }
-  ],
-  "L5": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p2.mp4",
-    "a": 1.4,
-    "z": 1.5,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.6,
-     0.6
-    ],
-    "dd": 1.6
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p_ride.mp4",
-    "a": 0.0,
-    "z": 1.05,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
-   }
-  ],
-  "L7": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/p_end.mp4",
-    "a": 0.5,
-    "z": 1.1,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "spd": 0.8
    }
   ],
   "L6": [
@@ -210,18 +199,19 @@
     "kind": "app",
     "src": "/s17/app/forecast_en_period.mp4",
     "a": 2.8,
-    "z": 1.0,
+    "z": 1.7,
     "ay": 0.5,
     "cx": [
-     0.5,
-     0.5
+     0.28,
+     0.28
     ],
     "cy": [
-     0.5,
-     0.5
+     0.42,
+     0.42
     ]
    }
   ]
  },
- "gap": 0.3
+ "gap": 0.3,
+ "app_notitle": true
 }

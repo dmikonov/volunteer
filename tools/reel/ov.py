@@ -29,6 +29,8 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .rc h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:18px;text-align:center}}
 .rc .row{{font-weight:800;font-size:{52 if HE else 44}px;color:#fff;margin:12px 0;white-space:nowrap}}
 </style></head><body>{body}</body></html>"""
+if S.get('app_notitle'):
+    for kk in S.get('app_lines', []): TITLES.pop(kk, None)
 cards = {}
 for l in L:
     if l['k'] == LAST or l['k'] not in TITLES: continue
@@ -71,7 +73,10 @@ for i, (txt, s0, s1) in enumerate(subs):
     tx = re.sub(r'[.,:]$', '', txt.strip())
     for k0, v0 in S.get('sub_replace', {}).items(): tx = tx.replace(k0, v0)
     clean.append((tx, s0, min(nxt, s1 + 0.5, lend)))
-for i, (txt, s0, s1) in enumerate(clean): cards[f'S{i:02d}'] = f"<div class=sub><span>{txt}</span></div>"
+APPW = [(cuts[[l['k'] for l in L].index(kk)], cuts[[l['k'] for l in L].index(kk) + 1]) for kk in S.get('app_lines', [])]
+for i, (txt, s0, s1) in enumerate(clean):
+    st = f" style='top:{S['app_sub_top']}px'" if S.get('app_sub_top') and any(a0 - 0.05 <= s0 < b0 for a0, b0 in APPW) else ''
+    cards[f'S{i:02d}'] = f"<div class=sub{st}><span>{txt}</span></div>"
 os.makedirs(f'{W}/ov', exist_ok=True); pos = {}; boxes = {}
 with sync_playwright() as p:
     br = p.chromium.launch(); pg = br.new_page(viewport={'width': 1080, 'height': 1920})
@@ -93,19 +98,20 @@ for i, l in enumerate(L):
     if i > 0: ON.append(('FLASH', a - 0.02, a + 0.06))
 ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
 for kk in S.get('app_lines', []):
-    i = [l['k'] for l in L].index(kk); ON.append(('MARKA', cuts[i], cuts[i + 1]))
+    i = [l['k'] for l in L].index(kk)
+    if not S.get('app_notitle'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
 pops = [round(cuts[i] + 0.05, 3) for i, l in enumerate(L)]
 ains = ['-i', f'{W}/vo.wav', '-stream_loop', '-1', '-i', f'{A}/music.wav']
 MV = S.get('music_vol', 0.9)  # Dima 18.10: music was inaudible at 0.30
-afc = [f"[1:a]volume={MV},atrim=0:{T},afade=t=in:d=0.3,afade=t=out:st={max(0, T - 1.2):.2f}:d=1.2[mu]", "[0:a]asplit=2[vo][key]", "[mu][key]sidechaincompress=threshold=0.05:ratio=3:attack=20:release=300[md]"]
+afc = [f"[1:a]volume={MV},atrim=0:{T},afade=t=in:d=0.3,afade=t=out:st={max(0, T - 1.2):.2f}:d=1.2[mu]", "[0:a]asplit=2[vo][k0]", f"[k0]apad=whole_dur={T + 1}[key]", "[mu][key]sidechaincompress=threshold=0.05:ratio=3:attack=20:release=300[md]"]  # apad: reviewer 18.10, music was cut 0.6 s early
 mixin = ['[vo]', '[md]']; k = 2
 for fn, times, vol in (('whoosh.wav', wh, 0.55), ('impact.wav', imp, 0.8), ('pop.wav', pops, 0.45)):
     for tt in times:
         ains += ['-i', f'{A}/{fn}']; afc.append(f"[{k}:a]adelay={int(max(0, tt) * 1000)}|{int(max(0, tt) * 1000)},volume={vol}[x{k}]"); mixin.append(f'[x{k}]'); k += 1
-afc.append(f"{''.join(mixin)}amix=inputs={len(mixin)}:normalize=0:duration=first,alimiter=limit=0.89[aout]")
+afc.append(f"{''.join(mixin)}amix=inputs={len(mixin)}:normalize=0:duration=longest,atrim=0:{T},volume=-1.6dB,alimiter=limit=0.84[aout]")  # ~-14.5 LUFS, <= -1.5 dBTP
 sp.run(['ffmpeg', '-v', 'error', '-y'] + ains + ['-filter_complex', ';'.join(afc), '-map', '[aout]', '-t', str(T), '-ar', '48000', '-ac', '2', f'{W}/mix.wav'], check=True)
 ins = ['-i', f'{W}/cat.mp4', '-i', f'{W}/mix.wav']; fcs = []; prev = '0:v'
 for i, (kk, a, b) in enumerate(ON):

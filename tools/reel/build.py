@@ -17,13 +17,15 @@ for i, l in enumerate(L):
         d = (dd if dd else round(D0 / n, 3)) if j < n - 1 else round(D0 - acc, 3); acc += d
         dm = round(d - frz, 3)
         kind = e.get('kind', 'raw'); src = e['src'] if kind != 'raw' else f"/s17/raw/{e['src']}.MP4"
+        if kind == 'raw' and e.get('stab', True) and os.path.exists(f"/s17/raw_stab/{e['src']}.MP4"): src = f"/s17/raw_stab/{e['src']}.MP4"  # Dima 18.10: stabilized
+        spd = e.get('spd', 1.0)  # <1 = slow motion
         a = e['a']
-        if isinstance(a, list): a = round(a[1] - dm, 3)  # ["end", t]
-        sd = dur(src)
-        if a + dm > sd - 0.04:  # not enough source: slow the tail by freezing
-            extra = round(a + dm - (sd - 0.04), 3); dm = round(dm - extra, 3); frz = round(frz + extra, 3)
+        if isinstance(a, list): a = round(a[1] - dm * spd, 3)  # ["end", t]
+        sd = dur(src); sdur = round(dm * spd, 3)
+        if a + sdur > sd - 0.04:  # not enough source: freeze the tail
+            extra = round(a + sdur - (sd - 0.04), 3); sdur = round(sdur - extra, 3); dm = round(sdur / spd, 3); frz = round(d - dm, 3)
         assert a >= 0 and dm > 0.2, (l['k'], e, a, dm, sd)
-        segs.append(dict(e, kind=kind, srcp=src, a=a, d=d, dm=dm, frz=frz, line=l['k'], t0=round(t_out, 3))); t_out += d
+        segs.append(dict(e, kind=kind, srcp=src, a=a, d=d, dm=dm, sdur=sdur, spd=spd, frz=frz, line=l['k'], t0=round(t_out, 3))); t_out += d
 print([(s['line'], s['src'][-12:], s['a'], s['d'], s['t0']) for s in segs])
 os.makedirs(f'{W}/seg', exist_ok=True); lst = []
 for i, s in enumerate(segs):
@@ -35,7 +37,7 @@ for i, s in enumerate(segs):
         A, B = s['shk']; shake = f",crop=1032:1835:'24+22*sin(t*63)*between(t,{A},{B})':'42+20*sin(t*51+1)*between(t,{A},{B})',scale=1080:1920"
     if s['kind'] == 'raw':
         cap = cv2.VideoCapture(s['srcp']); fps = cap.get(5); accm = []
-        for tt in np.linspace(s['a'], s['a'] + s['dm'] - 0.1, 3):
+        for tt in np.linspace(s['a'], s['a'] + s['sdur'] - 0.1, 3):
             cap.set(1, int(tt * fps)); ok, fr = cap.read(); accm.append(cv2.resize(fr, (480, 270)).astype(np.float32).reshape(-1, 3).mean(0))
         b, g, r = np.mean(accm, 0); m = (b + g + r) / 3; wbk = .7 if s['src'] in ('C0170', 'C0175') else .35
         gr, gg, gb = [1 + wbk * (m / c - 1) for c in (r, g, b)]
@@ -47,10 +49,11 @@ for i, s in enumerate(segs):
         pre = ''; post = ''
     # crop to 9:16 window first (sources may be taller than 9:16), then zoom
     ar = "crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))/2':'" + ("(ih-min(ih,iw*16/9))*" + str(s.get('ay', 0.5))) + "',"
-    vf = f"{pre}{ar}crop=iw/{z}:ih/{z}:'{X}':'{Y}',scale=1080:1920:flags=lanczos{post}{shake},fps=25{frz},setsar=1"
-    o = f'{W}/seg/{i:02d}.mp4'; key = json.dumps([s['srcp'], s['a'], s['d'], s['dm'], s['frz'], vf]); kf = o + '.key'
+    slow = f"setpts=(PTS-STARTPTS)/{s['spd']}," if s['spd'] != 1.0 else ''
+    vf = f"{slow}{pre}{ar}crop=iw/{z}:ih/{z}:'{X}':'{Y}',scale=1080:1920:flags=lanczos{post}{shake},fps=25{frz},setsar=1"
+    o = f'{W}/seg/{i:02d}.mp4'; key = json.dumps([s['srcp'], s['a'], s['d'], s['dm'], s['sdur'], s['frz'], vf]); kf = o + '.key'
     if os.path.exists(o) and os.path.exists(kf) and open(kf).read() == key: lst.append(o); continue
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(round(s['dm'] + 0.06, 3)), '-i', s['srcp'], '-vf', vf + f",trim=duration={s['d']}", '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', o], check=True); lst.append(o); open(kf, 'w').write(key)
+    sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(round(s['sdur'] + 0.06, 3)), '-i', s['srcp'], '-vf', vf + f",trim=duration={s['d']}", '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', o], check=True); lst.append(o); open(kf, 'w').write(key)
 open(f'{W}/seg/list.txt', 'w').write(''.join(f"file '{x}'\n" for x in lst))
 sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', f'{W}/cat.mp4'], check=True)
 json.dump(segs, open(f'{W}/segs.json', 'w'))
