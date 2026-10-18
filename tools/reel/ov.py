@@ -39,11 +39,13 @@ for l in L:
     sm = ' sm' if l['k'] in S.get('app_lines', []) else ''
     inner = f"{num}<div class='plate{sm}'>{icon}{a}<br><span style='color:{acc}'>{b}</span></div>"
     for tag, sc in (('a', 1.22), ('b', 0.95), ('c', 1.0)):
-        cards[f"T{l['k']}{tag}"] = f"<div class=blk style='transform:scale({sc})'>{inner}</div>"
+        top = f"top:{S.get('app_top', 330)}px;" if sm else ''
+        cards[f"T{l['k']}{tag}"] = f"<div class=blk style='{top}transform:scale({sc})'>{inner}</div>"
 rows = ''.join(f"<div class=row>{CK}&nbsp;&nbsp;{x}</div>" for x in RECAP[1])
 for tag, sc in (('a', 1.15), ('b', 0.97), ('c', 1.0)):
     cards[f'RECAP{tag}'] = f"<div class=rc style='transform:scale({sc});transform-origin:50% 30%'><div class=box><h>{RECAP[0]}</h>{rows}</div></div>"
 cards['MARK'] = f"<div class=mark><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
+cards['MARKA'] = f"<div class=mark style='top:{S.get('app_top', 330) - 90}px'><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
 cards['FLASH'] = "<div style='position:absolute;inset:0;background:rgba(255,255,255,.85)'></div>"
 STOP = {'עם', 'על', 'את', 'של', 'לפני', 'the', 'a', 'to', 'of', 'with', 'your', 'from', 'and', 'at', 'over', 'when', 'you', 'is', 'off', 'on', 'in', 'by'}
 subs = []
@@ -91,7 +93,7 @@ for i, l in enumerate(L):
     if i > 0: ON.append(('FLASH', a - 0.02, a + 0.06))
 ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
 for kk in S.get('app_lines', []):
-    i = [l['k'] for l in L].index(kk); ON.append(('MARK', cuts[i], cuts[i + 1]))
+    i = [l['k'] for l in L].index(kk); ON.append(('MARKA', cuts[i], cuts[i + 1]))
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
