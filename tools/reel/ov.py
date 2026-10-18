@@ -108,7 +108,7 @@ for i, (kk, a, b) in enumerate(ON):
     ins += ['-loop', '1', '-i', f'{W}/ov/{kk}.png']
     fcs.append(f"[{prev}][{i + 2}:v]overlay={pos[kk][0]}:{pos[kk][1]}:enable='between(t,{a:.3f},{b - 0.001:.3f})':shortest=1[v{i}]"); prev = f'v{i}'
 OUT = f"{W}/{S['out']}"
-sp.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-filter_complex', ';'.join(fcs), '-map', f'[{prev}]', '-map', '1:a', '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-maxrate', '18M', '-bufsize', '36M', '-pix_fmt', 'yuv420p', '-r', '25', '-c:a', 'aac', '-b:a', '192k', '-t', str(T), '-movflags', '+faststart', OUT], check=True)
+sp.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-filter_complex', ';'.join(fcs), '-map', f'[{prev}]', '-map', '1:a', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-maxrate', '18M', '-bufsize', '36M', '-pix_fmt', 'yuv420p', '-r', '25', '-c:a', 'aac', '-b:a', '192k', '-t', str(T), '-movflags', '+faststart', OUT], check=True)
 r = sp.run(['ffmpeg', '-hide_banner', '-i', OUT, '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
 I = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', r)[-1]); g = round(-14 - I, 2)
 if abs(g) > 0.2:
