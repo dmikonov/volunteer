@@ -153,7 +153,7 @@ m = json.loads(r[r.rindex('{'):r.rindex('}') + 1])
 ln = f"loudnorm=I=-15:TP=-2:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/vo_raw.wav', '-af', f'{ln},aresample=48000', '-ac', '2', f'{O}/vo.wav'], check=True)
 G = S['music_gain_db']
-afc = (f"[1:a]aresample=48000,volume={G}dB,apad=whole_dur={T + 1},atrim=0:{T},afade=t=out:st={T - 1.1:.2f}:d=1.1[mu];"
+afc = (f"[1:a]aresample=48000,asplit[m1][m2];[m1][m2]acrossfade=d=0.4[mm];[mm]volume={G}dB,apad=whole_dur={T + 1},atrim=0:{T},afade=t=out:st={T - 1.1:.2f}:d=1.1[mu];"
        "[0:a]asplit=2[vo][k0];"
        f"[mu][k0]sidechaincompress=threshold=0.06:ratio=2.5:attack=25:release=350,apad[md];"
        f"[vo][md]amix=inputs=2:normalize=0:duration=first,atrim=0:{T},volume=-1.5dB,alimiter=limit=0.84[aout]")
