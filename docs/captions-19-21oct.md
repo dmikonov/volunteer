@@ -48,7 +48,7 @@ HE:
 1. מתחילים לחתור לפני שהגל מגיע
 2. חתירות ארוכות, עד הירך
 3. כשהגל דוחף, עוד שתי חתירות
-בתחזית של SurfTribe רואים את זמן הגל. כשהוא ארוך, מתחילים מוקדם יותר.
+את זמן הגל בודקים בתחזית של SurfTribe. כשהוא ארוך, מתחילים עוד מוקדם יותר.
 שמרו את זה לגלישה הבאה.
 הקריינות וכל שוטי הגלישה נוצרו ב-AI.
 #גלישה #גלישתגלים #טיפיםלגלישה #surfing #SurfTribe
@@ -58,7 +58,7 @@ You're not missing waves. You're paddling too late.
 1. Start paddling before the wave reaches you
 2. Long strokes, all the way back to your hips
 3. When you feel the push, take two more strokes
-The SurfTribe forecast shows the wave period. When it's long, start even earlier.
+Check the wave period in the SurfTribe forecast. When it's long, start even earlier.
 Save this for your next session.
 Voiceover and all surf shots made with AI.
 #surfing #surftips #learntosurf #beginnersurfer #SurfTribe
