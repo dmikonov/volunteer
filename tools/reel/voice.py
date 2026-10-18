@@ -6,7 +6,7 @@ def dur(f):
     r = sp.run(['ffmpeg', '-hide_banner', '-i', f], capture_output=True, text=True).stderr
     h, m, s = r.split('Duration: ')[1].split(',')[0].split(':'); return int(h) * 3600 + int(m) * 60 + float(s)
 async def tts():
-    v, r = VO[LANG]; out = []
+    v, r = VO[LANG]; r = S.get('rate', r); out = []
     for i, t in enumerate(S['lines'], 1):
         try: c = edge_tts.Communicate(t, v, rate=r, boundary='WordBoundary')
         except TypeError: c = edge_tts.Communicate(t, v, rate=r)
