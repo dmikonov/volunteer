@@ -1,0 +1,209 @@
+{
+ "lang": "en",
+ "out": "reel_look_en.mp4",
+ "app_lines": [
+  "L6"
+ ],
+ "lines": [
+  "It's not your legs. You're looking at them.",
+  "Your board goes where your eyes go. Look down, and you go down.",
+  "One. Pop up and lift your chin right away.",
+  "Two. Look along the wave, where you want to ride.",
+  "Three. Turn your shoulders that way, and the board follows.",
+  "By the way, the SurfTribe breakdown shows where you were looking.",
+  "Save this for your next session."
+ ],
+ "titles": {
+  "L1": [
+   "NOT YOUR LEGS",
+   "YOUR EYES",
+   null,
+   "X"
+  ],
+  "L2": [
+   "BOARD GOES",
+   "WHERE YOU LOOK",
+   null,
+   "WARN"
+  ],
+  "L3": [
+   "CHIN UP",
+   "RIGHT AWAY",
+   "1",
+   "CK"
+  ],
+  "L4": [
+   "LOOK ALONG",
+   "THE WAVE",
+   "2",
+   "CK"
+  ],
+  "L5": [
+   "SHOULDERS",
+   "LEAD THE WAY",
+   "3",
+   "CK"
+  ],
+  "L6": [
+   "SURFTRIBE SHOWS",
+   "WHERE YOU LOOK",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SAVE FOR NEXT SESSION",
+  [
+   "Chin up right away",
+   "Look along the wave",
+   "Shoulders lead the way"
+  ]
+ ],
+ "plan": {
+  "L1": [
+   {
+    "src": "C0188",
+    "a": 11.9,
+    "z": 1.3,
+    "cx": [
+     0.52,
+     0.58
+    ],
+    "cy": [
+     0.45,
+     0.42
+    ],
+    "shk": [
+     0.3,
+     0.95
+    ]
+   },
+   {
+    "src": "C0188",
+    "a": 12.25,
+    "z": 1.7,
+    "cx": [
+     0.58,
+     0.62
+    ],
+    "cy": [
+     0.42,
+     0.42
+    ],
+    "shk": [
+     0.3,
+     0.8
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "src": "C0170",
+    "a": [
+     "end",
+     1.75
+    ],
+    "frz": 0.6,
+    "z": 1.2,
+    "cx": [
+     0.52,
+     0.55
+    ],
+    "cy": [
+     0.43,
+     0.42
+    ]
+   },
+   {
+    "src": "C0175",
+    "a": 1.4,
+    "z": 1.3,
+    "cx": [
+     0.6,
+     0.65
+    ],
+    "cy": [
+     0.42,
+     0.4
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "src": "C0188",
+    "a": 1.0,
+    "z": 1.35,
+    "cx": [
+     0.45,
+     0.45
+    ],
+    "cy": [
+     0.53,
+     0.53
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "src": "C0188",
+    "a": 5.0,
+    "z": 1.35,
+    "cx": [
+     0.66,
+     0.66
+    ],
+    "cy": [
+     0.56,
+     0.56
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "src": "C0188",
+    "a": 8.0,
+    "z": 1.3,
+    "cx": [
+     0.55,
+     0.55
+    ],
+    "cy": [
+     0.52,
+     0.52
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "src": "C0169",
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.38,
+     0.38
+    ],
+    "cy": [
+     0.58,
+     0.58
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/app/ScreenRecording_10-12-2026_13-42-15_1.mp4",
+    "a": 30.2,
+    "z": 1.35,
+    "ay": 0.61,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ }
+}

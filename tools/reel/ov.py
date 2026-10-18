@@ -66,7 +66,9 @@ clean = []
 for i, (txt, s0, s1) in enumerate(subs):
     nxt = subs[i + 1][1] if i + 1 < len(subs) else s1 + 0.4
     lend = min([c for c in cuts if c > s0 + 0.05] + [T]) - 0.04
-    clean.append((re.sub(r'[.,:]$', '', txt.strip()), s0, min(nxt, s1 + 0.5, lend)))
+    tx = re.sub(r'[.,:]$', '', txt.strip())
+    for k0, v0 in S.get('sub_replace', {}).items(): tx = tx.replace(k0, v0)
+    clean.append((tx, s0, min(nxt, s1 + 0.5, lend)))
 for i, (txt, s0, s1) in enumerate(clean): cards[f'S{i:02d}'] = f"<div class=sub><span>{txt}</span></div>"
 os.makedirs(f'{W}/ov', exist_ok=True); pos = {}; boxes = {}
 with sync_playwright() as p:

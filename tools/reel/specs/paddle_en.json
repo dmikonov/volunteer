@@ -1,0 +1,192 @@
+{
+ "lang": "en",
+ "out": "reel_paddle_en.mp4",
+ "app_lines": [
+  "L6"
+ ],
+ "lines": [
+  "You're not missing waves. You're paddling too late.",
+  "If the wave is already under you, it just rolls past.",
+  "One. Start paddling before it reaches you.",
+  "Two. Long strokes, all the way back to your hips.",
+  "Three. When you feel the push, take two more strokes, then pop up.",
+  "By the way, a long period in the SurfTribe forecast means start even earlier.",
+  "Save this for your next session."
+ ],
+ "titles": {
+  "L1": [
+   "YOU PADDLE",
+   "TOO LATE",
+   null,
+   "X"
+  ],
+  "L2": [
+   "THE WAVE",
+   "ROLLS PAST",
+   null,
+   "WARN"
+  ],
+  "L3": [
+   "START",
+   "BEFORE IT HITS",
+   "1",
+   "CK"
+  ],
+  "L4": [
+   "LONG",
+   "STROKES",
+   "2",
+   "CK"
+  ],
+  "L5": [
+   "TWO MORE",
+   "STROKES",
+   "3",
+   "CK"
+  ],
+  "L6": [
+   "LONG PERIOD",
+   "START EARLIER",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SAVE FOR NEXT SESSION",
+  [
+   "Start before the wave",
+   "Long strokes",
+   "Two more strokes"
+  ]
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/p2.mp4",
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.62
+    ],
+    "shk": [
+     0.5,
+     1.0
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "src": "C0175",
+    "a": 2.6,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/p2.mp4",
+    "a": 0.6,
+    "z": 1.5,
+    "cx": [
+     0.55,
+     0.55
+    ],
+    "cy": [
+     0.64,
+     0.66
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/p1.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cx": [
+     0.5,
+     0.52
+    ],
+    "cy": [
+     0.62,
+     0.62
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/p1.mp4",
+    "a": 1.5,
+    "z": 1.4,
+    "cx": [
+     0.55,
+     0.58
+    ],
+    "cy": [
+     0.62,
+     0.62
+    ]
+   },
+   {
+    "src": "C0188",
+    "a": 0.3,
+    "z": 1.35,
+    "cx": [
+     0.45,
+     0.45
+    ],
+    "cy": [
+     0.53,
+     0.53
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "src": "C0188",
+    "a": 3.4,
+    "z": 1.35,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/app/forecast_en_period.mp4",
+    "a": 2.8,
+    "z": 1.0,
+    "ay": 0.5,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ }
+}

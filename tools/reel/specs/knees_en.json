@@ -1,0 +1,210 @@
+{
+ "lang": "en",
+ "out": "reel_knees_en.mp4",
+ "app_lines": [
+  "L6"
+ ],
+ "lines": [
+  "Stop standing up straight. That's why you fall.",
+  "Straight legs can't absorb anything, so every little bump throws you off.",
+  "One. Bend your knees, like you're sitting on a low chair.",
+  "Two. Keep your weight over the middle of the board.",
+  "Three. Arms out wide, low and relaxed.",
+  "By the way, SurfTribe shows your knee angle on every wave.",
+  "Save this for your next session."
+ ],
+ "titles": {
+  "L1": [
+   "STOP STANDING",
+   "STRAIGHT",
+   null,
+   "X"
+  ],
+  "L2": [
+   "STRAIGHT LEGS",
+   "CAN'T ABSORB",
+   null,
+   "WARN"
+  ],
+  "L3": [
+   "BEND",
+   "YOUR KNEES",
+   "1",
+   "CK"
+  ],
+  "L4": [
+   "WEIGHT",
+   "IN THE MIDDLE",
+   "2",
+   "CK"
+  ],
+  "L5": [
+   "ARMS OUT",
+   "LOW, RELAXED",
+   "3",
+   "CK"
+  ],
+  "L6": [
+   "SURFTRIBE SHOWS",
+   "YOUR KNEE ANGLE",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SAVE FOR NEXT SESSION",
+  [
+   "Bend your knees",
+   "Weight in the middle",
+   "Arms out, relaxed"
+  ]
+ ],
+ "plan": {
+  "L1": [
+   {
+    "src": "C0179",
+    "a": 6.6,
+    "z": 1.5,
+    "cx": [
+     0.58,
+     0.6
+    ],
+    "cy": [
+     0.42,
+     0.4
+    ],
+    "dd": 1.4
+   },
+   {
+    "src": "C0169",
+    "a": 5.2,
+    "z": 1.3,
+    "cx": [
+     0.45,
+     0.48
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ],
+    "shk": [
+     0.2,
+     0.8
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "src": "C0170",
+    "a": [
+     "end",
+     1.75
+    ],
+    "frz": 0.6,
+    "z": 1.2,
+    "cx": [
+     0.52,
+     0.55
+    ],
+    "cy": [
+     0.43,
+     0.42
+    ]
+   },
+   {
+    "src": "C0188",
+    "a": 12.2,
+    "z": 2.1,
+    "cx": [
+     0.6,
+     0.63
+    ],
+    "cy": [
+     0.44,
+     0.44
+    ],
+    "shk": [
+     0.15,
+     0.6
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "src": "C0188",
+    "a": 2.0,
+    "z": 1.6,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "src": "C0188",
+    "a": 6.0,
+    "z": 1.5,
+    "cx": [
+     0.66,
+     0.66
+    ],
+    "cy": [
+     0.56,
+     0.56
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "src": "C0169",
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.38,
+     0.38
+    ],
+    "cy": [
+     0.58,
+     0.58
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "src": "C0179",
+    "a": 0.0,
+    "z": 1.4,
+    "cx": [
+     0.48,
+     0.48
+    ],
+    "cy": [
+     0.53,
+     0.53
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/app/ScreenRecording_10-12-2026_13-42-15_1.mp4",
+    "a": 54.3,
+    "z": 1.15,
+    "ay": 0.45,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ }
+}
