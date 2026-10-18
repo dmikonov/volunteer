@@ -1,6 +1,6 @@
 # SurfTribe: сценарии рилс на две недели, 19.10-01.11.2026 (HE + EN)
 
-Черновик от 18.10 (воскресенье). Дни недели сверены по календарю. Сегодня, 18.10, уже вышел «Как падать» v11, поэтому серия советов сдвинута на один день.
+Черновик от 18.10 (воскресенье). Дни недели сверены по календарю. Сегодня, 18.10, уже вышел «Как падать» v11, поэтому серия советов сдвинута на один день. 18.10: «Колени» и «Грести раньше» поменяны местами (для гребли нет своих кадров, она собрана с ИИ-кадрами).
 
 ## Правила для всех выпусков
 - Каждый день один рилс в двух аккаунтах. Сначала пробный рилс (TRIAL_REEL). Публикация только после OK Димы на конкретную версию.
@@ -22,8 +22,8 @@
 | Дата | Тема (№ в Карте тем) | Хук EN, балл | Карточка HE | Карточка EN | Кадры | Интеграция |
 |---|---|---|---|---|---|---|
 | Пн 19.10 | Смотри вперёд, не на ноги (2) | It's not your legs. You're looking at them. 81.4 | זה לא הרגליים / זה המבט | NOT YOUR LEGS / YOUR EYES | 17.10: C0179, C0188 | разбор: одно исправление |
-| Вт 20.10 | Начинай грести раньше (3) | You're not missing waves. You're paddling too late. 77.8 | חותרים מאוחר מדי | YOU PADDLE TOO LATE | 17.10, проверить, есть ли гребля | прогноз: волна, период, ветер |
-| Ср 21.10 | Согнутые колени | Stop standing up straight. That's why you fall. 81.4 | די לעמוד ישר | STOP STANDING STRAIGHT | 17.10: C0188, C0179 | угол колена |
+| Вт 20.10 | Согнутые колени | Stop standing up straight. That's why you fall. 81.4 | די לעמוד ישר | STOP STANDING STRAIGHT | 17.10: C0188, C0179 | угол колена |
+| Ср 21.10 | Начинай грести раньше (3) | You're not missing waves. You're paddling too late. 77.8 | חותרים מאוחר מדי | YOU PADDLE TOO LATE | 17.10, проверить, есть ли гребля | прогноз: волна, период, ветер |
 | Чт 22.10 | Отбойное течение (15) | Stop paddling into the calm gap. It can be a rip current. 51.0 | המים השקטים / זרם סחף | THE CALM GAP / RIP CURRENT | широкий план моря, нужен до 21.10 | прогноз (мягкая подводка, внутри шага 1) |
 | Пт 23.10 | Первый день в пене (16) | Stop paddling out on day one. The foam is where you learn. 81.4 | יום ראשון? / רק בקצף | DAY ONE / STAY IN THE FOAM | 17.10: C0159, C0179 | прогноз: высота волны (внутри шага) |
 | Сб 24.10 | 10 минут смотреть на море (7) | Stop guessing where to paddle out. Watch the sea for 10 minutes first. 86.8 | 10 דקות / על החול | 10 MINUTES / ON THE SAND | тот же широкий план, что 22.10 | прогноз: лучшее окно |
@@ -51,17 +51,17 @@
 - Дима подтвердил 18.10: разбор видит положение головы. Интеграция внутри шага: разбор покажет, куда ты смотришь.
 - Запись экрана: ScreenRecording_09-28-2026_10-56-35_1_2 (HE), в ней приложение само показывает этот совет: «הסתכל לאן אתה רוצה להגיע, לא על הרגליים». Для EN: ScreenRecording_10-12-2026_13-42-15_1 (повтор со скелетом).
 
-### Вт 20.10. Начинай грести раньше
+### Вт 20.10. Согнутые колени
+- HE: די לעמוד ישר. בגלל זה אתם נופלים. / רגליים ישרות לא בולמות, וכל תנועה של הגל מפילה. / אחת. ברכיים כפופות, כמו לשבת על כיסא נמוך. / שתיים. המשקל באמצע הגלשן. / שלוש. ידיים לצדדים, נמוכות ורפויות. / ב-SurfTribe רואים את זווית הברך בכל גל. שמרו את זה.
+- EN: Stop standing up straight. That's why you fall. / Straight legs can't absorb anything, so every little bump throws you off. / One. Bend your knees, like you're sitting on a low chair. / Two. Keep your weight over the middle of the board. / Three. Arms out wide, low and relaxed. / SurfTribe shows your knee angle on every wave. Save this.
+- Кадры: C0188 до падения (проверить, видно ли прямые ноги), C0179 в стойке; стрелка на колене.
+
+### Ср 21.10. Начинай грести раньше
 - HE: אתם לא מפספסים גלים. אתם מתחילים לחתור מאוחר מדי. / כשהגל כבר מתחתיכם, הוא עובר אתכם. / אחת. מתחילים לחתור לפני שהגל מגיע. / שתיים. חתירות ארוכות, עד הירך. / שלוש. כשהגל דוחף, עוד שתי חתירות. / אגב, כשבתחזית של SurfTribe הפריוד ארוך, מתחילים עוד מוקדם יותר. שמרו את זה.
 - EN: You're not missing waves. You're paddling too late. / If the wave is already under you, it just rolls past. / One. Start paddling before it reaches you. / Two. Long strokes, all the way back to your hips. / Three. When you feel the push, take two more strokes, then pop up. / By the way, a long period in the SurfTribe forecast means start even earlier. Save this.
 - Кадры: нужна гребля перед волной. Проверить, есть ли она в разрешённых клипах. Если нет, меняем местами с 25.10 «Одна вещь за раз», а греблю снимаем 24.10.
 - Проверить: «два гребка после толчка» как общий совет новичку.
 - Дима подтвердил 18.10: при длинном периоде волна подходит быстрее, грести начинать раньше. Прогноз (период) в интеграции.
-
-### Ср 21.10. Согнутые колени
-- HE: די לעמוד ישר. בגלל זה אתם נופלים. / רגליים ישרות לא בולמות, וכל תנועה של הגל מפילה. / אחת. ברכיים כפופות, כמו לשבת על כיסא נמוך. / שתיים. המשקל באמצע הגלשן. / שלוש. ידיים לצדדים, נמוכות ורפויות. / ב-SurfTribe רואים את זווית הברך בכל גל. שמרו את זה.
-- EN: Stop standing up straight. That's why you fall. / Straight legs can't absorb anything, so every little bump throws you off. / One. Bend your knees, like you're sitting on a low chair. / Two. Keep your weight over the middle of the board. / Three. Arms out wide, low and relaxed. / SurfTribe shows your knee angle on every wave. Save this.
-- Кадры: C0188 до падения (проверить, видно ли прямые ноги), C0179 в стойке; стрелка на колене.
 
 ### Чт 22.10. Отбойное течение
 - HE: די לחתור לפער השקט. זה יכול להיות זרם סחף. / אין שם שבירה, והמים זזים החוצה. / אחת. בודקים את התחזית ב-SurfTribe, ואז מסתכלים על המים עשר דקות. / שתיים. אם הזרם מושך, נשארים על הגלשן ולא נלחמים. / שלוש. חותרים במקביל לחוף. / שלחו את זה לחבר שמתחיל.
