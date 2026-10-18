@@ -1,0 +1,209 @@
+{
+ "lang": "en",
+ "out": "reel_rip_en.mp4",
+ "app_lines": [
+  "L6"
+ ],
+ "lines": [
+  "Stop paddling into the calm gap. It can be a rip current.",
+  "No waves break. The water flows out.",
+  "One. Watch the water for ten minutes first.",
+  "Two. Caught in it? Stay on your board. Don't fight it.",
+  "Three. Paddle parallel to the beach. Raise a hand.",
+  "By the way, SurfTribe turns one filmed wave into one fix.",
+  "Send this to a friend who's just starting."
+ ],
+ "titles": {
+  "L1": [
+   "THE CALM GAP",
+   "CAN BE A RIP",
+   null,
+   "X"
+  ],
+  "L2": [
+   "NO WAVES BREAK",
+   "WATER FLOWS OUT",
+   null,
+   "WARN"
+  ],
+  "L3": [
+   "WATCH",
+   "10 MINUTES",
+   "1",
+   "CK"
+  ],
+  "L4": [
+   "STAY ON",
+   "YOUR BOARD",
+   "2",
+   "CK"
+  ],
+  "L5": [
+   "PADDLE PARALLEL",
+   "RAISE A HAND",
+   "3",
+   "CK"
+  ],
+  "L6": [
+   "ONE WAVE",
+   "ONE FIX",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SEND TO A FRIEND",
+  [
+   "Watch 10 minutes",
+   "Stay on your board",
+   "Paddle parallel"
+  ]
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_hook.mp4",
+    "a": 0.0,
+    "z": 1.12,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.7
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_wide.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.42
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_wide.mp4",
+    "a": 1.2,
+    "z": 1.45,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.36,
+     0.3
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_watch.mp4",
+    "a": 0.2,
+    "z": 1.12,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_stay.mp4",
+    "a": 0.0,
+    "z": 1.25,
+    "cx": [
+     0.55,
+     0.55
+    ],
+    "cy": [
+     0.56,
+     0.56
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_par.mp4",
+    "a": 0.0,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ],
+    "dd": 1.7
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_hand.mp4",
+    "a": 0.2,
+    "z": 1.15,
+    "cx": [
+     0.55,
+     0.55
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/app/ScreenRecording_09-26-2026_17-24-44_1.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "ay": 0.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/r_wide.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ },
+ "gap": 0.3,
+ "app_notitle": true
+}
