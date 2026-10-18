@@ -39,7 +39,7 @@ for i, s in enumerate(segs):
             cap.set(1, int(tt * fps)); ok, fr = cap.read(); accm.append(cv2.resize(fr, (480, 270)).astype(np.float32).reshape(-1, 3).mean(0))
         b, g, r = np.mean(accm, 0); m = (b + g + r) / 3; wbk = .7 if s['src'] in ('C0170', 'C0175') else .35
         gr, gg, gb = [1 + wbk * (m / c - 1) for c in (r, g, b)]
-        eq = 'eq=contrast=1.18:saturation=1.12:gamma=0.84:brightness=-0.03' if s['src'] in ('C0170', 'C0175') else ('eq=contrast=1.12:saturation=1.15:gamma=0.92' if m > 200 else 'eq=contrast=1.08:saturation=1.15:gamma=0.98')
+        eq = 'eq=contrast=1.32:saturation=1.22:gamma=0.72:brightness=-0.07' if s['src'] in ('C0170', 'C0175') else ('eq=contrast=1.12:saturation=1.15:gamma=0.92' if m > 200 else 'eq=contrast=1.08:saturation=1.15:gamma=0.98')
         pre = 'transpose=1,'; post = f",colorchannelmixer=rr={gr:.3f}:gg={gg:.3f}:bb={gb:.3f},{eq}"
     elif s['kind'] == 'gen':
         pre = ''; post = ',eq=contrast=1.04:saturation=1.05'
@@ -51,6 +51,6 @@ for i, s in enumerate(segs):
     o = f'{W}/seg/{i:02d}.mp4'
     sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(round(s['dm'] + 0.06, 3)), '-i', s['srcp'], '-vf', vf + f",trim=duration={s['d']}", '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', o], check=True); lst.append(o)
 open(f'{W}/seg/list.txt', 'w').write(''.join(f"file '{x}'\n" for x in lst))
-sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-c', 'copy', f'{W}/cat.mp4'], check=True)
+sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', f'{W}/cat.mp4'], check=True)
 json.dump(segs, open(f'{W}/segs.json', 'w'))
 print('cat', dur(f'{W}/cat.mp4'), 'T', T)
