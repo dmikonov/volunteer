@@ -43,7 +43,7 @@ for i, s in enumerate(shots):
     slow = f"setpts=(PTS-STARTPTS)/{spd}," if spd < 0.999 else 'setpts=PTS-STARTPTS,'
     fn = f'{O}/sh/{i:02d}.mp4'
     sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', f"{s['ss']:.3f}", '-i', src, '-t', f'{need * spd + 0.1:.3f}', '-an',
-            '-vf', f"{slow}{crop},scale={W}:{H}:flags=lanczos,fps={FPS},setpts=PTS-STARTPTS" + (',' + s['eq'] if s.get('eq') else ''), '-frames:v', str(s['nf']),
+            '-vf', f"{slow}{crop},scale={W}:{H}:flags=lanczos,fps={FPS},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration=0.5" + (',' + s['eq'] if s.get('eq') else ''), '-frames:v', str(s['nf']),
             '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '14', '-pix_fmt', 'yuv420p', fn], check=True)
     parts.append(fn)
     print('shot', i, s.get('key'), s['a'], s['d'], 'spd', round(spd, 2))
