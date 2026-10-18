@@ -98,8 +98,9 @@ ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
 pops = [round(cuts[i] + 0.05, 3) for i, l in enumerate(L)]
-ains = ['-i', f'{W}/vo.wav', '-i', f'{A}/music.wav']
-afc = ["[1:a]volume=0.30,atrim=0:" + str(T) + "[mu]", "[0:a]asplit=2[vo][key]", "[mu][key]sidechaincompress=threshold=0.03:ratio=5:attack=15:release=350[md]"]
+ains = ['-i', f'{W}/vo.wav', '-stream_loop', '-1', '-i', f'{A}/music.wav']
+MV = S.get('music_vol', 0.9)  # Dima 18.10: music was inaudible at 0.30
+afc = [f"[1:a]volume={MV},atrim=0:{T},afade=t=in:d=0.3,afade=t=out:st={max(0, T - 1.2):.2f}:d=1.2[mu]", "[0:a]asplit=2[vo][key]", "[mu][key]sidechaincompress=threshold=0.05:ratio=3:attack=20:release=300[md]"]
 mixin = ['[vo]', '[md]']; k = 2
 for fn, times, vol in (('whoosh.wav', wh, 0.55), ('impact.wav', imp, 0.8), ('pop.wav', pops, 0.45)):
     for tt in times:
