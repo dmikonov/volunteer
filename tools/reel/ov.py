@@ -106,7 +106,7 @@ imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
 pops = [round(cuts[i] + 0.05, 3) for i, l in enumerate(L)]
 ains = ['-i', f'{W}/vo.wav', '-stream_loop', '-1', '-i', f'{A}/music.wav']
 MV = S.get('music_vol', 0.9)  # Dima 18.10: music was inaudible at 0.30
-afc = [f"[1:a]volume={MV},atrim=0:{T},afade=t=in:d=0.3,afade=t=out:st={max(0, T - 1.2):.2f}:d=1.2[mu]", "[0:a]asplit=2[vo][k0]", f"[k0]apad=whole_dur={T + 1}[key]", "[mu][key]sidechaincompress=threshold=0.05:ratio=3:attack=20:release=300[md]"]  # apad: reviewer 18.10, music was cut 0.6 s early
+afc = [f"[1:a]volume={MV},atrim=0:{T + 1.5},afade=t=in:d=0.3,afade=t=out:st={max(0, T - 1.2):.2f}:d=1.2[mu]", "[0:a]asplit=2[vo][k0]", f"[k0]apad=whole_dur={T + 2}[key]", f"[mu][key]sidechaincompress=threshold=0.05:ratio=3:attack=20:release=300,atrim=0:{T}[md]"]  # sidechain output ends ~0.65 s early: feed 1.5 s extra, trim after (reviewer 18.10)  # apad: reviewer 18.10, music was cut 0.6 s early
 mixin = ['[vo]', '[md]']; k = 2
 for fn, times, vol in (('whoosh.wav', wh, 0.55), ('impact.wav', imp, 0.8), ('pop.wav', pops, 0.45)):
     for tt in times:
