@@ -21,11 +21,13 @@ def dur(f):
 
 # ---------- shots (cut ~0.08 s before the word that starts each one) ----------
 shots = S['shots']
-for i, s in enumerate(shots):
-    s['a'] = 0.0 if i == 0 else round(wt(s['at']) - 0.08, 3)
+T = round(round(T * FPS) / FPS, 4)
+for i, s in enumerate(shots):   # boundaries on the frame grid so titles and cuts stay locked
+    s['a'] = 0.0 if i == 0 else round(round((wt(s['at']) - 0.08) * FPS) / FPS, 4)
 for i, s in enumerate(shots):
     s['b'] = shots[i + 1]['a'] if i + 1 < len(shots) else T
-    s['d'] = round(s['b'] - s['a'], 3)
+    s['nf'] = int(round((s['b'] - s['a']) * FPS))
+    s['d'] = round(s['nf'] / FPS, 4)
     if s['ss'] == 'cont': s['ss'] = round(shots[i - 1]['ss'] + shots[i - 1]['d'], 3)
 parts = []
 for i, s in enumerate(shots):
@@ -41,7 +43,7 @@ for i, s in enumerate(shots):
     slow = f"setpts=(PTS-STARTPTS)/{spd}," if spd < 0.999 else 'setpts=PTS-STARTPTS,'
     fn = f'{O}/sh/{i:02d}.mp4'
     sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', f"{s['ss']:.3f}", '-i', src, '-t', f'{need * spd + 0.1:.3f}', '-an',
-            '-vf', f"{slow}{crop},scale={W}:{H}:flags=lanczos,fps={FPS},trim=duration={s['d']:.3f},setpts=PTS-STARTPTS" + (',' + s['eq'] if s.get('eq') else ''),
+            '-vf', f"{slow}{crop},scale={W}:{H}:flags=lanczos,fps={FPS},setpts=PTS-STARTPTS" + (',' + s['eq'] if s.get('eq') else ''), '-frames:v', str(s['nf']),
             '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '14', '-pix_fmt', 'yuv420p', fn], check=True)
     parts.append(fn)
     print('shot', i, s.get('key'), s['a'], s['d'], 'spd', round(spd, 2))
@@ -94,7 +96,8 @@ with sync_playwright() as p:
             layers.append((0.0, e, img, 0.0, 0.0, 0))
         else:
             num = f"<div class=n>{t['n']}</div>" if t.get('n') else ''
-            img = render(f"<div class=pl>{num}<div class=t>{t['l1']}{l2}</div></div>", f'title{i}')
+            top = f" style='top:{t['top']}px'" if t.get('top') else ''
+            img = render(f"<div class=pl{top}>{num}<div class=t>{t['l1']}{l2}</div></div>", f'title{i}')
             layers.append((a, e, img, 0.14, 0.0, 18))
     subs = S['subs']
     for i, (wi, txt) in enumerate(subs):
