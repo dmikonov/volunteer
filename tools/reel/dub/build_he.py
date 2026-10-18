@@ -116,7 +116,7 @@ def paste(fr, im, al, dy):
     fr[y:y + h, x:x + w] = (reg * (1 - a) + im['rgb'] * a).astype(np.uint8)
 
 
-dec = sp.Popen(['ffmpeg', '-v', 'error', '-i', f'{O}/cut.mp4', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=sp.PIPE)
+dec = sp.Popen(['ffmpeg', '-v', 'error', '-i', f'{O}/cut.mp4', '-fps_mode', 'passthrough', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=sp.PIPE)
 enc = sp.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                 '-c:v', 'libx264', '-preset', 'medium', '-crf', '17', '-pix_fmt', 'yuv420p', f'{O}/v.mp4'], stdin=sp.PIPE)
 n = 0; FS = W * H * 3
