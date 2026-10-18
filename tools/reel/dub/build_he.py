@@ -53,7 +53,7 @@ sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{O}
 def page(body):
     return (f"<!doctype html><html><head><meta charset=utf-8><style>@font-face{{font-family:R;src:url(data:font/ttf;base64,{F});font-weight:300 900}}"
             f"html,body{{margin:0;width:{W}px;height:{H}px;background:transparent;overflow:hidden}}*{{font-family:R;box-sizing:border-box}}"
-            f".hook{{position:absolute;top:880px;right:240px;white-space:nowrap;direction:rtl;text-align:right;font-weight:900;font-size:104px;line-height:1.02;color:#fff;text-shadow:0 4px 22px rgba(0,0,0,.55)}}"
+            f".hook{{position:absolute;top:880px;right:240px;white-space:nowrap;direction:rtl;text-align:right;font-weight:900;font-size:104px;line-height:1.02;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.8),0 0 3px rgba(0,0,0,.7),0 6px 40px rgba(0,0,0,.5)}}"
             f".hook b{{color:{CY};font-weight:900}}"
             f".pl{{position:absolute;top:1000px;right:240px;direction:rtl;display:flex;align-items:center;gap:22px;background:{PLATE};border-radius:22px;padding:22px 30px}}"
             f".n{{flex:none;width:80px;height:80px;border-radius:50%;background:{CY};color:#101418;font-weight:800;font-size:54px;line-height:80px;text-align:center}}"
