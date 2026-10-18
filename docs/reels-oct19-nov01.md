@@ -7,7 +7,8 @@
 - Хук в формате «ошибка» или «миф». Хуки EN прогнаны через hookscore, балл указан у каждого выпуска.
 - Длина 18-25 с. EN 50-65 слов. HE до 43 слов: «Как падать» на иврите дал 43 слова и 25.3 с, поэтому 50-70 слов на иврите не помещаются в 25 с.
 - Одна просьба в конце: сохранить или отправить другу. Кодовые слова «גל» и «מועדון» не ставим, пока в ManyChat нет триггеров.
-- Продукт только одной строкой в конце, и только в 3 из 14 выпусков (25.10, 27.10, 30.10). Тема ролика никогда не продукт.
+- Решение Димы 18.10: советы подводим под приложение и его функции. Схема: хук и совет как раньше (тема ролика всегда совет), последняя фраза связывает совет с функцией SurfTribe, которая помогает его проверить или применить. Связка в 11 из 14 выпусков; без неё 22.10 (безопасность), 26.10 (правила лайнапа), 01.11.
+- Функции в связках: разбор видео (оценка скорости, плавности и мощи, одно исправление и упражнение), угол колена в градусах, прогноз приложения (лучшее окно, высота волны), 5 бесплатных разборов для новых. Дима подтверждает, что каждая функция в связке работает именно так, до сборки.
 - Карточки на экране до 6 слов, по центру (x=540, ширина до 620), в безопасной зоне.
 - @surftribe_world: Израиль не упоминаем.
 - @surftribe_il: если нужен сгенерированный кадр, он обязан выглядеть как реальная съёмка: только продолжение реального кадра, покадровая проверка, в подписи строка про ИИ.
@@ -15,21 +16,21 @@
 - Новое правило после ошибки с гидриком: любые цифры и советы про снаряжение и условия Дима подтверждает до сборки. Такие места помечены «Проверить».
 
 ## Сводная таблица
-| Дата | Тема (№ в Карте тем) | Хук EN, балл | Карточка HE | Карточка EN | Кадры | Продукт |
+| Дата | Тема (№ в Карте тем) | Хук EN, балл | Карточка HE | Карточка EN | Кадры | Связка с приложением |
 |---|---|---|---|---|---|---|
-| Пн 19.10 | Смотри вперёд, не на ноги (2) | It's not your legs. You're looking at them. 81.4 | זה לא הרגליים / זה המבט | NOT YOUR LEGS / YOUR EYES | 17.10: C0179, C0188 | нет |
-| Вт 20.10 | Начинай грести раньше (3) | You're not missing waves. You're paddling too late. 77.8 | חותרים מאוחר מדי | YOU PADDLE TOO LATE | 17.10, проверить, есть ли гребля | нет |
-| Ср 21.10 | Согнутые колени | Stop standing up straight. That's why you fall. 81.4 | די לעמוד ישר | STOP STANDING STRAIGHT | 17.10: C0188, C0179 | нет |
+| Пн 19.10 | Смотри вперёд, не на ноги (2) | It's not your legs. You're looking at them. 81.4 | זה לא הרגליים / זה המבט | NOT YOUR LEGS / YOUR EYES | 17.10: C0179, C0188 | разбор: одно исправление |
+| Вт 20.10 | Начинай грести раньше (3) | You're not missing waves. You're paddling too late. 77.8 | חותרים מאוחר מדי | YOU PADDLE TOO LATE | 17.10, проверить, есть ли гребля | разбор: оценка и исправление |
+| Ср 21.10 | Согнутые колени | Stop standing up straight. That's why you fall. 81.4 | די לעמוד ישר | STOP STANDING STRAIGHT | 17.10: C0188, C0179 | угол колена |
 | Чт 22.10 | Отбойное течение (15) | Stop paddling into the calm gap. It can be a rip current. 51.0 | המים השקטים / זרם סחף | THE CALM GAP / RIP CURRENT | широкий план моря, нужен до 21.10 | нет |
-| Пт 23.10 | Первый день в пене (16) | Stop paddling out on day one. The foam is where you learn. 81.4 | יום ראשון? / רק בקצף | DAY ONE / STAY IN THE FOAM | 17.10: C0159, C0179 | нет |
-| Сб 24.10 | 10 минут смотреть на море (7) | Stop guessing where to paddle out. Watch the sea for 10 minutes first. 86.8 | 10 דקות / על החול | 10 MINUTES / ON THE SAND | тот же широкий план, что 22.10 | нет |
-| Вс 25.10 | Одна вещь за раз (8) | Stop fixing 5 things at once. Fix one. 83.2 | 5 תיקונים? / רק אחד | 5 FIXES? / JUST ONE | 17.10: райды + запись экрана | да |
+| Пт 23.10 | Первый день в пене (16) | Stop paddling out on day one. The foam is where you learn. 81.4 | יום ראשון? / רק בקצף | DAY ONE / STAY IN THE FOAM | 17.10: C0159, C0179 | 5 бесплатных разборов |
+| Сб 24.10 | 10 минут смотреть на море (7) | Stop guessing where to paddle out. Watch the sea for 10 minutes first. 86.8 | 10 דקות / על החול | 10 MINUTES / ON THE SAND | тот же широкий план, что 22.10 | прогноз: лучшее окно |
+| Вс 25.10 | Одна вещь за раз (8) | Stop fixing 5 things at once. Fix one. 83.2 | 5 תיקונים? / רק אחד | 5 FIXES? / JUST ONE | 17.10: райды + запись экрана | одно исправление на волну |
 | Пн 26.10 | Дроп-ин (10) | Stop dropping in. Here's how to know whose wave it is. 80.2 | של מי הגל? | WHOSE WAVE IS IT | съёмка 24.10 | нет |
-| Вт 27.10 | Тот же сёрфер через 30 минут (18) | You didn't get better in 30 minutes by luck. One fix. 80.8 | 30 דקות / תיקון אחד | 30 MINUTES / ONE FIX | съёмка 24.10 до и после | да |
-| Ср 28.10 | Упадёт или нет: смотри на глаза (12) | Stop asking if he'll fall. Watch his eyes. 80.2 | ייפול או לא? | WILL HE FALL | съёмка 24.10 | нет |
-| Чт 29.10 | Поп-ап с колена | Your knee touches the board first. That's why you're slow. 62.2 | הברך / מאטה אתכם | YOUR KNEE / SLOWS YOU DOWN | съёмка 24.10 | нет |
-| Пт 30.10 | Как снять друга для разбора (5) | Stop filming your friend from too far away. Nobody can see the mistake. 84.2 | מצלמים רחוק מדי | FILMED TOO FAR AWAY | съёмка 24.10 с двух дистанций | да |
-| Сб 31.10 | Маленькие волны и не та доска (6) | Stop blaming the waves. Your board is too small for today. 81.4 | הגלשן קטן מדי | YOUR BOARD IS TOO SMALL | съёмка 24.10 | нет |
+| Вт 27.10 | Тот же сёрфер через 30 минут (18) | You didn't get better in 30 minutes by luck. One fix. 80.8 | 30 דקות / תיקון אחד | 30 MINUTES / ONE FIX | съёмка 24.10 до и после | разбор видео до и после |
+| Ср 28.10 | Упадёт или нет: смотри на глаза (12) | Stop asking if he'll fall. Watch his eyes. 80.2 | ייפול או לא? | WILL HE FALL | съёмка 24.10 | разбор: одно исправление |
+| Чт 29.10 | Поп-ап с колена | Your knee touches the board first. That's why you're slow. 62.2 | הברך / מאטה אתכם | YOUR KNEE / SLOWS YOU DOWN | съёмка 24.10 | исправление и упражнение |
+| Пт 30.10 | Как снять друга для разбора (5) | Stop filming your friend from too far away. Nobody can see the mistake. 84.2 | מצלמים רחוק מדי | FILMED TOO FAR AWAY | съёмка 24.10 с двух дистанций | разбор видео |
+| Сб 31.10 | Маленькие волны и не та доска (6) | Stop blaming the waves. Your board is too small for today. 81.4 | הגלשן קטן מדי | YOUR BOARD IS TOO SMALL | съёмка 24.10 | прогноз: высота волны |
 | Вс 01.11 | Не бросай доску под волной | Stop throwing your board when the wave hits. It comes right back. 50.8 | די לזרוק / את הגלשן | DON'T THROW / YOUR BOARD | съёмка 24.10 | нет |
 
 Дальше по Карте тем: пн 02.11 «Где сидеть в лайнапе» (тема 4), вт 03.11 «Двое на одной волне» (тема 11) и рилс для тренеров (сценарий 3 в Плане роста). Даты рилс из Карты тем на 28.10, 30.10 и 31.10 сохранены.
@@ -41,19 +42,19 @@
 Строки через « / » это фразы озвучки. Между фразами меняется кадр.
 
 ### Пн 19.10. Смотри вперёд, не на ноги
-- HE: אתם לא נופלים בגלל הרגליים. אתם מסתכלים עליהן. / הגלשן הולך לאן שהעיניים הולכות. / אחת. קמים ומרימים את הסנטר מיד. / שתיים. מסתכלים לאורך הגל, לאן שרוצים לגלוש. / שלוש. מסובבים לשם את הכתפיים, והגלשן אחריהן. / שמרו את זה. בגל הבא, העיניים למעלה.
-- EN: It's not your legs. You're looking at them. / Your board goes where your eyes go. Look down, and you go down. / One. Pop up and lift your chin right away. / Two. Look along the wave, where you want to ride. / Three. Turn your shoulders that way, and the board follows. / Save this. Next wave, eyes up, off your legs.
+- HE: אתם לא נופלים בגלל הרגליים. אתם מסתכלים עליהן. / הגלשן הולך לאן שהעיניים הולכות. / אחת. קמים ומרימים את הסנטר מיד. / שתיים. מסתכלים לאורך הגל, לאן שרוצים לגלוש. / שלוש. מסובבים לשם את הכתפיים, והגלשן אחריהן. / צלמו גל אחד, ו-SurfTribe ייתן תיקון אחד. שמרו את זה.
+- EN: It's not your legs. You're looking at them. / Your board goes where your eyes go. Look down, and you go down. / One. Pop up and lift your chin right away. / Two. Look along the wave, where you want to ride. / Three. Turn your shoulders that way, and the board follows. / Film one wave, and SurfTribe gives you one fix. Save this.
 - Кадры: хук C0188 (падение) с кругом на голове; советы C0179 (райд, голова поднята), крупный план плеч.
 
 ### Вт 20.10. Начинай грести раньше
-- HE: אתם לא מפספסים גלים. אתם מתחילים לחתור מאוחר מדי. / כשהגל כבר מתחתיכם, הוא עובר אתכם. / אחת. מתחילים לחתור לפני שהגל מגיע. / שתיים. חתירות ארוכות, עד הירך. / שלוש. כשהגל דוחף, עוד שתי חתירות ורק אז קמים. / שמרו את זה לגלישה הבאה.
-- EN: You're not missing waves. You're paddling too late. / If the wave is already under you, it just rolls past. / One. Start paddling before it reaches you. / Two. Long strokes, all the way back to your hips. / Three. When you feel the push, take two more strokes, then pop up. / Save this, and stop paddling too late.
+- HE: אתם לא מפספסים גלים. אתם מתחילים לחתור מאוחר מדי. / כשהגל כבר מתחתיכם, הוא עובר אתכם. / אחת. מתחילים לחתור לפני שהגל מגיע. / שתיים. חתירות ארוכות, עד הירך. / שלוש. כשהגל דוחף, עוד שתי חתירות. / ב-SurfTribe מקבלים ציון לגל ותיקון אחד. שמרו את זה.
+- EN: You're not missing waves. You're paddling too late. / If the wave is already under you, it just rolls past. / One. Start paddling before it reaches you. / Two. Long strokes, all the way back to your hips. / Three. When you feel the push, take two more strokes, then pop up. / SurfTribe scores your wave and gives you one fix. Save this.
 - Кадры: нужна гребля перед волной. Проверить, есть ли она в разрешённых клипах. Если нет, меняем местами с 25.10 «Одна вещь за раз», а греблю снимаем 24.10.
 - Проверить: «два гребка после толчка» как общий совет новичку.
 
 ### Ср 21.10. Согнутые колени
-- HE: די לעמוד ישר. בגלל זה אתם נופלים. / רגליים ישרות לא בולמות כלום, וכל תנועה קטנה של הגל מפילה. / אחת. ברכיים כפופות, כמו לשבת על כיסא נמוך. / שתיים. המשקל באמצע הגלשן. / שלוש. ידיים לצדדים, נמוכות ורפויות. / שמרו את זה לגלישה הבאה.
-- EN: Stop standing up straight. That's why you fall. / Straight legs can't absorb anything, so every little bump throws you off. / One. Bend your knees, like you're sitting on a low chair. / Two. Keep your weight over the middle of the board. / Three. Arms out wide, low and relaxed. / Save this, and stop standing up straight.
+- HE: די לעמוד ישר. בגלל זה אתם נופלים. / רגליים ישרות לא בולמות, וכל תנועה של הגל מפילה. / אחת. ברכיים כפופות, כמו לשבת על כיסא נמוך. / שתיים. המשקל באמצע הגלשן. / שלוש. ידיים לצדדים, נמוכות ורפויות. / ב-SurfTribe רואים את זווית הברך בכל גל. שמרו את זה.
+- EN: Stop standing up straight. That's why you fall. / Straight legs can't absorb anything, so every little bump throws you off. / One. Bend your knees, like you're sitting on a low chair. / Two. Keep your weight over the middle of the board. / Three. Arms out wide, low and relaxed. / SurfTribe shows your knee angle on every wave. Save this.
 - Кадры: C0188 до падения (проверить, видно ли прямые ноги), C0179 в стойке; стрелка на колене.
 
 ### Чт 22.10. Отбойное течение
@@ -64,13 +65,13 @@
 - Кадры: широкий план моря с берега, 10-15 с, без людей крупным планом. Нужен от Димы до 21.10. Если его не будет, делаем продолжение реального пустого кадра в LTX-2.5 и проверяем покадрово.
 
 ### Пт 23.10. Первый день в пене
-- HE: די לחתור החוצה ביום הראשון. לומדים בקצף. / בחוץ רק חותרים ונופלים. בקצף קמים שוב ושוב. / אחת. נכנסים עד המותניים. / שתיים. מסתובבים לחוף ויוצאים עם הקצף. / שלוש. עשר גלישות בקצף שוות יותר מגל אחד בחוץ. / שמרו את זה ליום הראשון.
-- EN: Stop paddling out on day one. The foam is where you learn. / Out back, you paddle and wipe out. In the foam, you stand up again and again. / One. Walk out to waist deep water. / Two. Turn to the beach and push off as the foam reaches you. / Three. Ten rides in the foam beat one wave out back. / Save this for your first day.
+- HE: די לחתור החוצה ביום הראשון. לומדים בקצף. / בחוץ רק חותרים ונופלים. בקצף קמים שוב ושוב. / אחת. נכנסים עד המותניים. / שתיים. מסתובבים לחוף ויוצאים עם הקצף. / שלוש. עשר גלישות בקצף שוות יותר מגל אחד בחוץ. / חמשת הניתוחים הראשונים ב-SurfTribe בחינם. שמרו את זה.
+- EN: Stop paddling out on day one. The foam is where you learn. / In the foam, you stand up again and again. / One. Walk out to waist deep water. / Two. Turn to the beach and push off as the foam reaches you. / Three. Ten rides in the foam beat one wave out back. / Your first five SurfTribe analyses are free. Save this.
 - Кадры: C0159 (мелкая пена), C0179 (финал).
 
 ### Сб 24.10. 10 минут смотреть на море
-- HE: די לנחש מאיפה להיכנס. קודם מסתכלים על הים. / עשר דקות על החול חוסכות שעה בחוץ. / אחת. סופרים את הסטים: כמה גלים ובאיזה מרווח. / שתיים. מוצאים את הפיק, איפה שהגל נשבר ראשון. / שלוש. רואים מאיפה הגולשים חותרים החוצה. / שמרו את זה.
-- EN: Stop guessing where to paddle out. Watch the sea for ten minutes first. / Ten minutes on the sand saves you an hour in the wrong spot. / One. Count the sets, how many waves and how long between them. / Two. Find the peak, where the wave breaks first. / Three. Watch where the other surfers paddle out. / Save this, and give it ten minutes first.
+- HE: די לנחש מאיפה להיכנס. קודם מסתכלים על הים. / עשר דקות על החול חוסכות שעה בחוץ. / אחת. סופרים את הסטים. / שתיים. מוצאים את הפיק, איפה שהגל נשבר ראשון. / שלוש. רואים מאיפה הגולשים חותרים החוצה. / בתחזית של SurfTribe רואים את החלון הטוב. שמרו את זה.
+- EN: Stop guessing where to paddle out. Watch the sea for ten minutes first. / Ten minutes on the sand saves you an hour in the wrong spot. / One. Count the sets and the time between them. / Two. Find the peak, where the wave breaks first. / Three. Watch where the other surfers paddle out. / The SurfTribe forecast shows the best window for your spot. Save this.
 - Кадры: тот же широкий план, что 22.10, плюс отметки «сет», «пик», «канал». Сёрферы вдали допустимы, только если их нельзя узнать: проверить с Димой.
 
 ### Вс 25.10. Одна вещь за раз (продукт одной строкой)
@@ -90,14 +91,14 @@
 - Кадры: съёмка 24.10, первая волна и волна через 30 минут с одной точки, экран с разбором.
 
 ### Ср 28.10. Упадёт или нет: смотри на глаза
-- HE: די לנחש אם הוא ייפול. תסתכלו לו על העיניים. / עצירה. הוא מסתכל למטה, על הגלשן. / עיניים למטה, הגלשן למטה. / ועכשיו הגל הזה. העיניים קדימה, לאורך הגל. / עיניים למטה נופלים, עיניים קדימה גולשים. / שמרו את זה ותסתכלו על העיניים.
-- EN: Stop asking if he'll fall. Watch his eyes. / Your board goes where your eyes go. / Freeze. He's looking down at his board. / Eyes down, board down. / Now this one. Eyes ahead, along the wave. / Eyes down, you fall. Eyes ahead, you ride. / Save this, and next time, watch the eyes first.
+- HE: די לנחש אם הוא ייפול. תסתכלו לו על העיניים. / עצירה. הוא מסתכל למטה, על הגלשן. / עיניים למטה, הגלשן למטה. / ועכשיו הגל הזה. העיניים קדימה, לאורך הגל. / עיניים למטה נופלים, עיניים קדימה גולשים. / צלמו גל, ו-SurfTribe ייתן תיקון אחד. שמרו את זה.
+- EN: Stop asking if he'll fall. Watch his eyes. / Your board goes where your eyes go. / Freeze. He's looking down at his board. / Eyes down, board down. / Now this one. Eyes ahead, along the wave. / Eyes down, you fall. Eyes ahead, you ride. / Film your wave, and SurfTribe gives you one fix. Save this.
 - Кадры: два райда 24.10 с согласием, одно падение и один удачный. Брать только пары, где взгляд и правда совпал с исходом. Стоп-кадр с кругом на голове.
 - Связка с 19.10: тот же совет, новый формат «угадай».
 
 ### Чт 29.10. Поп-ап с колена
-- HE: הברך נוגעת בגלשן ראשונה. בגלל זה אתם איטיים. / ברך ואז רגל, שתי תנועות. הגל לא מחכה. / אחת. כפות ידיים מתחת לחזה, דוחפים חזק. / שתיים. הרגל האחורית ואז הקדמית בין הידיים. / שלוש. נוחתים בתנועה אחת, ברכיים כפופות. / שמרו את זה ותתאמנו על החול.
-- EN: Your knee touches the board first. That's why you're slow. / Knee, then foot, that's two moves, and the wave doesn't wait. / One. Hands under your chest, push up hard. / Two. Back foot comes in, then your front foot lands between your hands. / Three. Land in one move, knees bent. / Save this and practice ten on the sand.
+- HE: הברך נוגעת בגלשן ראשונה. בגלל זה אתם איטיים. / ברך ואז רגל: שתי תנועות. / אחת. כפות ידיים מתחת לחזה, דוחפים חזק. / שתיים. הרגל האחורית ואז הקדמית בין הידיים. / שלוש. נוחתים בתנועה אחת, ברכיים כפופות. / ב-SurfTribe מקבלים תיקון ותרגיל. שמרו את זה.
+- EN: Your knee touches the board first. That's why you're slow. / Knee, then foot, that's two moves, and the wave doesn't wait. / One. Hands under your chest, push up hard. / Two. Back foot comes in, then your front foot lands between your hands. / Three. Land in one move, knees bent. / SurfTribe gives you one fix and a drill like this. Save this.
 - Проверить: порядок ног в поп-апе (школы учат по-разному). Дима или тренер подтверждает.
 - Кадры: съёмка 24.10, поп-ап с колена и в одно движение, сбоку, на песке и в пене.
 
@@ -108,8 +109,8 @@
 - Кадры: съёмка 24.10, одна волна с двух дистанций (далеко и правильно), сплит-экран.
 
 ### Сб 31.10. Маленькие волны и не та доска
-- HE: די להאשים את הגלים. הגלשן קטן מדי. / לגל קטן אין כוח להזיז גלשן קטן. / אחת. ביום קטן לוקחים נפח: לונגבורד או סופט גדול. / שתיים. חותרים מוקדם יותר, הגל איטי. / שלוש. עומדים קצת קדימה, ככה שומרים על מהירות. / שמרו את זה ליום קטן.
-- EN: Stop blaming the waves. Your board is too small for today. / Small, soft waves don't have the push to move a small board. / One. On small days, take more volume, a longboard or a big foamie. / Two. Start paddling earlier, the wave is slower. / Three. Stand a little further forward to keep your speed. / Save this for the next small day.
+- HE: די להאשים את הגלים. הגלשן קטן מדי. / לגל קטן אין כוח להזיז גלשן קטן. / אחת. ביום קטן לוקחים נפח: לונגבורד או סופט גדול. / שתיים. חותרים מוקדם, הגל איטי. / שלוש. עומדים קצת קדימה. / בתחזית של SurfTribe רואים את גובה הגל מראש. שמרו את זה.
+- EN: Stop blaming the waves. Your board is too small for today. / Small, soft waves don't have the push to move a small board. / One. On small days, take more volume, a longboard or a big foamie. / Two. Start paddling earlier, the wave is slower. / Three. Stand a bit forward to keep speed. / The SurfTribe forecast shows the wave size before you pack. Save this.
 - Проверить: советы по доске и стойке; слово «סופט» для софтборда.
 - Кадры: съёмка 24.10, тот же сёрфер на короткой и на длинной доске, одна и та же маленькая волна.
 
