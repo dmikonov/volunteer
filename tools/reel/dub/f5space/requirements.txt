@@ -1,0 +1,4 @@
+f5-tts
+phonikud-onnx
+soundfile
+omegaconf
