@@ -55,6 +55,6 @@ for i, s in enumerate(segs):
     if os.path.exists(o) and os.path.exists(kf) and open(kf).read() == key: lst.append(o); continue
     sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(round(s['sdur'] + 0.06, 3)), '-i', s['srcp'], '-vf', vf + f",trim=duration={s['d']}", '-an', '-threads', '1', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', o], check=True); lst.append(o); open(kf, 'w').write(key)
 open(f'{W}/seg/list.txt', 'w').write(''.join(f"file '{x}'\n" for x in lst))
-sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-threads', '1', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', f'{W}/cat.mp4'], check=True)
+sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-threads', '1', '-c:v', 'libx264', '-preset', 'fast', '-x264-params', 'rc-lookahead=10', '-crf', '15', f'{W}/cat.mp4'], check=True)
 json.dump(segs, open(f'{W}/segs.json', 'w'))
 print('cat', dur(f'{W}/cat.mp4'), 'T', T)
