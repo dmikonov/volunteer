@@ -9,7 +9,7 @@ S = json.load(open(sys.argv[1])); O = S['out']; os.makedirs(f'{O}/ov', exist_ok=
 W, H, FPS = 1080, 1920, 30
 CY = '#00CDFC'; PLATE = 'rgba(20,20,28,.70)'
 F = base64.b64encode(open('/s17/Rubik.ttf', 'rb').read()).decode()
-WD = S['words']                      # [[word, start, end], ...] on the final voice track
+WD = S['words'] if 'words' in S else json.load(open(S['words_file']))   # [[word, start, end], ...] on the final voice track
 VO_T = float(sp.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', S['vo']], capture_output=True, text=True).stdout)
 T = round(WD[-1][2] + S.get('tail', 0.7), 3)
 wt = lambda i: WD[i][1]
@@ -26,6 +26,7 @@ for i, s in enumerate(shots):
 for i, s in enumerate(shots):
     s['b'] = shots[i + 1]['a'] if i + 1 < len(shots) else T
     s['d'] = round(s['b'] - s['a'], 3)
+    if s['ss'] == 'cont': s['ss'] = round(shots[i - 1]['ss'] + shots[i - 1]['d'], 3)
 parts = []
 for i, s in enumerate(shots):
     src = s['src']; sd = dur(src); need = s['d'] + 0.1
