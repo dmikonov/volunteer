@@ -48,14 +48,14 @@
 - HE: אתם לא נופלים בגלל הרגליים. אתם מסתכלים עליהן. / הגלשן הולך לאן שהעיניים הולכות. / אחת. קמים ומרימים את הסנטר מיד. / שתיים. מסתכלים לאורך הגל, לאן שרוצים לגלוש. / שלוש. מסובבים לשם את הכתפיים, והגלשן אחריהן. / צלמו גל אחד, ו-SurfTribe ייתן תיקון אחד. שמרו את זה.
 - EN: It's not your legs. You're looking at them. / Your board goes where your eyes go. Look down, and you go down. / One. Pop up and lift your chin right away. / Two. Look along the wave, where you want to ride. / Three. Turn your shoulders that way, and the board follows. / Film one wave, and SurfTribe gives you one fix. Save this.
 - Кадры: хук C0188 (падение) с кругом на голове; советы C0179 (райд, голова поднята), крупный план плеч.
-- Если разбор видит положение головы или взгляд, функция нужна. Если нет, мягкая подводка: «сними одну волну и посмотри, куда смотришь», без обещаний, что приложение это определяет. Проверить у Димы.
+- Дима подтвердил 18.10: разбор видит положение головы. Интеграция внутри шага: разбор покажет, куда ты смотришь.
 
 ### Вт 20.10. Начинай грести раньше
-- HE: אתם לא מפספסים גלים. אתם מתחילים לחתור מאוחר מדי. / כשהגל כבר מתחתיכם, הוא עובר אתכם. / אחת. מתחילים לחתור לפני שהגל מגיע. / שתיים. חתירות ארוכות, עד הירך. / שלוש. כשהגל דוחף, עוד שתי חתירות. / אגב, בתחזית של SurfTribe רואים גל, תקופה ורוח. שמרו את זה.
-- EN: You're not missing waves. You're paddling too late. / If the wave is already under you, it just rolls past. / One. Start paddling before it reaches you. / Two. Long strokes, all the way back to your hips. / Three. When you feel the push, take two more strokes, then pop up. / By the way, the SurfTribe forecast shows swell, period and wind. Save this.
+- HE: אתם לא מפספסים גלים. אתם מתחילים לחתור מאוחר מדי. / כשהגל כבר מתחתיכם, הוא עובר אתכם. / אחת. מתחילים לחתור לפני שהגל מגיע. / שתיים. חתירות ארוכות, עד הירך. / שלוש. כשהגל דוחף, עוד שתי חתירות. / אגב, כשבתחזית של SurfTribe הפריוד ארוך, מתחילים עוד מוקדם יותר. שמרו את זה.
+- EN: You're not missing waves. You're paddling too late. / If the wave is already under you, it just rolls past. / One. Start paddling before it reaches you. / Two. Long strokes, all the way back to your hips. / Three. When you feel the push, take two more strokes, then pop up. / By the way, a long period in the SurfTribe forecast means start even earlier. Save this.
 - Кадры: нужна гребля перед волной. Проверить, есть ли она в разрешённых клипах. Если нет, меняем местами с 25.10 «Одна вещь за раз», а греблю снимаем 24.10.
 - Проверить: «два гребка после толчка» как общий совет новичку.
-- Связь с прогнозом проверить у Димы: при длинном периоде волна подходит быстрее, и грести надо начинать раньше. Если Дима не подтвердит, мягкая подводка без этой связи: прогноз помогает выбрать день и время.
+- Дима подтвердил 18.10: при длинном периоде волна подходит быстрее, грести начинать раньше. Прогноз (период) в интеграции.
 
 ### Ср 21.10. Согнутые колени
 - HE: די לעמוד ישר. בגלל זה אתם נופלים. / רגליים ישרות לא בולמות, וכל תנועה של הגל מפילה. / אחת. ברכיים כפופות, כמו לשבת על כיסא נמוך. / שתיים. המשקל באמצע הגלשן. / שלוש. ידיים לצדדים, נמוכות ורפויות. / ב-SurfTribe רואים את זווית הברך בכל גל. שמרו את זה.
@@ -113,7 +113,7 @@
 - EN: Your knee touches the board first. That's why you're slow. / Knee, then foot, that's two moves, and the wave doesn't wait. / One. Hands under your chest, push up hard. / Two. Back foot comes in, then your front foot lands between your hands. / Three. Land in one move, knees bent. / By the way, {{интеграция: разбор фото в SurfTribe, ждём описание от Димы}}. Save this.
 - Проверить: порядок ног в поп-апе (школы учат по-разному). Дима или тренер подтверждает.
 - Кадры: съёмка 24.10, поп-ап с колена и в одно движение, сбоку, на песке и в пене.
-- Интеграция только если разбор фото или видео видит, что колено касается доски. Проверить у Димы, иначе мягкая подводка к разбору видео без обещаний про колено.
+- Дима подтвердил 18.10: разбор видит, что колено касается доски.
 
 ### Пт 30.10. Как снять друга для разбора (продукт одной строкой)
 - HE: די לצלם מרחוק מדי. ככה לא רואים את הטעות. / כשהגולש הוא נקודה, אין מה לבדוק. / אחת. עומדים הכי קרוב שאפשר, על קו המים. / שתיים. זום עד שהגולש תופס שליש מהפריים. / שלוש. מצלמים מהקימה ועד הסוף. / ב-SurfTribe הסרטון הופך לניתוח טכניקה מ-AI.
