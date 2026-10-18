@@ -55,6 +55,12 @@
 - В подписи строка про ИИ обязательно (флаг isAiGenerated через Composio не поставить, Metricool с 18.10 не используем).
 - Только бесплатные инструменты. Платные сервисы без разрешения Димы не запускать.
 
+## Запасная сборка (если HF-песочница отвечает 402, как 19.10)
+- Песочница Composio (COMPOSIO_REMOTE_BASH_TOOL): bash tools/reel/setup_cz.sh <sha> <имена>, клипы генерации качать прямо туда (curl по ссылке hf.space), voice.py там же (edge-tts работает).
+- Плашки: ov_png.py локально (Chromium), ov/ и ovplan.json коммитить в tools/reel/build/<имя>/, в песочнице забрать sparse-клоном. Дальше build.py, ov_ff.py (проходы по 8), loudfix.py, trim_tail.py, post_cz.py.
+- Превью для Димы: Descript import_media (прямая загрузка PUT из песочницы) + publish_project unlisted 1080p, ссылка share.descript.com. Мастер-файлы в /mnt/files/reels/.
+- Публикация из этой схемы: upload_local_file даёт ссылку на 1 час, её сразу в POST /me/media.
+
 ## Сборка (Hugging Face Sandbox)
 - Создать песочницу (hf_sandbox create), запустить scripts/setup.sh из датасета dmikonov/surftribe-drafts: ffmpeg, Python-пакеты, Chromium, клипы с Drive, шрифт Rubik. apt и playwright запускать по очереди, не параллельно.
 - Шаблон рилса: scripts/tip1/ (tts.py, voice.py, audio_fx.py, build2.py, ov2.py, post2.py, chain11.sh). Скопировать в /s17/<имя рилса>/ и поменять:
