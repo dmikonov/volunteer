@@ -17,13 +17,13 @@ def page(body):
     return f"""<!doctype html><html><head><meta charset=utf-8><style>@font-face{{font-family:R;src:url(data:font/ttf;base64,{F});font-weight:300 900}}
 html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}}*{{font-family:R;box-sizing:border-box}}
 .blk{{position:absolute;top:330px;left:0;right:0;text-align:center;direction:{DIR};transform-origin:50% 40%}}
-.plate{{display:inline-block;white-space:nowrap;max-width:620px;padding:14px 30px 22px;border-radius:26px;background:{NAVY};font-weight:800;font-size:{FS}px;line-height:1.05;color:#fff}}
+.plate{{display:inline-block;white-space:nowrap;padding:26px 34px;border-radius:26px;background:{NAVY};font-weight:800;font-size:{FS}px;line-height:1.15;text-box:trim-both cap alphabetic;color:#fff}}
 .plate.sm{{font-size:{62 if HE else 56}px}}
 .n{{display:inline-block;width:92px;height:92px;border-radius:50%;background:{CY};color:#0a1226;font-weight:800;font-size:62px;line-height:92px;text-align:center;margin-bottom:14px}}
 .sub{{position:absolute;top:1298px;left:0;right:0;text-align:center;direction:{DIR}}}
-.sub span{{display:inline-block;max-width:600px;padding:8px 24px 13px;border-radius:18px;background:{NAVY};font-weight:800;font-size:50px;line-height:1.12;color:#fff}}
+.sub span{{display:inline-block;white-space:nowrap;padding:18px 28px;border-radius:20px;background:{NAVY};font-weight:800;font-size:50px;line-height:1;text-box:trim-both cap alphabetic;color:#fff}}
 .mark{{position:absolute;top:240px;left:0;right:0;text-align:center;direction:ltr}}
-.mark span.b{{display:inline-block;padding:6px 26px 12px;border-radius:20px;background:{NAVY};font-weight:800;font-size:48px;color:#fff}}
+.mark span.b{{display:inline-block;padding:16px 26px;border-radius:20px;background:{NAVY};font-weight:800;font-size:48px;line-height:1;text-box:trim-both cap alphabetic;color:#fff}}
 .rc{{position:absolute;top:330px;left:0;right:0;text-align:center;direction:{DIR}}}
 .rc .box{{display:inline-block;width:620px;padding:26px 34px 30px;border-radius:30px;background:{NAVY};text-align:{'right' if HE else 'left'}}}
 .rc h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:18px;text-align:center}}
@@ -75,6 +75,7 @@ with sync_playwright() as p:
     br = p.chromium.launch(); pg = br.new_page(viewport={'width': 1080, 'height': 1920})
     for k, h in cards.items():
         pg.set_content(page(h)); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(100)
+        pg.evaluate("() => { for (const [sel, mx] of [['.sub span', 600], ['.plate', 620]]) for (const e of document.querySelectorAll(sel)) { let f = parseFloat(getComputedStyle(e).fontSize); while (e.getBoundingClientRect().width > mx && f > 24) { f -= 2; e.style.fontSize = f + 'px'; } } }")
         boxes[k] = pg.evaluate("() => [...document.querySelectorAll('.plate,.sub span,.mark span.b,.n,.rc .box')].map(e => {const r=e.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.right), Math.round(r.top), Math.round(r.bottom)]})")
         fn = f'{W}/ov/{k}.png'; pg.screenshot(path=fn, omit_background=True)
         im = cv2.imread(fn, cv2.IMREAD_UNCHANGED); ys, xs = (im[..., 3] > 0).nonzero()
