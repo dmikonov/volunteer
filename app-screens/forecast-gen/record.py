@@ -22,4 +22,5 @@ with sync_playwright() as p:
         for i in range(n):
             pg.evaluate(f'setT({i / fps})'); pg.screenshot(path=f'{tmp}/f{i:04d}.png')
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-framerate', str(fps), '-i', f'{tmp}/f%04d.png', '-vf', 'scale=1080:-2', '-c:v', 'libx264', '-crf', '16', '-pix_fmt', 'yuv420p', out], check=True)
+        import shutil; shutil.rmtree(tmp, ignore_errors=True)
     b.close()
