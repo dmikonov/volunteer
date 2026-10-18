@@ -153,7 +153,7 @@ m = json.loads(r[r.rindex('{'):r.rindex('}') + 1])
 ln = f"loudnorm=I=-15:TP=-2:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/vo_raw.wav', '-af', f'{ln},aresample=48000', '-ac', '2', f'{O}/vo.wav'], check=True)
 G = S['music_gain_db']
-afc = (f"[1:a]aresample=48000,asplit[m1][m2];[m1][m2]acrossfade=d=0.4[mm];[mm]volume={G}dB,atrim=0:{T + 1.5},afade=t=out:st={T - 1.1:.2f}:d=1.1[mu];"
+afc = (f"[1:a]aresample=48000,asplit[m1][m2];[m1][m2]acrossfade=d=0.4[mm];[mm]volume={G}dB,atrim=0:{T + 1.5},afade=t=out:st={T - 0.5:.2f}:d=0.5[mu];"
        "[0:a]asplit=2[vo][k0];"
        f"[k0]apad=whole_dur={T + 2}[key];"
        f"[mu][key]sidechaincompress=threshold=0.06:ratio=2.5:attack=25:release=350,atrim=0:{T}[md];"
