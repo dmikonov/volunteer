@@ -72,10 +72,11 @@
 - Запасной путь: лист кадров и превью в публичный датасет dmikonov/surftribe-gen-inputs, папка review/, дать Диме ссылку.
 - В сообщении: тема и хук, длина HE и EN, подписи HE и EN целиком, что сгенерировано, что подтвердить.
 
-## Публикация после «ок»
+## Публикация после «ок» (с 18.10 только Composio, Metricool не используем: лимит бесплатного тарифа)
 - Мастер-файлы положить в репозиторий dmikonov/volunteer, ветка surftribe-media, папка tips/ (add_repo с доступом push), проверить, что raw.githubusercontent.com отдаёт 200.
-- HE (@surftribe_il): Metricool createScheduledPost, blogId 7288977, instagramData {type: TRIAL_REEL, isAiGenerated: true, videoCoverMilliseconds: <кадр с хуком>}, время сейчас + 5 минут, Asia/Jerusalem. Локация Tel Aviv, если инструмент позволяет.
-- EN (@surftribe_world): Composio, аккаунт surftribe_world. POST /me/media: media_type REELS, video_url, caption, share_to_feed true, thumb_offset, trial_params {"graduation_strategy": "SS_PERFORMANCE"}; ждать status_code FINISHED; POST /me/media_publish.
+- Оба аккаунта одинаково через Composio: HE account "surftribe_il", EN account "surftribe_world". Сначала проверить username аккаунта.
+- POST /me/media: media_type REELS, video_url, caption, share_to_feed true, thumb_offset, trial_params {"graduation_strategy": "SS_PERFORMANCE"}; ждать status_code FINISHED; POST /me/media_publish.
+- Метку ИИ через Composio не поставить: строка про ИИ обязательно в подписи.
 - После публикации проверить последние публикации аккаунта (пункт 41) и прислать Диме ссылки.
 
 ## Подписи
