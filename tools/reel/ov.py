@@ -122,7 +122,7 @@ for i, (kk, a, b) in enumerate(ON):
 OUT = f"{W}/{S['out']}"
 sp.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-filter_complex', ';'.join(fcs), '-map', f'[{prev}]', '-map', '1:a', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-maxrate', '18M', '-bufsize', '36M', '-pix_fmt', 'yuv420p', '-r', '25', '-c:a', 'aac', '-b:a', '192k', '-t', str(T), '-movflags', '+faststart', OUT], check=True)
 r = sp.run(['ffmpeg', '-hide_banner', '-i', OUT, '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
-I = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', r)[-1]); g = round(-14 - I, 2)
+I = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', r)[-1]); g = round(-14.5 - I, 2)  # reviewer 18.10: -14.5 LUFS, true peak <= -1.5 dBTP
 if abs(g) > 0.2:
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-i', OUT, '-c:v', 'copy', '-af', f'volume={g}dB,alimiter=limit=0.89', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', OUT + '.t.mp4'], check=True); os.replace(OUT + '.t.mp4', OUT)
+    sp.run(['ffmpeg', '-v', 'error', '-y', '-i', OUT, '-c:v', 'copy', '-af', f'volume={g}dB,alimiter=limit=0.84', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', OUT + '.t.mp4'], check=True); os.replace(OUT + '.t.mp4', OUT)
 print('done', OUT, T, 'lufs before', I, 'gain', g)
