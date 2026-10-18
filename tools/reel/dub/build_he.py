@@ -125,7 +125,7 @@ while True:
     if len(buf) < FS: break
     fr = np.frombuffer(buf, np.uint8).reshape(H, W, 3).copy(); t = n / FPS
     for a, e, img, fi, fo, sl in layers:
-        if a <= t < e:
+        if round(a * FPS) <= n < round(e * FPS):
             al = 1.0
             if fi: al = min(al, (t - a) / fi)
             if fo: al = min(al, (e - t) / fo)
@@ -150,6 +150,6 @@ sp.run(['ffmpeg', '-v', 'error', '-y', '-i', S['vo'], '-stream_loop', '-1', '-i'
 r = sp.run(['ffmpeg', '-hide_banner', '-i', f'{O}/mix.wav', '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
 I = float(r.split('I:')[-1].split('LUFS')[0]); g = round(-14.5 - I, 2)
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/v.mp4', '-i', f'{O}/mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
-        '-af', f'volume={g}dB,alimiter=limit=0.84:level=false', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', '-movflags', '+faststart', f'{O}/reel.mp4'], check=True)
+        '-af', f'volume={g}dB,alimiter=limit=0.84:level=false,apad', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', '-movflags', '+faststart', f'{O}/reel.mp4'], check=True)
 r = sp.run(['ffmpeg', '-hide_banner', '-i', f'{O}/reel.mp4', '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
 print('final', r.split('Summary:')[-1].replace('\n', ' ')[:300])
