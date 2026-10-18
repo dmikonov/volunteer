@@ -153,12 +153,12 @@ m = json.loads(r[r.rindex('{'):r.rindex('}') + 1])
 ln = f"loudnorm=I=-15:TP=-2:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/vo_raw.wav', '-af', f'{ln},aresample=48000', '-ac', '2', f'{O}/vo.wav'], check=True)
 G = S['music_gain_db']
-afc = (f"[1:a]aresample=48000,asplit[m1][m2];[m1][m2]acrossfade=d=0.4[mm];[mm]volume={G}dB,atrim=0:{T + 1.5},afade=t=out:st={T - 0.5:.2f}:d=0.5[mu];"
+afc = (f"[1:a]aresample=48000,volume={G}dB,atrim=0:{T + 1.5},afade=t=out:st={T - 0.5:.2f}:d=0.5[mu];"
        "[0:a]asplit=2[vo][k0];"
        f"[k0]apad=whole_dur={T + 2}[key];"
        f"[mu][key]sidechaincompress=threshold=0.06:ratio=2.5:attack=25:release=350,atrim=0:{T}[md];"
        f"[vo][md]amix=inputs=2:normalize=0:duration=longest,atrim=0:{T},volume=-1.5dB,alimiter=limit=0.84[aout]")
-sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/vo.wav', '-i', S['music'], '-filter_complex', afc, '-map', '[aout]', f'{O}/mix.wav'], check=True)
+sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/vo.wav', '-stream_loop', '-1', '-i', S['music'], '-filter_complex', afc, '-map', '[aout]', f'{O}/mix.wav'], check=True)
 r = sp.run(['ffmpeg', '-hide_banner', '-i', f'{O}/mix.wav', '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
 I = float(r.split('I:')[-1].split('LUFS')[0]); g = round(-14.5 - I, 2)
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{O}/v.mp4', '-i', f'{O}/mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
