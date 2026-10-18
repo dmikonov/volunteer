@@ -48,8 +48,9 @@ for i, s in enumerate(segs):
     # crop to 9:16 window first (sources may be taller than 9:16), then zoom
     ar = "crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))/2':'" + ("(ih-min(ih,iw*16/9))*" + str(s.get('ay', 0.5))) + "',"
     vf = f"{pre}{ar}crop=iw/{z}:ih/{z}:'{X}':'{Y}',scale=1080:1920:flags=lanczos{post}{shake},fps=25{frz},setsar=1"
-    o = f'{W}/seg/{i:02d}.mp4'
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(round(s['dm'] + 0.06, 3)), '-i', s['srcp'], '-vf', vf + f",trim=duration={s['d']}", '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', o], check=True); lst.append(o)
+    o = f'{W}/seg/{i:02d}.mp4'; key = json.dumps([s['srcp'], s['a'], s['d'], s['dm'], s['frz'], vf]); kf = o + '.key'
+    if os.path.exists(o) and os.path.exists(kf) and open(kf).read() == key: lst.append(o); continue
+    sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(round(s['dm'] + 0.06, 3)), '-i', s['srcp'], '-vf', vf + f",trim=duration={s['d']}", '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', o], check=True); lst.append(o); open(kf, 'w').write(key)
 open(f'{W}/seg/list.txt', 'w').write(''.join(f"file '{x}'\n" for x in lst))
 sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', f'{W}/cat.mp4'], check=True)
 json.dump(segs, open(f'{W}/segs.json', 'w'))
