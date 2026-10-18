@@ -25,7 +25,6 @@ def gen(ref_audio, ref_text, gen_text, speed, nfe, cfg_strength, seed):
 def vocalize(text):
     return voc(text)
 
-with gr.Blocks() as demo:
-    gr.Interface(gen, [gr.Audio(type='filepath'), gr.Textbox(), gr.Textbox(), gr.Number(1.0), gr.Number(32), gr.Number(2.0), gr.Number(0)], gr.Audio(type='filepath'), api_name='gen')
-    gr.Interface(vocalize, gr.Textbox(), gr.Textbox(), api_name='voc')
-demo.launch()
+i1 = gr.Interface(gen, [gr.Audio(type='filepath'), gr.Textbox(), gr.Textbox(), gr.Number(1.0), gr.Number(32), gr.Number(2.0), gr.Number(0)], gr.Audio(type='filepath'), api_name='gen')
+i2 = gr.Interface(vocalize, gr.Textbox(), gr.Textbox(), api_name='voc')
+gr.TabbedInterface([i1, i2], ['gen', 'voc']).launch()
