@@ -11,14 +11,21 @@ for fn, times, vol in (('whoosh.wav', wh, 0.55), ('impact.wav', imp, 0.8), ('pop
         ains += ['-i', f'{A}/{fn}']; afc.append(f"[{k}:a]adelay={int(max(0, tt) * 1000)}|{int(max(0, tt) * 1000)},volume={vol}[x{k}]"); mixin.append(f'[x{k}]'); k += 1
 afc.append(f"{''.join(mixin)}amix=inputs={len(mixin)}:normalize=0:duration=longest,atrim=0:{T},volume=-1.6dB,alimiter=limit=0.84[aout]")  # ~-14.5 LUFS, <= -1.5 dBTP
 sp.run(['ffmpeg', '-v', 'error', '-y'] + ains + ['-filter_complex', ';'.join(afc), '-map', '[aout]', '-t', str(T), '-ar', '48000', '-ac', '2', f'{W}/mix.wav'], check=True)
-ins = ['-i', f'{W}/cat.mp4', '-i', f'{W}/mix.wav']; fcs = []; prev = '0:v'
-for i, (kk, a, b) in enumerate(ON):
-    # each image exists only inside its window: decode cost ~ window length, not the whole reel
-    ins += ['-loop', '1', '-framerate', '25', '-t', f'{max(0.04, b - a):.3f}', '-i', f'{W}/ov/{kk}.png']
-    fcs.append(f"[{i + 2}:v]format=rgba,setpts=PTS+{a:.3f}/TB[o{i}]")
-    fcs.append(f"[{prev}][o{i}]overlay={pos[kk][0]}:{pos[kk][1]}:eof_action=pass:repeatlast=0[v{i}]"); prev = f'v{i}'
 OUT = f"{W}/{S['out']}"
-sp.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-filter_complex', ';'.join(fcs), '-map', f'[{prev}]', '-map', '1:a', '-threads', '1', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-maxrate', '18M', '-bufsize', '36M', '-pix_fmt', 'yuv420p', '-r', '25', '-c:a', 'aac', '-b:a', '192k', '-t', str(T), '-movflags', '+faststart', OUT], check=True)
+# 19.10: overlays in passes of 12 (1 GB RAM sandbox; 48 inputs at once was OOM-killed)
+src = f'{W}/cat.mp4'; CH = 12; parts = [ON[i:i + CH] for i in range(0, len(ON), CH)]
+for pi, part in enumerate(parts):
+    last = pi == len(parts) - 1; ins = ['-i', src]; fcs = []; prev = '0:v'
+    for i, (kk, a, b) in enumerate(part):
+        ins += ['-loop', '1', '-framerate', '25', '-t', f'{max(0.04, b - a):.3f}', '-i', f'{W}/ov/{kk}.png']
+        fcs.append(f"[{i + 1}:v]format=rgba,setpts=PTS+{a:.3f}/TB[o{i}]")
+        fcs.append(f"[{prev}][o{i}]overlay={pos[kk][0]}:{pos[kk][1]}:eof_action=pass:repeatlast=0[v{i}]"); prev = f'v{i}'
+    dst = f'{W}/ovpass{pi}.mp4'
+    if last:
+        sp.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-i', f'{W}/mix.wav', '-filter_complex', ';'.join(fcs), '-map', f'[{prev}]', '-map', f'{len(part) + 1}:a', '-threads', '1', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-maxrate', '18M', '-bufsize', '36M', '-pix_fmt', 'yuv420p', '-r', '25', '-c:a', 'aac', '-b:a', '192k', '-t', str(T), '-movflags', '+faststart', OUT], check=True)
+    else:
+        sp.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-filter_complex', ';'.join(fcs), '-map', f'[{prev}]', '-threads', '1', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '10', '-pix_fmt', 'yuv420p', '-r', '25', dst], check=True)
+        src = dst
 r = sp.run(['ffmpeg', '-hide_banner', '-i', OUT, '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
 I = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', r)[-1]); g = round(-14.5 - I, 2)  # reviewer 18.10: -14.5 LUFS, true peak <= -1.5 dBTP
 if abs(g) > 0.2:
