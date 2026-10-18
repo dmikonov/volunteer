@@ -12,7 +12,12 @@ F = base64.b64encode(open('/s17/Rubik.ttf', 'rb').read()).decode()
 WD = S['words'] if 'words' in S else json.load(open(S['words_file']))   # [[word, start, end], ...] on the final voice track
 VO_T = float(sp.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', S['vo']], capture_output=True, text=True).stdout)
 T = round(WD[-1][2] + S.get('tail', 0.7), 3)
-wt = lambda i: WD[i][1]
+def _ix(x):  # word index, or [unit, word-in-unit] when words carry their unit number
+    if isinstance(x, list):
+        us = [i for i, w in enumerate(WD) if len(w) > 3 and w[3] == x[0]]
+        return us[min(x[1], len(us) - 1)]
+    return x
+wt = lambda i: WD[_ix(i)][1]
 
 
 def dur(f):

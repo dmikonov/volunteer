@@ -1,0 +1,165 @@
+{
+ "out": "/s17/heb/rbB",
+ "vo": "/s17/f5t/voB.wav",
+ "words_file": "/s17/f5t/voB.words.json",
+ "music": "/s17/heb/sep/htdemucs/en/no_vocals.wav",
+ "music_gain_db": 10.5,
+ "tail": 0.6,
+ "mark": 0,
+ "end_at": [
+  8,
+  0
+ ],
+ "shots": [
+  {
+   "key": "hook",
+   "at": [
+    0,
+    0
+   ],
+   "src": "/s17/stock/hd/1127_1127-1080.mp4",
+   "ss": 10.6,
+   "x": 0.57
+  },
+  {
+   "key": "walk",
+   "at": [
+    1,
+    0
+   ],
+   "src": "/s17/stock/hd/1032_1032-1080.mp4",
+   "ss": 15.2,
+   "x": 0.51
+  },
+  {
+   "key": "pier",
+   "at": [
+    2,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-serene-surfer-gazing-at-the-sea_1080p.mp4",
+   "ss": 2.3,
+   "x": 0.6
+  },
+  {
+   "key": "white",
+   "at": [
+    3,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-surfer-catching-a-wave-5342_1080p.mp4",
+   "ss": 9.2,
+   "x": 0.51
+  },
+  {
+   "key": "wax",
+   "at": [
+    4,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-a-man-waxing-a-surfboard-359_1080p.mp4",
+   "ss": 3.2,
+   "x": 0.88
+  },
+  {
+   "key": "leash",
+   "at": [
+    5,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-surfer-walks-towards-waves_1080p.mp4",
+   "ss": 1.8,
+   "x": 0.55
+  },
+  {
+   "key": "sea",
+   "at": [
+    6,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-a-female-surfer-waiting-for-a-wave-8785_1080p.mp4",
+   "ss": 0.0,
+   "x": 0.45
+  },
+  {
+   "key": "man",
+   "at": [
+    7,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-guy-surfing-in-the-sea-9468_1080p.mp4",
+   "ss": 1.2,
+   "x": 0.42
+  },
+  {
+   "key": "end",
+   "at": [
+    8,
+    0
+   ],
+   "src": "/s17/stock/hd/coverr-guy-surfing-in-the-sea-9468_1080p.mp4",
+   "ss": "cont",
+   "x": 0.42
+  }
+ ],
+ "titles": [
+  {
+   "shot": "hook",
+   "hook": true,
+   "l1": "רגע!",
+   "l2": "אל תחתרו עדיין"
+  },
+  {
+   "shot": "walk",
+   "hook": true,
+   "l1": "קודם",
+   "l2": "5 דברים"
+  },
+  {
+   "shot": "pier",
+   "n": 1,
+   "l1": "עשר דקות<br>על הסטים"
+  },
+  {
+   "shot": "white",
+   "n": 2,
+   "l1": "מתחילים<br>בקצף"
+  },
+  {
+   "shot": "wax",
+   "n": 3,
+   "l1": "ווקס<br>לגלשן"
+  },
+  {
+   "shot": "leash",
+   "n": 4,
+   "l1": "בודקים<br>את הליש"
+  },
+  {
+   "shot": "sea",
+   "n": 5,
+   "l1": "נקודת ציון<br>על החוף"
+  },
+  {
+   "shot": "man",
+   "l1": "מצלמים",
+   "l2": "ומקבלים תיקון אחד"
+  }
+ ],
+ "subs": [
+  [
+   [
+    7,
+    2
+   ],
+   "וסרף טרייב מראה לכם"
+  ],
+  [
+   [
+    7,
+    6
+   ],
+   "מה לתקן"
+  ]
+ ]
+}
