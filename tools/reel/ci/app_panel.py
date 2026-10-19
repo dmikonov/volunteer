@@ -11,7 +11,7 @@ for cx, cy in ((r, r), (PW - r, r), (r, ph - r), (PW - r, ph - r)): cv2.circle(m
 cv2.imwrite('/tmp/panel_mask.png', m)
 by0 = PY + int((b0 - y0) * s) - 12; by1 = PY + int((b1 - y0) * s) + 12; d = a1 - a0
 fc = (f"[0:v]trim={a0}:{a1},setpts=PTS-STARTPTS,fps=25,tpad=stop_mode=clone:stop_duration={T - d + 0.2},split[a][b];"
-      f"[a]crop=1080:1920:0:214,boxblur=40:3,eq=brightness=-0.42:saturation=0.35[bg];"
+      f"[a]crop=1080:1920:0:214,drawbox=x=0:y=0:w=iw:h=ih:color=0x0b1530:t=fill[bg];"
       f"[b]crop={CW}:{h}:{X0}:{y0},scale={PW}:{ph}:flags=lanczos,format=rgba[fg0];[1:v]format=gray,scale={PW}:{ph}[mk];[fg0][mk]alphamerge[fg];"
       f"[bg][fg]overlay={PX}:{PY},trim=duration={T},format=yuv420p[v]")
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-loop', '1', '-i', '/tmp/panel_mask.png', '-filter_complex', fc, '-map', '[v]', '-an', '-c:v', 'libx264', '-crf', '14', '-preset', 'medium', '-t', str(T), out], check=True)
