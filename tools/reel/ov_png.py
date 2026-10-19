@@ -58,7 +58,7 @@ for l in L:
     phrases, curp = [], []
     for tok, w in zip(toks, Wd):
         curp.append((tok, w[1], w[2]))
-        if tok.endswith(('.', ',', ':')): phrases.append(curp); curp = []
+        if tok.endswith(('.', ',', ':', '?')): phrases.append(curp); curp = []  # 20.10: split after ? too (keeps subtitles at full size)
     if curp: phrases.append(curp)
     for ph in phrases:
         if len(ph) <= 4: subs.append([' '.join(c[0] for c in ph), ph[0][1], ph[-1][2]]); continue

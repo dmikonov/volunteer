@@ -6,7 +6,7 @@ pip install -q edge-tts opencv-python-headless numpy playwright
 python -m playwright install --with-deps chromium >/dev/null 2>&1
 sudo mkdir -p /s17 && sudo chown $USER /s17 && mkdir -p /s17/gen /s17/rp /s17/tip1
 cp appkit/Rubik.ttf /s17/Rubik.ttf; cp $O/gen/f_*.mp4 /s17/gen/
-python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 11.4 11.6 1455 185 1480 1615 5 /s17/gen/app_he.mp4 40 1000 820
+python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 11.58 11.62 1455 185 1480 1615 5 /s17/gen/app_he.mp4 40 1000 820
 python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 22.4 22.6 1595 180 1620 1750 5 /s17/gen/app_en.mp4 40 1000 820
 python3 tools/reel/audio_fx.py 30
 cd /s17/rp && for f in voice.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py; do cp $R/tools/reel/$f .; done
