@@ -1,17 +1,17 @@
 + k=/s17/rp/foam_en
 + python3 build.py /s17/rp/foam_en
-[('L1', 'n/f_hook.mp4', 0.0, 3.032, 0.0), ('L2', '/f_prone.mp4', 0.0, 1.2, 3.032), ('L2', 'gen/f_up.mp4', 0.0, 1.476, 4.232), ('L3', 'f_angle2.mp4', 0.0, 1.9, 5.708), ('L3', '/f_woman.mp4', 0.0, 1.364, 7.608), ('L4', '/f_ride3.mp4', 0.0, 1.7, 8.972), ('L4', 'n/f_back.mp4', 0.0, 2.154, 10.672), ('L5', '/f_watch.mp4', 0.0, 2.555, 12.826), ('L6', 'n/app_en.mp4', 0.0, 1.822, 15.381), ('L7', 'n/f_walk.mp4', 0.0, 1.681, 17.203)]
+[('L1', 'n/f_hook.mp4', 0.0, 1.6, 0.0), ('L1', 'n/f_hook.mp4', 1.6, 1.432, 1.6), ('L2', '/f_prone.mp4', 0.0, 1.2, 3.032), ('L2', 'gen/f_up.mp4', 0.0, 1.476, 4.232), ('L3', 'f_angle2.mp4', 0.0, 1.9, 5.708), ('L3', '/f_woman.mp4', 0.0, 1.364, 7.608), ('L4', '/f_ride3.mp4', 0.0, 1.7, 8.972), ('L4', 'n/f_back.mp4', 0.0, 2.154, 10.672), ('L5', '/f_watch.mp4', 0.0, 1.3, 12.826), ('L5', '/f_watch.mp4', 1.3, 1.255, 14.126), ('L6', 'n/app_en.mp4', 0.0, 1.822, 15.381), ('L7', 'n/f_walk.mp4', 0.0, 1.681, 17.203)]
 cat 18.96 T 18.884
 + python3 ov_png.py /s17/rp/foam_en
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
-ovplan 49
+ovplan 50
 + python3 ov_ff.py /s17/rp/foam_en
-done /s17/rp/foam_en/reel_foam_en.mp4 18.884 lufs before -16.1 gain 1.6
+done /s17/rp/foam_en/reel_foam_en.mp4 18.884 lufs before -16.2 gain 1.7
 + python3 trim_tail.py /s17/rp/foam_en
 trimmed /s17/rp/foam_en/reel_foam_en.mp4 18.48
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/foam_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/foam_en/reel_foam_en.mp4
-/s17/rp/foam_en/reel_foam_en.mp4 before -12.9 after -14.5 peak -2.6
+/s17/rp/foam_en/reel_foam_en.mp4 before -13.0 after -14.5 peak -2.7
 + python3 post_cz.py /s17/rp/foam_en
 post ok
 + echo 'EXIT /s17/rp/foam_en 0'
