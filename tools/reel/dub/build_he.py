@@ -6,7 +6,7 @@ import numpy as np, cv2
 from playwright.sync_api import sync_playwright
 
 S = json.load(open(sys.argv[1])); O = S['out']; os.makedirs(f'{O}/ov', exist_ok=True); os.makedirs(f'{O}/sh', exist_ok=True)
-W, H, FPS = 1080, 1920, 30
+W, H, FPS = 1080, 1920, 25
 CY = '#00CDFC'; PLATE = 'rgba(20,20,28,.70)'
 F = base64.b64encode(open('/s17/Rubik.ttf', 'rb').read()).decode()
 WD = S['words'] if 'words' in S else json.load(open(S['words_file']))   # [[word, start, end], ...] on the final voice track
@@ -60,7 +60,7 @@ sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{O}
 def page(body):
     return (f"<!doctype html><html><head><meta charset=utf-8><style>@font-face{{font-family:R;src:url(data:font/ttf;base64,{F});font-weight:300 900}}"
             f"html,body{{margin:0;width:{W}px;height:{H}px;background:transparent;overflow:hidden}}*{{font-family:R;box-sizing:border-box}}"
-            f".hook{{position:absolute;top:880px;right:240px;white-space:nowrap;direction:rtl;text-align:right;font-weight:900;font-size:104px;line-height:1.02;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.8),0 0 3px rgba(0,0,0,.7),0 6px 40px rgba(0,0,0,.5)}}"
+            f".hook{{position:absolute;top:880px;right:240px;white-space:nowrap;direction:rtl;text-align:right;font-weight:900;font-size:104px;line-height:1.02;color:#fff;-webkit-text-stroke:3px rgba(0,0,0,.45);paint-order:stroke fill;text-shadow:0 3px 14px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.8),0 6px 40px rgba(0,0,0,.55)}}"
             f".hook b{{color:{CY};font-weight:900}}"
             f".pl{{position:absolute;top:1000px;right:240px;direction:rtl;display:flex;align-items:center;gap:22px;background:{PLATE};border-radius:22px;padding:22px 30px}}"
             f".n{{flex:none;width:80px;height:80px;border-radius:50%;background:{CY};color:#101418;font-weight:800;font-size:54px;line-height:80px;text-align:center}}"
@@ -70,7 +70,7 @@ def page(body):
             f".sub span{{display:inline-block;background:{PLATE};border-radius:16px;padding:14px 24px;font-weight:700;font-size:42px;line-height:1;color:#fff;white-space:nowrap}}"
             ".mark{position:absolute;top:262px;left:60px;direction:ltr;font-weight:800;font-size:46px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}"
             f".mark b,.end b{{color:{CY}}}"
-            f".end{{position:absolute;top:600px;left:0;right:0;text-align:center;direction:ltr}}"
+            f".end{{position:absolute;top:330px;left:0;right:0;text-align:center;direction:ltr}}"
             f".end span{{display:inline-block;background:{PLATE};border-radius:22px;padding:22px 34px;font-weight:800;font-size:76px;line-height:1;color:#fff}}"
             f"</style></head><body>{body}</body></html>")
 

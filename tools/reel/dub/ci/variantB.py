@@ -82,7 +82,7 @@ for i, spd, s, f in takes:
 TARGET = CFG.get('pitch_target', 130)
 picks = []
 for i in range(len(U)):
-    cand = [e for e in ev if e['i'] == i and e['med'] > 0]
+    cand = [e for e in ev if e['i'] == i and e['med'] > 0 and (str(i) not in CFG.get('only', {}) or e['s'] in CFG['only'][str(i)])]
     best_wer = min(e['wer'] for e in cand)
     ok = [e for e in cand if e['wer'] <= best_wer + 1e-9]
     ok.sort(key=lambda e: (abs(np.log2(e['med'] / TARGET)), -e['rng']))
@@ -94,7 +94,7 @@ for i in range(len(U)):
 json.dump([{k: v for k, v in p.items() if k != 'w'} | {'w': p['w']} for p in picks], open(f'{ROOT}/out/beginners5_he_B_picks.json', 'w'), ensure_ascii=False, indent=1)
 
 # ---------- voice track ----------
-GAP = [0.0] + [0.34] * (len(picks) - 1)
+GAP = [0.0] + [CFG.get('gap', 0.34)] * (len(picks) - 1)
 out, words, t = [], [], 0.12
 sr0 = sf.info(picks[0]['f']).samplerate; out.append(np.zeros(int(0.12 * sr0)))
 for k, p in enumerate(picks):
@@ -135,7 +135,7 @@ for k, u in SRC.items():
 
 spec = {
     'out': f'{W}/rb', 'vo': f'{W}/voB.wav', 'words_file': f'{W}/voB.words.json', 'music': MUSIC, 'music_gain_db': 10.5, 'tail': 0.6, 'mark': 0,
-    'end_at': find(3, ['שמרו']),
+    'end_at': find(3, ['שמרו', 'שימרו']),
     'shots': [
         {'key': 'hook', 'at': 0, 'src': H + 'white.mp4', 'ss': 9.2, 'x': 0.51},
         {'key': 'walk', 'at': find(0, ['קודם']), 'src': H + '1032.mp4', 'ss': 15.2, 'x': 0.51},
@@ -144,8 +144,8 @@ spec = {
         {'key': 'wax', 'at': first(2), 'src': H + 'wax.mp4', 'ss': 3.2, 'x': 0.88},
         {'key': 'leash', 'at': find(2, ['ארב', '4']), 'src': H + 'leash.mp4', 'ss': 1.8, 'x': 0.55},
         {'key': 'sea', 'at': first(3), 'src': H + 'sea.mp4', 'ss': 0.0, 'x': 0.45},
-        {'key': 'man', 'at': find(3, ['ואז']), 'src': H + 'man.mp4', 'ss': 1.2, 'x': 0.42},
-        {'key': 'end', 'at': find(3, ['שמרו']), 'src': H + 'man.mp4', 'ss': 'cont', 'x': 0.42}],
+        {'key': 'man', 'at': find(3, ['מצלמ']), 'src': H + 'man.mp4', 'ss': 1.2, 'x': 0.42},
+        {'key': 'end', 'at': find(3, ['שמרו', 'שימרו']), 'src': H + 'man.mp4', 'ss': 'cont', 'x': 0.42}],
     'titles': [
         {'shot': 'hook', 'hook': True, 'l1': 'רגע!', 'l2': 'אל תחתרו עדיין'},
         {'shot': 'walk', 'hook': True, 'l1': 'קודם', 'l2': '5 דברים'},
@@ -154,8 +154,8 @@ spec = {
         {'shot': 'wax', 'n': 3, 'l1': 'שעווה<br>לגלשן'},
         {'shot': 'leash', 'n': 4, 'l1': 'בודקים<br>את הליש'},
         {'shot': 'sea', 'n': 5, 'l1': 'נקודת ציון<br>על החוף'},
-        {'shot': 'man', 'l1': 'מצלמים', 'l2': 'ומקבלים תיקון אחד'}],
-    'subs': [[find(3, ['וסרף', 'ושרף', 'סרף']), 'וסרף טרייב מראה לכם'], [find(3, ['מה']), 'מה לתקן']],
+        {'shot': 'man', 'l1': 'מצלמים', 'l2': 'ורואים מה לתקן'}],
+    'subs': [[find(3, ['שמרו', 'שימרו']), 'שמרו את זה!']],
 }
 json.dump(spec, open(f'{W}/spec.json', 'w'), ensure_ascii=False, indent=1)
 sp.run([sys.executable, f'{ROOT}/tools/reel/dub/build_he.py', f'{W}/spec.json'], check=True)
