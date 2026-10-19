@@ -20,4 +20,4 @@ jobs:
           git config user.name "reel-bot" && git config user.email "reel-bot@users.noreply.github.com"
           git add -f out/ci || true
           git commit -m "CI: reel-job outputs [skip ci]" || exit 0
-          for i in 1 2 3; do git pull --rebase -q origin surftribe-media && git push -q origin HEAD:surftribe-media && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase -X theirs -q origin surftribe-media && git push -q origin HEAD:surftribe-media && break; sleep 5; done
