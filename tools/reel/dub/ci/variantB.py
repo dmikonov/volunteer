@@ -86,6 +86,10 @@ for i in range(len(U)):
     best_wer = min(e['wer'] for e in cand)
     ok = [e for e in cand if e['wer'] <= best_wer + 1e-9]
     ok.sort(key=lambda e: (abs(np.log2(e['med'] / TARGET)), -e['rng']))
+    if CFG.get('force'):
+        f = [x for x in CFG['force'] if x[0] == i]
+        if f:
+            ok = [e for e in cand if e['spd'] == f[0][1] and e['s'] == f[0][2]] or ok
     picks.append(ok[0]); say('PICK', i, ok[0]['spd'], ok[0]['s'], 'wer', ok[0]['wer'], 'med', ok[0]['med'], ok[0]['txt'])
 json.dump([{k: v for k, v in p.items() if k != 'w'} | {'w': p['w']} for p in picks], open(f'{ROOT}/out/beginners5_he_B_picks.json', 'w'), ensure_ascii=False, indent=1)
 
@@ -138,7 +142,7 @@ spec = {
         {'key': 'pier', 'at': first(1), 'src': H + 'pier.mp4', 'ss': 2.3, 'x': 0.6},
         {'key': 'white', 'at': find(1, ['שתיים', '2']), 'src': H + 'white.mp4', 'ss': 9.2, 'x': 0.51},
         {'key': 'wax', 'at': first(2), 'src': H + 'wax.mp4', 'ss': 3.2, 'x': 0.88},
-        {'key': 'leash', 'at': find(2, ['ארבע', '4']), 'src': H + 'leash.mp4', 'ss': 1.8, 'x': 0.55},
+        {'key': 'leash', 'at': find(2, ['ארב', '4']), 'src': H + 'leash.mp4', 'ss': 1.8, 'x': 0.55},
         {'key': 'sea', 'at': first(3), 'src': H + 'sea.mp4', 'ss': 0.0, 'x': 0.45},
         {'key': 'man', 'at': find(3, ['ואז']), 'src': H + 'man.mp4', 'ss': 1.2, 'x': 0.42},
         {'key': 'end', 'at': find(3, ['שמרו']), 'src': H + 'man.mp4', 'ss': 'cont', 'x': 0.42}],
