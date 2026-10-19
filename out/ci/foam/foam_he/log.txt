@@ -1,17 +1,15 @@
-+ k=foam_he
-+ python3 voice.py foam_he
-he T 22.116 [('L1', 0.12, 3.89), ('L2', 4.313, 2.28), ('L3', 6.893, 3.76), ('L4', 10.956, 3.59), ('L5', 14.849, 5.12), ('L6', 20.271, 0.95)]
-+ python3 build.py foam_he
-[concat @ 0x556dd1a98f40] Impossible to open 'foam_he/seg/foam_he/seg/00.mp4'
-[in#0 @ 0x556dd1a98e40] Error opening input: No such file or directory
-Error opening input file foam_he/seg/list.txt.
-Error opening input files: No such file or directory
++ k=/s17/rp/foam_he
++ python3 build.py /s17/rp/foam_he
 [('L1', 'n/f_hook.mp4', 0.0, 4.213, 0.0), ('L2', '/f_prone.mp4', 0.0, 2.58, 4.213), ('L3', 'f_angle2.mp4', 0.0, 4.063, 6.793), ('L4', 'n/f_back.mp4', 0.0, 3.893, 10.856), ('L5', 'n/app_he.mp4', 0.0, 5.422, 14.749), ('L6', 'n/f_walk.mp4', 0.0, 1.945, 20.171)]
-Traceback (most recent call last):
-  File "/s17/rp/build.py", line 58, in <module>
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{W}/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-threads', '1', '-c:v', 'libx264', '-preset', 'fast', '-x264-params', 'rc-lookahead=10', '-crf', '15', f'{W}/cat.mp4'], check=True)
-  File "/usr/lib/python3.12/subprocess.py", line 571, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', 'foam_he/seg/list.txt', '-vf', 'fps=25,format=yuv420p', '-threads', '1', '-c:v', 'libx264', '-preset', 'fast', '-x264-params', 'rc-lookahead=10', '-crf', '15', 'foam_he/cat.mp4']' returned non-zero exit status 254.
-+ echo 'EXIT foam_he 1'
-EXIT foam_he 1
+cat 22.16 T 22.116
++ python3 ov_png.py /s17/rp/foam_he
+safe-zone violations [('MARKA', [396, 685, 160, 226])]
+ovplan 42
++ python3 ov_ff.py /s17/rp/foam_he
+done /s17/rp/foam_he/reel_foam_he.mp4 22.116 lufs before -15.9 gain 1.4
++ python3 trim_tail.py /s17/rp/foam_he
+trimmed /s17/rp/foam_he/reel_foam_he.mp4 21.72
++ python3 post_cz.py /s17/rp/foam_he
+post ok
++ echo 'EXIT /s17/rp/foam_he 0'
+EXIT /s17/rp/foam_he 0
