@@ -137,10 +137,10 @@ spec = {
     'out': f'{W}/rb', 'vo': f'{W}/voB.wav', 'words_file': f'{W}/voB.words.json', 'music': MUSIC, 'music_gain_db': 10.5, 'tail': 0.6, 'mark': 0,
     'end_at': find(3, ['שמרו']),
     'shots': [
-        {'key': 'hook', 'at': 0, 'src': H + '1127.mp4', 'ss': 10.6, 'x': 0.57},
+        {'key': 'hook', 'at': 0, 'src': H + 'white.mp4', 'ss': 9.2, 'x': 0.51},
         {'key': 'walk', 'at': find(0, ['קודם']), 'src': H + '1032.mp4', 'ss': 15.2, 'x': 0.51},
         {'key': 'pier', 'at': first(1), 'src': H + 'pier.mp4', 'ss': 2.3, 'x': 0.6},
-        {'key': 'white', 'at': find(1, ['שתיים', '2']), 'src': H + 'white.mp4', 'ss': 9.2, 'x': 0.51},
+        {'key': 'white', 'at': find(1, ['שתיים', '2']), 'src': H + '1127.mp4', 'ss': 10.6, 'x': 0.57},
         {'key': 'wax', 'at': first(2), 'src': H + 'wax.mp4', 'ss': 3.2, 'x': 0.88},
         {'key': 'leash', 'at': find(2, ['ארב', '4']), 'src': H + 'leash.mp4', 'ss': 1.8, 'x': 0.55},
         {'key': 'sea', 'at': first(3), 'src': H + 'sea.mp4', 'ss': 0.0, 'x': 0.45},
