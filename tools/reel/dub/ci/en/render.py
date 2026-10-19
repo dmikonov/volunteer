@@ -16,7 +16,7 @@ jobs = json.loads(sys.argv[1])
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width':1080,'height':1920})
     for name, hook, sub, top in jobs:
-        body = '<div class=mark>Surf<b>Tribe</b></div>' + f'<div class=hook>{hook}</div>' + (f'<div class=sub><span>{sub}</span></div>' if sub else '')
+        body = ('<div style="position:absolute;left:0;right:0;top:760px;height:640px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.38) 35%,rgba(0,0,0,.38) 65%,rgba(0,0,0,0))"></div>' if name=='ovA' else '') + '<div class=mark>Surf<b>Tribe</b></div>' + f'<div class=hook>{hook}</div>' + (f'<div class=sub><span>{sub}</span></div>' if sub else '')
         pg.set_content(page(body, top)); pg.wait_for_timeout(200)
         pg.screenshot(path=f'/tmp/en/ov/{name}.png', omit_background=True)
     b.close()
