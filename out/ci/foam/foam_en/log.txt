@@ -11,7 +11,7 @@ done /s17/rp/foam_en/reel_foam_en.mp4 18.841 lufs before -16.1 gain 1.6
 trimmed /s17/rp/foam_en/reel_foam_en.mp4 18.44
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/foam_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/foam_en/reel_foam_en.mp4
-/s17/rp/foam_en/reel_foam_en.mp4 before -13.0 after -14.5 peak -2.4
+/s17/rp/foam_en/reel_foam_en.mp4 before -13.0 after -14.5 peak -2.3
 + python3 post_cz.py /s17/rp/foam_en
 post ok
 + echo 'EXIT /s17/rp/foam_en 0'
