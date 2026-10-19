@@ -9,8 +9,9 @@
 - Правило Димы: рилс только для новичков, начало обращается к новичкам.
 
 ## Формула
-- Первая строка голоса и карточки: «מתחילים בגלישה? / New to surfing?» и сразу миф, который ломаем.
-- Карточка: строка 1 белая (обращение), строка 2 голубая (миф), до 6 слов в строке. Как в одобренном «5 вещах» B.
+- Аудитория (Дима 19.10): новички и те, кто уже катается и хочет улучшить технику. Первая строка голоса и карточки: новичкам «מתחילים בגלישה? / New to surfing?», тем, кто уже катается, «כבר עומדים על הגלשן? / Already standing up?», и сразу миф, который ломаем.
+- 24.10 и 31.10 поменяны местами (19.10): 24.10 в ленте выходит карусель «первая доска», рилс про доску в тот же день был бы повтором.
+- Карточка: строка 1 белая (обращение), строка 2 голубая (миф), до 6 слов в строке. Как в одобренном «5 вещах» B. Обложки каруселей 22-27.10 переделаны под ту же формулу.
 - Дальше 3 шага, одна интеграция, одна просьба. HE до 43 слов, длина 18-25 с.
 
 ## Что выкинули и почему
@@ -28,14 +29,14 @@
 | Дата | Тема | Карточка HE | Карточка EN | Интеграция |
 |---|---|---|---|---|
 | Пт 23.10 | Пена не только для первого дня | מתחילים בגלישה? / הקצף הוא לא רק ליום הראשון | NEW TO SURFING? / THE FOAM ISN'T JUST DAY ONE | ИИ-тренер |
-| Сб 24.10 | Маленькая доска не поможет | מתחילים בגלישה? / גלשן קטן לא ישפר אתכם | NEW TO SURFING? / A SMALLER BOARD WON'T HELP | прогноз: высота волны |
-| Вс 25.10 | Одна вещь за раз | מתחילים בגלישה? / עוד טיפים לא יעזרו | NEW TO SURFING? / MORE TIPS WON'T HELP | разбор: одно исправление и упражнение |
-| Пн 26.10 | Где сидеть в лайнапе | מתחילים בגלישה? / אתם יושבים במקום הלא נכון | NEW TO SURFING? / YOU'RE SITTING IN THE WRONG SPOT | ИИ-тренер |
+| Сб 24.10 | Самая большая волна не твоя | כבר עומדים על הגלשן? / הגל הגדול הוא לא שלכם | ALREADY STANDING UP? / THE BIG ONE ISN'T YOURS | прогноз: размер сетов |
+| Вс 25.10 | Одна вещь за раз | כבר עומדים על הגלשן? / עוד טיפים לא יעזרו | ALREADY STANDING UP? / MORE TIPS WON'T HELP | разбор: одно исправление и упражнение |
+| Пн 26.10 | Где сидеть в лайнапе | כבר עומדים על הגלשן? / אתם יושבים במקום הלא נכון | ALREADY STANDING UP? / YOU'RE SITTING IN THE WRONG SPOT | ИИ-тренер |
 | Вт 27.10 | Поп-ап через колено | מתחילים בגלישה? / הברך מאטה אתכם | NEW TO SURFING? / YOUR KNEE SLOWS YOU DOWN | повтор волны с отметкой колена |
 | Ср 28.10 | Не бросай доску | מתחילים בגלישה? / לא זורקים את הגלשן | NEW TO SURFING? / DON'T THROW YOUR BOARD | прогноз: высота волны |
-| Чт 29.10 | Дроп-ин | מתחילים בגלישה? / הגל לא של מי שתפס ראשון | NEW TO SURFING? / FIRST DOESN'T MAKE IT YOURS | ИИ-тренер |
+| Чт 29.10 | Дроп-ин | כבר עומדים על הגלשן? / הגל לא של מי שתפס ראשון | ALREADY STANDING UP? / FIRST DOESN'T MAKE IT YOURS | ИИ-тренер |
 | Пт 30.10 | Как снять друга | מתחילים בגלישה? / הטלפון הוא לא הבעיה | NEW TO SURFING? / YOUR PHONE ISN'T THE PROBLEM | разбор: загрузка видео |
-| Сб 31.10 | Самая большая волна не твоя | מתחילים בגלישה? / הגל הגדול הוא לא שלכם | NEW TO SURFING? / THE BIG ONE ISN'T YOURS | ИИ-тренер |
+| Сб 31.10 | Маленькая доска не поможет | מתחילים בגלישה? / גלשן קטן לא ישפר אתכם | NEW TO SURFING? / A SMALLER BOARD WON'T HELP | ИИ-тренер: какая доска подходит |
 | Вс 01.11 | Гидрик зимой | מתחילים בגלישה? / המים הקרים הם לא הבעיה | NEW TO SURFING? / COLD WATER ISN'T THE PROBLEM | прогноз: температура воды (внутри шага) |
 
 ## Тексты голоса
@@ -46,20 +47,20 @@
 - EN: New to surfing? The foam isn't just for day one. / One. Pop up on every foam wave. / Two. Once you're up, angle the board along the foam. / Three. Ten rides in the foam beat an hour waiting out back. / By the way, not sure you're ready to paddle out? Ask the coach in SurfTribe. Save this.
 - Кадры: генерация, пена у берега, сёрфер встаёт и уходит вдоль пены; запись экрана чата с тренером.
 
-### Сб 24.10. Маленькая доска не поможет (объём)
-- HE: מתחילים בגלישה? גלשן קטן לא ישפר אתכם. הוא רק יגרום לכם לפספס גלים. / אחת. לוקחים נפח: גלשן סופט גדול או לונג. / שתיים. יותר גלים זה יותר קימות, וככה לומדים. / שלוש. עוברים לקצר רק כשתופסים את רוב הגלים. / אגב, יום קטן בתחזית של SurfTribe? לוקחים את הגלשן הכי גדול. שמרו את זה.
-- EN: New to surfing? A smaller board won't make you better. It just makes you miss waves. / One. Take more volume, a big soft top or a longboard. / Two. More waves means more pop ups, and that's how you learn. / Three. Go shorter only when you catch most waves you paddle for. / By the way, small day in the SurfTribe forecast? Take your biggest board. Save this.
-- Кадры: генерация, сёрфер с маленькой доской пропускает волну, с большой ловит; запись экрана прогноза.
-- Подтвердить (п. 52): советы по доске и «когда переходить на короче».
+### Сб 24.10. Самая большая волна не твоя
+- HE: כבר עומדים על הגלשן? הגל הכי גדול בסט הוא לא הגל שלכם. / הוא נשבר הכי חזק ונסגר מהר. / אחת. נותנים לגדולים לעבור. / שתיים. לוקחים את הגלים הקטנים בסוף הסט. / שלוש. סופרים כמה גלים תפסתם, לא כמה הם גדולים. / אגב, בתחזית של SurfTribe רואים מראש כמה גדולים הסטים. שמרו את זה.
+- EN: Already standing up? The biggest wave of the set isn't your wave. / It breaks hardest and closes out fast. / One. Let the big ones pass. / Two. Take the smaller waves at the end of the set. / Three. Count waves caught, not wave size. / By the way, the SurfTribe forecast shows how big the sets are today. Save this.
+- Кадры: генерация, сет из трёх волн, большая закрывается, маленькая в конце с сёрфером; запись экрана прогноза.
+- Подтвердить (п. 52): совет брать волны в конце сета.
 
 ### Вс 25.10. Одна вещь за раз
-- HE: מתחילים בגלישה? עוד טיפים לא ישפרו אתכם מהר יותר. תיקון אחד כן. / אחת. בוחרים את הטעות שהכי מפילה. / שתיים. חושבים רק עליה כל הסשן. / שלוש. בסוף מצלמים גל אחד ובודקים. / אגב, ב-SurfTribe מקבלים תיקון אחד ותרגיל לכל גל. שמרו את זה.
-- EN: New to surfing? More tips won't make you better faster. One fix will. / One. Pick the mistake that drops you most. / Two. Think only about that for the whole session. / Three. Film one wave at the end and check it. / By the way, SurfTribe gives you one fix and one drill for every wave. Save this.
+- HE: כבר עומדים על הגלשן? עוד טיפים לא ישפרו אתכם מהר יותר. תיקון אחד כן. / אחת. בוחרים את הטעות שהכי מפילה. / שתיים. חושבים רק עליה כל הסשן. / שלוש. בסוף מצלמים גל אחד ובודקים. / אגב, ב-SurfTribe מקבלים תיקון אחד ותרגיל לכל גל. שמרו את זה.
+- EN: Already standing up? More tips won't make you better faster. One fix will. / One. Pick the mistake that drops you most. / Two. Think only about that for the whole session. / Three. Film one wave at the end and check it. / By the way, SurfTribe gives you one fix and one drill for every wave. Save this.
 - Кадры: генерация, на «больше советов» пять карточек подряд, потом одна; запись экрана разбора с одним исправлением.
 
 ### Пн 26.10. Где сидеть в лайнапе
-- HE: מתחילים בגלישה? אתם לא גולשים גרועים. אתם יושבים במקום הלא נכון. / אחת. מסתכלים איפה הגל נעמד ראשון. / שתיים. יושבים קצת בצד של הפיק, על השולדר. / שלוש. אחרי כל גל חותרים חזרה לאותה נקודה. / אגב, שאלות על הלייןאפ שואלים את המאמן ב-SurfTribe. שמרו את זה.
-- EN: New to surfing? You're not a bad surfer. You're sitting in the wrong spot. / One. Watch where the wave stands up first. / Two. Sit a little wide of that peak, on the shoulder. / Three. After every wave, paddle back to the same spot. / By the way, any lineup question, ask the coach in SurfTribe. Save this.
+- HE: כבר עומדים על הגלשן? אתם לא גולשים גרועים. אתם יושבים במקום הלא נכון. / אחת. מסתכלים איפה הגל נעמד ראשון. / שתיים. יושבים קצת בצד של הפיק, על השולדר. / שלוש. אחרי כל גל חותרים חזרה לאותה נקודה. / אגב, שאלות על הלייןאפ שואלים את המאמן ב-SurfTribe. שמרו את זה.
+- EN: Already standing up? You're not a bad surfer. You're sitting in the wrong spot. / One. Watch where the wave stands up first. / Two. Sit a little wide of that peak, on the shoulder. / Three. After every wave, paddle back to the same spot. / By the way, any lineup question, ask the coach in SurfTribe. Save this.
 - Кадры: генерация, вид сверху на лайнап с отметками «פיק / PEAK» и «שולדר / SHOULDER».
 - Подтвердить (п. 52): новичку сидеть на шолдере, а не на пике.
 
@@ -75,8 +76,8 @@
 - Кадры: генерация, пена накрывает сёрфера, переворот; бросок доски показываем без людей сзади.
 
 ### Чт 29.10. Дроп-ин
-- HE: מתחילים בגלישה? מי שתפס ראשון, זה לא אומר שהגל שלו. / העדיפות למי שהכי קרוב לשבירה. / אחת. לפני שחותרים, מסתכלים לפיק. / שתיים. מישהו כבר גולש? הגל שלו. עוצרים. / שלוש. נכנסתם בטעות? יוצאים מהגל ומתנצלים. / אגב, על חוקי הלייןאפ אפשר לשאול את המאמן ב-SurfTribe. שמרו את זה.
-- EN: New to surfing? Catching it first doesn't make it your wave. / The surfer closest to where it breaks has priority. / One. Before you paddle, look toward the peak. / Two. Someone already riding? It's theirs. Pull back. / Three. Dropped in by mistake? Kick out and say sorry. / By the way, any lineup rule, ask the coach in SurfTribe. Save this.
+- HE: כבר עומדים על הגלשן? מי שתפס ראשון, זה לא אומר שהגל שלו. / העדיפות למי שהכי קרוב לשבירה. / אחת. לפני שחותרים, מסתכלים לפיק. / שתיים. מישהו כבר גולש? הגל שלו. עוצרים. / שלוש. נכנסתם בטעות? יוצאים מהגל ומתנצלים. / אגב, על חוקי הלייןאפ אפשר לשאול את המאמן ב-SurfTribe. שמרו את זה.
+- EN: Already standing up? Catching it first doesn't make it your wave. / The surfer closest to where it breaks has priority. / One. Before you paddle, look toward the peak. / Two. Someone already riding? It's theirs. Pull back. / Three. Dropped in by mistake? Kick out and say sorry. / By the way, any lineup rule, ask the coach in SurfTribe. Save this.
 - Кадры: генерация, два сёрфера на одной волне сверху, стрелка «פיק», метка приоритета. Если будет съёмка 24.10, постановочный дроп-ин.
 
 ### Пт 30.10. Как снять друга
@@ -85,11 +86,11 @@
 - Кадры: генерация, человек с телефоном на берегу, сплит «далеко / правильно»; запись экрана загрузки.
 - Подтвердить (п. 52): «треть кадра» против требований приложения.
 
-### Сб 31.10. Самая большая волна не твоя
-- HE: מתחילים בגלישה? הגל הכי גדול בסט הוא לא הגל שלכם. / הוא נשבר הכי חזק ונסגר מהר. / אחת. נותנים לגדולים לעבור. / שתיים. לוקחים את הגלים הקטנים בסוף הסט. / שלוש. סופרים כמה גלים תפסתם, לא כמה הם גדולים. / אגב, לא בטוחים איזה גל שלכם? שאלו את המאמן ב-SurfTribe. שמרו את זה.
-- EN: New to surfing? The biggest wave of the set isn't your wave. / It breaks hardest and closes out fast. / One. Let the big ones pass. / Two. Take the smaller waves at the end of the set. / Three. Count waves caught, not wave size. / By the way, not sure which waves are yours today? Ask the coach in SurfTribe. Save this.
-- Кадры: генерация, сет из трёх волн, большая закрывается, маленькая в конце с сёрфером.
-- Подтвердить (п. 52): совет брать волны в конце сета.
+### Сб 31.10. Маленькая доска не поможет (объём)
+- HE: מתחילים בגלישה? גלשן קטן לא ישפר אתכם. הוא רק יגרום לכם לפספס גלים. / אחת. לוקחים נפח: גלשן סופט גדול או לונג. / שתיים. יותר גלים זה יותר קימות, וככה לומדים. / שלוש. עוברים לקצר רק כשתופסים את רוב הגלים. / אגב, לא בטוחים איזה גלשן מתאים לכם? שאלו את המאמן ב-SurfTribe. שמרו את זה.
+- EN: New to surfing? A smaller board won't make you better. It just makes you miss waves. / One. Take more volume, a big soft top or a longboard. / Two. More waves means more pop ups, and that's how you learn. / Three. Go shorter only when you catch most waves you paddle for. / By the way, not sure which board fits you? Ask the coach in SurfTribe. Save this.
+- Кадры: генерация, сёрфер с маленькой доской пропускает волну, с большой ловит; запись экрана чата с тренером.
+- Подтвердить (п. 52): советы по доске и «когда переходить на короче».
 
 ### Вс 01.11. Гидрик зимой
 - HE: מתחילים בגלישה? המים הקרים הם לא הבעיה בחורף. החליפה הלא נכונה כן. / אחת. בודקים בתחזית של SurfTribe את טמפרטורת המים בחוף שלכם. / שתיים. בוחרים עובי לפי הטבלה. / שלוש. בוקר מוקדם או רוח? עולים בעובי. / שמרו את זה לחורף.
@@ -99,6 +100,6 @@
 
 ## Что нужно от Димы
 1. Ок на темы и хуки (правки прямо по строкам).
-2. Подтвердить советы (п. 52): 24.10 доска, 26.10 шолдер, 27.10 порядок ног, 30.10 треть кадра, 31.10 конец сета.
+2. Подтвердить советы (п. 52): 24.10 конец сета, 26.10 шолдер, 27.10 порядок ног, 30.10 треть кадра, 31.10 доска.
 3. Таблица гидриков для 01.11.
 4. Подтвердить, что ИИ-тренер в приложении отвечает на вопросы про лайнап и готовность выйти (23, 26, 29, 31.10), и запись экрана чата.
