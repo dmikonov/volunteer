@@ -1,0 +1,23 @@
+name: reel-job
+on:
+  workflow_dispatch:
+  push:
+    branches: [surftribe-media]
+    paths: ['tools/reel/ci/trigger.txt']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: job
+        run: bash tools/reel/ci/job.sh
+      - name: publish outputs
+        if: always()
+        run: |
+          git config user.name "reel-bot" && git config user.email "reel-bot@users.noreply.github.com"
+          git add -f out/ci || true
+          git commit -m "CI: reel-job outputs [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase -q origin surftribe-media && git push -q origin HEAD:surftribe-media && break; sleep 5; done
