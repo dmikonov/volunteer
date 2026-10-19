@@ -1,0 +1,14 @@
+{"_note": "23.10 foam reel, 20.10. Z-Image Turbo (mcp-tools/Z-Image-Turbo, 720x1280, 8 steps, random_seed false) -> Wan 2.2 i2v (zerogpu-aoti/wan2-2-fp8da-aoti-faster, 3.5 s, 6 steps). usable = clean part in seconds. Prompt suffix: Mediterranean sea, soft morning light, natural colors, realistic sports photography, no logos, no text. Adult: '32-year-old man with light stubble' (rule 18).",
+ "clips": {
+  "f_hook": {"img": ["z", 202330, "standing on light-blue foam board riding broken white water toward the beach, knees bent, arms out, leash cord"], "wan": [2010231, "keeps riding the white water straight toward the camera, stable stance"], "usable": [0, 3.5]},
+  "f_prone": {"img": ["z", 202332, "lying flat on stomach on the board, pushed toward the beach by white water"], "wan": [2010232, "foam pushes the surfer lying on the board forward"], "usable": [0, 2.0]},
+  "f_up": {"img": ["z", 202360, "start of pop up in foam (came out as just-popped-up crouch)"], "wan": [71001, "rises into a stable low stance and rides the white water"], "usable": [0, 1.8]},
+  "f_angle": {"img": ["z", 202333, "riding sideways along the foam line"], "wan": [2010233, "glides right along the foam"], "usable": [0, 1.3], "note": "board grows longer after 1.3 s: not used"},
+  "f_angle2": {"img": ["z", 202333], "wan": [77012, "rides slowly right along the white water, same board"], "usable": [0, 2.4]},
+  "f_angle3": {"img": ["z", 202333], "wan": [55431], "usable": [0, 1.2], "note": "turns his back, board morphs: not used"},
+  "f_side1": {"img": ["z", 202351, "low stance, feet mid-board, riding left along foam parallel to beach"], "wan": [61001], "usable": [0, 1.2], "note": "board morphs: not used"},
+  "f_side2": {"img": ["z", 202351], "wan": [61002, "rides left in front of the foam, static camera"], "usable": [0, 2.8], "note": "dark object appears at sea after 3.0 s"},
+  "f_back": {"img": ["z", 202313, "far out beyond the breaking waves, five small distant surfers waiting"], "wan": [2010234], "usable": [0, 3.5]},
+  "f_walk": {"img": ["z", 202340, "walking out of knee-deep foam carrying the board, smiling"], "wan": [33120], "usable": [0, 2.4]}
+ },
+ "rejected_stills": {"202311": "legs raised in the air (wrong prone)", "202321": "logo on board", "202322": "looks under 25", "202350": "standing on the tail, straight legs (wrong technique)", "202310": "looks under 25"}}
