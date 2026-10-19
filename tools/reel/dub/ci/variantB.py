@@ -147,7 +147,7 @@ spec = {
         {'key': 'man', 'at': find(3, ['מצלמ']), 'src': H + 'man.mp4', 'ss': 1.2, 'x': 0.42},
         {'key': 'end', 'at': find(3, ['שמרו', 'שימרו']), 'src': H + 'man.mp4', 'ss': 'cont', 'x': 0.42}],
     'titles': [
-        {'shot': 'hook', 'hook': True, 'l1': 'רגע!', 'l2': 'אל תחתרו עדיין'},
+        {'shot': 'hook', 'hook': True, 'l1': 'מתחילים בגלישה?', 'l2': 'אל תחתרו עדיין'},
         {'shot': 'walk', 'hook': True, 'l1': 'קודם', 'l2': '5 דברים'},
         {'shot': 'pier', 'n': 1, 'l1': 'עשר דקות<br>על הסטים'},
         {'shot': 'white', 'n': 2, 'l1': 'מתחילים<br>בקצף'},
