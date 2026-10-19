@@ -2,3 +2,4 @@ f5-tts
 phonikud-onnx
 soundfile
 omegaconf
+gradio[mcp]
