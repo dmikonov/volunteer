@@ -3,10 +3,10 @@ stream|codec_type=audio|duration=25.066000|nb_frames=1176
 format|duration=25.066667
 
 -29.7 dBFS  TPK:  -1.4  -1.2 dBFS
-[Parsed_ebur128_0 @ 0x56280ac69180] t: 25         TARGET:-23 LUFS    M: -34.9 S: -16.2     I: -14.2 LUFS       LRA:   2.6 LU  FTPK: -30.1 -31.0 dBFS  TPK:  -1.4  -1.2 dBFS
-[out#0/null @ 0x56280ab89c00] video:352kB audio:4700kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
-frame=  752 fps=344 q=-0.0 Lsize=N/A time=00:00:25.03 bitrate=N/A speed=11.4x    
-[Parsed_ebur128_0 @ 0x56280ac69180] Summary:
+[Parsed_ebur128_0 @ 0x55a3c6529180] t: 25         TARGET:-23 LUFS    M: -34.9 S: -16.2     I: -14.2 LUFS       LRA:   2.6 LU  FTPK: -30.1 -31.0 dBFS  TPK:  -1.4  -1.2 dBFS
+[out#0/null @ 0x55a3c6449c00] video:352kB audio:4700kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=  752 fps=333 q=-0.0 Lsize=N/A time=00:00:25.03 bitrate=N/A speed=11.1x    
+[Parsed_ebur128_0 @ 0x55a3c6529180] Summary:
 
   Integrated loudness:
     I:         -14.2 LUFS
