@@ -1,0 +1,24 @@
++ k=foam_en
++ python3 voice.py foam_en
+Traceback (most recent call last):
+  File "/s17/rp/voice.py", line 20, in <module>
+    L = asyncio.run(tts()); t = 0.12
+        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/s17/rp/voice.py", line 14, in tts
+    async for ch in c.stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+  File "/home/runner/.local/lib/python3.12/site-packages/edge_tts/communicate.py", line 562, in __stream
+    raise NoAudioReceived(
+edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct.
++ echo 'EXIT foam_en 1'
+EXIT foam_en 1
