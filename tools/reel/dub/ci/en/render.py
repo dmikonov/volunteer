@@ -9,7 +9,7 @@ def page(body, top):
       f".hook b{{color:{CY};font-weight:800}}"
       ".sub{position:absolute;top:1328px;left:0;right:0;text-align:center}"
       f".sub span{{display:inline-block;background:{PLATE};border-radius:14px;padding:12px 22px;font-weight:700;font-size:46px;line-height:1.05;color:#fff;white-space:nowrap}}"
-      ".mark{position:absolute;top:248px;left:80px;font-weight:800;font-size:55px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}"
+      ".mark{position:absolute;top:248px;left:80px;font-weight:800;font-size:55px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.75),0 0 3px rgba(0,0,0,.6)}"
       f".mark b{{color:{CY}}}"
       f"</style></head><body>{body}</body></html>")
 jobs = json.loads(sys.argv[1])

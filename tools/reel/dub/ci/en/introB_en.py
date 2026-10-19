@@ -13,7 +13,7 @@ END = 795; TAIL = 804 - END   # original ends with a 9-frame loop-back to its ol
 def sfps(f):
     n, d = sp.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-show_entries', 'stream=r_frame_rate', '-of', 'csv=p=0', f], capture_output=True, text=True).stdout.strip().split('/')
     return float(n) / float(d)
-SP = {k: min(1.0, sfps(f'{T}/{k}.mp4') / FPS) for k in SRC}   # 24 fps sources play at 0.8x: no duplicated frames
+SP = {k: 1.0 for k in SRC}   # real-time playback (0.8x slow-mo gave more repeated frames, reviewer 19.10)
 print('speed', SP)
 WSS = 0.6   # surfers paddling out over dark green water (whitewater part of this clip is used later for tip 2)
 def shot(i, k, fx, nf, ov):
