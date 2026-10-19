@@ -61,7 +61,14 @@
    "k": "ARROW",
    "line": "L3",
    "d0": 0.5,
-   "html": "<div style='position:absolute;top:1400px;left:300px;width:640px;height:140px'><svg width=640 height=140 viewBox='0 0 640 140'><path d='M20 110 Q300 80 560 60' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round/><path d='M515 25 L598 58 L528 104' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round stroke-linejoin=round/></svg></div>"
+   "html": "<div style='position:absolute;top:1400px;left:300px;width:640px;height:140px'><svg width=640 height=140 viewBox='0 0 640 140'><path d='M20 110 Q300 80 560 60' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round/><path d='M515 25 L598 58 L528 104' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round stroke-linejoin=round/></svg></div>",
+   "d1": 1.9
+  },
+  {
+   "k": "ARROW2",
+   "line": "L3",
+   "d0": 2.15,
+   "html": "<div style='position:absolute;top:1180px;left:180px;width:640px;height:140px'><svg width=640 height=140 viewBox='0 0 640 140'><path d='M620 60 Q340 80 80 70' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round/><path d='M125 28 L42 68 L120 110' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round stroke-linejoin=round/></svg></div>"
   }
  ],
  "plan": {
@@ -94,6 +101,21 @@
     "cy": [
      0.5,
      0.5
+    ],
+    "dd": 1.2
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_up.mp4",
+    "a": 0.0,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.65,
+     0.65
     ]
    }
   ],
@@ -110,6 +132,21 @@
     "cy": [
      0.5,
      0.5
+    ],
+    "dd": 1.9
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_side2.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.62,
+     0.62
     ]
    }
   ],
@@ -165,5 +202,6 @@
  "gap": 0.3,
  "ttop": {
   "L3": 700
- }
+ },
+ "rate": "+4%"
 }
