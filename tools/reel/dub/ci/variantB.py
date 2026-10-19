@@ -24,13 +24,23 @@ with tarfile.open(d('google/fleurs', 'data/he_il/audio/dev.tar.gz', repo_type='d
 say('ref', REF_TXT)
 
 # ---------- takes ----------
+TK = f'{ROOT}/tools/reel/dub/ci/takesB.json'   # takes made via the authenticated MCP tool: [[unit, speed, seed, url], ...]
+if os.path.exists(TK):
+    takes = []
+    for i, spd, s, u in json.load(open(TK)):
+        out = f'{W}/t/u{i}_{spd}_{s}.wav'
+        r = sp.run(['curl', '-sfL', '-o', out, u])
+        if r.returncode == 0 and os.path.getsize(out) > 1000: takes.append((i, spd, s, out))
+        else: say('download failed', i, spd, s)
+    SEEDS = []
 from gradio_client import Client, handle_file
 c = None
-for k in range(10):
+if not os.path.exists(TK):
+  for k in range(10):
     try: c = Client('dmikonov/f5-hebrew', verbose=False); break
     except Exception as e: say('space not ready', str(e)[:120]); time.sleep(30)
-takes = []
-for i, v in enumerate(V):
+  takes = []
+for i, v in (enumerate(V) if not os.path.exists(TK) else []):
     for spd in SPEEDS:
         for s in SEEDS:
             out = f'{W}/t/u{i}_{spd}_{s}.wav'
