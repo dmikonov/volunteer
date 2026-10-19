@@ -2,7 +2,7 @@
  "lang": "he",
  "out": "reel_foam_he.mp4",
  "app_lines": [
-  "L5"
+  "L6"
  ],
  "app_top": 250,
  "no_marka": true,
@@ -11,15 +11,15 @@
  "sub_replace": {
   "בסרף טרייב": "ב-SurfTribe",
   "סרף טרייב": "SurfTribe",
-  "מתחילים בגלישה": "מתחילים בגלישה?",
-  "מוכנים לצאת": "מוכנים לצאת?"
+  "מתחילים בגלישה": "מתחילים בגלישה?"
  },
  "lines": [
   "מתחילים בגלישה, הקצף הוא לא רק ליום הראשון.",
   "אחת, קמים על כל גל קצף.",
   "שתיים, כשעומדים, מפנים את הגלשן לאורך הקצף.",
   "שלוש, עשר גלישות בקצף שוות יותר משעה בחוץ.",
-  "אגב, לא בטוחים שאתם מוכנים לצאת, שאלו את המאמן בסרף טרייב.",
+  "אגב, לא בטוחים שאתם מוכנים לצאת?",
+  "שאלו את המאמן בסרף טרייב.",
   "שמרו את זה."
  ],
  "titles": {
@@ -27,7 +27,7 @@
    "מתחילים בגלישה?",
    "הקצף לא רק<br>ליום הראשון",
    null,
-   "X"
+   null
   ],
   "L2": [
    "קמים",
@@ -48,8 +48,14 @@
    "CK"
   ],
   "L5": [
-   "לא בטוחים שאתם מוכנים?",
+   "לא בטוחים",
+   "שאתם מוכנים לצאת?",
+   null,
+   null
+  ],
+  "L6": [
    "שאלו את המאמן",
+   "ב-SurfTribe",
    null,
    null
   ]
@@ -66,15 +72,15 @@
   {
    "k": "ARROW",
    "line": "L3",
-   "d0": 0.5,
-   "html": "<div style=\"position:absolute;top:1400px;left:300px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>",
-   "d1": 2.1
+   "d0": 0.3,
+   "d1": 2.1,
+   "html": "<div style=\"position:absolute;top:1400px;left:300px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
   },
   {
    "k": "ARROW2",
    "line": "L3",
-   "d0": 2.35,
-   "html": "<div style=\"position:absolute;top:1180px;left:180px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M620 60 Q340 80 80 70\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M125 28 L42 68 L120 110\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M620 60 Q340 80 80 70\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M125 28 L42 68 L120 110\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+   "d0": 2.3000000000000003,
+   "html": "<div style=\"position:absolute;top:1150px;left:250px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
   }
  ],
  "plan": {
@@ -143,7 +149,7 @@
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/f_side2.mp4",
+    "src": "/s17/gen/f_woman.mp4",
     "a": 0.0,
     "z": 1.15,
     "cx": [
@@ -157,6 +163,21 @@
    }
   ],
   "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_ride3.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.43,
+     0.43
+    ],
+    "dd": 1.7
+   },
    {
     "kind": "gen",
     "src": "/s17/gen/f_back.mp4",
@@ -174,6 +195,23 @@
   ],
   "L5": [
    {
+    "kind": "gen",
+    "src": "/s17/gen/f_watch.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "frz": 0.3
+   }
+  ],
+  "L6": [
+   {
     "kind": "app",
     "src": "/s17/gen/app_he.mp4",
     "a": 0.0,
@@ -188,7 +226,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/f_walk.mp4",

@@ -2,7 +2,7 @@
  "lang": "en",
  "out": "reel_foam_en.mp4",
  "app_lines": [
-  "L5"
+  "L6"
  ],
  "app_top": 250,
  "no_marka": true,
@@ -13,7 +13,8 @@
   "One. Pop up on every foam wave.",
   "Two. Once you're up, angle the board along the foam.",
   "Three. Ten rides in the foam beat an hour waiting out back.",
-  "By the way, not sure you're ready to paddle out? Ask the coach in SurfTribe.",
+  "By the way, not sure you're ready to paddle out?",
+  "Ask the coach in SurfTribe.",
   "Save this."
  ],
  "titles": {
@@ -21,7 +22,7 @@
    "NEW TO SURFING?",
    "FOAM ISN'T<br>JUST DAY ONE",
    null,
-   "X"
+   null
   ],
   "L2": [
    "POP UP",
@@ -42,8 +43,14 @@
    "CK"
   ],
   "L5": [
-   "NOT SURE YOU'RE READY?",
+   "NOT SURE YOU'RE",
+   "READY TO PADDLE OUT?",
+   null,
+   null
+  ],
+  "L6": [
    "ASK THE COACH",
+   "IN SURFTRIBE",
    null,
    null
   ]
@@ -51,24 +58,24 @@
  "recap": [
   "SAVE THIS",
   [
-   "Pop up on every foam wave",
+   "Pop up on every wave",
    "Angle along the foam",
-   "10 rides beat 1 hour out"
+   "10 rides beat 1 hour"
   ]
  ],
  "extra": [
   {
    "k": "ARROW",
    "line": "L3",
-   "d0": 0.5,
-   "html": "<div style=\"position:absolute;top:1400px;left:300px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>",
-   "d1": 1.9
+   "d0": 0.3,
+   "d1": 1.9,
+   "html": "<div style=\"position:absolute;top:1400px;left:300px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
   },
   {
    "k": "ARROW2",
    "line": "L3",
-   "d0": 2.15,
-   "html": "<div style=\"position:absolute;top:1180px;left:180px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M620 60 Q340 80 80 70\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M125 28 L42 68 L120 110\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M620 60 Q340 80 80 70\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M125 28 L42 68 L120 110\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+   "d0": 2.1,
+   "html": "<div style=\"position:absolute;top:1150px;left:250px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
   }
  ],
  "plan": {
@@ -137,7 +144,7 @@
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/f_side2.mp4",
+    "src": "/s17/gen/f_woman.mp4",
     "a": 0.0,
     "z": 1.15,
     "cx": [
@@ -151,6 +158,21 @@
    }
   ],
   "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_ride3.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.43,
+     0.43
+    ],
+    "dd": 1.7
+   },
    {
     "kind": "gen",
     "src": "/s17/gen/f_back.mp4",
@@ -168,6 +190,23 @@
   ],
   "L5": [
    {
+    "kind": "gen",
+    "src": "/s17/gen/f_watch.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "frz": 0.5
+   }
+  ],
+  "L6": [
+   {
     "kind": "app",
     "src": "/s17/gen/app_en.mp4",
     "a": 0.0,
@@ -182,7 +221,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/f_walk.mp4",
