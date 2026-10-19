@@ -61,6 +61,11 @@
 - Превью для Димы: Descript import_media (прямая загрузка PUT из песочницы) + publish_project unlisted 1080p, ссылка share.descript.com. Мастер-файлы в /mnt/files/reels/.
 - Публикация из этой схемы: upload_local_file даёт ссылку на 1 час, её сразу в POST /me/media.
 
+## Сборка на GitHub Actions (основной путь с 20.10, HF-песочница 402)
+- Кадры: Z-Image Turbo (инструмент gr1_z_image_turbo_generate) и Wan 2.2 (dynamic_space) через MCP Hugging Face, стартовые картинки видно сразу, клипы скачивает CI: tools/reel/ci/fetch_list.txt (имя и хвост ссылки hf.space), MODE=fetch.sh, пуш trigger.txt. Листы кадров приходят в out/ci/<рилс>/gen/.
+- Сборка: tools/reel/ci/build_<рилс>.sh (пример build_foam.sh: панель приложения app_panel.py, audio_fx, voice с повтором, build, ov_png, ov_ff, trim_tail, loudfix, post_cz, листы 10 к/с, громкость, паузы), MODE=build_<рилс>.sh.
+- Превью: out/ci/<рилс>/<имя>/prev.mp4 в ветке surftribe-media (raw.githubusercontent.com), плюс Descript unlisted (import_media по raw-ссылке). Загрузка в датасет HF без песочницы невозможна (402).
+
 ## Сборка (Hugging Face Sandbox)
 - Создать песочницу (hf_sandbox create), запустить scripts/setup.sh из датасета dmikonov/surftribe-drafts: ffmpeg, Python-пакеты, Chromium, клипы с Drive, шрифт Rubik. apt и playwright запускать по очереди, не параллельно.
 - Шаблон рилса: scripts/tip1/ (tts.py, voice.py, audio_fx.py, build2.py, ov2.py, post2.py, chain11.sh). Скопировать в /s17/<имя рилса>/ и поменять:
