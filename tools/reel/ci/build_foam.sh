@@ -12,7 +12,7 @@ python3 tools/reel/audio_fx.py 30
 cd /s17/rp && for f in voice.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py; do cp $R/tools/reel/$f .; done
 for k in foam_he foam_en; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; done
 for k in foam_he foam_en; do for i in 1 2 3 4; do python3 voice.py /s17/rp/$k > /s17/rp/$k/voice.log 2>&1 && break; sleep 8; done; tail -2 /s17/rp/$k/voice.log; done
-run(){ k=/s17/rp/$1; python3 build.py $k && python3 ov_png.py $k && python3 ov_ff.py $k && python3 trim_tail.py $k && python3 post_cz.py $k; echo "EXIT $k $?"; }
+run(){ k=/s17/rp/$1; python3 build.py $k && python3 ov_png.py $k && python3 ov_ff.py $k && python3 trim_tail.py $k && python3 $R/tools/reel/loudfix.py $k/$(python3 -c "import json;print(json.load(open('$k/spec.json'))['out'])") && python3 post_cz.py $k; echo "EXIT $k $?"; }
 run foam_he > /s17/rp/foam_he/log.txt 2>&1 &
 run foam_en > /s17/rp/foam_en/log.txt 2>&1 &
 wait

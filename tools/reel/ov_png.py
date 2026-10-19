@@ -99,7 +99,7 @@ for i, l in enumerate(L):
     if i > 0: ON.append(('FLASH', a - 0.02, a + 0.06))
 ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
 for e in S.get('extra', []):
-    i = [l['k'] for l in L].index(e['line']); ON.append((e['k'], cuts[i] + e.get('d0', 0.3), cuts[i + 1]))
+    i = [l['k'] for l in L].index(e['line']); ON.append((e['k'], cuts[i] + e.get('d0', 0.3), cuts[i] + e['d1'] if 'd1' in e else cuts[i + 1]))
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
     if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))

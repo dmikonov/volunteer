@@ -10,8 +10,8 @@ for cx, cy in ((r, r), (PW - r, r), (r, ph - r), (PW - r, ph - r)): cv2.circle(m
 cv2.imwrite('/tmp/panel_mask.png', m)
 by0 = PY + int((b0 - y0) * s) - 12; by1 = PY + int((b1 - y0) * s) + 12; d = a1 - a0
 fc = (f"[0:v]trim={a0}:{a1},setpts=PTS-STARTPTS,fps=25,tpad=stop_mode=clone:stop_duration={T - d + 0.2},split[a][b];"
-      f"[a]crop=1080:1920:0:214,boxblur=28:2,eq=brightness=-0.22:saturation=0.8[bg];"
+      f"[a]crop=1080:1920:0:214,boxblur=40:3,eq=brightness=-0.42:saturation=0.35[bg];"
       f"[b]crop=1080:{h}:0:{y0},scale={PW}:{ph}:flags=lanczos,format=rgba[fg0];[1:v]format=gray,scale={PW}:{ph}[mk];[fg0][mk]alphamerge[fg];"
-      f"[bg][fg]overlay={PX}:{PY},drawbox=x={PX + 30}:y={by0}:w={PW - 60}:h={by1 - by0}:color=white@0.95:t=9:enable='gte(t,{d + 0.15})',trim=duration={T},format=yuv420p[v]")
+      f"[bg][fg]overlay={PX}:{PY},trim=duration={T},format=yuv420p[v]")
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-loop', '1', '-i', '/tmp/panel_mask.png', '-filter_complex', fc, '-map', '[v]', '-an', '-c:v', 'libx264', '-crf', '14', '-preset', 'medium', '-t', str(T), out], check=True)
 print('panel', out, 'button box y', by0, by1)
