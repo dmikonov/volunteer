@@ -23,7 +23,7 @@ def cover_html(img, lang, call, title):
             f"<div style='position:absolute;left:0;right:0;top:960px;height:322px;background:rgb({BG})'></div>"
             f"<div style='position:absolute;{side};bottom:96px;width:920px;direction:{'rtl' if rtl else 'ltr'};text-align:{'right' if rtl else 'left'}'>"
             f"<div style='{callcss};color:{CY};line-height:1;margin-bottom:22px'>{call}</div>"
-            f"<div style='font-family:R;font-weight:800;font-size:{84 if not rtl else 88}px;line-height:1.02;color:{FG};letter-spacing:{-1 if not rtl else 0}px'>{title}</div>"
+            f"<div style='font-family:R;font-weight:900;font-size:{84 if not rtl else 88}px;line-height:1.02;color:{FG};letter-spacing:{-1.5 if not rtl else 0}px'>{title}</div>"
             "</div></body>")
 
 def word_png(pg, text, weight, color):
