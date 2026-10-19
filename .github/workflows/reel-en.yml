@@ -15,7 +15,8 @@ jobs:
       - name: deps
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: build
-        run: python3 tools/reel/dub/ci/en/introB_en.py
+        run: |
+          if [ -f tools/reel/dub/ci/en/CANDIDATES ]; then python3 tools/reel/dub/ci/en/candidates.py; else python3 tools/reel/dub/ci/en/introB_en.py; fi
       - name: publish outputs
         if: always()
         run: |
