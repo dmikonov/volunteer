@@ -87,9 +87,13 @@
 - В сообщении: тема и хук, длина HE и EN, подписи HE и EN целиком, что сгенерировано, что подтвердить.
 
 ## Публикация после «ок» (с 18.10 только Composio, Metricool не используем: лимит бесплатного тарифа)
-- Мастер-файлы положить в репозиторий dmikonov/volunteer, ветка surftribe-media, папка tips/ (add_repo с доступом push), проверить, что raw.githubusercontent.com отдаёт 200.
-- Оба аккаунта одинаково через Composio: HE account "surftribe_il", EN account "surftribe_world". Сначала проверить username аккаунта.
-- POST /me/media: media_type REELS, video_url, caption, share_to_feed true, thumb_offset, trial_params {"graduation_strategy": "SS_PERFORMANCE"}; ждать status_code FINISHED; POST /me/media_publish.
+- Мастер-файлы положить в репозиторий dmikonov/volunteer, ветка surftribe-media (add_repo с доступом push), проверить, что raw.githubusercontent.com отдаёт 200. Ссылку брать по SHA коммита с файлом.
+- HE (@surftribe_il, аккаунт Composio по умолчанию): в воркбенче proxy_execute POST /me/media: media_type REELS, video_url, caption, share_to_feed true, thumb_offset, trial_params {"graduation_strategy": "MANUAL" или "SS_PERFORMANCE"}; ждать status_code FINISHED; POST /me/media_publish. Перед этим GET /me и проверить username.
+- EN (@surftribe_world, account id instagram_lena-aga): proxy_execute всегда идёт в аккаунт по умолчанию (surftribe_il), выбрать другой аккаунт в нём нельзя. Работает так (19.10, проверено):
+  - run_composio_tool('INSTAGRAM_POST_IG_USER_MEDIA', {...}, account='instagram_lena-aga'), где ig_user_id = '28750205227978872/media?trial_params=<urlencoded {"graduation_strategy":"MANUAL"}>&x=' (у инструмента нет поля trial_params, поэтому параметр передаётся в адресе), остальное как обычно: media_type REELS, video_url, caption, share_to_feed, thumb_offset.
+  - Проверка, что параметр доходит до Meta: тот же вызов с "BOGUS" должен вернуть ошибку «graduation strategy "BOGUS" ... unknown».
+  - Затем run_composio_tool('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', {'ig_user_id':'28750205227978872','creation_id':id,'max_wait_seconds':170}, account='instagram_lena-aga').
+- Поле trial_params у опубликованного медиа не читается (ошибка nonexisting field), поэтому пробность проверяем только тем, что вызов шёл с trial_params.
 - Метку ИИ через Composio не поставить: строка про ИИ обязательно в подписи.
 - После публикации проверить последние публикации аккаунта (пункт 41) и прислать Диме ссылки.
 
