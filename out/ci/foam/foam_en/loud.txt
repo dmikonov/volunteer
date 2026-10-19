@@ -6,7 +6,7 @@
     LRA:         1.5 LU
     Threshold: -34.5 LUFS
     LRA low:   -15.2 LUFS
-    LRA high:  -13.8 LUFS
+    LRA high:  -13.7 LUFS
 
   True peak:
     Peak:       -2.6 dBFS
