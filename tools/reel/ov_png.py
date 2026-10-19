@@ -24,7 +24,7 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .sub span{{display:inline-block;white-space:nowrap;padding:18px 28px;border-radius:20px;background:{NAVY};font-weight:800;font-size:50px;line-height:1;text-box:trim-both cap alphabetic;color:#fff}}
 .mark{{position:absolute;top:240px;left:0;right:0;text-align:center;direction:ltr}}
 .mark span.b{{display:inline-block;padding:16px 26px;border-radius:20px;background:{NAVY};font-weight:800;font-size:48px;line-height:1;text-box:trim-both cap alphabetic;color:#fff}}
-.rc{{position:absolute;top:330px;left:0;right:0;text-align:center;direction:{DIR}}}
+.rc{{position:absolute;top:{S.get('recap_top', 330)}px;left:0;right:0;text-align:center;direction:{DIR}}}
 .rc .box{{display:inline-block;width:620px;padding:26px 34px 30px;border-radius:30px;background:{NAVY};text-align:{'right' if HE else 'left'}}}
 .rc h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:18px;text-align:center}}
 .rc .row{{font-weight:800;font-size:{52 if HE else 44}px;color:#fff;margin:12px 0;white-space:nowrap}}
@@ -36,18 +36,19 @@ for l in L:
     if l['k'] == LAST or l['k'] not in TITLES: continue
     a, b, n, ic = TITLES[l['k']]; ic = ICON[ic]
     num = f"<div class=n>{n}</div><br>" if n else ''
-    acc = AM if l['k'] in ('L1', 'L2') else CY
+    acc = CY if S.get('hook_cy') else (AM if l['k'] in ('L1', 'L2') else CY)  # 23.10 formula: line 2 cyan
     icon = f"{ic}&nbsp;" if ic else ''
     sm = ' sm' if l['k'] in S.get('app_lines', []) else ''
     inner = f"{num}<div class='plate{sm}'>{icon}{a}<br><span style='color:{acc}'>{b}</span></div>"
     for tag, sc in (('a', 1.22), ('b', 0.95), ('c', 1.0)):
-        top = f"top:{S.get('app_top', 330)}px;" if sm else ''
+        top = f"top:{S.get('app_top', 330)}px;" if sm else (f"top:{S['ttop'][l['k']]}px;" if l['k'] in S.get('ttop', {}) else '')  # 20.10: per-line card top (keep faces clear)
         cards[f"T{l['k']}{tag}"] = f"<div class=blk style='{top}transform:scale({sc})'>{inner}</div>"
 rows = ''.join(f"<div class=row>{CK}&nbsp;&nbsp;{x}</div>" for x in RECAP[1])
 for tag, sc in (('a', 1.15), ('b', 0.97), ('c', 1.0)):
     cards[f'RECAP{tag}'] = f"<div class=rc style='transform:scale({sc});transform-origin:50% 30%'><div class=box><h>{RECAP[0]}</h>{rows}</div></div>"
 cards['MARK'] = f"<div class=mark><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
 cards['MARKA'] = f"<div class=mark style='top:{S.get('app_top', 330) - 90}px'><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
+for e in S.get('extra', []): cards[e['k']] = e['html']  # 20.10: custom overlays (arrow etc.)
 cards['FLASH'] = "<div style='position:absolute;inset:0;background:rgba(255,255,255,.85)'></div>"
 STOP = {'עם', 'על', 'את', 'של', 'לפני', 'the', 'a', 'to', 'of', 'with', 'your', 'from', 'and', 'at', 'over', 'when', 'you', 'is', 'off', 'on', 'in', 'by'}
 subs = []
@@ -97,9 +98,11 @@ for i, l in enumerate(L):
     if base: ON += [(base + 'a', a, a + F1), (base + 'b', a + F1, a + F2), (base + 'c', a + F2, b)]
     if i > 0: ON.append(('FLASH', a - 0.02, a + 0.06))
 ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
+for e in S.get('extra', []):
+    i = [l['k'] for l in L].index(e['line']); ON.append((e['k'], cuts[i] + e.get('d0', 0.3), cuts[i + 1]))
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
-    if not S.get('app_notitle'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
+    if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]

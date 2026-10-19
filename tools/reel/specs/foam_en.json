@@ -1,0 +1,169 @@
+{
+ "lang": "en",
+ "out": "reel_foam_en.mp4",
+ "app_lines": [
+  "L5"
+ ],
+ "app_top": 250,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 700,
+ "lines": [
+  "New to surfing? The foam isn't just for day one.",
+  "One. Pop up on every foam wave.",
+  "Two. Once you're up, angle the board along the foam.",
+  "Three. Ten rides in the foam beat an hour waiting out back.",
+  "By the way, not sure you're ready to paddle out? Ask the coach in SurfTribe.",
+  "Save this."
+ ],
+ "titles": {
+  "L1": [
+   "NEW TO SURFING?",
+   "FOAM ISN'T JUST DAY ONE",
+   null,
+   "X"
+  ],
+  "L2": [
+   "POP UP",
+   "ON EVERY FOAM WAVE",
+   "1",
+   "CK"
+  ],
+  "L3": [
+   "ANGLE THE BOARD",
+   "ALONG THE FOAM",
+   "2",
+   "CK"
+  ],
+  "L4": [
+   "10 FOAM RIDES",
+   "BEAT 1 HOUR OUT BACK",
+   "3",
+   "CK"
+  ],
+  "L5": [
+   "NOT SURE YOU'RE READY?",
+   "ASK THE COACH",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SAVE THIS",
+  [
+   "Pop up on every foam wave",
+   "Angle along the foam",
+   "10 rides beat 1 hour out"
+  ]
+ ],
+ "extra": [
+  {
+   "k": "ARROW",
+   "line": "L3",
+   "d0": 0.5,
+   "html": "<div style='position:absolute;top:1400px;left:300px;width:640px;height:140px'><svg width=640 height=140 viewBox='0 0 640 140'><path d='M20 110 Q300 80 560 60' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round/><path d='M515 25 L598 58 L528 104' stroke='#00d4ff' stroke-width=16 fill=none stroke-linecap=round stroke-linejoin=round/></svg></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_hook.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.43,
+     0.43
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_prone.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_angle2.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_back.mp4",
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.42,
+     0.42
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_walk.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ },
+ "gap": 0.3,
+ "ttop": {
+  "L3": 700
+ }
+}
