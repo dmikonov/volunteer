@@ -1,17 +1,17 @@
 + k=/s17/rp/look2_he
 + python3 build.py /s17/rp/look2_he
-[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.319, 0.9), ('L2', 'split_he.mp4', 0.0, 1.95, 2.219), ('L2', '/g_along.mp4', 1.3, 2.187, 4.169), ('L3', '/g_recap.mp4', 0.0, 2.315, 6.356), ('L4', 'n/g_chin.mp4', 0.0, 1.3, 8.671), ('L4', 'n/g_chin.mp4', 1.3, 1.439, 9.971), ('L5', 'g_ahead2.mp4', 0.0, 2.262, 11.41), ('L6', '/g_turn3.mp4', 0.0, 1.2, 13.672), ('L6', 'n/g_turn.mp4', 0.0, 1.0, 14.872), ('L6', '/g_turn3.mp4', 0.0, 1.238, 15.872), ('L7', 'n/app_he.mp4', 0.0, 2.876, 17.11), ('L8', 'g_ahead2.mp4', 0.6, 1.945, 19.986)]
-cat 22.04 T 21.931
+[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.319, 0.9), ('L2', 'split_he.mp4', 0.0, 2.17, 2.219), ('L2', '/g_along.mp4', 1.3, 1.967, 4.389), ('L3', 'g_bridge.mp4', 0.0, 1.2, 6.356), ('L3', 'g_bridge.mp4', 2.0, 1.115, 7.556), ('L4', '/g_chin2.mp4', 0.0, 1.4, 8.671), ('L4', '/g_chin2.mp4', 1.9, 0.989, 10.071), ('L5', 'g_ahead2.mp4', 0.0, 2.262, 11.06), ('L6', '/g_turn3.mp4', 0.0, 1.2, 13.322), ('L6', 'n/g_turn.mp4', 0.0, 1.0, 14.522), ('L6', '/g_turn3.mp4', 0.0, 1.238, 15.522), ('L7', 'n/app_he.mp4', 0.0, 2.283, 16.76), ('L8', 'n/g_down.mp4', 0.0, 1.945, 19.043)]
+cat 21.04 T 20.988
 + python3 ov_png.py /s17/rp/look2_he
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
-ovplan 51
+ovplan 42
 + python3 ov_ff.py /s17/rp/look2_he
-done /s17/rp/look2_he/reel_look2_he.mp4 21.931 lufs before -16.2 gain 1.7
+done /s17/rp/look2_he/reel_look2_he.mp4 20.988 lufs before -16.1 gain 1.6
 + python3 trim_tail.py /s17/rp/look2_he
-trimmed /s17/rp/look2_he/reel_look2_he.mp4 21.53
+trimmed /s17/rp/look2_he/reel_look2_he.mp4 20.49
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/look2_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/look2_he/reel_look2_he.mp4
-/s17/rp/look2_he/reel_look2_he.mp4 before -12.9 after -14.5 peak -1.9
+/s17/rp/look2_he/reel_look2_he.mp4 before -13.1 after -14.5 peak -2.1
 + python3 post_cz.py /s17/rp/look2_he
 post ok
 + echo 'EXIT /s17/rp/look2_he 0'
