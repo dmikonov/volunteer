@@ -73,6 +73,7 @@ for i, (txt, s0, s1) in enumerate(subs):
     lend = min([c for c in cuts if c > s0 + 0.05] + [T]) - 0.04
     tx = re.sub(r'[.,:]$', '', txt.strip())
     for k0, v0 in S.get('sub_replace', {}).items(): tx = tx.replace(k0, v0)
+    if HE: tx = '\u200f' + tx  # 20.10: RLM so a line that starts with SurfTribe still reads right to left
     clean.append((tx, s0, min(nxt - 0.04, s1 + 0.5, lend)))  # 20.10: no one-frame double subtitle
 APPW = [(cuts[[l['k'] for l in L].index(kk)], cuts[[l['k'] for l in L].index(kk) + 1]) for kk in S.get('app_lines', [])]
 for i, (txt, s0, s1) in enumerate(clean):
