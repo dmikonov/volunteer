@@ -5,7 +5,7 @@ L3 OK match=1.00 wps=2.55 dur=2.74 | ref: No waves break. The water flows out. |
 L4 OK match=1.00 wps=1.79 dur=1.11 | ref: Three moves. | asr: Three moves.
 L5 CHECK match=0.85 wps=2.68 dur=2.62 | ref: One. Watch the water ten minutes first. | asr: 1. Watch the water 10 minutes first.
 L6 OK match=0.97 wps=3.06 dur=2.94 | ref: Two. Caught? Stay on your board. Don't fight it. | asr: Too caught. Stay on your board. Don't fight it.
-L7 OK match=1.00 wps=2.67 dur=3.37 | ref: Three. Paddle parallel to the beach. Raise a hand. | asr: Three, paddle parallel to the beach, raise a hand.
+L7 OK match=1.00 wps=2.49 dur=3.21 | ref: Three. Paddle parallel to shore. Raise a hand. | asr: Three, paddle parallel to shore, raise a hand.
 L8 OK match=1.00 wps=2.03 dur=2.46 | ref: SurfTribe: one wave, one fix. | asr: Surf Tribe, one wave, one fix.
 L9 OK match=1.00 wps=3.22 dur=4.04 | ref: Tomorrow: foam isn't just for day one. Follow so you don't miss it. | asr: Tomorrow, foam isn't just for day one.  Follow so you don't miss it.
-TOTAL wps=2.75 lines_to_check=1
+TOTAL wps=2.72 lines_to_check=1
