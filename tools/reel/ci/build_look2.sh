@@ -20,7 +20,7 @@ sp g_ed_en.mp4 g_along.mp4 0.45 0.47 l_split_en.mp4 1.7
 sp g_along.mp4 g_ed_he.mp4 0.47 0.45 l_split_he.mp4 2.25
 # app beats: panel x 70-850 (rail clear). HE = only the eyes tip card (from 27.05, no loader), EN = Ride Replay zoomed on the rider with skeleton
 python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_10-56-35_1_2.mp4 27.05 29.65 1030 200 1030 1230 3.0 /s17/gen/app_he.mp4 40 1000 700 780 70
-python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 46.6 49.9 1080 450 1080 1530 3.0 /s17/gen/app_en.mp4 250 640 560 780 70
+python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 46.6 49.9 1080 450 1080 1530 3.4 /s17/gen/app_en.mp4 250 640 560 780 70
 python3 tools/reel/audio_fx.py 30
 cd /s17/rp && for f in voice.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py; do cp $R/tools/reel/$f .; done
 for k in look2_he look2_en; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; done
