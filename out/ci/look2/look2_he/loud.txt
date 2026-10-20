@@ -9,4 +9,4 @@
     LRA high:  -13.8 LUFS
 
   True peak:
-    Peak:       -2.2 dBFS
+    Peak:       -2.3 dBFS
