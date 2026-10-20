@@ -4,9 +4,9 @@
 
   Loudness range:
     LRA:         1.3 LU
-    Threshold: -34.6 LUFS
+    Threshold: -34.7 LUFS
     LRA low:   -15.2 LUFS
-    LRA high:  -13.9 LUFS
+    LRA high:  -14.0 LUFS
 
   True peak:
-    Peak:       -2.3 dBFS
+    Peak:       -1.9 dBFS

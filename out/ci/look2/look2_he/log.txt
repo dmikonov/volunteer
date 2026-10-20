@@ -1,17 +1,17 @@
 + k=/s17/rp/look2_he
 + python3 build.py /s17/rp/look2_he
-[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.319, 0.9), ('L2', 'split_he.mp4', 0.0, 1.95, 2.219), ('L2', '/g_along.mp4', 1.3, 2.187, 4.169), ('L3', 'n/g_chin.mp4', 0.0, 1.3, 6.356), ('L3', 'n/g_chin.mp4', 1.3, 1.439, 7.656), ('L4', 'g_ahead2.mp4', 0.0, 2.262, 9.095), ('L5', '/g_turn3.mp4', 0.0, 1.2, 11.357), ('L5', 'n/g_turn.mp4', 0.0, 1.0, 12.557), ('L5', '/g_turn3.mp4', 0.0, 1.238, 13.557), ('L6', 'n/app_he.mp4', 0.0, 2.876, 14.795), ('L7', 'g_ahead2.mp4', 0.6, 1.945, 17.671)]
-cat 19.72 T 19.616
+[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.319, 0.9), ('L2', 'split_he.mp4', 0.0, 1.95, 2.219), ('L2', '/g_along.mp4', 1.3, 2.187, 4.169), ('L3', '/g_recap.mp4', 0.0, 2.315, 6.356), ('L4', 'n/g_chin.mp4', 0.0, 1.3, 8.671), ('L4', 'n/g_chin.mp4', 1.3, 1.439, 9.971), ('L5', 'g_ahead2.mp4', 0.0, 2.262, 11.41), ('L6', '/g_turn3.mp4', 0.0, 1.2, 13.672), ('L6', 'n/g_turn.mp4', 0.0, 1.0, 14.872), ('L6', '/g_turn3.mp4', 0.0, 1.238, 15.872), ('L7', 'n/app_he.mp4', 0.0, 2.876, 17.11), ('L8', 'g_ahead2.mp4', 0.6, 1.945, 19.986)]
+cat 22.04 T 21.931
 + python3 ov_png.py /s17/rp/look2_he
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
-ovplan 45
+ovplan 51
 + python3 ov_ff.py /s17/rp/look2_he
-done /s17/rp/look2_he/reel_look2_he.mp4 19.616 lufs before -16.2 gain 1.7
+done /s17/rp/look2_he/reel_look2_he.mp4 21.931 lufs before -16.2 gain 1.7
 + python3 trim_tail.py /s17/rp/look2_he
-trimmed /s17/rp/look2_he/reel_look2_he.mp4 19.22
+trimmed /s17/rp/look2_he/reel_look2_he.mp4 21.53
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/look2_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/look2_he/reel_look2_he.mp4
-/s17/rp/look2_he/reel_look2_he.mp4 before -13.0 after -14.5 peak -2.3
+/s17/rp/look2_he/reel_look2_he.mp4 before -12.9 after -14.5 peak -1.9
 + python3 post_cz.py /s17/rp/look2_he
 post ok
 + echo 'EXIT /s17/rp/look2_he 0'

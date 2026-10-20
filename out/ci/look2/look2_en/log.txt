@@ -1,17 +1,17 @@
 + k=/s17/rp/look2_en
 + python3 build.py /s17/rp/look2_en
-[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.423, 0.9), ('L2', 'split_en.mp4', 0.0, 1.4, 2.323), ('L2', '/g_along.mp4', 1.1, 1.973, 3.723), ('L3', 'n/g_chin.mp4', 0.0, 1.3, 5.696), ('L3', 'n/g_chin.mp4', 1.3, 1.483, 6.996), ('L4', 'g_ahead2.mp4', 0.0, 1.835, 8.479), ('L5', '/g_turn3.mp4', 0.0, 1.2, 10.314), ('L5', 'n/g_turn.mp4', 0.0, 1.0, 11.514), ('L5', '/g_turn3.mp4', 0.0, 1.22, 12.514), ('L6', 'n/app_en.mp4', 0.0, 2.616, 13.734), ('L7', 'g_ahead2.mp4', 0.6, 1.681, 16.35)]
-cat 18.08 T 18.031
+[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.423, 0.9), ('L2', 'split_en.mp4', 0.0, 1.4, 2.323), ('L2', '/g_along.mp4', 1.1, 1.973, 3.723), ('L3', '/g_recap.mp4', 0.0, 2.254, 5.696), ('L4', 'n/g_chin.mp4', 0.0, 1.3, 7.95), ('L4', 'n/g_chin.mp4', 1.3, 1.484, 9.25), ('L5', 'g_ahead2.mp4', 0.0, 1.835, 10.734), ('L6', '/g_turn3.mp4', 0.0, 1.2, 12.569), ('L6', 'n/g_turn.mp4', 0.0, 1.0, 13.769), ('L6', '/g_turn3.mp4', 0.0, 1.22, 14.769), ('L7', 'n/app_en.mp4', 0.0, 2.616, 15.989), ('L8', 'g_ahead2.mp4', 0.6, 1.681, 18.605)]
+cat 20.32 T 20.286
 + python3 ov_png.py /s17/rp/look2_en
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
-ovplan 46
+ovplan 53
 + python3 ov_ff.py /s17/rp/look2_en
-done /s17/rp/look2_en/reel_look2_en.mp4 18.031 lufs before -16.5 gain 2.0
+done /s17/rp/look2_en/reel_look2_en.mp4 20.286 lufs before -16.5 gain 2.0
 + python3 trim_tail.py /s17/rp/look2_en
-trimmed /s17/rp/look2_en/reel_look2_en.mp4 17.63
+trimmed /s17/rp/look2_en/reel_look2_en.mp4 19.89
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/look2_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/look2_en/reel_look2_en.mp4
-/s17/rp/look2_en/reel_look2_en.mp4 before -13.0 after -14.5 peak -2.4
+/s17/rp/look2_en/reel_look2_en.mp4 before -13.0 after -14.5 peak -2.0
 + python3 post_cz.py /s17/rp/look2_en
 post ok
 + echo 'EXIT /s17/rp/look2_en 0'
