@@ -5,3 +5,5 @@ look2/g_turn.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replic
 # 1792474462
 look2/g_nose.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/55e95269ba497358ad70eba0cb796b75065ca043e21570ae9f837bbac0366789/tmptgs7s0p1.mp4
 look2/g_turn2.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/4c62c58f34d7f41fb1e484e65a6f19482c2ec7a4b2a124dbcdc509c8b7896126/tmpx1lkh874.mp4
+look2/g_turn3.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/90ea5909512372c9f0c59c46e170ef004a0bbec27aa68695c7823ef2361aef8b/tmpasu3vhmc.mp4
+look2/g_ahead2.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/47824f0450d81a456d1567d4fc06173fee8975a85b47b6a7735b51ea5caf9196/tmpn7t0jwxx.mp4
