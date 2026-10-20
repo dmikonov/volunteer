@@ -1,17 +1,17 @@
 + k=/s17/rp/look2_he
 + python3 build.py /s17/rp/look2_he
-[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.319, 0.9), ('L2', 'split_he.mp4', 0.0, 1.4, 2.219), ('L2', '/g_along.mp4', 1.1, 2.737, 3.619), ('L3', 'n/g_chin.mp4', 0.0, 1.3, 6.356), ('L3', 'n/g_chin.mp4', 1.3, 1.439, 7.656), ('L4', 'g_ahead2.mp4', 0.0, 2.262, 9.095), ('L5', '/g_turn3.mp4', 0.0, 1.2, 11.357), ('L5', 'n/g_turn.mp4', 0.0, 1.0, 12.557), ('L5', '/g_turn3.mp4', 0.0, 1.238, 13.557), ('L6', 'n/app_he.mp4', 0.0, 2.876, 14.795), ('L7', 'g_ahead2.mp4', 0.6, 1.945, 17.671)]
-cat 19.68 T 19.616
+[('L1', 'n/g_down.mp4', 0.0, 0.9, 0.0), ('L1', 'n/g_down.mp4', 0.9, 1.319, 0.9), ('L2', 'split_he.mp4', 0.0, 1.95, 2.219), ('L2', '/g_along.mp4', 1.3, 2.187, 4.169), ('L3', 'n/g_chin.mp4', 0.0, 1.3, 6.356), ('L3', 'n/g_chin.mp4', 1.3, 1.439, 7.656), ('L4', 'g_ahead2.mp4', 0.0, 2.262, 9.095), ('L5', '/g_turn3.mp4', 0.0, 1.2, 11.357), ('L5', 'n/g_turn.mp4', 0.0, 1.0, 12.557), ('L5', '/g_turn3.mp4', 0.0, 1.238, 13.557), ('L6', 'n/app_he.mp4', 0.0, 2.876, 14.795), ('L7', 'g_ahead2.mp4', 0.6, 1.945, 17.671)]
+cat 19.72 T 19.616
 + python3 ov_png.py /s17/rp/look2_he
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
 ovplan 45
 + python3 ov_ff.py /s17/rp/look2_he
-done /s17/rp/look2_he/reel_look2_he.mp4 19.616 lufs before -16.1 gain 1.6
+done /s17/rp/look2_he/reel_look2_he.mp4 19.616 lufs before -16.2 gain 1.7
 + python3 trim_tail.py /s17/rp/look2_he
 trimmed /s17/rp/look2_he/reel_look2_he.mp4 19.22
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/look2_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/look2_he/reel_look2_he.mp4
-/s17/rp/look2_he/reel_look2_he.mp4 before -13.1 after -14.5 peak -2.5
+/s17/rp/look2_he/reel_look2_he.mp4 before -13.0 after -14.5 peak -2.3
 + python3 post_cz.py /s17/rp/look2_he
 post ok
 + echo 'EXIT /s17/rp/look2_he 0'
