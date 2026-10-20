@@ -16,7 +16,7 @@
  ],
  "out": "reel_knees_en2.mp4",
  "app_lines": [
-  "L7"
+  "L8"
  ],
  "badge": [
   "DAILY FIX",
@@ -30,7 +30,8 @@
  "lines": [
   "Stop standing tall.",
   "Follow. One surf fix a day.",
-  "Straight legs can't absorb bumps, so you fall.",
+  "Straight legs can't absorb bumps.",
+  "Three fixes.",
   "One. Bend your knees like a low chair.",
   "Two. Weight over the middle of the board.",
   "Three. Arms out wide and low.",
@@ -57,24 +58,30 @@
    "X"
   ],
   "L4": [
+   "THREE FIXES",
+   "",
+   null,
+   null
+  ],
+  "L5": [
    "BEND YOUR KNEES",
    "LIKE A LOW CHAIR",
    "1",
    "CK"
   ],
-  "L5": [
+  "L6": [
    "WEIGHT",
    "OVER THE MIDDLE",
    "2",
    "CK"
   ],
-  "L6": [
+  "L7": [
    "ARMS OUT",
    "WIDE AND LOW",
    "3",
    "CK"
   ],
-  "L7": [
+  "L8": [
    "STRAIGHT LEGS?",
    "SURFTRIBE FLAGS IT",
    null,
@@ -86,11 +93,11 @@
    "k": "RING_LEGS",
    "line": "L3",
    "d0": 0.25,
-   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><ellipse cx=\"525\" cy=\"1130\" rx=\"250\" ry=\"400\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"26\" fill=\"none\"/><ellipse cx=\"525\" cy=\"1130\" rx=\"250\" ry=\"400\" stroke=\"#FF5150\" stroke-width=\"14\" fill=\"none\"/></svg></div>"
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><ellipse cx=\"525\" cy=\"1340\" rx=\"250\" ry=\"400\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"26\" fill=\"none\"/><ellipse cx=\"525\" cy=\"1340\" rx=\"250\" ry=\"400\" stroke=\"#FF5150\" stroke-width=\"14\" fill=\"none\"/></svg></div>"
   },
   {
    "k": "RING_KNEES",
-   "line": "L4",
+   "line": "L5",
    "d0": 0.2,
    "d1": 1.4,
    "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><ellipse cx=\"455\" cy=\"1150\" rx=\"150\" ry=\"140\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"26\" fill=\"none\"/><ellipse cx=\"455\" cy=\"1150\" rx=\"150\" ry=\"140\" stroke=\"#00d4ff\" stroke-width=\"14\" fill=\"none\"/></svg></div>"
@@ -155,13 +162,45 @@
      0.5
     ],
     "cy": [
-     0.55,
-     0.55
+     0.47,
+     0.47
     ],
-    "frz": 2.45
+    "dd": 1.2,
+    "frz": 0.55
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.47,
+     0.47
+    ],
+    "frz": 0.5
    }
   ],
   "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_center2.mp4",
+    "a": 2.4,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L5": [
    {
     "kind": "gen",
     "src": "/s17/gen/kn_low.mp4",
@@ -178,7 +217,7 @@
     "frz": 0.75
    }
   ],
-  "L5": [
+  "L6": [
    {
     "kind": "gen",
     "src": "/s17/gen/kn_center2.mp4",
@@ -194,7 +233,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/kn_arms.mp4",
@@ -211,7 +250,7 @@
     "frz": 0.7
    }
   ],
-  "L7": [
+  "L8": [
    {
     "kind": "app",
     "src": "/s17/gen/app_kn.mp4",
@@ -227,7 +266,7 @@
     ]
    }
   ],
-  "L8": [
+  "L9": [
    {
     "kind": "gen",
     "src": "/s17/gen/rp_wide.mp4",

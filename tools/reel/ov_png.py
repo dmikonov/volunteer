@@ -82,7 +82,7 @@ for l in L:
         if tok.endswith(('.', ',', ':', '?')): phrases.append(curp); curp = []  # 20.10: split after ? too (keeps subtitles at full size)
     if curp: phrases.append(curp)
     for ph in phrases:
-        if len(ph) <= 4: subs.append([' '.join(c[0] for c in ph), ph[0][1], ph[-1][2]]); continue
+        if len(ph) <= 4 or len(' '.join(c[0] for c in ph)) <= 20: subs.append([' '.join(c[0] for c in ph), ph[0][1], ph[-1][2]]); continue
         best = None
         for cut in sorted(range(1, len(ph)), key=lambda c: abs(len(' '.join(x[0] for x in ph[:c])) - len(' '.join(x[0] for x in ph[c:])))):
             if ph[cut - 1][0].strip('.,:').lower() not in STOP: best = cut; break
@@ -140,6 +140,11 @@ if os.path.exists(f'{W}/cat.mp4'):
         _d.append(0.0 if _pv is None else float(np.abs(_g - _pv).mean())); _pv = _g
     _med = float(np.median(_d)) if _d else 0
     _B = [i / _fps for i in range(1, len(_d) - 1) if _d[i] > max(12.0, 4 * _med) and _d[i] >= _d[i - 1] and _d[i] >= _d[i + 1]]
+    import glob as _gl  # 21.10: real segment boundaries (frame-rounded) too; detection missed app->shot cuts, card came 1 frame early
+    _acc = 0
+    for _sf in sorted(_gl.glob(f'{W}/seg/[0-9][0-9].mp4'))[:-1]:
+        _acc += int(cv2.VideoCapture(_sf).get(7)); _B.append(_acc / _fps)
+    _B = sorted(set(round(x, 4) for x in _B))
 def _snap(t, end=False):
     c = min(_B, key=lambda x: abs(x - t)) if _B else t
     return t if abs(c - t) > 0.13 or t < 0.5 else (round(c - 0.004, 4) if end else round(c + 0.004, 4))  # verified 20.10: card on the cut frame

@@ -16,7 +16,7 @@
  ],
  "out": "reel_rip_en2.mp4",
  "app_lines": [
-  "L7"
+  "L8"
  ],
  "badge": [
   "DAILY FIX",
@@ -28,9 +28,10 @@
   "FOLLOW SO YOU DON'T MISS IT"
  ],
  "lines": [
-  "Calm gap? It's a rip.",
+  "That calm gap? It's a rip.",
   "Follow. One surf fix a day.",
-  "No waves break there. The water flows out.",
+  "No waves break. The water flows out.",
+  "Three moves.",
   "One. Watch the water ten minutes first.",
   "Two. Caught? Stay on your board. Don't fight it.",
   "Three. Paddle parallel to the beach. Raise a hand.",
@@ -39,7 +40,7 @@
  ],
  "titles": {
   "L1": [
-   "CALM GAP?",
+   "THAT CALM GAP?",
    "IT'S A RIP",
    null,
    "WARN"
@@ -57,24 +58,30 @@
    null
   ],
   "L4": [
+   "THREE MOVES",
+   "",
+   null,
+   null
+  ],
+  "L5": [
    "WATCH THE WATER",
    "10 MINUTES FIRST",
    "1",
    "CK"
   ],
-  "L5": [
+  "L6": [
    "STAY ON YOUR BOARD",
    "DON'T FIGHT IT",
    "2",
    "CK"
   ],
-  "L6": [
+  "L7": [
    "PADDLE PARALLEL",
    "RAISE A HAND",
    "3",
    "CK"
   ],
-  "L7": [
+  "L8": [
    "FILM ONE WAVE",
    "GET ONE FIX",
    null,
@@ -102,7 +109,7 @@
   },
   {
    "k": "PAR_ARROW",
-   "line": "L6",
+   "line": "L7",
    "d0": 0.25,
    "d1": 1.4,
    "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M860 1170 L230 1170\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M860 1170 L230 1170\" stroke=\"#00d4ff\" stroke-width=\"18\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M310 1100 L220 1170 L310 1240\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M310 1100 L220 1170 L310 1240\" stroke=\"#00d4ff\" stroke-width=\"18\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
@@ -128,9 +135,9 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/rp_watch.mp4",
-    "a": 0.0,
-    "z": 1.1,
+    "src": "/s17/gen/rp_par.mp4",
+    "a": 1.7,
+    "z": 1.0,
     "cx": [
      0.5,
      0.5
@@ -161,7 +168,23 @@
    {
     "kind": "gen",
     "src": "/s17/gen/rp_watch.mp4",
-    "a": 1.9,
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_watch.mp4",
+    "a": 1.0,
     "z": 1.3,
     "cx": [
      0.5,
@@ -173,7 +196,7 @@
     ]
    }
   ],
-  "L5": [
+  "L6": [
    {
     "kind": "gen",
     "src": "/s17/gen/rp_stay2.mp4",
@@ -189,7 +212,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/rp_par.mp4",
@@ -220,7 +243,7 @@
     ]
    }
   ],
-  "L7": [
+  "L8": [
    {
     "kind": "app",
     "src": "/s17/gen/app_rp.mp4",
@@ -236,7 +259,22 @@
     ]
    }
   ],
-  "L8": [
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_hand.mp4",
+    "a": 1.5,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.4,
+     0.4
+    ],
+    "dd": 2.0
+   },
    {
     "kind": "gen",
     "src": "/s17/gen/rp_par.mp4",
