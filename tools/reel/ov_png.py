@@ -104,7 +104,14 @@ for e in S.get('extra', []):
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
     if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
-ON = [(k, round(a + S.get('ov_delay', 0), 3) if a > 0.5 else a, round(b + S.get('ov_delay', 0), 3) if a > 0.5 else b) if k.startswith(('T', 'RECAP', 'MARK')) or k in [e['k'] for e in S.get('extra', [])] else (k, a, b) for k, a, b in ON]  # hook card stays at frame 0  # 20.10: cards switch with the video cut, not 2 frames before
+import math
+_B, _f = [], 0  # 20.10: real cut frames = cumulative ceil(d*25) (build.py trims each segment at 25 fps)
+for _s in segs: _B.append(_f / 25); _f += math.ceil(round(_s['d'] * 25, 6))
+def _snap(t, end=False):
+    c = min(_B, key=lambda x: abs(x - t)) if _B else t
+    return t if abs(c - t) > 0.07 or t < 0.5 else (round(c - 0.002, 4) if end else round(c + 0.001, 4))
+_ks = [e['k'] for e in S.get('extra', [])]
+ON = [(k, _snap(a), _snap(b, True)) if (k.startswith(('T', 'RECAP', 'MARK')) or k in _ks) and k not in ('TL1a', 'TL1b') else (k, a, b) for k, a, b in ON]  # cards switch exactly on the cut frame
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
