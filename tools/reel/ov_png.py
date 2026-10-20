@@ -5,6 +5,18 @@ W = sys.argv[1]; S = json.load(open(f'{W}/spec.json')); LANG = S['lang']; HE = L
 TL = json.load(open(f'{W}/tl.json')); L = TL['L']; T = TL['T']
 segs = json.load(open(f'{W}/segs.json')) if os.path.exists(f'{W}/segs.json') else []
 cuts = [0.0] + [round(l['t0'] - 0.1, 3) for l in L[1:]] + [T]
+REALCUTS = False  # 21.10: real line starts from the encoded segments (frame-rounded); planned cuts drift up to ~2 frames late
+try:
+  if segs and os.path.exists(f'{W}/seg/00.mp4'):
+    import glob as _g
+    _fr = [int(cv2.VideoCapture(f).get(7)) for f in sorted(_g.glob(f'{W}/seg/[0-9][0-9].mp4'))]
+    if len(_fr) == len(segs) and all(_fr):
+        _st = np.cumsum([0] + _fr) / 25.0; _first = {}
+        for _j, _s in enumerate(segs): _first.setdefault(_s['line'], float(_st[_j]))
+        if all(l['k'] in _first for l in L):
+            cuts = [0.0] + [round(_first[l['k']], 4) for l in L[1:]] + [T]; REALCUTS = True
+except Exception as _e: print('realcuts skipped', _e)
+print('realcuts', REALCUTS, cuts)
 CY, AM, NAVY, RED, GRN = '#00d4ff', '#f5a623', 'rgba(10,18,38,.80)', '#FF5150', '#3DDC84'
 XI = f"<svg width=64 height=64 viewBox='0 0 64 64' style='vertical-align:-10px'><circle cx=32 cy=32 r=30 fill='{RED}'/><path d='M20 20L44 44M44 20L20 44' stroke='#fff' stroke-width=8 stroke-linecap=round/></svg>"
 CK = f"<svg width=64 height=64 viewBox='0 0 64 64' style='vertical-align:-10px'><circle cx=32 cy=32 r=30 fill='{GRN}'/><path d='M17 33L28 44L47 22' stroke='#fff' stroke-width=8 fill=none stroke-linecap=round stroke-linejoin=round/></svg>"
@@ -140,12 +152,8 @@ if os.path.exists(f'{W}/cat.mp4'):
         _d.append(0.0 if _pv is None else float(np.abs(_g - _pv).mean())); _pv = _g
     _med = float(np.median(_d)) if _d else 0
     _B = [i / _fps for i in range(1, len(_d) - 1) if _d[i] > max(12.0, 4 * _med) and _d[i] >= _d[i - 1] and _d[i] >= _d[i + 1]]
-    import glob as _gl  # 21.10: real segment boundaries (frame-rounded) too; detection missed app->shot cuts, card came 1 frame early
-    _acc = 0
-    for _sf in sorted(_gl.glob(f'{W}/seg/[0-9][0-9].mp4'))[:-1]:
-        _acc += int(cv2.VideoCapture(_sf).get(7)); _B.append(_acc / _fps)
-    _B = sorted(set(round(x, 4) for x in _B))
 def _snap(t, end=False):
+    if REALCUTS: return t if t < 0.5 else (round(t - 0.004, 4) if end else round(t + 0.004, 4))
     c = min(_B, key=lambda x: abs(x - t)) if _B else t
     return t if abs(c - t) > 0.13 or t < 0.5 else (round(c - 0.004, 4) if end else round(c + 0.004, 4))  # verified 20.10: card on the cut frame
 _ks = [e['k'] for e in S.get('extra', [])]

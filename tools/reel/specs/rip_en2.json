@@ -7,7 +7,7 @@
  "follow": {
   "line": "L2"
  },
- "gap": 0.24,
+ "gap": 0.18,
  "music_vol": 0.7,
  "kokoro_speed": 0.9,
  "recap": [
@@ -34,7 +34,7 @@
   "Three moves.",
   "One. Watch the water ten minutes first.",
   "Two. Caught? Stay on your board. Don't fight it.",
-  "Three. Paddle parallel to the beach. Raise a hand.",
+  "Three. Paddle parallel to shore. Raise a hand.",
   "SurfTribe: one wave, one fix.",
   "Tomorrow: foam isn't just for day one. Follow so you don't miss it."
  ],
@@ -105,7 +105,8 @@
    "k": "RIP_ARROW3",
    "line": "L3",
    "d0": 0.3,
-   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M540 990 L540 620\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"34\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M540 990 L540 620\" stroke=\"#FF5150\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M465 705 L540 610 L615 705\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"34\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M465 705 L540 610 L615 705\" stroke=\"#FF5150\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M540 990 L540 620\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"34\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M540 990 L540 620\" stroke=\"#FF5150\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M465 705 L540 610 L615 705\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"34\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M465 705 L540 610 L615 705\" stroke=\"#FF5150\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>",
+   "d1": 1.4
   },
   {
    "k": "PAR_ARROW",
@@ -161,6 +162,21 @@
     "cy": [
      0.55,
      0.55
+    ],
+    "dd": 1.45
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_stay2.mp4",
+    "a": 2.2,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
     ]
    }
   ],
