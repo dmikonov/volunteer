@@ -15,7 +15,7 @@ OUT = f"{W}/{S['out']}"
 # 19.10: overlays in passes of 12 (1 GB RAM sandbox; 48 inputs at once was OOM-killed)
 src = f'{W}/cat.mp4'; CH = 8; parts = [ON[i:i + CH] for i in range(0, len(ON), CH)]
 for pi, part in enumerate(parts):
-    last = pi == len(parts) - 1; ins = ['-i', src]; fcs = []; prev = '0:v'
+    last = pi == len(parts) - 1; ins = ['-i', src]; fcs = ['[0:v]setpts=PTS-STARTPTS[b0]']; prev = 'b0'  # 21.10: base video from t=0 (start offset made cards 1-3 frames early and picture lag the voice)
     for i, (kk, a, b) in enumerate(part):
         ins += ['-loop', '1', '-framerate', '25', '-t', f'{max(0.04, b - a):.3f}', '-i', f'{W}/ov/{kk}.png']
         fcs.append(f"[{i + 1}:v]format=rgba,setpts=PTS+{a:.3f}/TB[o{i}]")

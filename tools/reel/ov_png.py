@@ -22,11 +22,13 @@ try:
             if not _ok: break
             _g0.append(cv2.resize(cv2.cvtColor(_f, cv2.COLOR_BGR2GRAY), (54, 96)).astype(np.float32))
         _dd = [0.0] + [float(np.abs(_g0[i] - _g0[i - 1]).mean()) for i in range(1, len(_g0))]
+        _pts = [float(x) for x in sp.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-show_entries', 'frame=pts_time', '-of', 'csv=p=0', f'{W}/cat.mp4'], capture_output=True, text=True).stdout.split() if x.strip()]
+        if len(_pts) != len(_dd): _pts = [i / 25.0 for i in range(len(_dd))]  # concat timestamps are not on the 1/25 grid: use real pts
         for _i in range(1, len(cuts) - 1):
-            _k = int(round(cuts[_i] * 25)); _w = [j for j in range(_k - 4, _k + 5) if 0 < j < len(_dd)]
+            _k = int(np.searchsorted(_pts, cuts[_i])); _w = [j for j in range(_k - 4, _k + 5) if 0 < j < len(_dd)]
             if _w:
                 _b = max(_w, key=lambda j: _dd[j])
-                if _dd[_b] > 8: cuts[_i] = round(_b / 25.0, 4)
+                if _dd[_b] > 8: cuts[_i] = round(round(_pts[_b] * 25) / 25.0, 4)
 except Exception as _e: print('realcuts skipped', _e)
 print('realcuts', REALCUTS, cuts)
 CY, AM, NAVY, RED, GRN = '#00d4ff', '#f5a623', 'rgba(10,18,38,.80)', '#FF5150', '#3DDC84'
