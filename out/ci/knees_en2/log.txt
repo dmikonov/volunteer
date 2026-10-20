@@ -1,17 +1,17 @@
 + k=/s17/rp/knees_en2
 + python3 build.py /s17/rp/knees_en2
-[('L1', 'kn_stiff.mp4', 0.0, 0.75, 0.0), ('L1', 'kn_stiff.mp4', 1.85, 0.95, 0.75), ('L2', '/kn_arms.mp4', 1.8, 2.255, 1.7), ('L3', 'n_stiff2.mp4', 0.0, 2.955, 3.955), ('L4', 'n/kn_low.mp4', 0.0, 2.505, 6.91), ('L5', '_center2.mp4', 0.0, 2.805, 9.415), ('L6', '/kn_arms.mp4', 0.0, 2.355, 12.22), ('L7', 'n/app_kn.mp4', 0.0, 2.73, 14.575), ('L8', '/rp_wide.mp4', 0.0, 4.09, 17.305)]
-cat 21.4 T 21.395
+[('L1', 'kn_stiff.mp4', 0.0, 0.75, 0.0), ('L1', 'kn_stiff.mp4', 1.85, 1.025, 0.75), ('L2', '/kn_arms.mp4', 1.8, 2.28, 1.775), ('L3', 'n_stiff2.mp4', 0.0, 2.98, 4.055), ('L4', 'n/kn_low.mp4', 0.0, 2.655, 7.035), ('L5', '_center2.mp4', 0.0, 2.505, 9.69), ('L6', '/kn_arms.mp4', 0.0, 2.405, 12.195), ('L7', 'n/app_kn.mp4', 0.0, 2.88, 14.6), ('L8', '/rp_wide.mp4', 0.0, 4.215, 17.48)]
+cat 21.72 T 21.695
 + python3 ov_png.py /s17/rp/knees_en2
 safe-zone violations []
 ovplan 36
 + python3 ov_ff.py /s17/rp/knees_en2
-done /s17/rp/knees_en2/reel_knees_en2.mp4 21.395 lufs before -15.7 gain 1.2
+done /s17/rp/knees_en2/reel_knees_en2.mp4 21.695 lufs before -15.7 gain 1.2
 + python3 trim_tail.py /s17/rp/knees_en2
-trimmed /s17/rp/knees_en2/reel_knees_en2.mp4 20.9
+trimmed /s17/rp/knees_en2/reel_knees_en2.mp4 21.19
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_en2/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_en2/reel_knees_en2.mp4
-/s17/rp/knees_en2/reel_knees_en2.mp4 before -13.0 after -14.5 peak -2.8
+/s17/rp/knees_en2/reel_knees_en2.mp4 before -13.0 after -14.5 peak -3.1
 + python3 post_cz.py /s17/rp/knees_en2
 post ok
 + echo 'EXIT /s17/rp/knees_en2 0'
