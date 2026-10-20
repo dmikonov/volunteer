@@ -6,12 +6,14 @@ pip install -q edge-tts opencv-python-headless numpy playwright
 python -m playwright install --with-deps chromium >/dev/null 2>&1
 sudo mkdir -p /s17 && sudo chown $USER /s17 && mkdir -p /s17/gen /s17/rp /s17/tip1
 cp appkit/Rubik.ttf /s17/Rubik.ttf; cp assets/look2/g_*.mp4 /s17/gen/
-# split screen: eyes down (left) vs eyes ahead (right), real time, 25 fps
-ffmpeg -v error -y -ss 0.3 -i /s17/gen/g_down.mp4 -ss 0.3 -i /s17/gen/g_along.mp4 -filter_complex \
- "[0:v]crop=234:832:(iw-234)*0.42:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*0.47:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=3.2,format=yuv420p[v]" \
- -map "[v]" -c:v libx264 -crf 14 /s17/gen/l_split.mp4
-python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_10-56-35_1_2.mp4 27.3 29.6 740 540 1030 1240 4 /s17/gen/app_he.mp4
-python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 3.0 5.6 440 700 470 1090 4 /s17/gen/app_en.mp4
+# split screens (real time): eyes down = g_nose (board stalls), eyes ahead = g_along. HE reads right to left: "down" on the right
+sp(){ ffmpeg -v error -y -ss 0.3 -i /s17/gen/$1 -ss 0.3 -i /s17/gen/$2 -filter_complex \
+ "[0:v]crop=234:832:(iw-234)*$3:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*$4:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=2.0,format=yuv420p[v]" \
+ -map "[v]" -c:v libx264 -crf 14 /s17/gen/$5; }
+sp g_nose.mp4 g_along.mp4 0.45 0.47 l_split_en.mp4
+sp g_along.mp4 g_nose.mp4 0.47 0.45 l_split_he.mp4
+python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_10-56-35_1_2.mp4 27.3 29.9 760 480 1030 1240 3.2 /s17/gen/app_he.mp4 20 1040 760
+python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 6.0 8.8 300 600 330 900 3.2 /s17/gen/app_en.mp4 0 1080 760
 python3 tools/reel/audio_fx.py 30
 cd /s17/rp && for f in voice.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py; do cp $R/tools/reel/$f .; done
 for k in look2_he look2_en; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; done
