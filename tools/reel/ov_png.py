@@ -35,7 +35,7 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .tz .box{{display:inline-block;max-width:600px;padding:28px 36px 32px;border-radius:30px;background:{NAVY};text-align:center}}
 .tz h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:16px}}
 .tz .t{{display:block;font-weight:800;font-size:{64 if HE else 56}px;color:#fff;line-height:1.15;text-wrap:balance}}
-.tz .f{{display:inline-block;white-space:nowrap;margin-top:26px;padding:16px 32px;border-radius:18px;background:#0095f6;font-weight:800;font-size:{42 if HE else 36}px;color:#fff;line-height:1;text-box:trim-both cap alphabetic}}
+.tz .f{{display:inline-block;white-space:nowrap;margin-top:26px;padding:14px 24px;border-radius:18px;background:#0095f6;font-weight:800;font-size:{38 if HE else 31}px;color:#fff;line-height:1;text-box:trim-both cap alphabetic}}
 </style></head><body>{body}</body></html>"""
 if S.get('app_notitle'):
     for kk in S.get('app_lines', []): TITLES.pop(kk, None)

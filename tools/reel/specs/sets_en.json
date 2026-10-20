@@ -1,0 +1,237 @@
+{
+ "lang": "en",
+ "out": "reel_sets_en.mp4",
+ "app_lines": [
+  "L7"
+ ],
+ "app_top": 250,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 620,
+ "badge": [
+  "DAILY FIX",
+  "#4"
+ ],
+ "follow": {
+  "line": "L2"
+ },
+ "teaser": [
+  "TOMORROW",
+  "Same beach,<br>3 hours later,<br>a different wave",
+  "FOLLOW SO YOU DON'T MISS IT"
+ ],
+ "lines": [
+  "Guess which wave is yours.",
+  "Follow. One surf fix a day.",
+  "Most beginners chase the biggest one. It breaks on them.",
+  "One. Let the big one go to the pack.",
+  "Two. Take a smaller one nobody's paddling for.",
+  "Three. Someone already up? Pull back.",
+  "SurfTribe shows where you rode it.",
+  "Tomorrow: same beach, three hours later, a different wave. Follow so you don't miss it."
+ ],
+ "titles": {
+  "L1": [
+   "GUESS WHICH WAVE",
+   "IS YOURS",
+   null,
+   null
+  ],
+  "L2": [
+   "FOLLOW",
+   "1 FIX A DAY",
+   null,
+   null
+  ],
+  "L3": [
+   "THE MISTAKE:",
+   "CHASING THE BIGGEST",
+   null,
+   "X"
+  ],
+  "L4": [
+   "LET THE BIG ONE GO",
+   "TO THE PACK",
+   "1",
+   "CK"
+  ],
+  "L5": [
+   "TAKE A SMALLER ONE",
+   "NOBODY'S PADDLING FOR",
+   "2",
+   "CK"
+  ],
+  "L6": [
+   "SOMEONE ALREADY UP?",
+   "PULL BACK",
+   "3",
+   "CK"
+  ],
+  "L7": [
+   "WHERE YOU RODE",
+   "THE WAVE",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "",
+  []
+ ],
+ "extra": [
+  {
+   "k": "RING",
+   "line": "L6",
+   "d0": 0.6,
+   "html": "<div style=\"position:absolute;top:560px;left:390px;width:440px;height:520px;border:14px solid #00d4ff;border-radius:50%;box-shadow:0 0 0 8px rgba(10,18,38,.45)\"></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_set.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_watch.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_wipe.mp4",
+    "a": 0.3,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_pass.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_later.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ],
+    "dd": 1.0
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_set.mp4",
+    "a": 2.0,
+    "z": 1.6,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.33,
+     0.33
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_taken2.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_sets_en.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_watch.mp4",
+    "a": 1.6,
+    "z": 1.25,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.62,
+     0.62
+    ]
+   }
+  ]
+ },
+ "gap": 0.28,
+ "music_vol": 0.7,
+ "kokoro_speed": 0.95
+}
