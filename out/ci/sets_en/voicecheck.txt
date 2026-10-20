@@ -1,10 +1,10 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=3.05 dur=1.64 | ref: Guess which wave is yours. | asr: Guess which wave is yours?
+L1 OK match=1.00 wps=2.96 dur=1.69 | ref: Guess which wave is yours. | asr: Guess which wave is yours?
 L2 OK match=1.00 wps=2.94 dur=2.04 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
-L3 OK match=1.00 wps=2.99 dur=3.34 | ref: Most beginners chase the biggest one. It breaks on them. | asr: Most beginners chase the biggest one. It breaks on them.
-L4 OK match=1.00 wps=4.31 dur=2.09 | ref: One. Let the big one go to the pack. | asr: One, let the big one go to the pack.
-L5 OK match=0.94 wps=2.70 dur=2.96 | ref: Two. Take a smaller one nobody's paddling for. | asr: 2. Take a smaller one nobody's paddling for.
-L6 OK match=1.00 wps=2.62 dur=2.29 | ref: Three. Someone already up? Pull back. | asr: Three, someone already up, pull back.
-L7 OK match=0.95 wps=3.02 dur=1.99 | ref: SurfTribe shows where you rode it. | asr: Surf Tribe shows where you wrote it.
-L8 OK match=1.00 wps=2.90 dur=5.16 | ref: Tomorrow: same beach, three hours later, a different wave. Follow so you don't miss it. | asr: Tomorrow, same beach, three hours later, a different wave.  Follow so you don't miss it.
-TOTAL wps=3.02 lines_to_check=0
+L3 OK match=1.00 wps=2.95 dur=3.39 | ref: Most beginners chase the biggest one. It breaks on them. | asr: Most beginners chase the biggest one.  It breaks on them.
+L4 OK match=1.00 wps=4.21 dur=2.14 | ref: One. Let the big one go to the pack. | asr: One, let the big one go to the pack.
+L5 OK match=0.94 wps=2.59 dur=3.09 | ref: Two. Take a smaller one nobody's paddling for. | asr: 2. Take a smaller one nobody's paddling for.
+L6 OK match=1.00 wps=2.56 dur=2.34 | ref: Three. Someone already up? Pull back. | asr: Three, someone already up, pull back.
+L7 OK match=0.94 wps=2.96 dur=2.36 | ref: SurfTribe maps where you rode the wave. | asr: SurfDrive maps where you rode the wave.
+L8 OK match=1.00 wps=2.86 dur=5.24 | ref: Tomorrow: same beach, three hours later, a different wave. Follow so you don't miss it. | asr: Tomorrow, same beach, three hours later, a different wave.  Follow so you don't miss it.
+TOTAL wps=2.96 lines_to_check=0

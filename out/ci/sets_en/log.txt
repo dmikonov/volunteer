@@ -1,17 +1,17 @@
 + k=/s17/rp/sets_en
 + python3 build.py /s17/rp/sets_en
-[('L1', 'en/s_set.mp4', 0.0, 1.94, 0.0), ('L2', '/s_watch.mp4', 0.0, 2.32, 1.94), ('L3', 'n/s_wipe.mp4', 0.3, 3.62, 4.26), ('L4', 'n/s_pass.mp4', 0.0, 2.37, 7.88), ('L5', '/s_later.mp4', 0.0, 1.0, 10.25), ('L5', 'en/s_set.mp4', 2.0, 2.245, 11.25), ('L6', 's_taken2.mp4', 0.0, 2.57, 13.495), ('L7', '_sets_en.mp4', 0.0, 2.27, 16.065), ('L8', '/s_watch.mp4', 1.6, 6.165, 18.335)]
-cat 24.52 T 24.5
+[('L1', 'en/s_set.mp4', 0.0, 1.83, 0.0), ('L2', '/s_watch.mp4', 0.0, 2.16, 1.83), ('L3', 'n/s_wipe.mp4', 0.6, 3.51, 3.99), ('L4', 'n/s_pass.mp4', 0.0, 2.26, 7.5), ('L5', 's_paddle.mp4', 0.0, 3.21, 9.76), ('L6', 's_taken2.mp4', 0.0, 2.46, 12.97), ('L7', '_sets_en.mp4', 0.0, 2.485, 15.43), ('L8', '/s_watch.mp4', 1.6, 6.24, 17.915)]
+cat 24.2 T 24.155
 + python3 ov_png.py /s17/rp/sets_en
-safe-zone violations [('MARKA', [396, 685, 160, 226])]
+safe-zone violations []
 ovplan 54
 + python3 ov_ff.py /s17/rp/sets_en
-done /s17/rp/sets_en/reel_sets_en.mp4 24.5 lufs before -15.6 gain 1.1
+done /s17/rp/sets_en/reel_sets_en.mp4 24.155 lufs before -15.4 gain 0.9
 + python3 trim_tail.py /s17/rp/sets_en
-trimmed /s17/rp/sets_en/reel_sets_en.mp4 24.0
+trimmed /s17/rp/sets_en/reel_sets_en.mp4 23.65
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/sets_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/sets_en/reel_sets_en.mp4
-/s17/rp/sets_en/reel_sets_en.mp4 before -13.1 after -14.5 peak -2.8
+/s17/rp/sets_en/reel_sets_en.mp4 before -13.0 after -14.6 peak -3.3
 + python3 post_cz.py /s17/rp/sets_en
 post ok
 + echo 'EXIT /s17/rp/sets_en 0'
