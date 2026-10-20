@@ -65,5 +65,7 @@ for c in range(int(T / bar) + 1):
         mus[bs:bs + len(kb)] += 0.35 * np.sin(2 * np.pi * f(roots[c % 4] - 12) * kb) * np.exp(-kb * 3)
 fade = np.minimum(1, t / 0.6) * np.minimum(1, (T - t) / 1.2)
 mus = mus * fade; mus = mus / np.abs(mus).max() * 0.7
-save(f'{O}/music.wav', mus)
+save(f'{O}/music.wav', mus)  # synthetic bed, replaced below by real surf music (Dima 20.10)
 print('fx ok', T)
+import subprocess as _sp
+_sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'music.py'), str(T)], check=False)

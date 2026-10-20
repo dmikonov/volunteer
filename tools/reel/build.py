@@ -34,7 +34,7 @@ for i, s in enumerate(segs):
     X = f"max(0\\,min(iw-iw/{z}\\,({cx0}+({cx1}-{cx0})*t/{SD})*iw-iw/{z}/2))"; Y = f"max(0\\,min(ih-ih/{z}\\,({cy0}+({cy1}-{cy0})*t/{SD})*ih-ih/{z}/2))"
     frz = f",tpad=stop_mode=clone:stop_duration={s['frz'] + 0.1}" if s['frz'] else ''
     shake = ''
-    if s.get('shk'):
+    if s.get('shk') and S.get('shake'):  # Dima 20.10: no shake by default
         A, B = s['shk']; shake = f",crop=1032:1835:'24+22*sin(t*63)*between(t,{A},{B})':'42+20*sin(t*51+1)*between(t,{A},{B})',scale=1080:1920"
     if s['kind'] == 'raw':
         cap = cv2.VideoCapture(s['srcp']); fps = cap.get(5); accm = []

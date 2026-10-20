@@ -61,6 +61,12 @@
 - Превью для Димы: Descript import_media (прямая загрузка PUT из песочницы) + publish_project unlisted 1080p, ссылка share.descript.com. Мастер-файлы в /mnt/files/reels/.
 - Публикация из этой схемы: upload_local_file даёт ссылку на 1 час, её сразу в POST /me/media.
 
+## Голос, музыка, эффекты (решения Димы 20.10, главнее всего ниже)
+- EN голос: Kokoro af_heart (tools/reel/voices.json), voice.py включает его сам. HE голос: F5 голос 3. Старые голоса Edge Andrew и Avri ниже по тексту устарели.
+- Музыка: только треки из assets/music/library.json (approved=true, пока выбора нет temp=true). audio_fx.py после синтеза вызывает music.py и заменяет music.wav настоящим треком. Свой трек на рилс: в спеке не нужно ничего, ротация по дню; конкретный трек: переменная REEL_MUSIC=<id>. В логе сборки должна быть строка «music: <id>»; «MUSIC FAIL» значит рилс без музыки, это ошибка, написать Диме.
+- Эффекты: тряска (shk), белые вспышки, свуши, удары и «попы» выключены по умолчанию (spec shake/flash/sfx не ставить). Указания ниже про тряску, вспышки и звуки устарели.
+- EN-концепт: docs/en-concept.md (призыв подписаться сразу после хука).
+
 ## Сборка на GitHub Actions (основной путь с 20.10, HF-песочница 402)
 - Кадры: Z-Image Turbo (инструмент gr1_z_image_turbo_generate) и Wan 2.2 (dynamic_space) через MCP Hugging Face, стартовые картинки видно сразу, клипы скачивает CI: tools/reel/ci/fetch_list.txt (имя и хвост ссылки hf.space), MODE=fetch.sh, пуш trigger.txt. Листы кадров приходят в out/ci/<рилс>/gen/.
 - Сборка: tools/reel/ci/build_<рилс>.sh (пример build_foam.sh: панель приложения app_panel.py, audio_fx, voice с повтором, build, ov_png, ov_ff, trim_tail, loudfix, post_cz, листы 10 к/с, громкость, паузы), MODE=build_<рилс>.sh.

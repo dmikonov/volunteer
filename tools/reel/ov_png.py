@@ -97,7 +97,7 @@ for i, l in enumerate(L):
     a, b = cuts[i], cuts[i + 1]
     base = 'RECAP' if l['k'] == LAST else ('T' + l['k'] if l['k'] in TITLES else None)
     if base: ON += [(base + 'a', a, a + F1), (base + 'b', a + F1, a + F2), (base + 'c', a + F2, b)]
-    if i > 0 and not S.get('no_flash'): ON.append(('FLASH', a - 0.02, a + 0.06))  # 20.10 look2: hard cuts option
+    if i > 0 and S.get('flash'): ON.append(('FLASH', a - 0.02, a + 0.06))  # Dima 20.10: no white flashes unless spec flash=true
 ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
 for e in S.get('extra', []):
     i = [l['k'] for l in L].index(e['line']); ON.append((e['k'], cuts[i] + e.get('d0', 0.3), cuts[i] + e['d1'] if 'd1' in e else cuts[i + 1]))
