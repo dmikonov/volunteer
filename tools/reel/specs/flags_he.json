@@ -56,14 +56,6 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/370cb19208c33043bfbee0dad376da047f0d6c3faf2e4215eb706929fb85d29f/tmpwg3k7x2o.wav"
   ],
   [
-   3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/daa67c6e1b7e00e02abe2337b213c7a1c3866d966c8fa7cbf1dba0b8b93474fd/tmpnqhe3y2r.wav"
-  ],
-  [
-   3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/a00006d3960b50ed2a8e3de344d26cea9488d11df71c365583c63633ef486287/tmpjom9usce.wav"
-  ],
-  [
    4,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d35bba51f3cf2977e87639ba1bdd527f65f3b2a16d9204eb1aa4d01444548ff0/tmp4vzunula.wav"
   ],
@@ -78,6 +70,14 @@
   [
    5,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fb01fd5dfa631677acb734e2e3ea4443fff5b859f889cd09c800aee2e8f70462/tmpqmkcq5a9.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/809a1b5b07a6f6c3696abd870f8e37d95f55706248e8a16b57e91bf40fe61a0d/tmpjyou2k_5.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/3d77e074fe48110d9e568b8f38c7afb0d0644c29230264b3ff2b4b6a36c682b7/tmp7q3jlvks.wav"
   ]
  ],
  "titles": {
@@ -185,14 +185,14 @@
     "kind": "gen",
     "src": "/s17/gen/fl_black.mp4",
     "a": 1.8,
-    "z": 1.25,
+    "z": 1.08,
     "cx": [
-     0.5,
-     0.5
+     0.47,
+     0.47
     ],
     "cy": [
-     0.55,
-     0.55
+     0.5,
+     0.5
     ],
     "dd": 1.3
    },
