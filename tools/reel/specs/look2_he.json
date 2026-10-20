@@ -252,7 +252,7 @@
     "src": "/s17/gen/g_loop.mp4",
     "a": [
      "loop",
-     1.58
+     1.7
     ],
     "z": 1.1,
     "cx": [
@@ -275,5 +275,6 @@
   "בסרף טרייב": "ב-SurfTribe",
   "סרף טרייב": "SurfTribe"
  },
- "no_flash": true
+ "no_flash": true,
+ "ov_delay": 0.08
 }

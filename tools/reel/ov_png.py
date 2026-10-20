@@ -73,7 +73,7 @@ for i, (txt, s0, s1) in enumerate(subs):
     lend = min([c for c in cuts if c > s0 + 0.05] + [T]) - 0.04
     tx = re.sub(r'[.,:]$', '', txt.strip())
     for k0, v0 in S.get('sub_replace', {}).items(): tx = tx.replace(k0, v0)
-    clean.append((tx, s0, min(nxt, s1 + 0.5, lend)))
+    clean.append((tx, s0, min(nxt - 0.04, s1 + 0.5, lend)))  # 20.10: no one-frame double subtitle
 APPW = [(cuts[[l['k'] for l in L].index(kk)], cuts[[l['k'] for l in L].index(kk) + 1]) for kk in S.get('app_lines', [])]
 for i, (txt, s0, s1) in enumerate(clean):
     st = f" style='top:{S['app_sub_top']}px'" if S.get('app_sub_top') and any(a0 - 0.05 <= s0 < b0 for a0, b0 in APPW) else ''
@@ -103,6 +103,7 @@ for e in S.get('extra', []):
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
     if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
+ON = [(k, round(a + S.get('ov_delay', 0), 3), round(b + S.get('ov_delay', 0), 3)) if k.startswith(('T', 'RECAP')) or k in [e['k'] for e in S.get('extra', [])] else (k, a, b) for k, a, b in ON]  # 20.10: cards switch with the video cut, not 2 frames before
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
