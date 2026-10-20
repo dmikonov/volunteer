@@ -3,16 +3,17 @@
 [('L1', 'kn_stiff.mp4', 0.0, 0.75, 0.0), ('L1', 'kn_stiff.mp4', 1.85, 0.985, 0.75), ('L2', '/kn_arms.mp4', 1.8, 2.24, 1.735), ('L3', 'n_stiff2.mp4', 0.0, 1.2, 3.975), ('L3', 'kn_stiff.mp4', 0.0, 1.09, 5.175), ('L4', '_center2.mp4', 2.4, 1.49, 6.265), ('L5', 'n/kn_low.mp4', 0.0, 2.615, 7.755), ('L6', '_center2.mp4', 0.0, 2.165, 10.37), ('L7', '/kn_arms.mp4', 0.0, 2.365, 12.535), ('L8', 'n/app_kn.mp4', 0.0, 2.84, 14.9), ('L9', '/rp_wide.mp4', 0.0, 4.215, 17.74)]
 cat 21.92 T 21.955
 + python3 ov_png.py /s17/rp/knees_en2
-realcuts True [0.0, 1.76, 4.0, 6.28, 7.76, 10.36, 12.52, 14.8, 17.64, 21.955]
+realcuts skipped could not convert string to float: '0.000000,'
+realcuts True [0.0, 1.76, 4.0, 6.28, 7.76, 10.36, 12.52, 14.88, 17.72, 21.955]
 safe-zone violations []
 ovplan 35
 + python3 ov_ff.py /s17/rp/knees_en2
-done /s17/rp/knees_en2/reel_knees_en2.mp4 21.955 lufs before -15.7 gain 1.2
+done /s17/rp/knees_en2/reel_knees_en2.mp4 21.955 lufs before -15.6 gain 1.1
 + python3 trim_tail.py /s17/rp/knees_en2
 trimmed /s17/rp/knees_en2/reel_knees_en2.mp4 21.46
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_en2/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_en2/reel_knees_en2.mp4
-/s17/rp/knees_en2/reel_knees_en2.mp4 before -13.0 after -14.5 peak -3.1
+/s17/rp/knees_en2/reel_knees_en2.mp4 before -13.1 after -14.5 peak -3.1
 + python3 post_cz.py /s17/rp/knees_en2
 post ok
 + echo 'EXIT /s17/rp/knees_en2 0'
