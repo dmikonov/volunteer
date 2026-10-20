@@ -1,0 +1,249 @@
+{
+ "lang": "en",
+ "out": "reel_look2_en.mp4",
+ "app_lines": [
+  "L6"
+ ],
+ "app_top": 250,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 700,
+ "lines": [
+  "It's not your legs. You're looking at them.",
+  "Eyes down, and you go down. Eyes ahead, and the board keeps going.",
+  "One. Pop up and lift your chin right away.",
+  "Two. Look along the wave, where you want to go.",
+  "Three. Turn your shoulders that way. The board follows.",
+  "By the way, SurfTribe breaks down every wave you ride.",
+  "Save this."
+ ],
+ "titles": {
+  "L1": [
+   "NOT YOUR LEGS",
+   "YOUR EYES",
+   null,
+   null
+  ],
+  "L3": [
+   "CHIN UP",
+   "RIGHT AWAY",
+   "1",
+   "CK"
+  ],
+  "L4": [
+   "LOOK ALONG",
+   "THE WAVE",
+   "2",
+   "CK"
+  ],
+  "L5": [
+   "SHOULDERS",
+   "LEAD THE WAY",
+   "3",
+   "CK"
+  ],
+  "L6": [
+   "SURFTRIBE",
+   "BREAKS DOWN EVERY WAVE",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SAVE THIS",
+  [
+   "Chin up",
+   "Look along the wave",
+   "Shoulders lead"
+  ]
+ ],
+ "extra": [
+  {
+   "k": "SPL",
+   "line": "L2",
+   "d0": 0.0,
+   "html": "<div style=\"position:absolute;top:330px;left:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">EYES DOWN</span></div><div style=\"position:absolute;top:330px;right:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">EYES AHEAD</span></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_down.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.5
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_down.mp4",
+    "a": 1.5,
+    "z": 1.45,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.48,
+     0.48
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/l_split.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_chin.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.4
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_chin.mp4",
+    "a": 1.4,
+    "z": 1.4,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.32,
+     0.32
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_along.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.5
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_along.mp4",
+    "a": 1.5,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.36,
+     0.36
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_turn.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ],
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_along.mp4",
+    "a": 2.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.4,
+     0.4
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_chin.mp4",
+    "a": 2.0,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.4,
+     0.4
+    ]
+   }
+  ]
+ },
+ "gap": 0.3,
+ "ttop": {
+  "L3": 760,
+  "L4": 760
+ },
+ "rate": "+4%",
+ "music_vol": 0.7
+}
