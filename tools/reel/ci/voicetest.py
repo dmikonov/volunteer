@@ -13,11 +13,3 @@ async def run_edge():
             await edge_tts.Communicate(T, v, rate=r).save(f'/tmp/{n}.mp3'); mp3(f'/tmp/{n}.mp3', n)
         except Exception as e: print('EDGE FAIL', n, e)
 asyncio.run(run_edge())
-try:
-    from kokoro import KPipeline
-    for lang, voices in (('a', ['af_heart', 'af_bella', 'am_michael', 'am_puck']),):
-        p = KPipeline(lang_code=lang)
-        for i, v in enumerate(voices, 5):
-            a = np.concatenate([np.asarray(x[2]) for x in p(T, voice=v, speed=1.08)])
-            sf.write(f'/tmp/k_{v}.wav', a, 24000); mp3(f'/tmp/k_{v}.wav', f'{i}_kokoro_{v}')
-except Exception as e: print('KOKORO FAIL', e)
