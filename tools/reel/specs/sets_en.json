@@ -4,7 +4,7 @@
  "app_lines": [
   "L7"
  ],
- "app_top": 250,
+ "app_top": 340,
  "no_marka": true,
  "hook_cy": true,
  "recap_top": 620,
@@ -27,7 +27,7 @@
   "One. Let the big one go to the pack.",
   "Two. Take a smaller one nobody's paddling for.",
   "Three. Someone already up? Pull back.",
-  "SurfTribe shows where you rode it.",
+  "SurfTribe maps where you rode the wave.",
   "Tomorrow: same beach, three hours later, a different wave. Follow so you don't miss it."
  ],
  "titles": {
@@ -123,7 +123,7 @@
    {
     "kind": "gen",
     "src": "/s17/gen/s_wipe.mp4",
-    "a": 0.3,
+    "a": 0.6,
     "z": 1.1,
     "cx": [
      0.5,
@@ -154,31 +154,16 @@
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/s_later.mp4",
+    "src": "/s17/gen/s_paddle.mp4",
     "a": 0.0,
-    "z": 1.1,
+    "z": 1.15,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.6,
-     0.6
-    ],
-    "dd": 1.0
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/s_set.mp4",
-    "a": 2.0,
-    "z": 1.6,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.33,
-     0.33
+     0.55,
+     0.55
     ]
    }
   ],
@@ -231,7 +216,7 @@
    }
   ]
  },
- "gap": 0.28,
+ "gap": 0.12,
  "music_vol": 0.7,
- "kokoro_speed": 0.95
+ "kokoro_speed": 0.92
 }
