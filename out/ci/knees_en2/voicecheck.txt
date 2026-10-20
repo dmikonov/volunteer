@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.08 dur=1.44 | ref: Stop standing tall. | asr: Stop standing tall.
+L2 OK match=1.00 wps=2.98 dur=2.01 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
+L3 OK match=1.00 wps=2.95 dur=2.71 | ref: Straight legs can't absorb bumps, so you fall. | asr: Straight legs can't absorb bumps, so you fall.
+L4 OK match=1.00 wps=3.43 dur=2.92 | ref: One. Bend your knees, like sitting on a low chair. | asr: One, bend your knees, like sitting on a low chair.
+L5 OK match=0.95 wps=3.90 dur=2.57 | ref: Two. Keep your weight over the middle of the board. | asr: 2. Keep your weight over the middle of the board.
+L6 OK match=1.00 wps=2.53 dur=2.76 | ref: Three. Arms out wide, low and relaxed. | asr: Three, arms out wide, low and relaxed.
+L7 OK match=1.00 wps=2.81 dur=2.49 | ref: SurfTribe flags straight legs on your wave. | asr: Surf tribe flags straight legs on your wave.
+L8 OK match=1.00 wps=2.91 dur=3.09 | ref: Tomorrow: rip currents. Follow so you don't miss it. | asr: Tomorrow, rip currents. Follow so you don't miss it.
+TOTAL wps=3.00 lines_to_check=0
