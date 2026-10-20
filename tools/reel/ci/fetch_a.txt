@@ -1,1 +1,2 @@
-knees kn_center2 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/5d0d9ab134d4d91274d1bd24410b1229d463ecff028389b9fac3e2bcffe0e0e5/tmpsikiodjf.mp4
+knees kn_stiff2 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/7db01e32b0e39083dd5e01f67922a089ffb04272a8a23be8084b657a93ee297a/tmp479z_8qc.mp4
+rip rp_stay2 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/1940a826e121867629829e765fc4c2cd0bc6581a2dfa54e74b18690f40d04500/tmpcxqfj809.mp4

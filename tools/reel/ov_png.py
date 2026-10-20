@@ -116,7 +116,8 @@ ON = []; F1, F2 = 0.08, 0.16
 for i, l in enumerate(L):
     a, b = cuts[i], cuts[i + 1]
     base = 'RECAP' if l['k'] == LAST else ('T' + l['k'] if l['k'] in TITLES else None)
-    if base: ON += [(base + 'a', a, a + F1), (base + 'b', a + F1, a + F2), (base + 'c', a + F2, b)]
+    if base and S.get('pop'): ON += [(base + 'a', a, a + F1), (base + 'b', a + F1, a + F2), (base + 'c', a + F2, b)]
+    elif base: ON.append((base + 'c', a, b))  # 21.10: no scale pop on cards (Dima 20.10: no 'pops'); also removes a 1-frame blank between a/b
     if i > 0 and S.get('flash'): ON.append(('FLASH', a - 0.02, a + 0.06))  # Dima 20.10: no white flashes unless spec flash=true
 if S.get('badge'): ON.append(('BADGE', 0, T))
 else: ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
