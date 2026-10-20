@@ -1,6 +1,6 @@
 + k=/s17/rp/look2_en
 + python3 build.py /s17/rp/look2_en
-[('L1', 'n/g_down.mp4', 0.0, 1.5, 0.0), ('L1', 'n/g_down.mp4', 1.5, 0.823, 1.5), ('L2', '/l_split.mp4', 0.0, 4.298, 2.323), ('L3', 'n/g_chin.mp4', 0.0, 1.4, 6.621), ('L3', 'n/g_chin.mp4', 1.4, 1.384, 8.021), ('L4', '/g_along.mp4', 0.0, 1.5, 9.405), ('L4', '/g_along.mp4', 1.5, 1.38, 10.905), ('L5', 'n/g_turn.mp4', 0.0, 1.6, 12.285), ('L5', '/g_along.mp4', 2.0, 1.821, 13.885), ('L6', 'n/app_en.mp4', 0.0, 3.492, 15.706), ('L7', 'n/g_chin.mp4', 2.0, 1.681, 19.198)]
+[('L1', 'n/g_down.mp4', 0.0, 1.5, 0.0), ('L1', 'n/g_down.mp4', 1.5, 0.823, 1.5), ('L2', '/l_split.mp4', 0.0, 4.298, 2.323), ('L3', 'n/g_chin.mp4', 0.0, 1.4, 6.621), ('L3', 'n/g_chin.mp4', 1.4, 1.384, 8.021), ('L4', '/g_along.mp4', 0.0, 1.5, 9.405), ('L4', '/g_along.mp4', 1.5, 1.38, 10.905), ('L5', 'n/g_turn.mp4', 0.0, 1.2, 12.285), ('L5', '/g_along.mp4', 2.0, 2.221, 13.485), ('L6', 'n/app_en.mp4', 0.0, 3.492, 15.706), ('L7', 'n/g_chin.mp4', 2.0, 1.681, 19.198)]
 cat 20.96 T 20.879
 + python3 ov_png.py /s17/rp/look2_en
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
@@ -11,7 +11,7 @@ done /s17/rp/look2_en/reel_look2_en.mp4 20.879 lufs before -16.1 gain 1.6
 trimmed /s17/rp/look2_en/reel_look2_en.mp4 20.48
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/look2_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/look2_en/reel_look2_en.mp4
-/s17/rp/look2_en/reel_look2_en.mp4 before -13.0 after -14.6 peak -2.1
+/s17/rp/look2_en/reel_look2_en.mp4 before -13.0 after -14.6 peak -1.9
 + python3 post_cz.py /s17/rp/look2_en
 post ok
 + echo 'EXIT /s17/rp/look2_en 0'
