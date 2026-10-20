@@ -1,10 +1,2 @@
-look2/g_down.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/5cb7052612db184c700b246c28d0e050bfb9405ecb4c3894bd5ed32284b885b6/tmp93zq3cwx.mp4
-look2/g_along.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/48042de7f8a67521647260b703cdccb1e48f03adef95d80fbe2fbc5c26e0b367/tmp1ri66why.mp4
-look2/g_chin.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/94c5b4130ceae5ba530ae188f2d1709960a15f6ed9e945360f5e7fbbe93253fe/tmpytm260ge.mp4
-look2/g_turn.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/d38a1dac588c3a9d395e2c0ea6c986bdba9cb3f797ccc50f5e1f10203fa47d15/tmph0zsxn6v.mp4
-# 1792474462
-look2/g_nose.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/55e95269ba497358ad70eba0cb796b75065ca043e21570ae9f837bbac0366789/tmptgs7s0p1.mp4
-look2/g_turn2.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/4c62c58f34d7f41fb1e484e65a6f19482c2ec7a4b2a124dbcdc509c8b7896126/tmpx1lkh874.mp4
-look2/g_turn3.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/90ea5909512372c9f0c59c46e170ef004a0bbec27aa68695c7823ef2361aef8b/tmpasu3vhmc.mp4
-look2/g_ahead2.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/47824f0450d81a456d1567d4fc06173fee8975a85b47b6a7735b51ea5caf9196/tmpn7t0jwxx.mp4
-look2/g_recap.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/ac5692b57ac533644a11de75bccda5c4ff064db88c68f60ee0d6950e6b185fa7/tmptimlcgst.mp4
+look2/g_bridge.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/146e787c73e08127691c2e6c223d9d08080bedf92f7b3fa54b4c591be59d3fd2/tmp3tyhmdyz.mp4
+look2/g_chin2.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/f025641a6fa3d5264af01e6d220da31cb0d118f1398fa6bc8176b1135eec4ed8/tmp38jqk5b1.mp4
