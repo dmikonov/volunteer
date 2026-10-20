@@ -47,7 +47,7 @@ for l in L:
     acc = CY if S.get('hook_cy') else (AM if l['k'] in ('L1', 'L2') else CY)  # 23.10 formula: line 2 cyan
     icon = f"{ic}&nbsp;" if ic else ''
     sm = ' sm' if l['k'] in S.get('app_lines', []) else ''
-    inner = f"{num}<div class='plate{sm}'>{icon}{a}<br><span style='color:{acc}'>{b}</span></div>"
+    inner = f"{num}<div class='plate{sm}'>{icon}{a}" + (f"<br><span style='color:{acc}'>{b}</span>" if b else '') + "</div>"  # 21.10: one-line card when b is empty (bridge line)
     for tag, sc in (('a', 1.22), ('b', 0.95), ('c', 1.0)):
         top = f"top:{S.get('app_top', 330)}px;" if sm else (f"top:{S['ttop'][l['k']]}px;" if l['k'] in S.get('ttop', {}) else '')  # 20.10: per-line card top (keep faces clear)
         cards[f"T{l['k']}{tag}"] = f"<div class=blk style='{top}transform:scale({sc})'>{inner}</div>"
@@ -60,7 +60,8 @@ if S.get('teaser'):  # 21.10 new concept: tomorrow teaser on the last line inste
         cards[f'RECAP{tag}'] = f"<div class=tz><div class=box><h>{tz[0]}</h><span class=t>{tz[1]}</span><span class=f>{tz[2]}</span></div></div>"
 if S.get('badge'):  # 21.10: daily badge for the whole reel (replaces the SurfTribe mark)
     bd = S['badge']; bdir = 'rtl' if HE else 'ltr'
-    cards['BADGE'] = f"<div class=mark><span class=b dir={bdir}>{bd[0]} <span style='color:{CY}'>{bd[1]}</span></span></div>"
+    brand = f"Surf<span style='color:{CY}'>Tribe</span>&nbsp;&nbsp;·&nbsp;&nbsp;"  # checklist 10: brand visible in the first 3 s and at the end
+    cards['BADGE'] = f"<div class=mark><span class=b style='font-size:44px'>{brand}<span dir={bdir}>{bd[0]} <span style='color:{CY}'>{bd[1]}</span></span></span></div>"
 if S.get('follow'):  # 21.10 EN concept: animated Follow button under the follow card
     fl = S['follow']
     cards['FBTN0'] = f"<div class=flw><span>{fl.get('btn', 'Follow')}</span></div>"
