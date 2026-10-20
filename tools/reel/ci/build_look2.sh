@@ -6,18 +6,17 @@ pip install -q edge-tts opencv-python-headless numpy playwright
 python -m playwright install --with-deps chromium >/dev/null 2>&1
 sudo mkdir -p /s17 && sudo chown $USER /s17 && mkdir -p /s17/gen /s17/rp /s17/tip1
 cp appkit/Rubik.ttf /s17/Rubik.ttf; cp assets/look2/g_*.mp4 /s17/gen/
-# split screens (real time): eyes down = g_nose (board stalls), eyes ahead = g_along. HE reads right to left: "down" on the right
+# split screens (real time). 20.10 v3: eyes-down panel = g_nose 0-1.2 (head down) + g_down 1.2-2.25 (stall, start of the fall), 2.25 s, both langs
+ffmpeg -v error -y -i /s17/gen/g_nose.mp4 -i /s17/gen/g_down.mp4 -filter_complex "[0:v]trim=0:1.2,setpts=PTS-STARTPTS,fps=25,scale=480:832,setsar=1[a];[1:v]trim=1.2:2.25,setpts=PTS-STARTPTS,fps=25,scale=480:832,setsar=1[b];[a][b]concat=n=2:v=1:a=0[v]" -map "[v]" -c:v libx264 -crf 12 /s17/gen/g_ed.mp4
 sp(){ ffmpeg -v error -y -i /s17/gen/$1 -i /s17/gen/$2 -filter_complex \
- "[0:v]crop=234:832:(iw-234)*$3:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*$4:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=1.5,format=yuv420p[v]" \
+ "[0:v]crop=234:832:(iw-234)*$3:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*$4:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=$6,format=yuv420p[v]" \
  -map "[v]" -c:v libx264 -crf 14 /s17/gen/$5; }
-sp g_nose.mp4 g_along.mp4 0.45 0.47 l_split_en.mp4
-# HE line is longer: eyes-down panel = g_nose 0-1.3 + g_down 0.1-0.8 (still looking down, before the fall), 2.0 s
-ffmpeg -v error -y -i /s17/gen/g_nose.mp4 -i /s17/gen/g_down.mp4 -filter_complex "[0:v]trim=0:1.3,setpts=PTS-STARTPTS,fps=25,scale=480:832,setsar=1[a];[1:v]trim=0.1:0.8,setpts=PTS-STARTPTS,fps=25,scale=480:832,setsar=1[b];[a][b]concat=n=2:v=1:a=0[v]" -map "[v]" -c:v libx264 -crf 12 /s17/gen/g_ed.mp4
-ffmpeg -v error -y -i /s17/gen/g_along.mp4 -i /s17/gen/g_ed.mp4 -filter_complex \
- "[0:v]crop=234:832:(iw-234)*0.47:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*0.45:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=2.0,format=yuv420p[v]" \
- -map "[v]" -c:v libx264 -crf 14 /s17/gen/l_split_he.mp4
-python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_10-56-35_1_2.mp4 27.3 29.9 380 880 1030 1240 3.2 /s17/gen/app_he.mp4 0 1080 520
-python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 24.0 26.6 500 900 520 1400 3.2 /s17/gen/app_en.mp4 0 1080 520
+# EN reads left to right: down on the left. HE: down on the right
+sp g_ed.mp4 g_along.mp4 0.45 0.47 l_split_en.mp4 1.7
+sp g_along.mp4 g_ed.mp4 0.47 0.45 l_split_he.mp4 2.25
+# app beats v3: HE = the tip card switching to the eyes tip (26.3-28.9), EN = Ride Replay with skeleton (46.6-49.2); panel ends above the subtitles
+python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_10-56-35_1_2.mp4 26.3 28.9 690 500 940 1170 3.0 /s17/gen/app_he.mp4 0 1080 600
+python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 46.6 49.2 1020 640 1050 1605 3.0 /s17/gen/app_en.mp4 0 1080 560
 python3 tools/reel/audio_fx.py 30
 cd /s17/rp && for f in voice.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py; do cp $R/tools/reel/$f .; done
 for k in look2_he look2_en; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; done

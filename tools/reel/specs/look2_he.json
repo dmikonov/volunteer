@@ -12,10 +12,10 @@
   "זה לא הרגליים, זה המבט.",
   "מבט למטה, נעצרים, מבט קדימה, ממשיכים.",
   "ככה מתקנים, שלושה צעדים.",
-  "אחת, קמים ומרימים את הסנטר מיד.",
+  "אחת, מרימים את הסנטר מיד.",
   "שתיים, מבט לאורך הגל.",
   "שלוש, הכתפיים לשם, והגלשן אחריהן.",
-  "אגב, גם סרף טרייב נותן את הטיפ הזה.",
+  "גם סרף טרייב נותן את הטיפ הזה.",
   "שמרו את זה."
  ],
  "titles": {
@@ -45,13 +45,13 @@
   ],
   "L6": [
    "הכתפיים",
-   "לכיוון הגל",
+   "לכיוון התנועה",
    "3",
    "CK"
   ],
   "L7": [
-   "SurfTribe בזמן הניתוח:",
-   "מסתכלים לאן שרוצים להגיע",
+   "SurfTribe",
+   "נותן את הטיפ הזה",
    null,
    null
   ]
@@ -61,7 +61,7 @@
   [
    "מרימים את הסנטר",
    "מבט לאורך הגל",
-   "כתפיים לכיוון הגל"
+   "כתפיים לכיוון התנועה"
   ]
  ],
  "extra": [
@@ -69,8 +69,8 @@
    "k": "SPL",
    "line": "L2",
    "d0": 0.0,
-   "d1": 1.95,
-   "html": "<div style=\"position:absolute;top:330px;right:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">מבט למטה</span></div><div style=\"position:absolute;top:330px;left:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">מבט קדימה</span></div>"
+   "d1": 2.17,
+   "html": "<div style=\"position:absolute;top:330px;left:543px;width:307px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;color:#fff;white-space:nowrap\">מבט למטה</span></div><div style=\"position:absolute;top:330px;left:70px;width:467px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;color:#fff;white-space:nowrap\">מבט קדימה</span></div>"
   }
  ],
  "plan": {
@@ -119,7 +119,7 @@
      0.5,
      0.5
     ],
-    "dd": 1.95
+    "dd": 2.17
    },
    {
     "kind": "gen",
@@ -139,8 +139,23 @@
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_recap.mp4",
+    "src": "/s17/gen/g_bridge.mp4",
     "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.2
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_bridge.mp4",
+    "a": 2.0,
     "z": 1.0,
     "cx": [
      0.5,
@@ -155,31 +170,31 @@
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_chin.mp4",
+    "src": "/s17/gen/g_chin2.mp4",
     "a": 0.0,
-    "z": 1.5,
+    "z": 1.6,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.35,
-     0.35
+     0.0,
+     0.0
     ],
-    "dd": 1.3
+    "dd": 1.4
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/g_chin.mp4",
-    "a": 1.3,
-    "z": 1.5,
+    "src": "/s17/gen/g_chin2.mp4",
+    "a": 1.9,
+    "z": 1.6,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.35,
-     0.35
+     0.0,
+     0.0
     ]
    }
   ],
@@ -234,14 +249,14 @@
     "kind": "gen",
     "src": "/s17/gen/g_turn3.mp4",
     "a": 0.0,
-    "z": 1.35,
+    "z": 1.15,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.42,
-     0.42
+     0.8,
+     0.8
     ]
    }
   ],
@@ -250,30 +265,30 @@
     "kind": "app",
     "src": "/s17/gen/app_he.mp4",
     "a": 0.0,
-    "z": 1.15,
+    "z": 1.08,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.42,
-     0.56
+     0.47,
+     0.53
     ]
    }
   ],
   "L8": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_ahead2.mp4",
-    "a": 0.6,
-    "z": 1.5,
+    "src": "/s17/gen/g_down.mp4",
+    "a": 0.0,
+    "z": 1.1,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.9,
-     0.9
+     0.5,
+     0.5
     ]
    }
   ]
@@ -286,5 +301,6 @@
  "sub_replace": {
   "בסרף טרייב": "ב-SurfTribe",
   "סרף טרייב": "SurfTribe"
- }
+ },
+ "no_flash": true
 }
