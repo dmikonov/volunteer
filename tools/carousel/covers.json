@@ -1,68 +1,8 @@
 [
- {
-  "p": 9,
-  "EN": {
-   "call": "New to surfing?",
-   "title": "Stop nodding along<br>in the lineup"
-  },
-  "HE": {
-   "call": "מתחילים בגלישה?",
-   "title": "די להנהן<br>כשלא מבינים"
-  }
- },
- {
-  "p": 10,
-  "EN": {
-   "call": "New to surfing?",
-   "title": "Falling isn't the risk.<br>Falling wrong is"
-  },
-  "HE": {
-   "call": "מתחילים בגלישה?",
-   "title": "הנפילה היא לא הבעיה.<br>נפילה לא נכונה כן"
-  }
- },
- {
-  "p": 11,
-  "EN": {
-   "call": "New to surfing?",
-   "title": "A small board<br>is slowing you down"
-  },
-  "HE": {
-   "call": "מתחילים בגלישה?",
-   "title": "גלשן קטן<br>מעכב אתכם"
-  }
- },
- {
-  "p": 12,
-  "EN": {
-   "call": "Already standing up?",
-   "title": "No waves?<br>Not a day off"
-  },
-  "HE": {
-   "call": "כבר עומדים על הגלשן?",
-   "title": "אין גלים?<br>זה לא יום חופש"
-  }
- },
- {
-  "p": 13,
-  "EN": {
-   "call": "New to surfing?",
-   "title": "It's not your balance.<br>It's your wax"
-  },
-  "HE": {
-   "call": "מתחילים בגלישה?",
-   "title": "זה לא שיווי המשקל.<br>זו השעווה"
-  }
- },
- {
-  "p": 14,
-  "EN": {
-   "call": "Already standing up?",
-   "title": "You can't see<br>your own mistakes"
-  },
-  "HE": {
-   "call": "כבר עומדים על הגלשן?",
-   "title": "אתם לא רואים<br>את הטעויות שלכם"
-  }
- }
+ {"p": 9,  "f": "Знакомо",            "EN": {"call": "Sound familiar?", "title": "Everyone says set.<br>You just nod"}, "HE": {"call": "מכירים את זה?", "title": "כולם אומרים סט.<br>ואתם רק מהנהנים"}},
+ {"p": 10, "f": "Вот что происходит", "EN": {"call": "Here's what happens", "title": "when you fall<br>the wrong way"}, "HE": {"call": "זה מה שקורה", "title": "כשנופלים<br>בצורה הלא נכונה"}},
+ {"p": 11, "f": "Миф",                "EN": {"call": "The board myth", "title": "A small board<br>is slowing you down"}, "HE": {"call": "המיתוס על הגלשן", "title": "גלשן קטן<br>מעכב אתכם"}},
+ {"p": 12, "f": "Stop",               "EN": {"call": "No waves this week?", "title": "Stop skipping<br>flat days"}, "HE": {"call": "אין גלים השבוע?", "title": "די לוותר<br>על ימים שטוחים"}},
+ {"p": 13, "f": "Ты не ... Просто",   "EN": {"call": "You're not clumsy", "title": "Your board<br>is just slippery"}, "HE": {"call": "אתם לא מגושמים", "title": "הגלשן פשוט<br>מחליק"}},
+ {"p": 14, "f": "Я тоже так думал",   "EN": {"call": "I thought I knew my mistake", "title": "Until I saw<br>my own wave"}, "HE": {"call": "גם אני חשבתי שאני יודע מה הטעות", "title": "עד שראיתי<br>את הגל שלי"}}
 ]
