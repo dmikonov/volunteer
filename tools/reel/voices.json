@@ -1,0 +1,2 @@
+{"en": {"engine": "kokoro", "voice": "af_heart", "speed": 1.08, "note": "Выбор Димы 20.10: вариант 5 из кастинга out/ci/voicetest"},
+ "en_fallback": {"engine": "edge", "voice": "en-US-AndrewMultilingualNeural", "rate": "+5%"}}

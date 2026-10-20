@@ -17,7 +17,25 @@ async def tts():
         fn = f'{W}/L{i}.mp3'; open(fn, 'wb').write(audio)
         out.append({'k': f'L{i}', 'txt': t, 'fn': fn, 'words': words})
     return out
-L = asyncio.run(tts()); t = 0.12
+def kokoro(cfg):
+    import shutil, os
+    if not shutil.which('uv'): sp.run([sys.executable, '-m', 'pip', 'install', '-q', 'uv'], check=True)
+    if not shutil.which('espeak-ng'): sp.run('sudo apt-get install -y -qq espeak-ng > /dev/null 2>&1 || apt-get install -y -qq espeak-ng > /dev/null 2>&1', shell=True)
+    here = os.path.dirname(os.path.abspath(__file__))
+    sp.run(['uv', 'run', '--python', '3.12', '--with', 'kokoro>=0.9.4', '--with', 'soundfile', '--with', 'numpy', '--with', 'misaki[en]',
+            'python', f'{here}/kokoro_tts.py', W, cfg['voice'], str(cfg.get('speed', 1.0))], check=True)
+    return json.load(open(f'{W}/kokoro.json'))
+import os
+_cfgf = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'voices.json')
+CFG = json.load(open(_cfgf)) if os.path.exists(_cfgf) else {}
+L = None
+if LANG == 'en' and CFG.get('en', {}).get('engine') == 'kokoro' and not S.get('edge'):
+    try: L = kokoro(CFG['en']); print('voice: kokoro', CFG['en']['voice'])
+    except Exception as e: print('KOKORO FAIL, fallback edge:', e)
+if L is None:
+    if LANG == 'en' and CFG.get('en_fallback'): VO['en'] = (CFG['en_fallback']['voice'], CFG['en_fallback'].get('rate', '+5%'))
+    L = asyncio.run(tts())
+t = 0.12
 for l in L:
     s0 = max(0.0, l['words'][0][1] - 0.04); e0 = min(dur(l['fn']), l['words'][-1][2] + 0.10)
     l['s0'], l['e0'] = s0, e0; l['t0'] = round(t, 3); l['d'] = e0 - s0
