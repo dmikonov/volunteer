@@ -11,7 +11,11 @@ sp(){ ffmpeg -v error -y -i /s17/gen/$1 -i /s17/gen/$2 -filter_complex \
  "[0:v]crop=234:832:(iw-234)*$3:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*$4:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=1.5,format=yuv420p[v]" \
  -map "[v]" -c:v libx264 -crf 14 /s17/gen/$5; }
 sp g_nose.mp4 g_along.mp4 0.45 0.47 l_split_en.mp4
-sp g_along.mp4 g_nose.mp4 0.47 0.45 l_split_he.mp4
+# HE line is longer: eyes-down panel = g_nose 0-1.3 + g_down 0.1-0.8 (still looking down, before the fall), 2.0 s
+ffmpeg -v error -y -i /s17/gen/g_nose.mp4 -i /s17/gen/g_down.mp4 -filter_complex "[0:v]trim=0:1.3,setpts=PTS-STARTPTS,fps=25,scale=480:832,setsar=1[a];[1:v]trim=0.1:0.8,setpts=PTS-STARTPTS,fps=25,scale=480:832,setsar=1[b];[a][b]concat=n=2:v=1:a=0[v]" -map "[v]" -c:v libx264 -crf 12 /s17/gen/g_ed.mp4
+ffmpeg -v error -y -i /s17/gen/g_along.mp4 -i /s17/gen/g_ed.mp4 -filter_complex \
+ "[0:v]crop=234:832:(iw-234)*0.47:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*0.45:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=2.0,format=yuv420p[v]" \
+ -map "[v]" -c:v libx264 -crf 14 /s17/gen/l_split_he.mp4
 python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_09-28-2026_10-56-35_1_2.mp4 27.3 29.9 380 880 1030 1240 3.2 /s17/gen/app_he.mp4 0 1080 520
 python3 tools/reel/ci/app_panel.py app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 24.0 26.6 500 900 520 1400 3.2 /s17/gen/app_en.mp4 0 1080 520
 python3 tools/reel/audio_fx.py 30
