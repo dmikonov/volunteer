@@ -1,17 +1,17 @@
 + k=/s17/rp/rip_en2
 + python3 build.py /s17/rp/rip_en2
-[('L1', '/rp_wide.mp4', 0.0, 1.95, 0.0), ('L2', 'rp_watch.mp4', 0.0, 2.28, 1.95), ('L3', '/rp_wide.mp4', 1.9, 3.18, 4.23), ('L4', 'rp_watch.mp4', 1.9, 2.855, 7.41), ('L5', 'rp_stay2.mp4', 0.0, 3.18, 10.265), ('L6', 'n/rp_par.mp4', 0.0, 1.6, 13.445), ('L6', '/rp_hand.mp4', 0.0, 2.005, 15.045), ('L7', 'n/app_rp.mp4', 0.0, 2.705, 17.05), ('L8', 'n/rp_par.mp4', 1.7, 5.04, 19.755)]
-cat 24.84 T 24.795
+[('L1', '/rp_wide.mp4', 0.0, 2.25, 0.0), ('L2', 'n/rp_par.mp4', 1.7, 2.28, 2.25), ('L3', '/rp_wide.mp4', 1.9, 2.98, 4.53), ('L4', 'rp_watch.mp4', 0.0, 1.355, 7.51), ('L5', 'rp_watch.mp4', 1.0, 2.855, 8.865), ('L6', 'rp_stay2.mp4', 0.0, 3.18, 11.72), ('L7', 'n/rp_par.mp4', 0.0, 1.6, 14.9), ('L7', '/rp_hand.mp4', 0.0, 2.005, 16.5), ('L8', 'n/app_rp.mp4', 0.0, 2.705, 18.505), ('L9', '/rp_hand.mp4', 1.5, 2.0, 21.21), ('L9', 'n/rp_par.mp4', 1.7, 3.04, 23.21)]
+cat 26.28 T 26.25
 + python3 ov_png.py /s17/rp/rip_en2
 safe-zone violations []
-ovplan 42
+ovplan 43
 + python3 ov_ff.py /s17/rp/rip_en2
-done /s17/rp/rip_en2/reel_rip_en2.mp4 24.795 lufs before -15.5 gain 1.0
+done /s17/rp/rip_en2/reel_rip_en2.mp4 26.25 lufs before -15.5 gain 1.0
 + python3 trim_tail.py /s17/rp/rip_en2
-trimmed /s17/rp/rip_en2/reel_rip_en2.mp4 24.29
+trimmed /s17/rp/rip_en2/reel_rip_en2.mp4 25.75
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rip_en2/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rip_en2/reel_rip_en2.mp4
-/s17/rp/rip_en2/reel_rip_en2.mp4 before -13.1 after -14.5 peak -3.1
+/s17/rp/rip_en2/reel_rip_en2.mp4 before -13.1 after -14.5 peak -3.3
 + python3 post_cz.py /s17/rp/rip_en2
 post ok
 + echo 'EXIT /s17/rp/rip_en2 0'

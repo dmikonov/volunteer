@@ -1,63 +1,64 @@
 Downloading cpython-3.12.15-linux-x86_64-gnu (download) (32.7MiB)
  Downloaded cpython-3.12.15-linux-x86_64-gnu (download)
-Downloading nvidia-cuda-runtime (2.1MiB)
-Downloading networkx (2.0MiB)
-Downloading soundfile (1.3MiB)
-Downloading thinc (3.7MiB)
-Downloading nvidia-cusolver (191.6MiB)
-Downloading nvidia-cusparse (139.2MiB)
-Downloading nvidia-nvshmem-cu13 (57.6MiB)
-Downloading nvidia-cufile (1.2MiB)
-Downloading nvidia-nccl-cu13 (206.0MiB)
-Downloading triton (236.5MiB)
-Downloading nvidia-nvjitlink (40.5MiB)
-Downloading tokenizers (3.2MiB)
-Downloading torch (528.9MiB)
-Downloading sympy (6.0MiB)
-Downloading numpy (16.0MiB)
-Downloading nvidia-cublas (403.5MiB)
-Downloading spacy (33.9MiB)
-Downloading nvidia-cufft (204.2MiB)
-Downloading nvidia-curand (56.8MiB)
-Downloading babel (9.7MiB)
-Downloading nvidia-cudnn-cu13 (527.5MiB)
-Downloading espeakng-loader (9.6MiB)
-Downloading nvidia-cuda-cupti (10.2MiB)
-Downloading cuda-bindings (6.8MiB)
-Downloading nvidia-cuda-nvrtc (86.0MiB)
-Downloading hf-xet (4.0MiB)
 Downloading nvidia-cusparselt-cu13 (162.3MiB)
-Downloading pygments (1.2MiB)
-Downloading blis (10.8MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading numpy (16.0MiB)
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading sympy (6.0MiB)
+Downloading hf-xet (4.0MiB)
+Downloading tokenizers (3.2MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
 Downloading pydantic-core (2.1MiB)
-Downloading transformers (12.2MiB)
-Downloading srsly (1.2MiB)
+Downloading networkx (2.0MiB)
+Downloading pygments (1.2MiB)
+Downloading nvidia-cufile (1.2MiB)
+Downloading cuda-bindings (6.8MiB)
+Downloading soundfile (1.3MiB)
+Downloading spacy (33.9MiB)
+Downloading thinc (3.7MiB)
+Downloading nvidia-nccl-cu13 (206.0MiB)
 Downloading misaki (3.5MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading espeakng-loader (9.6MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading nvidia-cudnn-cu13 (527.5MiB)
 Downloading curated-tokenizers (6.0MiB)
-   Building docopt==0.6.2
+Downloading nvidia-cublas (403.5MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading babel (9.7MiB)
+Downloading blis (10.8MiB)
+Downloading transformers (12.2MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-nvjitlink (40.5MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading torch (528.9MiB)
+Downloading triton (236.5MiB)
+Downloading srsly (1.2MiB)
  Downloaded nvidia-cufile
- Downloaded soundfile
- Downloaded pygments
  Downloaded srsly
-      Built docopt==0.6.2
+   Building docopt==0.6.2
+ Downloaded pygments
+ Downloaded soundfile
  Downloaded networkx
- Downloaded nvidia-cuda-runtime
  Downloaded pydantic-core
+ Downloaded nvidia-cuda-runtime
  Downloaded tokenizers
  Downloaded misaki
- Downloaded hf-xet
  Downloaded thinc
+ Downloaded hf-xet
+      Built docopt==0.6.2
  Downloaded curated-tokenizers
- Downloaded cuda-bindings
  Downloaded sympy
- Downloaded nvidia-cuda-cupti
+ Downloaded cuda-bindings
  Downloaded babel
  Downloaded blis
  Downloaded espeakng-loader
- Downloaded transformers
+ Downloaded nvidia-cuda-cupti
+ Downloaded blis
  Downloaded numpy
- Downloaded spacy
+ Downloaded transformers
  Downloaded nvidia-nvjitlink
+ Downloaded spacy
  Downloaded nvidia-curand
  Downloaded nvidia-nvshmem-cu13
  Downloaded nvidia-cuda-nvrtc
@@ -68,26 +69,27 @@ Downloading curated-tokenizers (6.0MiB)
  Downloaded nvidia-nccl-cu13
  Downloaded nvidia-cublas
  Downloaded triton
- Downloaded torch
  Downloaded nvidia-cudnn-cu13
-Installed 113 packages in 2.02s
-/home/runner/.cache/uv/archive-v0/9bSxC5vsmm4r1bJg/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+ Downloaded torch
+Installed 113 packages in 2.09s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.cache/uv/archive-v0/PiOgD38qz-DTmeIp/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
   super().__init__("LSTM", *args, **kwargs)
-/home/runner/.cache/uv/archive-v0/9bSxC5vsmm4r1bJg/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+/home/runner/.cache/uv/archive-v0/PiOgD38qz-DTmeIp/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Collecting en-core-web-sm==3.8.0
   Downloading en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 230.4 MB/s  0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 185.1 MB/s  0:00:00
 Installing collected packages: en-core-web-sm
 Successfully installed en-core-web-sm-3.8.0
 
 [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 [notice] To update, run: python -m pip install --upgrade pip
-/home/runner/.cache/uv/archive-v0/9bSxC5vsmm4r1bJg/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+/home/runner/.cache/uv/archive-v0/PiOgD38qz-DTmeIp/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [38;5;2m✔ Download and installation successful[0m
 You can now load the package via spacy.load('en_core_web_sm')
-kokoro ok af_heart [('L1', 1.88), ('L2', 2.23), ('L3', 3.17), ('L4', 2.83), ('L5', 3.12), ('L6', 3.58), ('L7', 2.67), ('L8', 4.2)]
+kokoro ok af_heart [('L1', 2.17), ('L2', 2.23), ('L3', 2.98), ('L4', 1.4), ('L5', 2.83), ('L6', 3.12), ('L7', 3.58), ('L8', 2.67), ('L9', 4.2)]
 voice: kokoro af_heart
-en T 24.795 [('L1', 0.12, 1.69), ('L2', 2.05, 2.04), ('L3', 4.33, 2.94), ('L4', 7.51, 2.62), ('L5', 10.365, 2.94), ('L6', 13.545, 3.37), ('L7', 17.15, 2.46), ('L8', 19.855, 4.04)]
+en T 26.25 [('L1', 0.12, 1.99), ('L2', 2.35, 2.04), ('L3', 4.63, 2.74), ('L4', 7.61, 1.11), ('L5', 8.965, 2.62), ('L6', 11.82, 2.94), ('L7', 15.0, 3.37), ('L8', 18.605, 2.46), ('L9', 21.31, 4.04)]
