@@ -162,7 +162,7 @@
    {
     "kind": "gen",
     "src": "/s17/gen/g_lift.mp4",
-    "a": 0.95,
+    "a": 1.25,
     "z": 1.15,
     "cx": [
      0.5,
@@ -279,5 +279,5 @@
  "rate": "+4%",
  "music_vol": 0.7,
  "no_flash": true,
- "ov_delay": 0.04
+ "ov_delay": 0.08
 }
