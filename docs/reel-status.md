@@ -20,3 +20,4 @@ v3 (18.10, после ревизора): реальные клипы 17.10 не 
 | 21.10 paddle | p_under, p_start, p_long, p_catch, p_ride |
 | 22.10 rip | r_hook, r_wide, r_watch, r_stay, r_par, r_hand2 (Z-Image Turbo + Wan 2.2, 19.10) |
 | 23.10 foam | f_hook, f_prone, f_up, f_angle2, f_side2, f_back, f_walk (Z-Image Turbo + Wan 2.2, 20.10; сиды в tools/reel/gen/manifest_23oct.json); брак не взят: f_angle, f_angle3, f_side1 |
+| без даты | Смотри вперёд v2 (переделка после провала пробного, 20.10) | out/ci/look2/look2_{he,en}/reel_look2_*.mp4 (commit 54695eb) | файлы в чате 20.10 | Собран на GitHub Actions по разбору ошибок: падение в первом кадре, склейка 0.9 с, сплит «взгляд вниз / вперёд», 6 новых клипов Wan 2.2, приложение 2.3-2.8 с. HE 19.2 с, EN 17.6 с. Ревизор: PASS после 6 раундов. Ждёт ок Димы на пробный в оба аккаунта |
