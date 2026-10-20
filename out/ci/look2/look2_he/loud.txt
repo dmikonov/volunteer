@@ -3,7 +3,7 @@
     Threshold: -24.6 LUFS
 
   Loudness range:
-    LRA:         1.3 LU
+    LRA:         1.4 LU
     Threshold: -34.6 LUFS
     LRA low:   -15.2 LUFS
     LRA high:  -13.9 LUFS
