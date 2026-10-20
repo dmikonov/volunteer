@@ -28,6 +28,14 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .rc .box{{display:inline-block;width:620px;padding:26px 34px 30px;border-radius:30px;background:{NAVY};text-align:{'right' if HE else 'left'}}}
 .rc h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:18px;text-align:center}}
 .rc .row{{font-weight:800;font-size:{52 if HE else 44}px;color:#fff;margin:12px 0;white-space:nowrap}}
+.flw{{position:absolute;top:{S.get('follow_top', 760)}px;left:0;right:0;text-align:center}}
+.flw span{{display:inline-block;padding:24px 64px;border-radius:22px;font-weight:800;font-size:56px;line-height:1;text-box:trim-both cap alphabetic;color:#fff;background:#0095f6;box-shadow:0 6px 24px rgba(0,0,0,.35)}}
+.flw span.on{{background:#262a36;color:#fff}}
+.tz{{position:absolute;top:{S.get('recap_top', 330)}px;left:0;right:0;text-align:center;direction:{DIR}}}
+.tz .box{{display:inline-block;max-width:600px;padding:28px 36px 32px;border-radius:30px;background:{NAVY};text-align:center}}
+.tz h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:16px}}
+.tz .t{{display:block;font-weight:800;font-size:{64 if HE else 56}px;color:#fff;line-height:1.15;text-wrap:balance}}
+.tz .f{{display:inline-block;white-space:nowrap;margin-top:26px;padding:16px 32px;border-radius:18px;background:#0095f6;font-weight:800;font-size:{42 if HE else 36}px;color:#fff;line-height:1;text-box:trim-both cap alphabetic}}
 </style></head><body>{body}</body></html>"""
 if S.get('app_notitle'):
     for kk in S.get('app_lines', []): TITLES.pop(kk, None)
@@ -46,6 +54,18 @@ for l in L:
 rows = ''.join(f"<div class=row>{CK}&nbsp;&nbsp;{x}</div>" for x in RECAP[1])
 for tag, sc in (('a', 1.15), ('b', 0.97), ('c', 1.0)):
     cards[f'RECAP{tag}'] = f"<div class=rc style='transform:scale({sc});transform-origin:50% 30%'><div class=box><h>{RECAP[0]}</h>{rows}</div></div>"
+if S.get('teaser'):  # 21.10 new concept: tomorrow teaser on the last line instead of the recap
+    tz = S['teaser']
+    for tag, sc in (('a', 1.0), ('b', 1.0), ('c', 1.0)):
+        cards[f'RECAP{tag}'] = f"<div class=tz><div class=box><h>{tz[0]}</h><span class=t>{tz[1]}</span><span class=f>{tz[2]}</span></div></div>"
+if S.get('badge'):  # 21.10: daily badge for the whole reel (replaces the SurfTribe mark)
+    bd = S['badge']; bdir = 'rtl' if HE else 'ltr'
+    cards['BADGE'] = f"<div class=mark><span class=b dir={bdir}>{bd[0]} <span style='color:{CY}'>{bd[1]}</span></span></div>"
+if S.get('follow'):  # 21.10 EN concept: animated Follow button under the follow card
+    fl = S['follow']
+    cards['FBTN0'] = f"<div class=flw><span>{fl.get('btn', 'Follow')}</span></div>"
+    cards['FBTN1'] = f"<div class=flw><span style='transform:scale(.92);display:inline-block;background:#0077cc'>{fl.get('btn', 'Follow')}</span></div>"
+    cards['FBTN2'] = f"<div class=flw><span class=on>{fl.get('done', 'Following')} &#10003;</span></div>"
 cards['MARK'] = f"<div class=mark><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
 cards['MARKA'] = f"<div class=mark style='top:{S.get('app_top', 330) - 90}px'><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
 for e in S.get('extra', []): cards[e['k']] = e['html']  # 20.10: custom overlays (arrow etc.)
@@ -85,7 +105,7 @@ with sync_playwright() as p:
     for k, h in cards.items():
         pg.set_content(page(h)); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(100)
         pg.evaluate("() => { for (const [sel, mx] of [['.sub span', 600], ['.plate', 620]]) for (const e of document.querySelectorAll(sel)) { let f = parseFloat(getComputedStyle(e).fontSize); while (e.getBoundingClientRect().width > mx && f > 24) { f -= 2; e.style.fontSize = f + 'px'; } } }")
-        boxes[k] = pg.evaluate("() => [...document.querySelectorAll('.plate,.sub span,.mark span.b,.n,.rc .box')].map(e => {const r=e.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.right), Math.round(r.top), Math.round(r.bottom)]})")
+        boxes[k] = pg.evaluate("() => [...document.querySelectorAll('.plate,.sub span,.mark span.b,.n,.rc .box,.tz .box,.flw span')].map(e => {const r=e.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.right), Math.round(r.top), Math.round(r.bottom)]})")
         fn = f'{W}/ov/{k}.png'; pg.screenshot(path=fn, omit_background=True)
         im = cv2.imread(fn, cv2.IMREAD_UNCHANGED); ys, xs = (im[..., 3] > 0).nonzero()
         x0, x1, y0, y1 = xs.min(), xs.max() + 1, ys.min(), ys.max() + 1; cv2.imwrite(fn, im[y0:y1, x0:x1]); pos[k] = (int(x0), int(y0))
@@ -98,7 +118,11 @@ for i, l in enumerate(L):
     base = 'RECAP' if l['k'] == LAST else ('T' + l['k'] if l['k'] in TITLES else None)
     if base: ON += [(base + 'a', a, a + F1), (base + 'b', a + F1, a + F2), (base + 'c', a + F2, b)]
     if i > 0 and S.get('flash'): ON.append(('FLASH', a - 0.02, a + 0.06))  # Dima 20.10: no white flashes unless spec flash=true
-ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
+if S.get('badge'): ON.append(('BADGE', 0, T))
+else: ON += [('MARK', 0, 3.0), ('MARK', cuts[-2], T)]
+if S.get('follow'):
+    fi = [l['k'] for l in L].index(S['follow']['line']); fa, fb = cuts[fi], cuts[fi + 1]; tp = fa + (fb - fa) * S['follow'].get('tap', 0.6)
+    ON += [('FBTN0', fa + 0.12, tp), ('FBTN1', tp, tp + 0.12), ('FBTN2', tp + 0.12, fb)]
 for e in S.get('extra', []):
     i = [l['k'] for l in L].index(e['line']); ON.append((e['k'], cuts[i] + e.get('d0', 0.3), cuts[i] + e['d1'] if 'd1' in e else cuts[i + 1]))
 for kk in S.get('app_lines', []):
@@ -118,7 +142,7 @@ def _snap(t, end=False):
     c = min(_B, key=lambda x: abs(x - t)) if _B else t
     return t if abs(c - t) > 0.13 or t < 0.5 else (round(c - 0.004, 4) if end else round(c + 0.004, 4))  # verified 20.10: card on the cut frame
 _ks = [e['k'] for e in S.get('extra', [])]
-ON = [(k, _snap(a) if not k.endswith('b') else a, _snap(b, True) if not k.endswith('a') else b) if (k.startswith(('T', 'RECAP', 'MARK')) or k in _ks) and k not in ('TL1a', 'TL1b') else (k, a, b) for k, a, b in ON]
+ON = [(k, _snap(a) if not k.endswith('b') else a, _snap(b, True) if not k.endswith('a') else b) if (k.startswith(('T', 'RECAP', 'MARK')) or k in _ks) and k != 'BADGE' and k not in ('TL1a', 'TL1b') else (k, a, b) for k, a, b in ON]
 for _i, (k, a, b) in enumerate(ON):  # keep the pop frames (a, b) glued to the snapped start
     if k.startswith(('T', 'RECAP')) and k.endswith('a'):
         base = k[:-1]; ON = [(kk, aa, bb) for kk, aa, bb in ON]
