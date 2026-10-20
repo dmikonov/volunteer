@@ -15,6 +15,18 @@ try:
         for _j, _s in enumerate(segs): _first.setdefault(_s['line'], float(_st[_j]))
         if all(l['k'] in _first for l in L):
             cuts = [0.0] + [round(_first[l['k']], 4) for l in L[1:]] + [T]; REALCUTS = True
+    if REALCUTS and os.path.exists(f'{W}/cat.mp4'):  # refine on the picture itself: strongest frame change within +-4 frames
+        _c = cv2.VideoCapture(f'{W}/cat.mp4'); _g0 = []
+        while True:
+            _ok, _f = _c.read()
+            if not _ok: break
+            _g0.append(cv2.resize(cv2.cvtColor(_f, cv2.COLOR_BGR2GRAY), (54, 96)).astype(np.float32))
+        _dd = [0.0] + [float(np.abs(_g0[i] - _g0[i - 1]).mean()) for i in range(1, len(_g0))]
+        for _i in range(1, len(cuts) - 1):
+            _k = int(round(cuts[_i] * 25)); _w = [j for j in range(_k - 4, _k + 5) if 0 < j < len(_dd)]
+            if _w:
+                _b = max(_w, key=lambda j: _dd[j])
+                if _dd[_b] > 8: cuts[_i] = round(_b / 25.0, 4)
 except Exception as _e: print('realcuts skipped', _e)
 print('realcuts', REALCUTS, cuts)
 CY, AM, NAVY, RED, GRN = '#00d4ff', '#f5a623', 'rgba(10,18,38,.80)', '#FF5150', '#3DDC84'
