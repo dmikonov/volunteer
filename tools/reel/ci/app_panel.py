@@ -4,7 +4,7 @@ usage: python3 app_panel.py <src.mp4> <a0> <a1> <crop_y0> <crop_h> <btn_y0> <btn
 import sys, subprocess as sp, numpy as np, cv2
 src, a0, a1, y0, h, b0, b1, T, out = sys.argv[1], float(sys.argv[2]), float(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]), int(sys.argv[6]), int(sys.argv[7]), float(sys.argv[8]), sys.argv[9]
 X0 = int(sys.argv[10]) if len(sys.argv) > 10 else 0; CW = int(sys.argv[11]) if len(sys.argv) > 11 else 1080; PY0 = int(sys.argv[12]) if len(sys.argv) > 12 else 500
-PW = 900; PX = 90; PY = PY0; ph = round(h * PW / CW / 2) * 2; s = PW / CW
+PW = int(sys.argv[13]) if len(sys.argv) > 13 else 900; PX = int(sys.argv[14]) if len(sys.argv) > 14 else 90; PY = PY0; ph = round(h * PW / CW / 2) * 2; s = PW / CW  # 20.10: optional PW PX keep the right rail clear
 m = np.zeros((ph, PW), np.uint8); r = 34
 cv2.rectangle(m, (r, 0), (PW - r, ph), 255, -1); cv2.rectangle(m, (0, r), (PW, ph - r), 255, -1)
 for cx, cy in ((r, r), (PW - r, r), (r, ph - r), (PW - r, ph - r)): cv2.circle(m, (cx, cy), r, 255, -1)

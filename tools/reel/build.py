@@ -20,6 +20,7 @@ for i, l in enumerate(L):
         if kind == 'raw' and e.get('stab', True) and os.path.exists(f"/s17/raw_stab/{e['src']}.MP4"): src = f"/s17/raw_stab/{e['src']}.MP4"  # Dima 18.10: stabilized
         spd = e.get('spd', 1.0)  # <1 = slow motion
         a = e['a']
+        if isinstance(a, list) and a[0] == 'loop': a = round(a[1] - (L[-1]['words'][-1][2] + 0.5 - t_out), 3)  # 20.10: source time a[1] lands exactly on the trimmed last frame (trim_tail: last word + 0.5)
         if isinstance(a, list): a = round(a[1] - dm * spd, 3)  # ["end", t]
         sd = dur(src); sdur = round(dm * spd, 3)
         if a + sdur > sd - 0.04:  # not enough source: freeze the tail

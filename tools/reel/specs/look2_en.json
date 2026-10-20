@@ -11,11 +11,11 @@
  "lines": [
   "It's not your legs. It's your eyes.",
   "Eyes down, you stall. Eyes ahead, you keep riding.",
-  "Here's how to fix it. Three steps.",
+  "Here's the fix. Three steps.",
   "One. Chin up, right away.",
   "Two. Look along the wave.",
   "Three. Turn your shoulders that way. The board follows.",
-  "SurfTribe breaks down your wave.",
+  "SurfTribe tracks your body on every wave.",
   "Save this."
  ],
  "titles": {
@@ -51,7 +51,7 @@
   ],
   "L7": [
    "SURFTRIBE",
-   "BREAKS IT DOWN",
+   "TRACKS EVERY MOVE",
    null,
    null
   ]
@@ -70,7 +70,7 @@
    "line": "L2",
    "d0": 0.0,
    "d1": 1.64,
-   "html": "<div style=\"position:absolute;top:330px;left:70px;width:467px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;color:#fff;white-space:nowrap\">EYES DOWN</span></div><div style=\"position:absolute;top:330px;left:543px;width:307px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;color:#fff;white-space:nowrap\">EYES AHEAD</span></div>"
+   "html": "<div style=\"position:absolute;top:330px;left:70px;width:467px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;line-height:1.1;color:#fff;white-space:nowrap\">EYES<br>DOWN</span></div><div style=\"position:absolute;top:330px;left:543px;width:277px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;line-height:1.1;color:#fff;white-space:nowrap\">EYES<br>AHEAD</span></div>"
   }
  ],
  "plan": {
@@ -235,22 +235,25 @@
     "kind": "app",
     "src": "/s17/gen/app_en.mp4",
     "a": 0.0,
-    "z": 1.08,
+    "z": 1.0,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.47,
-     0.53
+     0.5,
+     0.5
     ]
    }
   ],
   "L8": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_down.mp4",
-    "a": 0.0,
+    "src": "/s17/gen/g_loop.mp4",
+    "a": [
+     "loop",
+     1.58
+    ],
     "z": 1.1,
     "cx": [
      0.5,
