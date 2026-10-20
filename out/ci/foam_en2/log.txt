@@ -1,0 +1,18 @@
++ k=/s17/rp/foam_en2
++ python3 build.py /s17/rp/foam_en2
+[('L1', 'n/f_hook.mp4', 0.0, 1.98, 0.0), ('L2', '/f_side2.mp4', 0.0, 2.135, 1.98), ('L3', 'n/f_back.mp4', 0.0, 2.26, 4.115), ('L4', '/f_prone.mp4', 0.0, 1.0, 6.375), ('L4', 'gen/f_up.mp4', 0.0, 1.31, 7.375), ('L5', 'f_angle2.mp4', 0.0, 2.76, 8.685), ('L6', '/f_ride3.mp4', 0.0, 1.5, 11.445), ('L6', '/f_woman.mp4', 0.0, 1.435, 12.945), ('L7', 'n/app_en.mp4', 0.0, 2.26, 14.38), ('L8', 'n/f_walk.mp4', 0.0, 4.64, 16.64)]
+cat 21.36 T 21.28
++ python3 ov_png.py /s17/rp/foam_en2
+safe-zone violations [('MARKA', [396, 685, 160, 226])]
+ovplan 53
++ python3 ov_ff.py /s17/rp/foam_en2
+done /s17/rp/foam_en2/reel_foam_en2.mp4 21.28 lufs before -15.8 gain 1.3
++ python3 trim_tail.py /s17/rp/foam_en2
+trimmed /s17/rp/foam_en2/reel_foam_en2.mp4 20.78
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/foam_en2/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/foam_en2/reel_foam_en2.mp4
+/s17/rp/foam_en2/reel_foam_en2.mp4 before -13.0 after -14.5 peak -2.3
++ python3 post_cz.py /s17/rp/foam_en2
+post ok
++ echo 'EXIT /s17/rp/foam_en2 0'
+EXIT /s17/rp/foam_en2 0

@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=3.45 dur=1.74 | ref: Foam isn't just for day one. | asr: Foam isn't just for day one.
+L2 CHECK match=0.22 wps=3.13 dur=1.91 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
+L3 OK match=1.00 wps=2.94 dur=2.04 | ref: Most beginners paddle out too soon. | asr: Most beginners paddle out too soon.
+L4 OK match=1.00 wps=3.35 dur=2.09 | ref: One. Pop up on every foam wave. | asr: One, pop up on every foam wave.
+L5 OK match=1.00 wps=3.15 dur=2.54 | ref: Two. Up? Angle the board along the foam. | asr: Two up, angle the board along the foam.
+L6 OK match=1.00 wps=3.31 dur=2.72 | ref: Three. Ten foam rides beat an hour out back. | asr: Three, ten foam rides beat an hour out back.
+L7 CHECK match=0.80 wps=3.43 dur=2.04 | ref: Ask the SurfTribe coach if you're ready. | asr: Ask the Surf Tribe coach if you're ready.
+L8 OK match=1.00 wps=3.85 dur=3.64 | ref: Tomorrow: which wave in a set is yours. Follow so you don't miss it. | asr: Tomorrow, which wave in a set is yours, follow so you don't miss it.
+TOTAL wps=3.37 lines_to_check=2
