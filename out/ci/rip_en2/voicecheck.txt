@@ -1,10 +1,10 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=0.87 wps=3.19 dur=1.56 | ref: Calm gap? It's a rip. | asr: CommGap, it's a rip.
-L2 OK match=1.00 wps=2.98 dur=2.01 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
-L3 OK match=1.00 wps=2.84 dur=2.81 | ref: No waves break there. The water flows out. | asr: No waves break there. The water flows out.
-L4 CHECK match=0.85 wps=2.78 dur=2.52 | ref: One. Watch the water ten minutes first. | asr: 1. Watch the water 10 minutes first.
-L5 OK match=0.97 wps=3.65 dur=3.01 | ref: Two. Caught in it? Stay on your board. Don't fight it. | asr: Too caught in it. Stay on your board, don't fight it.
-L6 OK match=1.00 wps=2.84 dur=3.17 | ref: Three. Paddle parallel to the beach. Raise a hand. | asr: Three, paddle parallel to the beach, raise a hand.
-L7 OK match=1.00 wps=2.14 dur=2.34 | ref: SurfTribe: one wave, one fix. | asr: Surf Tribe, one wave, one fix.
-L8 OK match=1.00 wps=3.34 dur=3.89 | ref: Tomorrow: foam isn't just for day one. Follow so you don't miss it. | asr: Tomorrow, foam isn't just for day one.  Follow so you don't miss it.
-TOTAL wps=3.00 lines_to_check=1
+L1 OK match=0.87 wps=2.96 dur=1.69 | ref: Calm gap? It's a rip. | asr: CommGap, it's a rip.
+L2 OK match=1.00 wps=2.94 dur=2.04 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
+L3 OK match=1.00 wps=2.72 dur=2.94 | ref: No waves break there. The water flows out. | asr: No waves break there. The water flows out.
+L4 CHECK match=0.85 wps=2.68 dur=2.62 | ref: One. Watch the water ten minutes first. | asr: 1. Watch the water 10 minutes first.
+L5 OK match=0.97 wps=3.06 dur=2.94 | ref: Two. Caught? Stay on your board. Don't fight it. | asr: Too caught. Stay on your board. Don't fight it.
+L6 OK match=1.00 wps=2.67 dur=3.37 | ref: Three. Paddle parallel to the beach. Raise a hand. | asr: Three, paddle parallel to the beach, raise a hand.
+L7 OK match=1.00 wps=2.03 dur=2.46 | ref: SurfTribe: one wave, one fix. | asr: Surf Tribe, one wave, one fix.
+L8 OK match=1.00 wps=3.22 dur=4.04 | ref: Tomorrow: foam isn't just for day one. Follow so you don't miss it. | asr: Tomorrow, foam isn't just for day one.  Follow so you don't miss it.
+TOTAL wps=2.81 lines_to_check=1
