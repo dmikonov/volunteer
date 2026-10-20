@@ -1,0 +1,4 @@
+look2/g_down.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/5cb7052612db184c700b246c28d0e050bfb9405ecb4c3894bd5ed32284b885b6/tmp93zq3cwx.mp4
+look2/g_along.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/48042de7f8a67521647260b703cdccb1e48f03adef95d80fbe2fbc5c26e0b367/tmp1ri66why.mp4
+look2/g_chin.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/94c5b4130ceae5ba530ae188f2d1709960a15f6ed9e945360f5e7fbbe93253fe/tmpytm260ge.mp4
+look2/g_turn.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt6sc/gradio_api/file=/tmp/gradio/d38a1dac588c3a9d395e2c0ea6c986bdba9cb3f797ccc50f5e1f10203fa47d15/tmph0zsxn6v.mp4
