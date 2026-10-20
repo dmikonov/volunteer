@@ -10,9 +10,9 @@
  "recap_top": 880,
  "lines": [
   "זה לא הרגליים, זה המבט.",
-  "מבט למטה, נופלים, מבט קדימה, ממשיכים לגלוש.",
+  "מבט למטה, הגלשן נעצר, מבט קדימה, ממשיכים.",
   "אחת, קמים ומרימים את הסנטר מיד.",
-  "שתיים, מסתכלים לאורך הגל, לאן שרוצים לגלוש.",
+  "שתיים, מבט לאורך הגל.",
   "שלוש, הכתפיים לשם, והגלשן אחריהן.",
   "אגב, גם סרף טרייב נותן את הטיפ הזה.",
   "שמרו את זה."
@@ -62,7 +62,7 @@
    "k": "SPL",
    "line": "L2",
    "d0": 0.0,
-   "d1": 1.8,
+   "d1": 1.3,
    "html": "<div style=\"position:absolute;top:330px;right:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">מבט למטה</span></div><div style=\"position:absolute;top:330px;left:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">מבט קדימה</span></div>"
   }
  ],
@@ -112,20 +112,20 @@
      0.5,
      0.5
     ],
-    "dd": 1.8
+    "dd": 1.3
    },
    {
     "kind": "gen",
     "src": "/s17/gen/g_along.mp4",
-    "a": 2.2,
-    "z": 1.25,
+    "a": 1.3,
+    "z": 1.1,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.4,
-     0.4
+     0.45,
+     0.45
     ]
    }
   ],
@@ -134,22 +134,7 @@
     "kind": "gen",
     "src": "/s17/gen/g_chin.mp4",
     "a": 0.0,
-    "z": 1.3,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.25,
-     0.25
-    ],
-    "dd": 1.3
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/g_chin.mp4",
-    "a": 1.3,
-    "z": 1.6,
+    "z": 1.5,
     "cx": [
      0.5,
      0.5
@@ -157,13 +142,28 @@
     "cy": [
      0.15,
      0.15
+    ],
+    "dd": 1.3
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_chin.mp4",
+    "a": 1.3,
+    "z": 1.8,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.1,
+     0.1
     ]
    }
   ],
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_along.mp4",
+    "src": "/s17/gen/g_ahead2.mp4",
     "a": 0.0,
     "z": 1.0,
     "cx": [
@@ -179,7 +179,7 @@
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_turn2.mp4",
+    "src": "/s17/gen/g_turn3.mp4",
     "a": 0.0,
     "z": 1.0,
     "cx": [
@@ -190,7 +190,7 @@
      0.5,
      0.5
     ],
-    "dd": 1.4
+    "dd": 1.2
    },
    {
     "kind": "gen",
@@ -209,16 +209,16 @@
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/g_along.mp4",
-    "a": 0.6,
-    "z": 1.0,
+    "src": "/s17/gen/g_turn3.mp4",
+    "a": 0.3,
+    "z": 1.35,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.42,
+     0.42
     ]
    }
   ],
@@ -227,22 +227,22 @@
     "kind": "app",
     "src": "/s17/gen/app_he.mp4",
     "a": 0.0,
-    "z": 1.0,
+    "z": 1.15,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.42,
+     0.56
     ]
    }
   ],
   "L7": [
    {
     "kind": "gen",
-    "src": "/s17/gen/g_along.mp4",
-    "a": 1.0,
+    "src": "/s17/gen/g_ahead2.mp4",
+    "a": 0.6,
     "z": 1.0,
     "cx": [
      0.5,
@@ -257,7 +257,9 @@
  },
  "gap": 0.12,
  "ttop": {
-  "L3": 950
+  "L3": 950,
+  "L4": 950,
+  "L5": 950
  },
  "music_vol": 0.7,
  "sub_replace": {
