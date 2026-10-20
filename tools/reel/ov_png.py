@@ -116,7 +116,7 @@ if os.path.exists(f'{W}/cat.mp4'):
     _B = [i / _fps for i in range(1, len(_d) - 1) if _d[i] > max(12.0, 4 * _med) and _d[i] >= _d[i - 1] and _d[i] >= _d[i + 1]]
 def _snap(t, end=False):
     c = min(_B, key=lambda x: abs(x - t)) if _B else t
-    return t if abs(c - t) > 0.13 or t < 0.5 else (round(c - 0.004, 4) if end else round(c + 0.004, 4))
+    return t if abs(c - t) > 0.13 or t < 0.5 else (round(c - 0.008, 4) if end else round(c - 0.004, 4))  # shown from the cut frame itself
 _ks = [e['k'] for e in S.get('extra', [])]
 ON = [(k, _snap(a) if not k.endswith('b') else a, _snap(b, True) if not k.endswith('a') else b) if (k.startswith(('T', 'RECAP', 'MARK')) or k in _ks) and k not in ('TL1a', 'TL1b') else (k, a, b) for k, a, b in ON]
 for _i, (k, a, b) in enumerate(ON):  # keep the pop frames (a, b) glued to the snapped start
