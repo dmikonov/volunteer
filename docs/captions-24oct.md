@@ -24,3 +24,25 @@
 - Чёрный флаг: купание запрещено; «новичкам в воду нельзя, только опытным сёрферам» это наша рекомендация.
 - Нет флага: нет спасателя (в подписи).
 - Интеграция: экран приложения «מעלה וידאו... / הניתוח רץ» (запись 28.09 10:56 1_4, 16.9-18.9 с), голос «בסרף טרייב מצלמים גל ומקבלים תיקון».
+
+## EN (@surftribe_world, Daily fix #4, «The biggest wave in the set isn't yours»)
+```
+Guess which wave in the set is yours. Hint: not the biggest one.
+
+1. Let the big one go to the pack
+2. Take a smaller one nobody's paddling for
+3. Someone already up? Pull back
+
+The biggest wave of a set usually breaks furthest out, where the experienced surfers sit. Chase it from the inside and it breaks right on you.
+After your session, SurfTribe maps where you rode the wave.
+Follow for one surf fix a day. Tomorrow: same beach, three hours later, a different wave.
+
+Voiceover and all surf shots made with AI.
+
+#surfing #surftips #learntosurf #beginnersurfer #SurfTribe
+```
+
+### Факты EN (подтверди, п. 52)
+- «Самая большая волна сета обычно ломается дальше всех, там, где сидят опытные»: общее правило, на конкретном споте может быть иначе.
+- «Новичку брать волну поменьше, на которую никто не гребёт» и «кто-то уже встал на волну: не грести, отступить» (приоритет у того, кто ближе к пику и уже едет).
+- Интеграция: экран разбора «Where you rode the wave» (High line 78% / Bottom 22%), запись 12.10 13:42, 27.2-27.4 с. Это реальная функция разбора, не прогноз.
