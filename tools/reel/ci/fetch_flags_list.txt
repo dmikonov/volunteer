@@ -1,0 +1,5 @@
+fl_black https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/58c42a19ca38774ce5f03897b823ae0d4c6aec678428db5caa9b7dd37921e8d1/tmpch9_uy_0.mp4
+fl_white https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/f2990022327847f27d51db5fe5fb09b8e0efbaf356b9166b3dce75244c283e46/tmp_pp8v7eu.mp4
+fl_red https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/1b3d0aae88f27fdd174cfe108355d31fe822fbb87fc44812b220267cec2e7e23/tmptxjmj5q1.mp4
+fl_sit https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/8a1595d28891fdaf610be654fd56bd853d196d379042f9622b1b95c16ae11bc7/tmpcobk7lh7.mp4
+fl_coach https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/ba02deaf69b3c0cf001b2373defb945ca1ff599dc92f59f3c69ff5401d12c39d/tmpa4ta2bag.mp4
