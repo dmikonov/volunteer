@@ -10,7 +10,7 @@
  "recap_top": 880,
  "lines": [
   "זה לא הרגליים, זה המבט.",
-  "מבט למטה, הגלשן נעצר, מבט קדימה, ממשיכים.",
+  "מבט למטה, נעצרים, מבט קדימה, ממשיכים.",
   "אחת, קמים ומרימים את הסנטר מיד.",
   "שתיים, מבט לאורך הגל.",
   "שלוש, הכתפיים לשם, והגלשן אחריהן.",
@@ -62,7 +62,7 @@
    "k": "SPL",
    "line": "L2",
    "d0": 0.0,
-   "d1": 1.3,
+   "d1": 1.4,
    "html": "<div style=\"position:absolute;top:330px;right:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">מבט למטה</span></div><div style=\"position:absolute;top:330px;left:40px;width:440px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:22px;padding:14px 26px;font-family:R;font-weight:800;font-size:54px;color:#fff;letter-spacing:1px\">מבט קדימה</span></div>"
   }
  ],
@@ -112,12 +112,12 @@
      0.5,
      0.5
     ],
-    "dd": 1.3
+    "dd": 1.4
    },
    {
     "kind": "gen",
     "src": "/s17/gen/g_along.mp4",
-    "a": 1.3,
+    "a": 1.1,
     "z": 1.1,
     "cx": [
      0.5,
@@ -149,7 +149,7 @@
     "kind": "gen",
     "src": "/s17/gen/g_chin.mp4",
     "a": 1.3,
-    "z": 1.8,
+    "z": 1.5,
     "cx": [
      0.5,
      0.5
@@ -210,7 +210,7 @@
    {
     "kind": "gen",
     "src": "/s17/gen/g_turn3.mp4",
-    "a": 0.3,
+    "a": 0.0,
     "z": 1.35,
     "cx": [
      0.5,
@@ -243,14 +243,14 @@
     "kind": "gen",
     "src": "/s17/gen/g_ahead2.mp4",
     "a": 0.6,
-    "z": 1.0,
+    "z": 1.5,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.9,
+     0.9
     ]
    }
   ]

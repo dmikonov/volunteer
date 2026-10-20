@@ -8,7 +8,7 @@ sudo mkdir -p /s17 && sudo chown $USER /s17 && mkdir -p /s17/gen /s17/rp /s17/ti
 cp appkit/Rubik.ttf /s17/Rubik.ttf; cp assets/look2/g_*.mp4 /s17/gen/
 # split screens (real time): eyes down = g_nose (board stalls), eyes ahead = g_along. HE reads right to left: "down" on the right
 sp(){ ffmpeg -v error -y -i /s17/gen/$1 -i /s17/gen/$2 -filter_complex \
- "[0:v]crop=234:832:(iw-234)*$3:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*$4:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=1.4,format=yuv420p[v]" \
+ "[0:v]crop=234:832:(iw-234)*$3:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[l];[1:v]crop=234:832:(iw-234)*$4:0,scale=537:1920:flags=lanczos,fps=25,setsar=1[r];color=white:s=6x1920:r=25[d];[l][d][r]hstack=3,trim=duration=1.5,format=yuv420p[v]" \
  -map "[v]" -c:v libx264 -crf 14 /s17/gen/$5; }
 sp g_nose.mp4 g_along.mp4 0.45 0.47 l_split_en.mp4
 sp g_along.mp4 g_nose.mp4 0.47 0.45 l_split_he.mp4
