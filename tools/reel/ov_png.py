@@ -104,7 +104,7 @@ for e in S.get('extra', []):
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
     if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
-ON = [(k, round(a + S.get('ov_delay', 0), 3), round(b + S.get('ov_delay', 0), 3)) if k.startswith(('T', 'RECAP')) or k in [e['k'] for e in S.get('extra', [])] else (k, a, b) for k, a, b in ON]  # 20.10: cards switch with the video cut, not 2 frames before
+ON = [(k, round(a + S.get('ov_delay', 0), 3) if a > 0 else a, round(b + S.get('ov_delay', 0), 3)) if k.startswith(('T', 'RECAP', 'MARK')) or k in [e['k'] for e in S.get('extra', [])] else (k, a, b) for k, a, b in ON]  # hook card stays at frame 0  # 20.10: cards switch with the video cut, not 2 frames before
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
