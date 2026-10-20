@@ -1,0 +1,28 @@
+Python 3.14.4
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart hosted-compute-agent.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+APT_OK
+EDGE_OK
+ERROR: Ignored the following versions that require a different python version: 0.8.1 Requires-Python <3.13,>=3.10; 0.8.2 Requires-Python <3.13,>=3.10; 0.8.3 Requires-Python <3.13,>=3.10; 0.8.4 Requires-Python <3.13,>=3.10; 0.9.2 Requires-Python <3.13,>=3.10; 0.9.4 Requires-Python <3.13,>=3.10
+ERROR: Could not find a version that satisfies the requirement kokoro>=0.9.4 (from versions: 0.2.1, 0.2.2, 0.2.3, 0.3.0, 0.3.1, 0.3.2, 0.3.3, 0.3.4, 0.3.5, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.7.6, 0.7.8, 0.7.9, 0.7.11, 0.7.12, 0.7.13, 0.7.14, 0.7.15, 0.7.16)
+ERROR: No matching distribution found for kokoro>=0.9.4
+KOKORO FAIL No module named 'kokoro'
+total 876
+drwxr-xr-x 2 runner runner   4096 Oct 20 20:22 .
+drwxr-xr-x 5 runner runner   4096 Oct 20 20:21 ..
+-rw-r--r-- 1 runner runner 203799 Oct 20 20:21 1_edge_andrew_current.mp3
+-rw-r--r-- 1 runner runner 207456 Oct 20 20:22 2_edge_andrew_multi.mp3
+-rw-r--r-- 1 runner runner 225742 Oct 20 20:22 3_edge_brian_multi.mp3
+-rw-r--r-- 1 runner runner 241415 Oct 20 20:22 4_edge_ava_multi.mp3
+-rw-r--r-- 1 runner runner    984 Oct 20 20:22 log.txt
