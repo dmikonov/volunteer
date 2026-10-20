@@ -104,14 +104,29 @@ for e in S.get('extra', []):
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
     if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))
-import math
-_B, _f = [], 0  # 20.10: real cut frames = cumulative ceil(d*25) (build.py trims each segment at 25 fps)
-for _s in segs: _B.append(_f / 25); _f += math.ceil(round(_s['d'] * 25, 6))
+_B = []  # 20.10: snap card switches to the real cut frames, detected in cat.mp4 (frame difference peaks)
+if os.path.exists(f'{W}/cat.mp4'):
+    _c = cv2.VideoCapture(f'{W}/cat.mp4'); _fps = _c.get(5) or 25; _pv = None; _d = []
+    while True:
+        _ok, _fr = _c.read()
+        if not _ok: break
+        _g = cv2.resize(cv2.cvtColor(_fr, cv2.COLOR_BGR2GRAY), (54, 96)).astype(np.float32)
+        _d.append(0.0 if _pv is None else float(np.abs(_g - _pv).mean())); _pv = _g
+    _med = float(np.median(_d)) if _d else 0
+    _B = [i / _fps for i in range(1, len(_d) - 1) if _d[i] > max(12.0, 4 * _med) and _d[i] >= _d[i - 1] and _d[i] >= _d[i + 1]]
 def _snap(t, end=False):
     c = min(_B, key=lambda x: abs(x - t)) if _B else t
-    return t if abs(c - t) > 0.07 or t < 0.5 else (round(c - 0.002, 4) if end else round(c + 0.001, 4))
+    return t if abs(c - t) > 0.13 or t < 0.5 else (round(c - 0.004, 4) if end else round(c + 0.004, 4))
 _ks = [e['k'] for e in S.get('extra', [])]
-ON = [(k, _snap(a), _snap(b, True)) if (k.startswith(('T', 'RECAP', 'MARK')) or k in _ks) and k not in ('TL1a', 'TL1b') else (k, a, b) for k, a, b in ON]  # cards switch exactly on the cut frame
+ON = [(k, _snap(a) if not k.endswith('b') else a, _snap(b, True) if not k.endswith('a') else b) if (k.startswith(('T', 'RECAP', 'MARK')) or k in _ks) and k not in ('TL1a', 'TL1b') else (k, a, b) for k, a, b in ON]
+for _i, (k, a, b) in enumerate(ON):  # keep the pop frames (a, b) glued to the snapped start
+    if k.startswith(('T', 'RECAP')) and k.endswith('a'):
+        base = k[:-1]; ON = [(kk, aa, bb) for kk, aa, bb in ON]
+        for _j, (kk, aa, bb) in enumerate(ON):
+            if kk == base + 'a': ON[_j] = (kk, a, round(a + F1, 4))
+            elif kk == base + 'b': ON[_j] = (kk, round(a + F1, 4), round(a + F2, 4))
+            elif kk == base + 'c': ON[_j] = (kk, round(a + F2, 4), bb)
+  # cards switch exactly on the cut frame
 ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
