@@ -5,9 +5,9 @@ while read -r dest url; do
   [ -z "$dest" ] && continue; [[ "$dest" == \#* ]] && continue
   [ -f "assets/$dest" ] && continue
   mkdir -p "assets/$(dirname "$dest")"
-  curl -sSL --retry 3 -o "assets/$dest" "$url" || { echo "FAIL $dest"; rm -f "assets/$dest"; continue; }
+  curl -sSL --retry 3 </dev/null -o "assets/$dest" "$url" || { echo "FAIL $dest"; rm -f "assets/$dest"; continue; }
   if [[ "$dest" == *.mp4 ]]; then
-    ffmpeg -v error -y -i "assets/$dest" -vf "fps=4,scale=240:-2,tile=7x2" -frames:v 1 "assets/${dest%.mp4}_sheet.jpg" || true
+    ffmpeg -nostdin -v error -y -i "assets/$dest" -vf "fps=4,scale=240:-2,tile=7x2" -frames:v 1 "assets/${dest%.mp4}_sheet.jpg" || true
   fi
   echo "OK $dest $(stat -c%s "assets/$dest")"
 done < tools/fetch/list.txt
