@@ -6,12 +6,12 @@ cat 21.04 T 20.978
 safe-zone violations [('MARKA', [396, 685, 160, 226])]
 ovplan 42
 + python3 ov_ff.py /s17/rp/look2_he
-done /s17/rp/look2_he/reel_look2_he.mp4 20.978 lufs before -16.3 gain 1.8
+done /s17/rp/look2_he/reel_look2_he.mp4 20.978 lufs before -16.2 gain 1.7
 + python3 trim_tail.py /s17/rp/look2_he
 trimmed /s17/rp/look2_he/reel_look2_he.mp4 20.48
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/look2_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/look2_he/reel_look2_he.mp4
-/s17/rp/look2_he/reel_look2_he.mp4 before -13.0 after -14.5 peak -2.4
+/s17/rp/look2_he/reel_look2_he.mp4 before -13.1 after -14.5 peak -2.2
 + python3 post_cz.py /s17/rp/look2_he
 post ok
 + echo 'EXIT /s17/rp/look2_he 0'
