@@ -22,7 +22,7 @@ try:
             if not _ok: break
             _g0.append(cv2.resize(cv2.cvtColor(_f, cv2.COLOR_BGR2GRAY), (54, 96)).astype(np.float32))
         _dd = [0.0] + [float(np.abs(_g0[i] - _g0[i - 1]).mean()) for i in range(1, len(_g0))]
-        _pts = [float(x) for x in sp.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-show_entries', 'frame=pts_time', '-of', 'csv=p=0', f'{W}/cat.mp4'], capture_output=True, text=True).stdout.split() if x.strip()]
+        _pts = [float(x.strip(',').split(',')[0]) for x in sp.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-show_entries', 'frame=pts_time', '-of', 'csv=p=0', f'{W}/cat.mp4'], capture_output=True, text=True).stdout.split() if x.strip(',').strip()]
         if len(_pts) != len(_dd): _pts = [i / 25.0 for i in range(len(_dd))]  # concat timestamps are not on the 1/25 grid: use real pts
         for _i in range(1, len(cuts) - 1):
             _k = int(np.searchsorted(_pts, cuts[_i])); _w = [j for j in range(_k - 4, _k + 5) if 0 < j < len(_dd)]
