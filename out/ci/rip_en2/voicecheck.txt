@@ -3,9 +3,9 @@ L1 OK match=1.00 wps=3.02 dur=1.99 | ref: That calm gap? It's a rip. | asr: That
 L2 OK match=1.00 wps=2.94 dur=2.04 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
 L3 OK match=1.00 wps=2.55 dur=2.74 | ref: No waves break. The water flows out. | asr: No waves break. The water flows out.
 L4 OK match=1.00 wps=1.79 dur=1.11 | ref: Three moves. | asr: Three moves.
-L5 OK match=0.92 wps=2.68 dur=2.62 | ref: One. Watch the water ten minutes first. | asr: One, watch the water 10 minutes first.
+L5 CHECK match=0.85 wps=2.68 dur=2.62 | ref: One. Watch the water ten minutes first. | asr: 1. Watch the water 10 minutes first.
 L6 OK match=0.93 wps=3.25 dur=2.46 | ref: Two. Stay on your board. Don't fight it. | asr: 2. Stay on your board. Don't fight it.
 L7 OK match=1.00 wps=2.49 dur=3.21 | ref: Three. Paddle parallel to shore. Raise a hand. | asr: Three, paddle parallel to shore, raise a hand.
 L8 OK match=1.00 wps=2.03 dur=2.46 | ref: SurfTribe: one wave, one fix. | asr: Surf Tribe, one wave, one fix.
 L9 OK match=1.00 wps=3.22 dur=4.04 | ref: Tomorrow: foam isn't just for day one. Follow so you don't miss it. | asr: Tomorrow, foam isn't just for day one.  Follow so you don't miss it.
-TOTAL wps=2.73 lines_to_check=0
+TOTAL wps=2.73 lines_to_check=1
