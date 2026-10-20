@@ -11,7 +11,7 @@ done /s17/rp/knees_en2/reel_knees_en2.mp4 21.395 lufs before -15.7 gain 1.2
 trimmed /s17/rp/knees_en2/reel_knees_en2.mp4 20.9
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_en2/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_en2/reel_knees_en2.mp4
-/s17/rp/knees_en2/reel_knees_en2.mp4 before -13.0 after -14.5 peak -2.7
+/s17/rp/knees_en2/reel_knees_en2.mp4 before -13.0 after -14.5 peak -2.8
 + python3 post_cz.py /s17/rp/knees_en2
 post ok
 + echo 'EXIT /s17/rp/knees_en2 0'
