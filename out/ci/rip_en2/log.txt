@@ -6,12 +6,12 @@ cat 24.0 T 24.02
 safe-zone violations []
 ovplan 42
 + python3 ov_ff.py /s17/rp/rip_en2
-done /s17/rp/rip_en2/reel_rip_en2.mp4 24.02 lufs before -15.7 gain 1.2
+done /s17/rp/rip_en2/reel_rip_en2.mp4 24.02 lufs before -15.6 gain 1.1
 + python3 trim_tail.py /s17/rp/rip_en2
 trimmed /s17/rp/rip_en2/reel_rip_en2.mp4 23.52
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rip_en2/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rip_en2/reel_rip_en2.mp4
-/s17/rp/rip_en2/reel_rip_en2.mp4 before -13.0 after -14.6 peak -2.6
+/s17/rp/rip_en2/reel_rip_en2.mp4 before -13.0 after -14.5 peak -2.9
 + python3 post_cz.py /s17/rp/rip_en2
 post ok
 + echo 'EXIT /s17/rp/rip_en2 0'

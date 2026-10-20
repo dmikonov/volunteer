@@ -1,3 +1,4 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 L1 OK match=0.87 wps=3.19 dur=1.56 | ref: Calm gap? It's a rip. | asr: CommGap, it's a rip.
 L2 OK match=1.00 wps=2.98 dur=2.01 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
 L3 OK match=1.00 wps=2.84 dur=2.81 | ref: No waves break there. The water flows out. | asr: No waves break there. The water flows out.
