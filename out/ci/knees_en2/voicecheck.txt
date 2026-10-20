@@ -1,10 +1,11 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 L1 OK match=1.00 wps=1.98 dur=1.52 | ref: Stop standing tall. | asr: Stop standing tall.
 L2 OK match=1.00 wps=2.94 dur=2.04 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
-L3 OK match=1.00 wps=2.92 dur=2.74 | ref: Straight legs can't absorb bumps, so you fall. | asr: Straight legs can't absorb bumps, so you fall.
-L4 OK match=1.00 wps=3.31 dur=2.42 | ref: One. Bend your knees like a low chair. | asr: One, bend your knees like a low chair.
-L5 OK match=0.94 wps=3.53 dur=2.27 | ref: Two. Weight over the middle of the board. | asr: Two, wait over the middle of the board.
-L6 OK match=1.00 wps=2.77 dur=2.17 | ref: Three. Arms out wide and low. | asr: Three, arms out wide and low.
-L7 OK match=1.00 wps=2.65 dur=2.64 | ref: SurfTribe flags straight legs on your wave. | asr: Surf tribe flags straight legs on your wave.
-L8 OK match=1.00 wps=2.80 dur=3.21 | ref: Tomorrow: rip currents. Follow so you don't miss it. | asr: Tomorrow, rip currents. Follow so you don't miss it.
-TOTAL wps=2.90 lines_to_check=0
+L3 OK match=1.00 wps=2.39 dur=2.09 | ref: Straight legs can't absorb bumps. | asr: Straight legs can't absorb bumps.
+L4 OK match=1.00 wps=1.55 dur=1.29 | ref: Three fixes. | asr: Three fixes.
+L5 OK match=1.00 wps=3.31 dur=2.42 | ref: One. Bend your knees like a low chair. | asr: One, bend your knees like a low chair.
+L6 OK match=0.94 wps=3.53 dur=2.27 | ref: Two. Weight over the middle of the board. | asr: Two, wait over the middle of the board.
+L7 OK match=1.00 wps=2.77 dur=2.17 | ref: Three. Arms out wide and low. | asr: Three, arms out wide and low.
+L8 OK match=1.00 wps=2.65 dur=2.64 | ref: SurfTribe flags straight legs on your wave. | asr: Surf Tribe flags straight legs on your wave.
+L9 OK match=1.00 wps=2.80 dur=3.21 | ref: Tomorrow: rip currents. Follow so you don't miss it. | asr: Tomorrow, rip currents. Follow so you don't miss it.
+TOTAL wps=2.75 lines_to_check=0
