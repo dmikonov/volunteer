@@ -1,0 +1,230 @@
+{
+ "lang": "en",
+ "app_top": 250,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 620,
+ "follow": {
+  "line": "L2"
+ },
+ "gap": 0.24,
+ "music_vol": 0.7,
+ "kokoro_speed": 0.97,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_knees_en2.mp4",
+ "app_lines": [
+  "L7"
+ ],
+ "badge": [
+  "DAILY FIX",
+  "#1"
+ ],
+ "teaser": [
+  "TOMORROW",
+  "The calm water that pulls you out",
+  "FOLLOW SO YOU DON'T MISS IT"
+ ],
+ "lines": [
+  "Stop standing tall.",
+  "Follow. One surf fix a day.",
+  "Straight legs can't absorb bumps, so you fall.",
+  "One. Bend your knees, like sitting on a low chair.",
+  "Two. Keep your weight over the middle of the board.",
+  "Three. Arms out wide, low and relaxed.",
+  "SurfTribe flags straight legs on your wave.",
+  "Tomorrow: rip currents. Follow so you don't miss it."
+ ],
+ "titles": {
+  "L1": [
+   "STOP",
+   "STANDING TALL",
+   null,
+   null
+  ],
+  "L2": [
+   "FOLLOW",
+   "1 FIX A DAY",
+   null,
+   null
+  ],
+  "L3": [
+   "STRAIGHT LEGS",
+   "CAN'T ABSORB BUMPS",
+   null,
+   "X"
+  ],
+  "L4": [
+   "BEND YOUR KNEES",
+   "LIKE A LOW CHAIR",
+   "1",
+   "CK"
+  ],
+  "L5": [
+   "WEIGHT",
+   "OVER THE MIDDLE",
+   "2",
+   "CK"
+  ],
+  "L6": [
+   "ARMS OUT WIDE",
+   "LOW AND RELAXED",
+   "3",
+   "CK"
+  ],
+  "L7": [
+   "STRAIGHT LEGS?",
+   "SURFTRIBE FLAGS IT",
+   null,
+   null
+  ]
+ },
+ "extra": [
+  {
+   "k": "RING_LEGS",
+   "line": "L3",
+   "d0": 0.25,
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><ellipse cx=\"525\" cy=\"1130\" rx=\"250\" ry=\"400\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"26\" fill=\"none\"/><ellipse cx=\"525\" cy=\"1130\" rx=\"250\" ry=\"400\" stroke=\"#FF5150\" stroke-width=\"14\" fill=\"none\"/></svg></div>"
+  },
+  {
+   "k": "RING_KNEES",
+   "line": "L4",
+   "d0": 0.3,
+   "d1": 2.2,
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><ellipse cx=\"420\" cy=\"1180\" rx=\"170\" ry=\"150\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"26\" fill=\"none\"/><ellipse cx=\"420\" cy=\"1180\" rx=\"170\" ry=\"150\" stroke=\"#00d4ff\" stroke-width=\"14\" fill=\"none\"/></svg></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 1.5,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_low.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_center2.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_arms.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_kn.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
+   }
+  ]
+ },
+ "ttop": {}
+}

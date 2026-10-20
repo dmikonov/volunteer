@@ -11,7 +11,7 @@ for l in TL['L']:
     s0, s1 = l['t0'] - 0.05, l['t0'] + l['d'] + 0.05
     seg = a[int(max(0, s0) * 16000):int(s1 * 16000)]
     txt = ' '.join(x.text for x in m.transcribe(seg, language='he' if HE else 'en', beam_size=5)[0])
-    ref, hyp = norm(l['txt']), norm(txt); r = difflib.SequenceMatcher(None, ref, hyp).ratio()
+    ref, hyp = norm(l['txt']), norm(txt); r = difflib.SequenceMatcher(None, ''.join(ref), ''.join(hyp)).ratio()  # 21.10: compare letters only (SurfTribe = Surf Tribe)
     wps = len(ref) / max(0.1, l['d']); tw += len(ref); td += l['d']
     flag = 'OK' if r >= 0.85 else 'CHECK'; bad += flag != 'OK'
     print(f"{l['k']} {flag} match={r:.2f} wps={wps:.2f} dur={l['d']:.2f} | ref: {l['txt']} | asr: {txt.strip()}")

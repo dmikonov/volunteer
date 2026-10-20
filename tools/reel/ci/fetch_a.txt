@@ -1,9 +1,1 @@
-knees kn_stiff https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/9dd427c75c416afac69328d37b07a2941cb5b6d7b1b3ae18afc7f26372d58efe/tmp9jf50pkj.mp4
-knees kn_low https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/f1a039944816712727528f42e7b0cbd683f3f3e8a191f205a0bd95e4a9be489e/tmp_caft8q6.mp4
-knees kn_center https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/0c291aa7fcce0ba6fa76039fe55b29548d9b1bd8faa9b34053a20bb37e5ee781/tmplkyrnbsi.mp4
-knees kn_arms https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/0ac1de936ee6df0620c4f935bdf9af1d483a4eed1692e6ba51a1ce9d07693f4f/tmpyloaotfs.mp4
-rip rp_wide https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/52426ba29e353ae883e8a9a47675ac2a58f718e244572eebf325908680b6a65b/tmpb_lcgdek.mp4
-rip rp_watch https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/0b0e31ee950c5ff3047f0e19308bded6622092ea54d8e9ee890528dda6d175b7/tmpd4gxqxrm.mp4
-rip rp_stay https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/c3a7462ff0e863d16acd0e1407d0e9bde026d21b905d9b93e2099999678ffab4/tmpdzkp3hdr.mp4
-rip rp_par https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/1dcfda9dc6b5406c86001991c93edd23ef4f042ee2a544ae99a7225ee8fb0060/tmp_bgop6cw.mp4
-rip rp_hand https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/09a139920d488356c87c6d4e56b596a48aa524e3f1122b56952c67d11620dea6/tmpvugymucf.mp4
+knees kn_center2 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/nt5wn/gradio_api/file=/tmp/gradio/5d0d9ab134d4d91274d1bd24410b1229d463ecff028389b9fac3e2bcffe0e0e5/tmpsikiodjf.mp4

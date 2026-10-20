@@ -1,0 +1,257 @@
+{
+ "lang": "en",
+ "app_top": 250,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 620,
+ "follow": {
+  "line": "L2"
+ },
+ "gap": 0.24,
+ "music_vol": 0.7,
+ "kokoro_speed": 0.97,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_rip_en2.mp4",
+ "app_lines": [
+  "L7"
+ ],
+ "badge": [
+  "DAILY FIX",
+  "#2"
+ ],
+ "teaser": [
+  "TOMORROW",
+  "Foam isn't just for day one",
+  "FOLLOW SO YOU DON'T MISS IT"
+ ],
+ "lines": [
+  "That calm gap? It's a rip.",
+  "Follow. One surf fix a day.",
+  "No waves break there. The water flows out.",
+  "One. Watch the water ten minutes first.",
+  "Two. Caught in it? Stay on your board. Don't fight it.",
+  "Three. Paddle parallel to the beach. Raise a hand.",
+  "SurfTribe turns one wave into one fix.",
+  "Tomorrow: foam isn't just for day one. Follow so you don't miss it."
+ ],
+ "titles": {
+  "L1": [
+   "THAT CALM GAP?",
+   "IT'S A RIP",
+   null,
+   "WARN"
+  ],
+  "L2": [
+   "FOLLOW",
+   "1 FIX A DAY",
+   null,
+   null
+  ],
+  "L3": [
+   "NO WAVES BREAK",
+   "THE WATER FLOWS OUT",
+   null,
+   null
+  ],
+  "L4": [
+   "WATCH THE WATER",
+   "10 MINUTES FIRST",
+   "1",
+   "CK"
+  ],
+  "L5": [
+   "STAY ON YOUR BOARD",
+   "DON'T FIGHT IT",
+   "2",
+   "CK"
+  ],
+  "L6": [
+   "PADDLE PARALLEL",
+   "RAISE A HAND",
+   "3",
+   "CK"
+  ],
+  "L7": [
+   "FILM ONE WAVE",
+   "GET ONE FIX",
+   null,
+   null
+  ]
+ },
+ "extra": [
+  {
+   "k": "RIP_EDGE",
+   "line": "L1",
+   "d0": 0.2,
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M455 760 L315 1200 L250 1920\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"24\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"34 26\"/><path d=\"M455 760 L315 1200 L250 1920\" stroke=\"#00d4ff\" stroke-width=\"12\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"34 26\"/><path d=\"M640 760 L790 1200 L950 1920\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"24\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"34 26\"/><path d=\"M640 760 L790 1200 L950 1920\" stroke=\"#00d4ff\" stroke-width=\"12\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"34 26\"/></svg></div>"
+  },
+  {
+   "k": "RIP_ARROW",
+   "line": "L1",
+   "d0": 0.5,
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M540 1500 L540 860\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"32\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M540 1500 L540 860\" stroke=\"#FF5150\" stroke-width=\"20\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M470 940 L540 850 L610 940\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"32\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M470 940 L540 850 L610 940\" stroke=\"#FF5150\" stroke-width=\"20\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+  },
+  {
+   "k": "RIP_ARROW3",
+   "line": "L3",
+   "d0": 0.3,
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M540 1560 L540 820\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"34\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M540 1560 L540 820\" stroke=\"#FF5150\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M465 910 L540 815 L615 910\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"34\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M465 910 L540 815 L615 910\" stroke=\"#FF5150\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+  },
+  {
+   "k": "PAR_ARROW",
+   "line": "L6",
+   "d0": 0.25,
+   "d1": 1.6,
+   "html": "<div style=\"position:absolute;top:0;left:0;width:1080px;height:1920px\"><svg width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><path d=\"M860 1170 L230 1170\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M860 1170 L230 1170\" stroke=\"#00d4ff\" stroke-width=\"18\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M310 1100 L220 1170 L310 1240\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M310 1100 L220 1170 L310 1240\" stroke=\"#00d4ff\" stroke-width=\"18\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 0.0,
+    "z": 1.25,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.42,
+     0.42
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_watch.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 1.9,
+    "z": 1.6,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_watch.mp4",
+    "a": 1.9,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_stay.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_par.mp4",
+    "a": 0.0,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ],
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_hand.mp4",
+    "a": 0.0,
+    "z": 1.35,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.4,
+     0.4
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_rp.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_par.mp4",
+    "a": 1.7,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ },
+ "ttop": {}
+}

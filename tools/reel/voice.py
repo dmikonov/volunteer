@@ -23,7 +23,7 @@ def kokoro(cfg):
     if not shutil.which('espeak-ng'): sp.run('sudo apt-get install -y -qq espeak-ng > /dev/null 2>&1 || apt-get install -y -qq espeak-ng > /dev/null 2>&1', shell=True)
     here = os.path.dirname(os.path.abspath(__file__))
     sp.run(['uv', 'run', '--python', '3.12', '--with', 'kokoro>=0.9.4', '--with', 'soundfile', '--with', 'numpy', '--with', 'misaki[en]',
-            'python', f'{here}/kokoro_tts.py', W, cfg['voice'], str(cfg.get('speed', 1.0))], check=True)
+            'python', f'{here}/kokoro_tts.py', W, cfg['voice'], str(S.get('kokoro_speed', cfg.get('speed', 1.0)))], check=True)
     return json.load(open(f'{W}/kokoro.json'))
 import os
 _cfgf = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'voices.json')
