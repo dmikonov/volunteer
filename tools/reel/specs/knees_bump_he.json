@@ -1,0 +1,214 @@
+{
+ "lang": "he",
+ "f5": true,
+ "f5_takes": [
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/6dc4530d928b673e28e559512e5dd0f8ab6366469f972f62dd0663d7971ce5ce/tmpzbrmh86t.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/67e0d899ad434a88e435c0b078c521dbab925d7d83904ba7fd3dce4a3e5d1de3/tmpljriphw2.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/bc2294f52ee5fe111d62429b6e97ab4ea55325fc2fa662f98f154c5b1e16917a/tmpzy1k0q9w.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/450a639f2a7586680552fad3fae13381c5a5cfa6a0f9c704cfede931894ea7a4/tmp1o8_2aek.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d26d156e331d1a29699c036004d8b198aee8141f4420dc96b014dfb2bbd0ef9e/tmpa0qsj8lg.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2ea84e2de927887783a3e3f5dd480e21933645e949a5c04e9a0bfebf26619563/tmpn9qx4v2o.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/22199897fd46797572e14d703669d3809fae82a7749bee435302f62d1d518d54/tmpzgiuf_mo.wav"
+  ],
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/724c80f976e0b3fbd18c8d98f71cd7dbcfdd32f481351ca9e5d6f1be7d337c02/tmp_dm0xuvf.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/11ab8a0a2c95d3aa37967cfe6ea0416baa1abaa52d52f02df9d8fc76af965b9f/tmpi59avq64.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/c95fab9c77547506e680b9f29adb4bbc1b6a2b2799de0a19cdaae875b183d0e8/tmpdcd_6up4.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/65da1fa56bfb3f2948607c2fb5c40d21916ff3c7a382840fc763a1fbd66fa2c4/tmpxjl797p8.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d6094d824efca02257f4b05ff1f00746227b6f5c18b02a7e968cb0ccc545607d/tmp2u304yjn.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/c3b8a938a11cd719f50158778a446a01cca9cedf0933da950002ef2fa444f979/tmpku6lb4lw.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/69682ed66c50e276fabc471eac9da8e0c5c38bbaaadd7587f245c068f873ca3c/tmpr1lj018_.wav"
+  ]
+ ],
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.2,
+ "music_vol": 0.35,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_knees_bump_he.mp4",
+ "app_lines": [],
+ "teaser": [
+  "מחר",
+  "זרם סחף"
+ ],
+ "sub_replace": {
+  "וסרף טרייב": "ו-SurfTribe",
+  "סרף טרייב": "SurfTribe"
+ },
+ "lines": [
+  "רגליים ישרות. בגלל זה גל קטן מפיל אתכם.",
+  "הברכיים נעולות, ולא בולמות כלום.",
+  "ככה מתקנים, שלושה צעדים.",
+  "אחת, ברכיים רכות. אותו גל, בלי ליפול.",
+  "שתיים, יושבים נמוך, כמו על כיסא.",
+  "שלוש, מצלמים גל, וסרף טרייב מראה את זווית הברך.",
+  "מחר: זרם סחף. עקבו כדי לא לפספס."
+ ],
+ "titles": {
+  "L1": [
+   "למה גל קטן",
+   "מפיל",
+   null,
+   null
+  ],
+  "L2": [
+   "ברכיים נעולות",
+   "",
+   null,
+   "X"
+  ],
+  "L3": [
+   "<span style='color:#00E4FF'>3</span> צעדים",
+   "",
+   null,
+   null
+  ],
+  "L4": [
+   "אותו",
+   "גל",
+   null,
+   null
+  ],
+  "L5": [
+   "יושבים",
+   "נמוך",
+   null,
+   "CK"
+  ],
+  "L6": [
+   "זווית הברך",
+   "175°",
+   null,
+   null
+  ]
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1h.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1r.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B4t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_split.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B2t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_end.mp4",
+    "a": 0.3,
+    "z": 1.0
+   }
+  ]
+ },
+ "ttop": {},
+ "v2subs": {
+  "L1": [
+   "רגליים ישרות"
+  ],
+  "L5": [
+   "כמו על כיסא"
+  ]
+ },
+ "extra": [
+  {
+   "k": "RING3",
+   "line": "L2",
+   "d0": 0.35,
+   "html": "<div style='position:absolute;left:383px;top:956px;width:280px;height:280px;border-radius:50%;border:10px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
+  },
+  {
+   "k": "LABL4",
+   "line": "L4",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:68px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='52' height='52' viewBox='0 0 64 64'><path d='M12 12 L52 52 M52 12 L12 52' stroke='#2D242A' stroke-width='20' stroke-linecap='round'/><path d='M12 12 L52 52 M52 12 L12 52' stroke='#FF5150' stroke-width='12' stroke-linecap='round'/></svg><span>נוקשה</span></span></div>"
+  },
+  {
+   "k": "LABR4",
+   "line": "L4",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:612px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>רך</span></span></div>"
+  }
+ ]
+}
