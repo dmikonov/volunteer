@@ -5,3 +5,8 @@ ride f7693e542e75
 ride 74af79eb3512
 center 5c8b249a19bd
 arms 7cba3bbd28c4
+# 21.10 15:58: same surfer (start frame kn3_r1_start.jpg from ride1)
+stiff_r1 a1570a696b5c
+knees_r1 a1343b64b5f6
+arms_r1 c0355778448e
+# cancelled by Dima: 5c8b249a19bd 7cba3bbd28c4 dcf456180c9e
