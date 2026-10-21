@@ -1,17 +1,18 @@
 + k=/s17/rp/sets_en
 + python3 build.py /s17/rp/sets_en
-[('L1', 'en/s_set.mp4', 0.0, 1.93, 0.0), ('L2', '/s_watch.mp4', 0.0, 2.21, 1.93), ('L3', '/s_chase.mp4', 0.0, 1.0, 4.14), ('L3', 'n/s_wipe.mp4', 1.4, 2.685, 5.14), ('L4', 'n/s_pass.mp4', 0.0, 2.435, 7.825), ('L5', 's_paddle.mp4', 0.0, 3.26, 10.26), ('L6', 's_taken2.mp4', 0.0, 2.535, 13.52), ('L7', '_sets_en.mp4', 0.0, 2.51, 16.055), ('L8', '/s_watch.mp4', 1.6, 6.415, 18.565)]
-cat 24.96 T 24.98
+[('L1', 'en/s_set.mp4', 0.0, 1.93, 0.0), ('L2', '/s_watch.mp4', 0.0, 2.21, 1.93), ('L3', '/s_chase.mp4', 0.0, 1.1, 4.14), ('L3', 'n/s_wipe.mp4', 1.8, 1.4, 5.24), ('L3', 'en/s_set.mp4', 2.2, 1.185, 6.64), ('L4', 'n/s_pass.mp4', 0.0, 1.335, 7.825), ('L5', 'n/s_pass.mp4', 1.0, 1.91, 9.16), ('L6', 's_paddle.mp4', 0.0, 3.26, 11.07), ('L7', 's_taken2.mp4', 0.0, 2.535, 14.33), ('L8', '_sets_en.mp4', 0.0, 2.51, 16.865), ('L9', '/s_watch.mp4', 1.6, 5.265, 19.375)]
+cat 24.68 T 24.64
 + python3 ov_png.py /s17/rp/sets_en
+realcuts True [0.0, 1.92, 4.12, 7.84, 9.16, 11.08, 14.36, 16.88, 19.4, 24.64]
 safe-zone violations []
-ovplan 38
+ovplan 37
 + python3 ov_ff.py /s17/rp/sets_en
-done /s17/rp/sets_en/reel_sets_en.mp4 24.98 lufs before -15.4 gain 0.9
+done /s17/rp/sets_en/reel_sets_en.mp4 24.64 lufs before -15.5 gain 1.0
 + python3 trim_tail.py /s17/rp/sets_en
-trimmed /s17/rp/sets_en/reel_sets_en.mp4 24.48
+trimmed /s17/rp/sets_en/reel_sets_en.mp4 24.14
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/sets_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/sets_en/reel_sets_en.mp4
-/s17/rp/sets_en/reel_sets_en.mp4 before -13.0 after -14.6 peak -3.2
+/s17/rp/sets_en/reel_sets_en.mp4 before -13.0 after -14.5 peak -3.2
 + python3 post_cz.py /s17/rp/sets_en
 post ok
 + echo 'EXIT /s17/rp/sets_en 0'

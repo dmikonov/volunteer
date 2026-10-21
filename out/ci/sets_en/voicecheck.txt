@@ -2,9 +2,10 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 L1 OK match=1.00 wps=2.79 dur=1.79 | ref: Guess which wave is yours. | asr: Guess which wave is yours?
 L2 OK match=1.00 wps=2.87 dur=2.09 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
 L3 OK match=1.00 wps=2.81 dur=3.56 | ref: Most beginners chase the biggest one. It breaks on them. | asr: Most beginners chase the biggest one. It breaks on them.
-L4 OK match=1.00 wps=3.89 dur=2.31 | ref: One. Let the big one go to the pack. | asr: One, let the big one go to the pack.
-L5 OK match=0.94 wps=2.55 dur=3.14 | ref: Two. Take a smaller one nobody's paddling for. | asr: 2. Take a smaller one nobody's paddling for.
-L6 OK match=1.00 wps=2.48 dur=2.42 | ref: Three. Someone already up? Pull back. | asr: Three, someone already up, pull back.
-L7 OK match=0.94 wps=2.93 dur=2.39 | ref: SurfTribe maps where you rode the wave. | asr: Surf drive maps where you rode the wave.
-L8 OK match=1.00 wps=2.77 dur=5.41 | ref: Tomorrow: same beach, three hours later, a different wave. Follow so you don't miss it. | asr: Tomorrow, same beach, three hours later, a different wave.  Follow so you don't miss it.
-TOTAL wps=2.85 lines_to_check=0
+L4 OK match=1.00 wps=1.65 dur=1.21 | ref: Three rules. | asr: Three rules.
+L5 OK match=1.00 wps=3.35 dur=1.79 | ref: One. Let the big one go. | asr: One, let the big one go.
+L6 OK match=0.94 wps=2.55 dur=3.14 | ref: Two. Take a smaller one nobody's paddling for. | asr: 2. Take a smaller one nobody's paddling for.
+L7 OK match=1.00 wps=2.48 dur=2.42 | ref: Three. Someone already up? Pull back. | asr: Three, someone already up, pull back.
+L8 OK match=0.94 wps=2.93 dur=2.39 | ref: SurfTribe maps where you rode the wave. | asr: Surf drive maps where you rode the wave.
+L9 OK match=1.00 wps=3.05 dur=4.26 | ref: Tomorrow: how the tide changes your spot. Follow so you don't miss it. | asr: Tomorrow, how the tide changes your spot.  Follow so you don't miss it.
+TOTAL wps=2.78 lines_to_check=0
