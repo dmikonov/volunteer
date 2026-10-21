@@ -1,0 +1,279 @@
+{
+ "lang": "en",
+ "app_top": 330,
+ "no_marka": true,
+ "recap_top": 620,
+ "gap": 0.2,
+ "music_vol": 0.7,
+ "kokoro_speed": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_knees_en3.mp4",
+ "app_lines": [
+  "L8"
+ ],
+ "teaser": [
+  "Tomorrow",
+  "Rip currents"
+ ],
+ "lines": [
+  "Stop standing tall.",
+  "Follow SurfTribe. One surf fix a day.",
+  "Straight legs can't absorb bumps.",
+  "Three fixes.",
+  "One. Bend like you're sitting in a low chair.",
+  "Two. Keep your weight centered.",
+  "Three. Arms out wide and low.",
+  "Film a wave. SurfTribe flags straight legs.",
+  "Tomorrow: rip currents. Follow so you don't miss it."
+ ],
+ "titles": {
+  "L1": [
+   "Stop<br>standing",
+   "tall",
+   null,
+   null
+  ],
+  "L2": [
+   "Follow<br>",
+   "SurfTribe",
+   null,
+   null
+  ],
+  "L3": [
+   "Straight legs",
+   "",
+   null,
+   "X"
+  ],
+  "L4": [
+   "<span style='color:#00E4FF'>3</span> fixes",
+   "",
+   null,
+   null
+  ],
+  "L5": [
+   "Bend your",
+   "knees",
+   null,
+   "CK"
+  ],
+  "L6": [
+   "Weight",
+   "centered",
+   null,
+   "CK"
+  ],
+  "L7": [
+   "Arms",
+   "wide and low",
+   null,
+   "CK"
+  ],
+  "L8": [
+   "Film a",
+   "wave",
+   null,
+   null
+  ]
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 0.75
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 1.85,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_arms.mp4",
+    "a": 1.8,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff2.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.47,
+     0.47
+    ],
+    "dd": 1.2,
+    "frz": 0.55
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_stiff.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.47,
+     0.47
+    ],
+    "frz": 0.5
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_center2.mp4",
+    "a": 2.4,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_low.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "frz": 0.75
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_center2.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn_arms.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "frz": 0.7
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_kn.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
+   }
+  ]
+ },
+ "ttop": {},
+ "style": "v2",
+ "v2subs": {
+  "L2": [
+   "one surf fix a day"
+  ],
+  "L3": [
+   "can't absorb bumps"
+  ],
+  "L5": [
+   "low chair"
+  ],
+  "L8": [
+   "SurfTribe flags",
+   "straight legs"
+  ]
+ }
+}

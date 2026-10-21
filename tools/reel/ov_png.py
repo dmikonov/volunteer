@@ -61,6 +61,14 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .tz .box{{display:inline-block;max-width:600px;padding:28px 36px 32px;border-radius:30px;background:{NAVY};text-align:center}}
 .tz h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:16px}}
 .tz .t{{display:block;font-weight:800;font-size:{64 if HE else 56}px;color:#fff;line-height:1.15;text-wrap:balance}}
+.g2{{position:absolute;top:0;left:0;width:1080px;height:700px;background:linear-gradient(180deg,rgba(45,36,42,.55) 0px,rgba(45,36,42,.55) 460px,rgba(45,36,42,0) 700px)}}
+.t2,.lab2{{position:absolute;top:250px;left:0;right:0;display:flex;justify-content:center;direction:{DIR}}}
+.t2 span.x{{display:inline-block;max-width:620px;text-align:center;font-weight:800;font-size:92px;line-height:1.02;color:#fff;text-wrap:balance;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
+.lab2{{top:300px}} .lab2 span.x{{display:inline-flex;align-items:center;gap:18px;white-space:nowrap;font-weight:800;font-size:64px;line-height:1;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
+.lab2 svg{{flex:none;filter:drop-shadow(0 4px 8px rgba(45,36,42,.6))}}
+.s2{{position:absolute;top:1358px;left:0;right:0;display:flex;justify-content:center;direction:{DIR}}}
+.s2 span{{position:relative;display:inline-block;white-space:nowrap;font-weight:800;font-size:64px;line-height:1;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
+.s2 span::before{{content:'';position:absolute;inset:-34px -60px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.55),rgba(45,36,42,.4) 55%,rgba(45,36,42,0))}}
 .tz .f{{display:inline-block;white-space:nowrap;margin-top:26px;padding:14px 24px;border-radius:18px;background:#0095f6;font-weight:800;font-size:{38 if HE else 31}px;color:#fff;line-height:1;text-box:trim-both cap alphabetic}}
 </style></head><body>{body}</body></html>"""
 if S.get('app_notitle'):
@@ -83,7 +91,7 @@ for tag, sc in (('a', 1.15), ('b', 0.97), ('c', 1.0)):
 if S.get('teaser'):  # 21.10 new concept: tomorrow teaser on the last line instead of the recap
     tz = S['teaser']
     for tag, sc in (('a', 1.0), ('b', 1.0), ('c', 1.0)):
-        cards[f'RECAP{tag}'] = f"<div class=tz><div class=box><h>{tz[0]}</h><span class=t>{tz[1]}</span><span class=f>{tz[2]}</span></div></div>"
+        cards[f'RECAP{tag}'] = f"<div class=tz><div class=box><h>{tz[0]}</h><span class=t>{tz[1]}</span>" + (f"<span class=f>{tz[2]}</span>" if len(tz) > 2 else '') + "</div></div>"
 if S.get('badge'):  # 21.10: daily badge for the whole reel (replaces the SurfTribe mark)
     bd = S['badge']; bdir = 'rtl' if HE else 'ltr'
     brand = f"Surf<span style='color:{CY}'>Tribe</span>&nbsp;&nbsp;·&nbsp;&nbsp;"  # checklist 10: brand visible in the first 3 s and at the end
@@ -128,13 +136,43 @@ for i, (txt, s0, s1) in enumerate(clean):
     _li = max([j for j in range(len(L)) if cuts[j] <= s0 + 0.05] or [0])  # 21.10: per-line subtitle height (spec sub_top {"L3": 840}) to keep subs off the key detail
     if S.get('sub_top', {}).get(L[_li]['k']): st = f" style='top:{S['sub_top'][L[_li]['k']]}px'"
     cards[f'S{i:02d}'] = f"<div class=sub{st}><span>{txt}</span></div>"
+V2 = S.get('style') == 'v2'  # 21.10 Dima: no plates/badges/buttons. Research of 22 surf-coaching hits: white text + soft shadow, 1-3 word step labels with drawn marks, <= 5 words on screen
+V2X = "<svg width='64' height='64' viewBox='0 0 64 64'><path d='M12 12 L52 52 M52 12 L12 52' stroke='#2D242A' stroke-width='20' stroke-linecap='round'/><path d='M12 12 L52 52 M52 12 L12 52' stroke='#FF5150' stroke-width='12' stroke-linecap='round'/></svg>"
+V2V = "<svg width='68' height='64' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+V2SUB = []
+if V2:
+    for kk in [k for k in cards if k.startswith(('T', 'RECAP', 'BADGE', 'FBTN', 'MARK', 'S'))]: cards.pop(kk)
+    cards['GRAD'] = "<div class=g2></div>"
+    for l in L:
+        k = l['k']
+        if k in TITLES and k != LAST:
+            a, b, n, ic = TITLES[k]
+            txt = a + (f" <span style='color:#00E4FF'>{b}</span>" if b else '')
+            if ic: cards[f'T{k}c'] = f"<div class=lab2><span class=x>{V2X if ic in ('X', 'WARN') else V2V}<span>{txt}</span></span></div>"
+            else: cards[f'T{k}c'] = f"<div class=t2><span class=x>{txt}</span></div>"
+    if S.get('teaser'):
+        tz = S['teaser']
+        cards['RECAPc'] = f"<div class=t2><span class=x><span style='color:#00E4FF;font-size:64px'>{tz[0]}</span><br>{tz[1]}</span></div>"
+    def _n(s): return re.sub(r"[^\w']", '', s.lower())
+    for i, l in enumerate(L):
+        chunks = S.get('v2subs', {}).get(l['k'], [])
+        Wd = l['words']; toks = [_n(w[0]) for w in Wd]; starts = []
+        for ch in chunks:
+            cw = [_n(x) for x in ch.split()]
+            hit = next((j for j in range(len(toks) - len(cw) + 1) if toks[j:j + len(cw)] == cw), None)
+            if hit is None: print('V2 SUB NOT IN VOICE', l['k'], ch); continue
+            starts.append((ch, Wd[hit][1]))
+        for j, (ch, s0) in enumerate(starts):
+            s1 = starts[j + 1][1] - 0.04 if j + 1 < len(starts) else cuts[i + 1] - 0.04
+            V2SUB.append((f'S{len(V2SUB):02d}', ch, max(s0, cuts[i] + 0.04), s1))
+    for kk, ch, s0, s1 in V2SUB: cards[kk] = f"<div class=s2><span>{ch}</span></div>"
 os.makedirs(f'{W}/ov', exist_ok=True); pos = {}; boxes = {}
 with sync_playwright() as p:
     br = p.chromium.launch(); pg = br.new_page(viewport={'width': 1080, 'height': 1920})
     for k, h in cards.items():
         pg.set_content(page(h)); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(100)
-        pg.evaluate("() => { for (const [sel, mx] of [['.sub span', 600], ['.plate', 620]]) for (const e of document.querySelectorAll(sel)) { let f = parseFloat(getComputedStyle(e).fontSize); while (e.getBoundingClientRect().width > mx && f > 24) { f -= 2; e.style.fontSize = f + 'px'; } } }")
-        boxes[k] = pg.evaluate("() => [...document.querySelectorAll('.plate,.sub span,.mark span.b,.n,.rc .box,.tz .box,.flw span')].map(e => {const r=e.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.right), Math.round(r.top), Math.round(r.bottom)]})")
+        pg.evaluate("() => { for (const [sel, mx] of [['.sub span', 600], ['.plate', 620], ['.t2 span.x', 620], ['.lab2 span.x', 620], ['.s2 span', 620]]) for (const e of document.querySelectorAll(sel)) { let f = parseFloat(getComputedStyle(e).fontSize); while (e.getBoundingClientRect().width > mx && f > 24) { f -= 2; e.style.fontSize = f + 'px'; } } }")
+        boxes[k] = pg.evaluate("() => [...document.querySelectorAll('.plate,.sub span,.mark span.b,.n,.rc .box,.tz .box,.flw span,.t2 span.x,.lab2 span.x,.s2 span')].map(e => {const r=e.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.right), Math.round(r.top), Math.round(r.bottom)]})")
         fn = f'{W}/ov/{k}.png'; pg.screenshot(path=fn, omit_background=True)
         im = cv2.imread(fn, cv2.IMREAD_UNCHANGED); ys, xs = (im[..., 3] > 0).nonzero()
         x0, x1, y0, y1 = xs.min(), xs.max() + 1, ys.min(), ys.max() + 1; cv2.imwrite(fn, im[y0:y1, x0:x1]); pos[k] = (int(x0), int(y0))
@@ -184,7 +222,11 @@ for _i, (k, a, b) in enumerate(ON):  # keep the pop frames (a, b) glued to the s
             elif kk == base + 'b': ON[_j] = (kk, round(a + F1, 4), round(a + F2, 4))
             elif kk == base + 'c': ON[_j] = (kk, round(a + F2, 4), bb)
   # cards switch exactly on the cut frame
-ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
+if V2:
+    ON = [(k, a, b) for k, a, b in ON if not k.startswith(('BADGE', 'FBTN', 'MARK')) and (k in cards)]
+    ON += [('GRAD', a, b) for k, a, b in ON if k.startswith(('T', 'RECAP'))]
+    ON += [(kk, s0, s1) for kk, ch, s0, s1 in V2SUB]
+else: ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
 pops = [round(cuts[i] + 0.05, 3) for i, l in enumerate(L)]
