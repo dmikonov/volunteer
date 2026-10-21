@@ -21,3 +21,15 @@ v3 (18.10, после ревизора): реальные клипы 17.10 не 
 | 22.10 rip | r_hook, r_wide, r_watch, r_stay, r_par, r_hand2 (Z-Image Turbo + Wan 2.2, 19.10) |
 | 23.10 foam | f_hook, f_prone, f_up, f_angle2, f_side2, f_back, f_walk (Z-Image Turbo + Wan 2.2, 20.10; сиды в tools/reel/gen/manifest_23oct.json); брак не взят: f_angle, f_angle3, f_side1 |
 | 20.10 | Смотри вперёд v2 (переделка после провала пробного) | out/ci/look2/look2_{he,en}/reel_look2_*.mp4 (commit dbb70e4) | файлы в чате 20.10 14:24 | 10 раундов: слепой зритель + ревизор (мостик «ככה מתקנים / 3 צעדים», новые клипы g_level, g_lift, удалена заглушка лиша, луп на кадр 0, карточки по кадрам склеек). Ок Димы 20.10 14:24. ОПУБЛИКОВАН пробным 20.10 14:26, MANUAL: HE https://www.instagram.com/reel/DetuI1cCll0/ (18128907451870681), EN https://www.instagram.com/reel/DetuJefD0db/ (18372508357211493). Открыто: вставка приложения у слепого зрителя = точка ухода; возраст сёрфера 25+ проверить |
+
+## С 21.10: HE и EN разные концепты (EN по docs/en-concept.md, пересобраны 21.10 ночью, GitHub Actions)
+| Дата | Аккаунт | Тема | Файлы | Превью | Статус |
+|---|---|---|---|---|---|
+| Ср 21.10 | HE | Колени согнуты | reel_knees_he.mp4 (v5, 18.10, старая схема: без плашки «טיפ יומי», без анонса) | https://huggingface.co/datasets/dmikonov/surftribe-gen-inputs/resolve/main/review/reel_knees_he.mp4 | ждёт ок Димы |
+| Ср 21.10 | EN | Knees, Daily fix #1 | out/ci/knees_en2/reel_knees_en2.mp4 (25c5524) | https://raw.githubusercontent.com/dmikonov/volunteer/25c55249fbfc9f86b06e0f55ed53a9bca85b0f90/out/ci/knees_en2/prev.mp4 | собран 21.10 ночью, 22.08 с, слепой зритель 8/7/5/7, ждёт ок Димы |
+| Чт 22.10 | EN | Rip current, Daily fix #2 | out/ci/rip_en2/reel_rip_en2.mp4 (e7679d5) | https://raw.githubusercontent.com/dmikonov/volunteer/e7679d544144cd3eecc361fe6f7710dd57425372/out/ci/rip_en2/prev.mp4 | собран 21.10 ночью, 24.88 с, слепой зритель 8/6/4/6, ждёт ок Димы. HE 22.10: прежний (выше) |
+| Пт 23.10 | EN | Foam, Daily fix #3 | out/ci/foam_en2/reel_foam_en2.mp4 (3139990) | https://raw.githubusercontent.com/dmikonov/volunteer/31399901e7ec234161b2e04f484a476f48b17559/out/ci/foam_en2/prev.mp4 | собран 21.10 ночью, 22.08 с, слепой зритель 6/7/5/6, ждёт ок Димы. HE 23.10: прежний (выше) |
+| Сб 24.10 | HE | Флаги на пляже, טיפ יומי #4 | out/ci/flags_he/reel_flags_he.mp4 (87a3ccb) | https://raw.githubusercontent.com/dmikonov/volunteer/87a3ccb8a848a5256091c4b4ce649d73ff83fc0d/out/ci/flags_he/prev.mp4 | собран 21.10 ночью, 20.69 с, голос F5 голос 3, слепой зритель 5/8/6/7, ждёт ок Димы |
+| Сб 24.10 | EN | Biggest wave in the set isn't yours, Daily fix #4 | out/ci/sets_en/reel_sets_en.mp4 (d57b32f) | https://raw.githubusercontent.com/dmikonov/volunteer/d57b32fbd5222151584f89a73d51f2ab31dc1adc/out/ci/sets_en/prev.mp4 | собран 21.10 ночью, 23.34 с, слепой зритель 6/6/4/6, ждёт ок Димы |
+Подписи: docs/captions-21-22oct-en2.md (EN 21-22.10), docs/captions-23oct.md (EN обновлён), docs/captions-24oct.md (HE+EN). Мастер для публикации: raw-ссылка на reel_*.mp4 того же коммита.
+Клипы 21.10 (не повторять неделю): knees kn_*, rip rp_*, sets s_*, flags fl_* (все Z-Image Turbo + Wan 2.2).
