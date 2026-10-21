@@ -1,3 +1,5 @@
+!! 21.10 lesson: titles sit at y 250-445 on the 1920 frame, so the surfer's HEAD must be below ~25% of frame height (below y 520 on 1920; below y 410 on 1536). Add to every start-frame prompt: 'wide framing with lots of open sea above his head, the surfer occupies the lower two thirds of the frame, head well below the top quarter'. Check head position before animating.
+
 Z-Image Turbo, 864x1536 (9:16), steps 8, seed 210101, random_seed false. Same seed + same prompt = same frame.
 
 kn3_stiff:
