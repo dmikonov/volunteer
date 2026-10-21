@@ -83,147 +83,66 @@
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_stiff.mp4",
+    "src": "/s17/gen/kn3_stiff_vg1.mp4",
     "a": 0.0,
-    "z": 1.15,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ],
-    "dd": 0.75
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/kn_stiff.mp4",
-    "a": 1.85,
-    "z": 1.15,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "z": 1.0
    }
   ],
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_arms.mp4",
-    "a": 1.8,
-    "z": 1.1,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "src": "/s17/gen/kn3_low.mp4",
+    "a": 0.0,
+    "z": 1.0
    }
   ],
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_stiff2.mp4",
-    "a": 0.0,
-    "z": 1.5,
-    "cx": [
-     0.5,
-     0.5
-    ],
+    "src": "/s17/gen/kn3_stiff_vg1.mp4",
+    "a": 1.8,
+    "z": 1.3,
     "cy": [
-     0.47,
-     0.47
-    ],
-    "dd": 1.2,
-    "frz": 0.55
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/kn_stiff.mp4",
-    "a": 0.0,
-    "z": 1.5,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.47,
-     0.47
-    ],
-    "frz": 0.5
+     0.6,
+     0.6
+    ]
    }
   ],
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_center2.mp4",
-    "a": 2.4,
-    "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "src": "/s17/gen/kn3_stiff_vg2.mp4",
+    "a": 0.4,
+    "z": 1.0
    }
   ],
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_low.mp4",
-    "a": 0.0,
-    "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
+    "src": "/s17/gen/kn3_low.mp4",
+    "a": 1.2,
+    "z": 1.1,
     "cy": [
-     0.5,
-     0.5
-    ],
-    "frz": 0.75
+     0.55,
+     0.55
+    ]
    }
   ],
   "L6": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_center2.mp4",
+    "src": "/s17/gen/kn3_center_up3201.mp4",
     "a": 0.0,
     "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "spd": 0.7
    }
   ],
   "L7": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn_arms.mp4",
-    "a": 0.0,
-    "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ],
-    "frz": 0.7
+    "src": "/s17/gen/kn3_low.mp4",
+    "a": 0.4,
+    "z": 1.0
    }
   ],
   "L8": [
@@ -231,15 +150,7 @@
     "kind": "app",
     "src": "/s17/gen/app_kn.mp4",
     "a": 0.0,
-    "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "z": 1.0
    }
   ],
   "L9": [
@@ -248,10 +159,6 @@
     "src": "/s17/gen/rp_wide.mp4",
     "a": 0.0,
     "z": 1.15,
-    "cx": [
-     0.5,
-     0.5
-    ],
     "cy": [
      0.45,
      0.45
@@ -275,5 +182,6 @@
    "SurfTribe flags",
    "straight legs"
   ]
- }
+ },
+ "_draft": "21.10 13:40 draft: ride/arms clips pending from vgen bridge; kn3_low reused for L2/L5/L7; 480p bridge clips not upscaled yet"
 }
