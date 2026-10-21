@@ -61,12 +61,12 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .tz .box{{display:inline-block;max-width:600px;padding:28px 36px 32px;border-radius:30px;background:{NAVY};text-align:center}}
 .tz h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:16px}}
 .tz .t{{display:block;font-weight:800;font-size:{64 if HE else 56}px;color:#fff;line-height:1.15;text-wrap:balance}}
-.g2{{position:absolute;top:0;left:0;width:1080px;height:700px;background:linear-gradient(180deg,rgba(45,36,42,.55) 0px,rgba(45,36,42,.55) 460px,rgba(45,36,42,0) 700px)}}
+.g2{{position:absolute;top:0;left:0;width:1080px;height:700px;background:linear-gradient(180deg,rgba(45,36,42,.50) 0px,rgba(45,36,42,.32) 330px,rgba(45,36,42,.12) 520px,rgba(45,36,42,0) 700px)}}
 .t2,.lab2{{position:absolute;top:250px;left:0;right:0;display:flex;justify-content:center;direction:{DIR}}}
 .t2 span.x{{display:inline-block;max-width:620px;text-align:center;font-weight:800;font-size:92px;line-height:1.02;color:#fff;text-wrap:balance;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
 .lab2{{top:300px}} .lab2 span.x{{display:inline-flex;align-items:center;gap:18px;white-space:nowrap;font-weight:800;font-size:64px;line-height:1;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
 .lab2 svg{{flex:none;filter:drop-shadow(0 4px 8px rgba(45,36,42,.6))}}
-.s2{{position:absolute;top:1358px;left:0;right:0;display:flex;justify-content:center;direction:{DIR}}}
+.s2{{position:absolute;top:{S.get('v2_sub_top', 1358)}px;left:0;right:0;display:flex;justify-content:center;direction:{DIR}}}
 .s2 span{{position:relative;display:inline-block;white-space:nowrap;font-weight:800;font-size:64px;line-height:1;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
 .s2 span::before{{content:'';position:absolute;inset:-34px -60px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.55),rgba(45,36,42,.4) 55%,rgba(45,36,42,0))}}
 .tz .f{{display:inline-block;white-space:nowrap;margin-top:26px;padding:14px 24px;border-radius:18px;background:#0095f6;font-weight:800;font-size:{38 if HE else 31}px;color:#fff;line-height:1;text-box:trim-both cap alphabetic}}

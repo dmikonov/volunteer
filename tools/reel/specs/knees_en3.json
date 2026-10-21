@@ -3,8 +3,8 @@
  "app_top": 330,
  "no_marka": true,
  "recap_top": 620,
- "gap": 0.2,
- "music_vol": 0.7,
+ "gap": 0.15,
+ "music_vol": 0.35,
  "kokoro_speed": 0.9,
  "recap": [
   "",
@@ -26,8 +26,8 @@
   "One. Bend like you're sitting in a low chair.",
   "Two. Keep your weight centered.",
   "Three. Arms out wide and low.",
-  "Film a wave. SurfTribe flags straight legs.",
-  "Tomorrow: rip currents. Follow so you don't miss it."
+  "Film a wave. SurfTribe shows where your legs went straight.",
+  "Tomorrow: rip currents. Follow SurfTribe."
  ],
  "titles": {
   "L1": [
@@ -102,7 +102,7 @@
     "src": "/s17/gen/kn3_stiff_r1.mp4",
     "a": 1.6,
     "z": 1.0,
-    "spd": 0.9
+    "spd": 0.7
    }
   ],
   "L4": [
@@ -119,7 +119,14 @@
     "src": "/s17/gen/kn3_knees_r1.mp4",
     "a": 0.0,
     "z": 1.0,
-    "spd": 0.7
+    "spd": 0.6,
+    "dd": 1.9
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn3_ride_vg1.mp4",
+    "a": 1.2,
+    "z": 1.0
    }
   ],
   "L6": [
@@ -162,9 +169,6 @@
  "ttop": {},
  "style": "v2",
  "v2subs": {
-  "L2": [
-   "one surf fix a day"
-  ],
   "L3": [
    "can't absorb bumps"
   ],
@@ -172,8 +176,8 @@
    "low chair"
   ],
   "L8": [
-   "SurfTribe flags",
-   "straight legs"
+   "SurfTribe shows"
   ]
- }
+ },
+ "v2_sub_top": 410
 }
