@@ -1,63 +1,63 @@
 Downloading cpython-3.12.15-linux-x86_64-gnu (download) (32.7MiB)
  Downloaded cpython-3.12.15-linux-x86_64-gnu (download)
-Downloading nvidia-cuda-runtime (2.1MiB)
-Downloading babel (9.7MiB)
-Downloading tokenizers (3.2MiB)
+Downloading nvidia-cufile (1.2MiB)
 Downloading networkx (2.0MiB)
 Downloading pygments (1.2MiB)
 Downloading srsly (1.2MiB)
-Downloading nvidia-cufile (1.2MiB)
-Downloading espeakng-loader (9.6MiB)
-Downloading transformers (12.2MiB)
-Downloading soundfile (1.3MiB)
-Downloading triton (236.5MiB)
-Downloading nvidia-cuda-nvrtc (86.0MiB)
-Downloading cuda-bindings (6.8MiB)
-Downloading nvidia-nccl-cu13 (206.0MiB)
-Downloading nvidia-curand (56.8MiB)
-Downloading nvidia-cufft (204.2MiB)
-Downloading nvidia-nvjitlink (40.5MiB)
-Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading numpy (16.0MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading curated-tokenizers (6.0MiB)
+Downloading spacy (33.9MiB)
+Downloading nvidia-cuda-cupti (10.2MiB)
 Downloading nvidia-cusparse (139.2MiB)
+Downloading blis (10.8MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading pydantic-core (2.1MiB)
+Downloading nvidia-cudnn-cu13 (527.5MiB)
+Downloading babel (9.7MiB)
+Downloading cuda-bindings (6.8MiB)
+Downloading tokenizers (3.2MiB)
+Downloading transformers (12.2MiB)
+Downloading triton (236.5MiB)
+Downloading sympy (6.0MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading hf-xet (4.0MiB)
+Downloading nvidia-cublas (403.5MiB)
 Downloading torch (528.9MiB)
 Downloading nvidia-cusolver (191.6MiB)
-Downloading pydantic-core (2.1MiB)
-Downloading nvidia-cuda-cupti (10.2MiB)
-Downloading nvidia-cusparselt-cu13 (162.3MiB)
-Downloading sympy (6.0MiB)
-Downloading hf-xet (4.0MiB)
-Downloading blis (10.8MiB)
-Downloading misaki (3.5MiB)
-Downloading nvidia-cublas (403.5MiB)
 Downloading thinc (3.7MiB)
-Downloading nvidia-cudnn-cu13 (527.5MiB)
-Downloading spacy (33.9MiB)
-Downloading curated-tokenizers (6.0MiB)
-Downloading numpy (16.0MiB)
+Downloading misaki (3.5MiB)
+Downloading nvidia-nvjitlink (40.5MiB)
+Downloading nvidia-nccl-cu13 (206.0MiB)
+Downloading espeakng-loader (9.6MiB)
+Downloading soundfile (1.3MiB)
  Downloaded nvidia-cufile
-   Building docopt==0.6.2
- Downloaded srsly
  Downloaded pygments
+ Downloaded srsly
+   Building docopt==0.6.2
  Downloaded soundfile
  Downloaded networkx
- Downloaded nvidia-cuda-runtime
  Downloaded pydantic-core
+ Downloaded nvidia-cuda-runtime
+      Built docopt==0.6.2
+ Downloaded tokenizers
  Downloaded misaki
  Downloaded hf-xet
- Downloaded tokenizers
  Downloaded thinc
- Downloaded sympy
  Downloaded curated-tokenizers
-      Built docopt==0.6.2
+ Downloaded sympy
  Downloaded cuda-bindings
- Downloaded nvidia-cuda-cupti
- Downloaded babel
  Downloaded espeakng-loader
  Downloaded blis
- Downloaded transformers
+ Downloaded nvidia-cuda-cupti
+ Downloaded babel
  Downloaded numpy
- Downloaded spacy
+ Downloaded transformers
  Downloaded nvidia-nvjitlink
+ Downloaded spacy
  Downloaded nvidia-curand
  Downloaded nvidia-nvshmem-cu13
  Downloaded nvidia-cuda-nvrtc
@@ -68,23 +68,23 @@ Downloading numpy (16.0MiB)
  Downloaded nvidia-nccl-cu13
  Downloaded nvidia-cublas
  Downloaded triton
- Downloaded torch
  Downloaded nvidia-cudnn-cu13
-Installed 113 packages in 2.13s
+ Downloaded torch
+Installed 113 packages in 3.35s
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-/home/runner/.cache/uv/archive-v0/x-JYWhr3xd7swU0e/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+/home/runner/.cache/uv/archive-v0/6a60JGIG18hlPE3M/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
   super().__init__("LSTM", *args, **kwargs)
-/home/runner/.cache/uv/archive-v0/x-JYWhr3xd7swU0e/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+/home/runner/.cache/uv/archive-v0/6a60JGIG18hlPE3M/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Collecting en-core-web-sm==3.8.0
   Downloading en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 205.7 MB/s  0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 169.1 MB/s  0:00:00
 Installing collected packages: en-core-web-sm
 Successfully installed en-core-web-sm-3.8.0
 
 [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 [notice] To update, run: python -m pip install --upgrade pip
-/home/runner/.cache/uv/archive-v0/x-JYWhr3xd7swU0e/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+/home/runner/.cache/uv/archive-v0/6a60JGIG18hlPE3M/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
 [38;5;2m✔ Download and installation successful[0m
 You can now load the package via spacy.load('en_core_web_sm')

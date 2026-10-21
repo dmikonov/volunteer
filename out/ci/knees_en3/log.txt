@@ -1,6 +1,6 @@
 + k=/s17/rp/knees_en3
 + python3 build.py /s17/rp/knees_en3
-[('L1', 'tiff_vg1.mp4', 0.0, 1.735, 0.0), ('L2', '/kn3_low.mp4', 0.0, 2.965, 1.735), ('L3', 'tiff_vg1.mp4', 1.8, 2.29, 4.7), ('L4', 'tiff_vg2.mp4', 0.4, 1.49, 6.99), ('L5', '/kn3_low.mp4', 1.2, 2.79, 8.48), ('L6', 'r_up3201.mp4', 0.0, 2.165, 11.27), ('L7', '/kn3_low.mp4', 0.4, 2.365, 13.435), ('L8', 'n/app_kn.mp4', 0.0, 3.265, 15.8), ('L9', '/rp_wide.mp4', 0.0, 4.215, 19.065)]
+[('L1', 'tiff_vg1.mp4', 0.0, 1.735, 0.0), ('L2', 'ride_vg1.mp4', 0.0, 2.965, 1.735), ('L3', 'tiff_vg1.mp4', 1.8, 2.29, 4.7), ('L4', 'ride_vg1.mp4', 2.3, 1.49, 6.99), ('L5', 'ride_vg2.mp4', 0.0, 2.79, 8.48), ('L6', 'ride_vg1.mp4', 1.7, 2.165, 11.27), ('L7', 'ride_vg2.mp4', 1.64, 2.365, 13.435), ('L8', 'n/app_kn.mp4', 0.0, 3.265, 15.8), ('L9', '/rp_wide.mp4', 0.0, 4.215, 19.065)]
 cat 23.24 T 23.28
 + python3 ov_png.py /s17/rp/knees_en3
 realcuts True [0.0, 1.72, 4.68, 6.96, 8.44, 11.24, 13.4, 15.76, 19.04, 23.28]
@@ -12,7 +12,7 @@ done /s17/rp/knees_en3/reel_knees_en3.mp4 23.28 lufs before -15.7 gain 1.2
 trimmed /s17/rp/knees_en3/reel_knees_en3.mp4 22.78
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_en3/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_en3/reel_knees_en3.mp4
-/s17/rp/knees_en3/reel_knees_en3.mp4 before -13.0 after -14.5 peak -2.8
+/s17/rp/knees_en3/reel_knees_en3.mp4 before -13.0 after -14.5 peak -2.7
 + python3 post_cz.py /s17/rp/knees_en3
 post ok
 + echo 'EXIT /s17/rp/knees_en3 0'
