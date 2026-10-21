@@ -32,10 +32,10 @@
   "Follow. One surf fix a day.",
   "Straight legs can't absorb bumps.",
   "Three fixes.",
-  "One. Bend your knees like a low chair.",
+  "One. Bend like you're sitting in a low chair.",
   "Two. Keep your weight centered.",
   "Three. Arms out wide and low.",
-  "SurfTribe flags straight legs on your wave.",
+  "Film a wave. SurfTribe flags straight legs.",
   "Tomorrow: rip currents. Follow so you don't miss it."
  ],
  "titles": {
@@ -70,8 +70,8 @@
    "CK"
   ],
   "L6": [
-   "WEIGHT",
-   "OVER THE MIDDLE",
+   "KEEP YOUR WEIGHT",
+   "CENTERED",
    "2",
    "CK"
   ],
@@ -82,8 +82,8 @@
    "CK"
   ],
   "L8": [
-   "STRAIGHT LEGS?",
-   "SURFTRIBE FLAGS IT",
+   "STRAIGHT LEGS -",
+   "COMPRESS INTO THE KNEES",
    null,
    null
   ]
@@ -284,5 +284,8 @@
   ]
  },
  "ttop": {},
- "follow_top": 600
+ "follow_top": 600,
+ "sub_top": {
+  "L3": 840
+ }
 }

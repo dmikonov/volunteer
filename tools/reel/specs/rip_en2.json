@@ -7,9 +7,9 @@
  "follow": {
   "line": "L2"
  },
- "gap": 0.18,
+ "gap": 0.14,
  "music_vol": 0.7,
- "kokoro_speed": 0.9,
+ "kokoro_speed": 0.92,
  "recap": [
   "",
   []
@@ -30,12 +30,12 @@
  "lines": [
   "That calm gap? It's a rip.",
   "Follow. One surf fix a day.",
-  "No waves break. The water flows out.",
-  "Three moves.",
+  "Nothing breaks there. Water's rushing out.",
+  "Three fixes.",
   "One. Watch the water ten minutes first.",
   "Two. Stay on your board. Don't fight it.",
   "Three. Paddle parallel to shore. Raise a hand.",
-  "SurfTribe: one wave, one fix.",
+  "Film a wave. SurfTribe tells you what to fix.",
   "Tomorrow: foam isn't just for day one. Follow so you don't miss it."
  ],
  "titles": {
@@ -52,13 +52,13 @@
    null
   ],
   "L3": [
-   "NO WAVES BREAK",
-   "THE WATER FLOWS OUT",
+   "NOTHING BREAKS THERE",
+   "WATER'S RUSHING OUT",
    null,
    null
   ],
   "L4": [
-   "THREE MOVES",
+   "THREE FIXES",
    "",
    null,
    null
@@ -82,8 +82,8 @@
    "CK"
   ],
   "L8": [
-   "FILM ONE WAVE",
-   "GET ONE FIX",
+   "FILM A WAVE",
+   "SEE WHAT TO FIX",
    null,
    null
   ]
@@ -167,9 +167,9 @@
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/rp_stay2.mp4",
-    "a": 2.2,
-    "z": 1.3,
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 0.0,
+    "z": 1.0,
     "cx": [
      0.5,
      0.5
@@ -225,6 +225,21 @@
     "cy": [
      0.5,
      0.5
+    ],
+    "dd": 1.4
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_stay2.mp4",
+    "a": 2.6,
+    "z": 1.25,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
     ]
    }
   ],
@@ -254,8 +269,8 @@
      0.5
     ],
     "cy": [
-     0.4,
-     0.4
+     0.5,
+     0.5
     ]
    }
   ],
@@ -264,14 +279,14 @@
     "kind": "app",
     "src": "/s17/gen/app_rp.mp4",
     "a": 0.0,
-    "z": 1.0,
+    "z": 1.08,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.46,
+     0.54
     ]
    }
   ],
@@ -286,8 +301,8 @@
      0.5
     ],
     "cy": [
-     0.4,
-     0.4
+     0.5,
+     0.5
     ],
     "dd": 2.0
    },

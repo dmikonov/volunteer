@@ -108,7 +108,7 @@ for l in L:
         if tok.endswith(('.', ',', ':', '?')): phrases.append(curp); curp = []  # 20.10: split after ? too (keeps subtitles at full size)
     if curp: phrases.append(curp)
     for ph in phrases:
-        if len(ph) <= 4 or len(' '.join(c[0] for c in ph)) <= 20: subs.append([' '.join(c[0] for c in ph), ph[0][1], ph[-1][2]]); continue
+        if len(ph) <= 4 or len(' '.join(c[0] for c in ph)) <= 28: subs.append([' '.join(c[0] for c in ph), ph[0][1], ph[-1][2]]); continue
         best = None
         for cut in sorted(range(1, len(ph)), key=lambda c: abs(len(' '.join(x[0] for x in ph[:c])) - len(' '.join(x[0] for x in ph[c:])))):
             if ph[cut - 1][0].strip('.,:').lower() not in STOP: best = cut; break
@@ -125,6 +125,8 @@ for i, (txt, s0, s1) in enumerate(subs):
 APPW = [(cuts[[l['k'] for l in L].index(kk)], cuts[[l['k'] for l in L].index(kk) + 1]) for kk in S.get('app_lines', [])]
 for i, (txt, s0, s1) in enumerate(clean):
     st = f" style='top:{S['app_sub_top']}px'" if S.get('app_sub_top') and any(a0 - 0.05 <= s0 < b0 for a0, b0 in APPW) else ''
+    _li = max([j for j in range(len(L)) if cuts[j] <= s0 + 0.05] or [0])  # 21.10: per-line subtitle height (spec sub_top {"L3": 840}) to keep subs off the key detail
+    if S.get('sub_top', {}).get(L[_li]['k']): st = f" style='top:{S['sub_top'][L[_li]['k']]}px'"
     cards[f'S{i:02d}'] = f"<div class=sub{st}><span>{txt}</span></div>"
 os.makedirs(f'{W}/ov', exist_ok=True); pos = {}; boxes = {}
 with sync_playwright() as p:
