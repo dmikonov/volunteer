@@ -57,6 +57,38 @@
   [
    6,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/69682ed66c50e276fabc471eac9da8e0c5c38bbaaadd7587f245c068f873ca3c/tmpr1lj018_.wav"
+  ],
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0ab205b47df58a6a84406798e794f875b1cd4f6726d186fe3b5dfcde5fc689bc/tmpbnrpwf4p.wav"
+  ],
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/1f3b99bd28f8fa4df635bb099297c3c2f6d902e2a4942909b37c107a6daa4f11/tmp09p6bqwl.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/f691ae1efab45ac5faa99d6dcb243971a0f56bf1a6c9a0064f35f9f4c3768db1/tmpg3nhyl_v.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/24fe3acf78aa269852fc93dcdf5933fca9a240d2ca27e636342000790cac76b6/tmprv6b1gg1.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/ea46c0dba4acd8644441d487a659b396d2fdd07d302d2836d168642199827981/tmp98l3quto.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/205005d51422c9900577e395623e48cd28c34b69c89aeb3ecb681749633bf74a/tmpxvdmdb3f.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/ee32bbe0545515cb031dd8c85d762379b2c339d1ab8d358c1ef9e6448af4173f/tmpo0ywph3f.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/88368d79a345592edd9a087b23d94171f9bb3be8a1764e53f43ad0726af625bd/tmpz74f3evw.wav"
   ]
  ],
  "style": "v2",
@@ -128,7 +160,14 @@
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kb_A1h.mp4",
+    "src": "/s17/gen/kb_A3c.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "dd": 1.5
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1k.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -144,7 +183,7 @@
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kb_B4t.mp4",
+    "src": "/s17/gen/kb_B2t.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -160,7 +199,7 @@
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kb_B2t.mp4",
+    "src": "/s17/gen/kb_B4t.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -195,7 +234,7 @@
   {
    "k": "RING3",
    "line": "L2",
-   "d0": 0.35,
+   "d0": 0.6,
    "html": "<div style='position:absolute;left:383px;top:956px;width:280px;height:280px;border-radius:50%;border:10px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
   },
   {
@@ -210,5 +249,6 @@
    "d0": 0.05,
    "html": "<div style='position:absolute;top:500px;left:612px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>רך</span></span></div>"
   }
- ]
+ ],
+ "v2_sub_top": 465
 }
