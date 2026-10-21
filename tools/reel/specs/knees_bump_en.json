@@ -1,0 +1,170 @@
+{
+ "lang": "en",
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.15,
+ "music_vol": 0.35,
+ "kokoro_speed": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_knees_bump_en.mp4",
+ "app_lines": [],
+ "teaser": [
+  "Tomorrow",
+  "Rip currents"
+ ],
+ "lines": [
+  "Straight legs. That's why small bumps throw you.",
+  "Follow, I fix one surf mistake a day.",
+  "Locked knees can't soak up the bump.",
+  "Three fixes.",
+  "One. Same bump, soft knees.",
+  "Two. Sit low, like there's a chair behind you.",
+  "Three. Film a wave. SurfTribe shows your knee angle.",
+  "Tomorrow: rip currents. Follow so you don't miss it."
+ ],
+ "titles": {
+  "L1": [
+   "Why bumps<br>throw",
+   "you",
+   null,
+   null
+  ],
+  "L2": [
+   "Follow",
+   "SurfTribe",
+   null,
+   null
+  ],
+  "L3": [
+   "Locked knees",
+   "",
+   null,
+   "X"
+  ],
+  "L4": [
+   "<span style='color:#00E4FF'>3</span> fixes",
+   "",
+   null,
+   null
+  ],
+  "L5": [
+   "Same",
+   "bump",
+   null,
+   null
+  ],
+  "L6": [
+   "Sit",
+   "low",
+   null,
+   "CK"
+  ],
+  "L7": [
+   "Knee angle",
+   "175°",
+   null,
+   null
+  ]
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1h.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A3.mp4",
+    "a": 0.6,
+    "z": 1.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1r.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B4t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_split.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B2t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_end.mp4",
+    "a": 0.3,
+    "z": 1.0
+   }
+  ]
+ },
+ "ttop": {},
+ "v2subs": {
+  "L1": [
+   "straight legs"
+  ],
+  "L3": [
+   "soak up the bump"
+  ],
+  "L6": [
+   "chair behind you"
+  ]
+ },
+ "extra": [
+  {
+   "k": "RING3",
+   "line": "L3",
+   "d0": 0.35,
+   "html": "<div style='position:absolute;left:383px;top:956px;width:280px;height:280px;border-radius:50%;border:10px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
+  },
+  {
+   "k": "LABL5",
+   "line": "L5",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:68px;width:400px;display:flex;justify-content:center'><span style=\"display:inline-flex;align-items:center;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='52' height='52' viewBox='0 0 64 64'><path d='M12 12 L52 52 M52 12 L12 52' stroke='#2D242A' stroke-width='20' stroke-linecap='round'/><path d='M12 12 L52 52 M52 12 L12 52' stroke='#FF5150' stroke-width='12' stroke-linecap='round'/></svg><span>Stiff</span></span></div>"
+  },
+  {
+   "k": "LABR5",
+   "line": "L5",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:612px;width:400px;display:flex;justify-content:center'><span style=\"display:inline-flex;align-items:center;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>Soft</span></span></div>"
+  }
+ ]
+}
