@@ -1,2 +1,2 @@
-[silencedetect @ 0x78a4640021c0] silence_start: 17.159437
-[silencedetect @ 0x78a4640021c0] silence_end: 18.076 | silence_duration: 0.916562
+[silencedetect @ 0x73e11c0021c0] silence_start: 17.520437
+[silencedetect @ 0x73e11c0021c0] silence_end: 18.437 | silence_duration: 0.916562

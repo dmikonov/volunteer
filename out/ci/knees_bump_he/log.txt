@@ -1,19 +1,19 @@
 + k=/s17/rp/knees_bump_he
 + python3 build.py /s17/rp/knees_bump_he
-[('L1', 'n/kb_A3c.mp4', 0.0, 1.5, 0.0), ('L1', 'n/kb_A1k.mp4', 0.0, 1.651, 1.5), ('L2', 'n/kb_A1r.mp4', 0.0, 1.961, 3.151), ('L3', 'n/kb_B2t.mp4', 0.0, 1.923, 5.112), ('L4', 'kb_split.mp4', 0.0, 1.903, 7.035), ('L5', 'n/kb_B1s.mp4', 0.0, 2.019, 8.938), ('L6', 'n/kb_app.mp4', 0.0, 3.368, 10.957), ('L7', 'n/kb_end.mp4', 0.3, 1.577, 14.325), ('L8', 'n/kb_end.mp4', 1.7, 2.174, 15.902)]
-cat 18.04 T 18.076
+[('L1', 'n/kb_A3c.mp4', 0.0, 1.5, 0.0), ('L1', 'n/kb_A1k.mp4', 0.0, 1.651, 1.5), ('L2', 'n/kb_A1r.mp4', 0.0, 1.961, 3.151), ('L3', 'n/kb_B2t.mp4', 0.0, 1.923, 5.112), ('L4', 'kb_split.mp4', 0.0, 1.903, 7.035), ('L5', 'n/kb_B1s.mp4', 0.0, 2.019, 8.938), ('L6', 'n/kb_app.mp4', 0.0, 3.368, 10.957), ('L7', 'n/kb_end.mp4', 0.3, 1.938, 14.325), ('L8', 'n/kb_end.mp4', 1.7, 2.174, 16.263)]
+cat 18.4 T 18.437
 + python3 ov_png.py /s17/rp/knees_bump_he
-realcuts True [0.0, 3.16, 5.12, 7.04, 8.96, 10.96, 14.32, 15.88, 18.076]
+realcuts True [0.0, 3.16, 5.12, 7.04, 8.96, 10.96, 14.32, 16.24, 18.437]
 V2 SUB NOT IN VOICE L1 רגליים ישרות
 safe-zone violations []
 ovplan 20
 + python3 ov_ff.py /s17/rp/knees_bump_he
-done /s17/rp/knees_bump_he/reel_knees_bump_he.mp4 18.076 lufs before -15.5 gain 1.0
+done /s17/rp/knees_bump_he/reel_knees_bump_he.mp4 18.437 lufs before -15.6 gain 1.1
 + python3 trim_tail.py /s17/rp/knees_bump_he
-trimmed /s17/rp/knees_bump_he/reel_knees_bump_he.mp4 17.57
+trimmed /s17/rp/knees_bump_he/reel_knees_bump_he.mp4 17.93
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_bump_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_bump_he/reel_knees_bump_he.mp4
-/s17/rp/knees_bump_he/reel_knees_bump_he.mp4 before -13.1 after -14.5 peak -3.5
+/s17/rp/knees_bump_he/reel_knees_bump_he.mp4 before -13.0 after -14.5 peak -3.6
 + python3 post_cz.py /s17/rp/knees_bump_he
 post ok
 + echo 'EXIT /s17/rp/knees_bump_he 0'
