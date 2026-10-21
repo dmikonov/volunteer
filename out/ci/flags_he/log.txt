@@ -1,18 +1,18 @@
 + k=/s17/rp/flags_he
 + python3 build.py /s17/rp/flags_he
-[('L1', 'fl_black.mp4', 0.0, 2.587, 0.0), ('L2', 'fl_three.mp4', 0.0, 1.766, 2.587), ('L3', 'fl_white.mp4', 0.0, 2.465, 4.353), ('L4', 'n/fl_red.mp4', 0.0, 1.4, 6.818), ('L4', 'fl_coach.mp4', 0.0, 1.617, 8.218), ('L5', 'l_black2.mp4', 0.0, 1.4, 9.835), ('L5', 'n/fl_sit.mp4', 0.0, 1.82, 11.235), ('L6', 'n/fl_sit.mp4', 2.0, 1.0, 13.055), ('L6', 'app_he14.mp4', 0.0, 2.368, 14.055), ('L7', '/fl_rain.mp4', 0.0, 4.391, 16.423)]
-cat 20.84 T 20.814
+[('L1', 'fl_black.mp4', 0.0, 2.587, 0.0), ('L2', 'fl_three.mp4', 0.0, 1.766, 2.587), ('L3', 'fl_white.mp4', 0.0, 2.465, 4.353), ('L4', 'n/fl_red.mp4', 0.0, 1.4, 6.818), ('L4', 'fl_coach.mp4', 0.0, 1.461, 8.218), ('L5', 'l_black2.mp4', 0.0, 1.4, 9.679), ('L5', 'n/fl_sit.mp4', 0.0, 1.82, 11.079), ('L6', 'n/fl_sit.mp4', 2.0, 1.0, 12.899), ('L6', 'app_he14.mp4', 0.0, 2.368, 13.899), ('L7', '/fl_rain.mp4', 0.0, 4.391, 16.267)]
+cat 20.72 T 20.658
 + python3 ov_png.py /s17/rp/flags_he
-realcuts True [0.0, 2.6, 4.36, 6.84, 9.84, 13.08, 16.44, 20.814]
+realcuts True [0.0, 2.6, 4.36, 6.84, 9.72, 12.96, 16.32, 20.658]
 safe-zone violations []
 ovplan 28
 + python3 ov_ff.py /s17/rp/flags_he
-done /s17/rp/flags_he/reel_flags_he.mp4 20.814 lufs before -15.5 gain 1.0
+done /s17/rp/flags_he/reel_flags_he.mp4 20.658 lufs before -15.5 gain 1.0
 + python3 trim_tail.py /s17/rp/flags_he
-trimmed /s17/rp/flags_he/reel_flags_he.mp4 20.26
+trimmed /s17/rp/flags_he/reel_flags_he.mp4 20.1
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/flags_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/flags_he/reel_flags_he.mp4
-/s17/rp/flags_he/reel_flags_he.mp4 before -13.0 after -14.5 peak -2.8
+/s17/rp/flags_he/reel_flags_he.mp4 before -13.0 after -14.5 peak -3.1
 + python3 post_cz.py /s17/rp/flags_he
 post ok
 + echo 'EXIT /s17/rp/flags_he 0'
