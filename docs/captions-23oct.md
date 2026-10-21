@@ -19,17 +19,18 @@
 #גלישה #גלישתגלים #מתחילים_בגלישה #טיפיםלגלישה #SurfTribe
 ```
 
-## EN (@surftribe_world)
+## EN (@surftribe_world, новый концепт, Daily fix #3, foam_en2)
 ```
-New to surfing? The foam isn't just for day one.
+Foam isn't just for day one. Most beginners paddle out too soon.
 
+Three fixes:
 1. Pop up on every foam wave
-2. Once you're up, angle the board along the foam
-3. Ten rides in the foam beat an hour waiting out back
+2. Angle the board along the foam
+3. Ten foam rides beat an hour waiting out back
 
 Every foam wave is one more pop up. That's how it gets automatic before you paddle out to green waves.
-Not sure you're ready to paddle out? Ask the coach in SurfTribe.
-Save this for your next session.
+Not sure you're ready? Ask the SurfTribe coach.
+Follow for one surf fix a day. Tomorrow: which wave in a set is yours.
 
 Voiceover and all surf shots made with AI.
 

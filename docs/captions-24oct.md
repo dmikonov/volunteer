@@ -25,17 +25,18 @@
 - Нет флага: нет спасателя (в подписи).
 - Интеграция: экран приложения «מעלה וידאו... / הניתוח רץ» (запись 28.09 10:56 1_4, 16.9-18.9 с), голос «בסרף טרייב מצלמים גל ומקבלים תיקון».
 
-## EN (@surftribe_world, Daily fix #4, «The biggest wave in the set isn't yours»)
+## EN (@surftribe_world, Daily fix #4, «The biggest wave in the set isn't yours», sets_en)
 ```
 Guess which wave in the set is yours. Hint: not the biggest one.
 
-1. Let the big one go to the pack
+Three rules:
+1. Let the big one go
 2. Take a smaller one nobody's paddling for
 3. Someone already up? Pull back
 
 The biggest wave of a set usually breaks furthest out, where the experienced surfers sit. Chase it from the inside and it breaks right on you.
 After your session, SurfTribe maps where you rode the wave.
-Follow for one surf fix a day. Tomorrow: same beach, three hours later, a different wave.
+Follow for one surf fix a day. Tomorrow: how the tide changes your spot.
 
 Voiceover and all surf shots made with AI.
 
