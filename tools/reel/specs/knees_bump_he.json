@@ -43,14 +43,6 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/a2c3ee7621ccf7c3142047d0ba2bd13a93f3ebc6c168d995e276d4092940c607/tmpbslk349k.wav"
   ],
   [
-   6,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/c0a8a466c9b75a7b32692fd5383eead7156afcfcca61ec78115438e1d90a2b15/tmpwuc1xwx0.wav"
-  ],
-  [
-   6,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/9c62b7e3d0bf834689308fdd7ce7c230563c6729510846253699f18f5c447f6e/tmpxefp3kf8.wav"
-  ],
-  [
    7,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/541467a1af73444b1b8f4e24b538c400ffd326332ebf3445635f220217015368/tmpmuc9bqna.wav"
   ],
@@ -81,6 +73,18 @@
   [
    5,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0c810ff66746424f17eea9792c1901eb0cad1d0dd42388095d66bf3e9e5c9ce1/tmp9b3zd6i4.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d340ace9613eca7f0310d916faeb6b3f123497d8326b2bd2bffec808766ead3f/tmp__bugsp8.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/b9a1f34f3e663615568e6011093680ed3562413370c943647f48652840e0a159/tmpb0z3ewkg.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/186c52089806424d14af279027e6fcb46ba8aa698773d5c82cdde5206b48e2c5/tmpch0ivddl.wav"
   ]
  ],
  "style": "v2",
@@ -109,7 +113,7 @@
   "אחת, ברכיים גמישות.",
   "שתיים, יושבים נמוך, כמו על כיסא.",
   "שלוש, מצלמים, ובסרף טרייב רואים את זווית הברך.",
-  "מחר: זרם סחף.",
+  "מחר: איך מזהים זרם סחף.",
   "עקבו כדי לא לפספס."
  ],
  "titles": {
