@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.72 dur=2.94 | ref: Straight legs. That's why small bumps throw you. | asr: Straight legs, that's why small bumps throw you.
+L2 OK match=1.00 wps=3.12 dur=2.56 | ref: Follow, I fix one surf mistake a day. | asr: Follow, I fix one surf mistake a day.
+L3 OK match=1.00 wps=3.35 dur=2.09 | ref: Locked knees can't soak up the bump. | asr: Locked knees can't soak up the bump.
+L4 OK match=1.00 wps=1.55 dur=1.29 | ref: Three fixes. | asr: Three fixes.
+L5 OK match=1.00 wps=2.31 dur=2.17 | ref: One. Same bump, soft knees. | asr: One same bump, soft knees.
+L6 OK match=0.94 wps=2.99 dur=3.02 | ref: Two. Sit low, like there's a chair behind you. | asr: 2. Sit low, like there's a chair behind you.
+L7 OK match=1.00 wps=2.56 dur=3.52 | ref: Three. Film a wave. SurfTribe shows your knee angle. | asr: Three, film a wave. Surf tribe shows your knee angle.
+L8 OK match=1.00 wps=2.80 dur=3.21 | ref: Tomorrow: rip currents. Follow so you don't miss it. | asr: Tomorrow, rip currents. Follow so you don't miss it.
+TOTAL wps=2.74 lines_to_check=0
