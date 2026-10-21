@@ -1,0 +1,7 @@
+# vgen bridge jobs 21.10 11:35 (staging.surftribe.rest/api/vgen, reachable only via Composio sandbox)
+stiff c1b92e57053a
+stiff 0db44785a0e0
+ride f7693e542e75
+ride 74af79eb3512
+center 5c8b249a19bd
+arms 7cba3bbd28c4
