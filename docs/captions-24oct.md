@@ -27,15 +27,15 @@
 
 ## EN (@surftribe_world, Daily fix #4, «The biggest wave in the set isn't yours», sets_en)
 ```
-Guess which wave in the set is yours. Hint: not the biggest one.
+Guess which wave in the set is yours.
 
-Three rules:
-1. Let the big one go
-2. Take a smaller one nobody's paddling for
-3. Someone already up? Pull back
+You chase the biggest one, and it breaks right on you. Three fixes:
+1. The first big wave belongs to the surfers sitting further out
+2. Go for the smaller wave with nobody on it
+3. If someone's already riding, back off
 
-The biggest wave of a set usually breaks furthest out, where the experienced surfers sit. Chase it from the inside and it breaks right on you.
-After your session, SurfTribe maps where you rode the wave.
+The biggest wave of a set usually breaks furthest out, where the experienced surfers sit.
+After your session, SurfTribe shows where on the wave you rode.
 Follow for one surf fix a day. Tomorrow: how the tide changes your spot.
 
 Voiceover and all surf shots made with AI.

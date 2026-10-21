@@ -21,15 +21,15 @@
 
 ## EN (@surftribe_world, новый концепт, Daily fix #3, foam_en2)
 ```
-Foam isn't just for day one. Most beginners paddle out too soon.
+Foam isn't just for day one. You're paddling out too soon.
 
 Three fixes:
-1. Pop up on every foam wave
-2. Angle the board along the foam
-3. Ten foam rides beat an hour waiting out back
+1. Stand up on every whitewater wave
+2. Once you're up, turn and ride across the foam
+3. Ten rides in the whitewater teach more than an hour waiting out back
 
 Every foam wave is one more pop up. That's how it gets automatic before you paddle out to green waves.
-Not sure you're ready? Ask the SurfTribe coach.
+Not sure you're ready? Ask the coach in SurfTribe.
 Follow for one surf fix a day. Tomorrow: which wave in a set is yours.
 
 Voiceover and all surf shots made with AI.
