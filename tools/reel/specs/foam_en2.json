@@ -7,7 +7,7 @@
  "app_top": 340,
  "no_marka": true,
  "hook_cy": true,
- "recap_top": 620,
+ "recap_top": 880,
  "badge": [
   "DAILY FIX",
   "#3"
@@ -23,12 +23,12 @@
  "lines": [
   "Foam isn't just for day one.",
   "Follow. One surf fix a day.",
-  "Most beginners paddle out too soon.",
+  "You're paddling out too soon.",
   "Three fixes.",
   "One. Pop up on every foam wave.",
-  "Two. Angle the board along the foam.",
+  "Two. Ride the foam on an angle.",
   "Three. Ten foam rides beat an hour out back.",
-  "Ask the SurfTribe coach if you're ready.",
+  "Ask the SurfTribe coach.",
   "Tomorrow: which wave is yours. Follow so you don't miss it."
  ],
  "titles": {
@@ -45,8 +45,8 @@
    null
   ],
   "L3": [
-   "THE MISTAKE:",
-   "PADDLING OUT TOO SOON",
+   "PADDLING OUT",
+   "TOO SOON?",
    null,
    "X"
   ],
@@ -57,8 +57,8 @@
    "CK"
   ],
   "L6": [
-   "ANGLE THE BOARD",
-   "ALONG THE FOAM",
+   "RIDE IT",
+   "ON AN ANGLE",
    "2",
    "CK"
   ],
@@ -225,14 +225,14 @@
     "kind": "app",
     "src": "/s17/gen/app_en.mp4",
     "a": 0.0,
-    "z": 1.0,
+    "z": 1.15,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.47,
+     0.52
     ]
    }
   ],
@@ -286,6 +286,7 @@
  },
  "gap": 0.14,
  "ttop": {
+  "L5": 820,
   "L6": 760
  },
  "music_vol": 0.7,
