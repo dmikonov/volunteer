@@ -43,7 +43,7 @@ v3 (18.10, после ревизора): реальные клипы 17.10 не 
 ## 22.10 ночью: колени заново по рецепту (claude/reel-watchability.md)
 | Дата | Аккаунт | Тема | Файлы | Превью | Статус |
 |---|---|---|---|---|---|
-| Чт 22.10 | EN | Knees «small bump», Daily fix | out/ci/knees_bump_en/reel_knees_bump_en.mp4 | см. сообщение Диме 22.10 | собран 22.10 ночью, стиль v2, ждёт ок Димы. knees_en3 («Stop standing tall») отклонён Димой 21.10, не публиковать |
-| Чт 22.10 | HE | ברכיים, גל קטן מפיל | out/ci/knees_bump_he/reel_knees_bump_he.mp4 | см. сообщение Диме 22.10 | собран 22.10 ночью, F5 голос 3, ждёт ок Димы |
+| Чт 22.10 | EN | Knees «small bump», Daily fix | out/ci/knees_bump_en/reel_knees_bump_en.mp4 (c39b8b8) | https://raw.githubusercontent.com/dmikonov/volunteer/c39b8b8935925844252f41b4b7bea3c4a5c30cdc/out/ci/knees_bump_en/prev.mp4 | собран 22.10 ночью, стиль v2, ждёт ок Димы. knees_en3 («Stop standing tall») отклонён Димой 21.10, не публиковать |
+| Чт 22.10 | HE | ברכיים, גל קטן מפיל | out/ci/knees_bump_he/reel_knees_bump_he.mp4 (c39b8b8) | https://raw.githubusercontent.com/dmikonov/volunteer/c39b8b8935925844252f41b4b7bea3c4a5c30cdc/out/ci/knees_bump_he/prev.mp4 | собран 22.10 ночью, F5 голос 3, ждёт ок Димы |
 Подписи: docs/captions-22oct-bump.md. Клипы: assets/knees4/ (kb_A1, kb_A3, kb_B1, kb_B2, kb_B4, kb_end; брак не взят: kb_A2, kb_B3, kb_A5), стартовый кадр Z-Image seed 221022. Интеграция: разбор, повтор GAL с углом колена (запись 12.10, 55.8-58.8 с).
 Запас 23-25.10 пуст: все прежние версии в старом дизайне (не публиковать). D+3 (25.10) этой ночью не собран, см. сообщение Диме. Заготовки для «sets» (25.10 EN): assets/sets5/st_set1.mp4 (сет из 2 волн, годен 0-3.3 с), st_lineup.mp4 (райдер едет, остальные сидят, годен 0-2.7 с), st_small.mp4 (новичок на маленькой волне, люди на фоне исчезают: брать только с кропом).
