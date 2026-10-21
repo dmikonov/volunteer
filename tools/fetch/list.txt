@@ -3,5 +3,3 @@ look2/g_bridge2.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--rep
 look2/g_lift.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/jfj2t/gradio_api/file=/tmp/gradio/092912781fc1ab63a9b9c22ed33cbade262a7b52501e0f3004c3bada68e6316f/tmpod2_0fqv.mp4
 knees3/kn3_stiff_up3101.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/72dgc/gradio_api/file=/tmp/gradio/58d6358a7a9133e4f142cff6c9edaa8afd92989b077be1405847fff72fb1de0f/tmpazcuss4l.mp4
 knees3/kn3_center_up3201.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/72dgc/gradio_api/file=/tmp/gradio/fdb57d20794a57472bcd5bf70d5596aa73909da1a5926a38afe2b44eaa6fc622/tmpv_v8i77n.mp4
-knees3/kn3_stiff_vg1.mp4 https://staging.surftribe.rest/api/vgen/file/c1b92e57053a.mp4?token=l2OKV8vwXmtcGzJLx8ZoTdPhXzUS0Shi
-knees3/kn3_stiff_vg2.mp4 https://staging.surftribe.rest/api/vgen/file/0db44785a0e0.mp4?token=l2OKV8vwXmtcGzJLx8ZoTdPhXzUS0Shi
