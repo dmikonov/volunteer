@@ -3,7 +3,7 @@
  "out": "reel_flags_he.mp4",
  "f5": true,
  "app_lines": [
-  "L5"
+  "L6"
  ],
  "app_top": 340,
  "no_marka": true,
@@ -24,9 +24,10 @@
  },
  "lines": [
   "נחשו מה דגל שחור אומר למתחילים.",
+  "ככה קוראים את הדגלים.",
   "אחת, דגל לבן: יש מציל, נכנסים.",
-  "שתיים, דגל אדום: ים מסוכן, מתחילים רק עם מדריך.",
-  "שלוש, דגל שחור: אסור להיכנס. מתחילים על החוף.",
+  "שתיים, דגל אדום: מתחילים רק עם מדריך.",
+  "שלוש, דגל שחור: אסור להיכנס, מתחילים בחוף.",
   "אגב, בסרף טרייב מצלמים גל ומקבלים תיקון.",
   "מחר: ים אחרי הגשם הראשון. עקבו כדי לא לפספס."
  ],
@@ -41,43 +42,63 @@
   ],
   [
    1,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/f32b3ef1fdeee355523b93d1e2a8c95b0c83f387d5af6aa64fcfc330f1c4b7df/tmpihfcxy0g.wav"
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/cfddc8caca884fbd630a196463bb9959915ea83070cacdf2707ceea2d8ab82ac/tmpuy6dnz82.wav"
   ],
   [
    1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/95e63e6374195a4930dea7c306815b4924dc6a7125ec4debd23ef220b7c4ad61/tmp1g7lmzok.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/f32b3ef1fdeee355523b93d1e2a8c95b0c83f387d5af6aa64fcfc330f1c4b7df/tmpihfcxy0g.wav"
+  ],
+  [
+   2,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/64dfec43eb56d447ec92d0c919fa7ece87435f8776b1544941c4d55e4b56cbe8/tmpvrhdldur.wav"
   ],
   [
-   2,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/e0df805747a61517ea4d034e876fab7902ecef92b15d777d076966865d133a8d/tmpiu0y8f2w.wav"
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/dab785c915040f48305ddf348cf0bab87ad9c1c2f518a1627d31b2492d1a5114/tmpjbksf5nu.wav"
   ],
   [
-   2,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/370cb19208c33043bfbee0dad376da047f0d6c3faf2e4215eb706929fb85d29f/tmpwg3k7x2o.wav"
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/a50a3aa16f9cdfc2903eaaa2ebc60c198a75e7710c794c1cb604550a73145580/tmpm20232t4.wav"
   ],
   [
    4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/8861b97968e53b81c6b942262b8b13e32ef76b12b1e2e687d6406699052f2c59/tmpfy7mbnpe.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/bdce6477ee4f2d92018d104d2c528feb96e65de865bb42f279d5de983d8d5ca7/tmp7nef9_yf.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/8bc785c9384a39cb5cf8dcb549f6289bb92731b6afc1e863165815bc98518ba8/tmpoiwi_x4p.wav"
+  ],
+  [
+   5,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d35bba51f3cf2977e87639ba1bdd527f65f3b2a16d9204eb1aa4d01444548ff0/tmp4vzunula.wav"
   ],
   [
-   4,
+   5,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d780532676ba0400290b51c05fd8936d23aafffef496b78e3ce40024fea082e2/tmp62fmy7m5.wav"
   ],
   [
-   5,
+   6,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0bd6b4cde73fad1607ba07e9f20cc70404f3a562c28ddde407698274227cb34d/tmpuqsekric.wav"
   ],
   [
-   5,
+   6,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fb01fd5dfa631677acb734e2e3ea4443fff5b859f889cd09c800aee2e8f70462/tmpqmkcq5a9.wav"
   ],
   [
-   3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/809a1b5b07a6f6c3696abd870f8e37d95f55706248e8a16b57e91bf40fe61a0d/tmpjyou2k_5.wav"
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d1305e23e5de6cb50ce896f4634b2a5c2b1c25170278af8f9f6aaab3d8909317/tmppqr3vzz3.wav"
   ],
   [
-   3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/3d77e074fe48110d9e568b8f38c7afb0d0644c29230264b3ff2b4b6a36c682b7/tmp7q3jlvks.wav"
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/313d99a13f8e2882deed4c53ad11eea998d45ef82e554f70990af68818ac7d55/tmpm2f0sr_z.wav"
   ]
  ],
  "titles": {
@@ -88,24 +109,30 @@
    null
   ],
   "L2": [
+   "ככה קוראים",
+   "את הדגלים",
+   null,
+   null
+  ],
+  "L3": [
    "דגל לבן",
    "יש מציל, נכנסים",
    "1",
    "CK"
   ],
-  "L3": [
+  "L4": [
    "דגל אדום",
-   "מתחילים רק עם מדריך",
+   "רק עם מדריך",
    "2",
    "WARN"
   ],
-  "L4": [
+  "L5": [
    "דגל שחור",
-   "מתחילים נשארים בחוף",
+   "מתחילים בחוף",
    "3",
    "WARN"
   ],
-  "L5": [
+  "L6": [
    "מצלמים גל",
    "מקבלים תיקון אחד",
    null,
@@ -136,7 +163,7 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fl_white.mp4",
+    "src": "/s17/gen/fl_three.mp4",
     "a": 0.0,
     "z": 1.05,
     "cx": [
@@ -152,6 +179,22 @@
   "L3": [
    {
     "kind": "gen",
+    "src": "/s17/gen/fl_white.mp4",
+    "a": 0.0,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
     "src": "/s17/gen/fl_red.mp4",
     "a": 0.0,
     "z": 1.05,
@@ -163,7 +206,7 @@
      0.45,
      0.45
     ],
-    "dd": 1.5
+    "dd": 1.4
    },
    {
     "kind": "gen",
@@ -180,21 +223,21 @@
     ]
    }
   ],
-  "L4": [
+  "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fl_black.mp4",
-    "a": 1.8,
-    "z": 1.08,
+    "src": "/s17/gen/fl_black2.mp4",
+    "a": 0.0,
+    "z": 1.05,
     "cx": [
-     0.47,
-     0.47
-    ],
-    "cy": [
      0.5,
      0.5
     ],
-    "dd": 1.3
+    "cy": [
+     0.45,
+     0.45
+    ],
+    "dd": 1.4
    },
    {
     "kind": "gen",
@@ -211,7 +254,7 @@
     ]
    }
   ],
-  "L5": [
+  "L6": [
    {
     "kind": "gen",
     "src": "/s17/gen/fl_sit.mp4",
@@ -242,7 +285,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/fl_rain.mp4",
@@ -262,9 +305,10 @@
  "gap": 0.3,
  "ttop": {
   "L1": 980,
-  "L2": 950,
+  "L2": 980,
   "L3": 950,
-  "L4": 980
+  "L4": 950,
+  "L5": 980
  },
  "music_vol": 0.7,
  "f5_speed": 0.9

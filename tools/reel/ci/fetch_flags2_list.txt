@@ -1,0 +1,2 @@
+fl_three https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/rfj8v/gradio_api/file=/tmp/gradio/43bcb4e9fd896ba56a7cf1b9b1188591817e1ab43c96eeccd58bd4cc5445839b/tmpzdytw028.mp4
+fl_black2 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/rfj8v/gradio_api/file=/tmp/gradio/1f9a755206d31644e7f8c2ebc44923c57843c11134555cda54328999b38f7185/tmps_k_9moc.mp4
