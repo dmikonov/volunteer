@@ -4,6 +4,6 @@ L3 OK match=1.00 wps=2.32 dur=1.72 | ref: ככה מתקנים, שלושה צעד
 L4 CHECK match=0.74 wps=2.96 dur=1.01 | ref: אחת, ברכיים גמישות. | asr: פרקיים גמישות
 L5 OK match=1.00 wps=3.30 dur=1.82 | ref: שתיים, יושבים נמוך, כמו על כיסא. | asr: שתיים יושבים נמוך כמו על כיסא
 L6 OK match=1.00 wps=2.53 dur=3.17 | ref: שלוש, מצלמים, ובסרף טרייב רואים את זווית הברך. | asr: שלוש מצלמים ובסרף טרייב רואים את זווית הברך
-L7 CHECK match=0.00 wps=5.47 dur=0.55 | ref: מחר: זרם סחף. | asr: 
+L7 OK match=0.90 wps=3.63 dur=1.38 | ref: מחר: איך מזהים זרם סחף. | asr: איך מזהים זרם סחף?
 L8 OK match=1.00 wps=3.41 dur=1.17 | ref: עקבו כדי לא לפספס. | asr: עקבו כדי לא לפספס.
-TOTAL wps=3.02 lines_to_check=2
+TOTAL wps=2.98 lines_to_check=1
