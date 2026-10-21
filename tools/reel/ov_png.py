@@ -224,7 +224,7 @@ for _i, (k, a, b) in enumerate(ON):  # keep the pop frames (a, b) glued to the s
   # cards switch exactly on the cut frame
 if V2:
     ON = [(k, a, b) for k, a, b in ON if not k.startswith(('BADGE', 'FBTN', 'MARK')) and (k in cards)]
-    ON += [('GRAD', a, b) for k, a, b in ON if k.startswith(('T', 'RECAP'))]
+    ON = [('GRAD', a, b) for k, a, b in ON if k.startswith(('T', 'RECAP'))] + ON  # gradient goes UNDER the text (was drawn on top and greyed the titles, 21.10)
     ON += [(kk, s0, s1) for kk, ch, s0, s1 in V2SUB]
 else: ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
