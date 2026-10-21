@@ -4,11 +4,12 @@ G=/s17/gen; mkdir -p $G
 for c in A3 B2 end; do cp assets/knees4/kb_$c.mp4 $G/kb_$c.mp4; done
 # trimmed copies: the builder holds the last frame when the voice line is longer than the source
 ffmpeg -v error -y -i assets/knees4/kb_A1.mp4 -t 0.85 -c:v libx264 -crf 12 $G/kb_A1h.mp4   # rise with straight legs, board kicks, thrown
-ffmpeg -v error -y -i assets/knees4/kb_A1.mp4 -t 0.56 -c:v libx264 -crf 12 $G/kb_A1r.mp4   # replay, stops on the locked-knees frame
+ffmpeg -v error -y -i assets/knees4/kb_A1.mp4 -t 0.72 -c:v libx264 -crf 12 $G/kb_A1r.mp4   # replay, stops on the locked-knees frame
 ffmpeg -v error -y -ss 0.9 -i assets/knees4/kb_A3.mp4 -t 1.5 -c:v libx264 -crf 12 $G/kb_A3c.mp4   # rides up, legs straighten
 ffmpeg -v error -y -ss 0.45 -i assets/knees4/kb_A1.mp4 -t 0.4 -c:v libx264 -crf 12 $G/kb_A1k.mp4  # board kicks, thrown
 ffmpeg -v error -y -ss 0.5 -i assets/knees4/kb_B4.mp4 -t 0.95 -c:v libx264 -crf 12 $G/kb_B4t.mp4  # sinks low
 ffmpeg -v error -y -i assets/knees4/kb_B2.mp4 -t 0.62 -c:v libx264 -crf 12 $G/kb_B2t.mp4   # low stance, before the board turns
+ffmpeg -v error -y -ss 0.55 -i assets/knees4/kb_B1.mp4 -t 0.75 -c:v libx264 -crf 12 $G/kb_B1s.mp4  # steady low stance
 # split: left = stiff (A1 0-0.85 then hold), right = soft knees (B1 0-1.7 then hold), same start frame = same bump
 ffmpeg -v error -y -i assets/knees4/kb_A1.mp4 -i assets/knees4/kb_B1.mp4 -filter_complex "\
 [0:v]trim=0:0.85,setpts=PTS-STARTPTS,fps=25,scale=-2:1920:flags=lanczos,crop=536:1920:(iw-536)*0.62,tpad=stop_mode=clone:stop_duration=3[l];\
