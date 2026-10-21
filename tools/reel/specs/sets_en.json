@@ -2,7 +2,7 @@
  "lang": "en",
  "out": "reel_sets_en.mp4",
  "app_lines": [
-  "L7"
+  "L8"
  ],
  "app_top": 340,
  "no_marka": true,
@@ -17,18 +17,19 @@
  },
  "teaser": [
   "TOMORROW",
-  "Same beach,<br>3 hours later,<br>a different wave",
+  "How the tide<br>changes your spot",
   "FOLLOW SO YOU DON'T MISS IT"
  ],
  "lines": [
   "Guess which wave is yours.",
   "Follow. One surf fix a day.",
   "Most beginners chase the biggest one. It breaks on them.",
-  "One. Let the big one go to the pack.",
+  "Three rules.",
+  "One. Let the big one go.",
   "Two. Take a smaller one nobody's paddling for.",
   "Three. Someone already up? Pull back.",
   "SurfTribe maps where you rode the wave.",
-  "Tomorrow: same beach, three hours later, a different wave. Follow so you don't miss it."
+  "Tomorrow: how the tide changes your spot. Follow so you don't miss it."
  ],
  "titles": {
   "L1": [
@@ -49,27 +50,33 @@
    null,
    "X"
   ],
-  "L4": [
+  "L5": [
    "LET THE BIG ONE GO",
    "TO THE PACK",
    "1",
    "CK"
   ],
-  "L5": [
+  "L6": [
    "TAKE A SMALLER ONE",
    "NOBODY'S PADDLING FOR",
    "2",
    "CK"
   ],
-  "L6": [
+  "L7": [
    "SOMEONE ALREADY UP?",
    "PULL BACK",
    "3",
    "CK"
   ],
-  "L7": [
+  "L8": [
    "WHERE YOU RODE",
    "THE WAVE",
+   null,
+   null
+  ],
+  "L4": [
+   "THREE RULES",
+   "",
    null,
    null
   ]
@@ -81,7 +88,7 @@
  "extra": [
   {
    "k": "RING",
-   "line": "L6",
+   "line": "L7",
    "d0": 0.6,
    "html": "<div style=\"position:absolute;top:560px;left:390px;width:440px;height:520px;border:14px solid #00d4ff;border-radius:50%;box-shadow:0 0 0 8px rgba(10,18,38,.45)\"></div>"
   }
@@ -133,12 +140,12 @@
      0.55,
      0.55
     ],
-    "dd": 1.0
+    "dd": 1.1
    },
    {
     "kind": "gen",
     "src": "/s17/gen/s_wipe.mp4",
-    "a": 1.4,
+    "a": 1.8,
     "z": 1.1,
     "cx": [
      0.5,
@@ -147,14 +154,13 @@
     "cy": [
      0.5,
      0.5
-    ]
-   }
-  ],
-  "L4": [
+    ],
+    "dd": 1.4
+   },
    {
     "kind": "gen",
-    "src": "/s17/gen/s_pass.mp4",
-    "a": 0.0,
+    "src": "/s17/gen/s_set.mp4",
+    "a": 2.2,
     "z": 1.1,
     "cx": [
      0.5,
@@ -167,6 +173,22 @@
    }
   ],
   "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_pass.mp4",
+    "a": 1.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
+   }
+  ],
+  "L6": [
    {
     "kind": "gen",
     "src": "/s17/gen/s_paddle.mp4",
@@ -182,7 +204,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/s_taken2.mp4",
@@ -198,7 +220,7 @@
     ]
    }
   ],
-  "L7": [
+  "L8": [
    {
     "kind": "app",
     "src": "/s17/gen/app_sets_en.mp4",
@@ -214,7 +236,7 @@
     ]
    }
   ],
-  "L8": [
+  "L9": [
    {
     "kind": "gen",
     "src": "/s17/gen/s_watch.mp4",
@@ -227,6 +249,22 @@
     "cy": [
      0.62,
      0.62
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/s_pass.mp4",
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
     ]
    }
   ]
