@@ -1,10 +1,11 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=3.17 dur=1.89 | ref: Foam isn't just for day one. | asr: Foam isn't just for day one.
-L2 OK match=1.00 wps=2.94 dur=2.04 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
-L3 OK match=1.00 wps=2.65 dur=2.27 | ref: Most beginners paddle out too soon. | asr: Most beginners paddle out too soon.
-L4 OK match=1.00 wps=2.93 dur=2.39 | ref: One. Pop up on every foam wave. | asr: One, pop up on every foam wave.
-L5 OK match=1.00 wps=2.79 dur=2.86 | ref: Two. Up? Angle the board along the foam. | asr: Two up, angle the board along the foam.
-L6 OK match=1.00 wps=3.06 dur=2.94 | ref: Three. Ten foam rides beat an hour out back. | asr: Three, ten foam rides beat an hour out back.
-L7 OK match=1.00 wps=3.06 dur=2.29 | ref: Ask the SurfTribe coach if you're ready. | asr: Ask the Surf Tribe coach if you're ready.
-L8 OK match=1.00 wps=3.38 dur=4.14 | ref: Tomorrow: which wave in a set is yours. Follow so you don't miss it. | asr: Tomorrow, which wave in a set is yours.  Follow so you don't miss it.
-TOTAL wps=3.03 lines_to_check=0
+L1 OK match=1.00 wps=3.09 dur=1.94 | ref: Foam isn't just for day one. | asr: Foam isn't just for day one.
+L2 OK match=1.00 wps=2.84 dur=2.12 | ref: Follow. One surf fix a day. | asr: Follow OneSurf Fix-A-Day.
+L3 OK match=1.00 wps=2.59 dur=2.31 | ref: Most beginners paddle out too soon. | asr: Most beginners paddle out too soon.
+L4 OK match=1.00 wps=1.52 dur=1.32 | ref: Three fixes. | asr: Three fixes.
+L5 OK match=1.00 wps=2.84 dur=2.46 | ref: One. Pop up on every foam wave. | asr: One, pop up on every foam wave.
+L6 OK match=0.93 wps=2.84 dur=2.46 | ref: Two. Angle the board along the foam. | asr: 2. Angle the board along the foam.
+L7 OK match=1.00 wps=2.96 dur=3.04 | ref: Three. Ten foam rides beat an hour out back. | asr: Three, ten foam rides beat an hour out back.
+L8 OK match=1.00 wps=2.90 dur=2.42 | ref: Ask the SurfTribe coach if you're ready. | asr: Ask the Surf Tribe coach if you're ready.
+L9 OK match=1.00 wps=2.94 dur=3.74 | ref: Tomorrow: which wave is yours. Follow so you don't miss it. | asr: Tomorrow, which wave is yours?  Follow so you don't miss it.
+TOTAL wps=2.80 lines_to_check=0
