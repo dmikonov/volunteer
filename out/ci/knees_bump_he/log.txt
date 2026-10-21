@@ -6,7 +6,7 @@ cat 18.4 T 18.437
 realcuts True [0.0, 3.16, 5.12, 7.04, 8.96, 10.96, 14.32, 16.24, 18.437]
 V2 SUB NOT IN VOICE L1 רגליים ישרות
 safe-zone violations []
-ovplan 20
+ovplan 18
 + python3 ov_ff.py /s17/rp/knees_bump_he
 done /s17/rp/knees_bump_he/reel_knees_bump_he.mp4 18.437 lufs before -15.6 gain 1.1
 + python3 trim_tail.py /s17/rp/knees_bump_he
