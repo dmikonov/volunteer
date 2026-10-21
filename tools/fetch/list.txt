@@ -2,3 +2,4 @@ knees4/kb_start.webp https://mcp-tools-z-image-turbo.hf.space/--replicas/d2t9n/g
 knees4/kb_A1.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/31376e3c09bfb238b3a87759638de1e6fae6fbbf736fec0c56643d0d9753c57e/tmp1eqe2tu6.mp4
 knees4/kb_B1.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/f8e1a1497010f1254d8ecc757719c45f4d8d0e2aa6e945050eb5f4d98c3dfed2/tmplo59468g.mp4
 knees4/kb_A2.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/f1560d03e3843d55c7a1fcdfdb8608f19d94ae63854838933da17d0c4657cdbb/tmp5b934l0d.mp4
+knees4/kb_B2.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/27f9feb632bc18032a2471e1118667f06aeaa389531034b08ec1616647accf5c/tmpb5lo0395.mp4
