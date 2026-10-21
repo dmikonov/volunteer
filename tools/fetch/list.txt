@@ -8,3 +8,4 @@ knees4/kb_B3.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replica
 knees4/kb_end.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/1f960d1938a0954ca4407515c243ff2d270048d440769f301a483996ca73ca15/tmpuio_wusc.mp4
 knees4/kb_B4.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/0956367b7aa4817c5193311c7cdba68d09f4ea67446b6364ac9e4115fbed0770/tmpkscz7f9x.mp4
 knees4/kb_A5.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/65060fee0e93bd1ec81c204843448a449299fb6e0b1f31a1302d98d01f17cc07/tmpjel1t02h.mp4
+sets5/st_set1.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/6c2cfec2faa7fc8854bf4c68cf8ba74a43c79437e847f227048e9298017345e6/tmpxls5e1wm.mp4
