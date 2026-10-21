@@ -4,6 +4,7 @@ set -e
 while read -r dest url; do
   [ -z "$dest" ] && continue; [[ "$dest" == \#* ]] && continue
   [ -f "assets/$dest" ] && continue
+  url="${url//__VGEN_TOKEN__/$VGEN_TOKEN}"  # bridge token comes from the repo secret VGEN_TOKEN, never written into list.txt
   mkdir -p "assets/$(dirname "$dest")"
   curl -sSL --retry 3 </dev/null -o "assets/$dest" "$url" || { echo "FAIL $dest"; rm -f "assets/$dest"; continue; }
   if [[ "$dest" == *.mp4 ]]; then
