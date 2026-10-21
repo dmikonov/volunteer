@@ -9,3 +9,5 @@ knees4/kb_end.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replic
 knees4/kb_B4.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/0956367b7aa4817c5193311c7cdba68d09f4ea67446b6364ac9e4115fbed0770/tmpkscz7f9x.mp4
 knees4/kb_A5.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/65060fee0e93bd1ec81c204843448a449299fb6e0b1f31a1302d98d01f17cc07/tmpjel1t02h.mp4
 sets5/st_set1.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/6c2cfec2faa7fc8854bf4c68cf8ba74a43c79437e847f227048e9298017345e6/tmpxls5e1wm.mp4
+sets5/st_lineup.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/ffffffe7fd53b46d6b6b820f8f5510d125e4c39c7e0f9d0170d97bf2020f8336/tmp2thso1wl.mp4
+sets5/st_small.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/jcrk6/gradio_api/file=/tmp/gradio/342cdf216564789b0c6d994f0bb4bf08808ddaaebdaf0824d7a8fc72f6fb3fd4/tmphbhprxrw.mp4
