@@ -7,7 +7,7 @@
  "app_top": 340,
  "no_marka": true,
  "hook_cy": true,
- "recap_top": 620,
+ "recap_top": 880,
  "badge": [
   "DAILY FIX",
   "#4"
@@ -23,8 +23,8 @@
  "lines": [
   "Guess which wave is yours.",
   "Follow. One surf fix a day.",
-  "Most beginners chase the biggest one. It breaks on them.",
-  "Three rules.",
+  "You chase the biggest one. It breaks on you.",
+  "Three fixes.",
   "One. Let the big one go.",
   "Two. Take a smaller one nobody's paddling for.",
   "Three. Someone already up? Pull back.",
@@ -45,8 +45,8 @@
    null
   ],
   "L3": [
-   "THE MISTAKE:",
-   "CHASING THE BIGGEST",
+   "CHASING",
+   "THE BIGGEST?",
    null,
    "X"
   ],
@@ -69,13 +69,13 @@
    "CK"
   ],
   "L8": [
-   "WHERE YOU RODE",
-   "THE WAVE",
+   "SEE WHERE",
+   "YOU RODE IT",
    null,
    null
   ],
   "L4": [
-   "THREE RULES",
+   "THREE FIXES",
    "",
    null,
    null
@@ -92,6 +92,24 @@
    "d0": 0.6,
    "html": "<div style=\"position:absolute;top:560px;left:390px;width:440px;height:520px;border:14px solid #00d4ff;border-radius:50%;box-shadow:0 0 0 8px rgba(10,18,38,.45)\"></div>",
    "d1": 2.1
+  },
+  {
+   "k": "LAB",
+   "line": "L1",
+   "d0": 0.0,
+   "html": "<div style=\"position:absolute;top:560px;left:84px;width:76px;height:76px;border-radius:50%;background:#00d4ff;color:#0a1226;font-weight:800;font-size:50px;line-height:76px;text-align:center;box-shadow:0 0 0 6px rgba(10,18,38,.55)\">1</div><div style=\"position:absolute;top:840px;left:84px;width:76px;height:76px;border-radius:50%;background:#00d4ff;color:#0a1226;font-weight:800;font-size:50px;line-height:76px;text-align:center;box-shadow:0 0 0 6px rgba(10,18,38,.55)\">2</div><div style=\"position:absolute;top:1180px;left:84px;width:76px;height:76px;border-radius:50%;background:#00d4ff;color:#0a1226;font-weight:800;font-size:50px;line-height:76px;text-align:center;box-shadow:0 0 0 6px rgba(10,18,38,.55)\">3</div>"
+  },
+  {
+   "k": "YRING",
+   "line": "L6",
+   "d0": 1.75,
+   "html": "<div style=\"position:absolute;top:760px;left:150px;width:640px;height:240px;border:14px solid #00d4ff;border-radius:50%;box-shadow:0 0 0 8px rgba(10,18,38,.45)\"></div>"
+  },
+  {
+   "k": "YOURS",
+   "line": "L6",
+   "d0": 1.75,
+   "html": "<div style=\"position:absolute;top:1040px;left:0;right:0;text-align:center\"><div style=\"display:inline-block;padding:22px 32px;border-radius:24px;background:rgba(10,18,38,.80);font-family:R;font-weight:800;font-size:58px;line-height:1.15;color:#fff\">YOURS:<br><span style=\"color:#00d4ff\">THE SMALLER ONE</span></div></div>"
   }
  ],
  "plan": {
@@ -100,14 +118,14 @@
     "kind": "gen",
     "src": "/s17/gen/s_set.mp4",
     "a": 0.0,
-    "z": 1.1,
+    "z": 1.0,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.55,
-     0.55
+     0.5,
+     0.5
     ]
    }
   ],
@@ -141,7 +159,7 @@
      0.55,
      0.55
     ],
-    "dd": 1.1
+    "dd": 1.2
    },
    {
     "kind": "gen",
@@ -156,12 +174,12 @@
      0.5,
      0.5
     ],
-    "dd": 1.4
+    "dd": 0.35
    },
    {
     "kind": "gen",
     "src": "/s17/gen/s_set.mp4",
-    "a": 2.2,
+    "a": 1.9,
     "z": 1.1,
     "cx": [
      0.5,
@@ -207,16 +225,16 @@
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/s_paddle.mp4",
-    "a": 1.6,
-    "z": 1.5,
+    "src": "/s17/gen/s_set.mp4",
+    "a": 0.3,
+    "z": 1.0,
     "cx": [
-     0.55,
-     0.55
+     0.5,
+     0.5
     ],
     "cy": [
-     0.55,
-     0.55
+     0.5,
+     0.5
     ]
    }
   ],
@@ -241,14 +259,14 @@
     "kind": "app",
     "src": "/s17/gen/app_sets_en.mp4",
     "a": 0.0,
-    "z": 1.0,
+    "z": 1.2,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.46,
+     0.52
     ]
    }
   ],
@@ -256,7 +274,7 @@
    {
     "kind": "gen",
     "src": "/s17/gen/s_watch.mp4",
-    "a": 1.6,
+    "a": 1.2,
     "z": 1.25,
     "cx": [
      0.5,
@@ -266,28 +284,13 @@
      0.62,
      0.62
     ],
-    "dd": 1.7
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/s_taken.mp4",
-    "a": 0.0,
-    "z": 1.0,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ],
-    "dd": 1.5
+    "dd": 2.3
    },
    {
     "kind": "gen",
     "src": "/s17/gen/s_set.mp4",
-    "a": 0.4,
-    "z": 1.4,
+    "a": 2.0,
+    "z": 1.6,
     "cx": [
      0.5,
      0.5
