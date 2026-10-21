@@ -135,12 +135,6 @@
    null,
    null
   ],
-  "L4": [
-   "אותו",
-   "גל",
-   null,
-   null
-  ],
   "L5": [
    "יושבים",
    "נמוך",
@@ -259,7 +253,7 @@
    "k": "LABR4",
    "line": "L4",
    "d0": 0.05,
-   "html": "<div style='position:absolute;top:500px;left:612px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>רך</span></span></div>"
+   "html": "<div style='position:absolute;top:500px;left:552px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>רך</span></span></div>"
   }
  ],
  "v2_sub_top": 465
