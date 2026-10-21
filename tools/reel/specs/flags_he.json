@@ -74,10 +74,6 @@
   ],
   [
    3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/00ade0b8cb5945dbc1af3125b92ecc739d81fcd80f86062664c477320e8e21fc/tmpidxmymxs.wav"
-  ],
-  [
-   3,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/43d22a7c3d4cdbf906e9226d24a428a3c63fde8497f36755c392954ae4eb1b5b/tmpp9l9vu85.wav"
   ],
   [
@@ -341,7 +337,6 @@
  "gap_after": {
   "L5": 1.5
  },
- "app_sub_top": 1500,
  "extra": [
   {
    "k": "RECAP3",
