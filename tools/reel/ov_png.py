@@ -154,7 +154,9 @@ if S.get('follow'):
     fi = [l['k'] for l in L].index(S['follow']['line']); fa, fb = cuts[fi], cuts[fi + 1]; tp = fa + (fb - fa) * S['follow'].get('tap', 0.6)
     ON += [('FBTN0', fa + 0.12, tp), ('FBTN1', tp, tp + 0.12), ('FBTN2', tp + 0.12, fb)]
 for e in S.get('extra', []):
-    i = [l['k'] for l in L].index(e['line']); ON.append((e['k'], cuts[i] + e.get('d0', 0.3), cuts[i] + e['d1'] if 'd1' in e else cuts[i + 1]))
+    i = [l['k'] for l in L].index(e['line']); d0 = e.get('d0', 0.3); st = cuts[i + 1] + d0 if d0 < 0 else cuts[i] + d0  # 21.10: d0 < 0 = seconds before the line's end
+    ON.append((e['k'], st, cuts[i] + e['d1'] if 'd1' in e else cuts[i + 1]))
+    if e.get('cut_title'): ON = [(k, a, min(b, st)) if k.startswith('T' + e['line']) else (k, a, b) for k, a, b in ON]  # 21.10: line card ends where the overlay (recap) starts
 for kk in S.get('app_lines', []):
     i = [l['k'] for l in L].index(kk)
     if not S.get('app_notitle') and not S.get('no_marka'): ON.append(('MARKA', cuts[i], cuts[i + 1]))

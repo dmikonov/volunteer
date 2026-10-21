@@ -47,7 +47,7 @@ for i, disp in enumerate(LINES):
         tim = [(a0 + (a1 - a0) * ln[k] / tot, a0 + (a1 - a0) * ln[k + 1] / tot) for k in range(len(toks))]
     words = [[tok, round(t + max(0, b0 - s0), 3), round(t + min(e0, b1) - s0, 3)] for tok, (b0, b1) in zip(toks, tim)]
     L.append({'k': f'L{i + 1}', 'txt': disp, 'fn': fn, 'words': words, 's0': s0, 'e0': e0, 't0': round(t, 3), 'd': e0 - s0, 'wer': p['wer'], 'asr': p['txt']})
-    t += (e0 - s0) + GAP
+    t += (e0 - s0) + GAP + S.get('gap_after', {}).get(f'L{i + 1}', 0)  # 21.10: silent hold after a line (recap frame)
 T = round(L[-1]['t0'] + L[-1]['d'] + 0.9, 3)
 inputs, fc, seq, cur = [], [], [], 0.0
 for i, l in enumerate(L):

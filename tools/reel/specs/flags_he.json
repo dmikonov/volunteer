@@ -26,9 +26,9 @@
   "נחשו מה דגל שחור אומר למתחילים.",
   "ככה קוראים את הדגלים.",
   "אחת, דגל לבן: יש מציל, נכנסים.",
-  "שתיים, דגל אדום: מתחילים רק עם מדריך.",
-  "שלוש, דגל שחור: אסור להיכנס, מתחילים בחוף.",
-  "אגב, בסרף טרייב מצלמים גל ומקבלים תיקון.",
+  "שתיים, דגל אדום: רק עם מדריך.",
+  "שלוש, דגל שחור: לא נכנסים. נשארים על החול.",
+  "אגב, בסרף טרייב מעלים גל, ומקבלים הערות.",
   "מחר: ים אחרי הגשם הראשון. עקבו כדי לא לפספס."
  ],
  "f5_takes": [
@@ -57,26 +57,6 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/64dfec43eb56d447ec92d0c919fa7ece87435f8776b1544941c4d55e4b56cbe8/tmpvrhdldur.wav"
   ],
   [
-   4,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/8861b97968e53b81c6b942262b8b13e32ef76b12b1e2e687d6406699052f2c59/tmpfy7mbnpe.wav"
-  ],
-  [
-   4,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/bdce6477ee4f2d92018d104d2c528feb96e65de865bb42f279d5de983d8d5ca7/tmp7nef9_yf.wav"
-  ],
-  [
-   4,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/8bc785c9384a39cb5cf8dcb549f6289bb92731b6afc1e863165815bc98518ba8/tmpoiwi_x4p.wav"
-  ],
-  [
-   5,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d35bba51f3cf2977e87639ba1bdd527f65f3b2a16d9204eb1aa4d01444548ff0/tmp4vzunula.wav"
-  ],
-  [
-   5,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d780532676ba0400290b51c05fd8936d23aafffef496b78e3ce40024fea082e2/tmp62fmy7m5.wav"
-  ],
-  [
    6,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0bd6b4cde73fad1607ba07e9f20cc70404f3a562c28ddde407698274227cb34d/tmpuqsekric.wav"
   ],
@@ -94,19 +74,27 @@
   ],
   [
    3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/b3a7d5b94e168549b356f2c2c2efe5bd7385b0bf21f33ede920e3420e762beae/tmpczk84ghx.wav"
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/00ade0b8cb5945dbc1af3125b92ecc739d81fcd80f86062664c477320e8e21fc/tmpidxmymxs.wav"
   ],
   [
    3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/b17ea8a099b3e27283e6b216dc9870331207cade74fedf010e67dcc7f6252fd6/tmp6slz4tp0.wav"
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/43d22a7c3d4cdbf906e9226d24a428a3c63fde8497f36755c392954ae4eb1b5b/tmpp9l9vu85.wav"
   ],
   [
-   3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/5a06b0a86206e7e5a2149afecdc8194d9de134379cd26dcd4360f6b8da8421ba/tmp6myfmnpc.wav"
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/9ebe302aa7154cd7af40e9c1a1c7b93c3ea85518352f79c190512b8dd4db5625/tmp_xzjhry7.wav"
   ],
   [
-   3,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2750beffc7d9427af0830158e868f9fd9ab28cd9ba0a33cb4c69170f2bde22b7/tmphmh1pk16.wav"
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/33be008fa2c22343f17a7df0b49b7aa28b1e13e7bd1606f7f924c2a0eb753500/tmpn6sgi1ar.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/1d80c04cc86bf6c4fb8bdeb089c7f0a5edfcf324d89e0926364ea05ff94d99b0/tmp5t_fbaos.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/be5a21848907e2a4bd47f2c4c0fc1fd844c559d4f507a835a84b580923de7ed1/tmps2wb0jnz.wav"
   ]
  ],
  "titles": {
@@ -136,13 +124,13 @@
   ],
   "L5": [
    "דגל שחור",
-   "מתחילים בחוף",
+   "נשארים על החול",
    "3",
    "WARN"
   ],
   "L6": [
-   "מצלמים גל",
-   "מקבלים תיקון אחד",
+   "מעלים גל",
+   "ומקבלים הערות",
    null,
    null
   ]
@@ -259,28 +247,43 @@
     "cy": [
      0.62,
      0.62
+    ],
+    "dd": 1.7
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fl_three.mp4",
+    "a": 1.8,
+    "z": 1.05,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.4,
+     0.4
     ]
    }
   ],
   "L6": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fl_sit.mp4",
-    "a": 2.0,
-    "z": 1.2,
+    "src": "/s17/gen/fl_coach.mp4",
+    "a": 1.8,
+    "z": 1.05,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.62,
-     0.62
+     0.5,
+     0.5
     ],
-    "dd": 1.0
+    "dd": 0.7
    },
    {
     "kind": "app",
-    "src": "/s17/gen/app_he14.mp4",
+    "src": "/s17/gen/app_he15.mp4",
     "a": 0.0,
     "z": 1.0,
     "cx": [
@@ -306,6 +309,21 @@
     "cy": [
      0.5,
      0.5
+    ],
+    "dd": 2.2
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fl_sit.mp4",
+    "a": 1.9,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.62,
+     0.62
     ]
    }
   ]
@@ -319,5 +337,18 @@
   "L5": 980
  },
  "music_vol": 0.7,
- "f5_speed": 0.9
+ "f5_speed": 0.9,
+ "gap_after": {
+  "L5": 1.5
+ },
+ "app_sub_top": 1500,
+ "extra": [
+  {
+   "k": "RECAP3",
+   "line": "L5",
+   "d0": -1.5,
+   "cut_title": true,
+   "html": "<div style=\"position:absolute;top:900px;left:0;right:0;text-align:center;direction:rtl\"><div style=\"display:inline-block;width:620px;padding:24px 40px 28px;border-radius:30px;background:rgba(10,18,38,.86);text-align:right\"><div style=\"font-weight:800;font-size:56px;color:#fff;margin:12px 0;white-space:nowrap\"><span style=\"display:inline-block;width:46px;height:46px;border-radius:50%;background:#ffffff;border:4px solid #ffffff;vertical-align:-8px\"></span>&nbsp;&nbsp;לבן: נכנסים</div><div style=\"font-weight:800;font-size:56px;color:#fff;margin:12px 0;white-space:nowrap\"><span style=\"display:inline-block;width:46px;height:46px;border-radius:50%;background:#FF5150;border:4px solid #FF5150;vertical-align:-8px\"></span>&nbsp;&nbsp;אדום: עם מדריך</div><div style=\"font-weight:800;font-size:56px;color:#fff;margin:12px 0;white-space:nowrap\"><span style=\"display:inline-block;width:46px;height:46px;border-radius:50%;background:#000000;border:4px solid #ffffff;vertical-align:-8px\"></span>&nbsp;&nbsp;שחור: על החול</div></div></div>"
+  }
+ ]
 }
