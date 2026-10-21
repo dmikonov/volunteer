@@ -91,7 +91,7 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn3_low.mp4",
+    "src": "/s17/gen/kn3_ride_vg1.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -111,37 +111,36 @@
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn3_stiff_vg2.mp4",
-    "a": 0.4,
+    "src": "/s17/gen/kn3_ride_vg1.mp4",
+    "a": 2.3,
     "z": 1.0
    }
   ],
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn3_low.mp4",
-    "a": 1.2,
-    "z": 1.1,
+    "src": "/s17/gen/kn3_ride_vg2.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kn3_ride_vg1.mp4",
+    "a": 1.7,
+    "z": 1.15,
     "cy": [
      0.55,
      0.55
     ]
    }
   ],
-  "L6": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/kn3_center_up3201.mp4",
-    "a": 0.0,
-    "z": 1.0,
-    "spd": 0.7
-   }
-  ],
   "L7": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kn3_low.mp4",
-    "a": 0.4,
+    "src": "/s17/gen/kn3_ride_vg2.mp4",
+    "a": 1.64,
     "z": 1.0
    }
   ],
@@ -183,5 +182,5 @@
    "straight legs"
   ]
  },
- "_draft": "21.10 13:40 draft: ride/arms clips pending from vgen bridge; kn3_low reused for L2/L5/L7; 480p bridge clips not upscaled yet"
+ "_draft": "21.10 15:20 draft 2: ride clips (bridge, 704x1280) for L2/L4-L7; L1/L3 still on stiff_vg1 (head under title) until the headroom stiff clip (bridge job dcf456180c9e) arrives"
 }
