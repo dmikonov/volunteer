@@ -33,3 +33,9 @@ v3 (18.10, после ревизора): реальные клипы 17.10 не 
 | Сб 24.10 | EN | Biggest wave in the set isn't yours, Daily fix #4 | out/ci/sets_en/reel_sets_en.mp4 (d57b32f) | https://raw.githubusercontent.com/dmikonov/volunteer/d57b32fbd5222151584f89a73d51f2ab31dc1adc/out/ci/sets_en/prev.mp4 | собран 21.10 ночью, 23.34 с, слепой зритель 6/6/4/6, ждёт ок Димы |
 Подписи: docs/captions-21-22oct-en2.md (EN 21-22.10), docs/captions-23oct.md (EN обновлён), docs/captions-24oct.md (HE+EN). Мастер для публикации: raw-ссылка на reel_*.mp4 того же коммита.
 Клипы 21.10 (не повторять неделю): knees kn_*, rip rp_*, sets s_*, flags fl_* (все Z-Image Turbo + Wan 2.2).
+
+## 21.10 днём: решения Димы и новый порядок
+- Дизайн старых рилсов отклонён («отвратительный»), сгенерированное видео тоже. Новый стиль текста v2 утверждён: claude/reel-text-style-v2.md (ov_png.py style v2, коммит 136d0eb).
+- Новый способ клипов: Z-Image 864x1536 (камера чуть сверху, палуба видна) → Wan 2.2 4 с 8 шагов → SeedVR2 1.5x → 1080x1920. Квота ZeroGPU PRO: около 12 вызовов Wan в день, это 2-4 годных клипа.
+- Все рилсы выше (EN 21-24.10, HE флаги 24.10) собраны в старом дизайне и на старых клипах: НЕ публиковать, пересобирать в v2.
+- Колени перенесены на Чт 22.10 (выбор Димы): knees_en3 (style v2), клипы out/ci/knees3/gen/ (kn3_low готов; stiff/ride/center/arms генерируются ночью 22.10 после сброса квоты около 01:00, промпты tools/reel/gen/kn3_prompts.txt). Остальная очередь сдвигается на день.
