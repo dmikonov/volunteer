@@ -27,10 +27,6 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2ea84e2de927887783a3e3f5dd480e21933645e949a5c04e9a0bfebf26619563/tmpn9qx4v2o.wav"
   ],
   [
-   6,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/22199897fd46797572e14d703669d3809fae82a7749bee435302f62d1d518d54/tmpzgiuf_mo.wav"
-  ],
-  [
    0,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/724c80f976e0b3fbd18c8d98f71cd7dbcfdd32f481351ca9e5d6f1be7d337c02/tmp_dm0xuvf.wav"
   ],
@@ -53,10 +49,6 @@
   [
    5,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/c3b8a938a11cd719f50158778a446a01cca9cedf0933da950002ef2fa444f979/tmpku6lb4lw.wav"
-  ],
-  [
-   6,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/69682ed66c50e276fabc471eac9da8e0c5c38bbaaadd7587f245c068f873ca3c/tmpr1lj018_.wav"
   ],
   [
    0,
@@ -83,12 +75,36 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/205005d51422c9900577e395623e48cd28c34b69c89aeb3ecb681749633bf74a/tmpxvdmdb3f.wav"
   ],
   [
-   6,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/ee32bbe0545515cb031dd8c85d762379b2c339d1ab8d358c1ef9e6448af4173f/tmpo0ywph3f.wav"
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/3ad8b47fc0a7c0365fc68c52cfa7508c589d6d1f5263a50ff81615a14c7bae13/tmpwxuya999.wav"
+  ],
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/a2c3ee7621ccf7c3142047d0ba2bd13a93f3ebc6c168d995e276d4092940c607/tmpbslk349k.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/48c46dceef3b41ea76d6e7587f39c5a7268c7e77f5b1fbd9529039b8f72de9be/tmpxytpjwoy.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/f985227fb2d24c9b06311e6e4ac10a3e3ea593dd271889dc3ea4f143223d9981/tmpzcgbj22h.wav"
   ],
   [
    6,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/88368d79a345592edd9a087b23d94171f9bb3be8a1764e53f43ad0726af625bd/tmpz74f3evw.wav"
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/c0a8a466c9b75a7b32692fd5383eead7156afcfcca61ec78115438e1d90a2b15/tmpwuc1xwx0.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/9c62b7e3d0bf834689308fdd7ce7c230563c6729510846253699f18f5c447f6e/tmpxefp3kf8.wav"
+  ],
+  [
+   7,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/541467a1af73444b1b8f4e24b538c400ffd326332ebf3445635f220217015368/tmpmuc9bqna.wav"
+  ],
+  [
+   7,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/1866ba55611f9c82d22e5e05cb285689e589fa7825886252198d3c8b838827a6/tmpe2412k3s.wav"
   ]
  ],
  "style": "v2",
@@ -116,7 +132,8 @@
   "אחת, ברכיים רכות. אותו גל, בלי ליפול.",
   "שתיים, יושבים נמוך, כמו על כיסא.",
   "שלוש, מצלמים גל, וסרף טרייב מראה את זווית הברך.",
-  "מחר: זרם סחף. עקבו כדי לא לפספס."
+  "מחר: זרם סחף.",
+  "עקבו כדי לא לפספס."
  ],
  "titles": {
   "L1": [
@@ -152,6 +169,12 @@
   "L6": [
    "זווית הברך",
    "175°",
+   null,
+   null
+  ],
+  "L7": [
+   "מחר",
+   "זרם סחף",
    null,
    null
   ]
@@ -217,6 +240,14 @@
     "kind": "gen",
     "src": "/s17/gen/kb_end.mp4",
     "a": 0.3,
+    "z": 1.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_end.mp4",
+    "a": 1.7,
     "z": 1.0
    }
   ]
