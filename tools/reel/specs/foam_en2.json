@@ -2,9 +2,9 @@
  "lang": "en",
  "out": "reel_foam_en2.mp4",
  "app_lines": [
-  "L7"
+  "L8"
  ],
- "app_top": 250,
+ "app_top": 340,
  "no_marka": true,
  "hook_cy": true,
  "recap_top": 620,
@@ -17,18 +17,19 @@
  },
  "teaser": [
   "TOMORROW",
-  "Which wave in a set is yours",
+  "Which wave in<br>a set is yours",
   "FOLLOW SO YOU DON'T MISS IT"
  ],
  "lines": [
   "Foam isn't just for day one.",
   "Follow. One surf fix a day.",
   "Most beginners paddle out too soon.",
+  "Three fixes.",
   "One. Pop up on every foam wave.",
-  "Two. Up? Angle the board along the foam.",
+  "Two. Angle the board along the foam.",
   "Three. Ten foam rides beat an hour out back.",
   "Ask the SurfTribe coach if you're ready.",
-  "Tomorrow: which wave in a set is yours. Follow so you don't miss it."
+  "Tomorrow: which wave is yours. Follow so you don't miss it."
  ],
  "titles": {
   "L1": [
@@ -49,27 +50,33 @@
    null,
    "X"
   ],
-  "L4": [
+  "L5": [
    "POP UP",
    "ON EVERY FOAM WAVE",
    "1",
    "CK"
   ],
-  "L5": [
+  "L6": [
    "ANGLE THE BOARD",
    "ALONG THE FOAM",
    "2",
    "CK"
   ],
-  "L6": [
+  "L7": [
    "10 FOAM RIDES",
    "BEAT 1 HOUR OUT BACK",
    "3",
    "CK"
   ],
-  "L7": [
+  "L8": [
    "ASK THE COACH",
    "IN SURFTRIBE",
+   null,
+   null
+  ],
+  "L4": [
+   "THREE FIXES",
+   "",
    null,
    null
   ]
@@ -81,7 +88,7 @@
  "extra": [
   {
    "k": "ARROW",
-   "line": "L5",
+   "line": "L6",
    "d0": 0.3,
    "html": "<div style=\"position:absolute;top:1440px;left:300px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
   }
@@ -135,11 +142,11 @@
     ]
    }
   ],
-  "L4": [
+  "L5": [
    {
     "kind": "gen",
     "src": "/s17/gen/f_prone.mp4",
-    "a": 0.0,
+    "a": 0.9,
     "z": 1.24,
     "cx": [
      0.5,
@@ -149,7 +156,7 @@
      0.3,
      0.3
     ],
-    "dd": 1.0
+    "dd": 0.6
    },
    {
     "kind": "gen",
@@ -166,7 +173,7 @@
     ]
    }
   ],
-  "L5": [
+  "L6": [
    {
     "kind": "gen",
     "src": "/s17/gen/f_angle2.mp4",
@@ -182,7 +189,7 @@
     ]
    }
   ],
-  "L6": [
+  "L7": [
    {
     "kind": "gen",
     "src": "/s17/gen/f_ride3.mp4",
@@ -213,7 +220,7 @@
     ]
    }
   ],
-  "L7": [
+  "L8": [
    {
     "kind": "app",
     "src": "/s17/gen/app_en.mp4",
@@ -229,7 +236,7 @@
     ]
    }
   ],
-  "L8": [
+  "L9": [
    {
     "kind": "gen",
     "src": "/s17/gen/f_walk.mp4",
@@ -244,13 +251,29 @@
      0.5
     ]
    }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_prone.mp4",
+    "a": 0.0,
+    "z": 1.24,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.3,
+     0.3
+    ]
+   }
   ]
  },
  "gap": 0.22,
  "ttop": {
-  "L4": 760,
-  "L5": 760
+  "L5": 760,
+  "L6": 760
  },
  "music_vol": 0.7,
- "kokoro_speed": 0.9
+ "kokoro_speed": 0.86
 }
