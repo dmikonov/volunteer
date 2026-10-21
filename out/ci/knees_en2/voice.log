@@ -1,61 +1,61 @@
 Downloading cpython-3.12.15-linux-x86_64-gnu (download) (32.7MiB)
  Downloaded cpython-3.12.15-linux-x86_64-gnu (download)
-Downloading nvidia-nvjitlink (40.5MiB)
-Downloading nvidia-cuda-cupti (10.2MiB)
-Downloading sympy (6.0MiB)
-Downloading nvidia-cuda-runtime (2.1MiB)
 Downloading tokenizers (3.2MiB)
+Downloading soundfile (1.3MiB)
+Downloading hf-xet (4.0MiB)
 Downloading networkx (2.0MiB)
-Downloading pydantic-core (2.1MiB)
 Downloading pygments (1.2MiB)
 Downloading nvidia-cufile (1.2MiB)
-Downloading srsly (1.2MiB)
-Downloading misaki (3.5MiB)
 Downloading nvidia-nccl-cu13 (206.0MiB)
-Downloading nvidia-cufft (204.2MiB)
-Downloading espeakng-loader (9.6MiB)
-Downloading nvidia-cusolver (191.6MiB)
-Downloading torch (528.9MiB)
-Downloading soundfile (1.3MiB)
-Downloading blis (10.8MiB)
-Downloading nvidia-cusparse (139.2MiB)
-Downloading nvidia-cuda-nvrtc (86.0MiB)
-Downloading triton (236.5MiB)
-Downloading nvidia-curand (56.8MiB)
 Downloading babel (9.7MiB)
+Downloading thinc (3.7MiB)
+Downloading espeakng-loader (9.6MiB)
 Downloading nvidia-nvshmem-cu13 (57.6MiB)
-Downloading nvidia-cublas (403.5MiB)
-Downloading cuda-bindings (6.8MiB)
+Downloading triton (236.5MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading nvidia-cudnn-cu13 (527.5MiB)
 Downloading nvidia-cusparselt-cu13 (162.3MiB)
 Downloading curated-tokenizers (6.0MiB)
-Downloading nvidia-cudnn-cu13 (527.5MiB)
+Downloading numpy (16.0MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading nvidia-nvjitlink (40.5MiB)
+Downloading pydantic-core (2.1MiB)
+Downloading torch (528.9MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading sympy (6.0MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading srsly (1.2MiB)
+Downloading cuda-bindings (6.8MiB)
 Downloading transformers (12.2MiB)
 Downloading spacy (33.9MiB)
-Downloading numpy (16.0MiB)
-Downloading hf-xet (4.0MiB)
-Downloading thinc (3.7MiB)
+Downloading blis (10.8MiB)
+Downloading misaki (3.5MiB)
  Downloaded nvidia-cufile
    Building docopt==0.6.2
+ Downloaded pygments
  Downloaded srsly
  Downloaded soundfile
- Downloaded pygments
- Downloaded networkx
  Downloaded pydantic-core
+ Downloaded networkx
  Downloaded nvidia-cuda-runtime
+      Built docopt==0.6.2
  Downloaded tokenizers
- Downloaded hf-xet
  Downloaded misaki
  Downloaded thinc
+ Downloaded hf-xet
  Downloaded curated-tokenizers
  Downloaded cuda-bindings
  Downloaded sympy
-      Built docopt==0.6.2
- Downloaded babel
- Downloaded nvidia-cuda-cupti
- Downloaded espeakng-loader
  Downloaded blis
- Downloaded transformers
+ Downloaded nvidia-cuda-cupti
+ Downloaded babel
+ Downloaded espeakng-loader
  Downloaded numpy
+ Downloaded transformers
  Downloaded nvidia-nvjitlink
  Downloaded spacy
  Downloaded nvidia-curand
@@ -64,30 +64,30 @@ Downloading thinc (3.7MiB)
  Downloaded nvidia-cusparse
  Downloaded nvidia-cusparselt-cu13
  Downloaded nvidia-cusolver
- Downloaded nvidia-cufft
  Downloaded nvidia-nccl-cu13
+ Downloaded nvidia-cufft
  Downloaded nvidia-cublas
  Downloaded triton
  Downloaded nvidia-cudnn-cu13
  Downloaded torch
-Installed 113 packages in 2.28s
+Installed 113 packages in 2.16s
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-/home/runner/.cache/uv/archive-v0/Ik8iGWI6SwBXT8vM/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+/home/runner/.cache/uv/archive-v0/QpS3e2TqVEbOE2u8/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
   super().__init__("LSTM", *args, **kwargs)
-/home/runner/.cache/uv/archive-v0/Ik8iGWI6SwBXT8vM/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+/home/runner/.cache/uv/archive-v0/QpS3e2TqVEbOE2u8/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Collecting en-core-web-sm==3.8.0
   Downloading en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 160.6 MB/s  0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 160.2 MB/s  0:00:00
 Installing collected packages: en-core-web-sm
 Successfully installed en-core-web-sm-3.8.0
 
 [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 [notice] To update, run: python -m pip install --upgrade pip
-/home/runner/.cache/uv/archive-v0/Ik8iGWI6SwBXT8vM/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+/home/runner/.cache/uv/archive-v0/QpS3e2TqVEbOE2u8/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
   warnings.warn(
 [38;5;2m✔ Download and installation successful[0m
 You can now load the package via spacy.load('en_core_web_sm')
-kokoro ok af_heart [('L1', 1.73), ('L2', 2.23), ('L3', 2.27), ('L4', 1.57), ('L5', 2.6), ('L6', 2.15), ('L7', 2.38), ('L8', 2.83), ('L9', 3.38)]
+kokoro ok af_heart [('L1', 1.73), ('L2', 2.23), ('L3', 2.27), ('L4', 1.57), ('L5', 2.8), ('L6', 2.15), ('L7', 2.38), ('L8', 3.27), ('L9', 3.38)]
 voice: kokoro af_heart
-en T 21.955 [('L1', 0.12, 1.52), ('L2', 1.835, 2.04), ('L3', 4.075, 2.09), ('L4', 6.365, 1.29), ('L5', 7.855, 2.42), ('L6', 10.47, 1.96), ('L7', 12.635, 2.17), ('L8', 15.0, 2.64), ('L9', 17.84, 3.21)]
+en T 22.555 [('L1', 0.12, 1.52), ('L2', 1.835, 2.04), ('L3', 4.075, 2.09), ('L4', 6.365, 1.29), ('L5', 7.855, 2.59), ('L6', 10.645, 1.96), ('L7', 12.81, 2.17), ('L8', 15.175, 3.06), ('L9', 18.44, 3.21)]
