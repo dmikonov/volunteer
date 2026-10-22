@@ -530,6 +530,75 @@ def _save_and_upload(frames, fps, key, name, upload, request):
     return path, url, err
 
 
+import contextvars
+import threading
+import uuid
+
+JOBS = {}
+JOB_LOCK = threading.Lock()
+
+
+def _job_run(job, image_url, image, prompt, seconds, res, steps, seed, negative_prompt, upload, out_name, gpu_secs, request):
+    with JOB_LOCK:
+        JOBS[job]["status"] = "running"
+        try:
+            fr, seed, rec = _gen_core(image_url, image, prompt, seconds, res, steps, seed, negative_prompt, gpu_secs)
+            key = hashlib.sha1(f"gen|{image_url}|{prompt}|{res}|{fr.shape[0]}|{steps}|{seed}".encode()).hexdigest()[:16]
+            name = _clean_name(out_name, time.strftime("%m%d_%H%M%S") + f"_s{seed}")
+            path, url, err = _save_and_upload(fr, FPS, key, name, upload, request)
+            info = dict(ok=True, url=url, upload_error=err, cache=f"cache:{key}", seed=seed,
+                        w=int(fr.shape[2]), h=int(fr.shape[1]), **{k: rec[k] for k in ("frames", "steps", "gpu_requested", "gpu_elapsed", "wall", "max_mem_gb")})
+            JOBS[job].update(status="done", path=path, info=info)
+        except Exception:
+            JOBS[job].update(status="error", info={"ok": False, "error": traceback.format_exc()[-1500:]})
+
+
+def gen_start(image_url: str = "", image: str = None, prompt: str = "", seconds: float = 4.0, res: str = "480x832",
+              steps: int = 4, seed: int = -1, negative_prompt: str = "", upload: bool = True, out_name: str = "",
+              gpu_secs: int = 0, request: gr.Request = None) -> str:
+    """Start a Wan 2.2 clip in the background and return at once (for callers with short timeouts, e.g. MCP).
+    Same arguments as gen. Poll gen_result with the returned job id; the GPU run keeps the caller's ZeroGPU quota.
+
+    Args:
+        image_url: start image, http(s) URL or a path inside dmikonov/surftribe-gen-inputs
+        image: optional uploaded start image (used instead of image_url)
+        prompt: motion prompt
+        seconds: clip length, 0.5-5 s at 16 fps
+        res: 480x832, 832x480, 640x640, 720x1280, 1280x720
+        steps: denoising steps (4 default)
+        seed: -1 for random
+        negative_prompt: empty for the default Wan negative prompt
+        upload: upload the mp4 to the dataset when a token is available
+        out_name: file name without extension
+        gpu_secs: override the ZeroGPU duration request, 0 = formula
+    Returns:
+        JSON with the job id and the queue state.
+    """
+    job = uuid.uuid4().hex[:12]
+    JOBS[job] = {"status": "queued", "t": time.time(), "path": None, "info": None, "args": {"res": res, "seconds": seconds, "steps": steps, "seed": seed}}
+    ctx = contextvars.copy_context()  # carries the Gradio request context (ZeroGPU token) into the thread
+    th = threading.Thread(target=ctx.run, args=(_job_run, job, image_url, image, prompt, seconds, res, steps, seed, negative_prompt, upload, out_name, gpu_secs, request), daemon=True)
+    th.start()
+    return json.dumps({"job": job, "status": "queued", "queue": sum(1 for j in JOBS.values() if j["status"] in ("queued", "running"))})
+
+
+def gen_result(job: str = ""):
+    """Result of a gen_start job: the mp4 (when done) and a JSON status.
+
+    Args:
+        job: job id from gen_start
+    Returns:
+        the mp4 (or nothing while the job runs) and a JSON string with status and info.
+    """
+    j = JOBS.get(str(job).strip())
+    if j is None:
+        return None, json.dumps({"ok": False, "error": "unknown job", "jobs": list(JOBS)[-10:]})
+    out = {"job": job, "status": j["status"], "age_s": round(time.time() - j["t"], 1), "args": j["args"]}
+    if j["info"]:
+        out["info"] = j["info"]
+    return (j["path"] if j["status"] == "done" else None), json.dumps(out)
+
+
 def gen(image_url: str = "", image: str = None, prompt: str = "", seconds: float = 4.0, res: str = "480x832",
         steps: int = 4, seed: int = -1, negative_prompt: str = "", upload: bool = True, out_name: str = "",
         gpu_secs: int = 0, request: gr.Request = None):
@@ -797,6 +866,12 @@ with gr.Blocks(title="surftribe wan") as demo:
     b_probe.click(probe, [u_src], [o_info], api_name="probe")
     b_est.click(estimate, [i_sec, i_res, i_steps, i_mode], [o_info], api_name="estimate")
     b_diag.click(diag, [], [o_info], api_name="diag")
+    with gr.Row():
+        b_gs = gr.Button("gen (background)")
+        j_id = gr.Textbox(label="job id")
+        b_gr = gr.Button("job result")
+    b_gs.click(gen_start, [i_url, i_img, i_prompt, i_sec, i_res, i_steps, i_seed, i_neg, i_upl, i_name, i_gpu], [o_info], api_name="gen_start")
+    b_gr.click(gen_result, [j_id], [o_vid, o_info], api_name="gen_result")
     gr.Button("upload check").click(upload_check, [], [o_info], api_name="upload_check")
 
 demo.queue().launch(mcp_server=True, ssr_mode=False, show_error=True)
