@@ -39,3 +39,6 @@
 4 n7 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fdd2300cbe7af4bd000bd73565c6d40ab24855572d31243d0cb6426b5421ddc5/tmpqnyqtpnj.wav
 4 n8 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/7885ad1f24e8b7bb3b4ae6c70abe4bd0bfe99741136741549fff7cbbdfb84a8a/tmp_ov1nuqw.wav
 4 n9 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2826e94616b109a476046a85a66f4946ba8a2a9716360db7a533b46181399c70/tmpikgmhmb4.wav
+1 n1 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/cc523da5d04bdeb80aaa9ebadd6879e7270701cb9fe4226ca0064be649583362/tmpnmgjmscj.wav
+1 n2 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0e67823190ba4999dfa9f7e5a4af0181dfcd46bb2489399fd477b7a9f9b6c910/tmpk3grohcb.wav
+1 n3 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/5cbc801ed0a166b70aad19326a0556ebc0a323bcae0d83f4deda74064b145c30/tmp5ktg3q1k.wav
