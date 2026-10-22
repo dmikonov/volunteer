@@ -15,12 +15,14 @@
   "Spot a rip<br>from the beach"
  ],
  "lines": [
-  "This is why a tiny bump throws you off.",
+  "Why does a tiny bump throw you off the board?",
   "Look at his knees. Locked straight.",
-  "Straight legs send the bump into your body. Soft knees soak it up.",
-  "Sit low, like there's a chair behind you.",
-  "Film one wave. SurfTribe shows your knee angle.",
-  "Tomorrow: how to spot a rip current from the beach."
+  "Straight legs can't give, so the bump hits your whole body.",
+  "Bent knees work like springs and soak it up.",
+  "So ride low, like you're sitting on a chair.",
+  "Film one wave, and SurfTribe measures your knee angle.",
+  "Here it shows 175 degrees. That leg is almost straight.",
+  "Tomorrow: how to spot a rip current, water that pulls you out to sea."
  ],
  "titles": {
   "L1": [
@@ -36,14 +38,26 @@
    "X"
   ],
   "L4": [
-   "Sit",
-   "low",
+   "Knees work",
+   "like springs",
    null,
    "CK"
   ],
   "L5": [
-   "Knee angle<br>",
-   "175° = locked",
+   "Ride",
+   "low",
+   null,
+   null
+  ],
+  "L6": [
+   "SurfTribe measures<br>",
+   "your knee angle",
+   null,
+   null
+  ],
+  "L7": [
+   "175° =<br>",
+   "almost straight",
    null,
    null
   ]
@@ -83,16 +97,18 @@
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/kb_B2t.mp4",
+    "src": "/s17/gen/kb_B4t.mp4",
     "a": 0.0,
     "z": 1.0
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/kb_B4t.mp4",
+    "src": "/s17/gen/kb_B2t.mp4",
     "a": 0.0,
     "z": 1.0
-   },
+   }
+  ],
+  "L5": [
    {
     "kind": "gen",
     "src": "/s17/gen/kb_B1s.mp4",
@@ -100,7 +116,7 @@
     "z": 1.0
    }
   ],
-  "L5": [
+  "L6": [
    {
     "kind": "app",
     "src": "/s17/gen/kb_app.mp4",
@@ -108,7 +124,15 @@
     "z": 1.0
    }
   ],
-  "L6": [
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 2.0,
+    "z": 1.0
+   }
+  ],
+  "L8": [
    {
     "kind": "gen",
     "src": "/s17/gen/rp_wide.mp4",
@@ -119,8 +143,8 @@
  },
  "ttop": {},
  "v2subs": {
-  "L4": [
-   "chair behind you"
+  "L5": [
+   "sitting on a chair"
   ]
  },
  "extra": [
