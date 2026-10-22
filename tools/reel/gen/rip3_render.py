@@ -59,7 +59,7 @@ for i in range(n):
     if ok: frames.append(f)
 w = writer(f'{O}/h_drag.mp4')
 for j, f in enumerate(frames[::2]):
-    t = j / FPS; img = f.copy(); arrow(img, (300, 840), (250, 330), (t - 0.25) / 0.7, CO)
+    t = j / FPS; img = f.copy(); arrow(img, (300, 900), (262, 560), (t - 0.25) / 0.6, CO)
     w.stdin.write(img.tobytes())
 w.stdin.close(); w.wait()
 
