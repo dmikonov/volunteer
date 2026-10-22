@@ -4,3 +4,4 @@ r3_arm https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gr
 r3_out https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/a2c4636b40d2b2f790c86cf7464d176b64d79309192599aebf64dec4af5edab5/tmp9dmo76ub.mp4
 r3_watch https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/bf6dcfac3057d3e2f27dbbd27c1725957af5ae3b81d61831fd75617bfa7bce39/tmp3lza_dv_.mp4
 r3_paddle2 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/57b9ee06cd0c1c3a56e9faa88ba7c57f412eaab5f149c8a9a507f0f4e365173e/tmprimrd6i6.mp4
+r3_arm2 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/cbac48a4e528a759b344665542988df2735c6ec4761fb05d29e33acfa226b528/tmpsxni9_8o.mp4
