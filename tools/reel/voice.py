@@ -39,7 +39,7 @@ t = 0.12
 for l in L:
     s0 = max(0.0, l['words'][0][1] - 0.04); e0 = min(dur(l['fn']), l['words'][-1][2] + 0.10)
     l['s0'], l['e0'] = s0, e0; l['t0'] = round(t, 3); l['d'] = e0 - s0
-    l['words'] = [[w, t + a - s0, t + b - s0] for w, a, b in l['words']]; t += l['d'] + GAP
+    l['words'] = [[w, t + a - s0, t + b - s0] for w, a, b in l['words']]; t += l['d'] + GAP + S.get('gap_after', {}).get(l['k'], 0)  # 22.10 Dima: a breath after the follow line and before a new point
 T = round(L[-1]['t0'] + L[-1]['d'] + 0.9, 3)
 inputs, fc, seq, cur = [], [], [], 0.0
 for i, l in enumerate(L):

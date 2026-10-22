@@ -358,5 +358,11 @@
    9,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/52b147cfc213f02a10f81292f36c9bec2babb4f2adc0eb5a5ba39ded588ebc15/tmpubngvw50.wav"
   ]
- ]
+ ],
+ "gap_after": {
+  "L2": 0.4,
+  "L5": 0.25,
+  "L6": 0.25,
+  "L8": 0.4
+ }
 }
