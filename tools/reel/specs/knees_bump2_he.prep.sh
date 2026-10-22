@@ -25,3 +25,4 @@ cp out/ci/rip/gen/rp_wide.mp4 out/ci/rip/gen/rp_watch.mp4 $G/
 # Hebrew voice: Chatterbox Multilingual takes (voice 3 timbre with intonation, Dima 22.10) -> f5_takes in the spec
 python3 -m pip install -q uv
 uv run --python 3.11 --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cpu --with "chatterbox-tts>=0.1.4" python tools/reel/cb_takes.py tools/reel/specs/knees_bump2_he.json knees_bump2_he 3
+python3 tools/reel/cb_split.py tools/reel/specs/knees_bump2_he.json knees_bump2_he
