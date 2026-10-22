@@ -19,7 +19,7 @@
   "הוא סוחב אתכם פנימה יותר מהר ממה שרוב האנשים שוחים.",
   "מהחוף מחפשים שלושה דברים.",
   "מקום שבו הגלים לא נשברים.",
-  "מים יותר כהים ושקטים.",
+  "מים כהים או עכורים יותר.",
   "קצף שנסחף החוצה לים.",
   "אז לפני שנכנסים, מסתכלים על המים עשר דקות.",
   "כשהגלים גדולים הזרם יותר חזק, אז קודם בודקים תחזית בסרף טרייב.",
@@ -48,7 +48,7 @@
    null
   ],
   "L5": [
-   "<span style='color:#00E4FF'>2</span> מים כהים",
+   "<span style='color:#00E4FF'>2</span> כהים או עכורים",
    "",
    null,
    null
@@ -105,7 +105,7 @@
    "line": "L1",
    "d0": 1.5,
    "d1": 3.6,
-   "html": "<div style='position:absolute;top:1395px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:700 52px R;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
+   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:1395px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
   },
   {
    "k": "RING4",
@@ -176,17 +176,9 @@
   "L6": [
    {
     "kind": "gen",
-    "src": "/s17/gen/st_rip2.mp4",
-    "a": 3.4,
-    "z": 1.4,
-    "cx": [
-     0.3,
-     0.3
-    ],
-    "cy": [
-     0.25,
-     0.22
-    ]
+    "src": "/s17/gen/h_foam.mp4",
+    "a": 0.0,
+    "z": 1.0
    }
   ],
   "L7": [
@@ -199,6 +191,13 @@
   ],
   "L8": [
    {
+    "kind": "gen",
+    "src": "/s17/gen/st_big.mp4",
+    "a": 0.2,
+    "z": 1.0,
+    "dd": 2.0
+   },
+   {
     "kind": "app",
     "src": "/s17/gen/app_he_card.mp4",
     "a": 0.0,
@@ -208,7 +207,7 @@
   "L9": [
    {
     "kind": "gen",
-    "src": "/s17/gen/r3_float.mp4",
+    "src": "/s17/gen/h_float.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -222,7 +221,7 @@
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/r3_paddle2.mp4",
+    "src": "/s17/gen/h_paddle.mp4",
     "a": 0.0
    }
   ],

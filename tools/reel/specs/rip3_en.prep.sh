@@ -8,3 +8,7 @@ ffmpeg -v error -y -ss 3.0 -t 3.6 -i app-screens/forecast/forecast_${L}_height.m
 done
 ls -la $G
 [ -f /s17/gen/r3_arm2.mp4 ] || { echo "ARM2 MISSING, fallback r3_arm"; cp /s17/gen/r3_arm.mp4 /s17/gen/r3_arm2.mp4; }
+# r6: big surf for "when the swell's up" (Pexels 33731641, David Pickup, Fistral), 13.0-16.0 s, centre 9:16
+curl -sSfL -A "Mozilla/5.0 (X11; Linux x86_64) Chrome/126.0" --connect-timeout 15 -m 180 -o /tmp/p33731641.mp4 https://videos.pexels.com/video-files/33731641/14322457_2560_1440_30fps.mp4 && \
+ffmpeg -v error -y -ss 13.0 -t 3.0 -i /tmp/p33731641.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 /s17/gen/st_big.mp4 || { echo "BIG SURF MISSING, fallback st_rip3"; cp /s17/gen/st_rip3.mp4 /s17/gen/st_big.mp4; }
+mkdir -p out/ci/rip3/review && ffmpeg -v error -y -i /s17/gen/st_big.mp4 -vf "fps=2,scale=270:-2,tile=6x1" -frames:v 1 out/ci/rip3/review/st_big_sheet.jpg || true
