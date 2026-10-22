@@ -33,7 +33,7 @@
  "titles": {
   "L1": [
    "ירד גשם?",
-   "ישר מהכביש לים",
+   "<span style='white-space:nowrap'>ישר מהכביש</span> לים",
    null,
    null
   ],
@@ -57,7 +57,7 @@
   ],
   "L5": [
    "מחכים",
-   "<span style='color:#00E4FF'>2-3</span> ימים",
+   "<span style='white-space:nowrap;color:#00E4FF'>2-3 ימים</span>",
    null,
    null
   ],
