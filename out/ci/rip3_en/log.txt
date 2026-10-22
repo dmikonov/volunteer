@@ -1,0 +1,19 @@
++ k=/s17/rp/rip3_en
++ python3 build.py /s17/rp/rip3_en
+[('L1', '/st_rip1.mp4', 0.0, 4.529, 0.0), ('L2', '/st_rip2.mp4', 0.0, 2.897, 4.529), ('L3', 'r3_watch.mp4', 0.0, 2.692, 7.426), ('L4', '/st_rip1.mp4', 4.9, 1.864, 10.118), ('L5', '/st_rip1.mp4', 3.0, 1.733, 11.982), ('L6', '/st_rip2.mp4', 3.4, 1.876, 13.715), ('L7', 'r3_watch.mp4', 1.0, 1.55, 15.591), ('L7', '/st_rip3.mp4', 0.2, 1.528, 17.141), ('L8', 'n/app_en.mp4', 0.0, 4.04, 18.669), ('L9', 'r3_float.mp4', 0.0, 1.936, 22.709), ('L10', '_paddle2.mp4', 0.0, 2.4, 24.645), ('L10', '3_paddle.mp4', 0.1, 1.075, 27.045), ('L11', 'n/r3_arm.mp4', 0.0, 2.968, 28.12), ('L12', 'n/r3_out.mp4', 0.0, 2.763, 31.088)]
+cat 33.8 T 33.851
++ python3 ov_png.py /s17/rp/rip3_en
+realcuts True [0.0, 4.52, 7.4, 10.08, 11.96, 13.68, 15.56, 18.64, 22.68, 24.6, 28.08, 31.04, 33.851]
+safe-zone violations []
+ovplan 24
++ python3 ov_ff.py /s17/rp/rip3_en
+done /s17/rp/rip3_en/reel_rip3_en.mp4 33.851 lufs before -15.2 gain 0.7
++ python3 trim_tail.py /s17/rp/rip3_en
+trimmed /s17/rp/rip3_en/reel_rip3_en.mp4 33.35
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rip3_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rip3_en/reel_rip3_en.mp4
+/s17/rp/rip3_en/reel_rip3_en.mp4 before -13.0 after -14.6 peak -2.5
++ python3 post_cz.py /s17/rp/rip3_en
+post ok
++ echo 'EXIT /s17/rp/rip3_en 0'
+EXIT /s17/rp/rip3_en 0

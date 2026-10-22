@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.0 dur 4.26 | רואים את המים? העכורים שיוצאים מעבר לגלים זה זרם סחף.
+take 0 1 wer 0.1 dur 4.26 | רואים את המים העכורים שיוצאים מעבר לגלים? זה זרם סחר.
+take 1 2 wer 0.0 dur 3.91 | הוא סוחב אתכם פנימה יותר מהר ממה שרוב האנשים שוחים.
+take 1 3 wer 0.0 dur 3.91 | הוא סוחב אתכם פנימה יותר מהר ממה שרוב האנשים שוחים.
+take 2 4 wer 0.0 dur 2.19 | מהחוף מחפשים שלושה דברים
+take 2 5 wer 0.0 dur 2.19 | מהחוף מחפשים שלושה דברים
+take 3 6 wer 0.0 dur 2.15 | מקום שבו הגלים לא נשברים.
+take 3 7 wer 0.0 dur 2.15 | מקום שבו הגלים לא נשברים.
+take 4 8 wer 0.25 dur 1.61 | מים יותר קיים ושקטים
+take 4 9 wer 0.25 dur 1.61 | מים יותר קיים ושקטים
+take 5 10 wer 0.25 dur 1.72 | קצב שנסחף החוצה לים
+take 5 11 wer 0.5 dur 1.72 | קצב שנסחף החוצה ליד
+take 6 12 wer 0.0 dur 3.57 | אז לפני שנכנסים מסתכלים על המים 10 דקות.
+take 6 13 wer 0.0 dur 3.57 | אז לפני שנכנסים מסתכלים על המים 10 דקות.
+take 7 14 wer 0.0 dur 4.7 | בים גבוה הזרם יותר חזק אז קודם בודקים תחזית בסרף טרייב
+take 7 15 wer 0.0 dur 4.7 | בים גבוה הזרם יותר חזק אז קודם בודקים תחזית בסרף טרייב
+take 8 16 wer 0.0 dur 2.11 | נסחפתם, נשארים על הגלשן?
+take 8 17 wer 0.25 dur 2.11 | נשארים על הגלשן
+take 9 18 wer 0.091 dur 4.92 | לא חותרים נגד הזרם, חותרים הצידה המקביל לחוף עד שיוצאים ממנו
+take 9 19 wer 0.455 dur 4.92 | לא חותרים נגד זרם, חותרים הצידה מקביל לחופר!
+take 10 20 wer 0.0 dur 2.94 | עדיין לא יוצאים? מנופפים ביד וצועקים
+take 10 21 wer 0.5 dur 2.94 | עדיין לא יוצאים מנופים בעד זייפ.
+take 11 22 wer 0.0 dur 3.45 | תשמרו את זה לפעם הבאה שאתם נכנסים למים.
+take 11 23 wer 0.0 dur 3.45 | תשמרו את זה לפעם הבאה שאתם נכנסים למים.
+PICK 0 wer 0.0 | final fall (-8.7 st, expected fall) | pitch 123 Hz (level +0.0 st) | range 10.7 st | רואים את המים? העכורים שיוצאים מעבר לגלים זה זרם סחף.
+PICK 1 wer 0.0 | final fall (-2.0 st, expected fall) | pitch 117 Hz (level -1.0 st) | range 12.6 st | הוא סוחב אתכם פנימה יותר מהר ממה שרוב האנשים שוחים.
+PICK 2 wer 0.0 | final level (-0.4 st, expected fall) | pitch 105 Hz (level -2.8 st) | range 14.6 st | מהחוף מחפשים שלושה דברים
+PICK 3 wer 0.0 | final level (-0.4 st, expected fall) | pitch 122 Hz (level -0.2 st) | range 14.7 st | מקום שבו הגלים לא נשברים.
+PICK 4 wer 0.25 | final level (+0.0 st, expected fall) | pitch 121 Hz (level -0.3 st) | range 5.6 st | מים יותר קיים ושקטים
+PICK 5 wer 0.25 | final fall (-4.9 st, expected fall) | pitch 124 Hz (level +0.2 st) | range 14.6 st | קצב שנסחף החוצה לים
+PICK 6 wer 0.0 | final level (-0.8 st, expected fall) | pitch 127 Hz (level +0.6 st) | range 16.9 st | אז לפני שנכנסים מסתכלים על המים 10 דקות.
+PICK 7 wer 0.0 | final fall (-5.1 st, expected fall) | pitch 121 Hz (level -0.3 st) | range 9.4 st | בים גבוה הזרם יותר חזק אז קודם בודקים תחזית בסרף טרייב
+PICK 8 wer 0.0 | final rise (+7.6 st, expected fall) | pitch 242 Hz (level +11.7 st) | range 8.5 st | נסחפתם, נשארים על הגלשן?
+PICK 9 wer 0.091 | final fall (-8.4 st, expected fall) | pitch 179 Hz (level +6.4 st) | range 11.8 st | לא חותרים נגד הזרם, חותרים הצידה המקביל לחוף עד שיוצאים ממנו
+PICK 10 wer 0.0 | final rise (+2.4 st, expected fall) | pitch 211 Hz (level +9.3 st) | range 9.0 st | עדיין לא יוצאים? מנופפים ביד וצועקים
+PICK 11 wer 0.0 | final fall (-4.1 st, expected fall) | pitch 126 Hz (level +0.4 st) | range 9.4 st | תשמרו את זה לפעם הבאה שאתם נכנסים למים.
+he f5 T 35.603 [('L1', 0.12, np.float64(3.76), 0.0), ('L2', np.float64(4.082), np.float64(3.2), 0.0), ('L3', np.float64(7.784), np.float64(1.85), 0.0), ('L4', np.float64(10.089), np.float64(1.8), 0.0), ('L5', np.float64(12.089), np.float64(1.25), 0.25), ('L6', np.float64(13.539), np.float64(1.52), 0.25), ('L7', np.float64(15.562), np.float64(2.45), 0.0), ('L8', np.float64(18.208), np.float64(3.76), 0.0), ('L9', np.float64(22.465), np.float64(1.66), 0.0), ('L10', np.float64(24.323), np.float64(4.11), 0.09), ('L11', np.float64(28.631), np.float64(2.61), 0.0), ('L12', np.float64(31.689), np.float64(3.01), 0.0)]
