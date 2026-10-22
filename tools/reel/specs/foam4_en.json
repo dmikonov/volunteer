@@ -1,0 +1,176 @@
+{
+ "lang": "en",
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.15,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "edge": true,
+ "rate": "-10%",
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "ttop": {},
+ "out": "reel_foam4_en.mp4",
+ "lines": [
+  "You paddle straight out for the big waves, and the whitewater keeps pushing you back.",
+  "There goes a whole session, and you didn't stand up once.",
+  "There's an easy fix: stay in the whitewater.",
+  "Every time whitewater rolls in, try to stand up.",
+  "Once you're up, ride it straight to the beach.",
+  "That's ten tries a session instead of zero.",
+  "Get a friend to film you, and SurfTribe shows you on the video what to fix.",
+  "Save this so you can watch it again before your next surf.",
+  "Tomorrow: which wave in the set is yours."
+ ],
+ "titles": {
+  "L1": [
+   "Straight out?",
+   "Pushed back",
+   null,
+   "X"
+  ],
+  "L2": [
+   "Whole session,",
+   "<span style='color:#00E4FF'>0</span> stand-ups",
+   null,
+   null
+  ],
+  "L3": [
+   "Easy fix:",
+   "stay in the whitewater",
+   null,
+   null
+  ],
+  "L4": [
+   "Every whitewater",
+   "= one try",
+   null,
+   "CK"
+  ],
+  "L5": [
+   "Up?",
+   "Ride to the beach",
+   null,
+   "CK"
+  ],
+  "L6": [
+   "<span style='color:#00E4FF'>10</span> tries",
+   "instead of 0",
+   null,
+   null
+  ],
+  "L8": [
+   "Save it",
+   "for your next surf",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow:",
+  "which wave in the set is yours"
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_hit.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_hit.mp4",
+    "a": 1.6,
+    "z": 1.2,
+    "cx": [
+     0.55,
+     0.55
+    ],
+    "cy": [
+     0.62,
+     0.62
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_walk.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_ride.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_ride.mp4",
+    "a": 1.4,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_walk.mp4",
+    "a": 1.6,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app4_en.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_angle.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_set.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "extra": [],
+ "gap_after": {
+  "L2": 0.25,
+  "L3": 0.2,
+  "L6": 0.25
+ }
+}

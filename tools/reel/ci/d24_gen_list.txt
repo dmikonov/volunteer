@@ -1,0 +1,5 @@
+f4_hit https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/c6bfff7db0964b930d5a84d23b1c142e2bebf6fb7832071aebd1e13b285d97c2/tmpa1hy8erj.mp4
+f4_ride https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/fa7c83a21a757a26a248215ff64db736862fc0ed514ad8e0f165e7b6d5b21888/tmpymye3llw.mp4
+f4_angle https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/063d238d289797acdb13bbd7f61f1a5d867ad44dd95df4c10d7ce7bb9002adaf/tmp8huvk5op.mp4
+f4_walk https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/55ab5aa801df9b317d2d6cf9a0819dabe25e17c83a61d85a7514d95a4c6de266/tmp6j0i_1ia.mp4
+f4_flags https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/0ff7352a73b2d3b37b2570eb49ff1fc110b4fc80ab9207a6f6f9841e63ec6368/tmp6jaegs3q.mp4
