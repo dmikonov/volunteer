@@ -7,3 +7,4 @@ ffmpeg -v error -y -ss 3.0 -t 3.6 -i app-screens/forecast/forecast_${L}_height.m
 [b]crop=840:760:120:500,scale=1080:977:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:470,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 -preset medium $G/app_$L.mp4
 done
 ls -la $G
+[ -f /s17/gen/r3_arm2.mp4 ] || { echo "ARM2 MISSING, fallback r3_arm"; cp /s17/gen/r3_arm.mp4 /s17/gen/r3_arm2.mp4; }

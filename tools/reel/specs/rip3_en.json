@@ -107,58 +107,41 @@
    "line": "L1",
    "d0": 1.5,
    "d1": 3.6,
-   "html": "<div style='position:absolute;top:1395px;left:70px;width:780px;display:flex;justify-content:center;direction:ltr'><span style=\"white-space:nowrap;font:700 44px R;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
+   "html": "<div style='position:absolute;top:1395px;left:70px;width:780px;display:flex;justify-content:center;direction:ltr'><span style=\"white-space:nowrap;font:700 52px R;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
   },
   {
    "k": "RING4",
    "line": "L4",
    "d0": 0.25,
    "html": "<div style='position:absolute;left:290px;top:560px;width:400px;height:310px;border-radius:50%;border:9px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
+  },
+  {
+   "k": "RING5",
+   "line": "L5",
+   "d0": 0.2,
+   "html": "<div style='position:absolute;left:300px;top:700px;width:470px;height:390px;border-radius:50%;border:9px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
   }
  ],
  "gap_after": {
-  "L2": 0.3,
-  "L3": 0.25,
-  "L6": 0.3,
-  "L8": 0.3,
-  "L11": 0.25
+  "L2": 0.25,
+  "L3": 0.2,
+  "L6": 0.25,
+  "L8": 0.15,
+  "L11": 0.2
  },
  "plan": {
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/st_rip1.mp4",
+    "src": "/s17/gen/h_hook.mp4",
     "a": 0.0,
-    "z": 1.12,
-    "cx": [
-     0.4,
-     0.45
-    ],
-    "cy": [
-     0.42,
-     0.44
-    ],
-    "dd": 2.1
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/st_rip1.mp4",
-    "a": 2.1,
-    "z": 1.5,
-    "cx": [
-     0.5,
-     0.56
-    ],
-    "cy": [
-     0.42,
-     0.4
-    ]
+    "z": 1.0
    }
   ],
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/st_rip2.mp4",
+    "src": "/s17/gen/h_drag.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -166,8 +149,8 @@
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/r3_watch.mp4",
-    "a": 0.0,
+    "src": "/s17/gen/st_rip3.mp4",
+    "a": 0.2,
     "z": 1.0
    }
   ],
@@ -215,20 +198,14 @@
    {
     "kind": "gen",
     "src": "/s17/gen/r3_watch.mp4",
-    "a": 1.0,
-    "dd": 1.55
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/st_rip3.mp4",
-    "a": 0.2,
+    "a": 0.0,
     "z": 1.0
    }
   ],
   "L8": [
    {
     "kind": "app",
-    "src": "/s17/gen/app_en.mp4",
+    "src": "/s17/gen/app_en_card.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -244,18 +221,9 @@
   "L10": [
    {
     "kind": "gen",
-    "src": "/s17/gen/st_rip2.mp4",
-    "a": 5.6,
-    "z": 1.25,
-    "cx": [
-     0.3,
-     0.3
-    ],
-    "cy": [
-     0.3,
-     0.3
-    ],
-    "dd": 1.2
+    "src": "/s17/gen/h_escape.mp4",
+    "a": 0.0,
+    "dd": 1.9
    },
    {
     "kind": "gen",
@@ -266,7 +234,7 @@
   "L11": [
    {
     "kind": "gen",
-    "src": "/s17/gen/r3_arm.mp4",
+    "src": "/s17/gen/r3_arm2.mp4",
     "a": 0.0,
     "z": 1.0
    }

@@ -1,6 +1,6 @@
 # rip v3: save F5 voice-3 takes into out/ci/rip3/takes (L<i>_s<seed>.wav) + Wan clips
 set -x
 O=out/ci/rip3/takes; mkdir -p $O
-while read i s u; do [ -z "$i" ] && continue; case $s in n*) f=$O/L$((i+1))_$s.wav;; *) f=$O/L$((i+1))_s$s.wav;; esac; [ -f $f ] && continue; curl -sSfL --retry 3 -o $f "$u" || echo "FAIL $f"; done < tools/reel/ci/rip3_takes_list.txt
+while read i s u; do [ -z "$i" ] && continue; case $s in n*) f=$O/L$((i+1))_$s.wav;; *) f=$O/L$((i+1))_s$s.wav;; esac; [ -f $f ] && continue; curl -sSfL --retry 2 --connect-timeout 15 -m 120 -o $f "$u" || echo "FAIL $f"; done < tools/reel/ci/rip3_takes_list.txt
 ls -la $O
 true
