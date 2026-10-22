@@ -33,7 +33,7 @@
  "titles": {
   "L1": [
    "ירד גשם?",
-   "<span style='white-space:nowrap'>ישר מהכביש</span> לים",
+   "<span style='white-space:nowrap'>ישר מהעיר</span> לים",
    null,
    null
   ],
@@ -102,7 +102,16 @@
    {
     "kind": "gen",
     "src": "/s17/gen/rn_waves.mp4",
-    "a": 0.0
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.62,
+     0.62
+    ]
    }
   ],
   "L3": [
