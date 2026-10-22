@@ -1,0 +1,318 @@
+{
+ "lang": "he",
+ "f5": true,
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.2,
+ "music_vol": 0.35,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_knees_bump3_he.mp4",
+ "app_lines": [],
+ "teaser": [
+  "הסרטון של מחר",
+  "איך מזהים<br>זרם סחף"
+ ],
+ "sub_replace": {
+  "וסרף טרייב": "ו-SurfTribe",
+  "ובסרף טרייב": "וב-SurfTribe",
+  "סרף טרייב": "SurfTribe",
+  "מאה שבעים וחמש": "175"
+ },
+ "lines": [
+  "למה גל קטן מפיל אתכם מהגלשן?",
+  "עקבו, כל יום טעות אחת בגלישה ואיך מתקנים אותה.",
+  "תסתכלו על הברכיים. הן נעולות וישרות.",
+  "רגל ישרה לא מתכופפת, אז כל המכה עוברת לגוף.",
+  "ברכיים כפופות עובדות כמו קפיצים ובולמות את המכה.",
+  "אז רוכבים נמוך, כאילו יושבים על כיסא.",
+  "צלמו גל אחד, וסרף טרייב ימדוד את זווית הברך.",
+  "כאן רואים מאה שבעים וחמש מעלות. הרגל כמעט ישרה.",
+  "הסרטון של מחר: איך מזהים זרם סחף מהחוף, המים שמושכים אתכם לים."
+ ],
+ "titles": {
+  "L1": [
+   "למה גל קטן",
+   "מפיל",
+   null,
+   null
+  ],
+  "L2": [
+   "עקבו אחרי",
+   "SurfTribe",
+   null,
+   null
+  ],
+  "L3": [
+   "ברכיים נעולות",
+   "",
+   null,
+   "X"
+  ],
+  "L5": [
+   "ברכיים",
+   "כמו קפיצים",
+   null,
+   "CK"
+  ],
+  "L6": [
+   "רוכבים",
+   "נמוך",
+   null,
+   null
+  ],
+  "L7": [
+   "SurfTribe<br>",
+   "מודד את הברך",
+   null,
+   null
+  ],
+  "L8": [
+   "175° =<br>",
+   "רגל כמעט ישרה",
+   null,
+   null
+  ]
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A3c.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "dd": 1.5
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1k.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1r.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1r.mp4",
+    "a": 0.45,
+    "z": 1.2,
+    "cx": [
+     0.436,
+     0.436
+    ],
+    "cy": [
+     0.5365,
+     0.5365
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_split.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B4t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B2t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B1s.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 2.0,
+    "z": 1.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_watch.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "dd": 1.8
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ]
+ },
+ "ttop": {},
+ "v2subs": {
+  "L6": [
+   "יושבים על כיסא"
+  ]
+ },
+ "extra": [
+  {
+   "k": "RING3",
+   "line": "L3",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:372px;top:858px;width:336px;height:336px;border-radius:50%;border:12px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
+  },
+  {
+   "k": "LABL4",
+   "line": "L4",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:68px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='52' height='52' viewBox='0 0 64 64'><path d='M12 12 L52 52 M52 12 L12 52' stroke='#2D242A' stroke-width='20' stroke-linecap='round'/><path d='M12 12 L52 52 M52 12 L12 52' stroke='#FF5150' stroke-width='12' stroke-linecap='round'/></svg><span>נוקשה</span></span></div>"
+  },
+  {
+   "k": "LABR4",
+   "line": "L4",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:552px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>רך</span></span></div>"
+  }
+ ],
+ "v2_sub_top": 465,
+ "f5_takes": [
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/4afa472191e7115a2a1cb0c09ce4357067259ba96be1b62fac92fb645cd072bd/tmpo7dm1z3u.wav"
+  ],
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/6ca448b776799342f99205a14c3a14e8a9693005e30e092fc83bae2e931d6826/tmp3py8mas0.wav"
+  ],
+  [
+   0,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/555842bde28d278e4e1132771baef7250b59e546a112c70a0a3283fe52871de6/tmpreiowkpv.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/58f427f1bbd893130fde7d5a04bffdbbe3a060609247a06d359889c54c231516/tmpr9vrhvaj.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/8cbe28ca1402d701a22a68937d90f78389cfaf582efb4314aa0ca1885a629be4/tmp5n24zptw.wav"
+  ],
+  [
+   1,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/7cbff72f0c7f3d8688d46480ab6b03ffcea40e379062475d1ce1f557397bdf1e/tmphvkgpwy5.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2d391f7082825b7db380f87bbe9bb03337b8ce7be0a853a17160d758cda6c39a/tmpw1ce0env.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/cf7ba6c74c5f00ebd0c4fafea802264df99905defafba755e91886bde66c772f/tmp51u9xnsz.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/7fdc4e0725a1464aae4a819a0e99c51ceeec937a918f76430980b3282755c31e/tmps5skziay.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/3a017bb4dc3581993d95d9b6ba7e86a15745ac12eae9d5836b809687d451d464/tmpdrctspvq.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/9fd1bcdfc90c107fc913a226af91722766b3cb554a4b9b0b7799848a0ada82a5/tmp2uabuee5.wav"
+  ],
+  [
+   3,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/15cd8d130379c5a4156e7bd6dc701a950e547befab988e0f2bf535047d33b2e1/tmpb4qml6bj.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/5c3d310c7270f628a845d050c428f10160bc5caf8ac2afc39495a082b194ef9d/tmpscsbl4rn.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/e73960ce255ea3847ffc533630048e04d76f6da8e6cd5ff0cf50a62fd188340d/tmpqc0w32jz.wav"
+  ],
+  [
+   4,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/d305411292f173e6930bf1c1c1c9b022a2e7ff746271ac366c7a13d07e96d13d/tmpfnox2yi1.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/26025ba368c5656c3aec03bb9a947c4d0003177fae53556cb800f402d26e1d47/tmpy14if199.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/9d8ad8e7d1fe20cfe0110a6a26d009c61734e57bb0f9826b11912758e90493d9/tmpw3o5sup9.wav"
+  ],
+  [
+   5,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/a62d9df6ca7de6bc3b3afd01caf49fa28329b4198efedce1d44a4d6eeb35f93f/tmp6z2mx0l4.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fa16bb6ecae6ae96a89b547a3b75e6996712dbdbda56e330771e07353dd3714b/tmpgi0zgbbb.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2b68388a269866042510dc8ab830fe0b8119a448ff04353e2b6c0832233bf963/tmprvygv0rd.wav"
+  ],
+  [
+   6,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/04d00c0bb5764bcbb4b0dcab6a87750dbcf65a8ea96a9fdc0a6b9f66cc2125c3/tmp_qut2_xp.wav"
+  ],
+  [
+   7,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/46830f216e58faf428cc9ce5294b17757c7c9e6f486135dd8f0e5a89dc51f979/tmpmo963w26.wav"
+  ],
+  [
+   7,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/eb41283708535f8c90de5218a74ee5493b89c6227c23a315cbb14de59fd1d86a/tmpixwntcz4.wav"
+  ],
+  [
+   7,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/5eeae36778f175047ce3786f8e1c2394eacfec6a1fa9d39637b5f391936701dc/tmphe359w1b.wav"
+  ],
+  [
+   8,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/38e7d78acbebe784fb4d314ef12d77594e50d94730375106d0f8ca1aacf90638/tmp2e371gco.wav"
+  ],
+  [
+   8,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/edb89080886db16bd33ca97664df6024ee88f18524a7f9fae2de5d610c231fec/tmprpnpjjgu.wav"
+  ],
+  [
+   8,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fcadd957de0079a5da59c460b4851010372ad9dd874419cdea6d4b3296ae45d0/tmpmj2sxkyt.wav"
+  ]
+ ]
+}
