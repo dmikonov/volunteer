@@ -5,7 +5,7 @@ cat 35.6 T 35.603
 + python3 ov_png.py /s17/rp/rip3_he
 realcuts True [0.0, 4.0, 7.72, 10.04, 12.04, 13.48, 15.52, 18.16, 22.4, 24.24, 28.56, 31.6, 35.603]
 safe-zone violations []
-ovplan 25
+ovplan 26
 + python3 ov_ff.py /s17/rp/rip3_he
 done /s17/rp/rip3_he/reel_rip3_he.mp4 35.603 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/rip3_he

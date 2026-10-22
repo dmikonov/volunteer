@@ -1,9 +1,19 @@
 + k=/s17/rp/rip3_en
 + python3 build.py /s17/rp/rip3_en
-Traceback (most recent call last):
-  File "/s17/rp/build.py", line 28, in <module>
-    assert a >= 0 and dm > 0.2, (l['k'], e, a, dm, sd)
-           ^^^^^^^^^^^^^^^^^^^
-AssertionError: ('L10', {'kind': 'gen', 'src': '/s17/gen/r3_paddle.mp4', 'a': 0.6}, 0.6, -0.025, 2.56)
-+ echo 'EXIT /s17/rp/rip3_en 1'
-EXIT /s17/rp/rip3_en 1
+[('L1', '/st_rip1.mp4', 0.0, 2.1, 0.0), ('L1', '/st_rip1.mp4', 2.1, 2.429, 2.1), ('L2', '/st_rip2.mp4', 0.0, 2.897, 4.529), ('L3', 'r3_watch.mp4', 0.0, 2.692, 7.426), ('L4', '/st_rip1.mp4', 4.7, 1.864, 10.118), ('L5', '/st_rip1.mp4', 5.0, 1.733, 11.982), ('L6', '/st_rip2.mp4', 3.4, 1.876, 13.715), ('L7', 'r3_watch.mp4', 1.0, 1.55, 15.591), ('L7', '/st_rip3.mp4', 0.2, 1.528, 17.141), ('L8', 'n/app_en.mp4', 0.0, 4.04, 18.669), ('L9', 'r3_float.mp4', 0.0, 1.936, 22.709), ('L10', '/st_rip2.mp4', 5.6, 1.2, 24.645), ('L10', '_paddle2.mp4', 0.0, 2.275, 25.845), ('L11', 'n/r3_arm.mp4', 0.0, 2.968, 28.12), ('L12', 'n/r3_out.mp4', 0.0, 2.763, 31.088)]
+cat 33.84 T 33.851
++ python3 ov_png.py /s17/rp/rip3_en
+realcuts True [0.0, 4.56, 7.44, 10.12, 12.0, 13.72, 15.6, 18.68, 22.72, 24.64, 28.12, 31.08, 33.851]
+safe-zone violations []
+ovplan 26
++ python3 ov_ff.py /s17/rp/rip3_en
+done /s17/rp/rip3_en/reel_rip3_en.mp4 33.851 lufs before -15.2 gain 0.7
++ python3 trim_tail.py /s17/rp/rip3_en
+trimmed /s17/rp/rip3_en/reel_rip3_en.mp4 33.35
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rip3_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rip3_en/reel_rip3_en.mp4
+/s17/rp/rip3_en/reel_rip3_en.mp4 before -13.0 after -14.6 peak -2.5
++ python3 post_cz.py /s17/rp/rip3_en
+post ok
++ echo 'EXIT /s17/rp/rip3_en 0'
+EXIT /s17/rp/rip3_en 0
