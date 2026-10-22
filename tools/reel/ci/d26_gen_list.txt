@@ -5,3 +5,5 @@ td_watch https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/
 rn_drain https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/afa2148fa78e256a4be47380f81fbdd7bbc5b081a43ae51476d5e4256ce181e1/tmplzxwa36x.mp4
 rn_waves https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/8cd2a8c889233a656d1a7c42fa82c687b5209275cabb20f27301f83d2a5b2277/tmprvsso1fr.mp4
 rn_stream https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/4251e345ce4c936ffd7f90bd085918284bb757cd82e70591377d1ca1323eca59/tmprhktodqy.mp4
+rn_clean https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/2b2f470405f1c951fba73f1b6618955c1d3ce505605255ebf7520482cf889db3/tmp8nkj9q37.mp4
+rn_leave https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/27ef7dd284efe640367013475f598d72daadd59b68f82d61a4486ca0c68fda8e/tmpxsginm28.mp4
