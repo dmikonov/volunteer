@@ -62,10 +62,10 @@
 - Публикация из этой схемы: upload_local_file даёт ссылку на 1 час, её сразу в POST /me/media.
 
 ## Голос, музыка, эффекты (решения Димы 20.10, главнее всего ниже)
-- EN голос: Kokoro af_heart (tools/reel/voices.json), voice.py включает его сам. HE голос: F5 голос 3. Старые голоса Edge Andrew и Avri ниже по тексту устарели.
+- EN голос: en-US-AndrewMultilingualNeural +4% (выбор Димы 22.10, tools/reel/voices.json; Kokoro отменён). HE голос: F5 голос 3. Старые голоса Edge Andrew и Avri ниже по тексту устарели.
 - Музыка: только треки из assets/music/library.json (approved=true, пока выбора нет temp=true). audio_fx.py после синтеза вызывает music.py и заменяет music.wav настоящим треком. Свой трек на рилс: в спеке не нужно ничего, ротация по дню; конкретный трек: переменная REEL_MUSIC=<id>. В логе сборки должна быть строка «music: <id>»; «MUSIC FAIL» значит рилс без музыки, это ошибка, написать Диме.
 - Эффекты: тряска (shk), белые вспышки, свуши, удары и «попы» выключены по умолчанию (spec shake/flash/sfx не ставить). Указания ниже про тряску, вспышки и звуки устарели.
-- EN-концепт: docs/en-concept.md (призыв подписаться сразу после хука).
+- EN-концепт: docs/en-concept.md; структура по разделу I чек-листа (без блока Follow, строка подписки только по тесту T1). EN публикует только задача по слотам (docs/en-slot-test.md).
 
 ## Сборка на GitHub Actions (основной путь с 20.10, HF-песочница 402)
 - Кадры: Z-Image Turbo (инструмент gr1_z_image_turbo_generate) и Wan 2.2 (dynamic_space) через MCP Hugging Face, стартовые картинки видно сразу, клипы скачивает CI: tools/reel/ci/fetch_list.txt (имя и хвост ссылки hf.space), MODE=fetch.sh, пуш trigger.txt. Листы кадров приходят в out/ci/<рилс>/gen/.
