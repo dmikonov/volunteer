@@ -22,7 +22,7 @@
   "Low tide is shallow, so waves dump hard.",
   "As it fills in, they slow down and go soft.",
   "Lots of beaches work best at mid tide, on the way up.",
-  "Check the tide, then let SurfTribe pick the best hour for swell and wind.",
+  "Check the tide, and let SurfTribe pick the best hour.",
   "Save this for your next new spot.",
   "Tomorrow: where to sit in the lineup."
  ],
@@ -65,7 +65,7 @@
   ],
   "L7": [
    "Tide first,",
-   "then best hour",
+   "then the best hour",
    null,
    null
   ],
@@ -163,7 +163,6 @@
  },
  "extra": [],
  "gap_after": {
-  "L2": 0.25,
   "L3": 0.2,
   "L6": 0.25
  }
