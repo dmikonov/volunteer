@@ -1,0 +1,178 @@
+{
+ "lang": "en",
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.15,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "edge": true,
+ "rate": "+4%",
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "ttop": {},
+ "out": "reel_tide_en.mp4",
+ "lines": [
+  "Same beach as this morning. Now every wave's closing out.",
+  "Blame the tide. Low to high takes about six hours.",
+  "So how do you read it?",
+  "Low tide is shallow, so waves dump hard and fast.",
+  "As it fills in, they slow down and go soft.",
+  "A lot of beaches are best around mid tide, while it's rising.",
+  "Check the tide before you paddle out.",
+  "Then let SurfTribe pick the best hour for swell and wind.",
+  "Save this for your next new spot.",
+  "Tomorrow: where to sit in the lineup."
+ ],
+ "titles": {
+  "L1": [
+   "Every wave",
+   "closes out",
+   null,
+   "X"
+  ],
+  "L2": [
+   "Low to high",
+   "<span style='color:#00E4FF'>~6</span> hours",
+   null,
+   null
+  ],
+  "L3": [
+   "How to",
+   "read it",
+   null,
+   null
+  ],
+  "L4": [
+   "Low tide",
+   "= dumps",
+   null,
+   null
+  ],
+  "L5": [
+   "Filling in",
+   "= softer",
+   null,
+   null
+  ],
+  "L6": [
+   "Mid tide,",
+   "rising",
+   null,
+   "CK"
+  ],
+  "L7": [
+   "Check",
+   "the tide",
+   null,
+   "CK"
+  ],
+  "L8": [
+   "Best hour for",
+   "swell + wind",
+   null,
+   null
+  ],
+  "L9": [
+   "Save it",
+   "for a new spot",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow:",
+  "where to sit in the lineup"
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_close.mp4",
+    "a": 2.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_tide.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/td_watch.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_dump.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_soft.mp4",
+    "a": 1.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_ride.mp4",
+    "a": 2.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/td_watch.mp4",
+    "a": 1.6,
+    "z": 1.2,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ]
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_ride2.mp4",
+    "a": 2.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_lineup.mp4",
+    "a": 0.5
+   }
+  ]
+ },
+ "extra": [],
+ "gap_after": {
+  "L2": 0.25,
+  "L3": 0.2,
+  "L6": 0.25
+ }
+}
