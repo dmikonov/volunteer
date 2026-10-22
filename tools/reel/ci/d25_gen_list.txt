@@ -1,3 +1,4 @@
 fl5_white https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/8be7247c4ebab8aa756ad1d7225d1b8c9ef4f1294d4d902d9bb9c1b1fb31211d/tmplyokq17x.mp4
 fl5_red https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/6640521ee86df601b3c6675fe7cae8d5a472f22b63cc9772c56a4c7c70993f0d/tmp1avoq0yy.mp4
 fl5_none https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/e298df34603193176d1fface1698b7806c648a6d028ead3ef2d8df3b00b9af8e/tmppk6o8mcp.mp4
+fl5_go https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/85mzr/gradio_api/file=/tmp/gradio/1f0248c3c09c350db3b1208567119264c22e7118461f773ac85c2de8e0fb977a/tmpt0qiujog.mp4

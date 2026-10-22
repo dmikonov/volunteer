@@ -1,0 +1,181 @@
+{
+ "lang": "en",
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.15,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "edge": true,
+ "rate": "-10%",
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "ttop": {},
+ "out": "reel_sets5_en.mp4",
+ "lines": [
+  "A set's rolling in. Guess which wave is yours.",
+  "Go for the biggest one and it'll probably land right on your head.",
+  "Here's how to pick.",
+  "The big ones go to whoever's sitting further out, closest to where it breaks.",
+  "Let those go and grab a smaller one nobody's paddling for.",
+  "Someone already up and riding? Pull back, it's their wave.",
+  "After your session, SurfTribe shows if you rode high on the wave or down at the bottom.",
+  "Save this, you'll need it the next time the lineup's packed.",
+  "Tomorrow: how the tide changes your spot."
+ ],
+ "titles": {
+  "L1": [
+   "Which wave",
+   "is yours?",
+   null,
+   null
+  ],
+  "L2": [
+   "Biggest one =",
+   "on your head",
+   null,
+   null
+  ],
+  "L3": [
+   "How to",
+   "pick",
+   null,
+   null
+  ],
+  "L4": [
+   "Big ones =",
+   "surfers further out",
+   null,
+   null
+  ],
+  "L5": [
+   "Take a",
+   "smaller one",
+   null,
+   null
+  ],
+  "L6": [
+   "Someone riding?",
+   "Pull back",
+   null,
+   null
+  ],
+  "L7": [
+   "High line",
+   "or bottom?",
+   null,
+   null
+  ],
+  "L8": [
+   "Save it",
+   "for a packed lineup",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow:",
+  "how the tide changes your spot"
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_set1.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_big.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_m38939.mp4",
+    "a": 5.5
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_lineup5.mp4",
+    "a": 0.0,
+    "z": 1.2,
+    "cx": [
+     0.45,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_set1.mp4",
+    "a": 1.6,
+    "z": 1.35,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.52,
+     0.52
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_m1076.mp4",
+    "a": 3.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app5_en.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_m1163.mp4",
+    "a": 11.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_tide.mp4",
+    "a": 2.0
+   }
+  ]
+ },
+ "extra": [
+  {
+   "k": "FOLLOW",
+   "line": "L1",
+   "d0": 1.5,
+   "d1": 3.6,
+   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:1395px;left:70px;width:780px;display:flex;justify-content:center;direction:ltr'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
+  }
+ ],
+ "gap_after": {
+  "L2": 0.25,
+  "L3": 0.2,
+  "L6": 0.25
+ }
+}
