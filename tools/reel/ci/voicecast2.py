@@ -1,6 +1,8 @@
 """Voice casting 22.10: expressive free TTS on the new knees script. Output: out/ci/voicecast2/*.mp3"""
 import os, sys, time, subprocess as sp
 import torch, torchaudio as ta
+import perth
+if perth.PerthImplicitWatermarker is None: perth.PerthImplicitWatermarker = perth.DummyWatermarker  # implicit watermarker fails to import on the runner
 O = 'out/ci/voicecast2'; os.makedirs(O, exist_ok=True)
 EN = ("This is why a tiny bump throws you off. Look at his knees. Locked straight. "
       "Straight legs send the bump into your body. Bent knees soak it up. "

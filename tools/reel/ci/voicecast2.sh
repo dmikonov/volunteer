@@ -6,7 +6,7 @@ sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && ech
 ffmpeg -v error -y -i out/ci/knees_bump_en/vo.wav -t 9 -ac 1 -ar 24000 /tmp/ref_en.wav && echo REF_EN
 ffmpeg -v error -y -i out/ci/knees_bump_he/vo.wav -t 9 -ac 1 -ar 24000 /tmp/ref_he.wav && echo REF_HE
 python3 -m pip install -q uv edge-tts && echo UV_OK
-python3 - <<'EOF'
+if false; then python3 - <<'EOF'
 import asyncio, subprocess as sp, edge_tts
 EN = ("This is why a tiny bump throws you off. Look at his knees. Locked straight. "
       "Straight legs send the bump into your body. Bent knees soak it up. "
@@ -20,6 +20,7 @@ async def go():
         except Exception as e: print('EDGE FAIL', n, e)
 asyncio.run(go())
 EOF
+fi
 UVA="--python 3.11 --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cpu --with chatterbox-tts>=0.1.4"
 for L in he en; do
   timeout 1500 uv run $UVA python tools/reel/ci/voicecast2.py $L || echo "CHATTERBOX $L exit $?"
