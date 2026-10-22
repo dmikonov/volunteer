@@ -31,7 +31,7 @@
    "Every wave",
    "closes out",
    null,
-   "X"
+   null
   ],
   "L2": [
    "Low to high",
@@ -61,7 +61,7 @@
    "Mid tide,",
    "rising",
    null,
-   "CK"
+   null
   ],
   "L7": [
    "Tide first,",
@@ -124,21 +124,6 @@
    }
   ],
   "L7": [
-   {
-    "kind": "gen",
-    "src": "/s17/gen/td_watch.mp4",
-    "a": 1.6,
-    "z": 1.2,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.6,
-     0.6
-    ],
-    "dd": 1.6
-   },
    {
     "kind": "app",
     "src": "/s17/gen/app_en.mp4",
