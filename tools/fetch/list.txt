@@ -1,5 +1,3 @@
-knees5/k5_stiff_bridge.mp4 https://staging.surftribe.rest/api/vgen/file/0aa3b3c89a66.mp4?token=l2OKV8vwXmtcGzJLx8ZoTdPhXzUS0Shi
-knees5/k5_crouch_bridge.mp4 https://staging.surftribe.rest/api/vgen/file/a16dd08c5eac.mp4?token=l2OKV8vwXmtcGzJLx8ZoTdPhXzUS0Shi
 knees5/k5_stiff_hf101.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/ct8xb/gradio_api/file=/tmp/gradio/caa080812ebaad4efad2d0e55a769f7d394674b31c8d30f07472aa8f4c0223a8/tmpun_ssl5m.mp4
 knees5/k5_crouch_hf202.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/ct8xb/gradio_api/file=/tmp/gradio/4c0e08789bf1acc8792bb038500901b6aa540abecd47b957b1ba750257376806/tmplf2ii07a.mp4
 knees5/k5_low_hf301.mp4 https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/ct8xb/gradio_api/file=/tmp/gradio/b60d2640ad5328f40d484dadf4f57759ea90789efd5fdf6bb800b192e3109d3f/tmp1ichsg1j.mp4
