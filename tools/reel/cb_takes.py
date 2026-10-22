@@ -17,5 +17,5 @@ for i, t in enumerate(LINES):
         torch.manual_seed(seed)
         w = m.generate(t, language_id='he', audio_prompt_path=REF, exaggeration=ex, cfg_weight=cfg)
         f = f'{O}/L{i + 1}_t{n}.wav'; ta.save(f, w, m.sr); takes.append([i, 'file://' + f]); print('take', i, n, flush=True)
-S['f5_takes'] = takes; json.dump(S, open(SP, 'w'), ensure_ascii=False, indent=1)
-print('takes', len(takes))
+TF = os.path.splitext(SP)[0] + '.takes.json'  # untracked file: writing into the tracked spec blocked CI's git pull --rebase (22.10, outputs lost)
+json.dump(takes, open(TF, 'w'), ensure_ascii=False); print('takes', len(takes), '->', TF)

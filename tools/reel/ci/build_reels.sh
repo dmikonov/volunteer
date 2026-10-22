@@ -13,7 +13,7 @@ for k in $NAMES; do [ -f tools/reel/specs/$k.prep.sh ] && bash tools/reel/specs/
 N1=$(echo $NAMES | wc -w); [ "$N1" = 1 ] && [ -f tools/reel/specs/$NAMES.music ] && export REEL_MUSIC=$(cat tools/reel/specs/$NAMES.music)  # 21.10: neighbour reels get different tracks
 python3 tools/reel/audio_fx.py 30 | tee /s17/music.log
 cd /s17/rp && for f in voice.py voice_f5.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py voicecheck.py kokoro_tts.py voices.json; do cp $R/tools/reel/$f . 2>/dev/null; done
-for k in $NAMES; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; done
+for k in $NAMES; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; T=$R/tools/reel/specs/$k.takes.json; [ -f $T ] && python3 -c "import json;s=json.load(open('$k/spec.json'));s['f5_takes']=json.load(open('$T'));json.dump(s,open('$k/spec.json','w'),ensure_ascii=False)" && echo "takes merged for $k"; done
 for k in $NAMES; do
   V=voice.py; grep -q '"f5": *true' $k/spec.json && V=voice_f5.py
   for i in 1 2 3 4; do python3 $V /s17/rp/$k > /s17/rp/$k/voice.log 2>&1 && break; sleep 8; done; tail -3 /s17/rp/$k/voice.log
