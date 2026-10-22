@@ -2,3 +2,4 @@ rn_check https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/
 rn_paddle https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/3daf63a7be530cd763e20bfcc8505fa553e407928a264da3ea40e4f35f172851/tmp_uzssj31.mp4
 rn_wait https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/a039a46d38a441738aeac3f43418d8cb3ab17ec6db8f36e376e2af5f5447ea7b/tmpdjcalp8v.mp4
 td_watch https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/296b8c15f2a769f7413fc50f987bb7be7aa5e65637739a289d66cf5b0a80cba4/tmp26dt8262.mp4
+rn_drain https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/afa2148fa78e256a4be47380f81fbdd7bbc5b081a43ae51476d5e4256ce181e1/tmplzxwa36x.mp4
