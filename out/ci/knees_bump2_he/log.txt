@@ -1,9 +1,19 @@
 + k=/s17/rp/knees_bump2_he
 + python3 build.py /s17/rp/knees_bump2_he
-Traceback (most recent call last):
-  File "/s17/rp/build.py", line 28, in <module>
-    assert a >= 0 and dm > 0.2, (l['k'], e, a, dm, sd)
-           ^^^^^^^^^^^^^^^^^^^
-AssertionError: ('L3', {'kind': 'gen', 'src': '/s17/gen/kb_A1r.mp4', 'a': 0.6, 'z': 1.2, 'cx': [0.436, 0.436], 'cy': [0.5365, 0.5365]}, 0.6, 0.11, 0.75)
-+ echo 'EXIT /s17/rp/knees_bump2_he 1'
-EXIT /s17/rp/knees_bump2_he 1
+[('L1', 'n/kb_A3c.mp4', 0.0, 1.5, 0.0), ('L1', 'n/kb_A1k.mp4', 0.0, 0.659, 1.5), ('L2', 'n/kb_A1r.mp4', 0.0, 3.766, 2.159), ('L3', 'n/kb_A1r.mp4', 0.45, 1.255, 5.925), ('L4', 'kb_split.mp4', 0.0, 2.938, 7.18), ('L5', 'n/kb_B4t.mp4', 0.0, 1.678, 10.118), ('L5', 'n/kb_B2t.mp4', 0.0, 1.679, 11.796), ('L6', 'n/kb_B1s.mp4', 0.0, 3.008, 13.475), ('L7', 'n/kb_app.mp4', 0.0, 3.248, 16.483), ('L8', 'n/kb_app.mp4', 2.0, 3.804, 19.731), ('L9', 'rp_watch.mp4', 0.0, 1.8, 23.535), ('L9', '/rp_wide.mp4', 0.0, 3.533, 25.335)]
+cat 28.8 T 28.868
++ python3 ov_png.py /s17/rp/knees_bump2_he
+realcuts True [0.0, 2.16, 5.92, 7.16, 10.08, 13.44, 16.44, 19.68, 23.48, 28.868]
+safe-zone violations []
+ovplan 20
++ python3 ov_ff.py /s17/rp/knees_bump2_he
+done /s17/rp/knees_bump2_he/reel_knees_bump2_he.mp4 28.868 lufs before -16.4 gain 1.9
++ python3 trim_tail.py /s17/rp/knees_bump2_he
+trimmed /s17/rp/knees_bump2_he/reel_knees_bump2_he.mp4 28.26
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_bump2_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_bump2_he/reel_knees_bump2_he.mp4
+/s17/rp/knees_bump2_he/reel_knees_bump2_he.mp4 before -13.1 after -14.5 peak -2.5
++ python3 post_cz.py /s17/rp/knees_bump2_he
+post ok
++ echo 'EXIT /s17/rp/knees_bump2_he 0'
+EXIT /s17/rp/knees_bump2_he 0

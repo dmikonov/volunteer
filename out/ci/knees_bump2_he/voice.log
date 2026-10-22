@@ -1,38 +1,36 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-take 0 0 wer 1.0 dur 3.08 | למגל כאן מפין, תכה מגלשן.
-take 0 1 wer 0.667 dur 7.28 | למה גל קאטן משילחם הגל שן?
-take 0 2 wer 0.667 dur 5.92 | למה גל כאן מפעיל לכם הגל?
-take 1 3 wer 0.667 dur 5.84 | אקוו, קל יום, תות אחות בגלש ואיך מקנים אותה.
-take 1 4 wer 0.667 dur 4.4 | אקוו, קל יום, תאות אחת בגליש ואיך מתנימותה.
-take 1 5 wer 0.556 dur 5.72 | עקבו קל יום תיעוט אחת בגליש ואיך מתקני מותה.
-take 2 6 wer 1.0 dur 4.92 | עשתה לו על הברכים, הנהלות בישרות.
-take 2 7 wer 0.833 dur 5.8 | צטלו על הבכים, הנאולות ואישות.
-take 2 8 wer 0.833 dur 4.04 | סטלו על הברכים הנעלות בישרות
-take 3 9 wer 0.667 dur 5.4 | רגל יאללה למדחופת אז קאלה מה חאובת לגוף.
-take 3 10 wer 1.0 dur 4.8 | ראה לי ישר עליהם את חופת, אז קאלה מחאובת לגוף.
-take 3 11 wer 0.667 dur 5.88 | רגל יזר למדחופת, אז קלם חאובת לגוף
-take 4 12 wer 0.625 dur 5.6 | וכן כפופת עובדות, כמו קפיצים ובולמוט התמך.
-take 4 13 wer 0.625 dur 4.32 | בחיים כופות עובדות כמו קפיצים ובולמוט עת המחה.
-take 4 14 wer 0.625 dur 4.84 | בחן כפוף את עובדות כמו קפיצים ובולמוט את המחה.
-take 5 15 wer 0.286 dur 2.84 | אז רוכבים נמוך, כאלה יושבים על כיס.
-take 5 16 wer 0.857 dur 3.76 | הזרוחים נימוך קייל יושב על כיס
-take 5 17 wer 0.143 dur 3.84 | ‫אז רוכבים נמוך כאילו יושבים על כיס.
-take 6 18 wer 0.556 dur 3.8 | ציל מוגל אחד, וסף טריב ימדוד את בית הברך.
-take 6 19 wer 0.778 dur 4.4 | צילמו גלעד בסרף טיב ימדוד את את בחוט.
-take 6 20 wer 0.778 dur 4.88 | אצלנו גל אחד מסב תליו עם דוד את זוהיית הברח.
-take 7 21 wer 0.889 dur 5.12 | קן הוי משווים וחמש מלות, הגל כמה תיוהה.
-take 7 22 wer 0.889 dur 6.56 | כאן רואי משבם וחם שמלות, ארגל קמת יער.
-take 7 23 wer 0.889 dur 5.12 | כנרואים מש בים וחם שמלות, הרגל כמת ירא.
-take 8 24 wer 0.917 dur 4.44 | הרטן שלמך, איך מזם זום סף מחוף, הם עם שמשה מחמלים.
-take 8 25 wer 0.917 dur 5.8 | הרתון שלמך, איך מזם זום סף מחוף, הם אם שמושים אתכם להם.
-take 8 26 wer 0.917 dur 5.44 | הרתן שלמך, איך מזם זעם סף מחוף, הימים שמשה מחמלים.
-PICK 0 wer 0.667 | final level (+0.0 st, expected fall) | pitch 150 Hz (level +3.0 st) | range 17.3 st | למה גל כאן מפעיל לכם הגל?
-PICK 1 wer 0.556 | final fall (-8.4 st, expected fall) | pitch 149 Hz (level +3.0 st) | range 20.2 st | עקבו קל יום תיעוט אחת בגליש ואיך מתקני מותה.
-PICK 2 wer 0.833 | final level (-1.1 st, expected fall) | pitch 147 Hz (level +2.6 st) | range 13.7 st | סטלו על הברכים הנעלות בישרות
-PICK 3 wer 0.667 | final rise (+2.8 st, expected fall) | pitch 123 Hz (level -0.4 st) | range 11.5 st | רגל יזר למדחופת, אז קלם חאובת לגוף
-PICK 4 wer 0.625 | final fall (-1.8 st, expected fall) | pitch 114 Hz (level -1.7 st) | range 14.8 st | בחן כפוף את עובדות כמו קפיצים ובולמוט את המחה.
-PICK 5 wer 0.143 | final level (+0.0 st, expected fall) | pitch 117 Hz (level -1.2 st) | range 12.8 st | ‫אז רוכבים נמוך כאילו יושבים על כיס.
-PICK 6 wer 0.556 | final fall (-3.5 st, expected fall) | pitch 127 Hz (level +0.1 st) | range 13.9 st | ציל מוגל אחד, וסף טריב ימדוד את בית הברך.
-PICK 7 wer 0.889 | final fall (-7.8 st, expected fall) | pitch 123 Hz (level -0.4 st) | range 9.2 st | כנרואים מש בים וחם שמלות, הרגל כמת ירא.
-PICK 8 wer 0.917 | final fall (-3.3 st, expected fall) | pitch 125 Hz (level -0.1 st) | range 13.0 st | הרתון שלמך, איך מזם זום סף מחוף, הם אם שמושים אתכם להם.
-he f5 T 44.408 [('L1', 0.12, np.float64(5.84), 0.67), ('L2', np.float64(6.157), np.float64(4.07), 0.56), ('L3', np.float64(10.431), np.float64(3.85), 0.83), ('L4', np.float64(14.479), np.float64(5.8), 0.67), ('L5', np.float64(20.481), np.float64(4.71), 0.62), ('L6', np.float64(25.388), np.float64(3.76), 0.14), ('L7', np.float64(29.344), np.float64(3.59), 0.56), ('L8', np.float64(33.129), np.float64(4.96), 0.89), ('L9', np.float64(38.294), np.float64(5.21), 0.92)]
+take 0 0 wer 0.833 dur 2.17 | למגל קטן מיילו שמגלש
+take 1 1 wer 0.778 dur 3.63 | אה קבו, קליון, תאות אכטה בגלש ואיך מקנים אותה.
+take 2 2 wer 1.0 dur 2.33 | תסתלו עלי ברכם, ענה אלות ושעות
+take 0 3 wer 1.167 dur 2.64 | למגל כי אתה מפעל איתך מגל שם
+take 1 4 wer 0.889 dur 2.84 | אגב הקליום תאות אחות בגש ואיך מקנה מותה
+take 2 5 wer 0.833 dur 1.23 | סטלו על הברכים.
+take 0 6 wer 0.833 dur 2.2 | למגל קטן מפעיל אחמא גלשן
+take 1 7 wer 1.0 dur 1.11 | אקוו אקוו
+take 3 8 wer 0.778 dur 2.33 | המדחופת. אז כל המחה עובדת לאגף.
+take 4 9 wer 0.75 dur 3.71 | ברכם כפוף את עובדות כמו קפיצים ובולמוד עת המחה.
+take 3 10 wer 0.667 dur 2.73 | רגל יער עליה מתחופת אז כן המחרובת לגוף
+take 4 11 wer 0.375 dur 3.48 | דרכן כופופת עובדות כמו קפיצים ובולמות את עמך.
+take 3 12 wer 0.667 dur 2.9 | הדגל יישאר לא מדחופת, אז כלה המה עובד לגוף
+take 4 13 wer 0.625 dur 3.29 | בכם כפופת עובדות כמו קיבוצים בבולמות את המחה.
+take 5 14 wer 0.429 dur 2.56 | ‫אז רוכבים נימוך כאילו יובים על כס.
+take 6 15 wer 0.667 dur 4.25 | צלמו גל אחד ושרף פרייב יום דוד את הסווייתא בריך.
+take 5 16 wer 0.286 dur 2.87 | אז רוכבים נימוך כאילו יושבים על קייס.
+take 6 17 wer 0.778 dur 4.08 | צלמו גלחד וסף תה ומדוד את הזווית הבראה.
+take 5 18 wer 0.429 dur 2.69 | אז רוכבים נמוך כאילו יוז 'ים על כיס
+take 6 19 wer 0.556 dur 3.36 | צל מוגל הד וסב טרייב ימדוד את זווית אברך.
+take 7 20 wer 0.778 dur 3.65 | קן רויין משבם וחמש מלות. ארגל כמעט ירה.
+take 8 21 wer 0.833 dur 4.61 | הסרטן של מח איך מזין זום סחוף מחוף עם שימושי מחמלים
+take 7 22 wer 1.0 dur 3.42 | כאן רואה עם מש אם וכמה שמולות, ארגל כמת ירה
+take 8 23 wer 0.917 dur 4.71 | על סרטון של מח יחמזין זום סחף מחוף עם שמשה מחמלים.
+take 7 24 wer 0.556 dur 3.79 | כאן רואים מה במי חמש מלות, הרגל כמעט ירה.
+take 8 25 wer 0.917 dur 4.8 | הארטון של מח איכמיזים זירם סחוף מחוף, אימים שמשה מחמלים.
+PICK 0 wer 0.833 | final level (-0.7 st, expected fall) | pitch 150 Hz (level +2.3 st) | range 6.8 st | למגל קטן מיילו שמגלש
+PICK 1 wer 0.778 | final fall (-6.1 st, expected fall) | pitch 130 Hz (level -0.1 st) | range 13.3 st | אה קבו, קליון, תאות אכטה בגלש ואיך מקנים אותה.
+PICK 2 wer 0.833 | final fall (-7.6 st, expected fall) | pitch 129 Hz (level -0.3 st) | range 16.9 st | סטלו על הברכים.
+PICK 3 wer 0.667 | final fall (-2.1 st, expected fall) | pitch 156 Hz (level +3.0 st) | range 11.3 st | הדגל יישאר לא מדחופת, אז כלה המה עובד לגוף
+PICK 4 wer 0.375 | final level (+0.3 st, expected fall) | pitch 131 Hz (level +0.0 st) | range 14.7 st | דרכן כופופת עובדות כמו קפיצים ובולמות את עמך.
+PICK 5 wer 0.286 | final rise (+18.3 st, expected fall) | pitch 129 Hz (level -0.3 st) | range 12.3 st | אז רוכבים נימוך כאילו יושבים על קייס.
+PICK 6 wer 0.556 | final rise (+8.5 st, expected fall) | pitch 130 Hz (level -0.2 st) | range 13.7 st | צל מוגל הד וסב טרייב ימדוד את זווית אברך.
+PICK 7 wer 0.556 | final fall (-2.5 st, expected fall) | pitch 119 Hz (level -1.7 st) | range 10.4 st | כאן רואים מה במי חמש מלות, הרגל כמעט ירה.
+PICK 8 wer 0.833 | final fall (-10.5 st, expected fall) | pitch 144 Hz (level +1.6 st) | range 13.4 st | הסרטן של מח איך מזין זום סחוף מחוף עם שימושי מחמלים
+he f5 T 28.868 [('L1', 0.12, np.float64(1.94), 0.83), ('L2', np.float64(2.259), np.float64(3.57), 0.78), ('L3', np.float64(6.025), np.float64(1.05), 0.83), ('L4', np.float64(7.28), np.float64(2.74), 0.67), ('L5', np.float64(10.218), np.float64(3.16), 0.38), ('L6', np.float64(13.575), np.float64(2.81), 0.29), ('L7', np.float64(16.583), np.float64(3.05), 0.56), ('L8', np.float64(19.831), np.float64(3.6), 0.56), ('L9', np.float64(23.635), np.float64(4.33), 0.83)]

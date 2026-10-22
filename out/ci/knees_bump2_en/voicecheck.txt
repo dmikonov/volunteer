@@ -3,8 +3,8 @@ L1 OK match=1.00 wps=4.43 dur=2.26 | ref: Why does a tiny bump throw you off the
 L2 OK match=1.00 wps=3.97 dur=2.02 | ref: Follow, I fix one surf mistake a day. | asr: Follow, I fix one surf mistake a day.
 L3 OK match=1.00 wps=2.86 dur=2.10 | ref: Look at his knees. Locked straight. | asr: Look at his knees. Locked straight.
 L4 OK match=1.00 wps=3.59 dur=3.06 | ref: Straight legs can't give, so the bump hits your whole body. | asr: Straight legs can't give, so the bump hits your whole body.
-L5 OK match=1.00 wps=3.55 dur=2.53 | ref: Bent knees work like springs and soak it up. | asr: Bent knees work like springs and soak it up.
-L6 OK match=1.00 wps=3.61 dur=2.50 | ref: So ride low, like you're sitting on a chair. | asr: So ride low like you're sitting on a chair.
+L5 OK match=0.97 wps=3.55 dur=2.53 | ref: Bent knees work like springs and soak it up. | asr: Bend knees, work like springs, and soak it up.
+L6 OK match=1.00 wps=3.61 dur=2.50 | ref: So ride low, like you're sitting on a chair. | asr: So ride low, like you're sitting on a chair.
 L7 OK match=1.00 wps=2.66 dur=3.39 | ref: Film one wave, and SurfTribe measures your knee angle. | asr: Film One Wave, and Surf Tribe measures your knee angle.
 L8 OK match=1.00 wps=2.34 dur=4.27 | ref: Here it shows 175 degrees. That leg is almost straight. | asr: Here it shows 175 degrees.  That leg is almost straight.
 L9 OK match=1.00 wps=3.42 dur=5.55 | ref: Tomorrow's video: how to spot a rip current from the beach, the water that drags you out to sea. | asr: Tomorrow's video how to spot a rip current from the beach the water that drags you out to sea
