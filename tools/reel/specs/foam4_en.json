@@ -16,14 +16,14 @@
  "ttop": {},
  "out": "reel_foam4_en.mp4",
  "lines": [
-  "You paddle straight out for the big waves, and the whitewater keeps pushing you back.",
-  "There goes a whole session, and you didn't stand up once.",
-  "There's an easy fix: stay in the whitewater.",
-  "Every time whitewater rolls in, try to stand up.",
-  "Once you're up, ride it straight to the beach.",
+  "You paddle straight out, and the whitewater keeps pushing you back.",
+  "A whole session, and you never stand up once.",
+  "Easy fix: stay in the whitewater.",
+  "Every time it rolls in, try to stand up.",
+  "Once you're up, ride it to the beach.",
   "That's ten tries a session instead of zero.",
-  "Get a friend to film you, and SurfTribe shows you on the video what to fix.",
-  "Save this so you can watch it again before your next surf.",
+  "Get a friend to film you. SurfTribe shows what to fix.",
+  "Save this for your next session.",
   "Tomorrow: which wave in the set is yours."
  ],
  "titles": {
@@ -31,7 +31,7 @@
    "Straight out?",
    "Pushed back",
    null,
-   "X"
+   null
   ],
   "L2": [
    "Whole session,",
@@ -49,13 +49,13 @@
    "Every whitewater",
    "= one try",
    null,
-   "CK"
+   null
   ],
   "L5": [
    "Up?",
    "Ride to the beach",
    null,
-   "CK"
+   null
   ],
   "L6": [
    "<span style='color:#00E4FF'>10</span> tries",
@@ -65,7 +65,7 @@
   ],
   "L8": [
    "Save it",
-   "for your next surf",
+   "for next session",
    null,
    null
   ]
@@ -85,23 +85,14 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/f4_hit.mp4",
-    "a": 1.6,
-    "z": 1.2,
-    "cx": [
-     0.55,
-     0.55
-    ],
-    "cy": [
-     0.62,
-     0.62
-    ]
+    "src": "/s17/gen/f4_walk.mp4",
+    "a": 0.0
    }
   ],
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/f4_walk.mp4",
+    "src": "/s17/gen/f4_catch.mp4",
     "a": 0.0
    }
   ],
@@ -115,17 +106,8 @@
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/f4_ride.mp4",
-    "a": 1.4,
-    "z": 1.15,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.5,
-     0.5
-    ]
+    "src": "/s17/gen/f4_ride2.mp4",
+    "a": 0.0
    }
   ],
   "L6": [
@@ -133,14 +115,14 @@
     "kind": "gen",
     "src": "/s17/gen/f4_walk.mp4",
     "a": 1.6,
-    "z": 1.15,
+    "z": 1.2,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
-     0.5,
-     0.5
+     0.55,
+     0.55
     ]
    }
   ],
@@ -156,7 +138,13 @@
    {
     "kind": "gen",
     "src": "/s17/gen/f4_angle.mp4",
-    "a": 0.0
+    "a": 0.0,
+    "dd": 1.3
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_ride2.mp4",
+    "a": 1.7
    }
   ],
   "L9": [
