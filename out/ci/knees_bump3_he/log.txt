@@ -1,18 +1,18 @@
 + k=/s17/rp/knees_bump3_he
 + python3 build.py /s17/rp/knees_bump3_he
-[('L1', 'n/kb_A3c.mp4', 0.0, 1.5, 0.0), ('L1', 'n/kb_A1k.mp4', 0.0, 0.86, 1.5), ('L2', 'n/kb_A1r.mp4', 0.0, 3.265, 2.36), ('L3', 'n/kb_A1r.mp4', 0.45, 2.277, 5.625), ('L4', 'kb_split.mp4', 0.0, 3.501, 7.902), ('L5', 'n/kb_B4t.mp4', 0.0, 1.993, 11.403), ('L5', 'n/kb_B2t.mp4', 0.0, 1.993, 13.396), ('L6', 'n/kb_B1s.mp4', 0.0, 2.321, 15.389), ('L7', 'n/kb_app.mp4', 0.0, 2.833, 17.71), ('L8', 'n/kb_app.mp4', 2.0, 3.876, 20.543), ('L9', 'rp_watch.mp4', 0.0, 1.8, 24.419), ('L9', '/rp_wide.mp4', 0.0, 3.71, 26.219)]
-cat 30.04 T 29.929
+[('L1', 'n/kb_A3c.mp4', 0.0, 1.5, 0.0), ('L1', 'n/kb_A1k.mp4', 0.0, 0.86, 1.5), ('L2', 'n/kb_A1r.mp4', 0.0, 3.265, 2.36), ('L3', 'n/kb_A1r.mp4', 0.45, 2.713, 5.625), ('L4', 'kb_split.mp4', 0.0, 3.501, 8.338), ('L5', 'n/kb_B4t.mp4', 0.0, 1.993, 11.839), ('L5', 'n/kb_B2t.mp4', 0.0, 1.993, 13.832), ('L6', 'n/kb_B1s.mp4', 0.0, 2.321, 15.825), ('L7', 'n/kb_app.mp4', 0.0, 2.833, 18.146), ('L8', 'n/kb_app.mp4', 2.0, 3.877, 20.979), ('L9', 'rp_watch.mp4', 0.0, 1.8, 24.856), ('L9', '/rp_wide.mp4', 0.0, 3.71, 26.656)]
+cat 30.48 T 30.366
 + python3 ov_png.py /s17/rp/knees_bump3_he
-realcuts True [0.0, 2.4, 5.68, 7.96, 11.48, 15.48, 17.8, 20.64, 24.52, 29.929]
+realcuts True [0.0, 2.4, 5.68, 8.4, 11.92, 15.92, 18.24, 21.08, 24.96, 30.366]
 safe-zone violations []
 ovplan 20
 + python3 ov_ff.py /s17/rp/knees_bump3_he
-done /s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4 29.929 lufs before -15.5 gain 1.0
+done /s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4 30.366 lufs before -15.4 gain 0.9
 + python3 trim_tail.py /s17/rp/knees_bump3_he
-trimmed /s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4 29.29
+trimmed /s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4 29.73
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/knees_bump3_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4
-/s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4 before -13.0 after -14.5 peak -3.4
+/s17/rp/knees_bump3_he/reel_knees_bump3_he.mp4 before -13.0 after -14.5 peak -2.8
 + python3 post_cz.py /s17/rp/knees_bump3_he
 post ok
 + echo 'EXIT /s17/rp/knees_bump3_he 0'
