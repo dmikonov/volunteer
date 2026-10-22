@@ -104,6 +104,12 @@
    "d0": 1.5,
    "d1": 3.6,
    "html": "<div style='position:absolute;top:1395px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:700 44px R;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
+  },
+  {
+   "k": "RING4",
+   "line": "L4",
+   "d0": 0.25,
+   "html": "<div style='position:absolute;left:290px;top:560px;width:400px;height:310px;border-radius:50%;border:9px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
   }
  ],
  "gap_after": {
@@ -127,6 +133,21 @@
     "cy": [
      0.42,
      0.44
+    ],
+    "dd": 2.1
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_rip1.mp4",
+    "a": 2.1,
+    "z": 1.5,
+    "cx": [
+     0.5,
+     0.56
+    ],
+    "cy": [
+     0.42,
+     0.4
     ]
    }
   ],
@@ -150,7 +171,7 @@
    {
     "kind": "gen",
     "src": "/s17/gen/st_rip1.mp4",
-    "a": 4.9,
+    "a": 4.7,
     "z": 1.0
    }
   ],
@@ -158,15 +179,15 @@
    {
     "kind": "gen",
     "src": "/s17/gen/st_rip1.mp4",
-    "a": 3.0,
-    "z": 1.35,
+    "a": 5.0,
+    "z": 1.6,
     "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
      0.45,
      0.45
+    ],
+    "cy": [
+     0.38,
+     0.38
     ]
    }
   ],
@@ -219,14 +240,29 @@
   "L10": [
    {
     "kind": "gen",
+    "src": "/s17/gen/st_rip2.mp4",
+    "a": 5.6,
+    "z": 1.25,
+    "cx": [
+     0.3,
+     0.3
+    ],
+    "cy": [
+     0.3,
+     0.3
+    ],
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
     "src": "/s17/gen/r3_paddle2.mp4",
     "a": 0.0,
-    "dd": 2.4
+    "dd": 2.2
    },
    {
     "kind": "gen",
     "src": "/s17/gen/r3_paddle.mp4",
-    "a": 0.1
+    "a": 0.6
    }
   ],
   "L11": [
