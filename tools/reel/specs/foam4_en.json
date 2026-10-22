@@ -100,6 +100,12 @@
    {
     "kind": "gen",
     "src": "/s17/gen/f4_ride.mp4",
+    "a": 0.0,
+    "dd": 1.8
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f4_angle.mp4",
     "a": 0.0
    }
   ],
@@ -137,14 +143,8 @@
   "L8": [
    {
     "kind": "gen",
-    "src": "/s17/gen/f4_angle.mp4",
-    "a": 0.0,
-    "dd": 1.3
-   },
-   {
-    "kind": "gen",
     "src": "/s17/gen/f4_ride2.mp4",
-    "a": 1.7
+    "a": 1.4
    }
   ],
   "L9": [
