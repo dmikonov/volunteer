@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/s17/rp/voicecheck.py", line 4, in <module>
+    W = sys.argv[1]; S = json.load(open(f'{W}/spec.json')); TL = json.load(open(f'{W}/tl.json')); HE = S['lang'] == 'he'
+                                                                           ~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/s17/rp/flags5_he/tl.json'

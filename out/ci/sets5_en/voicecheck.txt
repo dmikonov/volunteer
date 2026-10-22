@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.89 dur=3.11 | ref: A set's rolling in. Guess which wave is yours. | asr: A set's rolling in. Guess which wave is yours?
+L2 OK match=1.00 wps=3.63 dur=3.58 | ref: Go for the biggest one and it'll probably land right on your head. | asr: Go for the biggest one, and it'll probably land right on your head.
+L3 OK match=1.00 wps=4.96 dur=0.81 | ref: Here's how to pick. | asr: Here's how to pick.
+L4 OK match=1.00 wps=2.85 dur=4.90 | ref: The big ones go to whoever's sitting further out, closest to where it breaks. | asr: The big ones go to whoever's sitting further out closest to where it breaks.
+L5 OK match=1.00 wps=3.13 dur=3.51 | ref: Let those go and grab a smaller one nobody's paddling for. | asr: Let those go and grab a smaller one nobody's paddling for.
+L6 OK match=1.00 wps=2.88 dur=3.47 | ref: Someone already up and riding? Pull back, it's their wave. | asr: Someone already up and riding? Pull back, it's their wave.
+L7 OK match=1.00 wps=3.00 dur=5.67 | ref: After your session, SurfTribe shows if you rode high on the wave or down at the bottom. | asr: After your session, Surf Tribe shows if you rode high on the wave or down at the bottom.
+L8 OK match=1.00 wps=3.34 dur=3.29 | ref: Save this, you'll need it the next time the lineup's packed. | asr: Save this, you'll need it the next time the lineup's packed.
+L9 OK match=1.00 wps=2.15 dur=3.25 | ref: Tomorrow: how the tide changes your spot. | asr: Tomorrow. How the tide changes your spot.
+TOTAL wps=3.04 lines_to_check=0

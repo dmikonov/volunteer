@@ -1,0 +1,9 @@
++ k=/s17/rp/flags5_he
++ python3 build.py /s17/rp/flags5_he
+Traceback (most recent call last):
+  File "/s17/rp/build.py", line 7, in <module>
+    W = sys.argv[1]; S = json.load(open(f'{W}/spec.json')); TL = json.load(open(f'{W}/tl.json')); L = TL['L']; T = TL['T']
+                                                                           ~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/s17/rp/flags5_he/tl.json'
++ echo 'EXIT /s17/rp/flags5_he 1'
+EXIT /s17/rp/flags5_he 1
