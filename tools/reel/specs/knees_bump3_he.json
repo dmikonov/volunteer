@@ -30,7 +30,8 @@
   "אז רוכבים נמוך, כאילו יושבים על כיסא.",
   "צלמו גל אחד, וסרף טרייב ימדוד את זווית הברך.",
   "כאן רואים מאה שבעים וחמש מעלות. הרגל כמעט ישרה.",
-  "הסרטון של מחר: איך מזהים זרם סחף מהחוף, המים שמושכים אתכם לים."
+  "הסרטון של מחר: איך מזהים זרם סחף מהחוף.",
+  "המים שמושכים אתכם לים."
  ],
  "titles": {
   "L1": [
@@ -72,6 +73,12 @@
   "L8": [
    "175° =<br>",
    "רגל כמעט ישרה",
+   null,
+   null
+  ],
+  "L9": [
+   "הסרטון של מחר<br>",
+   "איך מזהים זרם סחף",
    null,
    null
   ]
@@ -167,9 +174,10 @@
     "kind": "gen",
     "src": "/s17/gen/rp_watch.mp4",
     "a": 0.0,
-    "z": 1.0,
-    "dd": 1.8
-   },
+    "z": 1.0
+   }
+  ],
+  "L10": [
    {
     "kind": "gen",
     "src": "/s17/gen/rp_wide.mp4",
@@ -303,18 +311,6 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/5eeae36778f175047ce3786f8e1c2394eacfec6a1fa9d39637b5f391936701dc/tmphe359w1b.wav"
   ],
   [
-   8,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/38e7d78acbebe784fb4d314ef12d77594e50d94730375106d0f8ca1aacf90638/tmp2e371gco.wav"
-  ],
-  [
-   8,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/edb89080886db16bd33ca97664df6024ee88f18524a7f9fae2de5d610c231fec/tmprpnpjjgu.wav"
-  ],
-  [
-   8,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fcadd957de0079a5da59c460b4851010372ad9dd874419cdea6d4b3296ae45d0/tmpmj2sxkyt.wav"
-  ],
-  [
    2,
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/40ff52a8af626496e234bb133c997f39b4f47816ef6ed53dd8c200fb3540290a/tmpn0uthmbb.wav"
   ],
@@ -327,16 +323,40 @@
    "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/b8d99f5b3b436d0022383bc91a739f22e0152bc7f6e39bab688dd92fdf034338/tmpkb62wt6f.wav"
   ],
   [
-   8,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/32ed3684bd87bdbeb56c8d0786b0895bf5ed716404579da8b8e83f0e44dcae24/tmpf6ny9s88.wav"
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0898ff11366ce917b5f15c9aa15588a9a5c0fb5a9b1c8c34ee8531f852360528/tmpcyv5mvh7.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/dd287dc4c6ac0e369b000d6d427c3bdb2f1bf19e82988b24f4d260aa44cfe664/tmpglx67r8j.wav"
+  ],
+  [
+   2,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/eba662dd6444b541f008d3488608608e19df95877a5d445b0070196c200df8bd/tmpymd9b5m3.wav"
   ],
   [
    8,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/7534d86332366dd25bcfc03ece6080728d1c08a8522bbe9787507596edacb958/tmp6gz45wqm.wav"
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/9d9e12b152e02c63d27f2a6d05fa15e7e681d779e2dfc44dd965ed76736da436/tmphrdkst4p.wav"
   ],
   [
    8,
-   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/f4daa945ffc8368a1a4edf2fe40333056ae77ca1c495c1623b7461598f15855d/tmp1ve2yyyw.wav"
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/b4ca0323324e44d736125f4baba2e329f450b042651005e3b9ce969ae98d4b74/tmpg1_33l9w.wav"
+  ],
+  [
+   8,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/8ac7a6952237f3d3f90104a582a84fdb2a659a1b986ba15db334cabba2caffe6/tmp6g29ligb.wav"
+  ],
+  [
+   9,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/e38a7f8b8057c246516faab1f9de5c2ba7b66452779d3c68f6efc21e36d0430b/tmpbwy2kl2t.wav"
+  ],
+  [
+   9,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/97be201645655cb5e11df1359c29f3ad245a2ea99e246559545d3e6c8c661921/tmppjp_3_nv.wav"
+  ],
+  [
+   9,
+   "https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/52b147cfc213f02a10f81292f36c9bec2babb4f2adc0eb5a5ba39ded588ebc15/tmpubngvw50.wav"
   ]
  ]
 }
