@@ -9,7 +9,7 @@
 
 ככה מזהים אותו מהחוף:
 איפה שהגלים לא נשברים
-מים יותר כהים ושקטים
+מים עכורים יותר
 קצף שיוצא לים
 
 לפני שנכנסים, מסתכלים על המים עשר דקות ובודקים תחזית. בים גבוה הזרם יותר חזק. ועדיף לגלוש ליד חוף עם מציל.
@@ -28,7 +28,7 @@ See sandy water pushing out past the waves? That's a rip current, and it can dra
 
 How to spot one from the beach:
 A gap where waves aren't breaking
-Darker, calmer water
+Darker or murkier water
 Foam drifting out to sea
 
 Watch the water for 10 minutes before you paddle out, and check the swell. Rips pull harder when the swell's up.
