@@ -1,18 +1,18 @@
 + k=/s17/rp/rip3_he
 + python3 build.py /s17/rp/rip3_he
-[('L1', '/st_rip1.mp4', 0.0, 2.1, 0.0), ('L1', '/st_rip1.mp4', 2.1, 1.882, 2.1), ('L2', '/st_rip2.mp4', 0.0, 3.702, 3.982), ('L3', 'r3_watch.mp4', 0.0, 2.305, 7.684), ('L4', '/st_rip1.mp4', 4.7, 2.0, 9.989), ('L5', '/st_rip1.mp4', 5.0, 1.45, 11.989), ('L6', '/st_rip2.mp4', 3.4, 2.023, 13.439), ('L7', 'r3_watch.mp4', 1.0, 1.55, 15.462), ('L7', '/st_rip3.mp4', 0.2, 1.096, 17.012), ('L8', 'n/app_he.mp4', 0.0, 4.257, 18.108), ('L9', 'r3_float.mp4', 0.0, 1.858, 22.365), ('L10', '/st_rip2.mp4', 5.6, 1.6, 24.223), ('L10', '_paddle2.mp4', 0.0, 2.2, 25.823), ('L10', '3_paddle.mp4', 0.6, 0.508, 28.023), ('L11', 'n/r3_arm.mp4', 0.0, 3.058, 28.531), ('L12', 'n/r3_out.mp4', 0.0, 4.014, 31.589)]
-cat 35.6 T 35.603
+[('L1', 'n/h_hook.mp4', 0.0, 3.982, 0.0), ('L2', 'n/h_drag.mp4', 0.0, 3.402, 3.982), ('L3', '/st_rip3.mp4', 0.2, 2.055, 7.384), ('L4', '/st_rip1.mp4', 4.7, 2.0, 9.439), ('L5', '/st_rip1.mp4', 5.0, 1.65, 11.439), ('L6', '/st_rip2.mp4', 3.4, 1.923, 13.089), ('L7', 'r3_watch.mp4', 0.0, 2.646, 15.012), ('L8', '_he_card.mp4', 0.0, 4.595, 17.658), ('L9', 'r3_float.mp4', 0.0, 1.858, 22.253), ('L10', 'h_escape.mp4', 0.0, 2.0, 24.111), ('L10', '_paddle2.mp4', 0.0, 2.309, 26.111), ('L11', '/r3_arm2.mp4', 0.0, 2.807, 28.42), ('L12', 'n/r3_out.mp4', 0.0, 4.014, 31.227)]
+cat 35.2 T 35.241
 + python3 ov_png.py /s17/rp/rip3_he
-realcuts True [0.0, 4.0, 7.72, 10.04, 12.04, 13.48, 15.52, 18.16, 22.4, 24.24, 28.56, 31.6, 35.603]
+realcuts True [0.0, 4.0, 7.4, 9.44, 11.44, 13.08, 15.0, 17.64, 22.24, 24.08, 28.4, 31.2, 35.241]
 safe-zone violations []
-ovplan 26
+ovplan 27
 + python3 ov_ff.py /s17/rp/rip3_he
-done /s17/rp/rip3_he/reel_rip3_he.mp4 35.603 lufs before -15.0 gain 0.5
+done /s17/rp/rip3_he/reel_rip3_he.mp4 35.241 lufs before -14.9 gain 0.4
 + python3 trim_tail.py /s17/rp/rip3_he
-trimmed /s17/rp/rip3_he/reel_rip3_he.mp4 34.87
+trimmed /s17/rp/rip3_he/reel_rip3_he.mp4 34.51
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rip3_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rip3_he/reel_rip3_he.mp4
-/s17/rp/rip3_he/reel_rip3_he.mp4 before -13.0 after -14.5 peak -2.0
+/s17/rp/rip3_he/reel_rip3_he.mp4 before -13.0 after -14.5 peak -2.7
 + python3 post_cz.py /s17/rp/rip3_he
 post ok
 + echo 'EXIT /s17/rp/rip3_he 0'
