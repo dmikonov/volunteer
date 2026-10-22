@@ -1,0 +1,19 @@
++ k=/s17/rp/tide_en
++ python3 build.py /s17/rp/tide_en
+[('L1', 'st_close.mp4', 2.0, 3.928, 0.0), ('L2', '/st_tide.mp4', 0.0, 3.256, 3.928), ('L3', 'td_watch.mp4', 0.0, 1.175, 7.184), ('L4', '/st_dump.mp4', 0.0, 3.379, 8.359), ('L5', '/st_soft.mp4', 1.0, 3.007, 11.738), ('L6', '/st_ride.mp4', 2.0, 3.809, 14.745), ('L7', 'td_watch.mp4', 1.6, 2.141, 18.554), ('L8', 'n/app_en.mp4', 0.0, 3.595, 20.695), ('L9', 'st_ride2.mp4', 2.0, 1.648, 24.29), ('L10', 't_lineup.mp4', 0.5, 3.195, 25.938)]
+cat 29.08 T 29.133
++ python3 ov_png.py /s17/rp/tide_en
+realcuts True [0.0, 3.92, 7.16, 8.32, 11.68, 14.68, 18.48, 20.64, 24.24, 25.88, 29.133]
+safe-zone violations []
+ovplan 20
++ python3 ov_ff.py /s17/rp/tide_en
+done /s17/rp/tide_en/reel_tide_en.mp4 29.133 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/tide_en
+trimmed /s17/rp/tide_en/reel_tide_en.mp4 28.63
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/tide_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/tide_en/reel_tide_en.mp4
+/s17/rp/tide_en/reel_tide_en.mp4 before -13.0 after -14.5 peak -2.6
++ python3 post_cz.py /s17/rp/tide_en
+post ok
++ echo 'EXIT /s17/rp/tide_en 0'
+EXIT /s17/rp/tide_en 0

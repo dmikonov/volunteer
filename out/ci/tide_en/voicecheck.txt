@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.66 dur=3.76 | ref: Same beach as this morning. Now every wave's closing out. | asr: same beach as this morning. Now, every wave's closing out.
+L2 CHECK match=0.79 wps=3.50 dur=2.86 | ref: Blame the tide. Low to high takes about six hours. | asr: Blame it hide. Load of hide takes about 6 hours.
+L3 OK match=1.00 wps=7.27 dur=0.83 | ref: So how do you read it? | asr: So how do you read it?
+L4 OK match=1.00 wps=3.10 dur=3.23 | ref: Low tide is shallow, so waves dump hard and fast. | asr: Low tide is shallow, so waves dump hard and fast.
+L5 OK match=1.00 wps=3.50 dur=2.86 | ref: As it fills in, they slow down and go soft. | asr: As it fills in, they slow down and go soft.
+L6 OK match=1.00 wps=3.52 dur=3.41 | ref: A lot of beaches are best around mid tide, while it's rising. | asr: A lot of beaches are best around mid-tide while it's rising.
+L7 OK match=1.00 wps=3.52 dur=1.99 | ref: Check the tide before you paddle out. | asr: Check the tide before you paddle out.
+L8 OK match=0.98 wps=3.19 dur=3.45 | ref: Then let SurfTribe pick the best hour for swell and wind. | asr: Then let's Surf Tribe pick the best hour for swell and wind.
+L9 OK match=1.00 wps=4.67 dur=1.50 | ref: Save this for your next new spot. | asr: Save this for your next new spot.
+L10 OK match=0.97 wps=3.19 dur=2.20 | ref: Tomorrow: where to sit in the lineup. | asr: Tomorrow, we're to sit in the lineup.
+TOTAL wps=3.45 lines_to_check=1

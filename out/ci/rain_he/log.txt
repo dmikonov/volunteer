@@ -1,0 +1,19 @@
++ k=/s17/rp/rain_he
++ python3 build.py /s17/rp/rain_he
+[('L1', 'rn_drain.mp4', 0.0, 3.761, 0.0), ('L2', 'st_river.mp4', 6.0, 2.919, 3.761), ('L3', 'rn_check.mp4', 0.0, 3.578, 6.68), ('L4', '/rn_wait.mp4', 0.0, 1.813, 10.258), ('L5', '/rn_wait.mp4', 1.6, 2.499, 12.071), ('L6', 'rn_drain.mp4', 2.0, 1.3, 14.57), ('L6', 'st_river.mp4', 8.5, 1.955, 15.87), ('L7', 'rn_check.mp4', 2.0, 2.422, 17.825), ('L8', 'n/app_he.mp4', 0.0, 2.748, 20.247), ('L9', 'n_paddle.mp4', 0.0, 1.961, 22.995), ('L10', 't_lineup.mp4', 0.5, 2.869, 24.956)]
+cat 27.84 T 27.825
++ python3 ov_png.py /s17/rp/rain_he
+realcuts True [0.0, 3.76, 6.68, 10.24, 12.04, 14.52, 17.8, 20.24, 23.0, 24.96, 27.825]
+safe-zone violations []
+ovplan 20
++ python3 ov_ff.py /s17/rp/rain_he
+done /s17/rp/rain_he/reel_rain_he.mp4 27.825 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/rain_he
+trimmed /s17/rp/rain_he/reel_rain_he.mp4 27.27
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rain_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rain_he/reel_rain_he.mp4
+/s17/rp/rain_he/reel_rain_he.mp4 before -13.0 after -14.5 peak -2.9
++ python3 post_cz.py /s17/rp/rain_he
+post ok
++ echo 'EXIT /s17/rp/rain_he 0'
+EXIT /s17/rp/rain_he 0
