@@ -32,28 +32,12 @@
   "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L4_s2.wav"
  ],
  [
-  4,
-  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L5_s1.wav"
- ],
- [
-  4,
-  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L5_s2.wav"
- ],
- [
   5,
   "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L6_s1.wav"
  ],
  [
   5,
   "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L6_s2.wav"
- ],
- [
-  6,
-  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L7_s1.wav"
- ],
- [
-  6,
-  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L7_s2.wav"
  ],
  [
   7,
@@ -78,5 +62,29 @@
  [
   9,
   "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L10_s2.wav"
+ ],
+ [
+  4,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L5_s3.wav"
+ ],
+ [
+  4,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L5_s4.wav"
+ ],
+ [
+  4,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L5_s5.wav"
+ ],
+ [
+  6,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L7_s3.wav"
+ ],
+ [
+  6,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L7_s4.wav"
+ ],
+ [
+  6,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d26/takes/L7_s5.wav"
  ]
 ]
