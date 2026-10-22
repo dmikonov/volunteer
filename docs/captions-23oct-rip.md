@@ -5,20 +5,20 @@
 
 ## HE (@surftribe_il)
 
-רואים מים עכורים שיוצאים מעבר לגלים? זה זרם סחף, והוא סוחב פנימה יותר מהר ממה שרוב האנשים שוחים.
+רואים מים חומים שיוצאים מעבר לגלים? זה זרם סחף. הוא סוחב פנימה יותר מהר ממה שתצליחו לשחות.
 
 ככה מזהים אותו מהחוף:
-מקום שבו הגלים לא נשברים
+איפה שהגלים לא נשברים
 מים יותר כהים ושקטים
-קצף שנסחף החוצה לים
+קצף שיוצא לים
 
-לפני שנכנסים, מסתכלים על המים עשר דקות ובודקים תחזית. בים גבוה הזרם יותר חזק. ועדיף לגלוש בחוף עם מציל.
+לפני שנכנסים, מסתכלים על המים עשר דקות ובודקים תחזית. בים גבוה הזרם יותר חזק. ועדיף לגלוש ליד חוף עם מציל.
 
-נסחפתם? נשארים על הגלשן, הוא מחזיק אתכם על המים. לא חותרים נגד הזרם, חותרים הצידה במקביל לחוף עד שיוצאים ממנו. עדיין לא יוצאים? מנופפים ביד וצועקים.
+נסחפתם? לא עוזבים את הגלשן, הוא צף. לא חותרים נגד הזרם, חותרים במקביל לחוף עד שהוא משחרר. ואם הוא לא משחרר, מנופפים ביד וצועקים.
 
 תשמרו את זה לפעם הבאה שאתם נכנסים למים.
 
-הקריינות והשוטים של הגולש נוצרו ב-AI. צילומי הזרם מהאוויר אמיתיים.
+הקריינות והגולש נוצרו ב-AI. צילומי הרחפן של הזרם אמיתיים.
 
 #גלישה #זרםסחף #גלישהלמתחילים #בטיחותבים #גלישהבישראל
 
@@ -27,17 +27,17 @@
 See sandy water pushing out past the waves? That's a rip current, and it can drag you out faster than most people swim.
 
 How to spot one from the beach:
-A spot where the waves don't break
+A gap where waves aren't breaking
 Darker, calmer water
 Foam drifting out to sea
 
-Watch the water for 10 minutes before you paddle out, and check the swell. Rips get stronger when it's bigger.
+Watch the water for 10 minutes before you paddle out, and check the swell. Rips pull harder when the swell's up.
 
 Caught in one? Stay on your board, it keeps you afloat. Don't paddle against it. Paddle parallel to the beach till you're out. If it still has you, wave an arm and yell.
 
-Save it for the next time you paddle out.
+Save this for your next session.
 
-Voiceover and the surfer shots are AI. The aerial rip footage is real.
+Voiceover and the surfer shots are AI. The drone footage of the rip is real.
 
 #surfing #ripcurrent #surfsafety #learntosurf #beginnersurfer
 
