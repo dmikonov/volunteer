@@ -11,8 +11,8 @@
  "out": "reel_knees_bump2_en.mp4",
  "app_lines": [],
  "teaser": [
-  "Tomorrow",
-  "Spot a rip<br>from the beach"
+  "Tomorrow's video",
+  "How to spot<br>a rip current"
  ],
  "lines": [
   "Why does a tiny bump throw you off the board?",
@@ -22,7 +22,7 @@
   "So ride low, like you're sitting on a chair.",
   "Film one wave, and SurfTribe measures your knee angle.",
   "Here it shows 175 degrees. That leg is almost straight.",
-  "Tomorrow: how to spot a rip current, water that pulls you out to sea."
+  "Tomorrow's video: how to spot a rip current from the beach, the water that drags you out to sea."
  ],
  "titles": {
   "L1": [
@@ -133,6 +133,13 @@
    }
   ],
   "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_watch.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "dd": 1.8
+   },
    {
     "kind": "gen",
     "src": "/s17/gen/rp_wide.mp4",

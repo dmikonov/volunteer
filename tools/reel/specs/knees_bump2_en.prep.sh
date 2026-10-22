@@ -21,4 +21,4 @@ ffmpeg -v error -y -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -fil
 [a]crop=1080:1920:0:214,boxblur=30,eq=brightness=-0.3[bg];\
 [b]crop=540:560:390:1050,scale=1080:1120:flags=lanczos,unsharp=5:5:0.5[fg];\
 [c]crop=960:150:60:1765[lab];[bg][fg]overlay=0:470[t];[t][lab]overlay=60:1600,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 -preset medium -t 3 $G/kb_app.mp4
-cp out/ci/rip/gen/rp_wide.mp4 $G/rp_wide.mp4
+cp out/ci/rip/gen/rp_wide.mp4 out/ci/rip/gen/rp_watch.mp4 $G/
