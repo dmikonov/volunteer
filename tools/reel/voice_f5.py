@@ -52,14 +52,14 @@ for n, (i, url) in enumerate(TAKES):
 L = []; t = 0.12
 for i, disp in enumerate(LINES):
     c = ev[i]; md = float(np.median([x['dur'] for x in c])); bw = min(x['wer'] for x in c)
-    cands = [x for x in c if x['wer'] <= bw + 1e-9]
+    cands = [x for x in c if x['wer'] <= bw + 0.13]  # one extra ASR word may lose to a better contour
     if prosody and all(x.get('pr') for x in cands):
         if 'GMED' not in globals():
             GMED = float(np.median([x['pr']['med'] for j in ev for x in ev[j] if x.get('pr') and x['wer'] <= min(y['wer'] for y in ev[j]) + 1e-9]))
         exp = expected(ref_txt[i], f'L{i + 1}')
         def score(x):
             pr = x['pr']; ok = pr['fin'] == exp or (exp == 'fall' and pr['fin'] == 'level')
-            return abs(pr['med'] - GMED) + (0 if ok else 2.5) + 0.3 * abs(x['dur'] - md) + (1.0 if pr['rng'] > 15 else 0)
+            return abs(pr['med'] - GMED) + (0 if ok else 2.5) + 0.3 * abs(x['dur'] - md) + (1.0 if pr['rng'] > 15 else 0) + 20 * (x['wer'] - bw)
         p = sorted(cands, key=score)[0]
         print('PICK', i, 'wer', round(p['wer'], 3), '| final', p['pr']['fin'], f"({p['pr']['mv']:+.1f} st, expected {exp})", '| pitch', f"{100 * 2 ** (p['pr']['med'] / 12):.0f} Hz", f"(level {p['pr']['med'] - GMED:+.1f} st)", '| range', f"{p['pr']['rng']:.1f} st |", p['txt'])
     else:
