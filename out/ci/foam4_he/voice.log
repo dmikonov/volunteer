@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.0 dur 4.7 | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה
+take 0 1 wer 0.0 dur 4.7 | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה.
+take 1 2 wer 0.0 dur 3.91 | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+take 1 3 wer 0.0 dur 3.91 | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+take 2 4 wer 0.167 dur 2.92 | יש לזה פתרון פשוט, תישארו בקצב.
+take 2 5 wer 0.333 dur 2.92 | יש לזה פתרון פשוט תשארו בקט
+take 3 6 wer 0.167 dur 2.63 | כל פעם שמגיע קצב תנסו לקום.
+take 3 7 wer 0.167 dur 2.63 | כל פעם שמגיע קצב תנסו לקום
+take 4 8 wer 0.0 dur 2.14 | קמתם תגלשו ישר עד החוף
+take 4 9 wer 0.2 dur 2.14 | תגלשו ישר עד החוף
+take 5 10 wer 0.143 dur 3.31 | ככה תקומו 10 פעמים בסשן במקום 0.
+take 5 11 wer 0.143 dur 3.31 | ככה תקומו 10 פעמים בסשן, במקום 0.
+take 6 12 wer 0.0 dur 5.38 | תבקשו מחבר לצלם אתכם וסרף טרייב יראה לכם על הסרטון מה לתקן.
+take 6 13 wer 0.583 dur 5.38 | תבקשו מחבר לצלם אתכם ויראה לכם אבל אז תראה לכם על הסרטון מלקן.
+take 7 14 wer 0.0 dur 3.74 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+take 7 15 wer 0.0 dur 3.74 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+take 8 16 wer 0.0 dur 2.2 | מחר מה אומרים הדגלים בחוף?
+take 8 17 wer 0.0 dur 2.2 | מחר מה אומרים הדגלים בחוף?
+PICK 0 wer 0.0 | final fall (-5.5 st, expected fall) | pitch 128 Hz (level +0.4 st) | range 14.4 st | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה.
+PICK 1 wer 0.0 | final level (-0.6 st, expected fall) | pitch 129 Hz (level +0.5 st) | range 13.6 st | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+PICK 2 wer 0.167 | final fall (-9.8 st, expected fall) | pitch 131 Hz (level +0.8 st) | range 7.7 st | יש לזה פתרון פשוט, תישארו בקצב.
+PICK 3 wer 0.167 | final fall (-10.2 st, expected fall) | pitch 107 Hz (level -2.8 st) | range 10.9 st | כל פעם שמגיע קצב תנסו לקום.
+PICK 4 wer 0.0 | final fall (-8.9 st, expected fall) | pitch 230 Hz (level +10.5 st) | range 10.9 st | קמתם תגלשו ישר עד החוף
+PICK 5 wer 0.143 | final fall (-5.0 st, expected fall) | pitch 124 Hz (level -0.2 st) | range 14.5 st | ככה תקומו 10 פעמים בסשן, במקום 0.
+PICK 6 wer 0.0 | final fall (-2.3 st, expected fall) | pitch 116 Hz (level -1.3 st) | range 8.1 st | תבקשו מחבר לצלם אתכם וסרף טרייב יראה לכם על הסרטון מה לתקן.
+PICK 7 wer 0.0 | final level (-1.4 st, expected fall) | pitch 124 Hz (level -0.2 st) | range 14.0 st | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+PICK 8 wer 0.0 | final level (+0.0 st, expected fall) | pitch 125 Hz (level -0.0 st) | range 6.5 st | מחר מה אומרים הדגלים בחוף?
+he f5 T 28.369 [('L1', 0.12, np.float64(3.83), 0.0), ('L2', np.float64(4.154), np.float64(3.43), 0.0), ('L3', np.float64(8.032), np.float64(2.37), 0.17), ('L4', np.float64(10.806), np.float64(2.07), 0.17), ('L5', np.float64(13.074), np.float64(1.67), 0.0), ('L6', np.float64(14.948), np.float64(2.57), 0.14), ('L7', np.float64(17.963), np.float64(4.81), 0.0), ('L8', np.float64(22.978), np.float64(2.75), 0.0), ('L9', np.float64(25.929), np.float64(1.54), 0.0)]

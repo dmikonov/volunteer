@@ -1,0 +1,19 @@
++ k=/s17/rp/foam4_en
++ python3 build.py /s17/rp/foam4_en
+[('L1', 'n/f4_hit.mp4', 0.0, 4.907, 0.0), ('L2', 'n/f4_hit.mp4', 1.6, 3.526, 4.907), ('L3', '/f4_walk.mp4', 0.0, 3.213, 8.433), ('L4', '/f4_ride.mp4', 0.0, 3.053, 11.646), ('L5', '/f4_ride.mp4', 1.4, 2.707, 14.699), ('L6', '/f4_walk.mp4', 1.6, 3.165, 17.406), ('L7', '/app4_en.mp4', 0.0, 5.165, 20.571), ('L8', 'f4_angle.mp4', 0.0, 3.471, 25.736), ('L9', 'n/f4_set.mp4', 0.0, 4.376, 29.207)]
+cat 33.56 T 33.583
++ python3 ov_png.py /s17/rp/foam4_en
+realcuts True [0.0, 4.92, 8.44, 11.64, 14.68, 17.4, 20.56, 25.72, 29.2, 33.583]
+safe-zone violations []
+ovplan 16
++ python3 ov_ff.py /s17/rp/foam4_en
+done /s17/rp/foam4_en/reel_foam4_en.mp4 33.583 lufs before -15.0 gain 0.5
++ python3 trim_tail.py /s17/rp/foam4_en
+trimmed /s17/rp/foam4_en/reel_foam4_en.mp4 33.08
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/foam4_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/foam4_en/reel_foam4_en.mp4
+/s17/rp/foam4_en/reel_foam4_en.mp4 before -13.1 after -14.5 peak -3.2
++ python3 post_cz.py /s17/rp/foam4_en
+post ok
++ echo 'EXIT /s17/rp/foam4_en 0'
+EXIT /s17/rp/foam4_en 0
