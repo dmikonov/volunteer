@@ -18,6 +18,24 @@ def ld(f, sr=16000):
     return np.frombuffer(sp.run(['ffmpeg', '-v', 'error', '-i', f, '-ac', '1', '-ar', str(sr), '-f', 'f32le', '-'], capture_output=True).stdout, np.float32)
 os.makedirs(f'{W}/takes', exist_ok=True)
 from faster_whisper import WhisperModel
+try:  # 22.10: prosody of each take (Dima: intonation must sound Israeli). Final contour + pitch level between lines.
+    import parselmouth
+    WH = ('למה', 'איך', 'מה', 'מי', 'איפה', 'מתי', 'כמה', 'לאן', 'איזה', 'איזו')
+    def prosody(a16):
+        snd = parselmouth.Sound(a16.astype(np.float64), 16000); pt = snd.to_pitch(time_step=0.01, pitch_floor=70, pitch_ceiling=420)
+        f0 = pt.selected_array['frequency']; t = pt.xs(); m = f0 > 0; ff, tt = f0[m], t[m]
+        if len(ff) < 10: return None
+        st = 12 * np.log2(ff / 100.0); end = tt[-1]; last = st[tt > end - 0.15]; prev = st[(tt > end - 0.50) & (tt <= end - 0.15)]
+        mv = float(last.mean() - prev.mean()) if len(last) > 2 and len(prev) > 2 else 0.0
+        return {'med': float(np.median(st)), 'rng': float(np.percentile(st, 90) - np.percentile(st, 10)), 'mv': mv, 'fin': 'fall' if mv < -1.5 else ('rise' if mv > 1.5 else 'level')}
+    def expected(txt, k):
+        e = S.get('final', {}).get(k)
+        if e: return e
+        t = txt.strip()
+        if t.endswith('?') and not t.split()[0] in WH: return 'rise'   # yes/no question: Hebrew marks it by a final rise
+        return 'fall'  # statements, imperatives, wh-questions: final fall (level tolerated)
+except Exception as _e:
+    prosody = None; print('prosody check off:', _e)
 wm = WhisperModel('ivrit-ai/whisper-large-v3-turbo-ct2', device='cpu', compute_type='int8', cpu_threads=4)
 ref_txt = S.get('ref_lines', LINES)  # what the voice should say (SurfTribe spoken as סרף טרייב)
 ev = {}
@@ -29,13 +47,24 @@ for n, (i, url) in enumerate(TAKES):
     Wd = [(w.word.strip(), w.start, w.end) for sg in seg for w in sg.words]
     ref = norm(ref_txt[i]); hyp = norm(' '.join(w[0] for w in Wd))
     wer = editdistance.eval(ref, hyp) / max(1, len(ref))
-    ev.setdefault(i, []).append({'f': f, 'wer': wer, 'w': Wd, 'dur': len(a) / 16000, 'txt': ' '.join(w[0] for w in Wd)})
+    ev.setdefault(i, []).append({'f': f, 'wer': wer, 'w': Wd, 'dur': len(a) / 16000, 'txt': ' '.join(w[0] for w in Wd), 'pr': prosody(a) if prosody else None})
     print('take', i, n, 'wer', round(wer, 3), 'dur', round(len(a) / 16000, 2), '|', ev[i][-1]['txt'])
 L = []; t = 0.12
 for i, disp in enumerate(LINES):
     c = ev[i]; md = float(np.median([x['dur'] for x in c])); bw = min(x['wer'] for x in c)
-    p = sorted([x for x in c if x['wer'] <= bw + 1e-9], key=lambda x: abs(x['dur'] - md))[0]
-    print('PICK', i, 'wer', round(p['wer'], 3), p['txt'])
+    cands = [x for x in c if x['wer'] <= bw + 1e-9]
+    if prosody and all(x.get('pr') for x in cands):
+        if 'GMED' not in globals():
+            GMED = float(np.median([x['pr']['med'] for j in ev for x in ev[j] if x.get('pr') and x['wer'] <= min(y['wer'] for y in ev[j]) + 1e-9]))
+        exp = expected(ref_txt[i], f'L{i + 1}')
+        def score(x):
+            pr = x['pr']; ok = pr['fin'] == exp or (exp == 'fall' and pr['fin'] == 'level')
+            return abs(pr['med'] - GMED) + (0 if ok else 2.5) + 0.3 * abs(x['dur'] - md) + (1.0 if pr['rng'] > 15 else 0)
+        p = sorted(cands, key=score)[0]
+        print('PICK', i, 'wer', round(p['wer'], 3), '| final', p['pr']['fin'], f"({p['pr']['mv']:+.1f} st, expected {exp})", '| pitch', f"{100 * 2 ** (p['pr']['med'] / 12):.0f} Hz", f"(level {p['pr']['med'] - GMED:+.1f} st)", '| range', f"{p['pr']['rng']:.1f} st |", p['txt'])
+    else:
+        p = sorted(cands, key=lambda x: abs(x['dur'] - md))[0]
+        print('PICK', i, 'wer', round(p['wer'], 3), p['txt'])
     a = ld(p['f'], SR); env = np.sqrt(np.convolve(a ** 2, np.ones(480) / 480, 'same')); idx = np.where(env > 0.02 * np.abs(a).max())[0]
     s0 = max(0.0, idx[0] / SR - 0.04); e0 = min(len(a) / SR, idx[-1] / SR + 0.10)
     fn = f'{W}/L{i + 1}.wav'

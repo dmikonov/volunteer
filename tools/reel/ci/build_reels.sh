@@ -4,7 +4,7 @@
 set -x
 R=$PWD
 sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng >/dev/null
-pip install -q edge-tts opencv-python-headless numpy playwright faster-whisper gradio_client soundfile librosa editdistance huggingface_hub
+pip install -q edge-tts opencv-python-headless numpy playwright faster-whisper gradio_client soundfile librosa editdistance huggingface_hub praat-parselmouth
 python -m playwright install --with-deps chromium >/dev/null 2>&1
 sudo mkdir -p /s17 && sudo chown $USER /s17 && mkdir -p /s17/gen /s17/rp /s17/tip1 /s17/app
 cp appkit/Rubik.ttf /s17/Rubik.ttf; cp out/ci/*/gen/*.mp4 /s17/gen/ 2>/dev/null; cp app-screens/*.mp4 /s17/app/ 2>/dev/null
