@@ -1,0 +1,5 @@
+r3_float https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/f3a91f6b1d02fe24094616e6ace0664d512dcac9944597e732146b48a98da939/tmp4a3tyf1m.mp4
+r3_paddle https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/6e2ecb5c82545afe19f44efe84d7903cf67dd63304bb2c2486678954ad333862/tmpkvni_e5l.mp4
+r3_arm https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/0ac5fda5d3a72efed6b46ffacea33182a78d9fa5fa04759b70e4b789908689d7/tmpusdr2yrw.mp4
+r3_out https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/a2c4636b40d2b2f790c86cf7464d176b64d79309192599aebf64dec4af5edab5/tmp9dmo76ub.mp4
+r3_watch https://upsampler-wan-2-2-14b-image-to-video.hf.space/--replicas/4qncv/gradio_api/file=/tmp/gradio/bf6dcfac3057d3e2f27dbbd27c1725957af5ae3b81d61831fd75617bfa7bce39/tmp3lza_dv_.mp4
