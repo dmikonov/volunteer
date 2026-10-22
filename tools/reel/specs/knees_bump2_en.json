@@ -16,6 +16,7 @@
  ],
  "lines": [
   "Why does a tiny bump throw you off the board?",
+  "Follow, I fix one surf mistake a day.",
   "Look at his knees. Locked straight.",
   "Straight legs can't give, so the bump hits your whole body.",
   "Bent knees work like springs and soak it up.",
@@ -32,30 +33,36 @@
    null
   ],
   "L2": [
+   "Follow",
+   "SurfTribe",
+   null,
+   null
+  ],
+  "L3": [
    "Locked knees",
    "",
    null,
    "X"
   ],
-  "L4": [
+  "L5": [
    "Knees work",
    "like springs",
    null,
    "CK"
   ],
-  "L5": [
+  "L6": [
    "Ride",
    "low",
    null,
    null
   ],
-  "L6": [
+  "L7": [
    "SurfTribe measures<br>",
    "your knee angle",
    null,
    null
   ],
-  "L7": [
+  "L8": [
    "175° =<br>",
    "almost straight",
    null,
@@ -88,13 +95,29 @@
   ],
   "L3": [
    {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1r.mp4",
+    "a": 0.6,
+    "z": 1.2,
+    "cx": [
+     0.436,
+     0.436
+    ],
+    "cy": [
+     0.5365,
+     0.5365
+    ]
+   }
+  ],
+  "L4": [
+   {
     "kind": "app",
     "src": "/s17/gen/kb_split.mp4",
     "a": 0.0,
     "z": 1.0
    }
   ],
-  "L4": [
+  "L5": [
    {
     "kind": "gen",
     "src": "/s17/gen/kb_B4t.mp4",
@@ -108,18 +131,10 @@
     "z": 1.0
    }
   ],
-  "L5": [
+  "L6": [
    {
     "kind": "gen",
     "src": "/s17/gen/kb_B1s.mp4",
-    "a": 0.0,
-    "z": 1.0
-   }
-  ],
-  "L6": [
-   {
-    "kind": "app",
-    "src": "/s17/gen/kb_app.mp4",
     "a": 0.0,
     "z": 1.0
    }
@@ -128,11 +143,19 @@
    {
     "kind": "app",
     "src": "/s17/gen/kb_app.mp4",
-    "a": 2.0,
+    "a": 0.0,
     "z": 1.0
    }
   ],
   "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 2.0,
+    "z": 1.0
+   }
+  ],
+  "L9": [
    {
     "kind": "gen",
     "src": "/s17/gen/rp_watch.mp4",
@@ -150,34 +173,28 @@
  },
  "ttop": {},
  "v2subs": {
-  "L5": [
+  "L6": [
    "sitting on a chair"
   ]
  },
  "extra": [
   {
    "k": "RING3",
-   "line": "L2",
-   "d0": 0.75,
-   "html": "<div style='position:absolute;left:331px;top:945px;width:280px;height:280px;border-radius:50%;border:10px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
+   "line": "L3",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:372px;top:858px;width:336px;height:336px;border-radius:50%;border:12px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
   },
   {
-   "k": "LABL3",
-   "line": "L3",
+   "k": "LABL4",
+   "line": "L4",
    "d0": 0.05,
    "html": "<div style='position:absolute;top:500px;left:68px;width:400px;display:flex;justify-content:center'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='52' height='52' viewBox='0 0 64 64'><path d='M12 12 L52 52 M52 12 L12 52' stroke='#2D242A' stroke-width='20' stroke-linecap='round'/><path d='M12 12 L52 52 M52 12 L12 52' stroke='#FF5150' stroke-width='12' stroke-linecap='round'/></svg><span>Stiff</span></span></div>"
   },
   {
-   "k": "LABR3",
-   "line": "L3",
+   "k": "LABR4",
+   "line": "L4",
    "d0": 0.05,
    "html": "<div style='position:absolute;top:500px;left:552px;width:400px;display:flex;justify-content:center'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>Soft</span></span></div>"
-  },
-  {
-   "k": "FOL1",
-   "line": "L1",
-   "d0": 0.3,
-   "html": "<div style='position:absolute;top:468px;left:0;width:1080px;text-align:center;font:700 46px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)'>Follow SurfTribe</div>"
   }
  ],
  "v2_sub_top": 465,
