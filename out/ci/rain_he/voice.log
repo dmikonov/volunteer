@@ -7,26 +7,28 @@ take 2 4 wer 0.0 dur 3.54 | בים כזה חוטפים דלקת באוזן או 
 take 2 5 wer 0.0 dur 3.54 | בים כזה חוטפים דלקת באוזן או וירוס בבטן.
 take 3 6 wer 0.2 dur 1.76 | אז מה עושים אחרי הגשם?
 take 3 7 wer 0.0 dur 1.76 | אז מה עושים אחרי גשם?
-take 4 8 wer 0.667 dur 3.24 | הם אחים יומיים שלושה עד שמה הם מתנקים.
-take 4 9 wer 0.667 dur 3.24 | מחכים יומיים שלא חיים מתנאי מיתקים
-take 5 10 wer 0.0 dur 3.51 | ולא גולשים ליד צינור ניקוז או שפך של נחל.
-take 5 11 wer 0.0 dur 3.51 | ולא גולשים ליד צינור ניקוז או שפך של נחל.
-take 6 12 wer 1.0 dur 2.75 | אהההההההההה
-take 6 13 wer 0.333 dur 2.75 | רואים עדיין מים חומים
-take 7 14 wer 0.143 dur 3.19 | ומתי יש שוב גלים? תבדקו בסרף טרייבו.
-take 7 15 wer 0.0 dur 3.19 | ומתי יש שוב גלים? תבדקו בסרף טרייב.
-take 8 16 wer 0.0 dur 2.46 | תשמרו את הסרטון לגשם הבא
-take 8 17 wer 0.2 dur 2.46 | תשמעו את הסרטון לגשם הבא
-take 9 18 wer 0.0 dur 2.55 | מחר איפה כדאי לשבת בליינאפ?
-take 9 19 wer 0.0 dur 2.55 | מחר איפה כדאי לשבת בליינאפ?
-PICK 0 wer 0.111 | final rise (+3.4 st, expected fall) | pitch 111 Hz (level -0.6 st) | range 9.7 st | ירד גשם. קהל המים החומים האלה באים ישר מהעיר.
-PICK 1 wer 0.0 | final fall (-4.5 st, expected fall) | pitch 113 Hz (level -0.4 st) | range 9.5 st | יש שם לכלוך מהכבישים ולפעמים גם ביוב.
-PICK 2 wer 0.0 | final fall (-2.1 st, expected fall) | pitch 112 Hz (level -0.5 st) | range 9.3 st | בים כזה חוטפים דלקת באוזן או וירוס בבטן.
-PICK 3 wer 0.0 | final level (-0.6 st, expected rise) | pitch 122 Hz (level +1.0 st) | range 14.3 st | אז מה עושים אחרי גשם?
-PICK 4 wer 0.667 | final fall (-4.2 st, expected fall) | pitch 136 Hz (level +2.9 st) | range 18.0 st | מחכים יומיים שלא חיים מתנאי מיתקים
-PICK 5 wer 0.0 | final fall (-3.2 st, expected fall) | pitch 115 Hz (level +0.0 st) | range 11.9 st | ולא גולשים ליד צינור ניקוז או שפך של נחל.
-PICK 6 wer 0.333 | final fall (-1.8 st, expected fall) | pitch 100 Hz (level -2.5 st) | range 5.3 st | רואים עדיין מים חומים
-PICK 7 wer 0.0 | final level (+0.0 st, expected fall) | pitch 117 Hz (level +0.3 st) | range 14.7 st | ומתי יש שוב גלים? תבדקו בסרף טרייב.
-PICK 8 wer 0.0 | final fall (-1.6 st, expected fall) | pitch 121 Hz (level +0.9 st) | range 9.2 st | תשמרו את הסרטון לגשם הבא
-PICK 9 wer 0.0 | final fall (-2.5 st, expected fall) | pitch 115 Hz (level -0.1 st) | range 9.7 st | מחר איפה כדאי לשבת בליינאפ?
-he f5 T 27.825 [('L1', 0.12, np.float64(3.54), 0.11), ('L2', np.float64(3.861), np.float64(2.72), 0.0), ('L3', np.float64(6.78), np.float64(3.13), 0.0), ('L4', np.float64(10.358), np.float64(1.41), 0.0), ('L5', np.float64(12.171), np.float64(2.3), 0.67), ('L6', np.float64(14.67), np.float64(3.06), 0.0), ('L7', np.float64(17.925), np.float64(1.97), 0.33), ('L8', np.float64(20.347), np.float64(2.55), 0.0), ('L9', np.float64(23.095), np.float64(1.76), 0.0), ('L10', np.float64(25.056), np.float64(1.87), 0.0)]
+take 5 8 wer 0.0 dur 3.51 | ולא גולשים ליד צינור ניקוז או שפך של נחל.
+take 5 9 wer 0.0 dur 3.51 | ולא גולשים ליד צינור ניקוז או שפך של נחל.
+take 7 10 wer 0.143 dur 3.19 | ומתי יש שוב גלים? תבדקו בסרף טרייבו.
+take 7 11 wer 0.0 dur 3.19 | ומתי יש שוב גלים? תבדקו בסרף טרייב.
+take 8 12 wer 0.0 dur 2.46 | תשמרו את הסרטון לגשם הבא
+take 8 13 wer 0.2 dur 2.46 | תשמעו את הסרטון לגשם הבא
+take 9 14 wer 0.0 dur 2.55 | מחר איפה כדאי לשבת בליינאפ?
+take 9 15 wer 0.0 dur 2.55 | מחר איפה כדאי לשבת בליינאפ?
+take 4 16 wer 0.429 dur 3.5 | הם מחכים יומיים ושלושה עד שהמים מתנקים.
+take 4 17 wer 0.143 dur 3.5 | מככים יומיים או שלושה עד שהמים מתנקים.
+take 4 18 wer 0.143 dur 3.5 | מחכים יומיים או שלושה עד שהם מתנקים.
+take 6 19 wer 0.143 dur 3.02 | רואים עדיין מים חומים? אז היום מועטרים...
+take 6 20 wer 0.0 dur 3.02 | רואים עדיין מים חומים אז היום מוותרים
+take 6 21 wer 0.571 dur 3.02 | רוינין, מים חומים! אז אההההה!
+PICK 0 wer 0.111 | final rise (+11.0 st, expected fall) | pitch 122 Hz (level +0.8 st) | range 12.5 st | ירד גשם, קל המים החומים האלה באים ישר מהעיר
+PICK 1 wer 0.0 | final fall (-4.5 st, expected fall) | pitch 113 Hz (level -0.6 st) | range 9.5 st | יש שם לכלוך מהכבישים ולפעמים גם ביוב.
+PICK 2 wer 0.0 | final fall (-2.1 st, expected fall) | pitch 112 Hz (level -0.8 st) | range 9.3 st | בים כזה חוטפים דלקת באוזן או וירוס בבטן.
+PICK 3 wer 0.0 | final level (-0.6 st, expected rise) | pitch 122 Hz (level +0.7 st) | range 14.3 st | אז מה עושים אחרי גשם?
+PICK 4 wer 0.143 | final fall (-5.6 st, expected fall) | pitch 149 Hz (level +4.2 st) | range 8.7 st | מככים יומיים או שלושה עד שהמים מתנקים.
+PICK 5 wer 0.0 | final fall (-3.2 st, expected fall) | pitch 115 Hz (level -0.3 st) | range 11.9 st | ולא גולשים ליד צינור ניקוז או שפך של נחל.
+PICK 6 wer 0.0 | final level (+0.5 st, expected fall) | pitch 203 Hz (level +9.5 st) | range 4.7 st | רואים עדיין מים חומים אז היום מוותרים
+PICK 7 wer 0.0 | final level (+0.0 st, expected fall) | pitch 117 Hz (level +0.0 st) | range 14.7 st | ומתי יש שוב גלים? תבדקו בסרף טרייב.
+PICK 8 wer 0.0 | final fall (-1.6 st, expected fall) | pitch 121 Hz (level +0.6 st) | range 9.2 st | תשמרו את הסרטון לגשם הבא
+PICK 9 wer 0.0 | final fall (-2.5 st, expected fall) | pitch 115 Hz (level -0.3 st) | range 9.7 st | מחר איפה כדאי לשבת בליינאפ?
+he f5 T 28.211 [('L1', 0.12, np.float64(3.11), 0.11), ('L2', np.float64(3.429), np.float64(2.72), 0.0), ('L3', np.float64(6.348), np.float64(3.13), 0.0), ('L4', np.float64(9.926), np.float64(1.41), 0.0), ('L5', np.float64(11.739), np.float64(2.7), 0.14), ('L6', np.float64(14.641), np.float64(3.06), 0.0), ('L7', np.float64(17.896), np.float64(2.39), 0.0), ('L8', np.float64(20.733), np.float64(2.55), 0.0), ('L9', np.float64(23.481), np.float64(1.76), 0.0), ('L10', np.float64(25.442), np.float64(1.87), 0.0)]
