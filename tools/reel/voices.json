@@ -1,2 +1,3 @@
-{"en": {"engine": "kokoro", "voice": "af_heart", "speed": 1.08, "note": "Выбор Димы 20.10: вариант 5 из кастинга out/ci/voicetest"},
- "en_fallback": {"engine": "edge", "voice": "en-US-AndrewMultilingualNeural", "rate": "+5%"}}
+{"en": {"engine": "edge", "voice": "en-US-AndrewMultilingualNeural", "rate": "+4%", "note": "Dima 22.10: voice casting out/ci/voicecast2, en_D (Kokoro af_heart 20.10 judged flat, no intonation)"},
+ "en_fallback": {"engine": "edge", "voice": "en-US-AndrewMultilingualNeural", "rate": "+4%"},
+ "he": {"engine": "chatterbox", "ref": "tools/reel/voices/he_voice3_ref.wav", "exaggeration": 0.65, "cfg_weight": 0.4, "note": "Dima 22.10: he_A, F5 voice 3 timbre read by Chatterbox Multilingual with intonation; takes via tools/reel/cb_takes.py in the reel prep, picked by voice_f5.py"}}

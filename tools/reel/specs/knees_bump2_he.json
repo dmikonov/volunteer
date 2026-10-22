@@ -1,0 +1,157 @@
+{
+ "lang": "he",
+ "f5": true,
+ "style": "v2",
+ "no_marka": true,
+ "gap": 0.2,
+ "music_vol": 0.35,
+ "recap": [
+  "",
+  []
+ ],
+ "out": "reel_knees_bump2_he.mp4",
+ "app_lines": [],
+ "teaser": [
+  "מחר",
+  "איך מזהים<br>זרם סחף"
+ ],
+ "sub_replace": {
+  "ובסרף טרייב": "וב-SurfTribe",
+  "וסרף טרייב": "ו-SurfTribe",
+  "סרף טרייב": "SurfTribe"
+ },
+ "lines": [
+  "זו הסיבה שגל קטן מפיל אתכם.",
+  "תסתכלו על הברכיים. נעולות וישרות.",
+  "רגל ישרה מעבירה כל קפיצה לגוף. ברך רכה בולמת אותה.",
+  "שבו נמוך, כאילו יש כיסא מאחוריכם.",
+  "צלמו גל אחד, ובסרף טרייב תראו את זווית הברך.",
+  "מחר: איך מזהים זרם סחף מהחוף."
+ ],
+ "titles": {
+  "L1": [
+   "למה גל קטן",
+   "מפיל",
+   null,
+   null
+  ],
+  "L2": [
+   "ברכיים נעולות",
+   "",
+   null,
+   "X"
+  ],
+  "L4": [
+   "שבו",
+   "נמוך",
+   null,
+   "CK"
+  ],
+  "L5": [
+   "ברך נעולה<br>",
+   "175°",
+   null,
+   null
+  ]
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A3c.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "dd": 1.5
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1k.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_A1r.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_split.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B2t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B4t.mp4",
+    "a": 0.0,
+    "z": 1.0
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/kb_B1s.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/kb_app.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rp_wide.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
+  ]
+ },
+ "ttop": {},
+ "v2subs": {
+  "L4": [
+   "כיסא מאחוריכם"
+  ]
+ },
+ "extra": [
+  {
+   "k": "RING3",
+   "line": "L2",
+   "d0": 0.75,
+   "html": "<div style='position:absolute;left:331px;top:945px;width:280px;height:280px;border-radius:50%;border:10px solid #FF5150;box-shadow:0 0 0 4px rgba(45,36,42,.5)'></div>"
+  },
+  {
+   "k": "LABL3",
+   "line": "L3",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:68px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='52' height='52' viewBox='0 0 64 64'><path d='M12 12 L52 52 M52 12 L12 52' stroke='#2D242A' stroke-width='20' stroke-linecap='round'/><path d='M12 12 L52 52 M52 12 L12 52' stroke='#FF5150' stroke-width='12' stroke-linecap='round'/></svg><span>נוקשה</span></span></div>"
+  },
+  {
+   "k": "LABR3",
+   "line": "L3",
+   "d0": 0.05,
+   "html": "<div style='position:absolute;top:500px;left:552px;width:400px;display:flex;justify-content:center;direction:rtl'><span style=\"display:inline-flex;align-items:center;white-space:nowrap;gap:12px;font:800 58px R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\"><svg width='56' height='52' viewBox='0 0 68 64'><path d='M8 34 L26 52 L60 12' fill='none' stroke='#00E4FF' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg><span>רך</span></span></div>"
+  }
+ ],
+ "v2_sub_top": 465,
+ "cb": {
+  "exaggeration": 0.65,
+  "cfg_weight": 0.4
+ }
+}
