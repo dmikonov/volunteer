@@ -1,18 +1,18 @@
 + k=/s17/rp/foam7_he
 + python3 build.py /s17/rp/foam7_he
-[('L1', '/ai_hook.mp4', 0.0, 2.19, 0.0), ('L2', 'de_side2.mp4', 0.0, 2.16, 2.19), ('L3', 'ai_waist.mp4', 0.0, 3.551, 4.35), ('L4', 'n/ai_lie.mp4', 0.0, 3.459, 7.901), ('L5', 'ai_front.mp4', 0.0, 3.91, 11.36), ('L6', '/app4_he.mp4', 0.0, 4.24, 15.27), ('L7', 'ide_side.mp4', 0.0, 3.172, 19.51)]
-cat 22.68 T 22.682
+[('L1', '/ai_hook.mp4', 0.0, 2.19, 0.0), ('L2', 'de_side2.mp4', 0.0, 2.16, 2.19), ('L3', 'ai_waist.mp4', 0.0, 3.551, 4.35), ('L4', 'n/ai_lie.mp4', 0.0, 3.673, 7.901), ('L5', 'ai_front.mp4', 0.0, 4.527, 11.574), ('L6', '/app4_he.mp4', 0.0, 4.24, 16.101), ('L7', 'ide_side.mp4', 0.0, 3.172, 20.341)]
+cat 23.52 T 23.513
 + python3 ov_png.py /s17/rp/foam7_he
-realcuts True [0.0, 2.2, 4.36, 7.92, 11.36, 15.28, 19.52, 22.682]
+realcuts True [0.0, 2.2, 4.36, 7.92, 11.6, 16.12, 20.36, 23.513]
 safe-zone violations []
 ovplan 14
 + python3 ov_ff.py /s17/rp/foam7_he
-done /s17/rp/foam7_he/reel_foam7_he.mp4 22.682 lufs before -15.2 gain 0.7
+done /s17/rp/foam7_he/reel_foam7_he.mp4 23.513 lufs before -15.2 gain 0.7
 + python3 trim_tail.py /s17/rp/foam7_he
-trimmed /s17/rp/foam7_he/reel_foam7_he.mp4 22.05
+trimmed /s17/rp/foam7_he/reel_foam7_he.mp4 22.88
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/foam7_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/foam7_he/reel_foam7_he.mp4
-/s17/rp/foam7_he/reel_foam7_he.mp4 before -13.0 after -14.5 peak -2.8
+/s17/rp/foam7_he/reel_foam7_he.mp4 before -12.9 after -14.6 peak -2.9
 + python3 post_cz.py /s17/rp/foam7_he
 post ok
 + echo 'EXIT /s17/rp/foam7_he 0'
