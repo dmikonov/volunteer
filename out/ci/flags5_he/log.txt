@@ -1,18 +1,18 @@
 + k=/s17/rp/flags5_he
 + python3 build.py /s17/rp/flags5_he
-[('L1', 'f4_flags.mp4', 0.0, 3.858, 0.0), ('L2', '/fl5_red.mp4', 0.3, 3.299, 3.858), ('L3', 'fl5_none.mp4', 0.0, 1.918, 7.157), ('L4', 'l5_white.mp4', 0.0, 2.074, 9.075), ('L5', '/fl5_red.mp4', 0.0, 3.828, 11.149), ('L6', 'fl5_none.mp4', 1.6, 2.975, 14.977), ('L7', '/app5_he.mp4', 0.0, 3.823, 17.952), ('L8', 'n/fl5_go.mp4', 0.0, 3.921, 21.775), ('L9', 'rn_drain.mp4', 0.0, 3.151, 25.696)]
-cat 28.84 T 28.847
+[('L1', 'f4_flags.mp4', 0.0, 3.858, 0.0), ('L2', 'f4_flags.mp4', 1.5, 1.4, 3.858), ('L2', '/fl5_red.mp4', 0.3, 1.771, 5.258), ('L3', 'fl5_none.mp4', 0.0, 1.918, 7.029), ('L4', 'l5_white.mp4', 0.0, 2.074, 8.947), ('L5', '/fl5_red.mp4', 0.0, 3.828, 11.021), ('L6', 'fl5_none.mp4', 1.6, 2.975, 14.849), ('L7', '/app5_he.mp4', 0.0, 1.6, 17.824), ('L7', 'l5_white.mp4', 1.6, 2.223, 19.424), ('L8', 'n/fl5_go.mp4', 0.0, 3.921, 21.647), ('L9', 'rn_drain.mp4', 0.0, 3.151, 25.568)]
+cat 28.72 T 28.719
 + python3 ov_png.py /s17/rp/flags5_he
-realcuts True [0.0, 3.84, 7.12, 9.04, 11.12, 14.96, 17.92, 21.76, 25.68, 28.847]
+realcuts True [0.0, 3.84, 7.0, 8.92, 11.0, 14.84, 17.8, 21.64, 25.56, 28.719]
 safe-zone violations []
 ovplan 19
 + python3 ov_ff.py /s17/rp/flags5_he
-done /s17/rp/flags5_he/reel_flags5_he.mp4 28.847 lufs before -15.0 gain 0.5
+done /s17/rp/flags5_he/reel_flags5_he.mp4 28.719 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/flags5_he
-trimmed /s17/rp/flags5_he/reel_flags5_he.mp4 28.32
+trimmed /s17/rp/flags5_he/reel_flags5_he.mp4 28.19
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/flags5_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/flags5_he/reel_flags5_he.mp4
-/s17/rp/flags5_he/reel_flags5_he.mp4 before -13.0 after -14.5 peak -2.7
+/s17/rp/flags5_he/reel_flags5_he.mp4 before -13.0 after -14.5 peak -3.0
 + python3 post_cz.py /s17/rp/flags5_he
 post ok
 + echo 'EXIT /s17/rp/flags5_he 0'
