@@ -5,7 +5,7 @@ L3 OK match=1.00 wps=6.94 dur=0.86 | ref: So how do you read it? | asr: So how d
 L4 OK match=1.00 wps=2.54 dur=3.15 | ref: Low tide is shallow, so waves dump hard. | asr: Low tide is shallow, so waves dump hard.
 L5 OK match=1.00 wps=2.90 dur=3.45 | ref: As it fills in, they slow down and go soft. | asr: As it fills in, they slow down and go soft.
 L6 OK match=1.00 wps=3.30 dur=3.63 | ref: Lots of beaches work best at mid tide, on the way up. | asr: Lots of beaches work best at mid-tide on the way up.
-L7 OK match=0.98 wps=2.33 dur=4.29 | ref: Check the tide, and let SurfTribe pick the best hour. | asr: Check the tide, and let's Surf Tribe pick the best hour.
+L7 OK match=1.00 wps=2.40 dur=4.59 | ref: Check the tide first, then check swell and wind in SurfTribe. | asr: Check the tide first, then check swell and wind in Surf Tribe.
 L8 OK match=1.00 wps=3.85 dur=1.82 | ref: Save this for your next new spot. | asr: Save this for your next new spot.
 L9 OK match=0.97 wps=2.62 dur=2.67 | ref: Tomorrow: where to sit in the lineup. | asr: Tomorrow, we're to sit in the lineup.
 TOTAL wps=2.85 lines_to_check=0

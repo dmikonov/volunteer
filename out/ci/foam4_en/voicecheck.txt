@@ -1,4 +1,3 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 L1 OK match=1.00 wps=2.74 dur=4.01 | ref: You paddle straight out, and the whitewater keeps pushing you back. | asr: You paddle straight out, and the white water keeps pushing you back.
 L2 OK match=1.00 wps=3.32 dur=2.71 | ref: A whole session, and you never stand up once. | asr: A whole session, and you never stand up once.
 L3 OK match=1.00 wps=2.33 dur=2.57 | ref: Easy fix: stay in the whitewater. | asr: Easy fix, stay in the whitewater.
