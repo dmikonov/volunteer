@@ -5,32 +5,31 @@ HE: море после дождя (out/ci/rain_he/reel_rain_he.mp4). EN: при
 
 ## HE (@surftribe_il)
 
-ירד גשם? המים החומים שנכנסים לים אחרי גשם מביאים איתם לכלוך מהכבישים, ולפעמים גם ביוב. אפשר לחטוף מזה דלקת באוזן או וירוס בבטן.
+ירד גשם? המים החומים שזורמים לים מביאים לכלוך מהכבישים, ולפעמים גם ביוב. ככה חוטפים דלקת אוזניים או קלקול קיבה.
 
-מה עושים:
 מחכים יומיים שלושה, עד שהמים מתנקים
 לא גולשים ליד צינור ניקוז או שפך של נחל
 רואים עדיין מים חומים? מוותרים היום
 
-מתי יש שוב גלים, בודקים בתחזית של SurfTribe.
+בתחזית של SurfTribe רואים מתי חוזרים גלים.
 
 תשמרו את הסרטון לגשם הבא.
 
-הקריינות, הגולש וצינור הניקוז נוצרו ב-AI. צילום הרחפן של הנחל אמיתי.
+הקריינות, הגולש והחוף נוצרו ב-AI. צילום הליינאפ בסוף אמיתי.
 
 #גלישה #גלישהבישראל #גלישהלמתחילים #חורף #בטיחותבים
 
 ## EN (@surftribe_world)
 
-Same beach as this morning, and now every wave closes out? Blame the tide, not the swell.
+Same beach as this morning, and now every wave closes out? Probably the tide, not the swell.
 
 Low tide: shallow water, waves dump hard and fast
-Tide filling in: waves slow down and get soft
-Mid tide on the rise: lots of beaches work best
+High tide: waves go soft and fat, sometimes too slow
+Mid tide on the push: lots of beach breaks work best
 
-Check the tide before you paddle out, then let SurfTribe pick the best hour for swell and wind.
+SurfTribe shows swell and wind hour by hour. The tide is on you.
 
-Save this for your next new spot.
+Save this for the next time you surf a new spot.
 
 Voiceover and the surfer on the beach are AI. The wave and lineup footage is real.
 
@@ -40,9 +39,9 @@ Voiceover and the surfer on the beach are AI. The wave and lineup footage is rea
 - После дождя мутная вода из ливнёвки несёт грязь с дорог и иногда канализацию; Минздрав рекомендует не входить в море после первого дождя, МВД закрывало пляжи Тель-Авива и Герцлии (mako, 2024). Сроки «48 часов» (Дублин, Новая Зеландия, Виктория) и «72 часа» (округ Сан-Диего). В рилсе «2-3 дня»: подтверди.
 - Риски: воспаление уха и желудочная инфекция (предупреждения округа Сан-Диего о стоках). Подтверди формулировку «וירוס בבטן».
 - Прилив: от отлива до прилива около 6 ч 13 мин (surfertoday). Отлив: мелко, волны «закрываются»; полный прилив: волны мягкие. Многие бич-брейки лучше в средней воде на приливе: подтверди.
-- Приложение: экран прогноза «лучшее время» (coach tip + недельный прогноз). Что «лучший час» считается по свеллу и ветру: подтверди. Приливов в приложении нет, в рилсе это и не обещано.
+- Приложение: HE недельные столбики прогноза (оценка дня), EN плитки прогноза (волна, период, свелл, ветер). Приливов в приложении нет, в рилсе это не обещано. «Hour by hour» в EN-подписи: почасовой график в прогнозе есть, подтверди.
 
 ## Источники кадров
-- Pexels 13831212 (река в море, сверху), 7498300 (лайнап сверху), 4961454 (мягкая волна сверху): лицензия Pexels, бесплатно для коммерческого использования.
-- Mixkit 1070, 38933, 26310, 1128, 36833: Mixkit free licence.
-- ИИ (Z-Image Turbo + Wan 2.2): rn_drain (ливнёвка), rn_wait, rn_check, rn_paddle (один и тот же сёрфер), td_watch (EN, сёрфер на берегу).
+- Pexels 7498300 (лайнап сверху): лицензия Pexels, бесплатно для коммерческого использования.
+- Mixkit 38933, 26310, 1070, 1904, 38939, 1128, 36833: Mixkit free licence.
+- ИИ (Z-Image Turbo + Wan 2.2): rn_drain, rn_waves, rn_stream, rn_wait, rn_clean, rn_check, rn_leave, rn_paddle (один сёрфер), td_watch (EN).

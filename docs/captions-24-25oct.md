@@ -9,12 +9,12 @@
 
 מה עושים:
 נשארים בקצף
-כל פעם שמגיע קצף, מנסים לקום
+כל גל שבור שמגיע, מנסים לקום
 קמתם? גולשים ישר עד החוף
 
-ככה יוצאות עשר קימות בסשן במקום אפס. ותבקשו מחבר לצלם אתכם: SurfTribe יראה לכם על הסרטון מה לתקן.
+ככה קמים עשר פעמים בסשן, ולא אפס. ואם חבר מצלם אתכם מהחוף, SurfTribe מראה על הסרטון מה לתקן.
 
-תשמרו את זה ותראו שוב לפני שנכנסים למים.
+תשמרו, ותסתכלו על זה רגע לפני שנכנסים למים.
 
 הקריינות והגולש נוצרו ב-AI. הסרטון בתוך האפליקציה אמיתי.
 
@@ -28,9 +28,9 @@ Stay in the whitewater
 Every time it rolls in, try to stand up
 Once you're up, ride it to the beach
 
-That's ten tries a session instead of zero. Get a friend to film you, and SurfTribe shows what to fix.
+Easy ten pop-ups a session that way, not zero. If a friend films you from the beach, SurfTribe shows what to fix.
 
-Save this for your next session.
+Save it and have another look before you paddle out.
 
 Voiceover and the surfer are AI. The replay inside the app is real.
 
@@ -38,14 +38,14 @@ Voiceover and the surfer are AI. The replay inside the app is real.
 
 ## 25.10 HE (@surftribe_il)
 
-ניחוש: דגל שחור על סוכת המציל. נכנסים לגלוש? אם אתם מתחילים, לא.
+שאלה: דגל שחור על סוכת המציל. נכנסים לגלוש? לא.
 
 לבן: יש מציל, אפשר להיכנס
 אדום: ים מסוכן, מתחילים נשארים ברדודים מול המציל
-שחור: ים סוער, אסור להיכנס
+שחור: ים סוער. לא נכנסים, נקודה.
 אין דגל: אין מציל, לא נכנסים
 
-לא בטוחים איך הים היום? תשאלו את המאמן ב-SurfTribe.
+ואם לא בטוחים, ב-SurfTribe יש מאמן שאפשר לשאול.
 
 תשמרו, זה הדבר הראשון שבודקים כשמגיעים לחוף.
 
@@ -61,7 +61,7 @@ The big ones go to whoever's sitting further out, closest to the peak
 Let them go and grab a smaller one nobody's paddling for
 Someone already riding? Pull back, it's their wave
 
-After your session, SurfTribe shows if you rode the high line or the bottom.
+On the smaller ones you do catch, SurfTribe shows afterwards if you rode the high line or bogged at the bottom.
 
 Save this for your next packed lineup.
 
