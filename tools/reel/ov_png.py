@@ -37,6 +37,7 @@ CK = f"<svg width=64 height=64 viewBox='0 0 64 64' style='vertical-align:-10px'>
 WARN = f"<svg width=64 height=64 viewBox='0 0 64 64' style='vertical-align:-10px'><circle cx=32 cy=32 r=30 fill='{RED}'/><path d='M32 14V38' stroke='#fff' stroke-width=8 stroke-linecap=round/><circle cx=32 cy=49 r=5 fill='#fff'/></svg>"
 ICON = {'X': XI, 'CK': CK, 'WARN': WARN, None: None}
 TITLES = S['titles']; RECAP = S['recap']; LAST = L[-1]['k']
+GK = S.get('grad_k', 1.0)  # 23.10: stronger top gradient on bright real footage (cyan titles on light sky)
 F = base64.b64encode(open('/s17/Rubik.ttf', 'rb').read()).decode()
 DIR = 'rtl' if HE else 'ltr'; FS = 80 if HE else 70
 def page(body):
@@ -61,7 +62,7 @@ html,body{{margin:0;width:1080px;height:1920px;background:transparent;overflow:h
 .tz .box{{display:inline-block;max-width:600px;padding:28px 36px 32px;border-radius:30px;background:{NAVY};text-align:center}}
 .tz h{{display:block;font-weight:800;font-size:{58 if HE else 50}px;color:{CY};margin-bottom:16px}}
 .tz .t{{display:block;font-weight:800;font-size:{64 if HE else 56}px;color:#fff;line-height:1.15;text-wrap:balance}}
-.g2{{position:absolute;top:0;left:0;width:1080px;height:700px;background:linear-gradient(180deg,rgba(45,36,42,.50) 0px,rgba(45,36,42,.32) 330px,rgba(45,36,42,.12) 520px,rgba(45,36,42,0) 700px)}}
+.g2{{position:absolute;top:0;left:0;width:1080px;height:700px;background:linear-gradient(180deg,rgba(45,36,42,{min(.9,.50*GK):.2f}) 0px,rgba(45,36,42,{min(.9,.32*GK):.2f}) 330px,rgba(45,36,42,{min(.9,.12*GK):.2f}) 520px,rgba(45,36,42,0) 700px)}}
 .t2,.lab2{{position:absolute;top:250px;left:0;right:0;display:flex;justify-content:center;direction:{DIR}}}
 .t2 span.x{{display:inline-block;max-width:620px;text-align:center;font-weight:800;font-size:92px;line-height:1.02;color:#fff;text-wrap:balance;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
 .lab2{{top:300px}} .lab2 span.x{{display:inline-flex;align-items:center;gap:18px;white-space:nowrap;font-weight:800;font-size:64px;line-height:1;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)}}
