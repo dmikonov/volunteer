@@ -13,7 +13,9 @@
  "rate": "-10%",
  "v2subs": {},
  "v2_sub_top": 1358,
- "ttop": {},
+ "ttop": {
+  "L7": 560
+ },
  "out": "reel_foam4_en.mp4",
  "lines": [
   "You paddle straight out, and the whitewater keeps pushing you back.",
@@ -22,7 +24,7 @@
   "Every time it rolls in, try to stand up.",
   "Once you're up, ride it to the beach.",
   "That's ten tries a session instead of zero.",
-  "Get a friend to film you. SurfTribe shows what to fix.",
+  "Get a friend to film you, and the Surf Tribe app shows you what to fix.",
   "Save this for your next session.",
   "Tomorrow: which wave in the set is yours."
  ],
@@ -66,6 +68,12 @@
   "L8": [
    "Save it",
    "for next session",
+   null,
+   null
+  ],
+  "L7": [
+   "SurfTribe app",
+   "shows what to fix",
    null,
    null
   ]
@@ -178,5 +186,13 @@
   "L2": 0.25,
   "L3": 0.2,
   "L6": 0.25
+ },
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
  }
 }

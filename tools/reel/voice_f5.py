@@ -59,7 +59,7 @@ for i, disp in enumerate(LINES):
         exp = expected(ref_txt[i], f'L{i + 1}')
         def score(x):
             pr = x['pr']; ok = pr['fin'] == exp or (exp == 'fall' and pr['fin'] == 'level')
-            return abs(pr['med'] - GMED) + (0 if ok else 2.5) + 0.3 * abs(x['dur'] - md) + (1.0 if pr['rng'] > 15 else 0) + 20 * (x['wer'] - bw)
+            return abs(pr['med'] - GMED) + (0 if ok else 2.5) + 0.3 * abs(x['dur'] - md) + (1.0 if pr['rng'] > 15 else 0) + 20 * (x['wer'] - bw) + (12 if abs(pr['med'] - GMED) > 3 else 0)  # 23.10 Dima: voice not uniform (rip3 HE L10-12 jumped to 180-255 Hz): a take off the common pitch by >3 st loses unless nothing else
         p = sorted(cands, key=score)[0]
         print('PICK', i, 'wer', round(p['wer'], 3), '| final', p['pr']['fin'], f"({p['pr']['mv']:+.1f} st, expected {exp})", '| pitch', f"{100 * 2 ** (p['pr']['med'] / 12):.0f} Hz", f"(level {p['pr']['med'] - GMED:+.1f} st)", '| range', f"{p['pr']['rng']:.1f} st |", p['txt'])
     else:
@@ -69,6 +69,10 @@ for i, disp in enumerate(LINES):
     s0 = max(0.0, idx[0] / SR - 0.04); e0 = min(len(a) / SR, idx[-1] / SR + 0.10)
     fn = f'{W}/L{i + 1}.wav'
     sp.run(['ffmpeg', '-v', 'error', '-y', '-i', p['f'], '-ar', str(SR), '-ac', '1', fn], check=True)
+    if S.get('even_level', True):  # 23.10: every line at the same speech loudness (lines were 3 dB apart)
+        import soundfile as _sf
+        _y, _ = _sf.read(fn); _e = np.sqrt(np.convolve(_y ** 2, np.ones(480) / 480, 'same')); _sp = _y[_e > 0.1 * _e.max()]
+        if len(_sp): _g = min(4.0, 10 ** (-20 / 20) / (np.sqrt(np.mean(_sp ** 2)) + 1e-9)); _sf.write(fn, np.clip(_y * _g, -0.99, 0.99), SR)
     toks = disp.split(); ww = [x for x in p['w'] if x[0]]
     if len(ww) == len(toks): tim = [(x[1], x[2]) for x in ww]
     else:  # spread display tokens over the spoken span by character length
