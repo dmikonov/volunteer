@@ -149,7 +149,7 @@ if V2:
             a, b, n, ic = TITLES[k]
             txt = a + (f" <span style='color:#00E4FF'>{b}</span>" if b else '')
             if ic: cards[f'T{k}c'] = f"<div class=lab2><span class=x>{V2X if ic in ('X', 'WARN') else V2V}<span>{txt}</span></span></div>"
-            else: cards[f'T{k}c'] = f"<div class=t2><span class=x>{txt}</span></div>"
+            else: cards[f'T{k}c'] = f"<div class=t2{(' style=' + chr(39) + 'top:' + str(S['ttop'][k]) + 'px' + chr(39)) if k in S.get('ttop', {}) else ''}><span class=x>{txt}</span></div>"  # 23.10: v2 honours spec ttop (title off a key detail)
     if S.get('teaser'):
         tz = S['teaser']
         cards['RECAPc'] = f"<div class=t2><span class=x><span style='color:#00E4FF;font-size:64px'>{tz[0]}</span><br>{tz[1]}</span></div>"
