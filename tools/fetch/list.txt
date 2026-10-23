@@ -18,3 +18,7 @@ stock/mx_1163_1080.mp4 https://assets.mixkit.co/videos/1163/1163-1080.mp4
 gentest/flf_ride_s7.mp4 https://mcp-tools-wan-2-2-first-last-frame.hf.space/--replicas/582xs/gradio_api/file=/tmp/gradio/2f7d5e579069a78c4afd20a2adccd9c79b28ac95ba676ccdc06c7e2c1798653d/tmp5j0xh0y0.mp4
 gentest/ltx2s_ride_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/d4932a4f4b3b8f17c77c7cc31e7b47f425caa1509dcb0884be7003351c56f1ee/tmpngl4kexs.mp4
 gentest/ltx2s_ride_s44d.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/e644c234708b9ea2cb003c0ebdb9d2140e8407a967af639d29780d29a754f01e/tmpcjyw0ljs.mp4
+gentest/waist_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/5e7b1e32c1e3f85ec1cda69210cecf89243e05ca5f2107c98d7befd3e0e28ff8/tmppajeo0wv.mp4
+gentest/front_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/19222ccd7232c44c90cf774aec61f52ce497f5f865e1d9a699546029b0bb835c/tmpbiicbnlw.mp4
+gentest/front_s51.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/2f473865d3db8ed8a2cc430b7c7766262e862e47e1239d6cbf885ac762e82f20/tmphma4jto9.mp4
+gentest/ride2s_s61.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/5aa2ba6df879fd9e07dd6ea4d51014f907a4bbde67cf31d63f3f6679a6f2646f/tmpigjsz9jv.mp4
