@@ -8,14 +8,6 @@
   "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L1_s2.wav"
  ],
  [
-  1,
-  "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L2_s1.wav"
- ],
- [
-  1,
-  "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L2_s2.wav"
- ],
- [
   2,
   "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L3_s1.wav"
  ],
@@ -102,5 +94,17 @@
  [
   5,
   "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L6_s4.wav"
+ ],
+ [
+  1,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L2_s5.wav"
+ ],
+ [
+  1,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L2_s6.wav"
+ ],
+ [
+  1,
+  "file:///home/runner/work/volunteer/volunteer/out/ci/d25/takes/L2_s7.wav"
  ]
 ]
