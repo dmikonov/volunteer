@@ -104,6 +104,12 @@ if S.get('follow'):  # 21.10 EN concept: animated Follow button under the follow
 cards['MARK'] = f"<div class=mark><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
 cards['MARKA'] = f"<div class=mark style='top:{S.get('app_top', 330) - 90}px'><span class=b>Surf<span style='color:{CY}'>Tribe</span></span></div>"
 for e in S.get('extra', []): cards[e['k']] = e['html']  # 20.10: custom overlays (arrow etc.)
+if S.get('logo'):  # 23.10 Dima: new round SurfTribe logo, small, in the corner for the whole reel
+    _lg = S['logo'] if isinstance(S['logo'], dict) else {}
+    cards['LOGO'] = (f"<div style='position:absolute;top:{_lg.get('top', 240)}px;left:{_lg.get('left', 60)}px;width:{_lg.get('size', 124)}px;height:{_lg.get('size', 124)}px;border-radius:50%;"
+                     f"background:#2D242A;display:flex;flex-direction:column;align-items:center;justify-content:center;direction:ltr;box-shadow:0 2px 10px rgba(0,0,0,.35)'>"
+                     f"<span style='font:800 {int(_lg.get('size', 124) * 0.27)}px R;line-height:.92;color:#fff'>Surf</span>"
+                     f"<span style='font:800 {int(_lg.get('size', 124) * 0.27)}px R;line-height:.92;color:#00CDFE'>Tribe</span></div>")
 cards['FLASH'] = "<div style='position:absolute;inset:0;background:rgba(255,255,255,.85)'></div>"
 STOP = {'עם', 'על', 'את', 'של', 'לפני', 'the', 'a', 'to', 'of', 'with', 'your', 'from', 'and', 'at', 'over', 'when', 'you', 'is', 'off', 'on', 'in', 'by'}
 subs = []
@@ -227,6 +233,7 @@ if V2:
     ON = [('GRAD', a, b) for k, a, b in ON if k.startswith(('T', 'RECAP'))] + ON  # gradient goes UNDER the text (was drawn on top and greyed the titles, 21.10)
     ON += [(kk, s0, s1) for kk, ch, s0, s1 in V2SUB]
 else: ON += [(f'S{i:02d}', s0, s1) for i, (txt, s0, s1) in enumerate(clean)]
+if S.get('logo'): ON.append(('LOGO', 0, T))
 wh = [round(c - 0.22, 3) for c in cuts[1:-1]]
 imp = [round(s['t0'] + s['shk'][0], 3) for s in segs if s.get('shk')]
 pops = [round(cuts[i] + 0.05, 3) for i, l in enumerate(L)]

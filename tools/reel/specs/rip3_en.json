@@ -24,7 +24,8 @@
   "Murky, sandy water.",
   "Foam drifting out to sea.",
   "Watch the water for ten minutes before you paddle out.",
-  "Rips get stronger when the swell's up, so check SurfTribe first.",
+  "Rips pull harder when the waves are big.",
+  "So first, check today's wave height in the Surf Tribe app.",
   "Caught in one? Stay on your board.",
   "Don't fight it. Paddle parallel to the beach till you're out.",
   "If it still has you, wave an arm and yell.",
@@ -73,19 +74,19 @@
    null,
    null
   ],
-  "L9": [
+  "L10": [
    "Stay on",
    "your board",
    null,
    null
   ],
-  "L10": [
+  "L11": [
    "Parallel to",
    "the beach",
    null,
    null
   ],
-  "L11": [
+  "L12": [
    "Wave and",
    "yell",
    null,
@@ -94,6 +95,12 @@
   "L2": [
    "Faster than",
    "most people swim",
+   null,
+   null
+  ],
+  "L9": [
+   "SurfTribe app",
+   "today's wave height",
    null,
    null
   ]
@@ -134,7 +141,8 @@
   "L3": 0.2,
   "L6": 0.25,
   "L8": 0.15,
-  "L11": 0.2
+  "L12": 0.2,
+  "L9": 0.3
  },
  "plan": {
   "L1": [
@@ -206,17 +214,10 @@
     "kind": "gen",
     "src": "/s17/gen/st_big.mp4",
     "a": 0.2,
-    "z": 1.0,
-    "dd": 1.8
-   },
-   {
-    "kind": "app",
-    "src": "/s17/gen/app_en_card.mp4",
-    "a": 0.0,
     "z": 1.0
    }
   ],
-  "L9": [
+  "L10": [
    {
     "kind": "gen",
     "src": "/s17/gen/h_float.mp4",
@@ -224,7 +225,7 @@
     "z": 1.0
    }
   ],
-  "L10": [
+  "L11": [
    {
     "kind": "gen",
     "src": "/s17/gen/h_escape.mp4",
@@ -237,7 +238,7 @@
     "a": 0.0
    }
   ],
-  "L11": [
+  "L12": [
    {
     "kind": "gen",
     "src": "/s17/gen/r3_arm2.mp4",
@@ -245,7 +246,7 @@
     "z": 1.0
    }
   ],
-  "L12": [
+  "L13": [
    {
     "kind": "gen",
     "src": "/s17/gen/r3_out.mp4",
@@ -258,6 +259,29 @@
     "a": 0.0,
     "z": 1.0
    }
+  ],
+  "L9": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en_full.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "dd": 1.6
+   },
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en_card.mp4",
+    "a": 0.0,
+    "z": 1.0
+   }
   ]
+ },
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
  }
 }
