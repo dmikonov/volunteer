@@ -22,3 +22,7 @@ gentest/waist_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradi
 gentest/front_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/19222ccd7232c44c90cf774aec61f52ce497f5f865e1d9a699546029b0bb835c/tmpbiicbnlw.mp4
 gentest/front_s51.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/2f473865d3db8ed8a2cc430b7c7766262e862e47e1239d6cbf885ac762e82f20/tmphma4jto9.mp4
 gentest/ride2s_s61.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/5aa2ba6df879fd9e07dd6ea4d51014f907a4bbde67cf31d63f3f6679a6f2646f/tmpigjsz9jv.mp4
+gentest/waist2_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/d20f90ad1cd4e368e82028291771002f67ad75ae15881fd6013ca46d8d2629c9/tmpspu11rro.mp4
+gentest/waist2_s51.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/ab1ca6e38a51a2af8826ffa29215375dd85ada5a1ed3a4cf1c915718d6b81bae/tmpu_rr525l.mp4
+gentest/front2_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/2d4dae92c22894b2ecd4e029928493535eef2816d459b303e34745043d3d5a2d/tmpvrq44b0w.mp4
+gentest/front2_s51.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/2fe2d3b452ce5031654169bec0fc3b40c56afbe427813ea23ed402d9be93016b/tmp58ezt1zn.mp4
