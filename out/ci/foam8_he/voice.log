@@ -1,0 +1,30 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.5 dur 2.55 | הקצב זורק אתכם אחורה כלפם
+take 0 1 wer 0.333 dur 2.55 | הקצף זורק אתכם אחורה קלפם
+take 0 2 wer 0.0 dur 2.55 | הקצף זורק אתכם אחורה כל פעם
+take 1 3 wer 0.0 dur 2.55 | שלושה כללים למתחילים בקצף
+take 1 4 wer 0.5 dur 2.55 | שלושה כללים לא מתחילים בקצף
+take 1 5 wer 0.0 dur 2.55 | שלושה כללים למתחילים בקצף
+take 2 6 wer 0.5 dur 4.23 | שוויסט, אחת העומדים במים עד המותנה עם החרטום לכיוון החוף.
+take 2 7 wer 0.0 dur 4.23 | 1. עומדים במים עד המותניים החרטום לכיוון החוף.
+take 2 8 wer 0.0 dur 4.23 | אחת עומדים במים עד המותניים החרטום לכיוון החוף.
+take 3 9 wer 0.286 dur 3.86 | 2. הקצב 2 מטר מכם, נשכבים וחותרים.
+take 3 10 wer 0.143 dur 3.86 | 2. הקצב שני מטר מכם, נשכבים וחותרים
+take 3 11 wer 0.286 dur 3.86 | 962, הקצב שני מטר מכם נשכבים וחותרים
+take 4 12 wer 0.111 dur 4.38 | שווסט, שלוש אחרי שקמים מסתכלים על החוף ולא על הרגליים.
+take 4 13 wer 0.111 dur 4.38 | שיואס, שלוש אחרי שקמים מסתכלים על החוף ולא על הרגליים.
+take 4 14 wer 0.0 dur 4.38 | 3. אחרי שקמים מסתכלים על החוף ולא על הרגליים.
+take 5 15 wer 0.0 dur 4.47 | צלמו את עצמכם ובאפליקציה סרף טרייב תראו מה לתקן.
+take 5 16 wer 0.0 dur 4.47 | צלמו את עצמכם ובאפליקציה סרף טרייב תראו מה לתקן.
+take 5 17 wer 0.333 dur 4.47 | כשצלמו את עצמכם ובאפליקציה סרפטרייב תראו מה לתקן.
+take 6 18 wer 0.0 dur 2.9 | תשמרו את זה לפני שנכנסים למים
+take 6 19 wer 0.0 dur 2.9 | תשמרו את זה לפני שנכנסים למים.
+take 6 20 wer 0.0 dur 2.9 | תשמרו את זה לפני שנכנסים למים.
+PICK 0 wer 0.0 | final fall (-4.8 st, expected rise) | pitch 124 Hz (level +0.3 st) | range 11.8 st | הקצף זורק אתכם אחורה כל פעם
+PICK 1 wer 0.0 | final rise (+12.4 st, expected fall) | pitch 125 Hz (level +0.4 st) | range 13.2 st | שלושה כללים למתחילים בקצף
+PICK 2 wer 0.0 | final fall (-4.3 st, expected fall) | pitch 105 Hz (level -2.5 st) | range 8.2 st | אחת עומדים במים עד המותניים החרטום לכיוון החוף.
+PICK 3 wer 0.143 | final fall (-6.6 st, expected fall) | pitch 149 Hz (level +3.5 st) | range 19.5 st | 2. הקצב שני מטר מכם, נשכבים וחותרים
+PICK 4 wer 0.111 | final rise (+6.9 st, expected fall) | pitch 119 Hz (level -0.5 st) | range 12.5 st | שיואס, שלוש אחרי שקמים מסתכלים על החוף ולא על הרגליים.
+PICK 5 wer 0.0 | final fall (-4.4 st, expected fall) | pitch 120 Hz (level -0.3 st) | range 10.0 st | צלמו את עצמכם ובאפליקציה סרף טרייב תראו מה לתקן.
+PICK 6 wer 0.0 | final fall (-5.7 st, expected fall) | pitch 124 Hz (level +0.3 st) | range 8.8 st | תשמרו את זה לפני שנכנסים למים
+he f5 T 23.513 [('L1', 0.12, np.float64(1.97), 0.0), ('L2', np.float64(2.29), np.float64(1.66), 0.0), ('L3', np.float64(4.45), np.float64(3.35), 0.0), ('L4', np.float64(8.001), np.float64(3.47), 0.14), ('L5', np.float64(11.674), np.float64(3.98), 0.11), ('L6', np.float64(16.201), np.float64(3.84), 0.0), ('L7', np.float64(20.441), np.float64(2.17), 0.0)]
