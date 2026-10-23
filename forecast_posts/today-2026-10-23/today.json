@@ -1,1 +1,1 @@
-{"date": "2026-10-23", "day": "Fri", "quality": "poor", "quality_word": "flat", "wave_height_m": 0.7, "wave_period_s": 4, "wind_kmh": 10, "wind_dir": "SW", "wind_kind": "onshore", "water_temp_c": 27, "air_temp_c": 26, "uv_max": 4, "best_window": "06:00", "best_window_wind": "offshore"}
+{"date": "2026-10-23", "day": "Fri", "quality": "poor", "quality_word": "flat", "wave_height_m": 0.7, "wave_period_s": 4, "wind_kmh": 11, "wind_dir": "SW", "wind_kind": "cross-shore", "water_temp_c": 27, "air_temp_c": 28, "uv_max": 4, "best_window": "06:00", "best_window_wind": "offshore"}
