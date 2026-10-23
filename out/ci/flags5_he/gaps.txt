@@ -1,10 +1,10 @@
-[silencedetect @ 0x7845d80021c0] silence_start: 6.665958
-[silencedetect @ 0x7845d80021c0] silence_end: 7.165583 | silence_duration: 0.499625
-[silencedetect @ 0x7845d80021c0] silence_start: 8.612417
-[silencedetect @ 0x7845d80021c0] silence_end: 9.084958 | silence_duration: 0.472542
-[silencedetect @ 0x7845d80021c0] silence_start: 17.449042
-[silencedetect @ 0x7845d80021c0] silence_end: 17.965708 | silence_duration: 0.516667
-[silencedetect @ 0x7845d80021c0] silence_start: 19.34975
-[silencedetect @ 0x7845d80021c0] silence_end: 19.764729 | silence_duration: 0.414979
-[silencedetect @ 0x7845d80021c0] silence_start: 27.791021
-[silencedetect @ 0x7845d80021c0] silence_end: 28.719 | silence_duration: 0.927979
+[silencedetect @ 0x78202c0021c0] silence_start: 6.665958
+[silencedetect @ 0x78202c0021c0] silence_end: 7.165583 | silence_duration: 0.499625
+[silencedetect @ 0x78202c0021c0] silence_start: 8.612417
+[silencedetect @ 0x78202c0021c0] silence_end: 9.084958 | silence_duration: 0.472542
+[silencedetect @ 0x78202c0021c0] silence_start: 17.449042
+[silencedetect @ 0x78202c0021c0] silence_end: 17.965708 | silence_duration: 0.516667
+[silencedetect @ 0x78202c0021c0] silence_start: 19.34975
+[silencedetect @ 0x78202c0021c0] silence_end: 19.764729 | silence_duration: 0.414979
+[silencedetect @ 0x78202c0021c0] silence_start: 27.791021
+[silencedetect @ 0x78202c0021c0] silence_end: 28.719 | silence_duration: 0.927979
