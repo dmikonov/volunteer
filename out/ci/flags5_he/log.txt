@@ -1,9 +1,19 @@
 + k=/s17/rp/flags5_he
 + python3 build.py /s17/rp/flags5_he
-Traceback (most recent call last):
-  File "/s17/rp/build.py", line 7, in <module>
-    W = sys.argv[1]; S = json.load(open(f'{W}/spec.json')); TL = json.load(open(f'{W}/tl.json')); L = TL['L']; T = TL['T']
-                                                                           ~~~~^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/s17/rp/flags5_he/tl.json'
-+ echo 'EXIT /s17/rp/flags5_he 1'
-EXIT /s17/rp/flags5_he 1
+[('L1', 'f4_flags.mp4', 0.0, 3.858, 0.0), ('L2', '/fl5_red.mp4', 0.3, 3.299, 3.858), ('L3', 'fl5_none.mp4', 0.0, 1.918, 7.157), ('L4', 'l5_white.mp4', 0.0, 2.074, 9.075), ('L5', '/fl5_red.mp4', 0.0, 3.828, 11.149), ('L6', 'fl5_none.mp4', 1.6, 2.975, 14.977), ('L7', '/app5_he.mp4', 0.0, 3.823, 17.952), ('L8', 'n/fl5_go.mp4', 0.0, 3.921, 21.775), ('L9', 'rn_drain.mp4', 0.0, 3.151, 25.696)]
+cat 28.84 T 28.847
++ python3 ov_png.py /s17/rp/flags5_he
+realcuts True [0.0, 3.84, 7.12, 9.04, 11.12, 14.96, 17.92, 21.76, 25.68, 28.847]
+safe-zone violations []
+ovplan 19
++ python3 ov_ff.py /s17/rp/flags5_he
+done /s17/rp/flags5_he/reel_flags5_he.mp4 28.847 lufs before -15.0 gain 0.5
++ python3 trim_tail.py /s17/rp/flags5_he
+trimmed /s17/rp/flags5_he/reel_flags5_he.mp4 28.32
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/flags5_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/flags5_he/reel_flags5_he.mp4
+/s17/rp/flags5_he/reel_flags5_he.mp4 before -13.0 after -14.5 peak -2.7
++ python3 post_cz.py /s17/rp/flags5_he
+post ok
++ echo 'EXIT /s17/rp/flags5_he 0'
+EXIT /s17/rp/flags5_he 0
