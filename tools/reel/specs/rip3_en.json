@@ -62,7 +62,7 @@
    null
   ],
   "L7": [
-   "Watch it",
+   "Watch the water",
    "10 min",
    null,
    null
@@ -120,7 +120,7 @@
    "line": "L8",
    "d0": 1.8,
    "cut_title": true,
-   "html": "<div style='position:absolute;top:250px;left:0;right:0;display:flex;justify-content:center;direction:ltr'><span style=\"display:inline-block;max-width:620px;text-align:center;font:800 92px/1.02 R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\">Check it in<br><span style='color:#00E4FF'>SurfTribe</span></span></div>"
+   "html": "<div style='position:absolute;top:250px;left:0;right:0;display:flex;justify-content:center;direction:ltr'><span style=\"display:inline-block;max-width:620px;text-align:center;font:800 92px/1.02 R;color:#fff;text-shadow:0 3px 6px rgba(45,36,42,.6),0 6px 22px rgba(45,36,42,.5)\">Check the forecast<br>in <span style='color:#00E4FF'>SurfTribe</span></span></div>"
   },
   {
    "k": "X8C",
