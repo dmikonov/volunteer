@@ -14,3 +14,4 @@ stock/mx_1076.mp4 https://assets.mixkit.co/videos/1076/1076-720.mp4
 stock/mx_1064.mp4 https://assets.mixkit.co/videos/1064/1064-720.mp4
 stock/mx_1059.mp4 https://assets.mixkit.co/videos/1059/1059-720.mp4
 stock/px_7108793.mp4 https://videos.pexels.com/video-files/7108793/7108793-hd_1080_1920_25fps.mp4
+stock/mx_1163_1080.mp4 https://assets.mixkit.co/videos/1163/1163-1080.mp4
