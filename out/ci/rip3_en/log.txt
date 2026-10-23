@@ -5,14 +5,14 @@ cat 35.64 T 35.642
 + python3 ov_png.py /s17/rp/rip3_en
 realcuts True [0.0, 4.52, 7.36, 10.0, 11.88, 13.44, 15.28, 18.36, 20.72, 24.56, 26.48, 29.96, 32.88, 35.642]
 safe-zone violations []
-ovplan 31
+ovplan 29
 + python3 ov_ff.py /s17/rp/rip3_en
 done /s17/rp/rip3_en/reel_rip3_en.mp4 35.642 lufs before -15.3 gain 0.8
 + python3 trim_tail.py /s17/rp/rip3_en
 trimmed /s17/rp/rip3_en/reel_rip3_en.mp4 35.14
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rip3_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rip3_en/reel_rip3_en.mp4
-/s17/rp/rip3_en/reel_rip3_en.mp4 before -13.0 after -14.5 peak -3.0
+/s17/rp/rip3_en/reel_rip3_en.mp4 before -13.0 after -14.6 peak -3.1
 + python3 post_cz.py /s17/rp/rip3_en
 post ok
 + echo 'EXIT /s17/rp/rip3_en 0'
