@@ -1,9 +1,9 @@
 + k=/s17/rp/foam4_en
 + python3 build.py /s17/rp/foam4_en
-[('L1', 'n/f4_hit.mp4', 0.0, 4.185, 0.0), ('L2', 'n/f4_hit.mp4', 2.4, 1.2, 4.185), ('L2', '/f4_walk.mp4', 0.0, 1.909, 5.385), ('L3', 'f4_catch.mp4', 0.0, 2.921, 7.294), ('L4', '/f4_ride.mp4', 0.0, 1.8, 10.215), ('L4', 'f4_angle.mp4', 0.0, 0.893, 12.015), ('L5', 'f4_ride2.mp4', 0.0, 2.068, 12.908), ('L6', 'f4_catch.mp4', 1.0, 1.2, 14.976), ('L6', 'f4_ride2.mp4', 0.0, 1.2, 16.176), ('L6', '/f4_ride.mp4', 0.2, 0.765, 17.376), ('L7', '/app4_en.mp4', 0.0, 3.873, 18.141), ('L8', 'f4_ride2.mp4', 1.4, 1.762, 22.014), ('L9', 'n/f4_set.mp4', 0.0, 4.376, 23.776)]
-cat 28.16 T 28.152
+[('L1', 'n/f4_hit.mp4', 0.0, 4.185, 0.0), ('L2', 'n/f4_hit.mp4', 2.4, 1.2, 4.185), ('L2', '/f4_walk.mp4', 0.0, 1.909, 5.385), ('L3', 'f4_catch.mp4', 0.0, 2.921, 7.294), ('L4', '/f4_ride.mp4', 0.0, 1.3, 10.215), ('L4', 'f4_angle.mp4', 0.0, 1.393, 11.515), ('L5', 'f4_ride2.mp4', 0.0, 2.068, 12.908), ('L6', 'f4_catch.mp4', 1.0, 1.2, 14.976), ('L6', 'f4_ride2.mp4', 0.0, 1.2, 16.176), ('L6', '/f4_ride.mp4', 0.2, 0.765, 17.376), ('L7', '/app4_en.mp4', 0.0, 3.873, 18.141), ('L8', 'f4_ride2.mp4', 1.4, 1.762, 22.014), ('L9', 'n/f4_set.mp4', 0.0, 4.376, 23.776)]
+cat 28.2 T 28.152
 + python3 ov_png.py /s17/rp/foam4_en
-realcuts True [0.0, 4.2, 7.32, 10.24, 12.92, 15.0, 18.16, 22.04, 23.8, 28.152]
+realcuts True [0.0, 4.2, 7.32, 10.24, 12.96, 15.04, 18.2, 22.08, 23.84, 28.152]
 safe-zone violations []
 ovplan 16
 + python3 ov_ff.py /s17/rp/foam4_en
@@ -12,7 +12,7 @@ done /s17/rp/foam4_en/reel_foam4_en.mp4 28.152 lufs before -15.0 gain 0.5
 trimmed /s17/rp/foam4_en/reel_foam4_en.mp4 27.65
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/foam4_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/foam4_en/reel_foam4_en.mp4
-/s17/rp/foam4_en/reel_foam4_en.mp4 before -13.0 after -14.5 peak -3.5
+/s17/rp/foam4_en/reel_foam4_en.mp4 before -13.0 after -14.6 peak -3.0
 + python3 post_cz.py /s17/rp/foam4_en
 post ok
 + echo 'EXIT /s17/rp/foam4_en 0'
