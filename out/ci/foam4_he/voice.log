@@ -1,28 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 take 0 0 wer 0.0 dur 4.7 | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה
 take 0 1 wer 0.0 dur 4.7 | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה.
-take 1 2 wer 0.0 dur 3.91 | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+take 0 2 wer 0.0 dur 4.87 | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה.
 take 1 3 wer 0.0 dur 3.91 | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
-take 2 4 wer 0.167 dur 2.92 | יש לזה פתרון פשוט, תישארו בקצב.
-take 2 5 wer 0.333 dur 2.92 | יש לזה פתרון פשוט תשארו בקט
-take 3 6 wer 0.167 dur 2.63 | כל פעם שמגיע קצב תנסו לקום
-take 3 7 wer 0.167 dur 2.63 | כל פעם שמגיע קצב תנסו לקום
-take 4 8 wer 0.0 dur 2.14 | קמתם תגלשו ישר עד החוף
-take 4 9 wer 0.2 dur 2.14 | תגלשו ישר עד החוף
-take 5 10 wer 0.143 dur 3.31 | ככה תקומו 10 פעמים בסשן במקום 0.
-take 5 11 wer 0.143 dur 3.31 | ככה תקומו 10 פעמים בסשן, במקום 0.
-take 6 12 wer 0.0 dur 5.38 | תבקשו מחבר לצלם אתכם וסרף טרייב יראה לכם על הסרטון מה לתקן.
-take 6 13 wer 0.583 dur 5.38 | תבקשו מחבר לצלם אתכם ויראה לכם אבל אסטרה נראה לכם על הסרטון מלקן.
-take 7 14 wer 0.0 dur 3.74 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
-take 7 15 wer 0.0 dur 3.74 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
-take 8 16 wer 0.0 dur 2.2 | מחר מה אומרים הדגלים בחוף?
-take 8 17 wer 0.0 dur 2.2 | מחר מה אומרים הדגלים בחוף?
-PICK 0 wer 0.0 | final fall (-5.5 st, expected fall) | pitch 128 Hz (level +0.4 st) | range 14.4 st | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה.
-PICK 1 wer 0.0 | final level (-0.6 st, expected fall) | pitch 129 Hz (level +0.5 st) | range 13.6 st | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
-PICK 2 wer 0.167 | final fall (-9.8 st, expected fall) | pitch 131 Hz (level +0.8 st) | range 7.7 st | יש לזה פתרון פשוט, תישארו בקצב.
-PICK 3 wer 0.167 | final fall (-10.2 st, expected fall) | pitch 107 Hz (level -2.8 st) | range 10.9 st | כל פעם שמגיע קצב תנסו לקום
-PICK 4 wer 0.0 | final fall (-8.9 st, expected fall) | pitch 230 Hz (level +10.5 st) | range 10.9 st | קמתם תגלשו ישר עד החוף
-PICK 5 wer 0.143 | final fall (-5.0 st, expected fall) | pitch 124 Hz (level -0.2 st) | range 14.5 st | ככה תקומו 10 פעמים בסשן, במקום 0.
-PICK 6 wer 0.0 | final fall (-2.3 st, expected fall) | pitch 116 Hz (level -1.3 st) | range 8.1 st | תבקשו מחבר לצלם אתכם וסרף טרייב יראה לכם על הסרטון מה לתקן.
-PICK 7 wer 0.0 | final level (-1.4 st, expected fall) | pitch 124 Hz (level -0.2 st) | range 14.0 st | תשמרו את זה ותראו שוב לפני שנכנסים למים.
-PICK 8 wer 0.0 | final level (+0.0 st, expected fall) | pitch 125 Hz (level -0.0 st) | range 6.5 st | מחר מה אומרים הדגלים בחוף?
-he f5 T 28.369 [('L1', 0.12, np.float64(3.83), 0.0), ('L2', np.float64(4.154), np.float64(3.43), 0.0), ('L3', np.float64(8.032), np.float64(2.37), 0.17), ('L4', np.float64(10.806), np.float64(2.07), 0.17), ('L5', np.float64(13.074), np.float64(1.67), 0.0), ('L6', np.float64(14.948), np.float64(2.57), 0.14), ('L7', np.float64(17.963), np.float64(4.81), 0.0), ('L8', np.float64(22.978), np.float64(2.75), 0.0), ('L9', np.float64(25.929), np.float64(1.54), 0.0)]
+take 1 4 wer 0.0 dur 3.91 | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+take 1 5 wer 0.0 dur 4.27 | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+take 2 6 wer 0.167 dur 2.92 | יש לזה פתרון פשוט, תישארו בקצב.
+take 2 7 wer 0.333 dur 2.92 | יש לזה פתרון פשוט תשארו בקט
+take 2 8 wer 0.0 dur 3.04 | יש לזה פתרון פשוט תישארו בקצף.
+take 3 9 wer 0.167 dur 2.63 | כל פעם שמגיע קצב תנסו לקום
+take 3 10 wer 0.167 dur 2.63 | כל פעם שמגיע קצב תנסו לקום
+take 3 11 wer 0.167 dur 2.87 | כל פעם שמגיע קצב תנסו לקום
+take 4 12 wer 0.0 dur 2.14 | קמתם תגלשו ישר עד החוף
+take 4 13 wer 0.2 dur 2.14 | תגלשו ישר עד החוף
+take 4 14 wer 0.2 dur 2.26 | תגלשו ישר עד החוף.
+take 5 15 wer 0.143 dur 3.31 | ככה תקומו 10 פעמים בסשן במקום 0.
+take 5 16 wer 0.143 dur 3.31 | ככה תקומו 10 פעמים בסשן, במקום 0.
+take 5 17 wer 0.143 dur 3.59 | ככה תקומו 10 פעמים בסשן במקום 0.
+take 6 18 wer 0.0 dur 5.31 | תבקשו מחבר לצלם אתכם ובאפליקציה סרף טרייב תראו מה לתקן.
+take 6 19 wer 0.0 dur 5.31 | תבקשו מחבר לצלם אתכם ובאפליקציה סרף טרייב תראו מה לתקן.
+take 6 20 wer 0.2 dur 5.31 | תבקשו מחבר לצלם אתכם ובאפליקציה סרפטרייב תראו מה לתקן.
+take 7 21 wer 0.0 dur 3.74 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+take 7 22 wer 0.0 dur 3.74 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+take 7 23 wer 0.0 dur 3.86 | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+take 8 24 wer 0.0 dur 2.2 | מחר מה אומרים הדגלים בחוף?
+take 8 25 wer 0.0 dur 2.2 | מחר מה אומרים הדגלים בחוף?
+take 8 26 wer 0.2 dur 2.2 | מה אומרים הדגלים בחוף?
+PICK 0 wer 0.0 | final fall (-5.5 st, expected fall) | pitch 128 Hz (level +0.6 st) | range 14.4 st | חותרים ישר החוצה לגלים הגדולים והקצף זורק אתכם אחורה.
+PICK 1 wer 0.0 | final level (-0.6 st, expected fall) | pitch 129 Hz (level +0.7 st) | range 13.6 st | ככה עובר לכם סשן שלם ולא קמתם אפילו פעם אחת.
+PICK 2 wer 0.0 | final level (-1.1 st, expected fall) | pitch 130 Hz (level +0.8 st) | range 11.4 st | יש לזה פתרון פשוט תישארו בקצף.
+PICK 3 wer 0.167 | final fall (-6.4 st, expected fall) | pitch 124 Hz (level +0.0 st) | range 11.5 st | כל פעם שמגיע קצב תנסו לקום
+PICK 4 wer 0.0 | final fall (-8.9 st, expected fall) | pitch 230 Hz (level +10.7 st) | range 10.9 st | קמתם תגלשו ישר עד החוף
+PICK 5 wer 0.143 | final fall (-5.0 st, expected fall) | pitch 124 Hz (level -0.0 st) | range 14.5 st | ככה תקומו 10 פעמים בסשן, במקום 0.
+PICK 6 wer 0.0 | final fall (-9.1 st, expected fall) | pitch 123 Hz (level -0.2 st) | range 12.1 st | תבקשו מחבר לצלם אתכם ובאפליקציה סרף טרייב תראו מה לתקן.
+PICK 7 wer 0.0 | final level (-1.4 st, expected fall) | pitch 124 Hz (level -0.0 st) | range 14.0 st | תשמרו את זה ותראו שוב לפני שנכנסים למים.
+PICK 8 wer 0.0 | final level (+0.0 st, expected fall) | pitch 125 Hz (level +0.2 st) | range 6.5 st | מחר מה אומרים הדגלים בחוף?
+he f5 T 27.881 [('L1', 0.12, np.float64(3.83), 0.0), ('L2', np.float64(4.154), np.float64(3.43), 0.0), ('L3', np.float64(8.032), np.float64(2.3), 0.0), ('L4', np.float64(10.729), np.float64(2.02), 0.17), ('L5', np.float64(12.953), np.float64(1.67), 0.0), ('L6', np.float64(14.827), np.float64(2.57), 0.14), ('L7', np.float64(17.842), np.float64(4.45), 0.0), ('L8', np.float64(22.489), np.float64(2.75), 0.0), ('L9', np.float64(25.441), np.float64(1.54), 0.0)]
