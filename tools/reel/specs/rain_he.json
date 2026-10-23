@@ -80,8 +80,8 @@
    null
   ],
   "L9": [
-   "שמרו לגשם הבא",
-   "",
+   "שמרו",
+   "<span style='color:#00E4FF'>לגשם הבא</span>",
    null,
    null
   ]
@@ -160,7 +160,13 @@
     "kind": "app",
     "src": "/s17/gen/app_he.mp4",
     "a": 0.0,
-    "z": 1.0
+    "z": 1.0,
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rn_clean.mp4",
+    "a": 1.6
    }
   ],
   "L9": [
