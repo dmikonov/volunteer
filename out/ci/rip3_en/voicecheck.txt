@@ -1,9 +1,9 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=2.98 dur=4.36 | ref: See that sandy water pushing out past the waves? That's a rip current. | asr: See that sandy water pushing out past the waves? That's a rip current.
+L1 OK match=1.00 wps=2.98 dur=4.36 | ref: See that sandy water pushing out past the waves? That's a rip current. | asr: See that sandy water pushing out past the waves?  That's a rip current.
 L2 OK match=1.00 wps=4.09 dur=2.45 | ref: It can drag you out faster than most people swim. | asr: It can drag you out faster than most people swim.
 L3 OK match=0.93 wps=3.05 dur=2.29 | ref: From the beach, look for three things. | asr: From a beach, look for three things.
-L4 OK match=0.98 wps=4.08 dur=1.71 | ref: A spot where the waves don't break. | asr: spot where the waves don't break
-L5 OK match=1.00 wps=2.16 dur=1.39 | ref: Murky, sandy water. | asr: Murky, Sandy Water.
+L4 OK match=1.00 wps=4.08 dur=1.71 | ref: A spot where the waves don't break. | asr: A spot where the waves don't break.
+L5 OK match=1.00 wps=2.16 dur=1.39 | ref: Murky, sandy water. | asr: Murky Sandy Water
 L6 OK match=1.00 wps=3.51 dur=1.43 | ref: Foam drifting out to sea. | asr: Foam drifting out to sea.
 L7 OK match=0.94 wps=3.41 dur=2.93 | ref: Watch the water for ten minutes before you paddle out. | asr: Watch the water for 10 minutes before you paddle out.
 L8 OK match=0.99 wps=3.06 dur=3.59 | ref: Rips get stronger when the swell's up, so check SurfTribe first. | asr: Rips get stronger when the swells up, so check Surf Tribe first.
