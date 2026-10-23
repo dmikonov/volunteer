@@ -59,3 +59,13 @@ v3 (18.10, после ревизора): реальные клипы 17.10 не 
 | Пн 26.10 | EN | Tide changes your spot (М21) | out/ci/tide_en/reel_tide_en.mp4 (1f46a14), 30.57 с | https://raw.githubusercontent.com/dmikonov/volunteer/1f46a149451f628bfe27b311eac0c1bb1511a620/out/ci/tide_en/prev.mp4 | без строки | прогноз, плитки волна/период/свелл/ветер | собран 23.10 ночью, слепой зритель 5/6/4/6 (лайк: может быть, сохранил бы: нет), ждёт ок Димы |
 Подписи: docs/captions-24-25oct.md, docs/captions-26oct.md. Музыка: 24 и 26 mixkit-48, 25 mixkit-83 (23.10 rip = mixkit-83). Клипы: d24/gen (f4_*), d25/gen (fl5_*), d26/gen (rn_*, td_watch, st_*). Не повторять неделю.
 23.10 (rip v3) собирается в вечерней сессии с Димой, статус там; ночная сборка его не трогала и не публиковала.
+
+## 23.10 ночью: отбойное течение заново (rip3, рецепт reel-watchability + раздел I чек-листа)
+Старые rip (HE 19.10, EN rip_en2 21.10) отклонены Димой: НЕ публиковать.
+| Дата | Аккаунт | Тема | Файлы | Превью | T1 | Статус |
+|---|---|---|---|---|---|---|
+| Пт 23.10 | HE | Отбойное течение (новая версия) | out/ci/rip3_he/reel_rip3_he.mp4 (cd254c7), 34.64 с | https://raw.githubusercontent.com/dmikonov/volunteer/cd254c71de1474c07f79fb29149f72d8c7cdcd35/out/ci/rip3_he/prev.mp4 | T1: со строкой | ждёт ок Димы |
+| Пт 23.10 | EN | Отбойное течение (новая версия) | out/ci/rip3_en/reel_rip3_en.mp4 (cd254c7), 32.84 с | https://raw.githubusercontent.com/dmikonov/volunteer/cd254c71de1474c07f79fb29149f72d8c7cdcd35/out/ci/rip3_en/prev.mp4 | T1: со строкой | ждёт ок Димы |
+Мастер для публикации: https://raw.githubusercontent.com/dmikonov/volunteer/cd254c71de1474c07f79fb29149f72d8c7cdcd35/out/ci/rip3_{he,en}/reel_rip3_{he,en}.mp4. Подписи: docs/captions-23oct-rip.md.
+Кадры течения настоящие: Pexels 38005980, 31663047, 33731641 (David Pickup), 8713107 (Taryn Elliott) -> out/ci/rip3/gen/st_rip1-3, st_big (prep). Кольцо и стрелки нарисованы по трекингу (tools/reel/gen/rip3_render*.py). Сёрфер один и тот же: Z-Image Turbo seed 231023/231031 + Wan 2.2 14B (Upsampler): r3_watch, r3_float, r3_paddle2, r3_arm2, r3_out (7 вызовов Wan, брак не взят: r3_paddle после 1.3 с, r3_arm другой человек).
+Интеграция: прогноз, карточка «высота волны» крупно (forecast_{en,he}_height). Голос: HE F5 голос 3, EN Edge AndrewMultilingual +4%. Музыка mixkit-83. Слепой зритель (r11): EN 7/7/7/7, лайк да, сохранить да; HE 8/8/6/7, лайк да, сохранить да.
