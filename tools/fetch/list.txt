@@ -36,3 +36,16 @@ gentest/rc_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_a
 gentest/rc_s61.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/400a2b658f98627ff61c104b24968478d8c24a824d22aaadaaa382a0f010da7c/tmp29eyj81v.mp4
 gentest/rc_s77.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/b73fafface3075e9ee63be75f042ad0a809be2747678b251bb77d482b9c38c97/tmp5l3av44y.mp4
 gentest/hk2_s33.mp4 https://lightricks-ltx-2-5.hf.space/--replicas/mmw4d/gradio_api/file=/tmp/gradio/778a9885e0ed9579d9ac687965c0db348633c97d8b216ca3824c6536068d7ed6/tmpliwxkpan.mp4
+pxb/339840.mp4 https://cdn.pixabay.com/video/2026/03/12/339840_small.mp4
+pxb/339823.mp4 https://cdn.pixabay.com/video/2026/03/12/339823_small.mp4
+pxb/339764.mp4 https://cdn.pixabay.com/video/2026/03/12/339764_small.mp4
+pxb/217581.mp4 https://cdn.pixabay.com/video/2024/06/21/217581_small.mp4
+pxb/236273.mp4 https://cdn.pixabay.com/video/2024/10/14/236273_small.mp4
+pxb/381692.mp4 https://cdn.pixabay.com/video/2026/10/09/381692_small.mp4
+pxb/36609.mp4 https://cdn.pixabay.com/video/2020/04/19/36609-411342371_small.mp4
+pxb/36605.mp4 https://cdn.pixabay.com/video/2020/04/19/36605-411342358_small.mp4
+pxb/36610.mp4 https://cdn.pixabay.com/video/2020/04/19/36610-411342375_small.mp4
+pxb/13772.mp4 https://cdn.pixabay.com/video/2018/01/10/13772-251867974_small.mp4
+pxb/189547.mp4 https://cdn.pixabay.com/video/2023/11/18/189547-886016203_small.mp4
+pxb/123523.mp4 https://cdn.pixabay.com/video/2022/07/08/123523-728292591_small.mp4
+pxb/35774.mp4 https://cdn.pixabay.com/video/2020/04/12/35774-408600310_small.mp4
