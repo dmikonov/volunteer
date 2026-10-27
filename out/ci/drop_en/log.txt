@@ -1,0 +1,19 @@
++ k=/s17/rp/drop_en
++ python3 build.py /s17/rp/drop_en
+[('L1', '/dr_hook.mp4', 0.0, 2.3, 0.0), ('L1', '/dr_hit2.mp4', 0.0, 1.561, 2.3), ('L2', '/dr_wipe.mp4', 0.0, 1.8, 3.861), ('L2', '/dr_wipe.mp4', 1.8, 1.509, 5.661), ('L3', 'dr_carry.mp4', 0.0, 1.008, 7.17), ('L4', '/dr_side.mp4', 0.0, 2.2, 8.178), ('L4', 'dr_side2.mp4', 0.0, 0.882, 10.378), ('L5', 'r_across.mp4', 0.0, 1.8, 11.26), ('L5', 'r_across.mp4', 1.8, 1.629, 13.06), ('L6', '/dr_walk.mp4', 0.0, 1.9, 14.689), ('L6', '/dr_over.mp4', 0.0, 2.114, 16.589), ('L7', 'r_paddle.mp4', 0.0, 2.4, 18.703), ('L7', '/dr_past.mp4', 0.0, 0.736, 21.103), ('L8', 'r_app_en.mp4', 0.0, 2.2, 21.839), ('L8', 'r_app_en.mp4', 1.0, 2.066, 24.039), ('L9', 'n/dr_out.mp4', 0.0, 2.551, 26.105), ('L10', '/dr_tmrw.mp4', 0.0, 2.3, 28.656), ('L10', 'dr_tmrw2.mp4', 0.0, 1.646, 30.956)]
+cat 32.68 T 32.602
++ python3 ov_png.py /s17/rp/drop_en
+realcuts True [0.0, 3.88, 7.2, 8.2, 11.28, 14.72, 18.76, 21.88, 26.16, 28.72, 32.602]
+safe-zone violations []
+ovplan 21
++ python3 ov_ff.py /s17/rp/drop_en
+done /s17/rp/drop_en/reel_drop_en.mp4 32.602 lufs before -15.2 gain 0.7
++ python3 trim_tail.py /s17/rp/drop_en
+trimmed /s17/rp/drop_en/reel_drop_en.mp4 32.1
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/drop_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/drop_en/reel_drop_en.mp4
+/s17/rp/drop_en/reel_drop_en.mp4 before -13.1 after -14.5 peak -3.0
++ python3 post_cz.py /s17/rp/drop_en
+post ok
++ echo 'EXIT /s17/rp/drop_en 0'
+EXIT /s17/rp/drop_en 0
