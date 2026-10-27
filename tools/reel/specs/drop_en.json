@@ -9,7 +9,15 @@
  "app_lines": [],
  "v2subs": {},
  "v2_sub_top": 1358,
- "ttop": {},
+ "ttop": {
+  "L1": 1180,
+  "L2": 1180,
+  "L3": 1180,
+  "L4": 1180,
+  "L5": 1180,
+  "L7": 1180,
+  "L9": 1180
+ },
  "logo": {
   "top": 240,
   "left": 60,
@@ -20,14 +28,14 @@
  "lines": [
   "Sound familiar? A wave hits, and your board flies at you.",
   "It can hit your head, or whoever is behind you.",
-  "Here's how to hold it.",
+  "Hold it like this.",
   "Keep it at your side, nose pointing at the wave.",
-  "Never across, between you and the wave.",
-  "Foam coming? Grab both rails and push the nose over it.",
-  "The board stays with you, and you're past the foam.",
-  "Not sure about today's waves? Ask the coach in Surf Tribe.",
-  "Save it for your first day in the foam.",
-  "Tomorrow: whose wave is it when two of you go?"
+  "Never sideways, between you and the wave.",
+  "When the whitewater comes, grab both rails and push the nose over.",
+  "Then lie on it and paddle out.",
+  "Any foam question, ask the coach in the Surf Tribe app.",
+  "Save it for your first day in the whitewater.",
+  "Tomorrow: whose wave is it when you both paddle for it?"
  ],
  "titles": {
   "L1": [
@@ -43,8 +51,8 @@
    null
   ],
   "L3": [
-   "How to",
-   "hold it",
+   "Hold it",
+   "like this",
    null,
    null
   ],
@@ -55,20 +63,20 @@
    null
   ],
   "L5": [
-   "Never across,",
+   "Never sideways,",
    "between you and the wave",
    null,
    null
   ],
   "L6": [
    "Grab both rails,",
-   "nose over the foam",
+   "nose over it",
    null,
    null
   ],
   "L7": [
-   "Board stays",
-   "with you",
+   "Then lie down",
+   "and paddle out",
    null,
    null
   ],
@@ -80,7 +88,7 @@
   ],
   "L9": [
    "Save it for",
-   "day one in the foam",
+   "day one in the whitewater",
    null,
    null
   ]
@@ -114,15 +122,28 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/dr_wipe.mp4",
-    "a": 0.0,
-    "dd": 1.8
+    "src": "/s17/gen/dr_hook.mp4",
+    "a": 0.5,
+    "z": 1.35,
+    "cy": [
+     0.4,
+     0.4
+    ],
+    "dd": 1.6
    },
    {
     "kind": "gen",
     "src": "/s17/gen/dr_wipe.mp4",
-    "a": 1.8,
-    "z": 1.3
+    "a": 1.0,
+    "z": 1.5,
+    "cx": [
+     0.45,
+     0.45
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
    }
   ],
   "L3": [
@@ -180,27 +201,20 @@
    {
     "kind": "gen",
     "src": "/s17/gen/dr_paddle.mp4",
-    "a": 0.0,
-    "dd": 2.4
-   },
-   {
-    "kind": "gen",
-    "src": "/s17/gen/dr_past.mp4",
     "a": 0.0
    }
   ],
   "L8": [
    {
     "kind": "app",
-    "src": "/s17/gen/dr_app_en.mp4",
+    "src": "/s17/gen/dr_appfull_en.mp4",
     "a": 0.0,
     "dd": 2.2
    },
    {
     "kind": "app",
-    "src": "/s17/gen/dr_app_en.mp4",
-    "a": 1.0,
-    "z": 1.15
+    "src": "/s17/gen/dr_appbtn_en.mp4",
+    "a": 0.0
    }
   ],
   "L9": [
@@ -228,5 +242,5 @@
   "Surf Tribe": "SurfTribe"
  },
  "edge": true,
- "rate": "-6%"
+ "rate": "-14%"
 }
