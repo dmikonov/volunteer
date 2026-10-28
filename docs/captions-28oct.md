@@ -24,7 +24,7 @@ Board at your side, nose pointing at the wave
 Never sideways in front of you
 When the foam comes, grab both rails and push the nose over
 
-Stuck on something? The coach in the SurfTribe app answers.
+Any question, ask the coach in the SurfTribe app.
 
 Save this for your first whitewater session.
 
