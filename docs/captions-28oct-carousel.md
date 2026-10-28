@@ -12,7 +12,7 @@
 4. הקצף עבר: שוכבים על הגלשן וחותרים החוצה
 
 שמרו את הפוסט ליום הראשון בקצף.
-עקבו אחרי @surftribe_il, מחר: של מי הגל, כששניים חותרים עליו.
+עקבו אחרי @surftribe_il, מחר: איפה שמים את הרגליים על הגלשן.
 צלמו גל אחד ו-SurfTribe ייתן לכם תיקון אחד ותרגיל. 5 ניתוחי וידאו בחינם, הקישור בביו.
 
 #גלישה #גלישהלמתחילים #בטיחותבים #surfisrael #surftribe_il
@@ -27,7 +27,7 @@ How to hold it:
 4. Foam gone: lie down and paddle out
 
 Save this for your first day in the foam.
-Follow @surftribe_world, tomorrow: whose wave is it when two of you paddle for it.
+Follow @surftribe_world, tomorrow: where your feet go on the board.
 Film one wave and SurfTribe gives you one fix and a drill. 5 free video analyses, link in bio.
 
 #surfing #learntosurf #beginnersurfer #surfsafety #surftips
