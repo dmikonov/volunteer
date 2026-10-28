@@ -1,0 +1,19 @@
++ k=/s17/rp/dropin_he
++ python3 build.py /s17/rp/dropin_he
+[('L1', '/di_hook.mp4', 0.0, 2.082, 0.0), ('L2', '/di_pass.mp4', 0.0, 3.481, 2.082), ('L3', 'di_crowd.mp4', 0.0, 2.201, 5.563), ('L4', 'i_bridge.mp4', 0.0, 1.471, 7.764), ('L5', '/di_peak.mp4', 0.0, 1.876, 9.235), ('L6', '/di_look.mp4', 0.0, 2.445, 11.111), ('L7', '/di_wait.mp4', 0.0, 2.607, 13.556), ('L8', '/di_ride.mp4', 0.0, 1.748, 16.163), ('L9', 'i_app_he.mp4', 0.0, 2.811, 17.911), ('L10', '/di_send.mp4', 0.0, 1.973, 20.722), ('L11', '/di_tmrw.mp4', 0.0, 2.462, 22.695)]
+cat 25.16 T 25.157
++ python3 ov_png.py /s17/rp/dropin_he
+realcuts True [0.0, 2.08, 5.56, 7.76, 9.24, 11.12, 13.56, 16.16, 17.92, 20.72, 22.68, 25.157]
+safe-zone violations []
+ovplan 24
++ python3 ov_ff.py /s17/rp/dropin_he
+done /s17/rp/dropin_he/reel_dropin_he.mp4 25.157 lufs before -15.3 gain 0.8
++ python3 trim_tail.py /s17/rp/dropin_he
+trimmed /s17/rp/dropin_he/reel_dropin_he.mp4 24.63
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/dropin_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/dropin_he/reel_dropin_he.mp4
+/s17/rp/dropin_he/reel_dropin_he.mp4 before -12.9 after -14.6 peak -2.5
++ python3 post_cz.py /s17/rp/dropin_he
+post ok
++ echo 'EXIT /s17/rp/dropin_he 0'
+EXIT /s17/rp/dropin_he 0

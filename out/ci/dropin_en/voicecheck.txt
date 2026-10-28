@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.31 dur=3.89 | ref: Myth: the wave belongs to whoever stands up first. | asr: Myth. The wave belongs to whoever stands up first.
+L2 OK match=1.00 wps=3.30 dur=3.63 | ref: Stand up in front of someone already riding, and that's a drop-in. | asr: Stand up in front of someone already riding, and that's a drop in.
+L3 OK match=1.00 wps=3.15 dur=1.59 | ref: That's how people get hurt. | asr: That's how people get hurt.
+L4 OK match=1.00 wps=4.41 dur=0.91 | ref: So who gets it? | asr: So who gets it?
+L5 OK match=0.90 wps=2.40 dur=3.34 | ref: Whoever's closest to the peak, where it breaks. | asr: Whoever's closest to the peak wear brakes.
+L6 OK match=1.00 wps=2.91 dur=3.44 | ref: Before you paddle, check if anyone's closer to the peak. | asr: Before you paddle, check if anyone's closer to the peak.
+L7 OK match=1.00 wps=2.75 dur=2.19 | ref: If someone's already up, pull back. | asr: If someone's already up, pull back.
+L8 OK match=1.00 wps=2.95 dur=3.39 | ref: Wait, and the next wave in the set is yours. | asr: Wait, and the next wave in the set is yours.
+L9 OK match=1.00 wps=3.55 dur=3.09 | ref: Got your wave on video? Watch it back on Surf Tribe. | asr: Got your wave on video? Watch it back on Surf Tribe.
+L10 OK match=0.91 wps=3.60 dur=1.94 | ref: Send this to your local wave hog. | asr: Send this to your local wave hawk.
+L11 OK match=1.00 wps=2.71 dur=2.58 | ref: Tomorrow: how to film your friend's wave. | asr: Tomorrow, how to film your friend's wave.
+TOTAL wps=2.97 lines_to_check=0
