@@ -1,18 +1,18 @@
 + k=/s17/rp/drop_en
 + python3 build.py /s17/rp/drop_en
-[('L1', '/dr_hook.mp4', 0.0, 2.3, 0.0), ('L1', '/dr_hit2.mp4', 0.0, 2.007, 2.3), ('L2', '/dr_hook.mp4', 0.5, 1.6, 4.307), ('L2', '/dr_wipe.mp4', 1.0, 2.16, 5.907), ('L3', 'dr_carry.mp4', 0.0, 1.235, 8.067), ('L4', '/dr_side.mp4', 0.0, 2.2, 9.302), ('L4', 'dr_side2.mp4', 0.0, 1.361, 11.502), ('L5', 'r_across.mp4', 0.0, 1.8, 12.863), ('L5', 'r_across.mp4', 1.8, 1.916, 14.663), ('L6', '/dr_walk.mp4', 0.0, 1.9, 16.579), ('L6', '/dr_over.mp4', 0.0, 3.245, 18.479), ('L7', 'r_paddle.mp4', 0.0, 2.568, 21.724), ('L8', 'pfull_en.mp4', 0.0, 2.2, 24.292), ('L8', 'ppbtn_en.mp4', 0.0, 1.593, 26.492), ('L9', 'n/dr_out.mp4', 0.0, 3.077, 28.085), ('L10', '/dr_tmrw.mp4', 0.0, 2.3, 31.162), ('L10', 'dr_tmrw2.mp4', 0.0, 2.837, 33.462)]
+[('L1', '/dr_hook.mp4', 0.0, 2.3, 0.0), ('L1', '/dr_hit2.mp4', 0.0, 2.007, 2.3), ('L2', '/dr_hook.mp4', 0.6, 1.6, 4.307), ('L2', '/dr_hit2.mp4', 0.3, 2.16, 5.907), ('L3', 'dr_carry.mp4', 0.0, 1.235, 8.067), ('L4', '/dr_side.mp4', 0.0, 2.2, 9.302), ('L4', 'dr_side2.mp4', 0.0, 1.361, 11.502), ('L5', 'r_across.mp4', 0.0, 1.6, 12.863), ('L5', '/dr_hit3.mp4', 0.0, 2.116, 14.463), ('L6', '/dr_walk.mp4', 0.0, 1.5, 16.579), ('L6', '/dr_over.mp4', 0.0, 2.2, 18.079), ('L6', '/dr_over.mp4', 1.4, 1.445, 20.279), ('L7', 'n/dr_lie.mp4', 0.0, 2.568, 21.724), ('L8', 'ppbtn_en.mp4', 0.0, 1.8, 24.292), ('L8', 'ppbtn_en.mp4', 1.0, 1.993, 26.092), ('L9', '_paddle2.mp4', 0.0, 3.077, 28.085), ('L10', '/dr_tmrw.mp4', 0.0, 2.3, 31.162), ('L10', 'dr_tmrw2.mp4', 0.0, 2.837, 33.462)]
 cat 36.36 T 36.299
 + python3 ov_png.py /s17/rp/drop_en
 realcuts True [0.0, 4.32, 8.08, 9.32, 12.88, 16.6, 21.76, 24.32, 28.12, 31.2, 36.299]
-safe-zone violations [('TL2c', [230, 850, 1180, 1461]), ('TL4c', [230, 850, 1180, 1461]), ('TL5c', [230, 850, 1180, 1555]), ('TL7c', [230, 850, 1180, 1461]), ('TL9c', [230, 850, 1180, 1461])]
-ovplan 21
+safe-zone violations [('TL2c', [230, 850, 1180, 1461]), ('TL4c', [230, 850, 1180, 1461]), ('TL5c', [230, 850, 1180, 1555]), ('TL7c', [230, 850, 1180, 1461])]
+ovplan 22
 + python3 ov_ff.py /s17/rp/drop_en
 done /s17/rp/drop_en/reel_drop_en.mp4 36.299 lufs before -15.2 gain 0.7
 + python3 trim_tail.py /s17/rp/drop_en
 trimmed /s17/rp/drop_en/reel_drop_en.mp4 35.8
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/drop_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/drop_en/reel_drop_en.mp4
-/s17/rp/drop_en/reel_drop_en.mp4 before -13.0 after -14.5 peak -2.8
+/s17/rp/drop_en/reel_drop_en.mp4 before -13.0 after -14.5 peak -2.9
 + python3 post_cz.py /s17/rp/drop_en
 post ok
 + echo 'EXIT /s17/rp/drop_en 0'
