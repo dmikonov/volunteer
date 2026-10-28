@@ -30,14 +30,14 @@
  "lines": [
   "Myth: the wave belongs to whoever stands up first.",
   "Stand up in front of someone already riding, and that's a drop-in.",
-  "Two boards on one wave is how people get hurt.",
-  "Here's who actually gets the wave.",
-  "The surfer closest to where it breaks.",
-  "So before you paddle, look toward the breaking part.",
-  "If someone's already up and riding, let it go.",
-  "The wave is his, and the next one is yours.",
-  "Want to watch your own wave again? Upload it to Surf Tribe.",
-  "Send this to the friend who paddles for every wave.",
+  "That's how people get hurt.",
+  "So who gets it?",
+  "Whoever's closest to the peak, where it breaks.",
+  "Before you paddle, check if anyone's closer to the peak.",
+  "If someone's already up, pull back.",
+  "Wait, and the next wave in the set is yours.",
+  "Got your wave on video? Watch it back on Surf Tribe.",
+  "Send this to your local wave hog.",
   "Tomorrow: how to film your friend's wave."
  ],
  "titles": {
@@ -54,44 +54,44 @@
    null
   ],
   "L3": [
-   "Two boards,",
-   "one wave",
+   "That's how",
+   "people get hurt",
    null,
    null
   ],
   "L4": [
    "Who gets",
-   "the wave",
+   "the wave?",
    null,
    null
   ],
   "L5": [
    "Closest to",
-   "where it breaks",
+   "the peak",
    null,
    null
   ],
   "L6": [
-   "Look toward",
-   "the peak first",
+   "Check the peak",
+   "first",
    null,
    null
   ],
   "L7": [
-   "Someone riding?",
-   "Let it go",
+   "Someone up?",
+   "Pull back",
    null,
    null
   ],
   "L8": [
-   "The next one",
-   "is yours",
+   "Next one's",
+   "yours",
    null,
    null
   ],
   "L10": [
-   "Send it to",
-   "that friend",
+   "Send to your",
+   "wave hog",
    null,
    null
   ]
