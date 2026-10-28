@@ -24,13 +24,10 @@ cut 7938443 1.0 5.0 0.45 0.45 dr_paddle
 cut 7938106 3.0 4.5 0.45 0.45 dr_out
 cut 7425581 0.0 2.8 0.60 0.60 dr_tmrw
 cut 7425581 2.8 2.2 0.60 0.60 dr_tmrw2
-# app: "Ask the coach" (EN 12.10 recording 22.3 s, HE 28.09 recording 11.45 s). Shot 1: real screen part, full width, below the title. Shot 2: the button 1.37x (text over 44 px).
+# app: real "Ask the coach" screen, full bleed (EN 12.10 recording 22.3 s, HE 28.09 recording 11.6 s), button lands at y 1150-1330; ring overlay in the spec
 ffmpeg -v error -y -ss 22.3 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/en_c.png
-ffmpeg -v error -y -ss 11.45 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/he_c.png
-app(){ L=$1; y0=$2; h=$3; by=$4
-ffmpeg -v error -y -loop 1 -t 3 -i /tmp/${L}_c.png -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:200,boxblur=28,eq=brightness=-0.35[bg];[b]crop=1080:$h:0:$y0[fg];[bg][fg]overlay=0:620,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/dr_appfull_$L.mp4
-ffmpeg -v error -y -loop 1 -t 3 -i /tmp/${L}_c.png -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:200,boxblur=28,eq=brightness=-0.35[bg];[b]crop=760:170:160:$by,scale=1040:-2:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=20:860,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/dr_appbtn_$L.mp4; }
-app en 760 1240 1600
-app he 1100 995 1735
+ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/he_c.png
+for L in en he; do y0=428; [ $L = he ] && y0=326
+ffmpeg -v error -y -loop 1 -t 4 -i /tmp/${L}_c.png -vf "crop=1080:1920:0:$y0,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/dr_appbtn_$L.mp4; done
 mkdir -p out/ci/d28/review; for f in $G/dr_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=12x1" -frames:v 1 out/ci/d28/review/cut_$n.jpg; done
 ls -la $G
