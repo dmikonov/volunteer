@@ -10,7 +10,7 @@ sudo mkdir -p /s17 && sudo chown $USER /s17 && mkdir -p /s17/gen /s17/rp /s17/ti
 cp appkit/Rubik.ttf /s17/Rubik.ttf; cp out/ci/*/gen/*.mp4 /s17/gen/ 2>/dev/null; cp app-screens/*.mp4 /s17/app/ 2>/dev/null
 NAMES=$(grep -v '^#' tools/reel/ci/NAMES)
 for k in $NAMES; do [ -f tools/reel/specs/$k.prep.sh ] && bash tools/reel/specs/$k.prep.sh; done
-N1=$(echo $NAMES | wc -w); [ "$N1" = 1 ] && [ -f tools/reel/specs/$NAMES.music ] && export REEL_MUSIC=$(cat tools/reel/specs/$NAMES.music)  # 21.10: neighbour reels get different tracks
+F1=$(echo $NAMES | cut -d" " -f1); [ -f tools/reel/specs/$F1.music ] && export REEL_MUSIC=$(cat tools/reel/specs/$F1.music)  # 21.10: neighbour reels get different tracks
 python3 tools/reel/audio_fx.py 30 | tee /s17/music.log
 cd /s17/rp && for f in voice.py voice_f5.py build.py ov_png.py ov_ff.py trim_tail.py post_cz.py voicecheck.py kokoro_tts.py voices.json; do cp $R/tools/reel/$f . 2>/dev/null; done
 for k in $NAMES; do mkdir -p $k && cp $R/tools/reel/specs/$k.json $k/spec.json; T=$R/tools/reel/specs/$k.takes.json; [ -f $T ] && python3 -c "import json;s=json.load(open('$k/spec.json'));s['f5_takes']=json.load(open('$T'));json.dump(s,open('$k/spec.json','w'),ensure_ascii=False)" && echo "takes merged for $k"; done
