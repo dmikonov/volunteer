@@ -1,18 +1,18 @@
 + k=/s17/rp/dropin_he
 + python3 build.py /s17/rp/dropin_he
-[('L1', '/di_hook.mp4', 0.0, 2.082, 0.0), ('L2', '/di_pass.mp4', 0.0, 3.481, 2.082), ('L3', 'di_crowd.mp4', 0.0, 2.201, 5.563), ('L4', 'i_bridge.mp4', 0.0, 1.471, 7.764), ('L5', '/di_peak.mp4', 0.0, 1.876, 9.235), ('L6', '/di_look.mp4', 0.0, 2.445, 11.111), ('L7', '/di_wait.mp4', 0.0, 2.607, 13.556), ('L8', '/di_ride.mp4', 0.0, 1.748, 16.163), ('L9', 'i_app_he.mp4', 0.0, 2.811, 17.911), ('L10', '/di_send.mp4', 0.0, 1.973, 20.722), ('L11', '/di_tmrw.mp4', 0.0, 2.462, 22.695)]
-cat 25.16 T 25.157
+[('L1', '/di_hook.mp4', 0.0, 2.082, 0.0), ('L2', '/di_pass.mp4', 0.0, 2.603, 2.082), ('L3', 'di_crowd.mp4', 0.0, 2.809, 4.685), ('L4', 'i_bridge.mp4', 0.0, 1.648, 7.494), ('L5', '/di_peak.mp4', 0.0, 3.123, 9.142), ('L6', '/di_look.mp4', 0.0, 2.76, 12.265), ('L7', '/di_wait.mp4', 0.0, 2.688, 15.025), ('L8', '/di_ride.mp4', 0.0, 2.596, 17.713), ('L9', 'i_app_he.mp4', 0.0, 4.088, 20.309), ('L10', '/di_send.mp4', 0.0, 2.399, 24.397), ('L11', '/di_tmrw.mp4', 0.0, 2.462, 26.796)]
+cat 29.24 T 29.258
 + python3 ov_png.py /s17/rp/dropin_he
-realcuts True [0.0, 2.08, 5.56, 7.76, 9.24, 11.12, 13.56, 16.16, 17.92, 20.72, 22.68, 25.157]
+realcuts True [0.0, 2.08, 4.68, 7.48, 9.12, 12.24, 15.0, 17.68, 20.28, 24.36, 26.76, 29.258]
 safe-zone violations []
 ovplan 24
 + python3 ov_ff.py /s17/rp/dropin_he
-done /s17/rp/dropin_he/reel_dropin_he.mp4 25.157 lufs before -15.3 gain 0.8
+done /s17/rp/dropin_he/reel_dropin_he.mp4 29.258 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/dropin_he
-trimmed /s17/rp/dropin_he/reel_dropin_he.mp4 24.63
+trimmed /s17/rp/dropin_he/reel_dropin_he.mp4 28.73
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/dropin_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/dropin_he/reel_dropin_he.mp4
-/s17/rp/dropin_he/reel_dropin_he.mp4 before -12.9 after -14.6 peak -2.5
+/s17/rp/dropin_he/reel_dropin_he.mp4 before -13.0 after -14.5 peak -2.2
 + python3 post_cz.py /s17/rp/dropin_he
 post ok
 + echo 'EXIT /s17/rp/dropin_he 0'

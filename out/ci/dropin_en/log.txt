@@ -1,18 +1,18 @@
 + k=/s17/rp/dropin_en
 + python3 build.py /s17/rp/dropin_en
-[('L1', '/di_hook.mp4', 0.0, 4.06, 0.0), ('L2', '/di_pass.mp4', 0.0, 3.784, 4.06), ('L3', 'di_crowd.mp4', 0.0, 1.939, 7.844), ('L4', 'i_bridge.mp4', 0.0, 1.057, 9.783), ('L5', '/di_peak.mp4', 0.0, 3.486, 10.84), ('L6', '/di_look.mp4', 0.0, 3.586, 14.326), ('L7', '/di_wait.mp4', 0.0, 2.335, 17.912), ('L8', '/di_ride.mp4', 0.0, 3.743, 20.247), ('L9', 'i_app_en.mp4', 0.0, 3.245, 23.99), ('L10', '/di_send.mp4', 0.0, 2.294, 27.235), ('L11', '/di_tmrw.mp4', 0.0, 3.583, 29.529)]
-cat 33.12 T 33.112
+[('L1', '/di_hook.mp4', 0.0, 4.245, 0.0), ('L2', '/di_pass.mp4', 0.0, 3.784, 4.245), ('L3', 'di_crowd.mp4', 0.0, 3.544, 8.029), ('L4', 'i_bridge.mp4', 0.0, 1.71, 11.573), ('L5', '/di_peak.mp4', 0.0, 2.663, 13.283), ('L6', '/di_look.mp4', 0.0, 3.145, 15.946), ('L7', '/di_wait.mp4', 0.0, 2.946, 19.091), ('L8', '/di_ride.mp4', 0.0, 3.331, 22.037), ('L9', 'i_app_en.mp4', 0.0, 3.472, 25.368), ('L10', '/di_send.mp4', 0.0, 4.325, 28.84), ('L11', '/di_tmrw.mp4', 0.0, 3.583, 33.165)]
+cat 36.84 T 36.748
 + python3 ov_png.py /s17/rp/dropin_en
-realcuts True [0.0, 4.08, 7.88, 9.8, 10.84, 14.32, 17.92, 20.24, 24.0, 27.24, 29.52, 33.112]
-safe-zone violations [('TL1c', [230, 850, 1180, 1461]), ('TL3c', [230, 850, 1180, 1461])]
+realcuts True [0.0, 4.24, 8.04, 11.6, 13.32, 16.0, 19.16, 22.12, 25.44, 28.92, 33.24, 36.748]
+safe-zone violations [('TL1c', [230, 850, 1180, 1461]), ('TL5c', [230, 850, 1180, 1461]), ('TL6c', [230, 850, 1180, 1461]), ('TL7c', [230, 850, 1180, 1461])]
 ovplan 24
 + python3 ov_ff.py /s17/rp/dropin_en
-done /s17/rp/dropin_en/reel_dropin_en.mp4 33.112 lufs before -15.1 gain 0.6
+done /s17/rp/dropin_en/reel_dropin_en.mp4 36.748 lufs before -15.2 gain 0.7
 + python3 trim_tail.py /s17/rp/dropin_en
-trimmed /s17/rp/dropin_en/reel_dropin_en.mp4 32.61
+trimmed /s17/rp/dropin_en/reel_dropin_en.mp4 36.25
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/dropin_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/dropin_en/reel_dropin_en.mp4
-/s17/rp/dropin_en/reel_dropin_en.mp4 before -13.0 after -14.5 peak -3.3
+/s17/rp/dropin_en/reel_dropin_en.mp4 before -13.0 after -14.5 peak -2.8
 + python3 post_cz.py /s17/rp/dropin_en
 post ok
 + echo 'EXIT /s17/rp/dropin_en 0'
