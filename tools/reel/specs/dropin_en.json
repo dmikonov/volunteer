@@ -32,12 +32,12 @@
   "Stand up in front of someone already riding, and that's a drop-in.",
   "That's how people get hurt.",
   "So who gets it?",
-  "Whoever's closest to the peak, where it breaks.",
+  "Whoever's closest to the peak, the spot where it breaks.",
   "Before you paddle, check if anyone's closer to the peak.",
   "If someone's already up, pull back.",
   "Wait, and the next wave in the set is yours.",
   "Got your wave on video? Watch it back on Surf Tribe.",
-  "Send this to your local wave hog.",
+  "Send this to the friend who never shares a wave.",
   "Tomorrow: how to film your friend's wave."
  ],
  "titles": {
@@ -90,8 +90,8 @@
    null
   ],
   "L10": [
-   "Send to your",
-   "wave hog",
+   "Send to the friend",
+   "who never shares",
    null,
    null
   ]
@@ -136,6 +136,21 @@
    }
   ],
   "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_hook.mp4",
+    "a": 1.0,
+    "dd": 2.0,
+    "z": 1.5,
+    "cx": [
+     0.45,
+     0.55
+    ],
+    "cy": [
+     0.45,
+     0.42
+    ]
+   },
    {
     "kind": "gen",
     "src": "/s17/gen/di_pass.mp4",
@@ -193,14 +208,28 @@
    {
     "kind": "app",
     "src": "/s17/gen/di_app_en.mp4",
-    "a": 0.0
+    "a": 0.0,
+    "z": 1.3,
+    "cy": [
+     0.56,
+     0.56
+    ]
    }
   ],
   "L10": [
    {
     "kind": "gen",
-    "src": "/s17/gen/di_send.mp4",
-    "a": 0.0
+    "src": "/s17/gen/di_crowd.mp4",
+    "a": 0.0,
+    "z": 1.35,
+    "cx": [
+     0.5,
+     0.45
+    ],
+    "cy": [
+     0.42,
+     0.45
+    ]
    }
   ],
   "L11": [
@@ -215,5 +244,5 @@
   "Surf Tribe": "SurfTribe"
  },
  "edge": true,
- "rate": "-12%"
+ "rate": "-14%"
 }

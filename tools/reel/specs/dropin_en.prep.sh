@@ -18,6 +18,6 @@ cut m1075 10.0 3.2 0.45 0.55 di_send
 cut m1127 7.5 3.2 0.52 0.58 di_tmrw
 # app: Ride Replay, real recordings (EN 12.10 at 45 s, HE 28.09 15:24 at 17 s), phone screen full bleed under the header
 ffmpeg -v error -y -ss 45.0 -t 3.6 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -vf "crop=1080:1920:0:240,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/di_app_en.mp4
-ffmpeg -v error -y -ss 16.6 -t 3.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -vf "crop=1080:1920:0:240,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/di_app_he.mp4
+ffmpeg -v error -y -ss 17.6 -t 3.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -vf "crop=1080:1920:0:240,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/di_app_he.mp4
 mkdir -p out/ci/d29/review; for f in $G/di_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=14x1" -frames:v 1 out/ci/d29/review/cut_$n.jpg; done
 ls -la $G/di_*

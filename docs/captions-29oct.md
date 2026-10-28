@@ -10,7 +10,7 @@
 
 צילמתם גל? תעלו ל-SurfTribe ותראו אותו שוב.
 
-שלחו לחבר שלוקח כל גל.
+שלחו את זה לחבר שלוקח כל גל.
 
 הקריינות נוצרה ב-AI, הצילומים אמיתיים.
 
@@ -20,13 +20,13 @@
 Think whoever stands up first gets the wave? Nope. Stand up in front of someone already riding and you just dropped in on them. That's how people get hurt.
 
 Who gets the wave:
-Whoever's closest to the peak, where it breaks
+Whoever's closest to the peak, the spot where it breaks
 Before you paddle, check if anyone's closer to the peak
 Someone already up? Pull back, the next wave in the set is yours
 
 Got your wave on video? Watch it back on SurfTribe.
 
-Send this to your local wave hog.
+Send this to the friend who never shares a wave.
 
 Voiceover made with AI. The footage is real.
 
