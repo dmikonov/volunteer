@@ -13,9 +13,9 @@
 5 23 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/ee298aa54d62b09a5bb31974969c7b0c2a625158ff7aa9b33a6108f73b9ba66f/tmpv6jugm26.wav
 6 c11 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fff3c961081f6d6b9514e404a9ad9e04a03d636fbf660d295e6e98127f7b08b2/tmp96z3t56s.wav
 6 c23 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/a812e4749657b94dd65843b933f666bfb86e4a47e450208898261c6809946e86/tmplxt7rqx6.wav
-7 d11 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/87ca4520fb449c58e370d03540778a169c88d4f423e76977cc76742d6c7cbdfd/tmpzz50gdr4.wav
-7 d23 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/979db60955153c4aadd7043246561800af3835da291b01d4157db55604315544/tmpoyqd3d30.wav
-7 d37 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/329806b5490c385e6d13b28f2fe7875e13f29190b169c5d6e27b5eb6affce8a9/tmp_62auvp5.wav
+7 e11 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/0f6c716510265530f9638fa1d3392f13151471a1e0faf101bf42a9378e852c7b/tmp3zb63192.wav
+7 e23 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/6ecbe71db2b8d794e27fc3f4209bc9ec84e2118e0b1b32c3c2da93ad665b159c/tmpi6t6vtcp.wav
+7 e37 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/ef3987e4590fc52e25f627ccc8a700e3be88d3b72f2eed42e6c53e7ef99431d8/tmpbpz539hp.wav
 8 11 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/2e03b0b7198de7a9469e1ca0bcbee91bd0180b9b8899fa0ef8c7d61376d1488c/tmpsz984lr7.wav
 8 23 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/124ed7c6ea8b258f253d36f816233bfb65a36eb4e225476be1fcdaf2029dd9e4/tmpzj2zmb31.wav
 9 c11 https://dmikonov-f5-hebrew.hf.space/--replicas/jzwpl/gradio_api/file=/tmp/gradio/fd0912d709758e6b32a9915f731f92f2b176c904d32a066db0ba1eb9ca8e0865/tmpv8l0fmlj.wav
