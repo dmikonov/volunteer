@@ -1,6 +1,6 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 take 0 0 wer 0.0 dur 4.23 | מכירים את זה, מגיע גל והגלשן שלכם עף ישר עליכם.
-take 0 1 wer 0.0 dur 4.23 | מכירים את זה. מגיע גל והגלשן שלכם עף ישר עליכם.
+take 0 1 wer 0.0 dur 4.23 | מכירים את זה, מגיע גל והגלשן שלכם עף ישר עליכם.
 take 0 2 wer 0.0 dur 4.23 | מכירים את זה? מגיע גל והגלשן שלכם עף ישר עליכם.
 take 1 3 wer 0.0 dur 4.23 | הוא יכול לפגוע לכם בראש או במי שנמצא מאחוריכם.
 take 1 4 wer 0.0 dur 4.23 | הוא יכול לפגוע לכם בראש או במי שנמצא מאחוריכם.
@@ -14,22 +14,22 @@ take 5 11 wer 0.0 dur 5.43 | כשהקצף מגיע תופסים את שני הר
 take 5 12 wer 0.0 dur 5.43 | כשהקצף מגיע תופסים את שני הריילים ודוחפים את החרטום מעליו.
 take 6 13 wer 0.0 dur 2.95 | ואז שוכבים על הגלשן וחותרים החוצה.
 take 6 14 wer 0.0 dur 2.95 | ואז שוכבים על הגלשן וחותרים החוצה.
-take 7 15 wer 0.273 dur 5.46 | קל שאלה על הקצף, תשאלו את המאמן באפליקציה של סרפטרייב.
-take 7 16 wer 0.182 dur 5.46 | כל שאלה על הקצף תשאלו את המאמן באפליקציה של סרפט -רב.
-take 7 17 wer 0.273 dur 5.46 | קל שאלה על הקצף תשאלו את המאמן באפליקציה של סרפטרייב.
+take 7 15 wer 0.182 dur 5.17 | כל שאלה על הקצף תשאלו את המאמן באפליקציה של סרפטרייבה.
+take 7 16 wer 0.273 dur 5.17 | כל שאלה על הקצב תשאלו את המאמן באפליקציה של סרפטרייבה.
+take 7 17 wer 0.364 dur 5.17 | כעל שאלה על הקצף תשאלו את המאמן באפליקציה של סרסרף טראי בו.
 take 8 18 wer 0.0 dur 3.27 | תשמרו את זה ליום הראשון שלכם בקצף.
 take 8 19 wer 0.0 dur 3.27 | תשמרו את זה ליום הראשון שלכם בקצף.
 take 9 20 wer 0.0 dur 3.04 | מחר של מי הגל כששניים חותרים עליו.
 take 9 21 wer 0.429 dur 3.04 | מחר של מעגל, קשי שיניים חותרים עליו
 take 9 22 wer 0.0 dur 3.04 | מחר של מי הגל כששניים חותרים עליו?
-PICK 0 wer 0.0 | final rise (+5.5 st, expected fall) | pitch 117 Hz (level -0.1 st) | range 11.1 st | מכירים את זה? מגיע גל והגלשן שלכם עף ישר עליכם.
-PICK 1 wer 0.0 | final level (+0.0 st, expected fall) | pitch 115 Hz (level -0.3 st) | range 15.3 st | הוא יכול לפגוע לכם בראש או במי שנמצא מאחוריכם.
-PICK 2 wer 0.0 | final level (-1.1 st, expected fall) | pitch 104 Hz (level -2.1 st) | range 10.0 st | אז ככה מחזיקים את הגלשן נכון.
-PICK 3 wer 0.0 | final fall (-5.2 st, expected fall) | pitch 123 Hz (level +0.8 st) | range 9.4 st | הגלשן בצד שלכם והחרטום מול הגל.
-PICK 4 wer 0.0 | final fall (-3.8 st, expected fall) | pitch 114 Hz (level -0.5 st) | range 12.9 st | אף פעם לא ביניכם לבין הגל.
-PICK 5 wer 0.0 | final fall (-8.5 st, expected fall) | pitch 128 Hz (level +1.5 st) | range 15.5 st | כשהקצף מגיע תופסים את שני הריילים ודוחפים את החרטום מעליו.
-PICK 6 wer 0.0 | final level (+1.5 st, expected fall) | pitch 105 Hz (level -1.9 st) | range 7.2 st | ואז שוכבים על הגלשן וחותרים החוצה.
-PICK 7 wer 0.273 | final fall (-4.7 st, expected fall) | pitch 117 Hz (level -0.1 st) | range 9.8 st | קל שאלה על הקצף, תשאלו את המאמן באפליקציה של סרפטרייב.
-PICK 8 wer 0.0 | final fall (-4.9 st, expected fall) | pitch 108 Hz (level -1.4 st) | range 10.7 st | תשמרו את זה ליום הראשון שלכם בקצף.
-PICK 9 wer 0.0 | final fall (-9.8 st, expected fall) | pitch 118 Hz (level +0.1 st) | range 13.8 st | מחר של מי הגל כששניים חותרים עליו?
-he f5 T 32.323 [('L1', 0.12, np.float64(3.72), 0.0), ('L2', np.float64(4.044), np.float64(3.67), 0.0), ('L3', np.float64(8.11), np.float64(1.88), 0.0), ('L4', np.float64(10.192), np.float64(2.44), 0.0), ('L5', np.float64(12.835), np.float64(1.78), 0.0), ('L6', np.float64(15.011), np.float64(3.95), 0.0), ('L7', np.float64(19.164), np.float64(2.34), 0.0), ('L8', np.float64(21.902), np.float64(4.05), 0.27), ('L9', np.float64(26.151), np.float64(2.41), 0.0), ('L10', np.float64(28.959), np.float64(2.46), 0.0)]
+PICK 0 wer 0.0 | final rise (+5.5 st, expected fall) | pitch 117 Hz (level +0.1 st) | range 11.1 st | מכירים את זה? מגיע גל והגלשן שלכם עף ישר עליכם.
+PICK 1 wer 0.0 | final level (+0.0 st, expected fall) | pitch 115 Hz (level -0.1 st) | range 15.3 st | הוא יכול לפגוע לכם בראש או במי שנמצא מאחוריכם.
+PICK 2 wer 0.0 | final level (-1.1 st, expected fall) | pitch 104 Hz (level -1.9 st) | range 10.0 st | אז ככה מחזיקים את הגלשן נכון.
+PICK 3 wer 0.0 | final fall (-5.2 st, expected fall) | pitch 123 Hz (level +1.0 st) | range 9.4 st | הגלשן בצד שלכם והחרטום מול הגל.
+PICK 4 wer 0.0 | final fall (-3.8 st, expected fall) | pitch 114 Hz (level -0.3 st) | range 12.9 st | אף פעם לא ביניכם לבין הגל.
+PICK 5 wer 0.0 | final fall (-8.5 st, expected fall) | pitch 128 Hz (level +1.7 st) | range 15.5 st | כשהקצף מגיע תופסים את שני הריילים ודוחפים את החרטום מעליו.
+PICK 6 wer 0.0 | final level (+1.5 st, expected fall) | pitch 105 Hz (level -1.7 st) | range 7.2 st | ואז שוכבים על הגלשן וחותרים החוצה.
+PICK 7 wer 0.182 | final level (-0.4 st, expected fall) | pitch 111 Hz (level -0.9 st) | range 10.3 st | כל שאלה על הקצף תשאלו את המאמן באפליקציה של סרפטרייבה.
+PICK 8 wer 0.0 | final fall (-4.9 st, expected fall) | pitch 108 Hz (level -1.3 st) | range 10.7 st | תשמרו את זה ליום הראשון שלכם בקצף.
+PICK 9 wer 0.0 | final fall (-9.8 st, expected fall) | pitch 118 Hz (level +0.3 st) | range 13.8 st | מחר של מי הגל כששניים חותרים עליו?
+he f5 T 32.137 [('L1', 0.12, np.float64(3.72), 0.0), ('L2', np.float64(4.044), np.float64(3.67), 0.0), ('L3', np.float64(8.11), np.float64(1.88), 0.0), ('L4', np.float64(10.192), np.float64(2.44), 0.0), ('L5', np.float64(12.835), np.float64(1.78), 0.0), ('L6', np.float64(15.011), np.float64(3.95), 0.0), ('L7', np.float64(19.164), np.float64(2.34), 0.0), ('L8', np.float64(21.902), np.float64(3.86), 0.18), ('L9', np.float64(25.965), np.float64(2.41), 0.0), ('L10', np.float64(28.773), np.float64(2.46), 0.0)]

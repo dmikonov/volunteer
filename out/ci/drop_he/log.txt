@@ -1,18 +1,18 @@
 + k=/s17/rp/drop_he
 + python3 build.py /s17/rp/drop_he
-[('L1', '/dr_hook.mp4', 0.0, 2.3, 0.0), ('L1', '/dr_hit2.mp4', 0.0, 1.644, 2.3), ('L2', '/dr_hook.mp4', 0.5, 1.6, 3.944), ('L2', '/dr_wipe.mp4', 1.0, 2.466, 5.544), ('L3', 'dr_carry.mp4', 0.0, 2.082, 8.01), ('L4', '/dr_side.mp4', 0.0, 2.2, 10.092), ('L4', 'dr_side2.mp4', 0.0, 0.443, 12.292), ('L5', 'r_across.mp4', 0.0, 1.8, 12.735), ('L5', 'r_across.mp4', 1.8, 0.376, 14.535), ('L6', '/dr_walk.mp4', 0.0, 1.9, 14.911), ('L6', '/dr_over.mp4', 0.0, 2.253, 16.811), ('L7', 'r_paddle.mp4', 0.0, 2.738, 19.064), ('L8', 'pfull_he.mp4', 0.0, 2.2, 21.802), ('L8', 'ppbtn_he.mp4', 0.0, 2.049, 24.002), ('L9', 'n/dr_out.mp4', 0.0, 2.808, 26.051), ('L10', '/dr_tmrw.mp4', 0.0, 2.3, 28.859), ('L10', 'dr_tmrw2.mp4', 0.0, 1.164, 31.159)]
-cat 32.32 T 32.323
+[('L1', '/dr_hook.mp4', 0.0, 2.3, 0.0), ('L1', '/dr_hit2.mp4', 0.0, 1.644, 2.3), ('L2', '/dr_hook.mp4', 0.5, 1.6, 3.944), ('L2', '/dr_wipe.mp4', 1.0, 2.466, 5.544), ('L3', 'dr_carry.mp4', 0.0, 2.082, 8.01), ('L4', '/dr_side.mp4', 0.0, 2.2, 10.092), ('L4', 'dr_side2.mp4', 0.0, 0.443, 12.292), ('L5', 'r_across.mp4', 0.0, 1.8, 12.735), ('L5', 'r_across.mp4', 1.8, 0.376, 14.535), ('L6', '/dr_walk.mp4', 0.0, 1.9, 14.911), ('L6', '/dr_over.mp4', 0.0, 2.253, 16.811), ('L7', 'r_paddle.mp4', 0.0, 2.738, 19.064), ('L8', 'pfull_he.mp4', 0.0, 2.2, 21.802), ('L8', 'ppbtn_he.mp4', 0.0, 1.863, 24.002), ('L9', 'n/dr_out.mp4', 0.0, 2.808, 25.865), ('L10', '/dr_tmrw.mp4', 0.0, 2.3, 28.673), ('L10', 'dr_tmrw2.mp4', 0.0, 1.164, 30.973)]
+cat 32.16 T 32.137
 + python3 ov_png.py /s17/rp/drop_he
-realcuts True [0.0, 3.96, 8.04, 10.12, 12.76, 14.92, 19.08, 21.8, 26.04, 28.84, 32.323]
+realcuts True [0.0, 3.96, 8.04, 10.12, 12.76, 14.92, 19.08, 21.8, 25.88, 28.68, 32.137]
 safe-zone violations [('TL5c', [230, 850, 1180, 1461])]
 ovplan 21
 + python3 ov_ff.py /s17/rp/drop_he
-done /s17/rp/drop_he/reel_drop_he.mp4 32.323 lufs before -15.1 gain 0.6
+done /s17/rp/drop_he/reel_drop_he.mp4 32.137 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/drop_he
-trimmed /s17/rp/drop_he/reel_drop_he.mp4 31.81
+trimmed /s17/rp/drop_he/reel_drop_he.mp4 31.65
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/drop_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/drop_he/reel_drop_he.mp4
-/s17/rp/drop_he/reel_drop_he.mp4 before -13.0 after -14.6 peak -3.2
+/s17/rp/drop_he/reel_drop_he.mp4 before -13.0 after -14.5 peak -2.7
 + python3 post_cz.py /s17/rp/drop_he
 post ok
 + echo 'EXIT /s17/rp/drop_he 0'
