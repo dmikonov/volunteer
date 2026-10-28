@@ -1,0 +1,103 @@
+{
+ "handle": {
+  "EN": "@surftribe_world",
+  "HE": "@surftribe_il"
+ },
+ "slides": [
+  {
+   "t": "cover",
+   "img": "7938440_9.2.jpg",
+   "pos": "63% 40%",
+   "EN": {
+    "call": "Here's what happens",
+    "title": "When you hold<br>your board sideways"
+   },
+   "HE": {
+    "call": "זה מה שקורה",
+    "title": "כשמחזיקים את<br>הגלשן לרוחב"
+   }
+  },
+  {
+   "t": "step",
+   "n": "1",
+   "img": "7938113_5.5.jpg",
+   "pos": "23% 50%",
+   "EN": {
+    "label": "In the foam",
+    "title": "At your side",
+    "body": "Nose pointing at the wave, the board next to you, not in front"
+   },
+   "HE": {
+    "label": "בקצף",
+    "title": "בצד שלכם",
+    "body": "החרטום מול הגל, הגלשן לידכם ולא לפניכם"
+   }
+  },
+  {
+   "t": "step",
+   "n": "2",
+   "img": "7938440_4.0.jpg",
+   "pos": "43% 50%",
+   "x": true,
+   "EN": {
+    "label": "Never",
+    "title": "Not across",
+    "body": "Sideways in front of you, the foam throws it right back at you"
+   },
+   "HE": {
+    "label": "אף פעם",
+    "title": "לא לרוחב",
+    "body": "גלשן לרוחב מולכם, והקצף זורק אותו ישר עליכם"
+   }
+  },
+  {
+   "t": "step",
+   "n": "3",
+   "img": "7425578_9.6_crop.jpg",
+   "pos": "50% 50%",
+   "EN": {
+    "label": "Foam coming",
+    "title": "Rails, nose up",
+    "body": "Grab both rails and push the nose over the foam"
+   },
+   "HE": {
+    "label": "הקצף מגיע",
+    "title": "ריילים, חרטום למעלה",
+    "body": "תופסים את שני הריילים ודוחפים את החרטום מעל הקצף"
+   }
+  },
+  {
+   "t": "step",
+   "n": "4",
+   "img": "7938442_10.9.jpg",
+   "pos": "84% 50%",
+   "EN": {
+    "label": "Foam gone",
+    "title": "Then paddle",
+    "body": "Lie down on the board and paddle out"
+   },
+   "HE": {
+    "label": "הקצף עבר",
+    "title": "ואז חותרים",
+    "body": "שוכבים על הגלשן וחותרים החוצה"
+   }
+  },
+  {
+   "t": "final",
+   "img": "7938446_1.0.jpg",
+   "pos": "55% 40%",
+   "EN": {
+    "title": "Save this for your first day in the foam",
+    "body": "Tomorrow: whose wave is it when two of you paddle for it. Follow so you don't miss it",
+    "pill": "Follow @surftribe_world",
+    "app": "App: link in bio"
+   },
+   "HE": {
+    "title": "שמרו ליום הראשון בקצף",
+    "body": "מחר: של מי הגל, כששניים חותרים עליו. עקבו כדי לא לפספס",
+    "pill": "עקבו אחרי @surftribe_il",
+    "app": "האפליקציה: הקישור בביו"
+   }
+  }
+ ]
+}
