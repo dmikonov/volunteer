@@ -1,12 +1,12 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=2.98 dur=3.69 | ref: Sound familiar? A wave hits, and your board flies at you. | asr: Sound familiar? A wave hits and your board flies at you.
-L2 OK match=1.00 wps=3.38 dur=2.96 | ref: It can hit your head, or whoever is behind you. | asr: It can hit your head or whoever is behind you.
-L3 OK match=1.00 wps=5.83 dur=0.86 | ref: Here's how to hold it. | asr: Here's how to hold it.
-L4 OK match=1.00 wps=3.41 dur=2.93 | ref: Keep it at your side, nose pointing at the wave. | asr: Keep it at your side, nose pointing at the wave.
-L5 OK match=1.00 wps=2.27 dur=3.08 | ref: Never across, between you and the wave. | asr: Never a cross between you and the wave.
-L6 OK match=1.00 wps=2.85 dur=3.86 | ref: Foam coming? Grab both rails and push the nose over it. | asr: Foam coming, grab both rails and push the nose over it.
-L7 OK match=0.91 wps=3.59 dur=2.79 | ref: The board stays with you, and you're past the foam. | asr: The board stays with you, and you're past the phone.
-L8 OK match=1.00 wps=2.67 dur=4.12 | ref: Not sure about today's waves? Ask the coach in Surf Tribe. | asr: Not sure about today's waves? Ask the coach in Surf Tribe.
-L9 OK match=0.89 wps=4.09 dur=2.20 | ref: Save it for your first day in the foam. | asr: Save it for your first day in the phone.
-L10 OK match=1.00 wps=3.39 dur=2.95 | ref: Tomorrow: whose wave is it when two of you go? | asr: Tomorrow. Whose wave is it when two of you go?
-TOTAL wps=3.19 lines_to_check=0
+L1 OK match=1.00 wps=2.66 dur=4.14 | ref: Sound familiar? A wave hits, and your board flies at you. | asr: Sound familiar? A wave hits and your board flies at you.
+L2 OK match=1.00 wps=2.93 dur=3.41 | ref: It can hit your head, or whoever is behind you. | asr: It can hit your head or whoever is behind you.
+L3 OK match=1.00 wps=3.69 dur=1.08 | ref: Hold it like this. | asr: Hold it like this.
+L4 OK match=1.00 wps=2.93 dur=3.41 | ref: Keep it at your side, nose pointing at the wave. | asr: Keep it at your side, nose pointing at the wave.
+L5 OK match=1.00 wps=2.08 dur=3.37 | ref: Never sideways, between you and the wave. | asr: Never sideways between you and the wave.
+L6 OK match=1.00 wps=2.40 dur=4.99 | ref: When the whitewater comes, grab both rails and push the nose over. | asr: When the white water comes, grab both rails and push the nose over.
+L7 OK match=1.00 wps=3.16 dur=2.22 | ref: Then lie on it and paddle out. | asr: then lie on it and paddle out.
+L8 OK match=0.92 wps=2.80 dur=3.93 | ref: Any foam question, ask the coach in the Surf Tribe app. | asr: Any phone question, ask the coach in the Surf Tribe app.
+L9 OK match=1.00 wps=3.30 dur=2.73 | ref: Save it for your first day in the whitewater. | asr: Save it for your first day in the whitewater.
+L10 OK match=1.00 wps=2.66 dur=4.14 | ref: Tomorrow: whose wave is it when you both paddle for it? | asr: Tomorrow. Whose wave is it when you both paddle for it?
+TOTAL wps=2.75 lines_to_check=0
