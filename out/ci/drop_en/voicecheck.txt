@@ -6,7 +6,7 @@ L4 OK match=1.00 wps=2.93 dur=3.41 | ref: Keep it at your side, nose pointing at
 L5 OK match=1.00 wps=2.08 dur=3.37 | ref: Never sideways, between you and the wave. | asr: Never sideways between you and the wave.
 L6 OK match=1.00 wps=2.40 dur=4.99 | ref: When the whitewater comes, grab both rails and push the nose over. | asr: When the white water comes, grab both rails and push the nose over.
 L7 OK match=1.00 wps=3.16 dur=2.22 | ref: Then lie on it and paddle out. | asr: then lie on it and paddle out.
-L8 OK match=1.00 wps=2.75 dur=3.64 | ref: Any question, ask the coach in the Surf Tribe app. | asr: Any question, ask the coach in the Surf Tribe app.
-L9 OK match=1.00 wps=3.30 dur=2.73 | ref: Save it for your first day in the whitewater. | asr: Save it for your first day in the whitewater.
+L8 OK match=1.00 wps=2.32 dur=3.45 | ref: Any question, ask the coach in Surf Tribe. | asr: Any question, ask the coach in Surf Tribe.
+L9 OK match=1.00 wps=3.30 dur=2.73 | ref: Save it for your first day in the whitewater. | asr: Save it for your first day in the Whitewater.
 L10 OK match=1.00 wps=2.66 dur=4.14 | ref: Tomorrow: whose wave is it when you both paddle for it? | asr: Tomorrow. Whose wave is it when you both paddle for it?
-TOTAL wps=2.75 lines_to_check=0
+TOTAL wps=2.70 lines_to_check=0
