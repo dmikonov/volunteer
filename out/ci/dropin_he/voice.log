@@ -1,35 +1,39 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 take 0 0 wer 0.167 dur 2.58 | הגל שייך למי שקם ראשון
 take 0 1 wer 0.333 dur 2.58 | מיתוס הגשך למי שקם ראשון
-take 1 2 wer 0.0 dur 3.22 | לקום מול מישהו שכבר גולש, זה דרופ אין
-take 1 3 wer 0.0 dur 3.22 | לקום מול מישהו שכבר גולש זה דרופ אין.
-take 2 4 wer 0.0 dur 3.1 | ככה בדיוק גלשנים מתנגשים במים.
-take 2 5 wer 0.0 dur 3.1 | ככה בדיוק גלשנים מתנגשים במים.
-take 3 6 wer 0.0 dur 1.96 | ‫אז ככה יודעים של מי הגל.
-take 3 7 wer 0.667 dur 1.96 | אריש הרחל, מי הגל?
-take 4 8 wer 0.0 dur 3.24 | של מי שהכי קרוב למקום שבו הגל נשבר.
-take 4 9 wer 0.0 dur 3.24 | של מי שהכי קרוב למקום שבו הגל נשבר.
-take 5 10 wer 0.4 dur 3.31 | אס אס לפני שחותרים תסתכלו לכיוון השבירה
-take 5 11 wer 0.0 dur 3.31 | לפני שחותרים תסתכלו לכיוון השבירה.
-take 6 12 wer 0.0 dur 3.1 | אם מישהו כבר גולש, מוותרים לו על הגל.
-take 6 13 wer 0.0 dur 3.1 | אם מישהו כבר גולש, מוותרים לו על הגל.
-take 7 14 wer 0.0 dur 2.69 | הגל הזה שלו והבא כולו שלכם.
-take 7 15 wer 0.0 dur 2.69 | הגל הזה שלו והבא כולו שלכם.
-take 8 16 wer 0.0 dur 4.2 | רוצים לראות את הגל שלכם שוב? מעלים אותו לסרף טרייב.
-take 8 17 wer 0.0 dur 4.2 | רוצים לראות את הגל שלכם שוב? מעלים אותו לסרף טרייב.
-take 9 18 wer 0.375 dur 2.6 | שילחו את זה לחבר שחותר על קלגל.
-take 9 19 wer 0.375 dur 2.6 | שילחו את זה לחבר שחותר על כלגל.
-take 10 20 wer 0.2 dur 2.08 | איך מצלמים חבר בגל?
-take 10 21 wer 0.4 dur 2.08 | איך מציינים חבר בגל?
-PICK 0 wer 0.167 | final fall (-1.6 st, expected fall) | pitch 224 Hz (level +10.7 st) | range 3.0 st | הגל שייך למי שקם ראשון
-PICK 1 wer 0.0 | final fall (-3.9 st, expected fall) | pitch 102 Hz (level -2.8 st) | range 10.4 st | לקום מול מישהו שכבר גולש זה דרופ אין.
-PICK 2 wer 0.0 | final fall (-3.7 st, expected fall) | pitch 120 Hz (level -0.1 st) | range 16.2 st | ככה בדיוק גלשנים מתנגשים במים.
-PICK 3 wer 0.0 | final rise (+4.9 st, expected fall) | pitch 134 Hz (level +1.8 st) | range 14.3 st | ‫אז ככה יודעים של מי הגל.
-PICK 4 wer 0.0 | final fall (-1.9 st, expected fall) | pitch 113 Hz (level -1.0 st) | range 8.7 st | של מי שהכי קרוב למקום שבו הגל נשבר.
-PICK 5 wer 0.0 | final fall (-5.6 st, expected fall) | pitch 128 Hz (level +1.1 st) | range 9.6 st | לפני שחותרים תסתכלו לכיוון השבירה.
-PICK 6 wer 0.0 | final fall (-6.7 st, expected fall) | pitch 132 Hz (level +1.6 st) | range 15.7 st | אם מישהו כבר גולש, מוותרים לו על הגל.
-PICK 7 wer 0.0 | final level (-0.9 st, expected fall) | pitch 122 Hz (level +0.2 st) | range 12.5 st | הגל הזה שלו והבא כולו שלכם.
-PICK 8 wer 0.0 | final fall (-4.9 st, expected fall) | pitch 117 Hz (level -0.6 st) | range 10.3 st | רוצים לראות את הגל שלכם שוב? מעלים אותו לסרף טרייב.
-PICK 9 wer 0.375 | final rise (+8.9 st, expected fall) | pitch 122 Hz (level +0.3 st) | range 13.8 st | שילחו את זה לחבר שחותר על קלגל.
-PICK 10 wer 0.2 | final level (-0.1 st, expected fall) | pitch 113 Hz (level -1.1 st) | range 11.0 st | איך מצלמים חבר בגל?
-he f5 T 29.258 [('L1', 0.12, np.float64(1.86), 0.17), ('L2', np.float64(2.182), np.float64(2.4), 0.0), ('L3', np.float64(4.785), np.float64(2.41), 0.0), ('L4', np.float64(7.594), np.float64(1.45), 0.0), ('L5', np.float64(9.242), np.float64(2.92), 0.0), ('L6', np.float64(12.365), np.float64(2.56), 0.0), ('L7', np.float64(15.125), np.float64(2.49), 0.0), ('L8', np.float64(17.813), np.float64(2.2), 0.0), ('L9', np.float64(20.409), np.float64(3.89), 0.0), ('L10', np.float64(24.497), np.float64(2.0), 0.38), ('L11', np.float64(26.896), np.float64(1.46), 0.2)]
+take 1 2 wer 0.0 dur 3.59 | קמתם לפני מישהו שכבר על הגל. זה דרופ אין.
+take 1 3 wer 0.222 dur 3.59 | קמתם לפני מישהו שכבר על הגל. זה דרופין.
+take 2 4 wer 0.0 dur 2.52 | ככה אנשים חוטפים גלשן בראש.
+take 2 5 wer 0.0 dur 2.52 | ככה אנשים חוטפים גלשן בראש
+take 3 6 wer 0.0 dur 1.53 | אז של מי הגל באמת?
+take 3 7 wer 0.4 dur 1.53 | אז של מי הגלבמת?
+take 4 8 wer 0.0 dur 2.05 | של מי שהכי קרוב לשבירה
+take 4 9 wer 0.0 dur 2.05 | של מי שהכי קרוב לשבירה.
+take 5 10 wer 0.167 dur 2.75 | לפני שחותרים בודקים יותר קרוב
+take 5 11 wer 0.167 dur 2.75 | לפני שחותרים בודקים יותר קרוב.
+take 6 12 wer 0.833 dur 2.99 | קרא לגל משחררים ומככים
+take 6 13 wer 0.167 dur 2.99 | מישהו כבר על הגל, משחררים ומכחים.
+take 7 14 wer 0.0 dur 1.73 | הגל הבא בסט שלכם.
+take 7 15 wer 0.5 dur 1.73 | הגל הבעבסט שלכם
+take 8 16 wer 0.0 dur 3.68 | צילמתם גל מעלים לסרף טרייב ורואים אותו שוב
+take 8 17 wer 0.0 dur 3.68 | צילמתם גל, מעלים לסרף טרייב ורואים אותו שוב.
+take 10 18 wer 0.2 dur 2.08 | איך מצלמים חבר בגל?
+take 10 19 wer 0.4 dur 2.08 | איך מציינים חבר בגל?
+take 0 20 wer 0.0 dur 2.73 | מיתוס הגל שייך למי שקם ראשון.
+take 0 21 wer 0.0 dur 2.73 | מיתוס הגל שייך למי שקם ראשון
+take 9 22 wer 0.429 dur 2.67 | שילחו את זה לחבר שלוקח קלגל
+take 9 23 wer 0.429 dur 2.67 | שילחו את זה לחבר שלוקח קלגל.
+take 10 24 wer 0.0 dur 2.21 | מחר, איך מצלמים חבר בגל?
+take 10 25 wer 0.0 dur 2.21 | מחר איך מצלמים חבר בגל
+PICK 0 wer 0.0 | final fall (-9.3 st, expected fall) | pitch 117 Hz (level -0.4 st) | range 11.0 st | מיתוס הגל שייך למי שקם ראשון.
+PICK 1 wer 0.0 | final fall (-2.0 st, expected fall) | pitch 119 Hz (level -0.0 st) | range 14.9 st | קמתם לפני מישהו שכבר על הגל. זה דרופ אין.
+PICK 2 wer 0.0 | final fall (-3.5 st, expected fall) | pitch 123 Hz (level +0.5 st) | range 9.8 st | ככה אנשים חוטפים גלשן בראש
+PICK 3 wer 0.0 | final rise (+1.8 st, expected rise) | pitch 148 Hz (level +3.6 st) | range 12.4 st | אז של מי הגל באמת?
+PICK 4 wer 0.0 | final fall (-3.6 st, expected fall) | pitch 120 Hz (level +0.0 st) | range 14.3 st | של מי שהכי קרוב לשבירה
+PICK 5 wer 0.167 | final level (-1.1 st, expected fall) | pitch 111 Hz (level -1.3 st) | range 13.3 st | לפני שחותרים בודקים יותר קרוב
+PICK 6 wer 0.167 | final fall (-1.5 st, expected fall) | pitch 100 Hz (level -3.0 st) | range 16.7 st | מישהו כבר על הגל, משחררים ומכחים.
+PICK 7 wer 0.0 | final fall (-8.0 st, expected fall) | pitch 127 Hz (level +1.1 st) | range 13.9 st | הגל הבא בסט שלכם.
+PICK 8 wer 0.0 | final fall (-9.0 st, expected fall) | pitch 140 Hz (level +2.7 st) | range 14.0 st | צילמתם גל, מעלים לסרף טרייב ורואים אותו שוב.
+PICK 9 wer 0.429 | final fall (-4.5 st, expected fall) | pitch 120 Hz (level +0.0 st) | range 9.6 st | שילחו את זה לחבר שלוקח קלגל
+PICK 10 wer 0.0 | final fall (-3.0 st, expected fall) | pitch 117 Hz (level -0.4 st) | range 6.0 st | מחר איך מצלמים חבר בגל
+he f5 T 25.916 [('L1', 0.12, np.float64(2.28), 0.0), ('L2', np.float64(2.6), np.float64(3.28), 0.0), ('L3', np.float64(6.081), np.float64(1.8), 0.0), ('L4', np.float64(8.282), np.float64(1.27), 0.0), ('L5', np.float64(9.753), np.float64(1.46), 0.0), ('L6', np.float64(11.409), np.float64(2.24), 0.17), ('L7', np.float64(13.854), np.float64(2.41), 0.17), ('L8', np.float64(16.46), np.float64(1.35), 0.0), ('L9', np.float64(18.208), np.float64(2.61), 0.0), ('L10', np.float64(21.019), np.float64(2.06), 0.43), ('L11', np.float64(23.475), np.float64(1.54), 0.0)]
