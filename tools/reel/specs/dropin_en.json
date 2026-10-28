@@ -14,11 +14,12 @@
   "L2": 1180,
   "L3": 1180,
   "L4": 1180,
-  "L5": 1180,
-  "L6": 1180,
-  "L7": 1180,
-  "L8": 1180,
-  "L10": 1180
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L8": 380,
+  "L10": 1180,
+  "L9": 380
  },
  "logo": {
   "top": 240,
@@ -48,8 +49,8 @@
    null
   ],
   "L2": [
-   "That's",
-   "a drop-in",
+   "Stand up here?",
+   "That's a drop-in",
    null,
    null
   ],
@@ -94,6 +95,12 @@
    "who never shares",
    null,
    null
+  ],
+  "L9": [
+   "Watch your wave",
+   "back in SurfTribe",
+   null,
+   null
   ]
  },
  "teaser": [
@@ -109,16 +116,24 @@
    "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:430px;left:70px;width:780px;display:flex;justify-content:center;direction:ltr'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
   },
   {
-   "k": "XMARK",
-   "line": "L1",
-   "d0": 0.5,
-   "html": "<div style='position:absolute;left:90px;top:900px;width:170px;height:170px;border-radius:50%;background:#FF5150;box-shadow:0 4px 18px rgba(45,36,42,.55);display:flex;align-items:center;justify-content:center'><svg width='100' height='100' viewBox='0 0 110 110'><path d='M20 20 L90 90 M90 20 L20 90' stroke=\"#fff\" stroke-width=\"18\" stroke-linecap=\"round\"/></svg></div>"
-  },
-  {
    "k": "RING5",
    "line": "L5",
    "d0": 0.3,
    "html": "<div style='position:absolute;left:330px;top:560px;width:420px;height:360px;border-radius:50%;border:13px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
+  },
+  {
+   "k": "RC2",
+   "line": "L2",
+   "d0": 0.35,
+   "d1": 2.6,
+   "html": "<div style='position:absolute;left:205px;top:605px;width:240px;height:240px;border-radius:50%;border:12px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
+  },
+  {
+   "k": "RR2",
+   "line": "L2",
+   "d0": 0.6,
+   "d1": 2.6,
+   "html": "<div style='position:absolute;left:640px;top:777px;width:220px;height:220px;border-radius:50%;border:12px solid #FF5150;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
   }
  ],
  "gap": 0.15,
@@ -139,17 +154,9 @@
    {
     "kind": "gen",
     "src": "/s17/gen/di_hook.mp4",
-    "a": 1.0,
-    "dd": 2.0,
-    "z": 1.5,
-    "cx": [
-     0.45,
-     0.55
-    ],
-    "cy": [
-     0.45,
-     0.42
-    ]
+    "a": 0.7,
+    "dd": 2.6,
+    "frz": 2.3
    },
    {
     "kind": "gen",
@@ -160,7 +167,7 @@
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/di_crowd.mp4",
+    "src": "/s17/gen/di_hit.mp4",
     "a": 0.0
    }
   ],
@@ -181,12 +188,16 @@
   "L6": [
    {
     "kind": "gen",
-    "src": "/s17/gen/di_look.mp4",
-    "a": 0.0,
-    "z": 1.5,
+    "src": "/s17/gen/di_crowd.mp4",
+    "a": 3.0,
+    "z": 1.6,
+    "cx": [
+     0.5,
+     0.5
+    ],
     "cy": [
-     0.37,
-     0.37
+     0.52,
+     0.52
     ]
    }
   ],
@@ -194,7 +205,12 @@
    {
     "kind": "gen",
     "src": "/s17/gen/di_wait.mp4",
-    "a": 0.0
+    "a": 0.0,
+    "z": 1.3,
+    "cy": [
+     0.37,
+     0.37
+    ]
    }
   ],
   "L8": [
@@ -214,17 +230,8 @@
   "L10": [
    {
     "kind": "gen",
-    "src": "/s17/gen/di_crowd.mp4",
-    "a": 0.0,
-    "z": 1.35,
-    "cx": [
-     0.5,
-     0.45
-    ],
-    "cy": [
-     0.42,
-     0.45
-    ]
+    "src": "/s17/gen/di_send2.mp4",
+    "a": 0.0
    }
   ],
   "L11": [
