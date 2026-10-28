@@ -1,0 +1,219 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "ttop": {
+  "L1": 1180,
+  "L2": 1180,
+  "L3": 1180,
+  "L4": 1180,
+  "L5": 1180,
+  "L6": 1180,
+  "L7": 1180,
+  "L8": 1180,
+  "L10": 1180
+ },
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "en",
+ "out": "reel_dropin_en.mp4",
+ "lines": [
+  "Myth: the wave belongs to whoever stands up first.",
+  "Stand up in front of someone already riding, and that's a drop-in.",
+  "Two boards on one wave is how people get hurt.",
+  "Here's who actually gets the wave.",
+  "The surfer closest to where it breaks.",
+  "So before you paddle, look toward the breaking part.",
+  "If someone's already up and riding, let it go.",
+  "The wave is his, and the next one is yours.",
+  "Want to watch your own wave again? Upload it to Surf Tribe.",
+  "Send this to the friend who paddles for every wave.",
+  "Tomorrow: how to film your friend's wave."
+ ],
+ "titles": {
+  "L1": [
+   "Myth:",
+   "first up gets the wave",
+   null,
+   null
+  ],
+  "L2": [
+   "That's",
+   "a drop-in",
+   null,
+   null
+  ],
+  "L3": [
+   "Two boards,",
+   "one wave",
+   null,
+   null
+  ],
+  "L4": [
+   "Who gets",
+   "the wave",
+   null,
+   null
+  ],
+  "L5": [
+   "Closest to",
+   "where it breaks",
+   null,
+   null
+  ],
+  "L6": [
+   "Look toward",
+   "the peak first",
+   null,
+   null
+  ],
+  "L7": [
+   "Someone riding?",
+   "Let it go",
+   null,
+   null
+  ],
+  "L8": [
+   "The next one",
+   "is yours",
+   null,
+   null
+  ],
+  "L10": [
+   "Send it to",
+   "that friend",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow",
+  "Film your friend's wave"
+ ],
+ "extra": [
+  {
+   "k": "FOLLOW",
+   "line": "L1",
+   "d0": 1.6,
+   "d1": 3.6,
+   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:430px;left:70px;width:780px;display:flex;justify-content:center;direction:ltr'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
+  },
+  {
+   "k": "XMARK",
+   "line": "L1",
+   "d0": 0.5,
+   "html": "<div style='position:absolute;left:90px;top:900px;width:170px;height:170px;border-radius:50%;background:#FF5150;box-shadow:0 4px 18px rgba(45,36,42,.55);display:flex;align-items:center;justify-content:center'><svg width='100' height='100' viewBox='0 0 110 110'><path d='M20 20 L90 90 M90 20 L20 90' stroke=\"#fff\" stroke-width=\"18\" stroke-linecap=\"round\"/></svg></div>"
+  },
+  {
+   "k": "RING5",
+   "line": "L5",
+   "d0": 0.3,
+   "html": "<div style='position:absolute;left:330px;top:560px;width:420px;height:360px;border-radius:50%;border:13px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
+  }
+ ],
+ "gap": 0.15,
+ "gap_after": {
+  "L3": 0.2,
+  "L8": 0.2,
+  "L10": 0.2
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_pass.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_crowd.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_bridge.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_peak.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_look.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cy": [
+     0.37,
+     0.37
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_wait.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_ride.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/di_app_en.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_send.mp4",
+    "a": 0.0
+   }
+  ],
+  "L11": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_tmrw.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
+ },
+ "edge": true,
+ "rate": "-12%"
+}
