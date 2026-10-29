@@ -1,0 +1,131 @@
++ '[' -f /s17/gen/fm_app.mp4 ']'
++ G=/s17/gen
++ mkdir -p /s17/gen /tmp/px
++ UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
++ for id in 4782364 4782485
++ '[' -s /tmp/px/p4782364.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p4782364.mp4 https://videos.pexels.com/video-files/4782364/4782364-uhd_2560_1440_30fps.mp4
++ for id in 4782364 4782485
++ '[' -s /tmp/px/p4782485.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p4782485.mp4 https://videos.pexels.com/video-files/4782485/4782485-uhd_2560_1440_30fps.mp4
++ for id in 15845 1069 1220
++ '[' -s /tmp/px/m15845.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m15845.mp4 https://assets.mixkit.co/videos/15845/15845-1080.mp4
+curl: (22) The requested URL returned error: 403
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m15845.mp4 https://assets.mixkit.co/videos/15845/15845-720.mp4
++ break
++ for id in 15845 1069 1220
++ '[' -s /tmp/px/m1069.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1069.mp4 https://assets.mixkit.co/videos/1069/1069-1080.mp4
++ break
++ for id in 15845 1069 1220
++ '[' -s /tmp/px/m1220.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1220.mp4 https://assets.mixkit.co/videos/1220/1220-1080.mp4
++ break
++ cut p4782364 1.0 7.0 0.45 0.45 fm_hook
++ src=p4782364
++ ss=1.0
++ t=7.0
++ c0=0.45
++ c1=0.45
++ n=fm_hook
++ sp=1
+++ awk 'BEGIN{print 7.0*1}'
++ ffmpeg -v error -y -ss 1.0 -t 7 -i /tmp/px/p4782364.mp4 -vf 'setpts=PTS/1,scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.45-0.45)*t/7.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fm_hook.mp4
++ cut p4782485 0.0 5.0 0.76 0.70 fm_ride
++ src=p4782485
++ ss=0.0
++ t=5.0
++ c0=0.76
++ c1=0.70
++ n=fm_ride
++ sp=1
+++ awk 'BEGIN{print 5.0*1}'
++ ffmpeg -v error -y -ss 0.0 -t 5 -i /tmp/px/p4782485.mp4 -vf 'setpts=PTS/1,scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.76+(0.70-0.76)*t/5.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fm_ride.mp4
++ cut m15845 0.0 4.0 0.56 0.56 fm_long 2
++ src=m15845
++ ss=0.0
++ t=4.0
++ c0=0.56
++ c1=0.56
++ n=fm_long
++ sp=2
+++ awk 'BEGIN{print 4.0*2}'
++ ffmpeg -v error -y -ss 0.0 -t 8 -i /tmp/px/m15845.mp4 -vf 'setpts=PTS/2,scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.56+(0.56-0.56)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fm_long.mp4
++ cut m1069 1.0 4.0 0.55 0.55 fm_friend
++ src=m1069
++ ss=1.0
++ t=4.0
++ c0=0.55
++ c1=0.55
++ n=fm_friend
++ sp=1
+++ awk 'BEGIN{print 4.0*1}'
++ ffmpeg -v error -y -ss 1.0 -t 4 -i /tmp/px/m1069.mp4 -vf 'setpts=PTS/1,scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.55+(0.55-0.55)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fm_friend.mp4
++ ffmpeg -v error -y -i /tmp/px/m1220.mp4 -t 4 -vf scale=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/fm_board.mp4
++ ffmpeg -v error -y -i out/ci/d30/gen/fm_film_raw.mp4 -vf scale=1080:-2:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/fm_film.mp4
+[Parsed_crop_1 @ 0x71fbdc00f980] Invalid too big or non positive size for width '1080' or height '1920'
+[Parsed_crop_1 @ 0x71fbdc00f980] Failed to configure input pad on Parsed_crop_1
+[vf#0:0 @ 0x576eeeb31100] Error reinitializing filters!
+[vf#0:0 @ 0x576eeeb31100] Task finished with error code: -22 (Invalid argument)
+[vf#0:0 @ 0x576eeeb31100] Terminating thread with return code -22 (Invalid argument)
+[vost#0:0/libx264 @ 0x576eeebab740] [enc:libx264 @ 0x576eeeb34980] Could not open encoder before EOF
+[vost#0:0/libx264 @ 0x576eeebab740] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/libx264 @ 0x576eeebab740] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 0x576eeebab3c0] Nothing was written into output file, because at least one of its streams received no packets.
++ ffmpeg -v error -y -ss 12.0 -t 5.0 -i app-screens/ScreenRecording_09-28-2026_10-56-35_1_4.mp4 -vf crop=1080:1920:0:240,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/fm_app.mp4
++ mkdir -p out/ci/d30/review
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_app.mp4 .mp4
++ n=fm_app
++ ffmpeg -v error -y -i /s17/gen/fm_app.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_app.jpg
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_board.mp4 .mp4
++ n=fm_board
++ ffmpeg -v error -y -i /s17/gen/fm_board.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_board.jpg
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_film.mp4 .mp4
++ n=fm_film
++ ffmpeg -v error -y -i /s17/gen/fm_film.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_film.jpg
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x602c55442f40] moov atom not found
+[in#0 @ 0x602c55442c80] Error opening input: Invalid data found when processing input
+Error opening input file /s17/gen/fm_film.mp4.
+Error opening input files: Invalid data found when processing input
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_friend.mp4 .mp4
++ n=fm_friend
++ ffmpeg -v error -y -i /s17/gen/fm_friend.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_friend.jpg
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_hook.mp4 .mp4
++ n=fm_hook
++ ffmpeg -v error -y -i /s17/gen/fm_hook.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_hook.jpg
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_long.mp4 .mp4
++ n=fm_long
++ ffmpeg -v error -y -i /s17/gen/fm_long.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_long.jpg
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_ride.mp4 .mp4
++ n=fm_ride
++ ffmpeg -v error -y -i /s17/gen/fm_ride.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_ride.jpg
++ ls -la /s17/gen/fm_app.mp4 /s17/gen/fm_board.mp4 /s17/gen/fm_film.mp4 /s17/gen/fm_friend.mp4 /s17/gen/fm_hook.mp4 /s17/gen/fm_long.mp4 /s17/gen/fm_ride.mp4
+-rw-r--r-- 1 runner runner 1069426 Oct 29 23:27 /s17/gen/fm_app.mp4
+-rw-r--r-- 1 runner runner 7571761 Oct 29 23:27 /s17/gen/fm_board.mp4
+-rw-r--r-- 1 runner runner       0 Oct 29 23:27 /s17/gen/fm_film.mp4
+-rw-r--r-- 1 runner runner 3727788 Oct 29 23:27 /s17/gen/fm_friend.mp4
+-rw-r--r-- 1 runner runner 9853121 Oct 29 23:27 /s17/gen/fm_hook.mp4
+-rw-r--r-- 1 runner runner 7257428 Oct 29 23:27 /s17/gen/fm_long.mp4
+-rw-r--r-- 1 runner runner 8605338 Oct 29 23:27 /s17/gen/fm_ride.mp4
+total 37212
+drwxr-xr-x 2 runner root      4096 Oct 29 23:27 .
+drwxr-xr-x 3 runner root      4096 Oct 29 23:27 ..
+-rw-r--r-- 1 runner runner 1069426 Oct 29 23:27 fm_app.mp4
+-rw-r--r-- 1 runner runner 7571761 Oct 29 23:27 fm_board.mp4
+-rw-r--r-- 1 runner runner       0 Oct 29 23:27 fm_film.mp4
+-rw-r--r-- 1 runner runner 3727788 Oct 29 23:27 fm_friend.mp4
+-rw-r--r-- 1 runner runner 9853121 Oct 29 23:27 fm_hook.mp4
+-rw-r--r-- 1 runner runner 7257428 Oct 29 23:27 fm_long.mp4
+-rw-r--r-- 1 runner runner 8605338 Oct 29 23:27 fm_ride.mp4
