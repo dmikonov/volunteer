@@ -6,7 +6,7 @@ L4 OK match=1.00 wps=4.78 dur=0.84 | ref: So who gets it? | asr: So who gets it?
 L5 OK match=1.00 wps=2.43 dur=4.12 | ref: Whoever's closest to the peak, the spot where it breaks. | asr: Whoever's closest to the peak, the spot where it breaks.
 L6 OK match=1.00 wps=2.87 dur=3.48 | ref: Before you paddle, check if anyone's closer to the peak. | asr: Before you paddle, check if anyone's closer to the peak.
 L7 OK match=1.00 wps=2.69 dur=2.23 | ref: If someone's already up, pull back. | asr: If someone's already up, pull back.
-L8 OK match=1.00 wps=2.92 dur=3.42 | ref: Wait, and the next wave in the set is yours. | asr: Wait, and the next wave in the set is yours.
+L8 OK match=0.96 wps=2.92 dur=3.42 | ref: Wait, and the next wave in the set is yours. | asr: Wait, and the next wave in this set is yours.
 L9 OK match=1.00 wps=3.45 dur=3.19 | ref: Got your wave on video? Watch it back on Surf Tribe. | asr: Got your wave on video? Watch it back on Surf Tribe.
 L10 OK match=1.00 wps=2.94 dur=3.40 | ref: Send this to the friend who never shares a wave. | asr: Send this to the friend who never shares a wave.
 L11 OK match=1.00 wps=2.73 dur=2.57 | ref: Tomorrow: how to film your friend's wave. | asr: Tomorrow, how to film your friend's wave.

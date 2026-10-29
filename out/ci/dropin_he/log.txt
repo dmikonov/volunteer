@@ -1,19 +1,9 @@
 + k=/s17/rp/dropin_he
 + python3 build.py /s17/rp/dropin_he
-[('L1', '/di_hook.mp4', 0.0, 2.5, 0.0), ('L2', '/di_hook.mp4', 1.0, 2.0, 2.5), ('L2', '/di_pass.mp4', 0.0, 1.481, 4.5), ('L3', 'di_crowd.mp4', 0.0, 2.201, 5.981), ('L4', 'i_bridge.mp4', 0.0, 1.471, 8.182), ('L5', '/di_peak.mp4', 0.0, 1.656, 9.653), ('L6', '/di_look.mp4', 0.0, 2.445, 11.309), ('L7', '/di_wait.mp4', 0.0, 2.606, 13.754), ('L8', '/di_ride.mp4', 0.0, 1.748, 16.36), ('L9', 'i_app_he.mp4', 0.0, 2.811, 18.108), ('L10', 'di_crowd.mp4', 0.0, 2.456, 20.919), ('L11', '/di_tmrw.mp4', 0.0, 2.541, 23.375)]
-cat 25.92 T 25.916
-+ python3 ov_png.py /s17/rp/dropin_he
-realcuts True [0.0, 2.52, 6.0, 8.2, 9.68, 11.32, 13.76, 16.36, 18.12, 20.92, 23.36, 25.916]
-safe-zone violations []
-ovplan 24
-+ python3 ov_ff.py /s17/rp/dropin_he
-done /s17/rp/dropin_he/reel_dropin_he.mp4 25.916 lufs before -15.2 gain 0.7
-+ python3 trim_tail.py /s17/rp/dropin_he
-trimmed /s17/rp/dropin_he/reel_dropin_he.mp4 25.34
-++ python3 -c 'import json;print(json.load(open('\''/s17/rp/dropin_he/spec.json'\''))['\''out'\''])'
-+ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/dropin_he/reel_dropin_he.mp4
-/s17/rp/dropin_he/reel_dropin_he.mp4 before -12.9 after -14.6 peak -3.3
-+ python3 post_cz.py /s17/rp/dropin_he
-post ok
-+ echo 'EXIT /s17/rp/dropin_he 0'
-EXIT /s17/rp/dropin_he 0
+Traceback (most recent call last):
+  File "/s17/rp/build.py", line 28, in <module>
+    assert a >= 0 and dm > 0.2, (l['k'], e, a, dm, sd)
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: ('L6', {'kind': 'gen', 'src': '/s17/gen/di_crowd.mp4', 'a': 3.0, 'z': 1.6, 'cx': [0.5, 0.5], 'cy': [0.52, 0.52]}, 3.0, 0.16, 3.2)
++ echo 'EXIT /s17/rp/dropin_he 1'
+EXIT /s17/rp/dropin_he 1
