@@ -134,6 +134,12 @@
    "d0": 0.6,
    "d1": 2.6,
    "html": "<div style='position:absolute;left:640px;top:777px;width:220px;height:220px;border-radius:50%;border:12px solid #FF5150;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
+  },
+  {
+   "k": "PEAK",
+   "line": "L5",
+   "d0": 0.3,
+   "html": "<div style='position:absolute;left:90px;top:520px;font:800 64px R;color:#fff;text-shadow:0 3px 10px rgba(45,36,42,.85)'>שבירה</div><svg style='position:absolute;left:0;top:0' width='1080' height='1920'><path d=\"M180 600 L330 690\" stroke=\"#fff\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M300 650 L340 696 L282 700\" stroke=\"#fff\" stroke-width=\"10\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
   }
  ],
  "gap": 0.2,
@@ -186,6 +192,17 @@
    }
   ],
   "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/di_look.mp4",
+    "a": 0.0,
+    "dd": 1.5,
+    "z": 1.5,
+    "cy": [
+     0.37,
+     0.37
+    ]
+   },
    {
     "kind": "gen",
     "src": "/s17/gen/di_lineup.mp4",
