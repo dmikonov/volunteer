@@ -356,7 +356,7 @@ POSTS = {
             'stake': os.path.join(BRAIN_DIR, 'p17_stake_toponly.jpg'),
             '01': os.path.join(BRAIN_DIR, 'p17_s01_distance_shrink.jpg'),
             '02': os.path.join(BRAIN_DIR, 'p17_s02_nocomparison.jpg'),
-            '03': os.path.join(BRAIN_DIR, 'p17_s03_measureperson.jpg'),
+            '03': '/home/dmitrii-nikonov/volunteer/assets/carousel/p17/p17_s03_onelash_zimage.jpg',  # 29.10: old frame had a leash on both ankles
             # 29.10: replaced the row of seven near-identical men (p17_final_card.jpg)
             'final': os.path.join(ASSETS_DIR, 'p17', 'p17_final_two_surfers_check_waves.jpg'),
         },
@@ -365,7 +365,7 @@ POSTS = {
             'Slide 2 (Stake)': 'Photorealistic vertical surf photo from the sand dunes showing only the white spray and topmost crest of an ocean wave breaking behind the horizon line, scale obscured, sunny natural coastal light, 8k quality',
             'Slide 3 (Idea 01)': 'Photorealistic vertical surf photo of an ocean wave breaking 100 meters out at sea, telephoto perspective compressing distance, making the wave appear smaller than it is, documentary surf photo, 8k quality',
             'Slide 4 (Idea 02)': 'Photorealistic vertical surf photo of an empty clean peeling ocean wave with no surfers on it, clean barrel face, ambiguous scale without reference, natural morning ocean lighting, 8k quality',
-            'Slide 5 (Idea 03)': 'Photorealistic vertical surf photo of an adult surfer riding cleanly on an ocean wave face that reaches waist to chest high, clear human body scale against wave height, sunny natural light, no logos, 8k quality',
+            'Slide 5 (Idea 03)': 'Z-Image Turbo seed 301029: Documentary surf photograph, telephoto from the beach: an adult male surfer in a plain black wetsuit standing on a white surfboard riding a small green wave in the Mediterranean, the wave face reaches up to his waist, crouched relaxed stance, side view, a single black leash cord attached only to his back ankle, front ankle bare, natural midday light, realistic anatomy, no logos, no text',
             'Slide 7 (Final, Z-Image Turbo, 29.10)': 'Photorealistic horizontal documentary surf photograph: two clearly different adult surfers standing on a sandy Mediterranean beach checking the waves, seen from behind and slightly to the side. On the left a tall man in his 40s with short grey hair and a beard in a black full wetsuit holding a plain white unbranded longboard upright; on the right a shorter woman in her early 30s with a dark ponytail in a navy wetsuit with a plain unbranded shortboard under her arm. Medium-sized waves breaking offshore, warm morning light, natural colors, no text, no logos, no flags, no signs'
         },
         'generator': "Slides 1-5 generated using Google Imagen 3 via Antigravity generate_image tool. Slide 7 (final) replaced 29.10, generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).",
@@ -373,9 +373,9 @@ POSTS = {
             'cover': ('נראה חצי מטר מהחוף?', 'במים זה יותר'),
             'stake': 'מהחוף רואים רק את החלק העליון של הגל',
             'ideas': [
-                ('01', 'המרחק מקטין', 'גל שנשבר 100 מטר מכם נראה נמוך מכפי שהוא'),
+                ('01', 'המרחק מטעה', 'גל שנשבר 100 מטר מכם נראה נמוך מכפי שהוא'),
                 ('02', 'אין עם מה להשוות', 'בלי גולש לידו, קשה להבין את הגודל'),
-                ('03', 'בודקים לפי אדם', 'גולש שעומד על הגל: הגל עד המותניים, עד הכתף או מעל הראש'),
+                ('03', 'בודקים לפי גולש', 'גולש שעומד על הגל: הגל עד המותניים, עד הכתף או מעל הראש'),
             ],
             'recap': ('בקצרה', [
                 'מהחוף רואים רק את החלק העליון של הגל',

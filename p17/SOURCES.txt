@@ -20,7 +20,7 @@ Slide 4 (Idea 02):
 Prompt: "Photorealistic vertical surf photo of an empty clean peeling ocean wave with no surfers on it, clean barrel face, ambiguous scale without reference, natural morning ocean lighting, 8k quality"
 
 Slide 5 (Idea 03):
-Prompt: "Photorealistic vertical surf photo of an adult surfer riding cleanly on an ocean wave face that reaches waist to chest high, clear human body scale against wave height, sunny natural light, no logos, 8k quality"
+Prompt: "Z-Image Turbo seed 301029: Documentary surf photograph, telephoto from the beach: an adult male surfer in a plain black wetsuit standing on a white surfboard riding a small green wave in the Mediterranean, the wave face reaches up to his waist, crouched relaxed stance, side view, a single black leash cord attached only to his back ankle, front ankle bare, natural midday light, realistic anatomy, no logos, no text"
 
 Slide 7 (Final, Z-Image Turbo, 29.10):
 Prompt: "Photorealistic horizontal documentary surf photograph: two clearly different adult surfers standing on a sandy Mediterranean beach checking the waves, seen from behind and slightly to the side. On the left a tall man in his 40s with short grey hair and a beard in a black full wetsuit holding a plain white unbranded longboard upright; on the right a shorter woman in her early 30s with a dark ponytail in a navy wetsuit with a plain unbranded shortboard under her arm. Medium-sized waves breaking offshore, warm morning light, natural colors, no text, no logos, no flags, no signs"
