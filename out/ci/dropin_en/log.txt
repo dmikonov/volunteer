@@ -1,11 +1,11 @@
 + k=/s17/rp/dropin_en
 + python3 build.py /s17/rp/dropin_en
-[('L1', '/di_hook.mp4', 0.0, 4.06, 0.0), ('L2', '/di_hook.mp4', 0.7, 2.6, 4.06), ('L2', '/di_pass.mp4', 0.0, 1.44, 6.66), ('L3', 'n/di_hit.mp4', 0.0, 1.784, 8.1), ('L4', 'i_bridge.mp4', 0.0, 0.987, 9.884), ('L5', '/di_peak.mp4', 0.0, 4.273, 10.871), ('L6', 'i_lineup.mp4', 0.0, 3.633, 15.144), ('L7', '/di_wait.mp4', 0.0, 2.383, 18.777), ('L8', '/di_ride.mp4', 0.0, 3.775, 21.16), ('L9', 'i_app_en.mp4', 0.0, 3.342, 24.935), ('L10', 'di_send2.mp4', 0.0, 3.746, 28.277), ('L11', '/di_tmrw.mp4', 0.0, 3.567, 32.023)]
+[('L1', '/di_hook.mp4', 0.0, 4.06, 0.0), ('L2', '/di_hook.mp4', 0.7, 2.6, 4.06), ('L2', '/di_pass.mp4', 0.0, 1.44, 6.66), ('L3', 'n/di_hit.mp4', 0.5, 1.784, 8.1), ('L4', 'i_bridge.mp4', 0.0, 0.987, 9.884), ('L5', '/di_peak.mp4', 0.0, 4.273, 10.871), ('L6', '/di_look.mp4', 0.0, 1.5, 15.144), ('L6', 'i_lineup.mp4', 0.0, 2.133, 16.644), ('L7', '/di_wait.mp4', 0.0, 2.383, 18.777), ('L8', '/di_ride.mp4', 0.0, 3.775, 21.16), ('L9', 'i_app_en.mp4', 0.0, 3.342, 24.935), ('L10', 'di_send2.mp4', 0.0, 3.746, 28.277), ('L11', '/di_tmrw.mp4', 0.0, 3.567, 32.023)]
 cat 35.68 T 35.59
 + python3 ov_png.py /s17/rp/dropin_en
 realcuts True [0.0, 4.08, 8.12, 9.92, 10.92, 15.2, 18.84, 21.24, 25.0, 28.36, 32.12, 35.59]
 safe-zone violations [('TL1c', [230, 850, 1180, 1461]), ('TL2c', [230, 850, 1180, 1461]), ('TL3c', [230, 850, 1180, 1461]), ('TL10c', [230, 850, 1180, 1461])]
-ovplan 27
+ovplan 28
 + python3 ov_ff.py /s17/rp/dropin_en
 done /s17/rp/dropin_en/reel_dropin_en.mp4 35.59 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/dropin_en
