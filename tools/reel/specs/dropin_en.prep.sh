@@ -15,6 +15,7 @@ cut m1128 0.0 2.8 0.13 0.38 di_peak
 cut m1128 0.0 2.6 0.86 0.86 di_look
 cut m1128 1.5 1.8 0.86 0.86 di_wait
 cut p7938440 8.55 2.33 0.55 0.55 di_hit
+cut p856422 3.0 3.8 0.60 0.60 di_lineup
 cut m1127 3.0 3.2 0.45 0.55 di_send2
 cut m1128 4.8 3.4 0.52 0.62 di_ride
 cut m1075 10.0 3.2 0.45 0.55 di_send
