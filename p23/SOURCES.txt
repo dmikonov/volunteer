@@ -1,0 +1,30 @@
+SOURCES for p23 (Generated P23 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary surf photograph: a woman in her mid 50s with long silver hair tied back and sun-tanned skin, in a plain dark green wetsuit, standing on a sandy Mediterranean beach holding a plain white surfboard under her arm, smiling skeptically as she looks toward the camera, waves breaking behind her, warm morning light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary photograph: a young man in his late 20s with a thick black beard and glasses pushed up on his head, wearing a plain grey t-shirt and board shorts, sitting on the sand beside his surfboard with his chin on his hand, thinking hard while watching the waves, Mediterranean beach, soft afternoon light, subject centered, realistic hands, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary photograph of the open sea: a set of several big parallel swell lines approaching the coast one after another, each wave a slightly different size, dark blue water and white crests, stormy winter Mediterranean light with breaks of sun, no people, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary surf photograph, side view at water level: an experienced surfer in his 40s with a shaved head and dark skin, plain black wetsuit, lying prone on a plain shortboard paddling out, chest slightly raised, head up, calm blue water with a small wave behind, bright light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary surf photograph: a man in his 60s with a white moustache and a sun hat strapped under his chin, in a plain navy long-sleeve rash vest and board shorts, standing upright and relaxed on a very long plain cream-colored longboard, gliding along a small gentle green wave, Mediterranean sea, warm morning light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 6 (Idea 04):
+Prompt: "Photorealistic vertical documentary surf photograph on a winter day: a surfer in a full black winter wetsuit with a hood riding a large powerful head-high grey-green wave, dark dramatic storm clouds over the Mediterranean sea, wind spray off the lip, cold winter light, realistic board and anatomy, no text, no logos"
+
+Slide 8 (Final):
+Prompt: "Photorealistic horizontal documentary photograph of a quiet sandy Mediterranean beach in winter: clean grey-green waves breaking under soft broken clouds with sunbeams, two surfers far away walking along the waterline with boards, wide empty shore, wet sand reflections, calm moody light, no text, no logos, no flags, no signs"
+

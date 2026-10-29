@@ -1,0 +1,27 @@
+SOURCES for p25 (Generated P25 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary surf photograph: a man in his early 30s with a short afro and dark brown skin, in a plain black wetsuit, sitting calmly on a plain surfboard in the lineup with eyes closed for a moment, taking a slow breath, focused and calm, soft morning light on glassy Mediterranean water, small waves behind him, subject centered, realistic anatomy, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary surf photograph: a woman in her late 30s with a blonde braid in a plain grey wetsuit, off balance on her surfboard in small whitewater, body tilted, splash, one leash on her back ankle only, Mediterranean beach break, bright light, realistic anatomy, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary surf photograph: a man in his late 40s with salt-and-pepper short hair and a stubble beard, in a plain navy wetsuit, standing up on a plain white surfboard on a small green wave right after the pop-up, Mediterranean sea, warm afternoon light, subject centered, realistic anatomy and board, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary surf photograph, front view: a young man in his late 20s with a red buzz cut and freckles, in a plain black wetsuit, lying prone on a plain white surfboard paddling hard into an approaching wave, intense focused eyes looking forward, Mediterranean sea, late afternoon light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary photograph on a sandy beach at sunset: a smartphone mounted on a small black tripod standing in the sand in the foreground, pointing at the sea, and far out a small surfer riding a wave in warm golden light, shallow depth of field, no text, no logos"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary photograph at sunset on a Mediterranean beach: a woman in her 50s with short white hair wrapped in a beige towel poncho sitting on the sand after a surf session, smiling quietly and looking at the sea, her surfboard standing upright stuck in the sand behind her, warm golden light, small waves, calm mood, no text, no logos, no flags, no signs"
+

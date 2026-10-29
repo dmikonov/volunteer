@@ -1,0 +1,27 @@
+SOURCES for p17 (Generated P17 Hebrew Carousel Images)
+============================================================
+
+Slides 1-5 generated using Google Imagen 3 via Antigravity generate_image tool. Slide 7 (final) replaced 29.10, generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical surf photo taken from a wide sandy beach looking out toward distant ocean waves breaking far offshore, calm coastal horizon, natural light, no logos, 8k quality"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical surf photo from the sand dunes showing only the white spray and topmost crest of an ocean wave breaking behind the horizon line, scale obscured, sunny natural coastal light, 8k quality"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical surf photo of an ocean wave breaking 100 meters out at sea, telephoto perspective compressing distance, making the wave appear smaller than it is, documentary surf photo, 8k quality"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical surf photo of an empty clean peeling ocean wave with no surfers on it, clean barrel face, ambiguous scale without reference, natural morning ocean lighting, 8k quality"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical surf photo of an adult surfer riding cleanly on an ocean wave face that reaches waist to chest high, clear human body scale against wave height, sunny natural light, no logos, 8k quality"
+
+Slide 7 (Final, Z-Image Turbo, 29.10):
+Prompt: "Photorealistic horizontal documentary surf photograph: two clearly different adult surfers standing on a sandy Mediterranean beach checking the waves, seen from behind and slightly to the side. On the left a tall man in his 40s with short grey hair and a beard in a black full wetsuit holding a plain white unbranded longboard upright; on the right a shorter woman in her early 30s with a dark ponytail in a navy wetsuit with a plain unbranded shortboard under her arm. Medium-sized waves breaking offshore, warm morning light, natural colors, no text, no logos, no flags, no signs"
+

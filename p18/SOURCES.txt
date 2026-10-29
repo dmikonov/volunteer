@@ -1,0 +1,27 @@
+SOURCES for p18 (Generated P18 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Google Imagen 3 via Antigravity generate_image tool.
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical surf photograph of an adult male surfer in his late 30s standing confident on a sandy beach holding an unbranded surfboard under his arm, looking toward gentle ocean waves, morning sunlight, athletic build, authentic documentary coastal surf photography, no logos, no text, 8k quality"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical surf photo of an adult female surfer in her late 30s kneeling on the sand waxing an unbranded surfboard, authentic coastal lighting, focused relaxed expression, clean wetsuit, no logos, documentary surf photography, 8k quality"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical surf photo of an adult male surfer in his early 40s doing a dynamic shoulder and torso stretch routine on a sandy beach beside his surfboard, ocean surf in background, authentic morning light, focused routine, clean unbranded wetsuit, documentary surf photography, 8k quality"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical surf photo of an adult female surfer in her late 30s carrying a wide rounded high-volume mid-length surfboard walking toward the ocean shoreline, side view, natural morning light, clean surfboard rails and single fin, no logos, documentary surf photo, 8k quality"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical surf photo of an adult male surfer in his late 30s riding a clean open wave face during dawn patrol sunrise light, smooth relaxed trimming style, morning glow, ocean mist, no logos, documentary surf photography, 8k quality"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal surf photograph of adult surfers in their 30s and 40s sitting together relaxed on coastal grass dunes with unbranded surfboards watching ocean waves roll in, warm late afternoon sunlight, authentic friendship community surf photography, no logos, no text, 8k quality"
+

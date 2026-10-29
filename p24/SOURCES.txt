@@ -1,0 +1,27 @@
+SOURCES for p24 (Generated P24 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary photograph of a Mediterranean sandy beach the morning after a winter storm: the shoreline reshaped with a fresh sand cliff step, piles of seaweed and driftwood, wet churned sand, waves still rolling in under clearing clouds, a lone surfer, a tall thin man in his 30s with a ginger beard holding his board, standing small in the middle distance looking at the changed beach, no text, no logos, no signs"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary photograph of heavy winter storm waves crashing near a Mediterranean beach, the water churned brown and murky with suspended sand, thick foam, dark grey sky, strong wind, no people, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary photograph: a woman in her 40s with a short grey-streaked black pixie cut and brown skin, in a plain black wetsuit, standing on the beach with her surfboard planted upright in the sand beside her, arms crossed, patiently watching the waves to see where they break, seen from behind and slightly to the side, Mediterranean coast, clear morning after a storm, subject centered, realistic anatomy, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical photograph from a high sand dune overlooking a Mediterranean beach: waves break white on the left side and on the right side, and in the middle there is a smooth darker strip of water without breaking waves leading out to sea, cloudy sky, coastal landscape photography, no people"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary surf photograph on a crisp clear morning after a storm: a long clean glassy green wave peeling perfectly over a new sandbar, a single surfer, a curly-haired woman in her late 20s in a plain black wetsuit, riding down the open face, blue sky, Mediterranean sea, realistic anatomy and board, no text, no logos"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary photograph of a Mediterranean sandy beach on a calm clear morning a few days after a winter storm: smooth clean waves, a line of dried seaweed along the high-tide mark, fresh sand terraces, soft golden light, empty beach with no people, no text, no logos, no flags, no signs"
+

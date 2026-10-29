@@ -1,0 +1,27 @@
+SOURCES for p27 (Generated P27 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary surf photograph: a woman in her 30s with a dark bun and olive skin, in a plain black wetsuit, sitting on her surfboard in moderate sea, calmly raising one arm straight up high above her head to signal toward the beach, composed face, other hand holding the board rail, Mediterranean sea, overcast light, subject centered, realistic anatomy, exactly two arms, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary photograph: a lifeguard, a man in his 40s with a grey crew cut, wearing a plain red t-shirt with no print and a sun hat, standing on a wooden lifeguard tower on a Mediterranean beach watching the surfers in the sea through binoculars, waves and small surfers in the distance, windy day, no text, no logos, no signs, no flags"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary photograph taken with a telephoto lens: a surfer, a man in his 30s with long dark hair, sitting on his surfboard, waving one arm high above his head from side to side, looking toward the shore, the other hand on the board, Mediterranean sea, soft overcast light, subject centered, plain black wetsuit, realistic anatomy, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary surf photograph: a man in his late 40s with a white beard and a tanned bald head, in a plain black wetsuit, sitting on his surfboard in calm water, smiling, with only his right hand resting flat on the top of his head and the elbow pointing out to the side, his left hand resting on the board, Mediterranean sea, bright light, subject centered, realistic anatomy, exactly two arms, no text, no logos"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary surf photograph: a woman with short bleached hair, in a plain black wetsuit, calmly floating in the water holding onto her surfboard with both arms draped over the deck, chin up, relaxed breathing, leash attached to her ankle, calm sea behind, Mediterranean light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary surf photograph: two clearly different friends sitting side by side on the sand after surfing, a tall man in his 50s with grey hair and a younger woman in her 30s with a black ponytail, both in plain black wetsuits, laughing together, their two surfboards on the sand, calm sea with small waves behind, warm late afternoon light, no text, no logos, no flags"
+
