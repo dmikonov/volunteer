@@ -11,6 +11,7 @@ cut k8155537 0.3 3.6 0.50 0.55 ch_chest
 cut k8154896 0.0 3.6 0.42 0.45 ch_eyes
 cut k8154903 3.3 3.8 0.52 0.56 ch_hook
 cut k8154903 6.8 3.6 0.55 0.55 ch_deep
+cut k8155537 4.0 4.2 0.52 0.55 ch_pull
 cut k8155541 7.0 3.6 0.52 0.52 ch_speed
 cut k8154483 5.0 3.2 0.33 0.33 ch_save
 ffmpeg -v error -y -ss 22.3 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/en_c.png
