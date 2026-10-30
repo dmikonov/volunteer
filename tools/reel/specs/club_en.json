@@ -1,0 +1,178 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "en",
+ "out": "reel_club_en.mp4",
+ "lines": [
+  "Guess how long a coach spends reviewing ten students.",
+  "Watch, pause, rewind, type notes.",
+  "About two hours a night.",
+  "With Surf Tribe Club, it goes like this.",
+  "Pick the student and film from the beach.",
+  "The AI scores the ride and finds the main fix.",
+  "Add a few words and send.",
+  "Every student gets notes on their phone.",
+  "Send this to a coach who still edits at night.",
+  "Tomorrow: weight on your front foot."
+ ],
+ "titles": {
+  "L1": [
+   "10 students",
+   "How long on video?",
+   null,
+   null
+  ],
+  "L2": [
+   "Watch, pause,",
+   "rewind, type",
+   null,
+   null
+  ],
+  "L3": [
+   "About 2 hours",
+   "every night",
+   null,
+   null
+  ],
+  "L4": [
+   "SurfTribe Club",
+   null,
+   null,
+   null
+  ],
+  "L9": [
+   "Send to a coach",
+   "who edits at night",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow",
+  "Weight on your front foot"
+ ],
+ "extra": [],
+ "gap": 0.15,
+ "gap_after": {
+  "L3": 0.2,
+  "L8": 0.2,
+  "L9": 0.2
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L9": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_night.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cy": [
+     0.42,
+     0.42
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_night.mp4",
+    "a": 1.9,
+    "z": 1.35,
+    "cx": [
+     0.6,
+     0.6
+    ],
+    "cy": [
+     0.38,
+     0.38
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_coach.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_film_en.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_card_en.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_note_en.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_list_en.mp4",
+    "a": 0.0,
+    "dd": 1.4
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_ride.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_coach2.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_tmrw_en.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
+ },
+ "edge": true,
+ "rate": "-10%"
+}

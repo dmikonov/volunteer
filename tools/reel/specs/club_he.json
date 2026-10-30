@@ -1,0 +1,186 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "he",
+ "out": "reel_club_he.mp4",
+ "lines": [
+  "נחשו כמה זמן מאמן גלישה יושב על סרטונים של עשרה תלמידים.",
+  "עוצרים, מחזירים אחורה, וכותבים הערות לתלמיד.",
+  "יוצא בערך שעתיים בערב.",
+  "בסרף טרייב קלאב עושים את זה אחרת.",
+  "בוחרים תלמיד ומצלמים אותו ישר מהחוף.",
+  "המערכת נותנת ציון לגל ומוצאת את הטעות העיקרית.",
+  "אתם מוסיפים משפט אחד, ושולחים לתלמיד.",
+  "ככה הקבוצה מקבלת הערות, ישר לטלפון.",
+  "תשלחו את זה למאמן שעדיין עורך סרטונים בלילה.",
+  "מחר, איך מורידים זפת מהרגליים."
+ ],
+ "titles": {
+  "L1": [
+   "10 תלמידים",
+   "כמה זמן על וידאו?",
+   null,
+   null
+  ],
+  "L2": [
+   "עוצרים, מחזירים,",
+   "כותבים",
+   null,
+   null
+  ],
+  "L3": [
+   "בערך שעתיים",
+   "בערב",
+   null,
+   null
+  ],
+  "L4": [
+   "SurfTribe Club",
+   null,
+   null,
+   null
+  ],
+  "L9": [
+   "תשלחו למאמן",
+   "שעורך בלילה",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "מחר",
+  "איך מורידים זפת מהרגליים"
+ ],
+ "extra": [
+  {
+   "k": "FOLLOW",
+   "line": "L1",
+   "d0": 1.6,
+   "d1": 3.6,
+   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:640px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
+  }
+ ],
+ "gap": 0.2,
+ "gap_after": {
+  "L3": 0.2,
+  "L8": 0.2,
+  "L9": 0.2
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L9": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_night.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cy": [
+     0.42,
+     0.42
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_night.mp4",
+    "a": 1.9,
+    "z": 1.35,
+    "cx": [
+     0.6,
+     0.6
+    ],
+    "cy": [
+     0.38,
+     0.38
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_coach.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_film_he.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_card_he.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_note_he.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/cl_list_he.mp4",
+    "a": 0.0,
+    "dd": 1.4
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_ride.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_coach2.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/cl_tmrw_he.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "בסרף טרייב קלאב": "ב-SurfTribe Club",
+  "סרף טרייב": "SurfTribe"
+ },
+ "f5": true
+}
