@@ -18,7 +18,7 @@
  "out": "reel_club_en.mp4",
  "lines": [
   "Guess how long a coach spends reviewing ten students.",
-  "Watch, pause, rewind, type notes.",
+  "You watch, pause, rewind and type notes.",
   "About two hours a night.",
   "With Surf Tribe Club, it goes like this.",
   "Pick the student and film from the beach.",
@@ -26,7 +26,7 @@
   "Add a few words and send.",
   "Every student gets notes on their phone.",
   "Send this to a coach who still edits at night.",
-  "Tomorrow: weight on your front foot."
+  "Tomorrow: stop standing on the tail."
  ],
  "titles": {
   "L1": [
@@ -58,11 +58,35 @@
    "who edits at night",
    null,
    null
+  ],
+  "L5": [
+   "Film from the beach",
+   null,
+   null,
+   null
+  ],
+  "L6": [
+   "Score + main fix",
+   null,
+   null,
+   null
+  ],
+  "L7": [
+   "A few words, send",
+   null,
+   null,
+   null
+  ],
+  "L8": [
+   "Notes on their phone",
+   null,
+   null,
+   null
   ]
  },
  "teaser": [
   "Tomorrow",
-  "Weight on your front foot"
+  "Stop standing on the tail"
  ],
  "extra": [],
  "gap": 0.15,
@@ -72,17 +96,21 @@
   "L9": 0.2
  },
  "ttop": {
-  "L1": 380,
-  "L2": 380,
-  "L3": 380,
-  "L4": 380,
-  "L9": 380
+  "L1": 1180,
+  "L2": 1180,
+  "L3": 1180,
+  "L4": 1180,
+  "L5": 230,
+  "L6": 230,
+  "L7": 230,
+  "L8": 230,
+  "L9": 1180
  },
  "plan": {
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/cl_hook.mp4",
+    "src": "/s17/gen/cl_coach.mp4",
     "a": 0.0
    }
   ],
@@ -117,8 +145,17 @@
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/cl_coach.mp4",
-    "a": 0.0
+    "src": "/s17/gen/cl_hook.mp4",
+    "a": 0.5,
+    "z": 1.4,
+    "cx": [
+     0.45,
+     0.45
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
    }
   ],
   "L5": [
@@ -174,5 +211,5 @@
   "Surf Tribe": "SurfTribe"
  },
  "edge": true,
- "rate": "-10%"
+ "rate": "-14%"
 }

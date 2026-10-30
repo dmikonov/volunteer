@@ -58,6 +58,30 @@
    "שעורך בלילה",
    null,
    null
+  ],
+  "L5": [
+   "מצלמים מהחוף",
+   null,
+   null,
+   null
+  ],
+  "L6": [
+   "ציון וטעות עיקרית",
+   null,
+   null,
+   null
+  ],
+  "L7": [
+   "משפט אחד ושולחים",
+   null,
+   null,
+   null
+  ],
+  "L8": [
+   "הערות ישר לטלפון",
+   null,
+   null,
+   null
   ]
  },
  "teaser": [
@@ -68,9 +92,9 @@
   {
    "k": "FOLLOW",
    "line": "L1",
-   "d0": 1.6,
+   "d0": 1.4,
    "d1": 3.6,
-   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:640px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
+   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:1560px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
   }
  ],
  "gap": 0.2,
@@ -80,17 +104,21 @@
   "L9": 0.2
  },
  "ttop": {
-  "L1": 380,
-  "L2": 380,
-  "L3": 380,
-  "L4": 380,
-  "L9": 380
+  "L1": 1180,
+  "L2": 1180,
+  "L3": 1180,
+  "L4": 1180,
+  "L5": 230,
+  "L6": 230,
+  "L7": 230,
+  "L8": 230,
+  "L9": 1180
  },
  "plan": {
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/cl_hook.mp4",
+    "src": "/s17/gen/cl_coach.mp4",
     "a": 0.0
    }
   ],
@@ -125,8 +153,17 @@
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/cl_coach.mp4",
-    "a": 0.0
+    "src": "/s17/gen/cl_hook.mp4",
+    "a": 0.5,
+    "z": 1.4,
+    "cx": [
+     0.45,
+     0.45
+    ],
+    "cy": [
+     0.55,
+     0.55
+    ]
    }
   ],
   "L5": [
