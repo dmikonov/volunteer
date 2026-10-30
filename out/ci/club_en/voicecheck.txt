@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=0.94 wps=2.51 dur=3.58 | ref: Guess how long a coach spends reviewing ten students. | asr: Guess how long a coach spends reviewing 10 students?
+L2 OK match=1.00 wps=1.64 dur=3.06 | ref: Watch, pause, rewind, type notes. | asr: Watch, pause, rewind type notes.
+L3 OK match=1.00 wps=3.43 dur=1.46 | ref: About two hours a night. | asr: About two hours a night.
+L4 OK match=1.00 wps=3.84 dur=2.08 | ref: With Surf Tribe Club, it goes like this. | asr: With Surf Tribe Club, it goes like this.
+L5 OK match=0.94 wps=3.31 dur=2.42 | ref: Pick the student and film from the beach. | asr: Pick the student and film from a beach.
+L6 OK match=1.00 wps=2.76 dur=3.63 | ref: The AI scores the ride and finds the main fix. | asr: The AI scores the ride and finds the main fix.
+L7 OK match=1.00 wps=3.72 dur=1.61 | ref: Add a few words and send. | asr: Add a few words and send.
+L8 OK match=1.00 wps=3.07 dur=2.28 | ref: Every student gets notes on their phone. | asr: Every student gets notes on their phone.
+L9 OK match=1.00 wps=4.00 dur=2.50 | ref: Send this to a coach who still edits at night. | asr: Send this to a coach who still edits at night.
+L10 OK match=0.93 wps=2.68 dur=2.24 | ref: Tomorrow: weight on your front foot. | asr: Tomorrow. Wait on your front foot.
+TOTAL wps=2.98 lines_to_check=0

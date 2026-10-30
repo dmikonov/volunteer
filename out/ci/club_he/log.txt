@@ -1,0 +1,19 @@
++ k=/s17/rp/club_he
++ python3 build.py /s17/rp/club_he
+[('L1', '/cl_hook.mp4', 0.0, 4.04, 0.0), ('L2', 'cl_night.mp4', 0.0, 3.309, 4.04), ('L3', 'cl_night.mp4', 1.9, 2.061, 7.349), ('L4', 'cl_coach.mp4', 0.0, 2.147, 9.41), ('L5', '_film_he.mp4', 0.0, 2.637, 11.557), ('L6', '_card_he.mp4', 0.0, 3.858, 14.194), ('L7', '_note_he.mp4', 0.0, 2.765, 18.052), ('L8', '_list_he.mp4', 0.0, 1.4, 20.817), ('L8', '/cl_ride.mp4', 0.0, 1.696, 22.217), ('L9', 'l_coach2.mp4', 0.0, 3.488, 23.913), ('L10', '_tmrw_he.mp4', 0.0, 2.928, 27.401)]
+cat 30.32 T 30.329
++ python3 ov_png.py /s17/rp/club_he
+realcuts True [0.0, 4.04, 7.36, 9.44, 11.6, 14.24, 18.08, 20.84, 23.92, 27.4, 30.329]
+safe-zone violations []
+ovplan 14
++ python3 ov_ff.py /s17/rp/club_he
+done /s17/rp/club_he/reel_club_he.mp4 30.329 lufs before -15.0 gain 0.5
++ python3 trim_tail.py /s17/rp/club_he
+trimmed /s17/rp/club_he/reel_club_he.mp4 29.81
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/club_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/club_he/reel_club_he.mp4
+/s17/rp/club_he/reel_club_he.mp4 before -13.0 after -14.6 peak -3.2
++ python3 post_cz.py /s17/rp/club_he
+post ok
++ echo 'EXIT /s17/rp/club_he 0'
+EXIT /s17/rp/club_he 0

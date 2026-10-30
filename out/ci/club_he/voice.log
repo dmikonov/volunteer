@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.0 dur 5.26 | נחשו כמה זמן מאמן גלישה יושב על סרטונים של עשרה תלמידים.
+take 0 1 wer 0.0 dur 5.26 | נחשו כמה זמן מאמן גלישה יושב על סרטונים של עשרה תלמידים.
+take 1 2 wer 0.167 dur 3.66 | כעוצרים מחזירים אחורה וכותבים הערות לתלמיד.
+take 1 3 wer 0.167 dur 3.66 | איזה עוצרים מחזירים אחורה וכותבים הערות לתלמיד.
+take 2 4 wer 0.0 dur 2.43 | יוצא בערך שעתיים בערב.
+take 2 5 wer 0.25 dur 2.43 | צא בערך שעתיים בערב.
+take 3 6 wer 0.286 dur 2.87 | בסרפטרייב קלאב עושים את זה אחרת.
+take 3 7 wer 0.0 dur 2.87 | בסרף טרייב קלאב עושים את זה אחרת
+take 4 8 wer 0.167 dur 3.19 | איך בוחרים תלמיד ומצלמים אותו ישר מהחוף?
+take 4 9 wer 0.0 dur 3.19 | בוחרים תלמיד ומצלמים אותו ישר מהחוף.
+take 5 10 wer 0.0 dur 4.18 | המערכת נותנת ציון לגל ומוצאת את הטעות העיקרית.
+take 5 11 wer 0.0 dur 4.18 | המערכת נותנת ציון לגל ומוצאת את הטעות העיקרית.
+take 6 12 wer 0.0 dur 3.34 | אתם מוסיפים משפט אחד ושולחים לתלמיד.
+take 6 13 wer 0.0 dur 3.34 | אתם מוסיפים משפט אחד ושולחים לתלמיד.
+take 7 14 wer 0.0 dur 3.45 | ככה הקבוצה מקבלת הערות ישר לטלפון.
+take 7 15 wer 0.0 dur 3.45 | ככה הקבוצה מקבלת הערות ישר לטלפון.
+take 8 16 wer 0.0 dur 4.35 | תשלחו את זה למאמן שעדיין עורך סרטונים בלילה.
+take 8 17 wer 0.0 dur 4.35 | תשלחו את זה למאמן שעדיין עורך סרטונים בלילה.
+take 9 18 wer 0.2 dur 2.63 | איך מורידים זפת מהרגליים?
+take 9 19 wer 0.0 dur 2.63 | מחר איך מורידים זפת מהרגליים?
+PICK 0 wer 0.0 | final fall (-2.2 st, expected fall) | pitch 112 Hz (level -0.5 st) | range 8.7 st | נחשו כמה זמן מאמן גלישה יושב על סרטונים של עשרה תלמידים.
+PICK 1 wer 0.167 | final fall (-2.9 st, expected fall) | pitch 115 Hz (level -0.1 st) | range 12.1 st | כעוצרים מחזירים אחורה וכותבים הערות לתלמיד.
+PICK 2 wer 0.0 | final fall (-3.5 st, expected fall) | pitch 112 Hz (level -0.6 st) | range 15.9 st | יוצא בערך שעתיים בערב.
+PICK 3 wer 0.0 | final fall (-2.4 st, expected fall) | pitch 106 Hz (level -1.5 st) | range 8.7 st | בסרף טרייב קלאב עושים את זה אחרת
+PICK 4 wer 0.0 | final fall (-4.0 st, expected fall) | pitch 103 Hz (level -2.1 st) | range 6.2 st | בוחרים תלמיד ומצלמים אותו ישר מהחוף.
+PICK 5 wer 0.0 | final rise (+5.0 st, expected fall) | pitch 120 Hz (level +0.6 st) | range 7.2 st | המערכת נותנת ציון לגל ומוצאת את הטעות העיקרית.
+PICK 6 wer 0.0 | final fall (-2.1 st, expected fall) | pitch 136 Hz (level +2.8 st) | range 5.6 st | אתם מוסיפים משפט אחד ושולחים לתלמיד.
+PICK 7 wer 0.0 | final fall (-10.0 st, expected fall) | pitch 128 Hz (level +1.8 st) | range 15.0 st | ככה הקבוצה מקבלת הערות ישר לטלפון.
+PICK 8 wer 0.0 | final fall (-5.3 st, expected fall) | pitch 116 Hz (level +0.1 st) | range 9.2 st | תשלחו את זה למאמן שעדיין עורך סרטונים בלילה.
+PICK 9 wer 0.0 | final level (+0.6 st, expected fall) | pitch 105 Hz (level -1.7 st) | range 14.0 st | מחר איך מורידים זפת מהרגליים?
+he f5 T 30.329 [('L1', 0.12, np.float64(3.82), 0.0), ('L2', np.float64(4.14), np.float64(3.11), 0.17), ('L3', np.float64(7.449), np.float64(1.66), 0.0), ('L4', np.float64(9.51), np.float64(1.95), 0.0), ('L5', np.float64(11.657), np.float64(2.44), 0.0), ('L6', np.float64(14.294), np.float64(3.66), 0.0), ('L7', np.float64(18.152), np.float64(2.57), 0.0), ('L8', np.float64(20.917), np.float64(2.7), 0.0), ('L9', np.float64(24.013), np.float64(3.09), 0.0), ('L10', np.float64(27.501), np.float64(1.93), 0.0)]
