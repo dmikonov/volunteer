@@ -1,4 +1,4 @@
-+ '[' -f /s17/gen/fm_app.mp4 ']'
++ '[' -f /s17/gen/fm_far.mp4 ']'
 + G=/s17/gen
 + mkdir -p /s17/gen /tmp/px
 + UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
@@ -46,6 +46,7 @@ curl: (22) The requested URL returned error: 403
 + sp=2
 ++ awk 'BEGIN{print 9.8*2}'
 + ffmpeg -v error -y -ss 0.0 -t 19.6 -i /tmp/px/m15845.mp4 -vf 'setpts=PTS/2,scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.56+(0.56-0.56)*t/9.8)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fm_long.mp4
++ ffmpeg -v error -y -ss 0 -t 19.5 -i /tmp/px/m15845.mp4 -filter_complex '[0]setpts=PTS/2,split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.12[bg];[b]scale=1080:-2:flags=lanczos[fg];[bg][fg]overlay=0:(H-h)/2,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fm_far.mp4
 + ffmpeg -v error -y -i out/ci/d30/gen/fm_board_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/fm_board.mp4
 + ffmpeg -v error -y -i out/ci/d30/gen/fm_film_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/fm_film.mp4
 + ffmpeg -v error -y -ss 12.0 -t 5.0 -i app-screens/ScreenRecording_09-28-2026_10-56-35_1_4.mp4 -vf crop=1080:1920:0:240,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/fm_app.mp4
@@ -58,6 +59,10 @@ curl: (22) The requested URL returned error: 403
 ++ basename /s17/gen/fm_board.mp4 .mp4
 + n=fm_board
 + ffmpeg -v error -y -i /s17/gen/fm_board.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_board.jpg
++ for f in $G/fm_*.mp4
+++ basename /s17/gen/fm_far.mp4 .mp4
++ n=fm_far
++ ffmpeg -v error -y -i /s17/gen/fm_far.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_far.jpg
 + for f in $G/fm_*.mp4
 ++ basename /s17/gen/fm_film.mp4 .mp4
 + n=fm_film
@@ -74,19 +79,21 @@ curl: (22) The requested URL returned error: 403
 ++ basename /s17/gen/fm_ride.mp4 .mp4
 + n=fm_ride
 + ffmpeg -v error -y -i /s17/gen/fm_ride.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_fm_ride.jpg
-+ ls -la /s17/gen/fm_app.mp4 /s17/gen/fm_board.mp4 /s17/gen/fm_film.mp4 /s17/gen/fm_hook.mp4 /s17/gen/fm_long.mp4 /s17/gen/fm_ride.mp4
--rw-r--r-- 1 runner runner  1069426 Oct 30 00:01 /s17/gen/fm_app.mp4
--rw-r--r-- 1 runner runner  2674954 Oct 30 00:01 /s17/gen/fm_board.mp4
--rw-r--r-- 1 runner runner  3812326 Oct 30 00:01 /s17/gen/fm_film.mp4
--rw-r--r-- 1 runner runner  9853121 Oct 30 00:00 /s17/gen/fm_hook.mp4
--rw-r--r-- 1 runner runner 17897877 Oct 30 00:01 /s17/gen/fm_long.mp4
--rw-r--r-- 1 runner runner  8605338 Oct 30 00:01 /s17/gen/fm_ride.mp4
-total 42904
-drwxr-xr-x 2 runner root       4096 Oct 30 00:01 .
-drwxr-xr-x 3 runner root       4096 Oct 30 00:00 ..
--rw-r--r-- 1 runner runner  1069426 Oct 30 00:01 fm_app.mp4
--rw-r--r-- 1 runner runner  2674954 Oct 30 00:01 fm_board.mp4
--rw-r--r-- 1 runner runner  3812326 Oct 30 00:01 fm_film.mp4
--rw-r--r-- 1 runner runner  9853121 Oct 30 00:00 fm_hook.mp4
--rw-r--r-- 1 runner runner 17897877 Oct 30 00:01 fm_long.mp4
--rw-r--r-- 1 runner runner  8605338 Oct 30 00:01 fm_ride.mp4
++ ls -la /s17/gen/fm_app.mp4 /s17/gen/fm_board.mp4 /s17/gen/fm_far.mp4 /s17/gen/fm_film.mp4 /s17/gen/fm_hook.mp4 /s17/gen/fm_long.mp4 /s17/gen/fm_ride.mp4
+-rw-r--r-- 1 runner runner  1069426 Oct 30 00:15 /s17/gen/fm_app.mp4
+-rw-r--r-- 1 runner runner  2673640 Oct 30 00:14 /s17/gen/fm_board.mp4
+-rw-r--r-- 1 runner runner 13852059 Oct 30 00:14 /s17/gen/fm_far.mp4
+-rw-r--r-- 1 runner runner  3809029 Oct 30 00:15 /s17/gen/fm_film.mp4
+-rw-r--r-- 1 runner runner  9852697 Oct 30 00:14 /s17/gen/fm_hook.mp4
+-rw-r--r-- 1 runner runner 17890620 Oct 30 00:14 /s17/gen/fm_long.mp4
+-rw-r--r-- 1 runner runner  8605479 Oct 30 00:14 /s17/gen/fm_ride.mp4
+total 56416
+drwxr-xr-x 2 runner root       4096 Oct 30 00:15 .
+drwxr-xr-x 3 runner root       4096 Oct 30 00:13 ..
+-rw-r--r-- 1 runner runner  1069426 Oct 30 00:15 fm_app.mp4
+-rw-r--r-- 1 runner runner  2673640 Oct 30 00:14 fm_board.mp4
+-rw-r--r-- 1 runner runner 13852059 Oct 30 00:14 fm_far.mp4
+-rw-r--r-- 1 runner runner  3809029 Oct 30 00:15 fm_film.mp4
+-rw-r--r-- 1 runner runner  9852697 Oct 30 00:14 fm_hook.mp4
+-rw-r--r-- 1 runner runner 17890620 Oct 30 00:14 fm_long.mp4
+-rw-r--r-- 1 runner runner  8605479 Oct 30 00:14 fm_ride.mp4
