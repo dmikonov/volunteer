@@ -8,5 +8,5 @@
 
   True peak:
     Peak:       -2.5 dBFS
-[out#0/null @ 0x605e4dc5f940] video:307KiB audio:5664KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame=  755 fps=473 q=-0.0 Lsize=N/A time=00:00:30.20 bitrate=N/A speed=18.9x elapsed=0:00:01.59    
+frame=  742 fps=495 q=-0.0 size=N/A time=00:00:29.68 bitrate=N/A speed=19.8x elapsed=0:00:01.50    [out#0/null @ 0x60ce79cd4940] video:307KiB audio:5664KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  755 fps=500 q=-0.0 Lsize=N/A time=00:00:30.20 bitrate=N/A speed=  20x elapsed=0:00:01.51    
