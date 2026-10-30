@@ -1,0 +1,144 @@
++ '[' -f /s17/gen/ch_tmrw.mp4 ']'
++ G=/s17/gen
++ mkdir -p /s17/gen /tmp/px
++ UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
++ for id in 8155537 8154896 8154903 8154483 8155541
++ '[' -s /tmp/px/k8155537.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8155537.mp4 https://videos.pexels.com/video-files/8155537/8155537-uhd_2560_1440_25fps.mp4
++ for id in 8155537 8154896 8154903 8154483 8155541
++ '[' -s /tmp/px/k8154896.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154896.mp4 https://videos.pexels.com/video-files/8154896/8154896-uhd_2560_1440_25fps.mp4
++ for id in 8155537 8154896 8154903 8154483 8155541
++ '[' -s /tmp/px/k8154903.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154903.mp4 https://videos.pexels.com/video-files/8154903/8154903-uhd_2560_1440_25fps.mp4
++ for id in 8155537 8154896 8154903 8154483 8155541
++ '[' -s /tmp/px/k8154483.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154483.mp4 https://videos.pexels.com/video-files/8154483/8154483-uhd_2560_1440_25fps.mp4
++ for id in 8155537 8154896 8154903 8154483 8155541
++ '[' -s /tmp/px/k8155541.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8155541.mp4 https://videos.pexels.com/video-files/8155541/8155541-uhd_2560_1440_25fps.mp4
++ ffmpeg -v error -y -i out/ci/d30/gen/ch_err16_raw.mp4 -filter_complex '[0]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.12[bg];[b]scale=1080:-2:flags=lanczos[fg];[bg][fg]overlay=0:(H-h)/2,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_err.mp4
++ cut k8154483 0.0 2.5 0.36 0.36 ch_fix
++ src=k8154483
++ ss=0.0
++ t=2.5
++ c0=0.36
++ c1=0.36
++ n=ch_fix
++ ffmpeg -v error -y -ss 0.0 -t 2.5 -i /tmp/px/k8154483.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.36+(0.36-0.36)*t/2.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_fix.mp4
++ cut k8155537 0.3 3.6 0.50 0.55 ch_chest
++ src=k8155537
++ ss=0.3
++ t=3.6
++ c0=0.50
++ c1=0.55
++ n=ch_chest
++ ffmpeg -v error -y -ss 0.3 -t 3.6 -i /tmp/px/k8155537.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.55-0.50)*t/3.6)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_chest.mp4
++ cut k8154896 0.0 3.6 0.42 0.45 ch_eyes
++ src=k8154896
++ ss=0.0
++ t=3.6
++ c0=0.42
++ c1=0.45
++ n=ch_eyes
++ ffmpeg -v error -y -ss 0.0 -t 3.6 -i /tmp/px/k8154896.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.42+(0.45-0.42)*t/3.6)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_eyes.mp4
++ cut k8154903 3.3 3.8 0.52 0.56 ch_hook
++ src=k8154903
++ ss=3.3
++ t=3.8
++ c0=0.52
++ c1=0.56
++ n=ch_hook
++ ffmpeg -v error -y -ss 3.3 -t 3.8 -i /tmp/px/k8154903.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.52+(0.56-0.52)*t/3.8)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_hook.mp4
++ cut k8154903 6.8 3.6 0.55 0.55 ch_deep
++ src=k8154903
++ ss=6.8
++ t=3.6
++ c0=0.55
++ c1=0.55
++ n=ch_deep
++ ffmpeg -v error -y -ss 6.8 -t 3.6 -i /tmp/px/k8154903.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.55+(0.55-0.55)*t/3.6)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_deep.mp4
++ cut k8155541 7.0 3.6 0.52 0.52 ch_speed
++ src=k8155541
++ ss=7.0
++ t=3.6
++ c0=0.52
++ c1=0.52
++ n=ch_speed
++ ffmpeg -v error -y -ss 7.0 -t 3.6 -i /tmp/px/k8155541.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.52+(0.52-0.52)*t/3.6)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_speed.mp4
++ cut k8154483 5.0 3.2 0.33 0.33 ch_save
++ src=k8154483
++ ss=5.0
++ t=3.2
++ c0=0.33
++ c1=0.33
++ n=ch_save
++ ffmpeg -v error -y -ss 5.0 -t 3.2 -i /tmp/px/k8154483.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.33+(0.33-0.33)*t/3.2)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_save.mp4
++ ffmpeg -v error -y -ss 22.3 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/en_c.png
++ ffmpeg -v error -y -loop 1 -t 4 -i /tmp/en_c.png -vf crop=1080:1920:0:428,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/ch_app.mp4
++ ffmpeg -v error -y -ss 2.0 -t 4 -i app-screens/ScreenRecording_09-29-2026_13-41-14_1.mp4 -vf crop=1080:1920:0:240,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/ch_tmrw.mp4
++ mkdir -p out/ci/d30/review
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_app.mp4 .mp4
++ n=ch_app
++ ffmpeg -v error -y -i /s17/gen/ch_app.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_app.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_chest.mp4 .mp4
++ n=ch_chest
++ ffmpeg -v error -y -i /s17/gen/ch_chest.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_chest.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_deep.mp4 .mp4
++ n=ch_deep
++ ffmpeg -v error -y -i /s17/gen/ch_deep.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_deep.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_err.mp4 .mp4
++ n=ch_err
++ ffmpeg -v error -y -i /s17/gen/ch_err.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_err.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_eyes.mp4 .mp4
++ n=ch_eyes
++ ffmpeg -v error -y -i /s17/gen/ch_eyes.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_eyes.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_fix.mp4 .mp4
++ n=ch_fix
++ ffmpeg -v error -y -i /s17/gen/ch_fix.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_fix.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_hook.mp4 .mp4
++ n=ch_hook
++ ffmpeg -v error -y -i /s17/gen/ch_hook.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_hook.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_save.mp4 .mp4
++ n=ch_save
++ ffmpeg -v error -y -i /s17/gen/ch_save.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_save.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_speed.mp4 .mp4
++ n=ch_speed
++ ffmpeg -v error -y -i /s17/gen/ch_speed.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_speed.jpg
++ for f in $G/ch_*.mp4
+++ basename /s17/gen/ch_tmrw.mp4 .mp4
++ n=ch_tmrw
++ ffmpeg -v error -y -i /s17/gen/ch_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_tmrw.jpg
++ ls -la /s17/gen/ch_app.mp4 /s17/gen/ch_chest.mp4 /s17/gen/ch_deep.mp4 /s17/gen/ch_err.mp4 /s17/gen/ch_eyes.mp4 /s17/gen/ch_fix.mp4 /s17/gen/ch_hook.mp4 /s17/gen/ch_save.mp4 /s17/gen/ch_speed.mp4 /s17/gen/ch_tmrw.mp4
+-rw-r--r-- 1 runner runner   182269 Oct 30 00:33 /s17/gen/ch_app.mp4
+-rw-r--r-- 1 runner runner  8582006 Oct 30 00:33 /s17/gen/ch_chest.mp4
+-rw-r--r-- 1 runner runner  8570061 Oct 30 00:33 /s17/gen/ch_deep.mp4
+-rw-r--r-- 1 runner runner  3066637 Oct 30 00:33 /s17/gen/ch_err.mp4
+-rw-r--r-- 1 runner runner  7003167 Oct 30 00:33 /s17/gen/ch_eyes.mp4
+-rw-r--r-- 1 runner runner  6397839 Oct 30 00:33 /s17/gen/ch_fix.mp4
+-rw-r--r-- 1 runner runner 10202400 Oct 30 00:33 /s17/gen/ch_hook.mp4
+-rw-r--r-- 1 runner runner  7563550 Oct 30 00:33 /s17/gen/ch_save.mp4
+-rw-r--r-- 1 runner runner  8438516 Oct 30 00:33 /s17/gen/ch_speed.mp4
+-rw-r--r-- 1 runner runner   650076 Oct 30 00:33 /s17/gen/ch_tmrw.mp4
+total 59260
+drwxr-xr-x 2 runner root       4096 Oct 30 00:33 .
+drwxr-xr-x 3 runner root       4096 Oct 30 00:32 ..
+-rw-r--r-- 1 runner runner   182269 Oct 30 00:33 ch_app.mp4
+-rw-r--r-- 1 runner runner  8582006 Oct 30 00:33 ch_chest.mp4
+-rw-r--r-- 1 runner runner  8570061 Oct 30 00:33 ch_deep.mp4
+-rw-r--r-- 1 runner runner  3066637 Oct 30 00:33 ch_err.mp4
+-rw-r--r-- 1 runner runner  7003167 Oct 30 00:33 ch_eyes.mp4
+-rw-r--r-- 1 runner runner  6397839 Oct 30 00:33 ch_fix.mp4
+-rw-r--r-- 1 runner runner 10202400 Oct 30 00:33 ch_hook.mp4
+-rw-r--r-- 1 runner runner  7563550 Oct 30 00:33 ch_save.mp4
+-rw-r--r-- 1 runner runner  8438516 Oct 30 00:33 ch_speed.mp4
+-rw-r--r-- 1 runner runner   650076 Oct 30 00:33 ch_tmrw.mp4

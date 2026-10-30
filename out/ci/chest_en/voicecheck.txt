@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.40 dur=4.17 | ref: Paddling like crazy and not moving? Your arms are fine. | asr: paddling like crazy and not moving, your arms are fine.
+L2 OK match=1.00 wps=2.44 dur=3.28 | ref: Lying flat, your arms just slap the water. | asr: Lying flat, your arms just slap the water.
+L3 OK match=1.00 wps=1.86 dur=1.08 | ref: Easy fix. | asr: Easy fix.
+L4 OK match=1.00 wps=3.12 dur=3.21 | ref: Lift your chest a little, like a seal looking up. | asr: Lift your chest a little, like a seal looking up.
+L5 OK match=1.00 wps=3.20 dur=2.50 | ref: Eyes on the horizon, not on the board. | asr: Eyes on the horizon, not on the board.
+L6 OK match=1.00 wps=2.80 dur=3.93 | ref: Now every stroke goes deep, all the way to your hip. | asr: Now, every stroke goes deep all the way to your hip.
+L7 OK match=1.00 wps=3.39 dur=2.65 | ref: That's the speed you need to actually catch waves. | asr: That's the speed you need to actually catch waves.
+L8 OK match=1.00 wps=2.56 dur=5.07 | ref: Not sure? Film a wave and ask the AI coach in Surf Tribe. | asr: Not sure? Film a wave and ask the AI coach in Surf Tribe.
+L9 OK match=1.00 wps=4.01 dur=1.75 | ref: Save this for your next paddle out. | asr: Save this for your next paddle out.
+L10 OK match=0.95 wps=1.97 dur=4.57 | ref: Tomorrow: how long a coach spends reviewing ten students. | asr: Tomorrow, how long a coach spends reviewing 10 students?
+TOTAL wps=2.70 lines_to_check=0

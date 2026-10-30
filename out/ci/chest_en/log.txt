@@ -1,0 +1,19 @@
++ k=/s17/rp/chest_en
++ python3 build.py /s17/rp/chest_en
+[('L1', '/ch_hook.mp4', 0.0, 4.344, 0.0), ('L2', 'n/ch_err.mp4', 0.0, 3.629, 4.344), ('L3', 'n/ch_err.mp4', 1.4, 1.228, 7.973), ('L4', 'ch_chest.mp4', 0.0, 3.358, 9.201), ('L5', '/ch_eyes.mp4', 0.0, 2.648, 12.559), ('L6', '/ch_deep.mp4', 0.0, 4.083, 15.207), ('L7', 'ch_speed.mp4', 0.0, 3.004, 19.29), ('L8', 'n/ch_app.mp4', 0.0, 5.219, 22.294), ('L9', '/ch_save.mp4', 0.0, 2.095, 27.513), ('L10', '/ch_tmrw.mp4', 0.0, 5.572, 29.608)]
+cat 35.16 T 35.18
++ python3 ov_png.py /s17/rp/chest_en
+realcuts True [0.0, 4.36, 8.0, 9.24, 12.6, 15.24, 19.32, 22.32, 27.52, 29.6, 35.18]
+safe-zone violations [('TL1c', [230, 850, 220, 501]), ('TL4c', [230, 850, 220, 408]), ('TL5c', [230, 850, 220, 408]), ('TL6c', [230, 850, 220, 501]), ('TL7c', [230, 850, 220, 408]), ('TL8c', [230, 850, 220, 408]), ('TL9c', [230, 850, 220, 501])]
+ovplan 24
++ python3 ov_ff.py /s17/rp/chest_en
+done /s17/rp/chest_en/reel_chest_en.mp4 35.18 lufs before -15.0 gain 0.5
++ python3 trim_tail.py /s17/rp/chest_en
+trimmed /s17/rp/chest_en/reel_chest_en.mp4 34.68
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/chest_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/chest_en/reel_chest_en.mp4
+/s17/rp/chest_en/reel_chest_en.mp4 before -13.0 after -14.6 peak -2.3
++ python3 post_cz.py /s17/rp/chest_en
+post ok
++ echo 'EXIT /s17/rp/chest_en 0'
+EXIT /s17/rp/chest_en 0
