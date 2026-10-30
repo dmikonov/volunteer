@@ -1,18 +1,18 @@
 + k=/s17/rp/film_he
 + python3 build.py /s17/rp/film_he
-[('L1', '/fm_hook.mp4', 0.0, 4.611, 0.0), ('L2', '/fm_hook.mp4', 3.6, 4.038, 4.611), ('L3', 'm_friend.mp4', 0.0, 2.229, 8.649), ('L4', '/fm_film.mp4', 0.0, 2.721, 10.878), ('L5', '/fm_ride.mp4', 0.2, 0.9, 13.599), ('L5', '/fm_ride.mp4', 1.1, 1.553, 14.499), ('L6', '/fm_long.mp4', 0.0, 3.18, 16.052), ('L7', '/fm_ride.mp4', 2.4, 1.87, 19.232), ('L8', 'n/fm_app.mp4', 0.5, 2.914, 21.102), ('L9', 'm_friend.mp4', 0.0, 3.134, 24.016), ('L10', 'fm_board.mp4', 0.0, 3.62, 27.15)]
+[('L1', '/fm_long.mp4', 0.0, 4.611, 0.0), ('L2', '/fm_long.mp4', 4.4, 4.038, 4.611), ('L3', '/fm_hook.mp4', 0.5, 2.229, 8.649), ('L4', '/fm_film.mp4', 0.0, 2.721, 10.878), ('L5', '/fm_ride.mp4', 0.2, 0.9, 13.599), ('L5', '/fm_ride.mp4', 1.1, 1.553, 14.499), ('L6', '/fm_long.mp4', 8.0, 3.18, 16.052), ('L7', '/fm_ride.mp4', 2.4, 1.87, 19.232), ('L8', 'n/fm_app.mp4', 0.5, 2.914, 21.102), ('L9', '/fm_hook.mp4', 4.0, 3.134, 24.016), ('L10', 'fm_board.mp4', 0.0, 3.62, 27.15)]
 cat 30.84 T 30.77
 + python3 ov_png.py /s17/rp/film_he
 realcuts True [0.0, 4.6, 8.64, 10.88, 13.6, 16.08, 19.28, 21.16, 24.08, 27.2, 30.77]
 safe-zone violations []
 ovplan 22
 + python3 ov_ff.py /s17/rp/film_he
-done /s17/rp/film_he/reel_film_he.mp4 30.77 lufs before -15.1 gain 0.6
+done /s17/rp/film_he/reel_film_he.mp4 30.77 lufs before -15.2 gain 0.7
 + python3 trim_tail.py /s17/rp/film_he
 trimmed /s17/rp/film_he/reel_film_he.mp4 30.2
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/film_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/film_he/reel_film_he.mp4
-/s17/rp/film_he/reel_film_he.mp4 before -13.1 after -14.5 peak -2.6
+/s17/rp/film_he/reel_film_he.mp4 before -13.0 after -14.5 peak -2.5
 + python3 post_cz.py /s17/rp/film_he
 post ok
 + echo 'EXIT /s17/rp/film_he 0'
