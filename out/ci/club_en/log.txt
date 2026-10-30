@@ -1,18 +1,18 @@
 + k=/s17/rp/club_en
 + python3 build.py /s17/rp/club_en
-[('L1', '/cl_hook.mp4', 0.0, 3.754, 0.0), ('L2', 'cl_night.mp4', 0.0, 3.207, 3.754), ('L3', 'cl_night.mp4', 1.9, 1.81, 6.961), ('L4', 'cl_coach.mp4', 0.0, 2.234, 8.771), ('L5', '_film_en.mp4', 0.0, 2.568, 11.005), ('L6', '_card_en.mp4', 0.0, 3.776, 13.573), ('L7', '_note_en.mp4', 0.0, 1.762, 17.349), ('L8', '_list_en.mp4', 0.0, 1.4, 19.111), ('L8', '/cl_ride.mp4', 0.0, 1.229, 20.511), ('L9', 'l_coach2.mp4', 0.0, 2.851, 21.74), ('L10', '_tmrw_en.mp4', 0.0, 3.237, 24.591)]
-cat 27.8 T 27.828
+[('L1', 'cl_coach.mp4', 0.0, 3.595, 0.0), ('L2', 'cl_night.mp4', 0.0, 3.793, 3.595), ('L3', 'cl_night.mp4', 1.9, 1.943, 7.388), ('L4', '/cl_hook.mp4', 0.5, 2.732, 9.331), ('L5', '_film_en.mp4', 0.0, 2.877, 12.063), ('L6', '_card_en.mp4', 0.0, 3.75, 14.94), ('L7', '_note_en.mp4', 0.0, 1.816, 18.69), ('L8', '_list_en.mp4', 0.0, 1.4, 20.506), ('L8', '/cl_ride.mp4', 0.0, 1.27, 21.906), ('L9', 'l_coach2.mp4', 0.0, 2.946, 23.176), ('L10', '_tmrw_en.mp4', 0.0, 3.567, 26.122)]
+cat 29.72 T 29.689
 + python3 ov_png.py /s17/rp/club_en
-realcuts True [0.0, 3.76, 6.96, 8.76, 11.0, 13.56, 17.32, 19.08, 21.72, 24.56, 27.828]
-safe-zone violations []
-ovplan 13
+realcuts True [0.0, 3.6, 7.4, 9.36, 12.08, 14.96, 18.72, 20.52, 23.2, 26.16, 29.689]
+safe-zone violations [('TL1c', [230, 850, 1180, 1461]), ('TL2c', [230, 850, 1180, 1461]), ('TL3c', [230, 850, 1180, 1461]), ('TL9c', [230, 850, 1180, 1555])]
+ovplan 21
 + python3 ov_ff.py /s17/rp/club_en
-done /s17/rp/club_en/reel_club_en.mp4 27.828 lufs before -15.1 gain 0.6
+done /s17/rp/club_en/reel_club_en.mp4 29.689 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/club_en
-trimmed /s17/rp/club_en/reel_club_en.mp4 27.33
+trimmed /s17/rp/club_en/reel_club_en.mp4 29.19
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/club_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/club_en/reel_club_en.mp4
-/s17/rp/club_en/reel_club_en.mp4 before -13.0 after -14.5 peak -3.2
+/s17/rp/club_en/reel_club_en.mp4 before -13.0 after -14.5 peak -2.8
 + python3 post_cz.py /s17/rp/club_en
 post ok
 + echo 'EXIT /s17/rp/club_en 0'

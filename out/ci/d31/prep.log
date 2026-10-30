@@ -1,4 +1,4 @@
-+ '[' -f /s17/gen/cl_hook.mp4 ']'
++ '[' -f /s17/gen/cl_list_he.mp4 ']'
 + G=/s17/gen
 + mkdir -p /s17/gen /tmp/px out/ci/d31/review
 + UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
@@ -72,86 +72,85 @@
 + n=cl_tmrw_he
 + ffmpeg -v error -y -ss 0.5 -t 3.5 -i /tmp/px/p8678056.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.45-0.45)*t/3.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/cl_tmrw_he.mp4
 + ffmpeg -v error -y -i /tmp/px/night.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/cl_night.mp4
-+ app 13-52-20_1 19.6 3.0 864 1536 108 230 cl_film_en
++ rm -f '/s17/gen/cl_film_*' '/s17/gen/cl_card_*' '/s17/gen/cl_note_*' '/s17/gen/cl_list_*'
++ app 13-52-20_1 19.6 3.2 330 cl_film_en
 + f=13-52-20_1
 + ss=19.6
-+ t=3.0
-+ w=864
-+ h=1536
-+ x=108
-+ y=230
++ t=3.2
++ y=330
 + n=cl_film_en
-+ ffmpeg -v error -y -ss 19.6 -t 3.0 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -vf crop=864:1536:108:230,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_film_en.mp4
-+ app 13-52-20_1 25.2 2.6 936 1664 72 300 cl_card_en
++ still=
++ '[' -n '' ']'
++ ffmpeg -v error -y -ss 19.6 -t 3.2 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -vf crop=1000:1444:40:330,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_film_en.mp4
++ app 13-52-20_1 25.3 3.6 540 cl_card_en 1
 + f=13-52-20_1
-+ ss=25.2
-+ t=2.6
-+ w=936
-+ h=1664
-+ x=72
-+ y=300
++ ss=25.3
++ t=3.6
++ y=540
 + n=cl_card_en
-+ ffmpeg -v error -y -ss 25.2 -t 2.6 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -vf crop=936:1664:72:300,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_card_en.mp4
-+ app 13-52-20_1 28.3 1.6 864 1536 108 560 cl_note_en
++ still=1
++ '[' -n 1 ']'
++ ffmpeg -v error -y -ss 25.3 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -frames:v 1 /tmp/px/cl_card_en.png
++ ffmpeg -v error -y -loop 1 -t 3.6 -i /tmp/px/cl_card_en.png -vf crop=1000:1444:40:540,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_card_en.mp4
++ app 13-52-20_1 28.5 3.0 600 cl_note_en 1
 + f=13-52-20_1
-+ ss=28.3
-+ t=1.6
-+ w=864
-+ h=1536
-+ x=108
-+ y=560
++ ss=28.5
++ t=3.0
++ y=600
 + n=cl_note_en
-+ ffmpeg -v error -y -ss 28.3 -t 1.6 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -vf crop=864:1536:108:560,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_note_en.mp4
-+ app 13-52-20_1 23.0 1.9 982 1745 49 200 cl_list_en
++ still=1
++ '[' -n 1 ']'
++ ffmpeg -v error -y -ss 28.5 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -frames:v 1 /tmp/px/cl_note_en.png
++ ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/cl_note_en.png -vf crop=1000:1444:40:600,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_note_en.mp4
++ app 13-52-20_1 23.2 2.0 220 cl_list_en 1
 + f=13-52-20_1
-+ ss=23.0
-+ t=1.9
-+ w=982
-+ h=1745
-+ x=49
-+ y=200
++ ss=23.2
++ t=2.0
++ y=220
 + n=cl_list_en
-+ ffmpeg -v error -y -ss 23.0 -t 1.9 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -vf crop=982:1745:49:200,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_list_en.mp4
-+ app 09-22-08_1 16.5 4.0 864 1536 108 230 cl_film_he
++ still=1
++ '[' -n 1 ']'
++ ffmpeg -v error -y -ss 23.2 -i app-screens/ScreenRecording_09-29-2026_13-52-20_1.mp4 -frames:v 1 /tmp/px/cl_list_en.png
++ ffmpeg -v error -y -loop 1 -t 2.0 -i /tmp/px/cl_list_en.png -vf crop=1000:1444:40:220,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_list_en.mp4
++ app 09-22-08_1 16.5 4.0 330 cl_film_he
 + f=09-22-08_1
 + ss=16.5
 + t=4.0
-+ w=864
-+ h=1536
-+ x=108
-+ y=230
++ y=330
 + n=cl_film_he
-+ ffmpeg -v error -y -ss 16.5 -t 4.0 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -vf crop=864:1536:108:230,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_film_he.mp4
-+ app 09-22-08_1 9.2 2.6 936 1664 72 280 cl_card_he
++ still=
++ '[' -n '' ']'
++ ffmpeg -v error -y -ss 16.5 -t 4.0 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -vf crop=1000:1444:40:330,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_film_he.mp4
++ app 09-22-08_1 9.6 3.6 440 cl_card_he 1
 + f=09-22-08_1
-+ ss=9.2
-+ t=2.6
-+ w=936
-+ h=1664
-+ x=72
-+ y=280
++ ss=9.6
++ t=3.6
++ y=440
 + n=cl_card_he
-+ ffmpeg -v error -y -ss 9.2 -t 2.6 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -vf crop=936:1664:72:280,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_card_he.mp4
-+ app 09-22-08_1 9.2 2.6 864 1536 108 640 cl_note_he
++ still=1
++ '[' -n 1 ']'
++ ffmpeg -v error -y -ss 9.6 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -frames:v 1 /tmp/px/cl_card_he.png
++ ffmpeg -v error -y -loop 1 -t 3.6 -i /tmp/px/cl_card_he.png -vf crop=1000:1444:40:440,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_card_he.mp4
++ app 09-22-08_1 9.6 3.0 720 cl_note_he 1
 + f=09-22-08_1
-+ ss=9.2
-+ t=2.6
-+ w=864
-+ h=1536
-+ x=108
-+ y=640
++ ss=9.6
++ t=3.0
++ y=720
 + n=cl_note_he
-+ ffmpeg -v error -y -ss 9.2 -t 2.6 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -vf crop=864:1536:108:640,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_note_he.mp4
-+ app 09-22-08_1 6.2 1.9 982 1745 49 200 cl_list_he
++ still=1
++ '[' -n 1 ']'
++ ffmpeg -v error -y -ss 9.6 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -frames:v 1 /tmp/px/cl_note_he.png
++ ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/cl_note_he.png -vf crop=1000:1444:40:720,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_note_he.mp4
++ app 09-22-08_1 6.6 2.0 240 cl_list_he 1
 + f=09-22-08_1
-+ ss=6.2
-+ t=1.9
-+ w=982
-+ h=1745
-+ x=49
-+ y=200
++ ss=6.6
++ t=2.0
++ y=240
 + n=cl_list_he
-+ ffmpeg -v error -y -ss 6.2 -t 1.9 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -vf crop=982:1745:49:200,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_list_he.mp4
++ still=1
++ '[' -n 1 ']'
++ ffmpeg -v error -y -ss 6.6 -i app-screens/ScreenRecording_09-29-2026_09-22-08_1.mp4 -frames:v 1 /tmp/px/cl_list_he.png
++ ffmpeg -v error -y -loop 1 -t 2.0 -i /tmp/px/cl_list_he.png -vf crop=1000:1444:40:240,scale=1080:1560:flags=lanczos,pad=1080:1920:0:350:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/cl_list_he.mp4
 + for f in $G/cl_*.mp4
 ++ basename /s17/gen/cl_card_en.mp4 .mp4
 + n=cl_card_en
@@ -213,36 +212,36 @@
 + n=cl_tmrw_he
 + ffmpeg -v error -y -i /s17/gen/cl_tmrw_he.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31/review/cut_cl_tmrw_he.jpg
 + ls -la /s17/gen/cl_card_en.mp4 /s17/gen/cl_card_he.mp4 /s17/gen/cl_coach.mp4 /s17/gen/cl_coach2.mp4 /s17/gen/cl_film_en.mp4 /s17/gen/cl_film_he.mp4 /s17/gen/cl_hook.mp4 /s17/gen/cl_list_en.mp4 /s17/gen/cl_list_he.mp4 /s17/gen/cl_night.mp4 /s17/gen/cl_note_en.mp4 /s17/gen/cl_note_he.mp4 /s17/gen/cl_ride.mp4 /s17/gen/cl_tmrw_en.mp4 /s17/gen/cl_tmrw_he.mp4
--rw-r--r-- 1 runner runner  618449 Oct 30 23:12 /s17/gen/cl_card_en.mp4
--rw-r--r-- 1 runner runner  322421 Oct 30 23:12 /s17/gen/cl_card_he.mp4
--rw-r--r-- 1 runner runner 6904864 Oct 30 23:11 /s17/gen/cl_coach.mp4
--rw-r--r-- 1 runner runner 5210594 Oct 30 23:12 /s17/gen/cl_coach2.mp4
--rw-r--r-- 1 runner runner  186905 Oct 30 23:12 /s17/gen/cl_film_en.mp4
--rw-r--r-- 1 runner runner   77973 Oct 30 23:12 /s17/gen/cl_film_he.mp4
--rw-r--r-- 1 runner runner 7071247 Oct 30 23:11 /s17/gen/cl_hook.mp4
--rw-r--r-- 1 runner runner  580594 Oct 30 23:12 /s17/gen/cl_list_en.mp4
--rw-r--r-- 1 runner runner  102109 Oct 30 23:12 /s17/gen/cl_list_he.mp4
--rw-r--r-- 1 runner runner 3069663 Oct 30 23:12 /s17/gen/cl_night.mp4
--rw-r--r-- 1 runner runner  407317 Oct 30 23:12 /s17/gen/cl_note_en.mp4
--rw-r--r-- 1 runner runner  297243 Oct 30 23:12 /s17/gen/cl_note_he.mp4
--rw-r--r-- 1 runner runner 7601013 Oct 30 23:11 /s17/gen/cl_ride.mp4
--rw-r--r-- 1 runner runner 7516218 Oct 30 23:11 /s17/gen/cl_tmrw_en.mp4
--rw-r--r-- 1 runner runner 6606951 Oct 30 23:12 /s17/gen/cl_tmrw_he.mp4
-total 45520
-drwxr-xr-x 2 runner root      4096 Oct 30 23:12 .
-drwxr-xr-x 3 runner root      4096 Oct 30 23:11 ..
--rw-r--r-- 1 runner runner  618449 Oct 30 23:12 cl_card_en.mp4
--rw-r--r-- 1 runner runner  322421 Oct 30 23:12 cl_card_he.mp4
--rw-r--r-- 1 runner runner 6904864 Oct 30 23:11 cl_coach.mp4
--rw-r--r-- 1 runner runner 5210594 Oct 30 23:12 cl_coach2.mp4
--rw-r--r-- 1 runner runner  186905 Oct 30 23:12 cl_film_en.mp4
--rw-r--r-- 1 runner runner   77973 Oct 30 23:12 cl_film_he.mp4
--rw-r--r-- 1 runner runner 7071247 Oct 30 23:11 cl_hook.mp4
--rw-r--r-- 1 runner runner  580594 Oct 30 23:12 cl_list_en.mp4
--rw-r--r-- 1 runner runner  102109 Oct 30 23:12 cl_list_he.mp4
--rw-r--r-- 1 runner runner 3069663 Oct 30 23:12 cl_night.mp4
--rw-r--r-- 1 runner runner  407317 Oct 30 23:12 cl_note_en.mp4
--rw-r--r-- 1 runner runner  297243 Oct 30 23:12 cl_note_he.mp4
--rw-r--r-- 1 runner runner 7601013 Oct 30 23:11 cl_ride.mp4
--rw-r--r-- 1 runner runner 7516218 Oct 30 23:11 cl_tmrw_en.mp4
--rw-r--r-- 1 runner runner 6606951 Oct 30 23:12 cl_tmrw_he.mp4
+-rw-r--r-- 1 runner runner   86050 Oct 30 23:28 /s17/gen/cl_card_en.mp4
+-rw-r--r-- 1 runner runner   58447 Oct 30 23:29 /s17/gen/cl_card_he.mp4
+-rw-r--r-- 1 runner runner 6905675 Oct 30 23:28 /s17/gen/cl_coach.mp4
+-rw-r--r-- 1 runner runner 5209581 Oct 30 23:28 /s17/gen/cl_coach2.mp4
+-rw-r--r-- 1 runner runner  199729 Oct 30 23:28 /s17/gen/cl_film_en.mp4
+-rw-r--r-- 1 runner runner   68650 Oct 30 23:29 /s17/gen/cl_film_he.mp4
+-rw-r--r-- 1 runner runner 7072138 Oct 30 23:28 /s17/gen/cl_hook.mp4
+-rw-r--r-- 1 runner runner  101971 Oct 30 23:28 /s17/gen/cl_list_en.mp4
+-rw-r--r-- 1 runner runner   86503 Oct 30 23:29 /s17/gen/cl_list_he.mp4
+-rw-r--r-- 1 runner runner 3066876 Oct 30 23:28 /s17/gen/cl_night.mp4
+-rw-r--r-- 1 runner runner   89399 Oct 30 23:28 /s17/gen/cl_note_en.mp4
+-rw-r--r-- 1 runner runner   63360 Oct 30 23:29 /s17/gen/cl_note_he.mp4
+-rw-r--r-- 1 runner runner 7602355 Oct 30 23:28 /s17/gen/cl_ride.mp4
+-rw-r--r-- 1 runner runner 7512444 Oct 30 23:28 /s17/gen/cl_tmrw_en.mp4
+-rw-r--r-- 1 runner runner 6607314 Oct 30 23:28 /s17/gen/cl_tmrw_he.mp4
+total 43720
+drwxr-xr-x 2 runner root      4096 Oct 30 23:29 .
+drwxr-xr-x 3 runner root      4096 Oct 30 23:27 ..
+-rw-r--r-- 1 runner runner   86050 Oct 30 23:28 cl_card_en.mp4
+-rw-r--r-- 1 runner runner   58447 Oct 30 23:29 cl_card_he.mp4
+-rw-r--r-- 1 runner runner 6905675 Oct 30 23:28 cl_coach.mp4
+-rw-r--r-- 1 runner runner 5209581 Oct 30 23:28 cl_coach2.mp4
+-rw-r--r-- 1 runner runner  199729 Oct 30 23:28 cl_film_en.mp4
+-rw-r--r-- 1 runner runner   68650 Oct 30 23:29 cl_film_he.mp4
+-rw-r--r-- 1 runner runner 7072138 Oct 30 23:28 cl_hook.mp4
+-rw-r--r-- 1 runner runner  101971 Oct 30 23:28 cl_list_en.mp4
+-rw-r--r-- 1 runner runner   86503 Oct 30 23:29 cl_list_he.mp4
+-rw-r--r-- 1 runner runner 3066876 Oct 30 23:28 cl_night.mp4
+-rw-r--r-- 1 runner runner   89399 Oct 30 23:28 cl_note_en.mp4
+-rw-r--r-- 1 runner runner   63360 Oct 30 23:29 cl_note_he.mp4
+-rw-r--r-- 1 runner runner 7602355 Oct 30 23:28 cl_ride.mp4
+-rw-r--r-- 1 runner runner 7512444 Oct 30 23:28 cl_tmrw_en.mp4
+-rw-r--r-- 1 runner runner 6607314 Oct 30 23:28 cl_tmrw_he.mp4
