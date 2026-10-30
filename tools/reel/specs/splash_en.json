@@ -1,0 +1,189 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "en",
+ "out": "reel_splash_en.mp4",
+ "lines": [
+  "Stop splashing. That's why you miss waves.",
+  "A slap on the surface pushes water, not you.",
+  "Three fixes.",
+  "One: fingertips in first, by the nose.",
+  "Two: pull deep, back to your hip.",
+  "Three: long strokes, not fast ones.",
+  "Film one paddle and ask the coach in Surf Tribe.",
+  "Quiet hands, and the board keeps gliding.",
+  "Save this for your next paddle out.",
+  "Tomorrow: booties and a hood for cold water."
+ ],
+ "titles": {
+  "L1": [
+   "Stop splashing",
+   null,
+   null,
+   null
+  ],
+  "L2": [
+   "Splash pushes water,",
+   "not you",
+   null,
+   null
+  ],
+  "L3": [
+   "Three fixes",
+   null,
+   null,
+   null
+  ],
+  "L4": [
+   "1  Fingertips in",
+   "by the nose",
+   null,
+   null
+  ],
+  "L5": [
+   "2  Pull back",
+   "to your hip",
+   null,
+   null
+  ],
+  "L6": [
+   "3  Long,",
+   "not fast",
+   null,
+   null
+  ],
+  "L8": [
+   "Quiet hands,",
+   "fast board",
+   null,
+   null
+  ],
+  "L9": [
+   "Save it for your",
+   "next paddle out",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow",
+  "Booties and a hood"
+ ],
+ "extra": [],
+ "gap": 0.15,
+ "gap_after": {
+  "L2": 0.2,
+  "L8": 0.2,
+  "L9": 0.2
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L8": 380,
+  "L9": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_slap.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_three.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_tips.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_pull.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_long.mp4",
+    "a": 0.0,
+    "z": 1.5,
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/sp_coach.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_glide.mp4",
+    "a": 0.0,
+    "z": 1.3,
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_save.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/sp_tmrw.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
+ },
+ "edge": true,
+ "rate": "-10%"
+}
