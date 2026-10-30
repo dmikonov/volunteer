@@ -54,7 +54,7 @@
   ],
   "L3": [
    "איך מצלמים",
-   "חבר כמו שצריך?",
+   "חבר?",
    null,
    null
   ],
@@ -103,9 +103,8 @@
   {
    "k": "RING1",
    "line": "L1",
-   "d0": 0.3,
-   "d1": 2.6,
-   "html": "<div style='position:absolute;left:455px;top:1025px;width:170px;height:170px;border-radius:50%;border:12px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
+   "d0": 2.4,
+   "html": "<div style='position:absolute;left:518px;top:956px;width:130px;height:130px;border-radius:50%;border:10px solid #00E4FF;box-shadow:0 0 0 3px rgba(45,36,42,.45)'></div>"
   }
  ],
  "gap": 0.2,
@@ -118,24 +117,30 @@
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_long.mp4",
-    "a": 0.0
+    "src": "/s17/gen/fm_far.mp4",
+    "a": 0.0,
+    "z": 3.5,
+    "cx": [
+     0.56,
+     0.555
+    ],
+    "cy": [
+     0.527,
+     0.527
+    ],
+    "dd": 2.2
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fm_far.mp4",
+    "a": 2.2
    }
   ],
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_long.mp4",
-    "a": 4.4,
-    "z": 3.0,
-    "cx": [
-     0.48,
-     0.46
-    ],
-    "cy": [
-     0.6,
-     0.6
-    ]
+    "src": "/s17/gen/fm_far.mp4",
+    "a": 4.4
    }
   ],
   "L3": [
@@ -178,16 +183,7 @@
    {
     "kind": "gen",
     "src": "/s17/gen/fm_long.mp4",
-    "a": 8.0,
-    "z": 1.3,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.6,
-     0.6
-    ]
+    "a": 7.0
    }
   ],
   "L7": [

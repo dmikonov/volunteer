@@ -1,6 +1,6 @@
 # 30.10 film a friend (HE): real stock + one Wan clip (the man filming at the water's edge, Z-Image seed 301030).
 # Pexels 4782364 (Waikiki wide, surfers small) and 4782485 (same session, a ride) by Taryn Elliott, free licence; Mixkit 15845, 1069, 1220 free licence.
-[ -f /s17/gen/fm_app.mp4 ] && exit 0
+[ -f /s17/gen/fm_far.mp4 ] && exit 0
 G=/s17/gen; mkdir -p $G /tmp/px
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
 for id in 4782364 4782485; do [ -s /tmp/px/p$id.mp4 ] || curl -sSfL -A "$UA" -m 300 -o /tmp/px/p$id.mp4 https://videos.pexels.com/video-files/$id/$id-uhd_2560_1440_30fps.mp4; done
@@ -10,6 +10,7 @@ cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6; sp=${7:-1}
 cut p4782364 1.0 7.0 0.45 0.45 fm_hook
 cut p4782485 0.0 5.0 0.76 0.70 fm_ride
 cut m15845 0.0 9.8 0.56 0.56 fm_long 2
+ffmpeg -v error -y -ss 0 -t 19.5 -i /tmp/px/m15845.mp4 -filter_complex "[0]setpts=PTS/2,split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.12[bg];[b]scale=1080:-2:flags=lanczos[fg];[bg][fg]overlay=0:(H-h)/2,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/fm_far.mp4
 ffmpeg -v error -y -i out/ci/d30/gen/fm_board_raw.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/fm_board.mp4
 ffmpeg -v error -y -i out/ci/d30/gen/fm_film_raw.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/fm_film.mp4
 # app: upload flow, HE recording 28.09 (1_4): 12-17 s choose the video and "who is the surfer" (0-8 s has private photos: never)
