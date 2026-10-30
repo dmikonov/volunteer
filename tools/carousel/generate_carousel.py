@@ -87,7 +87,7 @@ def render_cover(img_b64, lang, kicker, title, slide_num=1, total_slides=8, bala
         <div style="position: absolute; left: 0; right: 0; top: 700px; height: 270px; background: linear-gradient(to bottom, rgba(45,36,42,0) 0%, rgba(45,36,42,0.95) 100%);"></div>
         <div style="position: absolute; left: 0; right: 0; top: 970px; bottom: 0; background: #2D242A;"></div>
         
-        <div style="position: absolute; {logo_pos} z-index: 10; background: rgba(45,36,42,0.8); padding: 14px 26px; border-radius: 18px; backdrop-filter: blur(8px);">
+        <div style="position: absolute; {logo_pos} z-index: 10; filter: drop-shadow(0 2px 3px rgba(45,36,42,0.85)) drop-shadow(0 6px 16px rgba(45,36,42,0.6));">
             {logo_html(lang)}
         </div>
         
@@ -236,7 +236,7 @@ def render_final(img_b64, lang, save_text, tomorrow_text, slide_num, total_slide
                     {tomorrow_html}
 
                     <div style="display: inline-block;">
-                        <div style="background: #00CDFE; color: #16101A; font-family: 'Rubik', sans-serif; font-size: 40px; font-weight: 800; padding: 20px 48px; border-radius: 46px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 28px rgba(0, 205, 254, 0.35);">
+                        <div style="background: #00CDFE; color: #16101A; font-family: 'Rubik', sans-serif; font-size: 40px; font-weight: 800; padding: 20px 48px; border-radius: 46px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 28px rgba(22, 16, 26, 0.45);">
                             {pill_content}
                         </div>
                         <div style="font-family: 'Rubik', sans-serif; font-size: 28px; font-weight: 600; color: rgba(245, 241, 247, 0.6); margin-top: 14px; text-align: inherit;">

@@ -26,8 +26,8 @@ def teaser_html(img_b64, kicker, title):
  <div style="position:relative;flex:1;min-height:0">
   <img src="data:image/jpeg;base64,{img_b64}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%">
   <div style="position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(to bottom,rgba(45,36,42,0),#2D242A)"></div>
-  <div style="position:absolute;right:48px;top:40px;background:rgba(45,36,42,.8);padding:14px 26px;border-radius:18px">{g.logo_html('HE')}</div>
-  <div style="position:absolute;left:24px;top:22px;font-family:Rubik,sans-serif;font-size:18px;color:#fff;background:rgba(45,36,42,.6);padding:4px 10px;border-radius:8px" dir="rtl">התמונה נוצרה ב-AI</div>
+  <div style="position:absolute;right:48px;top:40px;filter:drop-shadow(0 2px 3px rgba(45,36,42,.85)) drop-shadow(0 6px 16px rgba(45,36,42,.6))">{g.logo_html('HE')}</div>
+  <div style="position:absolute;left:24px;top:22px;font-family:Rubik,sans-serif;font-size:18px;color:rgba(255,255,255,.75);text-shadow:0 1px 4px rgba(0,0,0,.9)" dir="rtl">התמונה נוצרה ב-AI</div>
  </div>
  <div dir="rtl" style="padding:10px 64px 64px;text-align:right">
   <div style="font-family:Rubik,sans-serif;font-weight:700;font-size:44px;color:#00CDFE;margin-bottom:14px;text-wrap:balance">{kicker}</div>
