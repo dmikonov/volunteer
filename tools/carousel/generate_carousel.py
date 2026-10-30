@@ -176,12 +176,12 @@ def render_idea(img_b64, lang, num_str, title, body, slide_num, total_slides=8, 
     </body>"""
 
 def render_recap(lang, header_title, bullets, slide_num, total_slides, balance=False):
-    tw = "text-wrap: pretty;" if balance else ""
+    tw = "text-wrap: balance;"
     bullet_cards = []
     for b in bullets:
         border_side = "border-right: 6px solid #00CDFE;"
-        card = f"""<div style="background: rgba(255, 255, 255, 0.045); border-radius: 20px; {border_side} padding: 34px 40px; margin-bottom: 24px; direction: rtl; text-align: right;">
-            <div style="font-family: 'Rubik', sans-serif; font-size: 46px; font-weight: 500; color: #F5F1F7; line-height: 1.32; {tw}">
+        card = f"""<div style="background: rgba(255, 255, 255, 0.045); border-radius: 20px; {border_side} padding: 44px 44px; margin-bottom: 28px; direction: rtl; text-align: right;">
+            <div style="font-family: 'Rubik', sans-serif; font-size: 54px; font-weight: 500; color: #F5F1F7; line-height: 1.32; {tw}">
                 {b}
             </div>
         </div>"""
@@ -191,19 +191,18 @@ def render_recap(lang, header_title, bullets, slide_num, total_slides, balance=F
     
     return CSS_HEAD + f"""<body>
         <div style="width: 1080px; height: 1350px; background: #2D242A; padding: 70px 80px 50px 80px; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
-            <div>
-                <div style="text-align: right;">
-                    {logo_html(lang)}
-                </div>
-                <div style="font-family: 'Rubik', sans-serif; font-size: 84px; font-weight: 800; color: #00CDFE; margin-top: 40px; margin-bottom: 40px; direction: rtl; text-align: right;">
+            <div style="text-align: right;">
+                {logo_html(lang)}
+            </div>
+
+            <!-- 30.10 (QA BUG #9): title and cards centred as one group between the logo and the footer -->
+            <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center;">
+                <div style="font-family: 'Rubik', sans-serif; font-size: 84px; font-weight: 800; color: #00CDFE; margin-bottom: 40px; direction: rtl; text-align: right;">
                     {header_title}
                 </div>
-            </div>
-            
-            <div style="margin-top: -20px;">
                 {cards_html}
             </div>
-            
+
             <div>
                 {footer_html(lang, slide_num, total_slides)}
             </div>
@@ -222,9 +221,10 @@ def render_final(img_b64, lang, save_text, tomorrow_text, slide_num, total_slide
         tomorrow_html = """<div style="height: 22px;"></div>"""
 
     return CSS_HEAD + f"""<body>
-        <div style="width: 1080px; height: 1350px; background: #2D242A; padding: 60px 80px 44px 80px; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
-            <div>
-                <div style="width: 920px; height: 460px; border-radius: 28px; overflow: hidden; position: relative; box-shadow: 0 16px 40px rgba(0,0,0,0.45);">
+        <div style="width: 1080px; height: 1350px; background: #2D242A; padding: 60px 80px 44px 80px; display: flex; flex-direction: column; position: relative;">
+            <!-- 29.10 (QA BUG #9): the photo takes the free height, so the CTA does not leave an empty bottom third -->
+            <div style="flex: 1 1 auto; min-height: 460px; display: flex; flex-direction: column;">
+                <div style="width: 920px; flex: 1 1 auto; min-height: 460px; border-radius: 28px; overflow: hidden; position: relative; box-shadow: 0 16px 40px rgba(0,0,0,0.45);">
                     <img src="data:image/jpeg;base64,{img_b64}" style="width: 100%; height: 100%; object-fit: cover;">
                     {ai_tag_html(lang, on_right=False)}
                 </div>
@@ -246,7 +246,7 @@ def render_final(img_b64, lang, save_text, tomorrow_text, slide_num, total_slide
                 </div>
             </div>
             
-            <div>
+            <div style="height: 90px;">
                 {footer_html(lang, slide_num, total_slides)}
             </div>
         </div>
