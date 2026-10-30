@@ -1,18 +1,18 @@
 + k=/s17/rp/chest_en
 + python3 build.py /s17/rp/chest_en
-[('L1', '/ch_hook.mp4', 0.0, 4.344, 0.0), ('L2', 'n/ch_err.mp4', 0.0, 3.629, 4.344), ('L3', 'n/ch_err.mp4', 1.4, 1.228, 7.973), ('L4', 'ch_chest.mp4', 0.0, 3.358, 9.201), ('L5', '/ch_eyes.mp4', 0.0, 2.648, 12.559), ('L6', '/ch_deep.mp4', 0.0, 4.083, 15.207), ('L7', 'ch_speed.mp4', 0.0, 3.004, 19.29), ('L8', 'n/ch_app.mp4', 0.0, 5.219, 22.294), ('L9', '/ch_save.mp4', 0.0, 2.095, 27.513), ('L10', '/ch_tmrw.mp4', 0.0, 5.572, 29.608)]
-cat 35.16 T 35.18
+[('L1', 'n/ch_err.mp4', 0.0, 1.6, 0.0), ('L1', '/ch_deep.mp4', 0.0, 1.998, 1.6), ('L2', 'n/ch_err.mp4', 0.0, 4.104, 3.598), ('L3', 'n/ch_err.mp4', 1.4, 1.173, 7.702), ('L4', 'ch_chest.mp4', 0.0, 2.872, 8.875), ('L5', '/ch_eyes.mp4', 0.0, 2.613, 11.747), ('L6', '/ch_hook.mp4', 1.6, 4.162, 14.36), ('L7', 'ch_speed.mp4', 0.0, 2.936, 18.522), ('L8', 'n/ch_app.mp4', 0.0, 5.29, 21.458), ('L9', '/ch_save.mp4', 0.0, 1.971, 26.748), ('L10', '/ch_tmrw.mp4', 0.0, 4.061, 28.719)]
+cat 32.76 T 32.78
 + python3 ov_png.py /s17/rp/chest_en
-realcuts True [0.0, 4.36, 8.0, 9.24, 12.6, 15.24, 19.32, 22.32, 27.52, 29.6, 35.18]
-safe-zone violations [('TL1c', [230, 850, 220, 501]), ('TL4c', [230, 850, 220, 408]), ('TL5c', [230, 850, 220, 408]), ('TL6c', [230, 850, 220, 501]), ('TL7c', [230, 850, 220, 408]), ('TL8c', [230, 850, 220, 408]), ('TL9c', [230, 850, 220, 501])]
+realcuts True [0.0, 3.6, 7.72, 8.88, 11.76, 14.36, 18.52, 21.44, 26.72, 28.68, 32.78]
+safe-zone violations [('TL8c', [230, 850, 220, 408])]
 ovplan 24
 + python3 ov_ff.py /s17/rp/chest_en
-done /s17/rp/chest_en/reel_chest_en.mp4 35.18 lufs before -15.0 gain 0.5
+done /s17/rp/chest_en/reel_chest_en.mp4 32.78 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/chest_en
-trimmed /s17/rp/chest_en/reel_chest_en.mp4 34.68
+trimmed /s17/rp/chest_en/reel_chest_en.mp4 32.28
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/chest_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/chest_en/reel_chest_en.mp4
-/s17/rp/chest_en/reel_chest_en.mp4 before -13.0 after -14.6 peak -2.3
+/s17/rp/chest_en/reel_chest_en.mp4 before -13.0 after -14.6 peak -3.1
 + python3 post_cz.py /s17/rp/chest_en
 post ok
 + echo 'EXIT /s17/rp/chest_en 0'

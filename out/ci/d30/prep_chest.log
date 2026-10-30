@@ -76,7 +76,7 @@
 + ffmpeg -v error -y -ss 5.0 -t 3.2 -i /tmp/px/k8154483.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.33+(0.33-0.33)*t/3.2)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/ch_save.mp4
 + ffmpeg -v error -y -ss 22.3 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/en_c.png
 + ffmpeg -v error -y -loop 1 -t 4 -i /tmp/en_c.png -vf crop=1080:1920:0:428,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/ch_app.mp4
-+ ffmpeg -v error -y -ss 2.0 -t 4 -i app-screens/ScreenRecording_09-29-2026_13-41-14_1.mp4 -vf crop=1080:1920:0:240,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/ch_tmrw.mp4
++ ffmpeg -v error -y -ss 18.0 -t 4 -i app-screens/ScreenRecording_09-29-2026_13-41-14_1.mp4 -vf crop=1080:1920:0:240,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/ch_tmrw.mp4
 + mkdir -p out/ci/d30/review
 + for f in $G/ch_*.mp4
 ++ basename /s17/gen/ch_app.mp4 .mp4
@@ -119,26 +119,26 @@
 + n=ch_tmrw
 + ffmpeg -v error -y -i /s17/gen/ch_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d30/review/cut_ch_tmrw.jpg
 + ls -la /s17/gen/ch_app.mp4 /s17/gen/ch_chest.mp4 /s17/gen/ch_deep.mp4 /s17/gen/ch_err.mp4 /s17/gen/ch_eyes.mp4 /s17/gen/ch_fix.mp4 /s17/gen/ch_hook.mp4 /s17/gen/ch_save.mp4 /s17/gen/ch_speed.mp4 /s17/gen/ch_tmrw.mp4
--rw-r--r-- 1 runner runner   182269 Oct 30 00:33 /s17/gen/ch_app.mp4
--rw-r--r-- 1 runner runner  8582006 Oct 30 00:33 /s17/gen/ch_chest.mp4
--rw-r--r-- 1 runner runner  8570061 Oct 30 00:33 /s17/gen/ch_deep.mp4
--rw-r--r-- 1 runner runner  3066637 Oct 30 00:33 /s17/gen/ch_err.mp4
--rw-r--r-- 1 runner runner  7003167 Oct 30 00:33 /s17/gen/ch_eyes.mp4
--rw-r--r-- 1 runner runner  6397839 Oct 30 00:33 /s17/gen/ch_fix.mp4
--rw-r--r-- 1 runner runner 10202400 Oct 30 00:33 /s17/gen/ch_hook.mp4
--rw-r--r-- 1 runner runner  7563550 Oct 30 00:33 /s17/gen/ch_save.mp4
--rw-r--r-- 1 runner runner  8438516 Oct 30 00:33 /s17/gen/ch_speed.mp4
--rw-r--r-- 1 runner runner   650076 Oct 30 00:33 /s17/gen/ch_tmrw.mp4
-total 59260
-drwxr-xr-x 2 runner root       4096 Oct 30 00:33 .
-drwxr-xr-x 3 runner root       4096 Oct 30 00:32 ..
--rw-r--r-- 1 runner runner   182269 Oct 30 00:33 ch_app.mp4
--rw-r--r-- 1 runner runner  8582006 Oct 30 00:33 ch_chest.mp4
--rw-r--r-- 1 runner runner  8570061 Oct 30 00:33 ch_deep.mp4
--rw-r--r-- 1 runner runner  3066637 Oct 30 00:33 ch_err.mp4
--rw-r--r-- 1 runner runner  7003167 Oct 30 00:33 ch_eyes.mp4
--rw-r--r-- 1 runner runner  6397839 Oct 30 00:33 ch_fix.mp4
--rw-r--r-- 1 runner runner 10202400 Oct 30 00:33 ch_hook.mp4
--rw-r--r-- 1 runner runner  7563550 Oct 30 00:33 ch_save.mp4
--rw-r--r-- 1 runner runner  8438516 Oct 30 00:33 ch_speed.mp4
--rw-r--r-- 1 runner runner   650076 Oct 30 00:33 ch_tmrw.mp4
+-rw-r--r-- 1 runner runner   182269 Oct 30 00:49 /s17/gen/ch_app.mp4
+-rw-r--r-- 1 runner runner  8582006 Oct 30 00:48 /s17/gen/ch_chest.mp4
+-rw-r--r-- 1 runner runner  8570061 Oct 30 00:48 /s17/gen/ch_deep.mp4
+-rw-r--r-- 1 runner runner  3066637 Oct 30 00:48 /s17/gen/ch_err.mp4
+-rw-r--r-- 1 runner runner  7003167 Oct 30 00:48 /s17/gen/ch_eyes.mp4
+-rw-r--r-- 1 runner runner  6397839 Oct 30 00:48 /s17/gen/ch_fix.mp4
+-rw-r--r-- 1 runner runner 10202400 Oct 30 00:48 /s17/gen/ch_hook.mp4
+-rw-r--r-- 1 runner runner  7563550 Oct 30 00:49 /s17/gen/ch_save.mp4
+-rw-r--r-- 1 runner runner  8438516 Oct 30 00:49 /s17/gen/ch_speed.mp4
+-rw-r--r-- 1 runner runner  1283092 Oct 30 00:49 /s17/gen/ch_tmrw.mp4
+total 59880
+drwxr-xr-x 2 runner root       4096 Oct 30 00:49 .
+drwxr-xr-x 3 runner root       4096 Oct 30 00:48 ..
+-rw-r--r-- 1 runner runner   182269 Oct 30 00:49 ch_app.mp4
+-rw-r--r-- 1 runner runner  8582006 Oct 30 00:48 ch_chest.mp4
+-rw-r--r-- 1 runner runner  8570061 Oct 30 00:48 ch_deep.mp4
+-rw-r--r-- 1 runner runner  3066637 Oct 30 00:48 ch_err.mp4
+-rw-r--r-- 1 runner runner  7003167 Oct 30 00:48 ch_eyes.mp4
+-rw-r--r-- 1 runner runner  6397839 Oct 30 00:48 ch_fix.mp4
+-rw-r--r-- 1 runner runner 10202400 Oct 30 00:48 ch_hook.mp4
+-rw-r--r-- 1 runner runner  7563550 Oct 30 00:49 ch_save.mp4
+-rw-r--r-- 1 runner runner  8438516 Oct 30 00:49 ch_speed.mp4
+-rw-r--r-- 1 runner runner  1283092 Oct 30 00:49 ch_tmrw.mp4
