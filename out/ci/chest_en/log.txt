@@ -1,15 +1,15 @@
 + k=/s17/rp/chest_en
 + python3 build.py /s17/rp/chest_en
-[('L1', 'n/ch_err.mp4', 0.0, 1.6, 0.0), ('L1', '/ch_deep.mp4', 0.0, 1.998, 1.6), ('L2', 'n/ch_err.mp4', 0.0, 4.104, 3.598), ('L3', 'n/ch_err.mp4', 1.4, 1.173, 7.702), ('L4', 'ch_chest.mp4', 0.0, 2.872, 8.875), ('L5', '/ch_eyes.mp4', 0.0, 2.613, 11.747), ('L6', '/ch_hook.mp4', 1.6, 4.162, 14.36), ('L7', 'ch_speed.mp4', 0.0, 2.936, 18.522), ('L8', 'n/ch_app.mp4', 0.0, 5.29, 21.458), ('L9', '/ch_save.mp4', 0.0, 1.971, 26.748), ('L10', '/ch_tmrw.mp4', 0.0, 4.061, 28.719)]
-cat 32.76 T 32.78
+[('L1', 'n/ch_err.mp4', 0.0, 1.4, 0.0), ('L1', 'ch_speed.mp4', 0.0, 2.157, 1.4), ('L2', 'n/ch_err.mp4', 0.0, 4.104, 3.557), ('L3', 'n/ch_err.mp4', 1.4, 1.174, 7.661), ('L4', 'ch_chest.mp4', 0.0, 2.871, 8.835), ('L5', '/ch_eyes.mp4', 0.0, 2.613, 11.706), ('L6', '/ch_pull.mp4', 0.0, 4.163, 14.319), ('L7', '/ch_save.mp4', 0.0, 2.935, 18.482), ('L8', 'n/ch_app.mp4', 0.0, 5.29, 21.417), ('L9', 'n/ch_fix.mp4', 0.0, 1.971, 26.707), ('L10', '/ch_tmrw.mp4', 0.0, 4.061, 28.678)]
+cat 32.72 T 32.739
 + python3 ov_png.py /s17/rp/chest_en
-realcuts True [0.0, 3.6, 7.72, 8.88, 11.76, 14.36, 18.52, 21.44, 26.72, 28.68, 32.78]
+realcuts True [0.0, 3.56, 7.68, 8.84, 11.72, 14.32, 18.48, 21.4, 26.68, 28.64, 32.739]
 safe-zone violations [('TL8c', [230, 850, 220, 408])]
 ovplan 24
 + python3 ov_ff.py /s17/rp/chest_en
-done /s17/rp/chest_en/reel_chest_en.mp4 32.78 lufs before -15.1 gain 0.6
+done /s17/rp/chest_en/reel_chest_en.mp4 32.739 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/chest_en
-trimmed /s17/rp/chest_en/reel_chest_en.mp4 32.28
+trimmed /s17/rp/chest_en/reel_chest_en.mp4 32.24
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/chest_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/chest_en/reel_chest_en.mp4
 /s17/rp/chest_en/reel_chest_en.mp4 before -13.0 after -14.6 peak -3.1
