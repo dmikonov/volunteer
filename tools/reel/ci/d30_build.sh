@@ -5,6 +5,7 @@ sudo mkdir -p /s17/gen && sudo chown -R $USER /s17
 O=out/ci/d30/gen; mkdir -p $O
 B=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas
 while read n u; do [ -s $O/$n.mp4 ] || curl -sSfL -m 120 -o $O/$n.mp4 "$B/$u" || echo "FAIL $n"; done <<'L'
+fm_film2_raw kbr8z/gradio_api/file=/tmp/gradio/e2fdc56939a2750e497f6e02dd2008c5f28b23f84acac19bbec7e6bf7332800b/tmp_iw6q8hr.mp4
 fm_board_raw kbr8z/gradio_api/file=/tmp/gradio/7514c6f60ac8768331473cb6db656be154008f45215a633e3270b13cdcca5c3e/tmpn2rnegc7.mp4
 ch_err_raw bwlzl/gradio_api/file=/tmp/gradio/b9c74ae87b540c2d19bce09affa4d16f94883cf1c4846d9a8abee554751d6718/tmppgx8_xcy.mp4
 ch_err16_raw bwlzl/gradio_api/file=/tmp/gradio/fffbf7553c65015b6df5913baf8aa83d5e22c39ec6543cc6ec396aaaeb81cd10/tmpl_6p6ui1.mp4
