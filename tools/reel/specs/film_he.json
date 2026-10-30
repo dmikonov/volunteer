@@ -10,14 +10,14 @@
  "v2subs": {},
  "v2_sub_top": 1358,
  "ttop": {
-  "L1": 250,
+  "L1": 230,
   "L2": 380,
   "L3": 380,
   "L4": 380,
   "L5": 380,
   "L6": 380,
   "L7": 380,
-  "L8": 250,
+  "L8": 230,
   "L9": 380
  },
  "logo": {
@@ -29,7 +29,7 @@
  "out": "reel_film_he.mp4",
  "lines": [
   "חשבתי שהטלפון מצלם גרוע. מסתבר שפשוט עמדתי רחוק.",
-  "מהחוף לא רואים מה הגולש עושה. רק צללית.",
+  "מהחוף הגולש נראה כמו נקודה. לך תבין מה הוא עושה.",
   "אז איך מצלמים חבר כמו שצריך?",
   "עומדים ממש על המים, הכי קרוב שאפשר.",
   "עושים זום, עד שהוא ממלא שליש מסך.",
@@ -47,7 +47,7 @@
    null
   ],
   "L2": [
-   "רק צללית",
+   "כמו נקודה",
    null,
    null,
    null
@@ -103,14 +103,38 @@
   {
    "k": "LABF",
    "line": "L1",
-   "d0": 0.2,
-   "html": "<div style='position:absolute;left:70px;top:840px;width:780px;display:flex;justify-content:flex-end;direction:rtl'><span style=\"font:800 56px R;color:#FF5150;text-shadow:0 2px 6px rgba(45,36,42,.85),0 4px 16px rgba(45,36,42,.6)\">מהחוף</span></div>"
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:820px;width:780px;display:flex;justify-content:center'><span style=\"font:800 64px R;color:#fff;background:rgba(255,81,80,.92);padding:10px 30px;border-radius:40px\">מהחוף</span></div>"
   },
   {
    "k": "LABC",
    "line": "L1",
-   "d0": 0.2,
-   "html": "<div style='position:absolute;left:70px;top:990px;width:780px;display:flex;justify-content:flex-end;direction:rtl'><span style=\"font:800 56px R;color:#00E4FF;text-shadow:0 2px 6px rgba(45,36,42,.85),0 4px 16px rgba(45,36,42,.6)\">מקרוב</span></div>"
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:1000px;width:780px;display:flex;justify-content:center'><span style=\"font:800 64px R;color:#fff;background:rgba(0,160,190,.92);padding:10px 30px;border-radius:40px\">מקרוב</span></div>"
+  },
+  {
+   "k": "REC2",
+   "line": "L2",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:560px;width:780px;display:flex;justify-content:center;align-items:center;gap:14px'><span style='width:26px;height:26px;border-radius:50%;background:#FF3B30;display:inline-block'></span><span style=\"font:700 44px R;color:#fff\">00:03</span></div>"
+  },
+  {
+   "k": "Z1",
+   "line": "L2",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:0;top:1300px;width:1080px;display:flex;justify-content:center'><span style=\"font:700 46px R;color:#fff;background:rgba(255,255,255,.18);padding:8px 26px;border-radius:30px\">1x</span></div>"
+  },
+  {
+   "k": "REC5",
+   "line": "L5",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:560px;width:780px;display:flex;justify-content:center;align-items:center;gap:14px'><span style='width:26px;height:26px;border-radius:50%;background:#FF3B30;display:inline-block'></span><span style=\"font:700 44px R;color:#fff\">00:07</span></div>"
+  },
+  {
+   "k": "Z3",
+   "line": "L5",
+   "d0": 0.9,
+   "html": "<div style='position:absolute;left:0;top:1300px;width:1080px;display:flex;justify-content:center'><span style=\"font:700 46px R;color:#fff;background:rgba(255,255,255,.18);padding:8px 26px;border-radius:30px\">3x</span></div>"
   }
  ],
  "gap": 0.2,
@@ -130,14 +154,14 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_long.mp4",
-    "a": 0.0
+    "src": "/s17/gen/fm_vf1.mp4",
+    "a": 0.6
    }
   ],
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_film2.mp4",
+    "src": "/s17/gen/fm_film.mp4",
     "a": 0.0
    }
   ],
@@ -145,58 +169,43 @@
    {
     "kind": "gen",
     "src": "/s17/gen/fm_film2.mp4",
-    "a": 1.4,
-    "frz": 0.4
+    "a": 0.0
    }
   ],
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_ride.mp4",
-    "a": 0.2,
+    "src": "/s17/gen/fm_vf1.mp4",
+    "a": 3.0,
     "dd": 0.9
    },
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_ride.mp4",
-    "a": 1.1,
-    "z": 2.4,
-    "cx": [
-     0.5,
-     0.5
-    ],
-    "cy": [
-     0.59,
-     0.63
-    ]
+    "src": "/s17/gen/fm_vf3.mp4",
+    "a": 3.9,
+    "frz": 0.0
    }
   ],
   "L6": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_paddle.mp4",
-    "a": 0.0,
-    "dd": 1.2
-   },
-   {
-    "kind": "gen",
     "src": "/s17/gen/fm_long.mp4",
-    "a": 7.6
+    "a": 5.0
    }
   ],
   "L7": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_ride.mp4",
-    "a": 1.0,
-    "z": 2.0,
+    "src": "/s17/gen/fm_long.mp4",
+    "a": 8.0,
+    "z": 1.2,
     "cx": [
      0.5,
      0.5
     ],
     "cy": [
      0.6,
-     0.64
+     0.6
     ]
    }
   ],
@@ -210,8 +219,8 @@
   "L9": [
    {
     "kind": "gen",
-    "src": "/s17/gen/fm_film.mp4",
-    "a": 0.0
+    "src": "/s17/gen/fm_film2.mp4",
+    "a": 1.5
    }
   ],
   "L10": [
