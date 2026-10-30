@@ -11,5 +11,6 @@ ch_err_raw bwlzl/gradio_api/file=/tmp/gradio/b9c74ae87b540c2d19bce09affa4d16f948
 ch_err16_raw bwlzl/gradio_api/file=/tmp/gradio/fffbf7553c65015b6df5913baf8aa83d5e22c39ec6543cc6ec396aaaeb81cd10/tmpl_6p6ui1.mp4
 L
 for n in fm_board_raw ch_err_raw ch_err16_raw; do ffmpeg -nostdin -v error -y -i $O/$n.mp4 -vf "fps=5,scale=-2:300,tile=9x2" -frames:v 1 $O/${n}_sheet.jpg; done
+bash tools/reel/ci/d30_takes.sh
 mkdir -p out/ci/d30; bash -x tools/reel/specs/film_he.prep.sh > out/ci/d30/prep_film.log 2>&1; ls -la /s17/gen >> out/ci/d30/prep_film.log
 timeout 2700 bash tools/reel/ci/build_reels.sh
