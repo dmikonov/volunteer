@@ -10,15 +10,15 @@
  "v2subs": {},
  "v2_sub_top": 1358,
  "ttop": {
-  "L1": 220,
+  "L1": 250,
   "L2": 380,
   "L3": 380,
-  "L4": 220,
-  "L5": 220,
-  "L6": 220,
-  "L7": 220,
+  "L4": 250,
+  "L5": 250,
+  "L6": 250,
+  "L7": 250,
   "L8": 220,
-  "L9": 220
+  "L9": 250
  },
  "logo": {
   "top": 240,
@@ -28,27 +28,27 @@
  "lang": "en",
  "out": "reel_chest_en.mp4",
  "lines": [
-  "Paddling like crazy and not moving? Your arms are fine.",
-  "Lying flat, your arms just slap the water.",
+  "Paddling hard and going nowhere? Check how you're lying.",
+  "Dead flat on the board, your arms just slap the water.",
   "Easy fix.",
   "Lift your chest a little, like a seal looking up.",
   "Eyes on the horizon, not on the board.",
   "Now every stroke goes deep, all the way to your hip.",
   "That's the speed you need to actually catch waves.",
-  "Not sure? Film a wave and ask the AI coach in Surf Tribe.",
+  "Not sure? Have a friend film you, and ask the AI coach in Surf Tribe.",
   "Save this for your next paddle out.",
-  "Tomorrow: how long a coach spends reviewing ten students."
+  "Tomorrow: one coach, ten students."
  ],
  "titles": {
   "L1": [
-   "Not moving?",
-   "It's not your arms",
+   "Paddling hard",
+   "going nowhere?",
    null,
    null
   ],
   "L2": [
-   "Lying flat",
-   "arms slap the water",
+   "Flat body",
+   "arms just splash",
    null,
    null
   ],
@@ -77,8 +77,8 @@
    null
   ],
   "L7": [
-   "Speed to",
-   "catch waves",
+   "Now you",
+   "catch the wave",
    null,
    null
   ],
@@ -89,8 +89,8 @@
    null
   ],
   "L9": [
-   "Save it for your",
-   "next paddle out",
+   "Save it",
+   "for next session",
    null,
    null
   ]
@@ -130,7 +130,13 @@
   "L1": [
    {
     "kind": "gen",
-    "src": "/s17/gen/ch_hook.mp4",
+    "src": "/s17/gen/ch_err.mp4",
+    "a": 0.0,
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/ch_deep.mp4",
     "a": 0.0
    }
   ],
@@ -166,8 +172,9 @@
   "L6": [
    {
     "kind": "gen",
-    "src": "/s17/gen/ch_deep.mp4",
-    "a": 0.0
+    "src": "/s17/gen/ch_hook.mp4",
+    "a": 1.6,
+    "z": 1.0
    }
   ],
   "L7": [
@@ -203,5 +210,5 @@
   "Surf Tribe": "SurfTribe"
  },
  "edge": true,
- "rate": "-12%"
+ "rate": "-8%"
 }

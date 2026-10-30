@@ -15,6 +15,6 @@ cut k8155541 7.0 3.6 0.52 0.52 ch_speed
 cut k8154483 5.0 3.2 0.33 0.33 ch_save
 ffmpeg -v error -y -ss 22.3 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/en_c.png
 ffmpeg -v error -y -loop 1 -t 4 -i /tmp/en_c.png -vf "crop=1080:1920:0:428,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/ch_app.mp4
-ffmpeg -v error -y -ss 2.0 -t 4 -i app-screens/ScreenRecording_09-29-2026_13-41-14_1.mp4 -vf "crop=1080:1920:0:240,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/ch_tmrw.mp4
+ffmpeg -v error -y -ss 18.0 -t 4 -i app-screens/ScreenRecording_09-29-2026_13-41-14_1.mp4 -vf "crop=1080:1920:0:240,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/ch_tmrw.mp4
 mkdir -p out/ci/d30/review; for f in $G/ch_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 out/ci/d30/review/cut_$n.jpg; done
 ls -la $G/ch_*
