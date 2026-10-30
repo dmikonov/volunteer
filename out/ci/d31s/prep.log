@@ -1,0 +1,159 @@
++ '[' -f /s17/gen/sp_hook.mp4 ']'
++ G=/s17/gen
++ mkdir -p /s17/gen /tmp/px out/ci/d31s/review
++ UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
++ for id in 8154903 8155537 8155548 8154486 8154896 8155541
++ '[' -s /tmp/px/k8154903.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154903.mp4 https://videos.pexels.com/video-files/8154903/8154903-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8155537 8155548 8154486 8154896 8155541
++ '[' -s /tmp/px/k8155537.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8155537.mp4 https://videos.pexels.com/video-files/8155537/8155537-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8155537 8155548 8154486 8154896 8155541
++ '[' -s /tmp/px/k8155548.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8155548.mp4 https://videos.pexels.com/video-files/8155548/8155548-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8155537 8155548 8154486 8154896 8155541
++ '[' -s /tmp/px/k8154486.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154486.mp4 https://videos.pexels.com/video-files/8154486/8154486-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8155537 8155548 8154486 8154896 8155541
++ '[' -s /tmp/px/k8154896.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154896.mp4 https://videos.pexels.com/video-files/8154896/8154896-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8155537 8155548 8154486 8154896 8155541
++ '[' -s /tmp/px/k8155541.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8155541.mp4 https://videos.pexels.com/video-files/8155541/8155541-uhd_2560_1440_25fps.mp4
++ cut k8154903 7.3 2.2 0.42 0.42 sp_hook
++ src=k8154903
++ ss=7.3
++ t=2.2
++ c0=0.42
++ c1=0.42
++ n=sp_hook
++ ffmpeg -v error -y -ss 7.3 -t 2.2 -i /tmp/px/k8154903.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.42+(0.42-0.42)*t/2.2)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_hook.mp4
++ cut k8154903 0.5 2.2 0.50 0.50 sp_slap
++ src=k8154903
++ ss=0.5
++ t=2.2
++ c0=0.50
++ c1=0.50
++ n=sp_slap
++ ffmpeg -v error -y -ss 0.5 -t 2.2 -i /tmp/px/k8154903.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/2.2)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_slap.mp4
++ cut k8155537 0.0 2.0 0.50 0.50 sp_three
++ src=k8155537
++ ss=0.0
++ t=2.0
++ c0=0.50
++ c1=0.50
++ n=sp_three
++ ffmpeg -v error -y -ss 0.0 -t 2.0 -i /tmp/px/k8155537.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/2.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_three.mp4
++ cut k8155537 1.5 2.4 0.58 0.58 sp_tips
++ src=k8155537
++ ss=1.5
++ t=2.4
++ c0=0.58
++ c1=0.58
++ n=sp_tips
++ ffmpeg -v error -y -ss 1.5 -t 2.4 -i /tmp/px/k8155537.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.58+(0.58-0.58)*t/2.4)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_tips.mp4
++ cut k8155548 8.8 2.6 0.55 0.58 sp_pull
++ src=k8155548
++ ss=8.8
++ t=2.6
++ c0=0.55
++ c1=0.58
++ n=sp_pull
++ ffmpeg -v error -y -ss 8.8 -t 2.6 -i /tmp/px/k8155548.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.55+(0.58-0.55)*t/2.6)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_pull.mp4
++ cut k8154486 2.5 3.5 0.50 0.50 sp_long
++ src=k8154486
++ ss=2.5
++ t=3.5
++ c0=0.50
++ c1=0.50
++ n=sp_long
++ ffmpeg -v error -y -ss 2.5 -t 3.5 -i /tmp/px/k8154486.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/3.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_long.mp4
++ cut k8154486 18.0 4.0 0.58 0.62 sp_glide
++ src=k8154486
++ ss=18.0
++ t=4.0
++ c0=0.58
++ c1=0.62
++ n=sp_glide
++ ffmpeg -v error -y -ss 18.0 -t 4.0 -i /tmp/px/k8154486.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.58+(0.62-0.58)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_glide.mp4
++ cut k8154896 4.0 3.2 0.45 0.45 sp_save
++ src=k8154896
++ ss=4.0
++ t=3.2
++ c0=0.45
++ c1=0.45
++ n=sp_save
++ ffmpeg -v error -y -ss 4.0 -t 3.2 -i /tmp/px/k8154896.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.45-0.45)*t/3.2)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_save.mp4
++ cut k8155541 10.0 3.2 0.50 0.50 sp_tmrw
++ src=k8155541
++ ss=10.0
++ t=3.2
++ c0=0.50
++ c1=0.50
++ n=sp_tmrw
++ ffmpeg -v error -y -ss 10.0 -t 3.2 -i /tmp/px/k8155541.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/3.2)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sp_tmrw.mp4
++ ffmpeg -v error -y -ss 22.0 -t 2.4 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -vf crop=864:1536:108:450,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/sp_coach.mp4
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_coach.mp4 .mp4
++ n=sp_coach
++ ffmpeg -v error -y -i /s17/gen/sp_coach.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_coach.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_glide.mp4 .mp4
++ n=sp_glide
++ ffmpeg -v error -y -i /s17/gen/sp_glide.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_glide.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_hook.mp4 .mp4
++ n=sp_hook
++ ffmpeg -v error -y -i /s17/gen/sp_hook.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_hook.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_long.mp4 .mp4
++ n=sp_long
++ ffmpeg -v error -y -i /s17/gen/sp_long.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_long.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_pull.mp4 .mp4
++ n=sp_pull
++ ffmpeg -v error -y -i /s17/gen/sp_pull.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_pull.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_save.mp4 .mp4
++ n=sp_save
++ ffmpeg -v error -y -i /s17/gen/sp_save.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_save.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_slap.mp4 .mp4
++ n=sp_slap
++ ffmpeg -v error -y -i /s17/gen/sp_slap.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_slap.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_three.mp4 .mp4
++ n=sp_three
++ ffmpeg -v error -y -i /s17/gen/sp_three.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_three.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_tips.mp4 .mp4
++ n=sp_tips
++ ffmpeg -v error -y -i /s17/gen/sp_tips.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_tips.jpg
++ for f in $G/sp_*.mp4
+++ basename /s17/gen/sp_tmrw.mp4 .mp4
++ n=sp_tmrw
++ ffmpeg -v error -y -i /s17/gen/sp_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d31s/review/cut_sp_tmrw.jpg
++ ls -la /s17/gen/sp_coach.mp4 /s17/gen/sp_glide.mp4 /s17/gen/sp_hook.mp4 /s17/gen/sp_long.mp4 /s17/gen/sp_pull.mp4 /s17/gen/sp_save.mp4 /s17/gen/sp_slap.mp4 /s17/gen/sp_three.mp4 /s17/gen/sp_tips.mp4 /s17/gen/sp_tmrw.mp4
+-rw-r--r-- 1 runner runner  1056618 Oct 30 23:14 /s17/gen/sp_coach.mp4
+-rw-r--r-- 1 runner runner  7573879 Oct 30 23:14 /s17/gen/sp_glide.mp4
+-rw-r--r-- 1 runner runner  4840205 Oct 30 23:14 /s17/gen/sp_hook.mp4
+-rw-r--r-- 1 runner runner 13591262 Oct 30 23:14 /s17/gen/sp_long.mp4
+-rw-r--r-- 1 runner runner  6766299 Oct 30 23:14 /s17/gen/sp_pull.mp4
+-rw-r--r-- 1 runner runner  8036913 Oct 30 23:14 /s17/gen/sp_save.mp4
+-rw-r--r-- 1 runner runner  6605665 Oct 30 23:14 /s17/gen/sp_slap.mp4
+-rw-r--r-- 1 runner runner  5103281 Oct 30 23:14 /s17/gen/sp_three.mp4
+-rw-r--r-- 1 runner runner  5475341 Oct 30 23:14 /s17/gen/sp_tips.mp4
+-rw-r--r-- 1 runner runner  7256018 Oct 30 23:14 /s17/gen/sp_tmrw.mp4
+total 64776
+drwxr-xr-x 2 runner root       4096 Oct 30 23:14 .
+drwxr-xr-x 3 runner root       4096 Oct 30 23:13 ..
+-rw-r--r-- 1 runner runner  1056618 Oct 30 23:14 sp_coach.mp4
+-rw-r--r-- 1 runner runner  7573879 Oct 30 23:14 sp_glide.mp4
+-rw-r--r-- 1 runner runner  4840205 Oct 30 23:14 sp_hook.mp4
+-rw-r--r-- 1 runner runner 13591262 Oct 30 23:14 sp_long.mp4
+-rw-r--r-- 1 runner runner  6766299 Oct 30 23:14 sp_pull.mp4
+-rw-r--r-- 1 runner runner  8036913 Oct 30 23:14 sp_save.mp4
+-rw-r--r-- 1 runner runner  6605665 Oct 30 23:14 sp_slap.mp4
+-rw-r--r-- 1 runner runner  5103281 Oct 30 23:14 sp_three.mp4
+-rw-r--r-- 1 runner runner  5475341 Oct 30 23:14 sp_tips.mp4
+-rw-r--r-- 1 runner runner  7256018 Oct 30 23:14 sp_tmrw.mp4
