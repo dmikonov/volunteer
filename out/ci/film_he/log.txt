@@ -1,18 +1,18 @@
 + k=/s17/rp/film_he
 + python3 build.py /s17/rp/film_he
-[('L1', 'fm_split.mp4', 0.0, 4.611, 0.0), ('L2', '/fm_long.mp4', 0.0, 4.038, 4.611), ('L3', 'fm_film2.mp4', 0.0, 2.229, 8.649), ('L4', 'fm_film2.mp4', 1.4, 2.721, 10.878), ('L5', '/fm_ride.mp4', 0.2, 0.9, 13.599), ('L5', '/fm_ride.mp4', 1.1, 1.553, 14.499), ('L6', 'm_paddle.mp4', 0.0, 1.2, 16.052), ('L6', '/fm_long.mp4', 7.6, 1.98, 17.252), ('L7', '/fm_ride.mp4', 1.0, 1.87, 19.232), ('L8', 'm_replay.mp4', 0.0, 2.914, 21.102), ('L9', '/fm_film.mp4', 0.0, 3.134, 24.016), ('L10', 'fm_board.mp4', 0.0, 3.62, 27.15)]
-cat 30.84 T 30.77
+[('L1', 'fm_split.mp4', 0.0, 4.681, 0.0), ('L2', '/fm_long.mp4', 0.0, 3.088, 4.681), ('L3', 'fm_film2.mp4', 0.0, 2.229, 7.769), ('L4', 'fm_film2.mp4', 1.4, 2.721, 9.998), ('L5', '/fm_ride.mp4', 0.2, 0.9, 12.719), ('L5', '/fm_ride.mp4', 1.1, 1.553, 13.619), ('L6', 'm_paddle.mp4', 0.0, 1.2, 15.172), ('L6', '/fm_long.mp4', 7.6, 1.98, 16.372), ('L7', '/fm_ride.mp4', 1.0, 1.87, 18.352), ('L8', 'm_replay.mp4', 0.0, 2.914, 20.222), ('L9', '/fm_film.mp4', 0.0, 3.134, 23.136), ('L10', 'fm_board.mp4', 0.0, 3.62, 26.27)]
+cat 29.96 T 29.89
 + python3 ov_png.py /s17/rp/film_he
-realcuts True [0.0, 4.6, 8.64, 10.88, 13.6, 16.08, 19.28, 21.16, 24.08, 27.2, 30.77]
+realcuts True [0.0, 4.68, 7.76, 10.0, 12.72, 15.2, 18.4, 20.28, 23.2, 26.32, 29.89]
 safe-zone violations []
-ovplan 24
+ovplan 23
 + python3 ov_ff.py /s17/rp/film_he
-done /s17/rp/film_he/reel_film_he.mp4 30.77 lufs before -15.2 gain 0.7
+done /s17/rp/film_he/reel_film_he.mp4 29.89 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/film_he
-trimmed /s17/rp/film_he/reel_film_he.mp4 30.2
+trimmed /s17/rp/film_he/reel_film_he.mp4 29.32
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/film_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/film_he/reel_film_he.mp4
-/s17/rp/film_he/reel_film_he.mp4 before -13.0 after -14.5 peak -2.5
+/s17/rp/film_he/reel_film_he.mp4 before -13.0 after -14.5 peak -2.6
 + python3 post_cz.py /s17/rp/film_he
 post ok
 + echo 'EXIT /s17/rp/film_he 0'
