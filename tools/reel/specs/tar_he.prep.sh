@@ -19,7 +19,7 @@ cut m1078 0.0 4.0 0.50 0.50 tr_sea
 
 # app: "שאלו את המאמן" button (HE recording 28.09 15:24 at 11.6 s), big crop over a blurred screen (as flags5 25.10)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
-ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/he_coach.png -vf "crop=1080:1180:0:620,pad=1080:1920:0:420:0x2D242A,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/tr_app.mp4
+ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/he_coach.png -vf "crop=960:860:60:1000,scale=1080:968:flags=lanczos,pad=1080:1920:0:520:0x2D242A,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/tr_app.mp4
 # teaser 05.11: real forecast screen (wave height), as rip3 app_full
 ffmpeg -v error -y -ss 1.0 -t 3.0 -i app-screens/forecast/forecast_he_height.mp4 -filter_complex "[0:v]fps=25,crop=1080:1920:0:209,split=2[a][b];[a]boxblur=28,eq=brightness=-0.32[bg];[b]scale=860:-2:flags=lanczos[fg];[bg][fg]overlay=110:520,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/tr_tmrw.mp4
 for f in $G/tr_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 out/ci/d01/review/cut_$n.jpg; done

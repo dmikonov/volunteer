@@ -118,7 +118,14 @@
    {
     "kind": "gen",
     "src": "/s17/gen/tr_gas.mp4",
-    "a": 0.0
+    "a": 0.0,
+    "dd": 1.9
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_gas.mp4",
+    "a": 1.9,
+    "frz": 0.0
    }
   ],
   "L3": [
