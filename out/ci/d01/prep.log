@@ -1,0 +1,138 @@
++ '[' -f /s17/gen/tr_app.mp4 ']'
++ G=/s17/gen
++ mkdir -p /s17/gen /tmp/px out/ci/d01/review out/ci/d01/gen
++ UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
++ dl tr_hook https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/156b6cc0b521487fd860c97594552a495d6a5e125bea1849b0ca5938f793655e/tmpecs87jym.mp4
++ n=tr_hook
++ u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/156b6cc0b521487fd860c97594552a495d6a5e125bea1849b0ca5938f793655e/tmpecs87jym.mp4
++ '[' -s out/ci/d01/gen/tr_hook_raw.mp4 ']'
++ curl -sSfL -m 120 -o out/ci/d01/gen/tr_hook_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/156b6cc0b521487fd860c97594552a495d6a5e125bea1849b0ca5938f793655e/tmpecs87jym.mp4
++ dl tr_pour https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/9c2e503e3450aa9a847ac6be3d013168fef8a8701d92fcc0e95e7ea9a429e76f/tmpl3v41k93.mp4
++ n=tr_pour
++ u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/9c2e503e3450aa9a847ac6be3d013168fef8a8701d92fcc0e95e7ea9a429e76f/tmpl3v41k93.mp4
++ '[' -s out/ci/d01/gen/tr_pour_raw.mp4 ']'
++ curl -sSfL -m 120 -o out/ci/d01/gen/tr_pour_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/9c2e503e3450aa9a847ac6be3d013168fef8a8701d92fcc0e95e7ea9a429e76f/tmpl3v41k93.mp4
++ dl tr_wipe https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/dd7e1fd6b958faf73efb4cb5d90f6915dbccfa5451346956d7627a0c2b4d86ad/tmph09u5cvq.mp4
++ n=tr_wipe
++ u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/dd7e1fd6b958faf73efb4cb5d90f6915dbccfa5451346956d7627a0c2b4d86ad/tmph09u5cvq.mp4
++ '[' -s out/ci/d01/gen/tr_wipe_raw.mp4 ']'
++ curl -sSfL -m 120 -o out/ci/d01/gen/tr_wipe_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/dd7e1fd6b958faf73efb4cb5d90f6915dbccfa5451346956d7627a0c2b4d86ad/tmph09u5cvq.mp4
++ for n in tr_hook tr_pour tr_wipe
++ ffmpeg -v error -y -i out/ci/d01/gen/tr_hook_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_hook.mp4
++ for n in tr_hook tr_pour tr_wipe
++ ffmpeg -v error -y -i out/ci/d01/gen/tr_pour_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_pour.mp4
++ for n in tr_hook tr_pour tr_wipe
++ ffmpeg -v error -y -i out/ci/d01/gen/tr_wipe_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_wipe.mp4
++ for id in 1064 28889 1013 1220 1078
++ '[' -s /tmp/px/m1064.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1064.mp4 https://assets.mixkit.co/videos/1064/1064-1080.mp4
++ break
++ for id in 1064 28889 1013 1220 1078
++ '[' -s /tmp/px/m28889.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m28889.mp4 https://assets.mixkit.co/videos/28889/28889-1080.mp4
++ break
++ for id in 1064 28889 1013 1220 1078
++ '[' -s /tmp/px/m1013.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1013.mp4 https://assets.mixkit.co/videos/1013/1013-1080.mp4
++ break
++ for id in 1064 28889 1013 1220 1078
++ '[' -s /tmp/px/m1220.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1220.mp4 https://assets.mixkit.co/videos/1220/1220-1080.mp4
++ break
++ for id in 1064 28889 1013 1220 1078
++ '[' -s /tmp/px/m1078.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1078.mp4 https://assets.mixkit.co/videos/1078/1078-1080.mp4
++ break
++ cut m1064 2.0 4.0 0.50 0.50 tr_walk
++ src=m1064
++ ss=2.0
++ t=4.0
++ c0=0.50
++ c1=0.50
++ n=tr_walk
++ ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1064.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/tr_walk.mp4
++ cut m28889 1.0 4.0 0.50 0.50 tr_wait
++ src=m28889
++ ss=1.0
++ t=4.0
++ c0=0.50
++ c1=0.50
++ n=tr_wait
++ ffmpeg -v error -y -ss 1.0 -t 4.0 -i /tmp/px/m28889.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/tr_wait.mp4
++ cut m1013 3.0 4.0 0.50 0.50 tr_feet
++ src=m1013
++ ss=3.0
++ t=4.0
++ c0=0.50
++ c1=0.50
++ n=tr_feet
++ ffmpeg -v error -y -ss 3.0 -t 4.0 -i /tmp/px/m1013.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/tr_feet.mp4
++ cut m1220 2.0 4.0 0.50 0.50 tr_end
++ src=m1220
++ ss=2.0
++ t=4.0
++ c0=0.50
++ c1=0.50
++ n=tr_end
++ ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1220.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/tr_end.mp4
++ cut m1078 5.0 4.0 0.50 0.50 tr_tmrw
++ src=m1078
++ ss=5.0
++ t=4.0
++ c0=0.50
++ c1=0.50
++ n=tr_tmrw
++ ffmpeg -v error -y -ss 5.0 -t 4.0 -i /tmp/px/m1078.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/tr_tmrw.mp4
++ ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
++ ffmpeg -v error -y -loop 1 -t 3.5 -i /tmp/px/he_coach.png -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:200,boxblur=28,eq=brightness=-0.3[bg];[b]crop=1000:420:40:1400,scale=1080:454:flags=lanczos[fg];[bg][fg]overlay=0:760,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/tr_app.mp4
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_app.mp4 .mp4
++ n=tr_app
++ ffmpeg -v error -y -i /s17/gen/tr_app.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_app.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_end.mp4 .mp4
++ n=tr_end
++ ffmpeg -v error -y -i /s17/gen/tr_end.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_end.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_feet.mp4 .mp4
++ n=tr_feet
++ ffmpeg -v error -y -i /s17/gen/tr_feet.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_feet.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_hook.mp4 .mp4
++ n=tr_hook
++ ffmpeg -v error -y -i /s17/gen/tr_hook.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_hook.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_pour.mp4 .mp4
++ n=tr_pour
++ ffmpeg -v error -y -i /s17/gen/tr_pour.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_pour.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_tmrw.mp4 .mp4
++ n=tr_tmrw
++ ffmpeg -v error -y -i /s17/gen/tr_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_tmrw.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_wait.mp4 .mp4
++ n=tr_wait
++ ffmpeg -v error -y -i /s17/gen/tr_wait.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_wait.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_walk.mp4 .mp4
++ n=tr_walk
++ ffmpeg -v error -y -i /s17/gen/tr_walk.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_walk.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_wipe.mp4 .mp4
++ n=tr_wipe
++ ffmpeg -v error -y -i /s17/gen/tr_wipe.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_wipe.jpg
++ ls -la /s17/gen/tr_app.mp4 /s17/gen/tr_end.mp4 /s17/gen/tr_feet.mp4 /s17/gen/tr_hook.mp4 /s17/gen/tr_pour.mp4 /s17/gen/tr_tmrw.mp4 /s17/gen/tr_wait.mp4 /s17/gen/tr_walk.mp4 /s17/gen/tr_wipe.mp4
+-rw-r--r-- 1 runner runner    72777 Oct 31 23:15 /s17/gen/tr_app.mp4
+-rw-r--r-- 1 runner runner  8401902 Oct 31 23:15 /s17/gen/tr_end.mp4
+-rw-r--r-- 1 runner runner  7876757 Oct 31 23:15 /s17/gen/tr_feet.mp4
+-rw-r--r-- 1 runner runner  5301348 Oct 31 23:14 /s17/gen/tr_hook.mp4
+-rw-r--r-- 1 runner runner  3789147 Oct 31 23:14 /s17/gen/tr_pour.mp4
+-rw-r--r-- 1 runner runner  9242150 Oct 31 23:15 /s17/gen/tr_tmrw.mp4
+-rw-r--r-- 1 runner runner  7956511 Oct 31 23:15 /s17/gen/tr_wait.mp4
+-rw-r--r-- 1 runner runner 11921365 Oct 31 23:15 /s17/gen/tr_walk.mp4
+-rw-r--r-- 1 runner runner  4767381 Oct 31 23:14 /s17/gen/tr_wipe.mp4
