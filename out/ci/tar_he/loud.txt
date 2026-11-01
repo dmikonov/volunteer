@@ -4,9 +4,9 @@
     LRA:         0.8 LU
     Threshold: -34.5 LUFS
     LRA low:   -14.9 LUFS
-    LRA high:  -14.0 LUFS
+    LRA high:  -14.1 LUFS
 
   True peak:
-    Peak:       -3.1 dBFS
-[out#0/null @ 0x647c4a680a40] video:315KiB audio:5812KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame=  775 fps=414 q=-0.0 Lsize=N/A time=00:00:30.99 bitrate=N/A speed=16.5x elapsed=0:00:01.87    
+    Peak:       -3.2 dBFS
+[out#0/null @ 0x5763d8c48340] video:318KiB audio:5880KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  784 fps=322 q=-0.0 Lsize=N/A time=00:00:31.36 bitrate=N/A speed=12.9x elapsed=0:00:02.43    

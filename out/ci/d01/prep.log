@@ -161,17 +161,17 @@
 + n=tr_wipe
 + ffmpeg -v error -y -i /s17/gen/tr_wipe.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_wipe.jpg
 + ls -la /s17/gen/tr_app.mp4 /s17/gen/tr_clean.mp4 /s17/gen/tr_feet.mp4 /s17/gen/tr_gas.mp4 /s17/gen/tr_hook.mp4 /s17/gen/tr_oil.mp4 /s17/gen/tr_pour.mp4 /s17/gen/tr_red.mp4 /s17/gen/tr_sea.mp4 /s17/gen/tr_split.mp4 /s17/gen/tr_tmrw.mp4 /s17/gen/tr_wait.mp4 /s17/gen/tr_walk.mp4 /s17/gen/tr_wipe.mp4
--rw-r--r-- 1 runner runner 12453458 Nov  1 01:17 /s17/gen/tr_app.mp4
--rw-r--r-- 1 runner runner  5115411 Nov  1 01:16 /s17/gen/tr_clean.mp4
--rw-r--r-- 1 runner runner  7876757 Nov  1 01:16 /s17/gen/tr_feet.mp4
--rw-r--r-- 1 runner runner  4152435 Nov  1 01:16 /s17/gen/tr_gas.mp4
--rw-r--r-- 1 runner runner  5301348 Nov  1 01:16 /s17/gen/tr_hook.mp4
--rw-r--r-- 1 runner runner  4603021 Nov  1 01:16 /s17/gen/tr_oil.mp4
--rw-r--r-- 1 runner runner  3789147 Nov  1 01:16 /s17/gen/tr_pour.mp4
--rw-r--r-- 1 runner runner  6411456 Nov  1 01:16 /s17/gen/tr_red.mp4
--rw-r--r-- 1 runner runner  9065392 Nov  1 01:17 /s17/gen/tr_sea.mp4
--rw-r--r-- 1 runner runner   597347 Nov  1 01:17 /s17/gen/tr_split.mp4
--rw-r--r-- 1 runner runner   736896 Nov  1 01:17 /s17/gen/tr_tmrw.mp4
--rw-r--r-- 1 runner runner  7956511 Nov  1 01:16 /s17/gen/tr_wait.mp4
--rw-r--r-- 1 runner runner 14294213 Nov  1 01:16 /s17/gen/tr_walk.mp4
--rw-r--r-- 1 runner runner  4767381 Nov  1 01:16 /s17/gen/tr_wipe.mp4
+-rw-r--r-- 1 runner runner 12453458 Nov  1 01:37 /s17/gen/tr_app.mp4
+-rw-r--r-- 1 runner runner  5115411 Nov  1 01:37 /s17/gen/tr_clean.mp4
+-rw-r--r-- 1 runner runner  7876757 Nov  1 01:37 /s17/gen/tr_feet.mp4
+-rw-r--r-- 1 runner runner  4152435 Nov  1 01:36 /s17/gen/tr_gas.mp4
+-rw-r--r-- 1 runner runner  5301348 Nov  1 01:36 /s17/gen/tr_hook.mp4
+-rw-r--r-- 1 runner runner  4603021 Nov  1 01:36 /s17/gen/tr_oil.mp4
+-rw-r--r-- 1 runner runner  3789147 Nov  1 01:36 /s17/gen/tr_pour.mp4
+-rw-r--r-- 1 runner runner  6411456 Nov  1 01:36 /s17/gen/tr_red.mp4
+-rw-r--r-- 1 runner runner  9065392 Nov  1 01:37 /s17/gen/tr_sea.mp4
+-rw-r--r-- 1 runner runner   597347 Nov  1 01:37 /s17/gen/tr_split.mp4
+-rw-r--r-- 1 runner runner   736896 Nov  1 01:37 /s17/gen/tr_tmrw.mp4
+-rw-r--r-- 1 runner runner  7956511 Nov  1 01:37 /s17/gen/tr_wait.mp4
+-rw-r--r-- 1 runner runner 14294213 Nov  1 01:37 /s17/gen/tr_walk.mp4
+-rw-r--r-- 1 runner runner  4767381 Nov  1 01:36 /s17/gen/tr_wipe.mp4
