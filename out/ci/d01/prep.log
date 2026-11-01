@@ -18,14 +18,28 @@
 + n=tr_gas
 + u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/ca8c8c840ad4fe5b62d37a4eefe58f34f3e140d632763603024ddadf6e769141/tmp0rrau6m5.mp4
 + '[' -s out/ci/d01/gen/tr_gas_raw.mp4 ']'
-+ for n in tr_hook tr_pour tr_wipe tr_gas
++ dl tr_oil https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/322a3f4602ff647ec686e3778c812503f20ebb2a36852f51ede3af23f2b14cc4/tmpup5ilwmx.mp4
++ n=tr_oil
++ u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/322a3f4602ff647ec686e3778c812503f20ebb2a36852f51ede3af23f2b14cc4/tmpup5ilwmx.mp4
++ '[' -s out/ci/d01/gen/tr_oil_raw.mp4 ']'
++ curl -sSfL -m 120 -o out/ci/d01/gen/tr_oil_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/322a3f4602ff647ec686e3778c812503f20ebb2a36852f51ede3af23f2b14cc4/tmpup5ilwmx.mp4
++ dl tr_red https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/10d3d5d6cf0bfc96ae6544d00344e98b1ffd63bf5a86ddca69b071413571a321/tmpsrfje763.mp4
++ n=tr_red
++ u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/10d3d5d6cf0bfc96ae6544d00344e98b1ffd63bf5a86ddca69b071413571a321/tmpsrfje763.mp4
++ '[' -s out/ci/d01/gen/tr_red_raw.mp4 ']'
++ curl -sSfL -m 120 -o out/ci/d01/gen/tr_red_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/10d3d5d6cf0bfc96ae6544d00344e98b1ffd63bf5a86ddca69b071413571a321/tmpsrfje763.mp4
++ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
 + ffmpeg -v error -y -i out/ci/d01/gen/tr_hook_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_hook.mp4
-+ for n in tr_hook tr_pour tr_wipe tr_gas
++ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
 + ffmpeg -v error -y -i out/ci/d01/gen/tr_pour_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_pour.mp4
-+ for n in tr_hook tr_pour tr_wipe tr_gas
++ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
 + ffmpeg -v error -y -i out/ci/d01/gen/tr_wipe_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_wipe.mp4
-+ for n in tr_hook tr_pour tr_wipe tr_gas
++ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
 + ffmpeg -v error -y -i out/ci/d01/gen/tr_gas_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_gas.mp4
++ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
++ ffmpeg -v error -y -i out/ci/d01/gen/tr_oil_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_oil.mp4
++ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
++ ffmpeg -v error -y -i out/ci/d01/gen/tr_red_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_red.mp4
 + for id in 1064 28889 1013 1078
 + '[' -s /tmp/px/m1064.mp4 ']'
 + for q in 1080 720
@@ -81,6 +95,9 @@
 + ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
 + ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/he_coach.png -vf crop=960:860:60:1000,scale=1080:968:flags=lanczos,pad=1080:1920:0:520:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/tr_app.mp4
 + ffmpeg -v error -y -ss 1.0 -t 3.0 -i app-screens/forecast/forecast_he_height.mp4 -filter_complex '[0:v]fps=25,crop=1080:1920:0:209,split=2[a][b];[a]boxblur=28,eq=brightness=-0.32[bg];[b]scale=860:-2:flags=lanczos[fg];[bg][fg]overlay=110:520,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/tr_tmrw.mp4
++ ffmpeg -v error -y -i /s17/gen/tr_hook.mp4 -frames:v 1 -vf crop=1080:952:0:700 /tmp/px/bef.png
++ ffmpeg -v error -y -sseof -0.6 -i /s17/gen/tr_wipe.mp4 -frames:v 1 -vf crop=1080:952:0:760 /tmp/px/aft.png
++ ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/bef.png -loop 1 -t 3.0 -i /tmp/px/aft.png -filter_complex 'color=c=0x2D242A:s=1080x16:d=3[d];[0][d][1]vstack=inputs=3,fps=25,format=yuv420p' -an -c:v libx264 -crf 14 /s17/gen/tr_split.mp4
 + for f in $G/tr_*.mp4
 ++ basename /s17/gen/tr_app.mp4 .mp4
 + n=tr_app
@@ -98,13 +115,25 @@
 + n=tr_hook
 + ffmpeg -v error -y -i /s17/gen/tr_hook.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_hook.jpg
 + for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_oil.mp4 .mp4
++ n=tr_oil
++ ffmpeg -v error -y -i /s17/gen/tr_oil.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_oil.jpg
++ for f in $G/tr_*.mp4
 ++ basename /s17/gen/tr_pour.mp4 .mp4
 + n=tr_pour
 + ffmpeg -v error -y -i /s17/gen/tr_pour.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_pour.jpg
 + for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_red.mp4 .mp4
++ n=tr_red
++ ffmpeg -v error -y -i /s17/gen/tr_red.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_red.jpg
++ for f in $G/tr_*.mp4
 ++ basename /s17/gen/tr_sea.mp4 .mp4
 + n=tr_sea
 + ffmpeg -v error -y -i /s17/gen/tr_sea.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_sea.jpg
++ for f in $G/tr_*.mp4
+++ basename /s17/gen/tr_split.mp4 .mp4
++ n=tr_split
++ ffmpeg -v error -y -i /s17/gen/tr_split.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_split.jpg
 + for f in $G/tr_*.mp4
 ++ basename /s17/gen/tr_tmrw.mp4 .mp4
 + n=tr_tmrw
@@ -121,14 +150,17 @@
 ++ basename /s17/gen/tr_wipe.mp4 .mp4
 + n=tr_wipe
 + ffmpeg -v error -y -i /s17/gen/tr_wipe.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_wipe.jpg
-+ ls -la /s17/gen/tr_app.mp4 /s17/gen/tr_feet.mp4 /s17/gen/tr_gas.mp4 /s17/gen/tr_hook.mp4 /s17/gen/tr_pour.mp4 /s17/gen/tr_sea.mp4 /s17/gen/tr_tmrw.mp4 /s17/gen/tr_wait.mp4 /s17/gen/tr_walk.mp4 /s17/gen/tr_wipe.mp4
--rw-r--r-- 1 runner runner    87949 Oct 31 23:52 /s17/gen/tr_app.mp4
--rw-r--r-- 1 runner runner  7876390 Oct 31 23:52 /s17/gen/tr_feet.mp4
--rw-r--r-- 1 runner runner  4150348 Oct 31 23:52 /s17/gen/tr_gas.mp4
--rw-r--r-- 1 runner runner  5300879 Oct 31 23:51 /s17/gen/tr_hook.mp4
--rw-r--r-- 1 runner runner  3786941 Oct 31 23:52 /s17/gen/tr_pour.mp4
--rw-r--r-- 1 runner runner  9060568 Oct 31 23:52 /s17/gen/tr_sea.mp4
--rw-r--r-- 1 runner runner  1368886 Oct 31 23:52 /s17/gen/tr_tmrw.mp4
--rw-r--r-- 1 runner runner  7957437 Oct 31 23:52 /s17/gen/tr_wait.mp4
--rw-r--r-- 1 runner runner 11921928 Oct 31 23:52 /s17/gen/tr_walk.mp4
--rw-r--r-- 1 runner runner  4766029 Oct 31 23:52 /s17/gen/tr_wipe.mp4
++ ls -la /s17/gen/tr_app.mp4 /s17/gen/tr_feet.mp4 /s17/gen/tr_gas.mp4 /s17/gen/tr_hook.mp4 /s17/gen/tr_oil.mp4 /s17/gen/tr_pour.mp4 /s17/gen/tr_red.mp4 /s17/gen/tr_sea.mp4 /s17/gen/tr_split.mp4 /s17/gen/tr_tmrw.mp4 /s17/gen/tr_wait.mp4 /s17/gen/tr_walk.mp4 /s17/gen/tr_wipe.mp4
+-rw-r--r-- 1 runner runner    87949 Nov  1 00:17 /s17/gen/tr_app.mp4
+-rw-r--r-- 1 runner runner  7876390 Nov  1 00:17 /s17/gen/tr_feet.mp4
+-rw-r--r-- 1 runner runner  4150348 Nov  1 00:16 /s17/gen/tr_gas.mp4
+-rw-r--r-- 1 runner runner  5300879 Nov  1 00:16 /s17/gen/tr_hook.mp4
+-rw-r--r-- 1 runner runner  4605808 Nov  1 00:16 /s17/gen/tr_oil.mp4
+-rw-r--r-- 1 runner runner  3786941 Nov  1 00:16 /s17/gen/tr_pour.mp4
+-rw-r--r-- 1 runner runner  6410410 Nov  1 00:16 /s17/gen/tr_red.mp4
+-rw-r--r-- 1 runner runner  9060568 Nov  1 00:17 /s17/gen/tr_sea.mp4
+-rw-r--r-- 1 runner runner   540210 Nov  1 00:17 /s17/gen/tr_split.mp4
+-rw-r--r-- 1 runner runner  1368886 Nov  1 00:17 /s17/gen/tr_tmrw.mp4
+-rw-r--r-- 1 runner runner  7957437 Nov  1 00:17 /s17/gen/tr_wait.mp4
+-rw-r--r-- 1 runner runner 11921928 Nov  1 00:16 /s17/gen/tr_walk.mp4
+-rw-r--r-- 1 runner runner  4766029 Nov  1 00:16 /s17/gen/tr_wipe.mp4
