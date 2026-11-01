@@ -113,7 +113,7 @@
    "html": "<div style='position:absolute;left:70px;top:1720px;width:780px;display:flex;justify-content:center'><span style=\"font:800 60px R;color:#fff;background:rgba(0,160,190,.92);padding:8px 28px;border-radius:40px\">אחרי</span></div>"
   },
   {
-   "k": "TMR",
+   "k": "CLK",
    "line": "L5",
    "d0": 0.0,
    "html": "<div style='position:absolute;left:70px;top:1000px;width:780px;display:flex;justify-content:center'><span style=\"font:800 96px R;color:#fff;background:rgba(45,36,42,.82);padding:6px 36px;border-radius:30px\">1:00</span></div>"
