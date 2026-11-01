@@ -36,7 +36,7 @@
   "שלוש, מנגבים בנייר מגבת, ואחר כך סבון ומים.",
   "שמרו את זה לפעם הבאה שהים מביא זפת.",
   "אגב, יש לכם שאלה על הים? שאלו את המאמן בסרף טרייב.",
-  "רגליים נקיות, והאוטו נשאר נקי.",
+  "רגליים נקיות, בלי טרפנטין ובלי כאב.",
   "מחר, למה גובה הגל בתחזית לא אומר הרבה."
  ],
  "titles": {
@@ -111,6 +111,12 @@
    "line": "L9",
    "d0": 0.0,
    "html": "<div style='position:absolute;left:70px;top:1720px;width:780px;display:flex;justify-content:center'><span style=\"font:800 60px R;color:#fff;background:rgba(0,160,190,.92);padding:8px 28px;border-radius:40px\">אחרי</span></div>"
+  },
+  {
+   "k": "TMR",
+   "line": "L5",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:1000px;width:780px;display:flex;justify-content:center'><span style=\"font:800 96px R;color:#fff;background:rgba(45,36,42,.82);padding:6px 36px;border-radius:30px\">1:00</span></div>"
   }
  ],
  "gap": 0.2,
@@ -166,8 +172,18 @@
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/tr_wait.mp4",
-    "a": 0.0
+    "src": "/s17/gen/tr_pour.mp4",
+    "a": 2.9,
+    "frz": 0.0,
+    "z": 1.35,
+    "cx": [
+     0.6,
+     0.6
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ]
    }
   ],
   "L6": [
