@@ -15,14 +15,14 @@ for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red tr_clean; do ffmpeg -v err
 for id in 1064 28889 1013 1078; do [ -s /tmp/px/m$id.mp4 ] || for q in 1080 720; do curl -sSfL -A "$UA" -m 300 -o /tmp/px/m$id.mp4 https://assets.mixkit.co/videos/$id/$id-$q.mp4 && break; done; done
 cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
   ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/$src.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:'max(0,min(iw-1080,($c0+($c1-$c0)*t/$t)*iw-540))':0,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$n.mp4; }
-cut m1064 2.0 4.0 0.50 0.50 tr_walk
+cut m1064 1.0 4.8 0.50 0.50 tr_walk
 cut m28889 1.0 4.0 0.50 0.50 tr_wait
 cut m1013 3.0 4.0 0.50 0.50 tr_feet
 cut m1078 0.0 4.0 0.50 0.50 tr_sea
 
 # app: "שאלו את המאמן" button (HE recording 28.09 15:24 at 11.6 s), big crop over a blurred screen (as flags5 25.10)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
-ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/he_coach.png -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:0,boxblur=30,eq=brightness=-0.35[bg];[b]crop=960:200:60:1460,scale=1080:225:flags=lanczos[fg];[bg][fg]overlay=0:840,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/tr_app.mp4
+ffmpeg -v error -y -i $G/tr_walk.mp4 -loop 1 -i /tmp/px/he_coach.png -filter_complex "[1:v]crop=960:200:60:1460,scale=1080:225:flags=lanczos[fg];[0:v][fg]overlay=0:1080:shortest=1,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/tr_app.mp4
 # teaser 05.11: real forecast screen (wave height), as rip3 app_full
 ffmpeg -v error -y -ss 3.0 -t 3.0 -i app-screens/forecast/forecast_he_height.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=840:760:120:500,scale=1080:977:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:520,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/tr_tmrw.mp4
 # before / after split (same man): top = hook first frame, bottom = end of the wipe clip
