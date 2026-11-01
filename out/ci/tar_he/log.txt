@@ -5,7 +5,7 @@ cat 31.92 T 31.928
 + python3 ov_png.py /s17/rp/tar_he
 realcuts True [0.0, 3.48, 6.92, 9.04, 12.2, 14.96, 18.68, 21.2, 25.72, 28.36, 31.928]
 safe-zone violations []
-ovplan 23
+ovplan 24
 + python3 ov_ff.py /s17/rp/tar_he
 done /s17/rp/tar_he/reel_tar_he.mp4 31.928 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/tar_he
