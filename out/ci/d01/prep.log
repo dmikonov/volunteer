@@ -22,12 +22,10 @@
 + n=tr_oil
 + u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/322a3f4602ff647ec686e3778c812503f20ebb2a36852f51ede3af23f2b14cc4/tmpup5ilwmx.mp4
 + '[' -s out/ci/d01/gen/tr_oil_raw.mp4 ']'
-+ curl -sSfL -m 120 -o out/ci/d01/gen/tr_oil_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/322a3f4602ff647ec686e3778c812503f20ebb2a36852f51ede3af23f2b14cc4/tmpup5ilwmx.mp4
 + dl tr_red https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/10d3d5d6cf0bfc96ae6544d00344e98b1ffd63bf5a86ddca69b071413571a321/tmpsrfje763.mp4
 + n=tr_red
 + u=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/10d3d5d6cf0bfc96ae6544d00344e98b1ffd63bf5a86ddca69b071413571a321/tmpsrfje763.mp4
 + '[' -s out/ci/d01/gen/tr_red_raw.mp4 ']'
-+ curl -sSfL -m 120 -o out/ci/d01/gen/tr_red_raw.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/clg9g/gradio_api/file=/tmp/gradio/10d3d5d6cf0bfc96ae6544d00344e98b1ffd63bf5a86ddca69b071413571a321/tmpsrfje763.mp4
 + for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
 + ffmpeg -v error -y -i out/ci/d01/gen/tr_hook_raw.mp4 -vf scale=-2:1920:flags=lanczos,crop=1080:1920,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/tr_hook.mp4
 + for n in tr_hook tr_pour tr_wipe tr_gas tr_oil tr_red
@@ -93,10 +91,12 @@
 + n=tr_sea
 + ffmpeg -v error -y -ss 0.0 -t 4.0 -i /tmp/px/m1078.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/tr_sea.mp4
 + ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
-+ ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/he_coach.png -vf crop=960:860:60:1000,scale=1080:968:flags=lanczos,pad=1080:1920:0:520:0x2D242A,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/tr_app.mp4
++ ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/he_coach.png -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:0,boxblur=30,eq=brightness=-0.35[bg];[b]crop=960:200:60:1460,scale=1080:225:flags=lanczos[fg];[bg][fg]overlay=0:840,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/tr_app.mp4
 + ffmpeg -v error -y -ss 1.0 -t 3.0 -i app-screens/forecast/forecast_he_height.mp4 -filter_complex '[0:v]fps=25,crop=1080:1920:0:209,split=2[a][b];[a]boxblur=28,eq=brightness=-0.32[bg];[b]scale=860:-2:flags=lanczos[fg];[bg][fg]overlay=110:520,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/tr_tmrw.mp4
 + ffmpeg -v error -y -i /s17/gen/tr_hook.mp4 -frames:v 1 -vf crop=1080:952:0:700 /tmp/px/bef.png
-+ ffmpeg -v error -y -sseof -0.6 -i /s17/gen/tr_wipe.mp4 -frames:v 1 -vf crop=1080:952:0:760 /tmp/px/aft.png
++ curl -sSfL -m 60 -o /tmp/px/clean.webp https://mcp-tools-z-image-turbo.hf.space/--replicas/lq8v9/gradio_api/file=/tmp/gradio/31407505d87629522687728254fdfbb25988ee08996433d2956ef8d8b8a42df3/image.webp
++ ffmpeg -v error -y -i /tmp/px/clean.webp -vf scale=1080:1920:flags=lanczos,crop=1080:952:0:560 /tmp/px/aft.png
++ cp /tmp/px/aft.png out/ci/d01/review/aft.png
 + ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/bef.png -loop 1 -t 3.0 -i /tmp/px/aft.png -filter_complex 'color=c=0x2D242A:s=1080x16:d=3[d];[0][d][1]vstack=inputs=3,fps=25,format=yuv420p' -an -c:v libx264 -crf 14 /s17/gen/tr_split.mp4
 + for f in $G/tr_*.mp4
 ++ basename /s17/gen/tr_app.mp4 .mp4
@@ -151,16 +151,16 @@
 + n=tr_wipe
 + ffmpeg -v error -y -i /s17/gen/tr_wipe.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d01/review/cut_tr_wipe.jpg
 + ls -la /s17/gen/tr_app.mp4 /s17/gen/tr_feet.mp4 /s17/gen/tr_gas.mp4 /s17/gen/tr_hook.mp4 /s17/gen/tr_oil.mp4 /s17/gen/tr_pour.mp4 /s17/gen/tr_red.mp4 /s17/gen/tr_sea.mp4 /s17/gen/tr_split.mp4 /s17/gen/tr_tmrw.mp4 /s17/gen/tr_wait.mp4 /s17/gen/tr_walk.mp4 /s17/gen/tr_wipe.mp4
--rw-r--r-- 1 runner runner    87949 Nov  1 00:17 /s17/gen/tr_app.mp4
--rw-r--r-- 1 runner runner  7876390 Nov  1 00:17 /s17/gen/tr_feet.mp4
--rw-r--r-- 1 runner runner  4150348 Nov  1 00:16 /s17/gen/tr_gas.mp4
--rw-r--r-- 1 runner runner  5300879 Nov  1 00:16 /s17/gen/tr_hook.mp4
--rw-r--r-- 1 runner runner  4605808 Nov  1 00:16 /s17/gen/tr_oil.mp4
--rw-r--r-- 1 runner runner  3786941 Nov  1 00:16 /s17/gen/tr_pour.mp4
--rw-r--r-- 1 runner runner  6410410 Nov  1 00:16 /s17/gen/tr_red.mp4
--rw-r--r-- 1 runner runner  9060568 Nov  1 00:17 /s17/gen/tr_sea.mp4
--rw-r--r-- 1 runner runner   540210 Nov  1 00:17 /s17/gen/tr_split.mp4
--rw-r--r-- 1 runner runner  1368886 Nov  1 00:17 /s17/gen/tr_tmrw.mp4
--rw-r--r-- 1 runner runner  7957437 Nov  1 00:17 /s17/gen/tr_wait.mp4
--rw-r--r-- 1 runner runner 11921928 Nov  1 00:16 /s17/gen/tr_walk.mp4
--rw-r--r-- 1 runner runner  4766029 Nov  1 00:16 /s17/gen/tr_wipe.mp4
+-rw-r--r-- 1 runner runner    50667 Nov  1 00:37 /s17/gen/tr_app.mp4
+-rw-r--r-- 1 runner runner  7876757 Nov  1 00:37 /s17/gen/tr_feet.mp4
+-rw-r--r-- 1 runner runner  4152435 Nov  1 00:37 /s17/gen/tr_gas.mp4
+-rw-r--r-- 1 runner runner  5301348 Nov  1 00:36 /s17/gen/tr_hook.mp4
+-rw-r--r-- 1 runner runner  4603021 Nov  1 00:37 /s17/gen/tr_oil.mp4
+-rw-r--r-- 1 runner runner  3789147 Nov  1 00:36 /s17/gen/tr_pour.mp4
+-rw-r--r-- 1 runner runner  6411456 Nov  1 00:37 /s17/gen/tr_red.mp4
+-rw-r--r-- 1 runner runner  9065392 Nov  1 00:37 /s17/gen/tr_sea.mp4
+-rw-r--r-- 1 runner runner   614794 Nov  1 00:37 /s17/gen/tr_split.mp4
+-rw-r--r-- 1 runner runner  1368886 Nov  1 00:37 /s17/gen/tr_tmrw.mp4
+-rw-r--r-- 1 runner runner  7956511 Nov  1 00:37 /s17/gen/tr_wait.mp4
+-rw-r--r-- 1 runner runner 11921365 Nov  1 00:37 /s17/gen/tr_walk.mp4
+-rw-r--r-- 1 runner runner  4767381 Nov  1 00:37 /s17/gen/tr_wipe.mp4
