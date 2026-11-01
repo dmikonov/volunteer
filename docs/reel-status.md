@@ -99,3 +99,15 @@ EN-тема 30.10 («The distance is») уже вышла 29.10 в 10:24 вне 
 | Пн 02.11 | HE | Утро или день (М03) | | | | | не собран: нет настоящих кадров «гладкое утро / ветреный день» на одном пляже, факты про ветер ⚑ ждут Диму |
 Мастер для публикации HE: https://raw.githubusercontent.com/dmikonov/volunteer/d27b7b2c1d1a32a293953a4f4322e9c861326a2c/out/ci/film_he/reel_film_he.mp4 . Подписи: docs/captions-30oct.md. Музыка mixkit-48 (film), mixkit-83 (chest). Клипы (не повторять неделю): Pexels 4782485, 4782364 (Taryn Elliott), Mixkit 15845; ИИ: fm_film/fm_film2/fm_board (Z-Image 301030/301032/301031 + Wan 2.2); chest: Pexels 8155537, 8154896, 8154903, 8154483, 8155541, ИИ ch_err16 (301102).
 Запас: 31.10 и 01.11 пусты (31.10 HE «первая доска», EN «Stop splashing»; 01.11 ждёт таблицу гидриков). Ждут ок: drop 28.10, dropin 29.10, film_he 30.10.
+
+## 31.10 ночью (найдено 01.11: сборка прошлой ночи не записала статус): Club 03.11 и splash_en 31.10
+| Дата | Аккаунт | Тема | Файлы | Превью | T1 | Интеграция | Статус |
+|---|---|---|---|---|---|---|---|
+| Вт 03.11 | HE | SurfTribe Club для инструкторов (נחשו כמה זמן...) | out/ci/club_he/reel_club_he.mp4 (b7db532aa30761a7851644bcf99d11c16b616a13), 29.72 с | https://raw.githubusercontent.com/dmikonov/volunteer/b7db532aa30761a7851644bcf99d11c16b616a13/out/ci/club_he/prev.mp4 | со строкой | Club: съёмка, оценка, заметка, список (записи 29.09) | собран 31.10 ночью (r2). Слепой зритель 01.11 (без звука, только картинка): 5/5/3/7, лайк «может быть», сохранил бы: нет; уход на 16 с (экран оценки стоит 14-21 с). Ждёт ок Димы |
+| Вт 03.11 | EN | SurfTribe Club for coaches (Guess how long...) | out/ci/club_en/reel_club_en.mp4 (b7db532...), 29.21 с | https://raw.githubusercontent.com/dmikonov/volunteer/b7db532aa30761a7851644bcf99d11c16b616a13/out/ci/club_en/prev.mp4 | без строки | то же | собран 31.10 ночью (r2). Слепой зритель 01.11: 6/6/5/7, лайк/сохранить «может быть»; уход на 16 с. Ждёт ок Димы. Слот по тесту: k=12, дневной около 14:15 |
+| Сб 31.10 | EN | Stop splashing (Т1xx) | out/ci/splash_en/reel_splash_en.mp4 (b7db532...), 29.93 с | https://raw.githubusercontent.com/dmikonov/volunteer/b7db532aa30761a7851644bcf99d11c16b616a13/out/ci/splash_en/prev.mp4 | без строки | Ask the coach | собран 30-31.10 ночью (r1), слепым зрителем не проверен. Дата прошла; тизер в конце «Tomorrow: booties and a hood» (01.11 не собран): перед выходом тизер менять. Ждёт ок Димы |
+Подписи: docs/captions-01nov.md (Club). Музыка: club mixkit-83, splash mixkit-48.
+
+## 01.11 ночью: «זפת על הרגליים» HE 04.11 (Л01); EN 04.11 и 01.11 не собраны
+- HE 01.11 (гидрик зимой) и EN 01.11 (ботинки и капюшон): не собраны, ждут факты Димы (таблица гидриков, п. 52).
+- EN 04.11 «Вес на передней ноге / standing on the tail» (Т117): не собран. В бесплатном стоке (Pexels Kampus 815xxxx, Mixkit) нет езды стоя, только гребля; урок 30.10: технике «так / не так» нужна своя съёмка. EN-тема 05.11 (период важнее высоты) уже вышла 31.10 («Two forecasts»), поэтому менять местами не с чем.
