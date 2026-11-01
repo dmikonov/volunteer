@@ -21,12 +21,13 @@ cut m1078 0.0 4.0 0.50 0.50 tr_sea
 
 # app: "שאלו את המאמן" button (HE recording 28.09 15:24 at 11.6 s), big crop over a blurred screen (as flags5 25.10)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
-ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/he_coach.png -vf "crop=960:860:60:1000,scale=1080:968:flags=lanczos,pad=1080:1920:0:520:0x2D242A,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/tr_app.mp4
+ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/he_coach.png -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:0,boxblur=30,eq=brightness=-0.35[bg];[b]crop=960:200:60:1460,scale=1080:225:flags=lanczos[fg];[bg][fg]overlay=0:840,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/tr_app.mp4
 # teaser 05.11: real forecast screen (wave height), as rip3 app_full
 ffmpeg -v error -y -ss 1.0 -t 3.0 -i app-screens/forecast/forecast_he_height.mp4 -filter_complex "[0:v]fps=25,crop=1080:1920:0:209,split=2[a][b];[a]boxblur=28,eq=brightness=-0.32[bg];[b]scale=860:-2:flags=lanczos[fg];[bg][fg]overlay=110:520,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/tr_tmrw.mp4
 # before / after split (same man): top = hook first frame, bottom = end of the wipe clip
 ffmpeg -v error -y -i $G/tr_hook.mp4 -frames:v 1 -vf "crop=1080:952:0:700" /tmp/px/bef.png
-ffmpeg -v error -y -sseof -0.6 -i $G/tr_wipe.mp4 -frames:v 1 -vf "crop=1080:952:0:760" /tmp/px/aft.png
+curl -sSfL -m 60 -o /tmp/px/clean.webp "https://mcp-tools-z-image-turbo.hf.space/--replicas/lq8v9/gradio_api/file=/tmp/gradio/31407505d87629522687728254fdfbb25988ee08996433d2956ef8d8b8a42df3/image.webp" && ffmpeg -v error -y -i /tmp/px/clean.webp -vf "scale=1080:1920:flags=lanczos,crop=1080:952:0:560" /tmp/px/aft.png || ffmpeg -v error -y -sseof -0.6 -i $G/tr_wipe.mp4 -frames:v 1 -vf "crop=1080:952:0:760" /tmp/px/aft.png
+cp /tmp/px/aft.png out/ci/d01/review/aft.png
 ffmpeg -v error -y -loop 1 -t 3.0 -i /tmp/px/bef.png -loop 1 -t 3.0 -i /tmp/px/aft.png -filter_complex "color=c=0x2D242A:s=1080x16:d=3[d];[0][d][1]vstack=inputs=3,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/tr_split.mp4
 for f in $G/tr_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 out/ci/d01/review/cut_$n.jpg; done
 ls -la $G/tr_*
