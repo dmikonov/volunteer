@@ -12,10 +12,10 @@ cut m1102 1.0 5.0 0.50 0.50 lc_rocks
 cut m1101 7.0 5.0 0.22 0.22 lc_watch
 cut m1074 2.0 5.0 0.50 0.50 lc_aerial
 cut m1128 10.0 5.0 0.40 0.55 lc_left
-cut m1102 6.0 4.0 0.55 0.55 lc_save
+cut m1100 8.0 4.0 0.50 0.50 lc_save
 cut m1076 4.0 4.0 0.50 0.62 lc_ride
 cut m1070 6.0 5.0 0.50 0.50 lc_tmrw
 # app: EN forecast coach tip card ("Good day means a crowded peak"), crop of the tip text 1.93x over the blurred screen
-ffmpeg -v error -y -ss 2.0 -t 4.5 -i app-screens/forecast/forecast_en_best.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=560:520:450:560,scale=1080:1003:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:600,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/lc_app.mp4
+ffmpeg -v error -y -ss 2.0 -t 4.5 -i app-screens/forecast/forecast_en_best.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=560:520:450:560,scale=1080:1003:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:700,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/lc_app.mp4
 for f in $G/lc_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 out/ci/d04b/review/cut_$n.jpg; done
 ls -la $G/lc_*
