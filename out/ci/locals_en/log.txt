@@ -1,0 +1,19 @@
++ k=/s17/rp/locals_en
++ python3 build.py /s17/rp/locals_en
+[('L1', '/lc_hook.mp4', 0.0, 2.671, 0.0), ('L2', '/lc_face.mp4', 0.0, 3.587, 2.671), ('L3', 'lc_rocks.mp4', 0.0, 2.11, 6.258), ('L4', 'lc_watch.mp4', 0.0, 3.345, 8.368), ('L5', 'c_aerial.mp4', 0.0, 3.582, 11.713), ('L6', '/lc_left.mp4', 0.0, 3.823, 15.295), ('L7', '/lc_save.mp4', 0.0, 2.276, 19.118), ('L8', 'n/lc_app.mp4', 0.0, 5.074, 21.394), ('L9', '/lc_ride.mp4', 0.0, 2.665, 26.468), ('L10', '/lc_tmrw.mp4', 0.0, 4.321, 29.133)]
+cat 33.56 T 33.454
++ python3 ov_png.py /s17/rp/locals_en
+realcuts True [0.0, 2.68, 6.28, 8.4, 11.76, 15.36, 19.2, 21.48, 26.56, 29.24, 33.454]
+safe-zone violations []
+ovplan 22
++ python3 ov_ff.py /s17/rp/locals_en
+done /s17/rp/locals_en/reel_locals_en.mp4 33.454 lufs before -15.2 gain 0.7
++ python3 trim_tail.py /s17/rp/locals_en
+trimmed /s17/rp/locals_en/reel_locals_en.mp4 32.95
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/locals_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/locals_en/reel_locals_en.mp4
+/s17/rp/locals_en/reel_locals_en.mp4 before -13.0 after -14.5 peak -3.2
++ python3 post_cz.py /s17/rp/locals_en
+post ok
++ echo 'EXIT /s17/rp/locals_en 0'
+EXIT /s17/rp/locals_en 0
