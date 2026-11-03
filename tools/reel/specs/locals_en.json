@@ -20,18 +20,18 @@
   "New spot, and you can't buy a wave?",
   "Relax. The locals just don't know your face yet.",
   "Three fixes for your first session.",
-  "One. Watch it from the beach for ten minutes.",
+  "One. Watch the lineup from the beach for ten minutes.",
   "Two. Sit wide on the shoulder, off the peak.",
   "Three. Take the leftovers. And say hi.",
-  "Save it. You'll want it on your next trip.",
-  "And in Surf Tribe, the coach tip warns you when the peak gets crowded.",
+  "Surf Tribe's coach tip flags a crowded peak.",
   "Do that, and the locals start sharing.",
+  "Save it for your next trip.",
   "Tomorrow: why your knee is killing your pop-up."
  ],
  "titles": {
   "L1": [
-   "Locals taking",
-   "every wave?",
+   "New spot.",
+   "Zero waves?",
    null,
    null
   ],
@@ -66,19 +66,19 @@
    null
   ],
   "L7": [
-   "Save it for the trip",
+   "Coach tip",
    null,
    null,
    null
   ],
   "L8": [
-   "Coach tip:",
-   "crowded peak",
+   "Locals start sharing",
+   null,
    null,
    null
   ],
   "L9": [
-   "Locals start sharing",
+   "Save it for the trip",
    null,
    null,
    null
@@ -95,13 +95,25 @@
    "d0": 0.2,
    "d1": 2.6,
    "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:1560px;left:70px;width:780px;display:flex;justify-content:center'><span class='fl' style=\"white-space:nowrap;font:700 50px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
+  },
+  {
+   "k": "RPEAK",
+   "line": "L5",
+   "d0": 0.3,
+   "html": "<div style='position:absolute;left:10px;top:560px;width:220px;height:220px;border:8px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div><div style='position:absolute;left:40px;top:800px'><span style=\"font:800 52px R;color:#fff;background:rgba(255,81,80,.95);padding:4px 22px;border-radius:30px\">PEAK</span></div>"
+  },
+  {
+   "k": "RYOU",
+   "line": "L5",
+   "d0": 0.9,
+   "html": "<div style='position:absolute;left:690px;top:720px;width:160px;height:160px;border:8px solid rgba(0,170,200,.95);border-radius:50%;box-sizing:border-box'></div><div style='position:absolute;left:690px;top:900px'><span style=\"font:800 52px R;color:#fff;background:rgba(0,170,200,.95);padding:4px 22px;border-radius:30px\">YOU</span></div>"
   }
  ],
  "gap": 0.15,
  "gap_after": {
   "L2": 0.2,
   "L6": 0.2,
-  "L8": 0.2
+  "L8": 0.15
  },
  "ttop": {
   "L1": 380,
@@ -112,7 +124,8 @@
   "L6": 380,
   "L7": 380,
   "L8": 380,
-  "L9": 380
+  "L9": 380,
+  "L10": 380
  },
  "plan": {
   "L1": [
@@ -125,7 +138,7 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/lc_face.mp4",
+    "src": "/s17/gen/lc_local.mp4",
     "a": 0.0
    }
   ],
@@ -159,22 +172,22 @@
   ],
   "L7": [
    {
-    "kind": "gen",
-    "src": "/s17/gen/lc_save.mp4",
+    "kind": "app",
+    "src": "/s17/gen/lc_app.mp4",
     "a": 0.0
    }
   ],
   "L8": [
    {
-    "kind": "app",
-    "src": "/s17/gen/lc_app.mp4",
+    "kind": "gen",
+    "src": "/s17/gen/lc_ride.mp4",
     "a": 0.0
    }
   ],
   "L9": [
    {
     "kind": "gen",
-    "src": "/s17/gen/lc_ride.mp4",
+    "src": "/s17/gen/lc_save.mp4",
     "a": 0.0
    }
   ],
