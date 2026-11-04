@@ -1,5 +1,12 @@
-Traceback (most recent call last):
-  File "/s17/rp/voicecheck.py", line 4, in <module>
-    W = sys.argv[1]; S = json.load(open(f'{W}/spec.json')); TL = json.load(open(f'{W}/tl.json')); HE = S['lang'] == 'he'
-                                                                           ~~~~^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/s17/rp/warmup_en/tl.json'
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=3.06 dur=2.61 | ref: I thought warming up was wasted surf time. | asr: I thought warming up was wasted surf time.
+L2 OK match=0.85 wps=2.86 dur=2.45 | ref: Then my arms died twenty minutes in. | asr: Then my arms died 20 minutes in.
+L3 OK match=1.00 wps=1.59 dur=2.51 | ref: Three fixes. Five minutes. | asr: Three fixes, five minutes.
+L4 CHECK match=0.83 wps=1.82 dur=3.85 | ref: One. Deep side lunges, five each side. | asr: 1. Deep side lunges. 5. Each side.
+L5 OK match=0.89 wps=3.04 dur=1.97 | ref: Two. Chest up, and hold it. | asr: 2. Chest up and hold it
+L6 CHECK match=0.82 wps=2.15 dur=2.32 | ref: Three. Side plank, arm up. | asr: 3. Side plank, arm up.
+L7 OK match=1.00 wps=2.54 dur=2.36 | ref: Now your first paddle feels easy. | asr: Now your first paddle feels easy.
+L8 OK match=0.93 wps=3.90 dur=1.79 | ref: Save it for your next dawn session. | asr: Save it for your next on session.
+L9 OK match=1.00 wps=2.80 dur=2.50 | ref: Drills for your weak spot? Surf Tribe. | asr: Drills for your weak spot, Surf Tribe.
+L10 OK match=1.00 wps=2.56 dur=2.74 | ref: Tomorrow: why your first board needs volume. | asr: Tomorrow, why your first board needs volume.
+TOTAL wps=2.55 lines_to_check=2
