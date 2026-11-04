@@ -110,7 +110,7 @@ tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 + ffmpeg -v error -y -ss 22.5 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/px/ask.png
 tools/reel/specs/locals_en.prep.sh: line 21: ffmpeg: command not found
-+ ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/ask.png -filter_complex '[0:v]split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.3[bg];[b]crop=864:420:108:1560,scale=1080:525:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:700,fps=25,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/lc_app.mp4
++ ffmpeg -v error -y -loop 1 -t 4.2 -i /tmp/px/ask.png -filter_complex '[0:v]split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.3[bg];[b]crop=864:420:108:1560,scale=1080:525:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:700,fps=25,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/lc_app.mp4
 tools/reel/specs/locals_en.prep.sh: line 22: ffmpeg: command not found
 + for f in $G/lc_*.mp4
 ++ basename '/s17/gen/lc_*.mp4' .mp4
