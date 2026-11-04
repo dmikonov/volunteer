@@ -1,0 +1,168 @@
++ '[' -f /s17/gen/wu_app.mp4 ']'
++ G=/s17/gen
++ mkdir -p /s17/gen /tmp/px out/ci/d05w/cuts
++ UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
++ for id in 6299679 6299681 6299684
++ '[' -s /tmp/px/p6299679.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p6299679.mp4 https://videos.pexels.com/video-files/6299679/6299679-uhd_2560_1440_25fps.mp4
++ for id in 6299679 6299681 6299684
++ '[' -s /tmp/px/p6299681.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p6299681.mp4 https://videos.pexels.com/video-files/6299681/6299681-uhd_2560_1440_25fps.mp4
++ for id in 6299679 6299681 6299684
++ '[' -s /tmp/px/p6299684.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p6299684.mp4 https://videos.pexels.com/video-files/6299684/6299684-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8154486 8154896 8155541
++ '[' -s /tmp/px/k8154903.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154903.mp4 https://videos.pexels.com/video-files/8154903/8154903-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8154486 8154896 8155541
++ '[' -s /tmp/px/k8154486.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154486.mp4 https://videos.pexels.com/video-files/8154486/8154486-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8154486 8154896 8155541
++ '[' -s /tmp/px/k8154896.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154896.mp4 https://videos.pexels.com/video-files/8154896/8154896-uhd_2560_1440_25fps.mp4
++ for id in 8154903 8154486 8154896 8155541
++ '[' -s /tmp/px/k8155541.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8155541.mp4 https://videos.pexels.com/video-files/8155541/8155541-uhd_2560_1440_25fps.mp4
++ cutz k8154903 7.3 2.6 0.42 0.42 1920 0.5 wu_hook
++ src=k8154903
++ ss=7.3
++ t=2.6
++ c0=0.42
++ c1=0.42
++ H=1920
++ cy=0.5
++ n=wu_hook
++ ffmpeg -v error -y -ss 7.3 -t 2.6 -i /tmp/px/k8154903.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.42+(0.42-0.42)*t/2.6)*iw-540))'\'':'\''max(0,min(ih-1920,0.5*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_hook.mp4
++ cutz k8154903 3.3 3.0 0.52 0.55 1920 0.5 wu_tired
++ src=k8154903
++ ss=3.3
++ t=3.0
++ c0=0.52
++ c1=0.55
++ H=1920
++ cy=0.5
++ n=wu_tired
++ ffmpeg -v error -y -ss 3.3 -t 3.0 -i /tmp/px/k8154903.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.52+(0.55-0.52)*t/3.0)*iw-540))'\'':'\''max(0,min(ih-1920,0.5*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_tired.mp4
++ cutz p6299684 0.0 2.2 0.66 0.66 2304 0.58 wu_three
++ src=p6299684
++ ss=0.0
++ t=2.2
++ c0=0.66
++ c1=0.66
++ H=2304
++ cy=0.58
++ n=wu_three
++ ffmpeg -v error -y -ss 0.0 -t 2.2 -i /tmp/px/p6299684.mp4 -vf 'scale=-2:2304:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.66+(0.66-0.66)*t/2.2)*iw-540))'\'':'\''max(0,min(ih-1920,0.58*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_three.mp4
++ cutz p6299679 0.5 3.4 0.36 0.36 1920 0.5 wu_lunge
++ src=p6299679
++ ss=0.5
++ t=3.4
++ c0=0.36
++ c1=0.36
++ H=1920
++ cy=0.5
++ n=wu_lunge
++ ffmpeg -v error -y -ss 0.5 -t 3.4 -i /tmp/px/p6299679.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.36+(0.36-0.36)*t/3.4)*iw-540))'\'':'\''max(0,min(ih-1920,0.5*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_lunge.mp4
++ cutz p6299681 1.0 3.2 0.70 0.70 2304 0.56 wu_dog
++ src=p6299681
++ ss=1.0
++ t=3.2
++ c0=0.70
++ c1=0.70
++ H=2304
++ cy=0.56
++ n=wu_dog
++ ffmpeg -v error -y -ss 1.0 -t 3.2 -i /tmp/px/p6299681.mp4 -vf 'scale=-2:2304:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.70+(0.70-0.70)*t/3.2)*iw-540))'\'':'\''max(0,min(ih-1920,0.56*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_dog.mp4
++ cutz p6299684 4.0 3.2 0.68 0.68 2304 0.6 wu_plank
++ src=p6299684
++ ss=4.0
++ t=3.2
++ c0=0.68
++ c1=0.68
++ H=2304
++ cy=0.6
++ n=wu_plank
++ ffmpeg -v error -y -ss 4.0 -t 3.2 -i /tmp/px/p6299684.mp4 -vf 'scale=-2:2304:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.68+(0.68-0.68)*t/3.2)*iw-540))'\'':'\''max(0,min(ih-1920,0.6*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_plank.mp4
++ cutz k8154486 18.0 3.6 0.58 0.62 1920 0.5 wu_glide
++ src=k8154486
++ ss=18.0
++ t=3.6
++ c0=0.58
++ c1=0.62
++ H=1920
++ cy=0.5
++ n=wu_glide
++ ffmpeg -v error -y -ss 18.0 -t 3.6 -i /tmp/px/k8154486.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.58+(0.62-0.58)*t/3.6)*iw-540))'\'':'\''max(0,min(ih-1920,0.5*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_glide.mp4
++ cutz k8154896 4.0 3.2 0.45 0.45 1920 0.5 wu_save
++ src=k8154896
++ ss=4.0
++ t=3.2
++ c0=0.45
++ c1=0.45
++ H=1920
++ cy=0.5
++ n=wu_save
++ ffmpeg -v error -y -ss 4.0 -t 3.2 -i /tmp/px/k8154896.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.45-0.45)*t/3.2)*iw-540))'\'':'\''max(0,min(ih-1920,0.5*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_save.mp4
++ cutz k8155541 10.0 3.6 0.50 0.50 1920 0.5 wu_tmrw
++ src=k8155541
++ ss=10.0
++ t=3.6
++ c0=0.50
++ c1=0.50
++ H=1920
++ cy=0.5
++ n=wu_tmrw
++ ffmpeg -v error -y -ss 10.0 -t 3.6 -i /tmp/px/k8155541.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/3.6)*iw-540))'\'':'\''max(0,min(ih-1920,0.5*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_tmrw.mp4
++ ffmpeg -v error -y -ss 18.0 -i app-screens/ScreenRecording_09-26-2026_17-24-44_1.mp4 -frames:v 1 /tmp/px/drills.png
++ ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/drills.png -filter_complex '[0:v]split=2[a][b];[a]crop=1080:1920:0:214,boxblur=28,eq=brightness=-0.3[bg];[b]crop=800:720:140:430,scale=1080:972:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:600,fps=25,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/wu_app.mp4
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_app.mp4 .mp4
++ n=wu_app
++ ffmpeg -v error -y -i /s17/gen/wu_app.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_app.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_dog.mp4 .mp4
++ n=wu_dog
++ ffmpeg -v error -y -i /s17/gen/wu_dog.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_dog.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_glide.mp4 .mp4
++ n=wu_glide
++ ffmpeg -v error -y -i /s17/gen/wu_glide.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_glide.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_hook.mp4 .mp4
++ n=wu_hook
++ ffmpeg -v error -y -i /s17/gen/wu_hook.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_hook.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_lunge.mp4 .mp4
++ n=wu_lunge
++ ffmpeg -v error -y -i /s17/gen/wu_lunge.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_lunge.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_plank.mp4 .mp4
++ n=wu_plank
++ ffmpeg -v error -y -i /s17/gen/wu_plank.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_plank.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_save.mp4 .mp4
++ n=wu_save
++ ffmpeg -v error -y -i /s17/gen/wu_save.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_save.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_three.mp4 .mp4
++ n=wu_three
++ ffmpeg -v error -y -i /s17/gen/wu_three.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_three.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_tired.mp4 .mp4
++ n=wu_tired
++ ffmpeg -v error -y -i /s17/gen/wu_tired.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_tired.jpg
++ for f in $G/wu_*.mp4
+++ basename /s17/gen/wu_tmrw.mp4 .mp4
++ n=wu_tmrw
++ ffmpeg -v error -y -i /s17/gen/wu_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_tmrw.jpg
++ ls -la /s17/gen/wu_app.mp4 /s17/gen/wu_dog.mp4 /s17/gen/wu_glide.mp4 /s17/gen/wu_hook.mp4 /s17/gen/wu_lunge.mp4 /s17/gen/wu_plank.mp4 /s17/gen/wu_save.mp4 /s17/gen/wu_three.mp4 /s17/gen/wu_tired.mp4 /s17/gen/wu_tmrw.mp4
+-rw-r--r-- 1 runner runner  156067 Nov  4 23:14 /s17/gen/wu_app.mp4
+-rw-r--r-- 1 runner runner 2104560 Nov  4 23:14 /s17/gen/wu_dog.mp4
+-rw-r--r-- 1 runner runner 6965168 Nov  4 23:14 /s17/gen/wu_glide.mp4
+-rw-r--r-- 1 runner runner 5522014 Nov  4 23:14 /s17/gen/wu_hook.mp4
+-rw-r--r-- 1 runner runner 2793758 Nov  4 23:14 /s17/gen/wu_lunge.mp4
+-rw-r--r-- 1 runner runner 2516224 Nov  4 23:14 /s17/gen/wu_plank.mp4
+-rw-r--r-- 1 runner runner 8036913 Nov  4 23:14 /s17/gen/wu_save.mp4
+-rw-r--r-- 1 runner runner 1913908 Nov  4 23:14 /s17/gen/wu_three.mp4
+-rw-r--r-- 1 runner runner 8205585 Nov  4 23:14 /s17/gen/wu_tired.mp4
+-rw-r--r-- 1 runner runner 8117500 Nov  4 23:14 /s17/gen/wu_tmrw.mp4

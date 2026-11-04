@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/s17/rp/voice.py", line 37, in <module>
+    L = asyncio.run(tts())
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/s17/rp/voice.py", line 14, in tts
+    async for ch in c.stream():
+        if ch['type'] == 'audio': audio += ch['data']
+        elif ch['type'] == 'WordBoundary': words.append([ch['text'], ch['offset'] / 1e7, (ch['offset'] + ch['duration']) / 1e7])
+  File "/home/runner/.local/lib/python3.14/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+        yield message
+  File "/home/runner/.local/lib/python3.14/site-packages/edge_tts/communicate.py", line 562, in __stream
+    raise NoAudioReceived(
+        "No audio was received. Please verify that your parameters are correct."
+    )
+edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct.
