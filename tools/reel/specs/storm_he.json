@@ -102,6 +102,12 @@
    "d0": 0.2,
    "d1": 2.6,
    "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:700px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">עוקבים, טיפ גלישה כל יום</span></div>"
+  },
+  {
+   "k": "RED",
+   "line": "L10",
+   "d0": 0.6,
+   "html": "<div style='position:absolute;left:30px;top:830px;width:380px;height:420px;border:9px solid rgba(255,81,80,.95);border-radius:36px;box-sizing:border-box'></div><div style='position:absolute;left:30px;top:1270px;width:380px;display:flex;justify-content:center'><span style=\"font:800 56px R;color:#fff;background:rgba(255,81,80,.95);padding:4px 26px;border-radius:30px\">לא נכנסים</span></div>"
   }
  ],
  "gap": 0.2,
