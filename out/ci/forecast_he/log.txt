@@ -1,0 +1,19 @@
++ k=/s17/rp/forecast_he
++ python3 build.py /s17/rp/forecast_he
+[('L1', '/fc_hook.mp4', 0.0, 2.871, 0.0), ('L2', 'fc_split.mp4', 0.0, 2.825, 2.871), ('L3', '_app_all.mp4', 0.0, 3.823, 5.696), ('L4', 'fc_lines.mp4', 0, 1.5, 9.519), ('L4', 'fc_app_p.mp4', 0.0, 2.333, 11.019), ('L5', '/fc_chop.mp4', 0, 1.5, 13.352), ('L5', 'fc_app_w.mp4', 0.0, 2.805, 14.852), ('L6', 'fc_small.mp4', 0, 1.5, 17.657), ('L6', 'fc_app_h.mp4', 0.0, 1.6, 19.157), ('L7', '/fc_ride.mp4', 0.0, 2.17, 20.757), ('L8', '/fc_ride.mp4', 3.0, 3.193, 22.927), ('L9', '/fc_tmrw.mp4', 0.0, 3.704, 26.12)]
+cat 29.92 T 29.824
++ python3 ov_png.py /s17/rp/forecast_he
+realcuts True [0.0, 2.88, 5.72, 9.56, 13.4, 17.72, 20.84, 23.0, 26.2, 29.824]
+safe-zone violations []
+ovplan 24
++ python3 ov_ff.py /s17/rp/forecast_he
+done /s17/rp/forecast_he/reel_forecast_he.mp4 29.824 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/forecast_he
+trimmed /s17/rp/forecast_he/reel_forecast_he.mp4 29.32
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/forecast_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/forecast_he/reel_forecast_he.mp4
+/s17/rp/forecast_he/reel_forecast_he.mp4 before -12.9 after -14.6 peak -3.1
++ python3 post_cz.py /s17/rp/forecast_he
+post ok
++ echo 'EXIT /s17/rp/forecast_he 0'
+EXIT /s17/rp/forecast_he 0
