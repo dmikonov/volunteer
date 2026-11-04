@@ -16,8 +16,8 @@ ffmpeg -v error -y -loop 1 -t 5.0 -i /tmp/px/lc_still.png -vf "fps=25,format=yuv
 cut m1128 13.2 3.3 0.55 0.65 lc_left
 cut m1076 4.0 4.0 0.50 0.62 lc_ride
 cut m1076 8.0 3.0 0.62 0.70 lc_save
-cut m1070 11.0 5.0 0.50 0.50 lc_tmrw
-# app: EN forecast coach tip: score ring 1.5x + only the tip "Good day means a crowded peak: pick the second-best bank" 2x (no rail-turns line)
-ffmpeg -v error -y -ss 2.0 -t 4.0 -i app-screens/forecast/forecast_en_best.mp4 -filter_complex "[0:v]fps=25,split=2[a][c];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.35[bg];[c]crop=540:205:450:845,scale=1080:410:flags=lanczos,unsharp=5:5:0.4[tip];[bg][tip]overlay=0:820,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/lc_app.mp4
+cut m1070 6.0 5.0 0.50 0.50 lc_tmrw
+# app: Ask the coach button, EN recording 12.10 (21.6 s), full frame (soft lead). Was: forecast coach tip: score ring 1.5x + only the tip "Good day means a crowded peak: pick the second-best bank" 2x (no rail-turns line)
+ffmpeg -v error -y -ss 21.6 -t 3.6 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -vf "crop=864:1536:108:450,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p" -an -c:v libx264 -crf 14 $G/lc_app.mp4
 for f in $G/lc_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 out/ci/d04b/review/cut_$n.jpg; done
 ls -la $G/lc_*
