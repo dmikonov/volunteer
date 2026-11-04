@@ -8,13 +8,13 @@ take 2 5 wer 0.143 dur 2.95 | אז מתי נשארים על החול השלוש�
 take 3 6 wer 0.0 dur 2.49 | אחת יש ברקים לא נכנסים בכלל
 take 3 7 wer 0.0 dur 2.49 | אחת יש ברקים, לא נכנסים בכלל
 take 4 8 wer 0.0 dur 3.74 | 2. כל הים קצף עד האופק, נשארים על החול.
-take 4 9 wer 0.111 dur 3.45 | שתיים קל הים קצף עד האופק נשארים על החול.
+take 4 9 wer 0.111 dur 3.45 | שתיים קל הים קצף עד האופק, נשארים על החול.
 take 5 10 wer 0.0 dur 3.13 | 3. אין הפסקה בין הגלים, סט אחרי סט.
 take 5 11 wer 0.0 dur 3.13 | 3. אין הפסקה בין הגלים סט אחרי סט.
 take 6 12 wer 0.143 dur 4.0 | ואז מחכים יומיים שהרוח תרגע והים יסתדר.
 take 6 13 wer 0.0 dur 4.0 | ואז מחכים יומיים שהרוח תירגע והים יסתדר.
 take 7 14 wer 0.0 dur 2.4 | ותראו מה זה הים יומיים אחרי.
-take 7 15 wer 0.0 dur 2.4 | ותראו מה זה הים יומיים אחרי.
+take 7 15 wer 0.0 dur 2.4 | ותראו מה זה, הים יומיים אחרי.
 take 8 16 wer 0.125 dur 3.45 | שווייסט, תשמרו את זה, תצטרכו את זה בסערה הבאה.
 take 8 17 wer 0.0 dur 3.45 | תשמרו את זה, תצטרכו את זה בסערה הבאה.
 take 9 18 wer 0.222 dur 4.3 | ובתחזית של סרפטרייב רואים מראש את הימים האדומים.
@@ -25,7 +25,7 @@ PICK 0 wer 0.0 | final fall (-8.7 st, expected fall) | pitch 123 Hz (level +1.1 
 PICK 1 wer 0.111 | final fall (-6.2 st, expected fall) | pitch 115 Hz (level -0.1 st) | range 12.5 st | תכלס רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
 PICK 2 wer 0.143 | final rise (+3.2 st, expected fall) | pitch 111 Hz (level -0.7 st) | range 7.2 st | אז מתי נשארים על החול השלושה סימנים?
 PICK 3 wer 0.0 | final fall (-6.2 st, expected fall) | pitch 145 Hz (level +3.9 st) | range 16.5 st | אחת יש ברקים, לא נכנסים בכלל
-PICK 4 wer 0.111 | final fall (-8.0 st, expected fall) | pitch 134 Hz (level +2.6 st) | range 12.5 st | שתיים קל הים קצף עד האופק נשארים על החול.
+PICK 4 wer 0.111 | final fall (-8.0 st, expected fall) | pitch 134 Hz (level +2.6 st) | range 12.5 st | שתיים קל הים קצף עד האופק, נשארים על החול.
 PICK 5 wer 0.0 | final fall (-8.3 st, expected fall) | pitch 115 Hz (level -0.0 st) | range 13.0 st | 3. אין הפסקה בין הגלים סט אחרי סט.
 PICK 6 wer 0.0 | final rise (+7.3 st, expected fall) | pitch 105 Hz (level -1.6 st) | range 10.2 st | ואז מחכים יומיים שהרוח תירגע והים יסתדר.
 PICK 7 wer 0.0 | final level (+0.5 st, expected fall) | pitch 116 Hz (level +0.1 st) | range 13.5 st | ותראו מה זה הים יומיים אחרי.
