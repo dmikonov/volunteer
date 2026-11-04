@@ -8,12 +8,18 @@ def dur(f):
 async def tts():
     v, r = VO[LANG]; r = S.get('rate', r); out = []
     for i, t in enumerate(S['lines'], 1):
-        try: c = edge_tts.Communicate(t, v, rate=r, boundary='WordBoundary')
-        except TypeError: c = edge_tts.Communicate(t, v, rate=r)
-        audio = bytearray(); words = []
-        async for ch in c.stream():
-            if ch['type'] == 'audio': audio += ch['data']
-            elif ch['type'] == 'WordBoundary': words.append([ch['text'], ch['offset'] / 1e7, (ch['offset'] + ch['duration']) / 1e7])
+        for att in range(8):  # 05.11: edge endpoint gives intermittent 403 / NoAudioReceived on CI, retry each line
+            try:
+                try: c = edge_tts.Communicate(t, v, rate=r, boundary='WordBoundary')
+                except TypeError: c = edge_tts.Communicate(t, v, rate=r)
+                audio = bytearray(); words = []
+                async for ch in c.stream():
+                    if ch['type'] == 'audio': audio += ch['data']
+                    elif ch['type'] == 'WordBoundary': words.append([ch['text'], ch['offset'] / 1e7, (ch['offset'] + ch['duration']) / 1e7])
+                if audio and words: break
+            except Exception as e:
+                print('tts retry', i, att, type(e).__name__)
+            await asyncio.sleep(4 + 3 * att)
         fn = f'{W}/L{i}.mp3'; open(fn, 'wb').write(audio)
         out.append({'k': f'L{i}', 'txt': t, 'fn': fn, 'words': words})
     return out
