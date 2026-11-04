@@ -1,0 +1,220 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "he",
+ "out": "reel_forecast_he.mp4",
+ "lines": [
+  "האמת? הגובה של הגל כמעט לא משנה.",
+  "אותו מטר, פעם בלגן ופעם נקי לגמרי.",
+  "אז בתחזית של סרף טרייב, מסתכלים על שלושה דברים.",
+  "אחת, זמן גל. שמונה שניות ויותר, והגלים מסודרים.",
+  "שתיים, רוח. מהים היא הורסת את הגל, אתם רוצים אותה מהיבשה.",
+  "שלוש, ורק אז גובה. מתחילים? חצי מטר עד מטר.",
+  "וככה זה נראה כשהכל מסתדר.",
+  "תשמרו, ותציצו בזה לפני שאתם נכנסים למים.",
+  "ומחר, איפה משאירים את המפתח של האוטו?"
+ ],
+ "titles": {
+  "L1": [
+   "גובה הגל?",
+   "כמעט לא משנה",
+   null,
+   null
+  ],
+  "L2": [
+   "אותו מטר",
+   null,
+   null,
+   null
+  ],
+  "L3": [
+   "3 דברים לבדוק",
+   "בתחזית",
+   null,
+   null
+  ],
+  "L4": [
+   "1. זמן גל",
+   "8 שניות ומעלה",
+   null,
+   null
+  ],
+  "L5": [
+   "2. רוח",
+   "מהיבשה",
+   null,
+   null
+  ],
+  "L6": [
+   "3. גובה",
+   "חצי מטר עד מטר",
+   null,
+   null
+  ],
+  "L7": [
+   "ככה זה נראה",
+   null,
+   null,
+   null
+  ],
+  "L8": [
+   "תשמרו לפני",
+   "שנכנסים למים",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "מחר",
+  "איפה משאירים את המפתח?"
+ ],
+ "extra": [
+  {
+   "k": "LBA",
+   "line": "L2",
+   "d0": 0.3,
+   "html": "<div style='position:absolute;top:820px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:800 56px R;color:#fff;background:rgba(255,81,80,.95);padding:6px 30px;border-radius:32px\">מטר, בלגן</span></div>"
+  },
+  {
+   "k": "LBB",
+   "line": "L2",
+   "d0": 0.9,
+   "html": "<div style='position:absolute;top:1000px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:800 56px R;color:#fff;background:rgba(14,150,170,.95);padding:6px 30px;border-radius:32px\">מטר, נקי</span></div>"
+  },
+  {
+   "k": "CHP",
+   "line": "L4",
+   "d0": 1.8,
+   "html": "<div style='position:absolute;top:600px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:800 56px R;color:#fff;background:rgba(255,81,80,.95);padding:6px 30px;border-radius:32px\">פה 6: קצר מדי</span></div>"
+  },
+  {
+   "k": "CHW",
+   "line": "L5",
+   "d0": 1.8,
+   "html": "<div style='position:absolute;top:600px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:800 56px R;color:#fff;background:rgba(14,150,170,.95);padding:6px 30px;border-radius:32px\">אופשור = מהיבשה</span></div>"
+  },
+  {
+   "k": "CHH",
+   "line": "L6",
+   "d0": 1.8,
+   "html": "<div style='position:absolute;top:600px;left:70px;width:780px;display:flex;justify-content:center;direction:rtl'><span style=\"white-space:nowrap;font:800 56px R;color:#fff;background:rgba(14,150,170,.95);padding:6px 30px;border-radius:32px\">0.9: מתאים</span></div>"
+  }
+ ],
+ "gap": 0.2,
+ "gap_after": {
+  "L1": 0.15,
+  "L3": 0.15,
+  "L6": 0.15
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L8": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_split.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/fc_app_all.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_lines.mp4",
+    "a": 0,
+    "dd": 1.5
+   },
+   {
+    "kind": "app",
+    "src": "/s17/gen/fc_app_p.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_chop.mp4",
+    "a": 0,
+    "dd": 1.5
+   },
+   {
+    "kind": "app",
+    "src": "/s17/gen/fc_app_w.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_small.mp4",
+    "a": 0,
+    "dd": 1.5
+   },
+   {
+    "kind": "app",
+    "src": "/s17/gen/fc_app_h.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_ride.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_ride.mp4",
+    "a": 3.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/fc_tmrw.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "בסרף טרייב": "ב-SurfTribe",
+  "סרף טרייב": "SurfTribe"
+ },
+ "f5": true
+}
