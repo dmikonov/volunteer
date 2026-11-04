@@ -1,0 +1,27 @@
+SOURCES for p22 (Generated P22 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical high aerial drone photograph looking down along a sandy Mediterranean coastline: in the lower half of the frame a sandbar offshore makes several white lines of breaking waves with tiny surfers on them, in the upper half of the frame the same coastline continues with deep dark blue water and no waves at all, completely flat, clear visual contrast, natural midday light, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical top-down aerial drone photograph of clear turquoise Mediterranean water over a sandy bottom: a lighter shallow sandbar is visible under the water and a wave is breaking white exactly over the sandbar, while the darker deeper water on either side stays unbroken, natural colors, documentary nature photography, no people, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary surf photograph from the water: a clean A-frame wave peak about chest high breaking over a shallow sandbar, the lighter sand bottom visible through clear green water in front of the wave, nobody on it, Mediterranean morning light, offshore wind spray from the lip, no people, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical aerial drone photograph of a Mediterranean beach with a rock breakwater made of large boulders extending into the sea: behind the breakwater the water is calm, flat and protected, while on the open side waves break and a channel of darker choppy water with sandy streaks runs out to sea alongside the rocks, nobody in the water, no text, no logos, no signs, natural light"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary photograph from a low dune looking straight out to sea from an open sandy Mediterranean beach: several evenly spaced swell lines rolling in head-on toward the beach and breaking cleanly, the beach faces the swell directly, a single surfer in the middle distance, late afternoon light, no text, no logos, no signs"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary photograph of a woman in her late 30s with short red hair and freckles, wearing a hoodie, standing on a low sandy bluff above a Mediterranean beach with her surfboard leaning beside her, looking along the coastline comparing two parts of the beach, waves breaking in one part of the bay, calmer water further away, warm morning light, no text, no logos, no flags, no signs"
+

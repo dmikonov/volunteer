@@ -1,0 +1,19 @@
++ k=/s17/rp/film_he
++ python3 build.py /s17/rp/film_he
+[('L1', 'fm_split.mp4', 0.0, 4.611, 0.0), ('L2', 'n/fm_vf1.mp4', 0.6, 4.038, 4.611), ('L3', '/fm_film.mp4', 0.0, 2.229, 8.649), ('L4', 'fm_film2.mp4', 0.0, 2.721, 10.878), ('L5', 'n/fm_vf1.mp4', 3.0, 0.9, 13.599), ('L5', 'n/fm_vf3.mp4', 3.9, 1.553, 14.499), ('L6', '/fm_long.mp4', 5.0, 3.18, 16.052), ('L7', '/fm_long.mp4', 8.0, 1.87, 19.232), ('L8', 'm_replay.mp4', 0.0, 2.914, 21.102), ('L9', 'fm_film2.mp4', 1.5, 3.134, 24.016), ('L10', 'fm_board.mp4', 0.0, 3.62, 27.15)]
+cat 30.84 T 30.77
++ python3 ov_png.py /s17/rp/film_he
+realcuts True [0.0, 4.6, 8.64, 10.88, 13.6, 16.08, 19.28, 21.16, 24.08, 27.2, 30.77]
+safe-zone violations []
+ovplan 27
++ python3 ov_ff.py /s17/rp/film_he
+done /s17/rp/film_he/reel_film_he.mp4 30.77 lufs before -15.2 gain 0.7
++ python3 trim_tail.py /s17/rp/film_he
+trimmed /s17/rp/film_he/reel_film_he.mp4 30.2
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/film_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/film_he/reel_film_he.mp4
+/s17/rp/film_he/reel_film_he.mp4 before -13.0 after -14.5 peak -2.5
++ python3 post_cz.py /s17/rp/film_he
+post ok
++ echo 'EXIT /s17/rp/film_he 0'
+EXIT /s17/rp/film_he 0

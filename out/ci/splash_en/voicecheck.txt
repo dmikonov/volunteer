@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=0.96 wps=2.51 dur=2.79 | ref: Stop splashing. That's why you miss waves. | asr: Stop splashing. That's why you miss Waze.
+L2 OK match=1.00 wps=2.48 dur=3.63 | ref: A slap on the surface pushes water, not you. | asr: A slap on the surface pushes water, not you.
+L3 OK match=1.00 wps=1.62 dur=1.24 | ref: Three fixes. | asr: Three fixes.
+L4 OK match=0.93 wps=2.13 dur=3.29 | ref: One: fingertips in first, by the nose. | asr: 1. Fingertips in first by the nose
+L5 OK match=1.00 wps=3.09 dur=2.26 | ref: Two: pull deep, back to your hip. | asr: Two, pull deep back to your hip.
+L6 OK match=0.88 wps=2.11 dur=2.85 | ref: Three: long strokes, not fast ones. | asr: 3. Long strokes, not fast ones
+L7 OK match=1.00 wps=2.95 dur=3.39 | ref: Film one paddle and ask the coach in Surf Tribe. | asr: Film one paddle and ask the coach in Surf Tribe.
+L8 OK match=1.00 wps=2.37 dur=2.96 | ref: Quiet hands, and the board keeps gliding. | asr: Quiet hands and the board keeps gliding.
+L9 OK match=1.00 wps=4.00 dur=1.75 | ref: Save this for your next paddle out. | asr: Save this for your next paddle out.
+L10 OK match=0.96 wps=2.44 dur=3.28 | ref: Tomorrow: booties and a hood for cold water. | asr: Tomorrow, booties in a hood for cold water.
+TOTAL wps=2.55 lines_to_check=0

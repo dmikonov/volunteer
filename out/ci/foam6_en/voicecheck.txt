@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.52 dur=1.99 | ref: Whitewater keeps throwing you back? | asr: Whitewater keeps throwing you back.
+L2 OK match=0.89 wps=3.34 dur=2.10 | ref: Three rules for learning in the foam. | asr: Three rules for learning in the phone.
+L3 OK match=0.93 wps=2.29 dur=3.49 | ref: One: stand waist deep, nose to the beach. | asr: 1. Stand waist deep, nose to the beach.
+L4 OK match=0.88 wps=2.36 dur=3.81 | ref: Two: foam two meters away? Lie down and paddle. | asr: 2. Foam 2 meters away, lie down and paddle
+L5 OK match=0.93 wps=2.90 dur=3.79 | ref: Three: once you're up, look at the beach, not your feet. | asr: 3. Once you're up, look at the beach, not your feet.
+L6 OK match=1.00 wps=3.31 dur=3.63 | ref: Film yourself, and the Surf Tribe app shows you what to fix. | asr: Film yourself, and the Surf Tribe app shows you what to fix.
+L7 OK match=1.00 wps=3.72 dur=1.61 | ref: Save this for your next session. | asr: Save this for your next session.
+TOTAL wps=2.84 lines_to_check=0

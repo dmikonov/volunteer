@@ -1,0 +1,192 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Rubik;src:url(Rubik-Regular.ttf);font-weight:400}
+@font-face{font-family:Rubik;src:url(Rubik-Medium.ttf);font-weight:500}
+@font-face{font-family:Rubik;src:url(Rubik-Bold.ttf);font-weight:700 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:390px;height:844px;overflow:hidden;background:#0a0f1e;font-family:Rubik,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#bg{position:absolute;inset:0}
+#bg .g{position:absolute;inset:0}
+#status{position:absolute;top:0;left:0;right:0;height:50px;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:14px 30px 0 34px;font-weight:600;font-size:16px;direction:ltr}
+#status .r{display:flex;gap:6px;align-items:center}
+#island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:124px;height:36px;border-radius:20px;background:#000;z-index:6}
+#scroller{position:absolute;top:50px;left:0;right:0;bottom:0;overflow:hidden}
+#content{padding:8px 24px 140px;will-change:transform}
+.rtl{direction:rtl}
+svg.i{display:inline-block;vertical-align:middle}
+.hdr{display:flex;justify-content:space-between;align-items:center;height:36px}
+.pillc{display:flex;align-items:center;gap:4px;font-weight:700;font-size:14px}
+.spot{display:flex;justify-content:space-between;align-items:center;margin:10px 0 16px}
+.spot .nm{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.cams{height:34px;border-radius:17px;background:rgba(0,212,255,.12);border:1px solid rgba(0,212,255,.45);display:flex;align-items:center;gap:6px;padding:0 14px;font-size:13px;font-weight:700;color:#00d4ff}
+.card{background:rgba(34,22,42,.42);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,214,184,.20);border-radius:24px;overflow:hidden}
+.coach{padding:16px;margin-bottom:20px}
+.coach .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.lbl{font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase}
+.badge{border:1px solid;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:800;letter-spacing:1px}
+.hero{display:flex;gap:16px;align-items:center}
+.ring{position:relative;width:104px;height:104px;flex:none}
+.ring .n{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+.info{flex:1;display:flex;flex-direction:column;gap:9px}
+.bw{display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700}
+.line{display:flex;gap:6px;align-items:flex-start;font-size:14px;line-height:1.35;opacity:0;transform:translateY(8px)}
+.week{padding:16px;margin-bottom:20px}
+.week .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.spill{border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
+.cols{display:flex;justify-content:space-between}
+.col{display:flex;flex-direction:column;align-items:center;gap:4px;width:40px;padding:6px 0;border-radius:12px;border:1px solid transparent}
+.col.sel{border-color:#00d4ff}
+.bar{width:14px;height:56px;border-radius:7px;background:rgba(255,255,255,.06);position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;right:0;bottom:0;border-radius:7px}
+.col .s{font-size:10px;font-weight:700}
+.col .d{font-size:11px;color:#969dae}
+.col .m{font-size:10px;color:#969dae}
+.col.sel .d,.col.sel .m{color:#00d4ff}
+h3{font-size:16px;font-weight:600;margin:0 0 10px}
+.chart{margin-bottom:20px;padding:6px 0}
+.now{padding:24px;margin-bottom:20px}
+.toprow{display:flex;gap:12px;margin-bottom:12px}
+.tileH{flex:1;background:rgba(255,255,255,.05);border-radius:12px;border:1px solid;padding:14px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.hero48{font-size:48px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums;line-height:1}
+.unit{font-size:16px;color:#969dae}
+.clock{flex:1;background:rgba(255,255,255,.05);border-radius:12px;border:1px solid rgba(255,255,255,.1);padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.rbadge{border:1px solid;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700;text-transform:uppercase}
+.grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.tile{flex:0 0 30%;min-height:120px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:8px 4px;text-align:center;transition:none}
+.tile .v{font-size:22px;font-weight:800;direction:ltr;unicode-bidi:isolate}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.tile .l{font-size:12px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.tile .sub{font-size:11px;color:#969dae}
+#tabs{position:absolute;left:0;right:0;bottom:0;height:84px;z-index:5;background:rgba(10,15,30,.72);backdrop-filter:blur(20px);display:flex;justify-content:space-around;padding-top:8px}
+#tabs .t{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;font-weight:600;color:#969dae;width:70px}
+#tabs .t.on{color:#00d4ff}
+#hl{position:absolute;pointer-events:none;border:2px solid #00d4ff;border-radius:18px;box-shadow:0 0 12px 2px rgba(0,212,255,.45),0 0 30px 7px rgba(0,212,255,.18);opacity:0;z-index:4}
+</style></head>
+<body>
+<div id="bg"><div class="g" id="bg1"></div><div class="g" id="bg2"></div></div>
+<div id="island"></div>
+<div id="status"><span id="stime">6:30</span><span class="r" id="sicons"></span></div>
+<div id="scroller"><div id="content"></div></div>
+<div id="hl"></div>
+<div id="tabs"></div>
+<script src="logic.js"></script>
+<script>
+// Inputs: window.CFG = {lang, skill, day:"YYYY-MM-DD", hour:7, spot, data:{t0,H,sun}, dict, icons, focus}
+const C = window.CFG, L = C.lang, RTL = L === 'he';
+globalThis.DICT = C.dict;
+const T = k => (C.dict[k] || {})[L] || '';
+const I = (n, s, col) => `<svg class="i" width="${s}" height="${s}" viewBox="0 0 24 24"><path fill="${col}" d="${C.icons[n]}"/></svg>`;
+const QC = {epic:'#00e676', good:'#00bcd4', fair:'#ffc107', poor:'#ff5252'};
+const QK = {epic:'qualityEpic', good:'qualityGood', fair:'qualityFair', poor:'qualityPoor'};
+const VC = {go:'#10b981', maybe:'#f59e0b', skip:'#ef4444'};
+const VB = {go:'rgba(16,185,129,0.12)', maybe:'rgba(245,158,11,0.10)', skip:'rgba(239,68,68,0.12)'};
+const VG = {go:'16,185,129', maybe:'245,158,11', skip:'255,82,82'};
+// ---- data
+const t0 = new Date(C.data.t0 + ':00Z'); // naive local stamps
+const hours = C.data.H.map((r, i) => {
+  const d = new Date(t0.getTime() + i * 3600e3); const iso = d.toISOString().slice(0, 16);
+  return {time: iso, waveHeight: r[0], wavePeriod: r[1], swellPeriod: r[2], swellHeight: r[3], waveDirection: r[4], seaTemperature: r[5], windSpeed: r[6], windDirection: r[7], windGusts: r[8], temperature: r[9], uvIndex: r[10]};
+});
+const days = []; for (const h of hours) { const k = h.time.slice(0, 10); let d = days.find(x => x.date === k); if (!d) days.push(d = {date: k, hourly: []}); d.hourly.push(h); }
+days.forEach((d, i) => { d.sun = C.data.sun[i] || ['', '']; d.sum = ST.summarizeDayQuality(d.hourly, C.skill); });
+const day = days.find(d => d.date === C.day) || days[0];
+const dayIdx = days.indexOf(day);
+// best window: daylight hours only (sunrise hour .. sunset), so it never points at the night
+const dl = day.hourly.filter(h => { const hm = h.time.slice(11, 16); return hm >= day.sun[0] && hm <= day.sun[1]; });
+const pk = ST.peakSurfWindow(dl, C.skill);
+const peak = pk ? {time: pk.time, score: pk.score, index: day.hourly.findIndex(h => h.time === pk.time)} : null;
+const hh = day.hourly[C.hour];
+const q = ST.computeSurfQuality(hh, C.skill);
+const coachH = peak ? day.hourly[peak.index] : hh;
+const cq = ST.computeSurfQuality(coachH, C.skill);
+const verdict = (cq.quality === 'epic' || cq.quality === 'good') ? 'go' : cq.quality === 'fair' ? 'maybe' : 'skip';
+const adv = ST.localCoachAdvice(coachH, C.skill, cq.quality, L);
+const facing = C.facing ?? ST.facingForCountry('Israel');
+// ---- sky
+function sky(hour){const A=[[0,[16,13,26],[36,22,44],.05],[5,[58,34,56],[255,84,150],.3],[6.5,[140,80,60],[255,168,72],.58],[8.5,[130,88,76],[255,186,112],.48],[12,[108,94,112],[255,206,142],.46],[15.5,[124,80,84],[255,150,98],.46],[18.5,[114,54,98],[255,110,142],.64],[20.5,[64,33,68],[212,94,168],.36],[23,[22,16,32],[46,24,48],.1],[24,[16,13,26],[36,22,44],.05]];
+ const h=((hour%24)+24)%24;let i=0;while(i<A.length-1&&A[i+1][0]<=h)i++;const a=A[i],b=A[Math.min(i+1,A.length-1)];const t=b[0]===a[0]?0:(h-a[0])/(b[0]-a[0]);
+ const mix=(c1,c2,t)=>c1.map((v,j)=>Math.round(v+(c2[j]-v)*t));const hor=mix(a[1],b[1],t),glow=mix(a[2],b[2],t),op=a[3]+(b[3]-a[3])*t;const dd=Math.max(0,Math.sin(Math.PI*(h-5)/14));
+ const top=mix([8,11,20],[26,44,74],dd*.62),mid=mix([12,18,38],[48,78,126],dd*.64),mh=mix(hor,[10,14,28],.22);
+ const r=c=>`rgb(${c})`;document.getElementById('bg1').style.background=`linear-gradient(180deg,${r(top)} 0%,${r(mid)} 42%,${r(mh)} 100%)`;
+ const sx=dd>.25?100:50;document.getElementById('bg2').style.background=`linear-gradient(${dd>.25?225:200}deg,rgba(${glow},${op*.85}) 0%,rgba(${glow},0) 70%)`;}
+sky(C.hour + 0.5);
+// ---- status + tabs
+document.getElementById('stime').textContent = C.clock || `${C.hour}:${C.minute||'30'}`;
+document.getElementById('sicons').innerHTML = I('signal', 17, '#fff') + I('wifi', 17, '#fff') + I('battery', 24, '#fff');
+const TABS = [['forecastTab', T('forecast')], ['people', T('peopleTab')], ['lab', T('surfLabTab')], ['analysis', T('analyze')], ['profile', T('profile')]];
+document.getElementById('tabs').innerHTML = (RTL ? TABS.slice().reverse() : TABS).map(([ic, lb]) => `<div class="t ${ic === 'forecastTab' ? 'on' : ''}">${I(ic, 26, ic === 'forecastTab' ? '#00d4ff' : '#969dae')}<span>${lb}</span></div>`).join('');
+// ---- content
+const dirc = RTL ? 'rtl' : '';
+const fmt1 = v => (Math.round(v * 10) / 10).toFixed(1).replace(/\.0$/, '');
+const sv = ST.shoreVerdict(hh.windDirection, facing);
+const svK = {offshore: 'windOffshore', onshore: 'windOnshore', cross: 'windCross'}[sv];
+const uvc = u => u >= 8 ? '#ef4444' : u >= 6 ? '#f59e0b' : u >= 3 ? '#ffc107' : '#10b981';
+const iconT = {waves:'#35C7DA', sun:'#F7B423', wind:'#5BC0C9', gust:'#F7A823', thermo:'#FF6B4A', sine:'#F7A823', cloud:'#8FD3E2', sunrise:'#FFB23E'};
+const tile = (id, ic, val, lab, sub) => `<div class="tile" id="tile-${id}">${I(ic, 42, iconT[ic])}<div class="v">${val}</div><div class="l">${lab}</div>${sub ? `<div class="sub">${sub}</div>` : ''}</div>`;
+const wk = days.slice(0, 7).map((d, i) => { const s = d.sum || {score: 0, quality: 'poor'}; const dt = new Date(d.date + 'T12:00:00Z');
+  const wd = new Intl.DateTimeFormat(RTL ? 'he-IL' : 'en-US', {weekday: 'short', timeZone: 'UTC'}).format(dt);
+  return `<div class="col ${i === dayIdx ? 'sel' : ''}"><div class="bar"><i style="height:${Math.max(8, s.score)}%;background:${QC[s.quality]};opacity:${i === dayIdx ? 1 : .4}"></i></div><div class="s" style="color:${QC[s.quality]}">${s.score}</div><div class="d">${wd}</div><div class="m">${+d.date.slice(8)}</div></div>`; });
+const ds = day.sum || {score: 0, quality: 'poor'}; const pc = ds.score >= 70 ? '#10b981' : ds.score >= 45 ? '#f59e0b' : '#ef4444';
+// hourly chart svg (390-48 = 342 wide)
+function chartSVG(){const W=342,H=206,pt=34,pb=26;const hs=day.hourly;const mx=Math.max(...hs.map(h=>h.waveHeight))*1.25||1;
+ const X=i=>8+i*(W-16)/23, Y=v=>pt+(H-pt-pb)*(1-v/mx);
+ let d=`M${X(0)},${Y(hs[0].waveHeight)}`;for(let i=1;i<hs.length;i++){const x0=X(i-1),x1=X(i),y0=Y(hs[i-1].waveHeight),y1=Y(hs[i].waveHeight),cx=(x0+x1)/2;d+=` C${cx},${y0} ${cx},${y1} ${x1},${y1}`;}
+ const area=d+` L${X(23)},${H-pb} L${X(0)},${H-pb} Z`;let g='';
+ [.25,.5,.75].forEach(f=>{const y=pt+(H-pt-pb)*(1-f);g+=`<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="rgba(255,255,255,0.08)"/><text x="${RTL?W-4:4}" y="${y-3}" font-size="9" fill="#969dae" text-anchor="${RTL?'end':'start'}">${fmt1(mx*f)}m</text>`;});
+ let strip='';hs.forEach((h,i)=>{const qq=ST.computeSurfQuality(h,C.skill).quality;strip+=`<rect x="${X(i)-(W-16)/46}" y="${H-pb+2}" width="${(W-16)/23}" height="3" fill="${QC[qq]}"/>`;});
+ let ar='',lb='';for(let i=0;i<24;i+=3){const h=hs[i];const c=h.windSpeed>=9?'#ef4444':h.windSpeed>=6?'#f59e0b':'#969dae';ar+=`<g transform="translate(${X(i)},14) rotate(${(h.windDirection+180)%360})"><path d="M0,-6 L4,4 L0,1.5 L-4,4 Z" fill="${c}"/></g>`;lb+=`<text x="${X(i)}" y="${H-6}" font-size="9.5" fill="#969dae" text-anchor="middle">${String(i).padStart(2,'0')}</text>`;}
+ const bi=peak?peak.index:-1;const glow=bi>=0?`<rect id="bwglow" x="${X(bi)-10}" y="${pt-6}" width="20" height="${H-pt-pb+6}" rx="10" fill="url(#bwg)"/>`:'';
+ const si=C.hour;const sx=X(si),sy=Y(hs[si].waveHeight);
+ return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="direction:ltr"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00d4ff" stop-opacity=".5"/><stop offset=".6" stop-color="#00bcd4" stop-opacity=".28"/><stop offset="1" stop-color="#0a0f1e" stop-opacity=".06"/></linearGradient><linearGradient id="bwg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e676" stop-opacity=".0"/><stop offset=".5" stop-color="#00e676" stop-opacity=".35"/><stop offset="1" stop-color="#00e676" stop-opacity=".05"/></linearGradient></defs>${g}${glow}<path d="${area}" fill="url(#ag)"/><path d="${d}" fill="none" stroke="#fff" stroke-width="2.2"/>${strip}${ar}${lb}
+ <g id="scrub"><line id="sl" x1="${sx}" x2="${sx}" y1="${pt-8}" y2="${H-pb}" stroke="#00d4ff" stroke-width="1.5"/><circle id="sd" cx="${sx}" cy="${sy}" r="5" fill="#eafcff" stroke="#00d4ff" stroke-width="2"/><g id="sp" transform="translate(${Math.min(W-80,Math.max(2,sx-39))},${pt-28})"><rect width="78" height="19" rx="9.5" fill="#0d1f34" stroke="#00d4ff"/><text id="spt" x="39" y="13" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">${String(si).padStart(2,'0')}:00 · ${fmt1(hs[si].waveHeight)}m</text></g></g></svg>`;}
+window.__chart={X:i=>8+i*(342-16)/23};
+const html = `
+<div class="hdr ${dirc}"><span class="pillc" style="color:#ff8a4d">${I('fire',20,'#ff8a4d')}${C.streak||5}</span><span class="pillc" style="color:#ffc107">${I('coin',18,'#ffc107')}${C.coins||10}</span></div>
+<div class="spot ${dirc}"><span class="nm">${I('marker',14,'rgba(255,255,255,0.6)')}${C.spot}${I('chevron',14,'rgba(255,255,255,0.6)')}</span><span class="cams">${I('video',16,'#00d4ff')}${T('surfCams')}</span></div>
+<div class="card coach ${dirc}" id="coach" style="box-shadow:0 0 12px 2px rgba(${VG[verdict]},.45),0 0 30px 7px rgba(${VG[verdict]},.18)">
+ <div class="top"><span class="lbl" style="color:#00d4ff;display:flex;gap:6px;align-items:center">${I('robot',20,'#00d4ff')}${T('aiCoachTitle')}</span><span class="badge" style="color:${VC[verdict]};border-color:${VC[verdict]};background:${VB[verdict]}">${verdict.toUpperCase()}</span></div>
+ <div class="hero"><div class="ring"><svg width="104" height="104" style="transform:rotate(-90deg)"><circle cx="52" cy="52" r="47.5" stroke="rgba(255,255,255,0.18)" stroke-width="9" fill="none"/><circle id="arc" cx="52" cy="52" r="47.5" stroke="${VC[verdict]}" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="298.45" stroke-dashoffset="298.45"/></svg><div class="n" id="ringn">0</div></div>
+ <div class="info">${peak?`<div class="bw" id="bw">${I('sunrise',16,VC[verdict])}<span>${T('chartBestWindow').replace('{time}',peak.time.slice(11,16))}</span></div>`:''}
+ <div class="line" id="l1">${I('check',16,'#10b981')}<span>${adv.do}</span></div><div class="line" id="l2">${I('close',16,'#ef4444')}<span>${adv.avoid}</span></div></div></div></div>
+<div class="card week ${dirc}" id="week"><div class="top"><span class="lbl" style="color:#00d4ff">${T('weekForecast')}</span><span class="spill" style="color:${pc};background:${pc}1A">${ds.score}/100</span></div><div class="cols" style="direction:ltr;${RTL?'flex-direction:row-reverse':''}">${wk.join('')}</div></div>
+<h3 class="${dirc}">${T('hourlyForecast')}</h3>
+<div class="card chart" id="chart">${chartSVG()}</div>
+<div class="card now ${dirc}" id="now">
+ <div class="toprow"><div class="tileH" style="border-color:${QC[q.quality]}55"><div><span class="hero48" style="color:${QC[q.quality]}">${fmt1(hh.waveHeight)}</span><span class="unit"> m</span></div><div class="l" style="font-size:12px;color:rgba(255,255,255,.6)">${T('waveHeight')}</div></div>
+ <div class="clock"><span class="lbl" style="color:${QC[q.quality]}">NOW</span><span style="font-size:32px;font-weight:800">${String(C.hour).padStart(2,'0')}:${C.minute||'30'}</span><span class="rbadge" style="color:${QC[q.quality]};border-color:${QC[q.quality]};background:${QC[q.quality]}22">${T(QK[q.quality])}</span></div></div>
+ <div class="grid">
+ ${tile('period','sine',`${Math.round(hh.wavePeriod)}s`,T('wavePeriod'))}
+ ${tile('swell','waves',`${fmt1(hh.swellHeight)} m`,T('swellLabel'),`<span class="ltr">${Math.round(hh.swellPeriod)}s ↑</span>`)}
+ ${tile('wind','wind',`${Math.round(hh.windSpeed)} m/s`,T('windSpeed'),`<span class="ltr">${ST.compassFromDegrees(hh.windDirection)}</span> · ${T(svK)}`)}
+ ${tile('gusts','gust',`${Math.round(hh.windGusts)} m/s`,T('gustsLabel'))}
+ ${tile('water','thermo',`${Math.round(hh.seaTemperature)}°C`,T('seaTemp'))}
+ ${tile('air','cloud',`${Math.round(hh.temperature)}°C`,T('airTempLabel'))}
+ ${tile('uv','sun',`<span style="color:${uvc(hh.uvIndex)}">${Math.round(hh.uvIndex)}</span>`,'UV')}
+ ${tile('sunrise','sunrise',`<span class="ltr">${day.sun[0]}</span>`,T('sunrise'),`<span class="ltr">↓ ${day.sun[1]}</span>`)}
+ </div></div>`;
+document.getElementById('content').innerHTML = html;
+// ---- animation timeline: window.setT(sec)
+const ease = x => x < 0 ? 0 : x > 1 ? 1 : 1 - Math.pow(1 - x, 3);
+const content = document.getElementById('content');
+const targetY = id => { const el = document.getElementById(id); return el ? el.offsetTop - 8 : 0; };
+const focusEl = {water: 'tile-water', period: 'tile-period', height: 'tileH', best: 'bw', wind: 'tile-wind'}[C.focus] || null;
+window.setT = function (s) {
+  const sc = cq.score; const k = ease(s / 1.3);
+  document.getElementById('ringn').textContent = Math.round(sc * k);
+  document.getElementById('arc').style.strokeDashoffset = 298.45 * (1 - sc / 100 * k);
+  ['l1', 'l2'].forEach((id, i) => { const e = ease((s - 0.9 - i * 0.25) / 0.5); const el = document.getElementById(id); el.style.opacity = e; el.style.transform = `translateY(${8 * (1 - e)}px)`; });
+  const bg = document.getElementById('bwglow'); if (bg) bg.style.opacity = 0.6 + 0.4 * Math.sin(s * 3);
+  // scroll plan
+  let y = 0; const maxY = content.scrollHeight - (844 - 50 - 84);
+  if (C.focus === 'best' || !C.focus) { y = 0; }
+  else { const ty = Math.min(maxY, C.focus === 'chart' ? targetY('chart') - 120 : (document.getElementById('now').offsetTop + document.getElementById('now').offsetHeight - 690)); y = ty * ease((s - C.scrollAt) / 1.2); }
+  content.style.transform = `translateY(${-y}px)`;
+  const hl = document.getElementById('hl');
+  let fe = null; if (C.focus === 'best') fe = document.getElementById('bw'); else if (C.focus === 'height') fe = document.querySelector('.tileH'); else if (C.focus && C.focus !== 'chart') fe = document.getElementById('tile-' + C.focus); else if (C.focus === 'chart') fe = document.getElementById('chart');
+  if (fe) { const r = fe.getBoundingClientRect(); const p = 6; hl.style.left = (r.left - p) + 'px'; hl.style.top = (r.top - p) + 'px'; hl.style.width = (r.width + 2 * p) + 'px'; hl.style.height = (r.height + 2 * p) + 'px';
+    const a = ease((s - C.hlAt) / 0.4); hl.style.opacity = a; fe.style.transform = `scale(${1 + 0.06 * a * (0.5 + 0.5 * Math.sin((s - C.hlAt) * 4))})`; }
+};
+window.META = {verdict, score: cq.score, best: peak && peak.time.slice(11, 16), now: {h: hh.waveHeight, p: hh.wavePeriod, water: hh.seaTemperature, wind: hh.windSpeed, q: q.quality}, day: ds, advice: adv};
+window.setT(0); window.READY = true;
+</script></body></html>

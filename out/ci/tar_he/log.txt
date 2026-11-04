@@ -1,0 +1,19 @@
++ k=/s17/rp/tar_he
++ python3 build.py /s17/rp/tar_he
+[('L1', '/tr_hook.mp4', 0.0, 3.463, 0.0), ('L2', 'n/tr_gas.mp4', 0.0, 1.6, 3.463), ('L2', 'n/tr_red.mp4', 0.0, 1.832, 5.063), ('L3', 'n/tr_oil.mp4', 0.0, 2.135, 6.895), ('L4', '/tr_pour.mp4', 0.0, 3.144, 9.03), ('L5', '/tr_pour.mp4', 2.9, 2.767, 12.174), ('L6', '/tr_wipe.mp4', 0.0, 3.728, 14.941), ('L7', 'tr_clean.mp4', 0.0, 2.5, 18.669), ('L8', 'n/tr_app.mp4', 0.0, 4.539, 21.169), ('L9', 'tr_split.mp4', 0.0, 2.642, 25.708), ('L10', '/tr_tmrw.mp4', 0.0, 3.578, 28.35)]
+cat 31.92 T 31.928
++ python3 ov_png.py /s17/rp/tar_he
+realcuts True [0.0, 3.48, 6.92, 9.04, 12.2, 14.96, 18.68, 21.2, 25.72, 28.36, 31.928]
+safe-zone violations []
+ovplan 24
++ python3 ov_ff.py /s17/rp/tar_he
+done /s17/rp/tar_he/reel_tar_he.mp4 31.928 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/tar_he
+trimmed /s17/rp/tar_he/reel_tar_he.mp4 31.34
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/tar_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/tar_he/reel_tar_he.mp4
+/s17/rp/tar_he/reel_tar_he.mp4 before -13.0 after -14.5 peak -3.2
++ python3 post_cz.py /s17/rp/tar_he
+post ok
++ echo 'EXIT /s17/rp/tar_he 0'
+EXIT /s17/rp/tar_he 0

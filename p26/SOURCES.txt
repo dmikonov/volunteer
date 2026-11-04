@@ -1,0 +1,27 @@
+SOURCES for p26 (Generated P26 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary photograph at dawn in winter: a man in his late 30s with a dark beanie and a thick dark beard, wearing a warm hooded changing poncho over his wetsuit, standing by the open back of an old hatchback car in a beach parking lot, holding a hot drink with steam rising, visible breath in the cold air, first blue light of dawn over the Mediterranean sea behind, surfboard leaning on the car, no text, no logos, no license plate"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary photograph of a cold clear winter sunrise over a Mediterranean beach: perfect glassy waves peeling in soft pink and orange light, light mist over the water, frosty cold atmosphere, empty beach, no people, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary interior photograph at night: a hallway by an apartment front door, a plain white surfboard leaning against the wall with its bottom side facing the camera and three small fins near the tail, a black wetsuit with no logos hanging on a hook, a rolled grey towel on a wooden bench, car keys on the bench, warm lamp light, ready for an early morning, no people, no text, no logos, no labels"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary photograph at dawn in a beach parking lot: two clearly different friends meeting, a woman in her 40s with curly grey hair in a warm jacket next to her surfboard and a man in his 30s with a ponytail in a hoodie, smiling and bumping fists, cold blue morning light, the sea in the background, no text, no logos, no license plates"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary photograph in the evening at home: a woman in her early 30s with long straight black hair and glasses, wearing a cozy sweater, sitting on a sofa under a warm lamp looking at her phone to check tomorrow's surf forecast, a surfboard leaning against the wall in the background, calm evening mood, realistic hands, no text, no logos"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary surf photograph at winter sunrise: a single surfer silhouette on a glassy sea riding a small clean wave, warm orange sky and light mist, cold calm morning, wide composition, Mediterranean coast, no text, no logos, no flags"
+

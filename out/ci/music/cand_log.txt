@@ -1,0 +1,25 @@
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart hosted-compute-agent.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+01 Mixkit | Ride the Waves |  | surf rock | 114.0 | Mixkit Music Free License (social video ok, no credit needed
+02 Mixkit | Surf's Up Dude |  | surf rock | 90.1 | Mixkit Music Free License (social video ok, no credit needed
+03 Mixkit | Lovin' Life |  | rock/funk | 93.6 | Mixkit Music Free License (social video ok, no credit needed
+04 Mixkit | Just Keep Walking |  | indie pop | 124.7 | Mixkit Music Free License (social video ok, no credit needed
+05 Mixkit | Okay |  | ska | 120.4 | Mixkit Music Free License (social video ok, no credit needed
+06 Mixkit | My Last Mojito |  | reggae | 121.9 | Mixkit Music Free License (social video ok, no credit needed
+07 Mixkit | The Root |  | indie rock | 102.5 | Mixkit Music Free License (social video ok, no credit needed
+08 Mixkit | Dare Me |  | indie rock | 92.1 | Mixkit Music Free License (social video ok, no credit needed
+09 Mixkit | Oh My Joe |  | funk rock | 98.5 | Mixkit Music Free License (social video ok, no credit needed
+10 Mixkit | The Duel |  | country rock | 103.0 | Mixkit Music Free License (social video ok, no credit needed
+11 Mixkit | I Can Hear Your Heartbeat |  | indie pop | 109.8 | Mixkit Music Free License (social video ok, no credit needed
+12 Mixkit | A Special Feeling |  | indie pop | 99.6 | Mixkit Music Free License (social video ok, no credit needed

@@ -1,0 +1,27 @@
+SOURCES for p19 (Generated P19 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Google Imagen 3 via Antigravity generate_image tool.
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical surf photo of a dramatic dark storm front over the ocean with a distant bolt of lightning flashing near the stormy horizon, dark moody sea spray, stormy coastal seascape, dramatic authentic nature photography, no text, no logos, 8k quality"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical surf photo of a solitary adult surfer in a dark wetsuit sitting upright on an unbranded surfboard in open dark ocean water under an immense dark stormy sky, wide view showing the surfer as the only high point above the flat water horizon, moody overcast, documentary coastal photo, 8k quality"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical surf photo of an adult female surfer sitting on her board in choppy coastal waters, turning her head back looking with concern at heavy dark rain clouds gathering over the coastline, moody ocean atmosphere, no logos, documentary surf photography, 8k quality"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical surf photo of an adult male surfer in a wet black wetsuit carrying his surfboard under his arm walking briskly out of ocean foam onto dark wet sand, overcast stormy sky and rain in background, authentic determined exit from the water, no logos, documentary surf photo, 8k quality"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical surf photo of an adult female surfer in a dry warm fleece jacket standing beside an open vehicle tailgate in a coastal parking lot, looking out at rain falling over the dark ocean waves, patiently waiting, authentic coastal weather, no logos, documentary photography, 8k quality"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal surf photograph of an authentic coastal headland and surf beach with dark moody rain squall clearing over the ocean, wet reflective beach sand, authentic documentary storm surf landscape, no people close up, no logos, 8k quality"
+

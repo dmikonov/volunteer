@@ -1,0 +1,110 @@
+[
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/48/48.mp3",
+  "title": "Ride the Waves",
+  "style": "surf rock",
+  "full_dur": 114.0,
+  "snip": "out/ci/music/cand/01.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/83/83.mp3",
+  "title": "Surf's Up Dude",
+  "style": "surf rock",
+  "full_dur": 90.1,
+  "snip": "out/ci/music/cand/02.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/1107/1107.mp3",
+  "title": "Lovin' Life",
+  "style": "rock/funk",
+  "full_dur": 93.6,
+  "snip": "out/ci/music/cand/03.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/963/963.mp3",
+  "title": "Just Keep Walking",
+  "style": "indie pop",
+  "full_dur": 124.7,
+  "snip": "out/ci/music/cand/04.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/780/780.mp3",
+  "title": "Okay",
+  "style": "ska",
+  "full_dur": 120.4,
+  "snip": "out/ci/music/cand/05.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/814/814.mp3",
+  "title": "My Last Mojito",
+  "style": "reggae",
+  "full_dur": 121.9,
+  "snip": "out/ci/music/cand/06.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/1157/1157.mp3",
+  "title": "The Root",
+  "style": "indie rock",
+  "full_dur": 102.5,
+  "snip": "out/ci/music/cand/07.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/1135/1135.mp3",
+  "title": "Dare Me",
+  "style": "indie rock",
+  "full_dur": 92.1,
+  "snip": "out/ci/music/cand/08.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/1151/1151.mp3",
+  "title": "Oh My Joe",
+  "style": "funk rock",
+  "full_dur": 98.5,
+  "snip": "out/ci/music/cand/09.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/817/817.mp3",
+  "title": "The Duel",
+  "style": "country rock",
+  "full_dur": 103.0,
+  "snip": "out/ci/music/cand/10.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/1000/1000.mp3",
+  "title": "I Can Hear Your Heartbeat",
+  "style": "indie pop",
+  "full_dur": 109.8,
+  "snip": "out/ci/music/cand/11.mp3"
+ },
+ {
+  "src": "Mixkit",
+  "license": "Mixkit Music Free License (social video ok, no credit needed)",
+  "url": "https://assets.mixkit.co/music/1087/1087.mp3",
+  "title": "A Special Feeling",
+  "style": "indie pop",
+  "full_dur": 99.6,
+  "snip": "out/ci/music/cand/12.mp3"
+ }
+]

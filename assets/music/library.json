@@ -1,0 +1,5 @@
+{"note": "Настоящая серферская музыка для рилсов (решение Димы 20.10: никакой синтезированной музыки). approved=true только после выбора Димы. Пока выбора нет, берутся temp=true.",
+ "tracks": [
+  {"id": "mixkit-48", "title": "Ride the Waves", "style": "surf rock", "src": "Mixkit", "license": "Mixkit Music Free License", "url": "https://assets.mixkit.co/music/48/48.mp3", "start": 0.25, "approved": false, "temp": true},
+  {"id": "mixkit-83", "title": "Surf's Up Dude", "style": "surf rock", "src": "Mixkit", "license": "Mixkit Music Free License", "url": "https://assets.mixkit.co/music/83/83.mp3", "start": 0.25, "approved": false, "temp": true}
+ ]}

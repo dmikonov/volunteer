@@ -1,0 +1,1 @@
+paddle v4 (18.10 15:50): Z-Image seeds q_start 716035, q_stroke 146069, q_past 100130, q_pop 524930 (prompts in session log); Wan seeds q_start 536761826, q_stroke 1115173724, q_past 199120907, q_pop 1200779223. Start images saved in gen-inputs gen_start/1921oct/.
