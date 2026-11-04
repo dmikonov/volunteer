@@ -12,7 +12,7 @@ cut m48855 0.0 3.0 0.45 0.50 sm_pier
 cut m47948 0.9 1.7 0.55 0.55 sm_bolt
 cut m48527 0.5 4.5 0.50 0.50 sm_foam
 cut m48527 9.0 4.0 0.50 0.50 sm_sets
-cut m36833 1.5 3.6 0.62 0.74 sm_calm
+cut m45239 14.0 3.8 0.32 0.36 sm_calm
 cut m36833 5.1 2.6 0.74 0.80 sm_clean
 cut m36833 7.7 3.5 0.80 0.86 sm_save
 # hook: take the purple cast off the promenade clip (grey storm look)
