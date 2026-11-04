@@ -60,14 +60,14 @@ tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 + n=lc_local
 + ffmpeg -v error -y -ss 4.0 -t 4.5 -i /tmp/px/m1127.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.62-0.45)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/lc_local.mp4
 tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
-+ cut m1102 1.0 4.0 0.50 0.50 lc_rocks
-+ src=m1102
-+ ss=1.0
-+ t=4.0
-+ c0=0.50
++ cut m1128 0.0 3.0 0.40 0.50 lc_rocks
++ src=m1128
++ ss=0.0
++ t=3.0
++ c0=0.40
 + c1=0.50
 + n=lc_rocks
-+ ffmpeg -v error -y -ss 1.0 -t 4.0 -i /tmp/px/m1102.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/lc_rocks.mp4
++ ffmpeg -v error -y -ss 0.0 -t 3.0 -i /tmp/px/m1128.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.40+(0.50-0.40)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/lc_rocks.mp4
 tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 + cut m1101 5.0 5.0 0.18 0.22 lc_watch
 + src=m1101
@@ -82,14 +82,14 @@ tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 tools/reel/specs/locals_en.prep.sh: line 14: ffmpeg: command not found
 + ffmpeg -v error -y -loop 1 -t 5.0 -i /tmp/px/lc_still.png -vf fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/lc_aerial.mp4
 tools/reel/specs/locals_en.prep.sh: line 15: ffmpeg: command not found
-+ cut m1128 15.5 4.5 0.45 0.55 lc_left
++ cut m1128 17.0 4.5 0.50 0.60 lc_left
 + src=m1128
-+ ss=15.5
++ ss=17.0
 + t=4.5
-+ c0=0.45
-+ c1=0.55
++ c0=0.50
++ c1=0.60
 + n=lc_left
-+ ffmpeg -v error -y -ss 15.5 -t 4.5 -i /tmp/px/m1128.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.55-0.45)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/lc_left.mp4
++ ffmpeg -v error -y -ss 17.0 -t 4.5 -i /tmp/px/m1128.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.60-0.50)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/lc_left.mp4
 tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 + cut m1076 4.0 4.0 0.50 0.62 lc_ride
 + src=m1076
@@ -123,7 +123,7 @@ tools/reel/specs/locals_en.prep.sh: line 21: ffmpeg: command not found
 + for f in $G/lc_*.mp4
 ++ basename '/s17/gen/lc_*.mp4' .mp4
 + n='lc_*'
-+ ffmpeg -v error -y -i '/s17/gen/lc_*.mp4' -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d04b/review/cut_lc_aerial.jpg out/ci/d04b/review/cut_lc_app.jpg out/ci/d04b/review/cut_lc_face.jpg out/ci/d04b/review/cut_lc_hook.jpg out/ci/d04b/review/cut_lc_left.jpg out/ci/d04b/review/cut_lc_ride.jpg out/ci/d04b/review/cut_lc_rocks.jpg out/ci/d04b/review/cut_lc_save.jpg out/ci/d04b/review/cut_lc_tmrw.jpg out/ci/d04b/review/cut_lc_watch.jpg
++ ffmpeg -v error -y -i '/s17/gen/lc_*.mp4' -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d04b/review/cut_lc_aerial.jpg out/ci/d04b/review/cut_lc_app.jpg out/ci/d04b/review/cut_lc_face.jpg out/ci/d04b/review/cut_lc_hook.jpg out/ci/d04b/review/cut_lc_left.jpg out/ci/d04b/review/cut_lc_local.jpg out/ci/d04b/review/cut_lc_ride.jpg out/ci/d04b/review/cut_lc_rocks.jpg out/ci/d04b/review/cut_lc_save.jpg out/ci/d04b/review/cut_lc_tmrw.jpg out/ci/d04b/review/cut_lc_watch.jpg
 tools/reel/specs/locals_en.prep.sh: line 22: ffmpeg: command not found
 + ls -la '/s17/gen/lc_*'
 ls: cannot access '/s17/gen/lc_*': No such file or directory

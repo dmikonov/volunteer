@@ -6,7 +6,7 @@ L4 OK match=0.89 wps=2.66 dur=3.76 | ref: One. Watch the lineup from the beach f
 L5 OK match=0.94 wps=2.62 dur=3.43 | ref: Two. Sit wide on the shoulder, off the peak. | asr: 2. Sit wide on the shoulder, off the peak.
 L6 OK match=0.89 wps=2.02 dur=3.47 | ref: Three. Take the leftovers. And say hi. | asr: 3. Take the leftovers and say hi.
 L7 OK match=1.00 wps=2.59 dur=3.08 | ref: Surf Tribe's coach tip flags a crowded peak. | asr: Surf Tribe's Coach Tip flags a crowded peak.
-L8 OK match=1.00 wps=2.78 dur=2.52 | ref: Do that, and the locals start sharing. | asr: Do that, and the locals start sharing.
-L9 OK match=1.00 wps=5.08 dur=1.18 | ref: Save it for your next trip. | asr: Save it for your next trip.
+L8 OK match=0.91 wps=2.78 dur=2.52 | ref: Do that, and the locals start sharing. | asr: Do that, and a local start sharing.
+L9 OK match=1.00 wps=4.36 dur=1.83 | ref: Save this one for your next surf trip. | asr: Save this one for your next surf trip.
 L10 OK match=1.00 wps=2.41 dur=3.32 | ref: Tomorrow: why your knee is killing your pop-up. | asr: Tomorrow. Why your knee is killing your pop-up.
-TOTAL wps=2.74 lines_to_check=0
+TOTAL wps=2.75 lines_to_check=0
