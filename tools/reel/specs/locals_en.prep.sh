@@ -13,7 +13,7 @@ cut m1101 5.0 5.0 0.18 0.22 lc_watch
 # L5: still of the lineup (peak breaking on the left, one surfer waiting on the shoulder) for the PEAK / YOU rings
 ffmpeg -v error -y -ss 3.4 -i /tmp/px/m1074.mp4 -frames:v 1 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:(iw-1080)/2:0" /tmp/px/lc_still.png
 ffmpeg -v error -y -loop 1 -t 5.0 -i /tmp/px/lc_still.png -vf "fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/lc_aerial.mp4
-cut m1128 17.0 4.5 0.50 0.60 lc_left
+cut m1128 12.0 4.5 0.50 0.60 lc_left
 cut m1076 4.0 4.0 0.50 0.62 lc_ride
 cut m1070 6.0 3.0 0.50 0.50 lc_save
 cut m1070 11.0 5.0 0.50 0.50 lc_tmrw
