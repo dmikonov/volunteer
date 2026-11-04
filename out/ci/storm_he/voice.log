@@ -5,28 +5,31 @@ take 1 2 wer 0.111 dur 4.2 | תכלס רוח חזקה מהים, הכל מבול�
 take 1 3 wer 0.111 dur 4.2 | תכלס, רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
 take 2 4 wer 0.143 dur 2.95 | אה, אז מתי נשארים על החול שלושה סימנים?
 take 2 5 wer 0.143 dur 2.95 | אז מתי נשארים על החול השלושה סימנים?
-take 3 6 wer 0.0 dur 2.99 | אחת יש ברקים, יוצאים מהמים עכשיו.
-take 3 7 wer 0.333 dur 2.99 | אחת, יוצאים מהמים עכשיו?
+take 3 6 wer 0.0 dur 2.49 | אחת יש ברקים לא נכנסים בכלל
+take 3 7 wer 0.0 dur 2.49 | אחת יש ברקים, לא נכנסים בכלל
 take 4 8 wer 0.0 dur 3.74 | 2. כל הים קצף עד האופק, נשארים על החול.
-take 4 9 wer 0.111 dur 3.45 | שתיים קל הים קצף עד האופק, נשארים על החול.
-take 5 10 wer 0.286 dur 4.15 | שווייאסט 3 מחכים יומיים שהרוח תירגע והים מסתדר.
-take 5 11 wer 0.0 dur 4.15 | 3. מחכים יומיים שהרוח תירגע והים יסתדר.
-take 6 12 wer 0.125 dur 3.45 | שווייסט, תשמרו את זה, תצטרכו את זה בסערה הבאה.
-take 6 13 wer 0.0 dur 3.45 | תשמרו את זה, תצטרכו את זה בסערה הבאה.
-take 7 14 wer 0.2 dur 4.62 | ובתחזית של סרפטרייב רואים מראש באיזה יום הים נרגע.
-take 7 15 wer 0.0 dur 4.62 | ובתחזית של סרף טרייב רואים מראש באיזה יום הים נרגע.
-take 8 16 wer 0.0 dur 2.4 | ותראו מה זה הים יומיים אחרי.
-take 8 17 wer 0.0 dur 2.4 | ותראו מה זה, הים יומיים אחרי.
-take 9 18 wer 0.0 dur 4.35 | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
-take 9 19 wer 0.0 dur 4.35 | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
-PICK 0 wer 0.0 | final fall (-8.7 st, expected fall) | pitch 123 Hz (level +0.3 st) | range 15.3 st | סערה בים, כולם חושבים שזה גלים טובים.
-PICK 1 wer 0.111 | final fall (-5.9 st, expected fall) | pitch 118 Hz (level -0.4 st) | range 11.5 st | תכלס, רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
-PICK 2 wer 0.143 | final rise (+3.2 st, expected fall) | pitch 111 Hz (level -1.5 st) | range 7.2 st | אז מתי נשארים על החול השלושה סימנים?
-PICK 3 wer 0.0 | final level (-0.6 st, expected fall) | pitch 243 Hz (level +12.1 st) | range 7.6 st | אחת יש ברקים, יוצאים מהמים עכשיו.
-PICK 4 wer 0.111 | final fall (-8.0 st, expected fall) | pitch 134 Hz (level +1.8 st) | range 12.5 st | שתיים קל הים קצף עד האופק, נשארים על החול.
-PICK 5 wer 0.0 | final level (-1.1 st, expected fall) | pitch 130 Hz (level +1.2 st) | range 15.6 st | 3. מחכים יומיים שהרוח תירגע והים יסתדר.
-PICK 6 wer 0.0 | final fall (-6.0 st, expected fall) | pitch 107 Hz (level -2.1 st) | range 14.4 st | תשמרו את זה, תצטרכו את זה בסערה הבאה.
-PICK 7 wer 0.0 | final fall (-2.8 st, expected fall) | pitch 121 Hz (level +0.0 st) | range 9.5 st | ובתחזית של סרף טרייב רואים מראש באיזה יום הים נרגע.
-PICK 8 wer 0.0 | final level (+0.5 st, expected fall) | pitch 116 Hz (level -0.7 st) | range 13.5 st | ותראו מה זה הים יומיים אחרי.
-PICK 9 wer 0.0 | final fall (-3.5 st, expected fall) | pitch 122 Hz (level +0.0 st) | range 12.6 st | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
-he f5 T 33.745 [('L1', 0.12, np.float64(2.86), 0.0), ('L2', np.float64(3.176), np.float64(3.79), 0.11), ('L3', np.float64(7.369), np.float64(2.45), 0.14), ('L4', np.float64(10.021), np.float64(2.72), 0.0), ('L5', np.float64(12.946), np.float64(2.86), 0.11), ('L6', np.float64(16.001), np.float64(3.61), 0.0), ('L7', np.float64(20.01), np.float64(2.61), 0.0), ('L8', np.float64(22.818), np.float64(3.87), 0.0), ('L9', np.float64(27.09), np.float64(1.86), 0.0), ('L10', np.float64(29.153), np.float64(3.69), 0.0)]
+take 4 9 wer 0.111 dur 3.45 | שתיים קל הים קצף עד האופק נשארים על החול.
+take 5 10 wer 0.0 dur 3.13 | 3. אין הפסקה בין הגלים, סט אחרי סט.
+take 5 11 wer 0.0 dur 3.13 | 3. אין הפסקה בין הגלים סט אחרי סט.
+take 6 12 wer 0.143 dur 4.0 | ואז מחכים יומיים שהרוח תרגע והים יסתדר.
+take 6 13 wer 0.0 dur 4.0 | ואז מחכים יומיים שהרוח תירגע והים יסתדר.
+take 7 14 wer 0.125 dur 3.45 | שווייסט, תשמרו את זה, תצטרכו את זה בסערה הבאה.
+take 7 15 wer 0.0 dur 3.45 | תשמרו את זה, תצטרכו את זה בסערה הבאה.
+take 8 16 wer 0.222 dur 4.3 | ובתחזית של סרפטרייב רואים מראש את הימים האדומים.
+take 8 17 wer 0.222 dur 4.3 | ובתחזית של סרפטרייב רואים מראש את הימים האדומים
+take 9 18 wer 0.0 dur 2.4 | ותראו מה זה הים יומיים אחרי.
+take 9 19 wer 0.0 dur 2.4 | ותראו מה זה הים יומיים אחרי.
+take 10 20 wer 0.0 dur 4.35 | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
+take 10 21 wer 0.0 dur 4.35 | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
+PICK 0 wer 0.0 | final fall (-8.7 st, expected fall) | pitch 123 Hz (level +1.1 st) | range 15.3 st | סערה בים, כולם חושבים שזה גלים טובים.
+PICK 1 wer 0.111 | final fall (-6.2 st, expected fall) | pitch 115 Hz (level -0.1 st) | range 12.5 st | תכלס רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
+PICK 2 wer 0.143 | final rise (+3.2 st, expected fall) | pitch 111 Hz (level -0.7 st) | range 7.2 st | אז מתי נשארים על החול השלושה סימנים?
+PICK 3 wer 0.0 | final fall (-6.2 st, expected fall) | pitch 145 Hz (level +3.9 st) | range 16.5 st | אחת יש ברקים, לא נכנסים בכלל
+PICK 4 wer 0.111 | final fall (-8.0 st, expected fall) | pitch 134 Hz (level +2.6 st) | range 12.5 st | שתיים קל הים קצף עד האופק נשארים על החול.
+PICK 5 wer 0.0 | final fall (-8.3 st, expected fall) | pitch 115 Hz (level -0.0 st) | range 13.0 st | 3. אין הפסקה בין הגלים סט אחרי סט.
+PICK 6 wer 0.0 | final rise (+7.3 st, expected fall) | pitch 105 Hz (level -1.6 st) | range 10.2 st | ואז מחכים יומיים שהרוח תירגע והים יסתדר.
+PICK 7 wer 0.0 | final fall (-6.0 st, expected fall) | pitch 107 Hz (level -1.3 st) | range 14.4 st | תשמרו את זה, תצטרכו את זה בסערה הבאה.
+PICK 8 wer 0.222 | final level (-0.4 st, expected fall) | pitch 104 Hz (level -1.9 st) | range 8.4 st | ובתחזית של סרפטרייב רואים מראש את הימים האדומים.
+PICK 9 wer 0.0 | final level (+0.5 st, expected fall) | pitch 116 Hz (level +0.1 st) | range 13.5 st | ותראו מה זה הים יומיים אחרי.
+PICK 10 wer 0.0 | final fall (-3.5 st, expected fall) | pitch 122 Hz (level +0.9 st) | range 12.6 st | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
+he f5 T 35.414 [('L1', 0.12, np.float64(2.86), 0.0), ('L2', np.float64(3.176), np.float64(3.85), 0.11), ('L3', np.float64(7.428), np.float64(2.45), 0.14), ('L4', np.float64(10.08), np.float64(1.88), 0.0), ('L5', np.float64(12.162), np.float64(2.86), 0.11), ('L6', np.float64(15.217), np.float64(2.48), 0.0), ('L7', np.float64(17.896), np.float64(3.54), 0.0), ('L8', np.float64(21.838), np.float64(2.61), 0.0), ('L9', np.float64(24.646), np.float64(3.71), 0.22), ('L10', np.float64(28.759), np.float64(1.86), 0.0), ('L11', np.float64(30.822), np.float64(3.69), 0.0)]
