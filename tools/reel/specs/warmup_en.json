@@ -1,0 +1,194 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "en",
+ "out": "reel_warmup_en.mp4",
+ "lines": [
+  "I thought warming up was wasted surf time.",
+  "Then my arms died twenty minutes in.",
+  "Three fixes. Five minutes.",
+  "One. Deep side lunges, five each side.",
+  "Two. Chest up, and hold it.",
+  "Three. Side plank, arm up.",
+  "Now your first paddle feels easy.",
+  "Save it for your next dawn session.",
+  "Drills for your weak spot? Surf Tribe.",
+  "Tomorrow: why your first board needs volume."
+ ],
+ "titles": {
+  "L1": [
+   "Warm-up =",
+   "wasted surf time?",
+   null,
+   null
+  ],
+  "L2": [
+   "Dead arms",
+   "after 20 min",
+   null,
+   null
+  ],
+  "L3": [
+   "3 fixes",
+   "5 minutes",
+   null,
+   null
+  ],
+  "L4": [
+   "1. Side lunges",
+   "5 each side",
+   null,
+   null
+  ],
+  "L5": [
+   "2. Chest up",
+   "hold it",
+   null,
+   null
+  ],
+  "L6": [
+   "3. Side plank",
+   "arm up",
+   null,
+   null
+  ],
+  "L7": [
+   "First paddle",
+   "feels easy",
+   null,
+   null
+  ],
+  "L8": [
+   "Save it for",
+   "your next dawn session",
+   null,
+   null
+  ],
+  "L9": [
+   "Drills for",
+   "your weak spot",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow",
+  "First board: go for volume"
+ ],
+ "extra": [
+  {
+   "k": "LST",
+   "line": "L8",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:90px;top:640px;width:740px;padding:34px 40px;background:rgba(45,36,42,.82);border-radius:34px;box-sizing:border-box'><div style=\"font:800 58px R;color:#fff;line-height:1.35\">1. Side lunges<br>2. Chest up<br>3. Side plank</div></div>"
+  }
+ ],
+ "gap": 0.15,
+ "gap_after": {
+  "L2": 0.2,
+  "L6": 0.2,
+  "L8": 0.2
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L8": 380,
+  "L9": 260,
+  "L10": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_tired.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_three.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_lunge.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_dog.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_plank.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_glide.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_save.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/wu_app.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/wu_tmrw.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
+ },
+ "edge": true,
+ "rate": "-10%"
+}
