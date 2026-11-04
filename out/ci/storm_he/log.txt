@@ -5,7 +5,7 @@ cat 35.32 T 35.364
 + python3 ov_png.py /s17/rp/storm_he
 realcuts True [0.0, 3.08, 7.32, 9.96, 12.04, 15.08, 17.76, 21.64, 23.72, 26.52, 30.64, 35.364]
 safe-zone violations []
-ovplan 24
+ovplan 25
 + python3 ov_ff.py /s17/rp/storm_he
 done /s17/rp/storm_he/reel_storm_he.mp4 35.364 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/storm_he

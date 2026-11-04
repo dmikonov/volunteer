@@ -2,7 +2,7 @@
 + G=/s17/gen
 + mkdir -p /s17/gen /tmp/px out/ci/d04/review out/ci/d04/gen
 + UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
 + '[' -s /tmp/px/m17877.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m17877.mp4 https://assets.mixkit.co/videos/17877/17877-1080.mp4
@@ -10,7 +10,7 @@ curl: (22) The requested URL returned error: 403
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m17877.mp4 https://assets.mixkit.co/videos/17877/17877-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
 + '[' -s /tmp/px/m48855.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48855.mp4 https://assets.mixkit.co/videos/48855/48855-1080.mp4
@@ -18,7 +18,7 @@ curl: (22) The requested URL returned error: 403
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48855.mp4 https://assets.mixkit.co/videos/48855/48855-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
 + '[' -s /tmp/px/m47948.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m47948.mp4 https://assets.mixkit.co/videos/47948/47948-1080.mp4
@@ -26,23 +26,23 @@ curl: (22) The requested URL returned error: 403
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m47948.mp4 https://assets.mixkit.co/videos/47948/47948-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
-+ '[' -s /tmp/px/m48525.mp4 ']'
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
++ '[' -s /tmp/px/m48527.mp4 ']'
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48525.mp4 https://assets.mixkit.co/videos/48525/48525-1080.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48527.mp4 https://assets.mixkit.co/videos/48527/48527-1080.mp4
 curl: (22) The requested URL returned error: 403
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48525.mp4 https://assets.mixkit.co/videos/48525/48525-720.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48527.mp4 https://assets.mixkit.co/videos/48527/48527-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
-+ '[' -s /tmp/px/m22451.mp4 ']'
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
++ '[' -s /tmp/px/m25163.mp4 ']'
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m22451.mp4 https://assets.mixkit.co/videos/22451/22451-1080.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m25163.mp4 https://assets.mixkit.co/videos/25163/25163-1080.mp4
 curl: (22) The requested URL returned error: 403
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m22451.mp4 https://assets.mixkit.co/videos/22451/22451-720.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m25163.mp4 https://assets.mixkit.co/videos/25163/25163-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
 + '[' -s /tmp/px/m45239.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m45239.mp4 https://assets.mixkit.co/videos/45239/45239-1080.mp4
@@ -50,7 +50,7 @@ curl: (22) The requested URL returned error: 403
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m45239.mp4 https://assets.mixkit.co/videos/45239/45239-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
 + '[' -s /tmp/px/m36833.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m36833.mp4 https://assets.mixkit.co/videos/36833/36833-1080.mp4
@@ -58,7 +58,7 @@ curl: (22) The requested URL returned error: 403
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m36833.mp4 https://assets.mixkit.co/videos/36833/36833-720.mp4
 + break
-+ for id in 17877 48855 47948 48525 22451 45239 36833 1076
++ for id in 17877 48855 47948 48527 25163 45239 36833 1076
 + '[' -s /tmp/px/m1076.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1076.mp4 https://assets.mixkit.co/videos/1076/1076-1080.mp4
@@ -95,30 +95,30 @@ curl: (22) The requested URL returned error: 403
 + c1=0.55
 + n=sm_bolt
 + ffmpeg -v error -y -ss 0.9 -t 3.0 -i /tmp/px/m47948.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.55+(0.55-0.55)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_bolt.mp4
-+ cut m48855 9.0 4.5 0.45 0.50 sm_foam
-+ src=m48855
-+ ss=9.0
++ cut m48527 0.5 4.5 0.50 0.50 sm_foam
++ src=m48527
++ ss=0.5
 + t=4.5
-+ c0=0.45
++ c0=0.50
 + c1=0.50
 + n=sm_foam
-+ ffmpeg -v error -y -ss 9.0 -t 4.5 -i /tmp/px/m48855.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.50-0.45)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_foam.mp4
-+ cut m48525 3.5 4.5 0.50 0.50 sm_sets
-+ src=m48525
-+ ss=3.5
-+ t=4.5
++ ffmpeg -v error -y -ss 0.5 -t 4.5 -i /tmp/px/m48527.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_foam.mp4
++ cut m48527 9.0 4.0 0.50 0.50 sm_sets
++ src=m48527
++ ss=9.0
++ t=4.0
 + c0=0.50
 + c1=0.50
 + n=sm_sets
-+ ffmpeg -v error -y -ss 3.5 -t 4.5 -i /tmp/px/m48525.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_sets.mp4
-+ cut m22451 2.0 4.5 0.50 0.55 sm_calm
-+ src=m22451
++ ffmpeg -v error -y -ss 9.0 -t 4.0 -i /tmp/px/m48527.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_sets.mp4
++ cut m25163 2.0 4.5 0.45 0.55 sm_calm
++ src=m25163
 + ss=2.0
 + t=4.5
-+ c0=0.50
++ c0=0.45
 + c1=0.55
 + n=sm_calm
-+ ffmpeg -v error -y -ss 2.0 -t 4.5 -i /tmp/px/m22451.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.55-0.50)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_calm.mp4
++ ffmpeg -v error -y -ss 2.0 -t 4.5 -i /tmp/px/m25163.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.55-0.45)*t/4.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_calm.mp4
 + cut m36833 5.0 3.0 0.74 0.80 sm_clean
 + src=m36833
 + ss=5.0
@@ -143,7 +143,7 @@ curl: (22) The requested URL returned error: 403
 + c1=0.55
 + n=sm_tmrw
 + ffmpeg -v error -y -ss 8.0 -t 5.0 -i /tmp/px/m1076.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.55-0.50)*t/5.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_tmrw.mp4
-+ ffmpeg -v error -y -ss 2.0 -t 4.2 -i app-screens/forecast/forecast_he_best.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=580:450:380:1150,scale=1080:838:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:660,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/sm_app.mp4
++ ffmpeg -v error -y -ss 2.0 -t 4.2 -i app-screens/forecast/forecast_he_best.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=600:450:365:1150,scale=1080:810:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:660,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/sm_app.mp4
 + for f in $G/sm_*.mp4
 ++ basename /s17/gen/sm_app.mp4 .mp4
 + n=sm_app
@@ -189,14 +189,14 @@ curl: (22) The requested URL returned error: 403
 + n=sm_tmrw
 + ffmpeg -v error -y -i /s17/gen/sm_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d04/review/cut_sm_tmrw.jpg
 + ls -la /s17/gen/sm_app.mp4 /s17/gen/sm_bolt.mp4 /s17/gen/sm_calm.mp4 /s17/gen/sm_clean.mp4 /s17/gen/sm_foam.mp4 /s17/gen/sm_hook.mp4 /s17/gen/sm_mess.mp4 /s17/gen/sm_pier.mp4 /s17/gen/sm_save.mp4 /s17/gen/sm_sets.mp4 /s17/gen/sm_tmrw.mp4
--rw-r--r-- 1 runner runner  282891 Nov  4 00:12 /s17/gen/sm_app.mp4
--rw-r--r-- 1 runner runner 2407595 Nov  4 00:12 /s17/gen/sm_bolt.mp4
--rw-r--r-- 1 runner runner 4592256 Nov  4 00:12 /s17/gen/sm_calm.mp4
--rw-r--r-- 1 runner runner 4271851 Nov  4 00:12 /s17/gen/sm_clean.mp4
--rw-r--r-- 1 runner runner 5275615 Nov  4 00:12 /s17/gen/sm_foam.mp4
--rw-r--r-- 1 runner runner 3656594 Nov  4 00:11 /s17/gen/sm_hook.mp4
--rw-r--r-- 1 runner runner 3965129 Nov  4 00:11 /s17/gen/sm_mess.mp4
--rw-r--r-- 1 runner runner 3911836 Nov  4 00:11 /s17/gen/sm_pier.mp4
--rw-r--r-- 1 runner runner 5223258 Nov  4 00:12 /s17/gen/sm_save.mp4
--rw-r--r-- 1 runner runner 9223619 Nov  4 00:12 /s17/gen/sm_sets.mp4
--rw-r--r-- 1 runner runner 9916996 Nov  4 00:12 /s17/gen/sm_tmrw.mp4
+-rw-r--r-- 1 runner runner   279921 Nov  4 00:35 /s17/gen/sm_app.mp4
+-rw-r--r-- 1 runner runner  2407595 Nov  4 00:34 /s17/gen/sm_bolt.mp4
+-rw-r--r-- 1 runner runner 14735975 Nov  4 00:34 /s17/gen/sm_calm.mp4
+-rw-r--r-- 1 runner runner  4271851 Nov  4 00:34 /s17/gen/sm_clean.mp4
+-rw-r--r-- 1 runner runner  6009151 Nov  4 00:34 /s17/gen/sm_foam.mp4
+-rw-r--r-- 1 runner runner  3656594 Nov  4 00:34 /s17/gen/sm_hook.mp4
+-rw-r--r-- 1 runner runner  3965129 Nov  4 00:34 /s17/gen/sm_mess.mp4
+-rw-r--r-- 1 runner runner  3911836 Nov  4 00:34 /s17/gen/sm_pier.mp4
+-rw-r--r-- 1 runner runner  5223258 Nov  4 00:34 /s17/gen/sm_save.mp4
+-rw-r--r-- 1 runner runner  5468197 Nov  4 00:34 /s17/gen/sm_sets.mp4
+-rw-r--r-- 1 runner runner  9916996 Nov  4 00:35 /s17/gen/sm_tmrw.mp4
