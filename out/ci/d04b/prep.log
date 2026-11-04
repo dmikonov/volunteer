@@ -108,12 +108,14 @@ tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
 + n=lc_tmrw
 + ffmpeg -v error -y -ss 6.0 -t 5.0 -i /tmp/px/m1070.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/5.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/lc_tmrw.mp4
 tools/reel/specs/locals_en.prep.sh: line 8: ffmpeg: command not found
-+ ffmpeg -v error -y -ss 21.6 -t 3.6 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -vf crop=864:1536:108:450,scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 14 /s17/gen/lc_app.mp4
++ ffmpeg -v error -y -ss 22.5 -i app-screens/ScreenRecording_10-12-2026_13-42-15_1.mp4 -frames:v 1 /tmp/px/ask.png
 tools/reel/specs/locals_en.prep.sh: line 21: ffmpeg: command not found
++ ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/ask.png -filter_complex '[0:v]split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.3[bg];[b]crop=864:420:108:1560,scale=1080:525:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:700,fps=25,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/lc_app.mp4
+tools/reel/specs/locals_en.prep.sh: line 22: ffmpeg: command not found
 + for f in $G/lc_*.mp4
 ++ basename '/s17/gen/lc_*.mp4' .mp4
 + n='lc_*'
 + ffmpeg -v error -y -i '/s17/gen/lc_*.mp4' -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d04b/review/cut_lc_aerial.jpg out/ci/d04b/review/cut_lc_app.jpg out/ci/d04b/review/cut_lc_face.jpg out/ci/d04b/review/cut_lc_hook.jpg out/ci/d04b/review/cut_lc_left.jpg out/ci/d04b/review/cut_lc_local.jpg out/ci/d04b/review/cut_lc_ride.jpg out/ci/d04b/review/cut_lc_rocks.jpg out/ci/d04b/review/cut_lc_save.jpg out/ci/d04b/review/cut_lc_tmrw.jpg out/ci/d04b/review/cut_lc_watch.jpg
-tools/reel/specs/locals_en.prep.sh: line 22: ffmpeg: command not found
+tools/reel/specs/locals_en.prep.sh: line 23: ffmpeg: command not found
 + ls -la '/s17/gen/lc_*'
 ls: cannot access '/s17/gen/lc_*': No such file or directory
