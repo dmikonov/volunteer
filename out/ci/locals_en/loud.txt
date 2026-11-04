@@ -2,11 +2,11 @@
 
   Loudness range:
     LRA:         1.5 LU
-    Threshold: -34.6 LUFS
+    Threshold: -34.5 LUFS
     LRA low:   -15.3 LUFS
-    LRA high:  -13.7 LUFS
+    LRA high:  -13.8 LUFS
 
   True peak:
-    Peak:       -3.2 dBFS
-[out#0/null @ 0x5a66af915840] video:314KiB audio:5792KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame=  773 fps=460 q=-0.0 Lsize=N/A time=00:00:30.89 bitrate=N/A speed=18.4x elapsed=0:00:01.68    
+    Peak:       -3.1 dBFS
+[out#0/null @ 0x5e25b85e1180] video:321KiB audio:5916KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  789 fps=343 q=-0.0 Lsize=N/A time=00:00:31.55 bitrate=N/A speed=13.7x elapsed=0:00:02.30    
