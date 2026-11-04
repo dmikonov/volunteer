@@ -1,18 +1,18 @@
 + k=/s17/rp/locals_en
 + python3 build.py /s17/rp/locals_en
-[('L1', '/lc_hook.mp4', 0.0, 2.671, 0.0), ('L2', 'lc_local.mp4', 0.0, 3.587, 2.671), ('L3', 'lc_rocks.mp4', 0.0, 2.11, 6.258), ('L4', 'lc_watch.mp4', 0.0, 3.915, 8.368), ('L5', 'c_aerial.mp4', 0.0, 3.581, 12.283), ('L6', '/lc_left.mp4', 0.0, 3.824, 15.864), ('L7', 'n/lc_app.mp4', 0.0, 3.234, 19.688), ('L8', '/lc_ride.mp4', 0.0, 2.815, 22.922), ('L9', '/lc_save.mp4', 0.0, 1.985, 25.737), ('L10', '/lc_tmrw.mp4', 0.0, 4.321, 27.722)]
-cat 32.12 T 32.043
+[('L1', '/lc_hook.mp4', 0.0, 2.671, 0.0), ('L2', 'lc_local.mp4', 0.0, 3.587, 2.671), ('L3', 'lc_rocks.mp4', 0.0, 2.11, 6.258), ('L4', 'lc_watch.mp4', 0.0, 3.915, 8.368), ('L5', 'c_aerial.mp4', 0.0, 3.581, 12.283), ('L6', '/lc_left.mp4', 0.0, 3.824, 15.864), ('L7', 'n/lc_app.mp4', 0.0, 3.943, 19.688), ('L8', '/lc_ride.mp4', 0.0, 2.815, 23.631), ('L9', '/lc_save.mp4', 0.0, 1.984, 26.446), ('L10', '/lc_tmrw.mp4', 0.0, 4.321, 28.43)]
+cat 32.84 T 32.751
 + python3 ov_png.py /s17/rp/locals_en
-realcuts True [0.0, 2.68, 6.28, 8.4, 12.32, 15.92, 19.76, 23.0, 25.8, 27.8, 32.043]
+realcuts True [0.0, 2.68, 6.28, 8.4, 12.32, 15.92, 19.76, 23.72, 26.52, 28.52, 32.751]
 safe-zone violations []
 ovplan 24
 + python3 ov_ff.py /s17/rp/locals_en
-done /s17/rp/locals_en/reel_locals_en.mp4 32.043 lufs before -15.2 gain 0.7
+done /s17/rp/locals_en/reel_locals_en.mp4 32.751 lufs before -15.3 gain 0.8
 + python3 trim_tail.py /s17/rp/locals_en
-trimmed /s17/rp/locals_en/reel_locals_en.mp4 31.54
+trimmed /s17/rp/locals_en/reel_locals_en.mp4 32.25
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/locals_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/locals_en/reel_locals_en.mp4
-/s17/rp/locals_en/reel_locals_en.mp4 before -13.1 after -14.5 peak -3.0
+/s17/rp/locals_en/reel_locals_en.mp4 before -13.0 after -14.6 peak -3.3
 + python3 post_cz.py /s17/rp/locals_en
 post ok
 + echo 'EXIT /s17/rp/locals_en 0'
