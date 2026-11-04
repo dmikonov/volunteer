@@ -103,14 +103,14 @@ curl: (22) The requested URL returned error: 403
 + c1=0.50
 + n=sm_sets
 + ffmpeg -v error -y -ss 9.0 -t 4.0 -i /tmp/px/m48527.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_sets.mp4
-+ cut m36833 1.5 3.6 0.62 0.74 sm_calm
-+ src=m36833
-+ ss=1.5
-+ t=3.6
-+ c0=0.62
-+ c1=0.74
++ cut m45239 14.0 3.8 0.32 0.36 sm_calm
++ src=m45239
++ ss=14.0
++ t=3.8
++ c0=0.32
++ c1=0.36
 + n=sm_calm
-+ ffmpeg -v error -y -ss 1.5 -t 3.6 -i /tmp/px/m36833.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.62+(0.74-0.62)*t/3.6)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_calm.mp4
++ ffmpeg -v error -y -ss 14.0 -t 3.8 -i /tmp/px/m45239.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.32+(0.36-0.32)*t/3.8)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/sm_calm.mp4
 + cut m36833 5.1 2.6 0.74 0.80 sm_clean
 + src=m36833
 + ss=5.1
@@ -183,14 +183,14 @@ curl: (22) The requested URL returned error: 403
 + n=sm_tmrw
 + ffmpeg -v error -y -i /s17/gen/sm_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d04/review/cut_sm_tmrw.jpg
 + ls -la /s17/gen/sm_app.mp4 /s17/gen/sm_bolt.mp4 /s17/gen/sm_calm.mp4 /s17/gen/sm_clean.mp4 /s17/gen/sm_foam.mp4 /s17/gen/sm_hook.mp4 /s17/gen/sm_mess.mp4 /s17/gen/sm_pier.mp4 /s17/gen/sm_save.mp4 /s17/gen/sm_sets.mp4 /s17/gen/sm_tmrw.mp4
--rw-r--r-- 1 runner runner  279921 Nov  4 00:58 /s17/gen/sm_app.mp4
--rw-r--r-- 1 runner runner 1510395 Nov  4 00:58 /s17/gen/sm_bolt.mp4
--rw-r--r-- 1 runner runner 4612801 Nov  4 00:58 /s17/gen/sm_calm.mp4
--rw-r--r-- 1 runner runner 3754343 Nov  4 00:58 /s17/gen/sm_clean.mp4
--rw-r--r-- 1 runner runner 6009908 Nov  4 00:58 /s17/gen/sm_foam.mp4
--rw-r--r-- 1 runner runner 3402535 Nov  4 00:58 /s17/gen/sm_hook.mp4
--rw-r--r-- 1 runner runner 3966760 Nov  4 00:58 /s17/gen/sm_mess.mp4
--rw-r--r-- 1 runner runner 3912986 Nov  4 00:58 /s17/gen/sm_pier.mp4
--rw-r--r-- 1 runner runner 5235417 Nov  4 00:58 /s17/gen/sm_save.mp4
--rw-r--r-- 1 runner runner 5468720 Nov  4 00:58 /s17/gen/sm_sets.mp4
--rw-r--r-- 1 runner runner 9918887 Nov  4 00:58 /s17/gen/sm_tmrw.mp4
+-rw-r--r-- 1 runner runner  279921 Nov  4 01:20 /s17/gen/sm_app.mp4
+-rw-r--r-- 1 runner runner 1510395 Nov  4 01:19 /s17/gen/sm_bolt.mp4
+-rw-r--r-- 1 runner runner 3600741 Nov  4 01:19 /s17/gen/sm_calm.mp4
+-rw-r--r-- 1 runner runner 3754343 Nov  4 01:19 /s17/gen/sm_clean.mp4
+-rw-r--r-- 1 runner runner 6009908 Nov  4 01:19 /s17/gen/sm_foam.mp4
+-rw-r--r-- 1 runner runner 3402535 Nov  4 01:20 /s17/gen/sm_hook.mp4
+-rw-r--r-- 1 runner runner 3966760 Nov  4 01:19 /s17/gen/sm_mess.mp4
+-rw-r--r-- 1 runner runner 3912986 Nov  4 01:19 /s17/gen/sm_pier.mp4
+-rw-r--r-- 1 runner runner 5235417 Nov  4 01:19 /s17/gen/sm_save.mp4
+-rw-r--r-- 1 runner runner 5468720 Nov  4 01:19 /s17/gen/sm_sets.mp4
+-rw-r--r-- 1 runner runner 9918887 Nov  4 01:20 /s17/gen/sm_tmrw.mp4
