@@ -1,5 +1,5 @@
 # 06.11 night: HE 09.11 (swapped from 11.11) "ears in winter: surf earplugs + hood". Generated: Z-Image Turbo 61121/61124/61123/61125/61126 + Wan 2.2 (same man). Real: Pexels 8713107 (cold sea from above), 8713106 (walking into the sea), Mixkit 1032 (running on the beach). App: HE forecast, water temperature tile.
-[ -f /s17/gen/er_app.mp4 ] && exit 0
+[ -f /s17/gen/er_app.mp4 ] && [ -s /s17/gen/er_hook.mp4 ] && exit 0
 G=/s17/gen; R=out/ci/d06e/review; mkdir -p $G /tmp/px $R out/ci/d06e/gen
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
 while read n u; do [ -s /tmp/px/$n.mp4 ] || curl -sSfL -m 120 -o /tmp/px/$n.mp4 "$u" || echo "FETCH FAIL $n"; cp /tmp/px/$n.mp4 out/ci/d06e/gen/$n.mp4 2>/dev/null; done < tools/reel/ci/d06e_list.txt
