@@ -16,6 +16,7 @@ cut m48824 5.0 3.0 0.20 0.22 fc_chop
 cut m5016 1.0 3.0 0.40 0.45 fc_small
 cut m1127 8.5 6.5 0.50 0.58 fc_ride
 cut m1127 0.0 4.0 0.45 0.50 fc_peak
+cut m1127 4.2 2.0 0.50 0.55 fc_glassy
 ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1220.mp4 -vf "scale=1080:1920:flags=lanczos,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/fc_tmrw.mp4
 # app inserts: one tile of the HE forecast screen, x2.2-2.4 over the blurred screen (insert about 600x850, centre band y 560-1420)
 app(){ f=$1; x=$2; y=$3; w=$4; h=$5; s=$6; n=$7
