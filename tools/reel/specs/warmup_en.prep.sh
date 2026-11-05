@@ -21,6 +21,6 @@ cutz k8155541 13.4 3.2 0.50 0.50 1920 0.5 wu_save
 cutz k8154896 0.0 3.4 0.42 0.45 1920 0.5 wu_tmrw
 # app: land drills ("Flat-land pump reps" + "Land and freeze") from the 26.09 EN analysis, 1.35x over the blurred screen: insert 1080x972 (51% of the frame)
 ffmpeg -v error -y -ss 18.0 -i app-screens/ScreenRecording_09-26-2026_17-24-44_1.mp4 -frames:v 1 /tmp/px/drills.png
-ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/drills.png -filter_complex "[0:v]split=2[a][b];[a]crop=1080:1920:0:214,boxblur=28,eq=brightness=-0.3[bg];[b]crop=800:720:140:430,scale=1080:972:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:600,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/wu_app.mp4
+ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/drills.png -filter_complex "[0:v]split=2[a][b];[a]crop=1080:1920:0:214,boxblur=28,eq=brightness=-0.3[bg];[b]crop=880:380:100:440,scale=1080:466:flags=lanczos,unsharp=5:5:0.5[fg];[bg][fg]overlay=0:720,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/wu_app.mp4
 for f in $G/wu_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 out/ci/d05w/cuts/cut_$n.jpg; done
 ls -la $G/wu_*

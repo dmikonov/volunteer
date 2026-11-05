@@ -25,7 +25,7 @@
   "Three. Side plank, arm up.",
   "First paddle felt way easier.",
   "Save it for the next time you skip the warm-up.",
-  "Surf Tribe picks drills for your weak spot.",
+  "Surf Tribe picks land drills from your own wave.",
   "Tomorrow: why your first board needs volume."
  ],
  "titles": {
@@ -72,14 +72,14 @@
    null
   ],
   "L8": [
-   "Save it for next time",
-   "you skip the warm-up",
+   "Save it for",
+   "next time",
    null,
    null
   ],
   "L9": [
-   "SurfTribe picks drills",
-   "for your weak spot",
+   "Land drills",
+   "from your own wave",
    null,
    null
   ]
@@ -93,7 +93,7 @@
    "k": "LST",
    "line": "L8",
    "d0": 0.0,
-   "html": "<div style='position:absolute;left:90px;top:640px;width:740px;padding:34px 40px;background:rgba(45,36,42,.82);border-radius:34px;box-sizing:border-box'><div style=\"font:800 58px R;color:#fff;line-height:1.35\">1. Side lunges<br>2. Chest up<br>3. Side plank</div></div>"
+   "html": "<div style='position:absolute;left:90px;top:760px;width:740px;padding:34px 40px;background:rgba(45,36,42,.82);border-radius:34px;box-sizing:border-box'><div style=\"font:800 58px R;color:#fff;line-height:1.35\">1. Side lunges<br>2. Chest lift<br>3. Side plank</div></div>"
   }
  ],
  "gap": 0.15,
