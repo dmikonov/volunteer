@@ -3,10 +3,10 @@ L1 OK match=1.00 wps=3.06 dur=2.61 | ref: I thought warming up was wasted surf t
 L2 OK match=0.85 wps=2.86 dur=2.45 | ref: Then my arms died twenty minutes in. | asr: Then my arms died 20 minutes in.
 L3 OK match=1.00 wps=1.59 dur=2.51 | ref: Three fixes. Five minutes. | asr: Three fixes, five minutes.
 L4 CHECK match=0.83 wps=1.82 dur=3.85 | ref: One. Deep side lunges, five each side. | asr: 1. Deep side lunges. 5. Each side.
-L5 OK match=0.89 wps=3.04 dur=1.97 | ref: Two. Chest up, and hold it. | asr: 2. Chest up and hold it
+L5 OK match=0.91 wps=2.36 dur=2.54 | ref: Two. Belly down, chest up, hold. | asr: 2. Belly down, chest up, hold
 L6 CHECK match=0.82 wps=2.15 dur=2.32 | ref: Three. Side plank, arm up. | asr: 3. Side plank, arm up.
-L7 OK match=1.00 wps=2.54 dur=2.36 | ref: Now your first paddle feels easy. | asr: Now your first paddle feels easy.
-L8 OK match=1.00 wps=4.36 dur=1.38 | ref: Save it for your next session. | asr: Save it for your next session.
-L9 OK match=1.00 wps=2.80 dur=2.50 | ref: Drills for your weak spot? Surf Tribe. | asr: Drills for your weak spot? Surf Tribe.
+L7 OK match=1.00 wps=2.63 dur=1.90 | ref: First paddle felt way easier. | asr: First paddle felt way easier.
+L8 OK match=1.00 wps=4.80 dur=2.08 | ref: Save it for the next time you skip the warm-up. | asr: Save it for the next time you skip the warm-up.
+L9 OK match=1.00 wps=3.08 dur=2.60 | ref: Surf Tribe picks drills for your weak spot. | asr: Surf Tribe picks drills for your weak spot.
 L10 OK match=1.00 wps=2.56 dur=2.74 | ref: Tomorrow: why your first board needs volume. | asr: Tomorrow, why your first board needs volume.
-TOTAL wps=2.55 lines_to_check=2
+TOTAL wps=2.62 lines_to_check=2
