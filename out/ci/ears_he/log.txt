@@ -1,18 +1,18 @@
 + k=/s17/rp/ears_he
 + python3 build.py /s17/rp/ears_he
-[('L1', '/er_hook.mp4', 0.0, 3.935, 0.0), ('L2', '/er_cold.mp4', 0.0, 4.819, 3.935), ('L3', 'er_towel.mp4', 0.0, 2.728, 8.754), ('L4', '/er_plug.mp4', 0.0, 5.039, 11.482), ('L5', '/er_hood.mp4', 0.0, 3.336, 16.521), ('L6', '/er_ride.mp4', 0.0, 2.82, 19.857), ('L7', '/er_walk.mp4', 0.0, 3.362, 22.677), ('L8', 'n/er_app.mp4', 0.0, 4.027, 26.039), ('L9', '/er_tmrw.mp4', 0.0, 3.687, 30.066)]
-cat 33.72 T 33.753
+[('L1', '/er_hook.mp4', 0.0, 3.935, 0.0), ('L2', '/er_cold.mp4', 0.0, 2.2, 3.935), ('L2', 'er_cold2.mp4', 0.0, 2.619, 6.135), ('L3', 'er_towel.mp4', 0.0, 2.728, 8.754), ('L4', '/er_plug.mp4', 0.0, 5.039, 11.482), ('L5', '/er_hood.mp4', 0.0, 3.336, 16.521), ('L6', '/er_ride.mp4', 0.0, 2.82, 19.857), ('L7', '/er_walk.mp4', 0.0, 3.362, 22.677), ('L8', 'n/er_app.mp4', 0.0, 3.996, 26.039), ('L9', '/er_tmrw.mp4', 0.0, 3.687, 30.035)]
+cat 33.68 T 33.722
 + python3 ov_png.py /s17/rp/ears_he
-realcuts True [0.0, 3.92, 8.72, 11.44, 16.48, 19.8, 22.64, 26.0, 30.04, 33.753]
+realcuts True [0.0, 3.92, 8.72, 11.44, 16.48, 19.8, 22.64, 26.0, 30.0, 33.722]
 safe-zone violations []
 ovplan 20
 + python3 ov_ff.py /s17/rp/ears_he
-done /s17/rp/ears_he/reel_ears_he.mp4 33.753 lufs before -15.1 gain 0.6
+done /s17/rp/ears_he/reel_ears_he.mp4 33.722 lufs before -15.2 gain 0.7
 + python3 trim_tail.py /s17/rp/ears_he
-trimmed /s17/rp/ears_he/reel_ears_he.mp4 33.2
+trimmed /s17/rp/ears_he/reel_ears_he.mp4 33.15
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/ears_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/ears_he/reel_ears_he.mp4
-/s17/rp/ears_he/reel_ears_he.mp4 before -13.0 after -14.5 peak -2.4
+/s17/rp/ears_he/reel_ears_he.mp4 before -12.9 after -14.6 peak -2.5
 + python3 post_cz.py /s17/rp/ears_he
 post ok
 + echo 'EXIT /s17/rp/ears_he 0'

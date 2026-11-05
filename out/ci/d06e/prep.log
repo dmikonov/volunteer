@@ -6,30 +6,33 @@
 + read n u
 + '[' -s /tmp/px/e_hook.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/e_hook.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/746f5eda561f2d9cd6e75f954e40c2901035876f5314ebe252e45f6caf464b45/tmpsdsd_8ce.mp4
-+ cp /tmp/px/e_hook.mp4 out/ci/d06e/gen/e_hook.mp4
++ cp -n /tmp/px/e_hook.mp4 out/ci/d06e/gen/e_hook.mp4
 + read n u
 + '[' -s /tmp/px/e_plug.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/e_plug.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/30e1939d84cb6c002fea5527f0523b6d67bc6917a6b7ff24db4524529276fc7d/tmpgd3j24sy.mp4
-+ cp /tmp/px/e_plug.mp4 out/ci/d06e/gen/e_plug.mp4
++ cp -n /tmp/px/e_plug.mp4 out/ci/d06e/gen/e_plug.mp4
 + read n u
 + '[' -s /tmp/px/e_hood.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/e_hood.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/33fc517b2610dc57e4587dbb26ae3ed5aac8991cfd1eae252e9a16409a54c1de/tmpdyi66g7f.mp4
-+ cp /tmp/px/e_hood.mp4 out/ci/d06e/gen/e_hood.mp4
++ cp -n /tmp/px/e_hood.mp4 out/ci/d06e/gen/e_hood.mp4
 + read n u
 + '[' -s /tmp/px/e_ride.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/e_ride.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/64c938a1a9f6a20870dd57c334fad1ec69a43afc5b8e974283ecc6f6517f9919/tmp3yqz6ard.mp4
-+ cp /tmp/px/e_ride.mp4 out/ci/d06e/gen/e_ride.mp4
++ cp -n /tmp/px/e_ride.mp4 out/ci/d06e/gen/e_ride.mp4
 + read n u
 + '[' -s /tmp/px/e_towel.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/e_towel.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/ce7c6e41086bca90716c649db892a7e7dc3f89d47e35b2e5c000d93f4aed4ac5/tmpibc2zf4z.mp4
-+ cp /tmp/px/e_towel.mp4 out/ci/d06e/gen/e_towel.mp4
++ cp -n /tmp/px/e_towel.mp4 out/ci/d06e/gen/e_towel.mp4
 + read n u
-+ for id in 8713107 8713106
++ for id in 8713107 8713106 8713103
 + '[' -s /tmp/px/p8713107.mp4 ']'
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p8713107.mp4 https://videos.pexels.com/video-files/8713107/8713107-hd_1080_1920_25fps.mp4
-+ for id in 8713107 8713106
++ for id in 8713107 8713106 8713103
 + '[' -s /tmp/px/p8713106.mp4 ']'
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p8713106.mp4 https://videos.pexels.com/video-files/8713106/8713106-hd_1080_1920_25fps.mp4
++ for id in 8713107 8713106 8713103
++ '[' -s /tmp/px/p8713103.mp4 ']'
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p8713103.mp4 https://videos.pexels.com/video-files/8713103/8713103-hd_1080_1920_25fps.mp4
 + for id in 1032
 + '[' -s /tmp/px/m1032.mp4 ']'
 + for q in 1080 720
@@ -84,16 +87,23 @@ tools/reel/specs/ears_he.prep.sh: line 9: ffmpeg: command not found
 + o=er_walk
 + ffmpeg -v error -y -ss 2.0 -t 5.0 -i /tmp/px/p8713106.mp4 -vf scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/er_walk.mp4
 tools/reel/specs/ears_he.prep.sh: line 9: ffmpeg: command not found
++ p 8713103 1.0 3.0 er_cold2
++ id=8713103
++ ss=1.0
++ t=3.0
++ o=er_cold2
++ ffmpeg -v error -y -ss 1.0 -t 3.0 -i /tmp/px/p8713103.mp4 -vf scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/er_cold2.mp4
+tools/reel/specs/ears_he.prep.sh: line 9: ffmpeg: command not found
 + ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1032.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:(iw-1080)/2:0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/er_tmrw.mp4
-tools/reel/specs/ears_he.prep.sh: line 17: ffmpeg: command not found
+tools/reel/specs/ears_he.prep.sh: line 18: ffmpeg: command not found
 + ffmpeg -v error -y -i app-screens/forecast/forecast_he_water.mp4 -vf fps=1,scale=270:-2,tile=8x1 -frames:v 1 out/ci/d06e/review/app_water_sheet.jpg
-tools/reel/specs/ears_he.prep.sh: line 19: ffmpeg: command not found
-+ ffmpeg -v error -y -ss 0.3 -t 3.0 -i app-screens/forecast/forecast_he_water.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=1080:1400:0:330,scale=860:1114:flags=lanczos[fg];[bg][fg]overlay=110:520,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/er_app.mp4
 tools/reel/specs/ears_he.prep.sh: line 20: ffmpeg: command not found
++ ffmpeg -v error -y -ss 4.2 -t 2.3 -i app-screens/forecast/forecast_he_water.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=550:366:130:1254,scale=962:640:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=59:640,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/er_app.mp4
+tools/reel/specs/ears_he.prep.sh: line 21: ffmpeg: command not found
 + for f in $G/er_*.mp4
 ++ basename '/s17/gen/er_*.mp4' .mp4
 + n='er_*'
-+ ffmpeg -v error -y -i '/s17/gen/er_*.mp4' -vf fps=5,scale=180:-2,tile=18x1 -frames:v 1 'out/ci/d06e/review/cut_er_*.jpg'
-tools/reel/specs/ears_he.prep.sh: line 21: ffmpeg: command not found
++ ffmpeg -v error -y -i '/s17/gen/er_*.mp4' -vf fps=5,scale=180:-2,tile=18x1 -frames:v 1 out/ci/d06e/review/cut_er_app.jpg out/ci/d06e/review/cut_er_cold.jpg out/ci/d06e/review/cut_er_hood.jpg out/ci/d06e/review/cut_er_hook.jpg out/ci/d06e/review/cut_er_plug.jpg out/ci/d06e/review/cut_er_ride.jpg out/ci/d06e/review/cut_er_tmrw.jpg out/ci/d06e/review/cut_er_towel.jpg out/ci/d06e/review/cut_er_walk.jpg
+tools/reel/specs/ears_he.prep.sh: line 22: ffmpeg: command not found
 + ls -la '/s17/gen/er_*'
 ls: cannot access '/s17/gen/er_*': No such file or directory
