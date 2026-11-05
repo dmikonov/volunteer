@@ -11,9 +11,6 @@
 + for id in 6299679 6299681 6299684
 + '[' -s /tmp/px/p6299684.mp4 ']'
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p6299684.mp4 https://videos.pexels.com/video-files/6299684/6299684-uhd_2560_1440_25fps.mp4
-curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)
-+ echo 'FAIL 6299684'
-FAIL 6299684
 + for id in 8154903 8154896 8155541
 + '[' -s /tmp/px/k8154903.mp4 ']'
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/k8154903.mp4 https://videos.pexels.com/video-files/8154903/8154903-uhd_2560_1440_25fps.mp4
@@ -83,11 +80,6 @@ FAIL 6299684
 + cy=0.60
 + n=wu_plank
 + ffmpeg -v error -y -ss 4.0 -t 3.2 -i /tmp/px/p6299684.mp4 -vf 'scale=-2:2880:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.69+(0.69-0.69)*t/3.2)*iw-540))'\'':'\''max(0,min(ih-1920,0.60*ih-960))'\'',fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/wu_plank.mp4
-[h264 @ 0x587b592aee80] Invalid NAL unit size (236382 > 54637).
-[h264 @ 0x587b592aee80] missing picture in access unit with size 54641
-[h264 @ 0x587b591039c0] Invalid NAL unit size (236382 > 54637).
-[h264 @ 0x587b591039c0] Error splitting the input into NAL units.
-[vist#0:0/h264 @ 0x587b5915db00] [dec:h264 @ 0x587b591c90c0] Decoding error: Invalid data found when processing input
 + cutz k8155541 10.0 3.4 0.50 0.50 1920 0.5 wu_glide
 + src=k8155541
 + ss=10.0
@@ -161,13 +153,13 @@ FAIL 6299684
 + n=wu_tmrw
 + ffmpeg -v error -y -i /s17/gen/wu_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_tmrw.jpg
 + ls -la /s17/gen/wu_app.mp4 /s17/gen/wu_dog.mp4 /s17/gen/wu_glide.mp4 /s17/gen/wu_hook.mp4 /s17/gen/wu_lunge.mp4 /s17/gen/wu_plank.mp4 /s17/gen/wu_save.mp4 /s17/gen/wu_three.mp4 /s17/gen/wu_tired.mp4 /s17/gen/wu_tmrw.mp4
--rw-r--r-- 1 runner runner  156067 Nov  4 23:31 /s17/gen/wu_app.mp4
--rw-r--r-- 1 runner runner 2263983 Nov  4 23:30 /s17/gen/wu_dog.mp4
--rw-r--r-- 1 runner runner 7680050 Nov  4 23:31 /s17/gen/wu_glide.mp4
--rw-r--r-- 1 runner runner 7719282 Nov  4 23:30 /s17/gen/wu_hook.mp4
--rw-r--r-- 1 runner runner 2793606 Nov  4 23:30 /s17/gen/wu_lunge.mp4
--rw-r--r-- 1 runner runner 1691016 Nov  4 23:31 /s17/gen/wu_plank.mp4
--rw-r--r-- 1 runner runner 7282074 Nov  4 23:31 /s17/gen/wu_save.mp4
--rw-r--r-- 1 runner runner 2141580 Nov  4 23:30 /s17/gen/wu_three.mp4
--rw-r--r-- 1 runner runner 7602405 Nov  4 23:30 /s17/gen/wu_tired.mp4
--rw-r--r-- 1 runner runner 6622494 Nov  4 23:31 /s17/gen/wu_tmrw.mp4
+-rw-r--r-- 1 runner runner  156067 Nov  4 23:59 /s17/gen/wu_app.mp4
+-rw-r--r-- 1 runner runner 2265800 Nov  4 23:58 /s17/gen/wu_dog.mp4
+-rw-r--r-- 1 runner runner 7677507 Nov  4 23:58 /s17/gen/wu_glide.mp4
+-rw-r--r-- 1 runner runner 7719465 Nov  4 23:58 /s17/gen/wu_hook.mp4
+-rw-r--r-- 1 runner runner 2793758 Nov  4 23:58 /s17/gen/wu_lunge.mp4
+-rw-r--r-- 1 runner runner 2555190 Nov  4 23:58 /s17/gen/wu_plank.mp4
+-rw-r--r-- 1 runner runner 7282292 Nov  4 23:58 /s17/gen/wu_save.mp4
+-rw-r--r-- 1 runner runner 2139971 Nov  4 23:58 /s17/gen/wu_three.mp4
+-rw-r--r-- 1 runner runner 7600296 Nov  4 23:58 /s17/gen/wu_tired.mp4
+-rw-r--r-- 1 runner runner 6619240 Nov  4 23:59 /s17/gen/wu_tmrw.mp4
