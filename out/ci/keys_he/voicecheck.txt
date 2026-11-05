@@ -1,5 +1,10 @@
-Traceback (most recent call last):
-  File "/s17/rp/voicecheck.py", line 4, in <module>
-    W = sys.argv[1]; S = json.load(open(f'{W}/spec.json')); TL = json.load(open(f'{W}/tl.json')); HE = S['lang'] == 'he'
-                                                                           ~~~~^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/s17/rp/keys_he/tl.json'
+L1 CHECK match=0.69 wps=3.96 dur=2.02 | ref: המַפְתֵּחַ על הגלגל? זה המקום הראשון שגַּנָּב בודק. | asr: זה המקום הרשן שגנב וודק
+L2 OK match=1.00 wps=2.72 dur=2.57 | ref: ואז אתם במים, וחושבים רק על האוטו. | asr: ואז אתם במים וחושבים רק על האוטו.
+L3 OK match=1.00 wps=3.13 dur=1.92 | ref: אז איפה משאירים אותו? שתי דרכים. | asr: אז איפה משאירים אותו שתי דרכים?
+L4 CHECK match=0.69 wps=3.65 dur=1.92 | ref: אחת, קופסת קוד על האוטו, והמַפְתֵּחַ בפנים. | asr: כועל האוטו והמפתח רפינם
+L5 CHECK match=0.70 wps=4.46 dur=1.79 | ref: שתיים, השֶׁלֶט והטלפון נשארים אצל חבר על החוף. | asr: שיטי עם השלט ונשאר לך על החוף
+L6 OK match=0.97 wps=2.66 dur=2.64 | ref: שיצלם אתכם, ובסרף טרייב רואים מה לתקן. | asr: שיצלם אתכם ובסרפטרייב רואים מה לתקן
+L7 OK match=1.00 wps=2.87 dur=2.09 | ref: ועכשיו אפשר לחשוב רק על הגלים. | asr: ועכשיו אפשר לחשוב רק על הגלים.
+L8 OK match=1.00 wps=3.25 dur=1.85 | ref: תשמרו את זה לנסיעה הבאה לים. | asr: תשמרו את זה לנסיעה הבאה לים.
+L9 OK match=1.00 wps=2.15 dur=3.73 | ref: ומחר, הסערה הראשונה של החורף, ומתי לא נכנסים. | asr: ומחר הסערה הראשונה של החורף ומתי לא נכנסים.
+TOTAL wps=3.07 lines_to_check=3

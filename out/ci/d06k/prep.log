@@ -5,30 +5,24 @@
 + UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
 + read n u
 + '[' -s /tmp/px/w_tyre.mp4 ']'
-+ curl -sSfL -m 120 -o /tmp/px/w_tyre.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/srzp6/gradio_api/file=/tmp/gradio/f5214c93058a05c970fcf4b623c476c565d32a45a9ef7e4f4f8196f9bfbe8185/tmpbufli1rh.mp4
-curl: (22) The requested URL returned error: 403
-+ echo 'FETCH FAIL w_tyre'
-FETCH FAIL w_tyre
-+ cp /tmp/px/w_tyre.mp4 out/ci/d06k/gen/w_tyre.mp4
++ curl -sSfL -m 120 -o /tmp/px/w_tyre.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/7dfc9ce6f33b93b8e67a1bc1d9fdd37e194400bd25b222d0f93ac08c76a68ca0/tmp0xdrs6da.mp4
++ cp -n /tmp/px/w_tyre.mp4 out/ci/d06k/gen/w_tyre.mp4
 + read n u
 + '[' -s /tmp/px/w_worry.mp4 ']'
-+ curl -sSfL -m 120 -o /tmp/px/w_worry.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/srzp6/gradio_api/file=/tmp/gradio/bb417589c181b11d181424602164327a9857d38122bf8f17f0b5304f197e5f79/tmpedfigbny.mp4
-curl: (22) The requested URL returned error: 403
-+ echo 'FETCH FAIL w_worry'
-FETCH FAIL w_worry
-+ cp /tmp/px/w_worry.mp4 out/ci/d06k/gen/w_worry.mp4
++ curl -sSfL -m 120 -o /tmp/px/w_worry.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/2e51bf0bc65024ce8e25e839a174192976711f2a68158f15f8c12481b12e1c36/tmpxw2ynlo7.mp4
++ cp -n /tmp/px/w_worry.mp4 out/ci/d06k/gen/w_worry.mp4
 + read n u
 + '[' -s /tmp/px/w_friend.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/w_friend.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/eba3515c2a1d8adc8daf50b7c580bb598034f42451daade0a05ec5c949b56384/tmpdzuu4d_v.mp4
-+ cp /tmp/px/w_friend.mp4 out/ci/d06k/gen/w_friend.mp4
++ cp -n /tmp/px/w_friend.mp4 out/ci/d06k/gen/w_friend.mp4
 + read n u
 + '[' -s /tmp/px/w_lock.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/w_lock.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/d8ebc70e390bb1582e6eef296b359a4183bf6a72cc9ae72d2870dc4e859b00ff/tmp4g9d4bmi.mp4
-+ cp /tmp/px/w_lock.mp4 out/ci/d06k/gen/w_lock.mp4
++ cp -n /tmp/px/w_lock.mp4 out/ci/d06k/gen/w_lock.mp4
 + read n u
 + '[' -s /tmp/px/w_calm.mp4 ']'
 + curl -sSfL -m 120 -o /tmp/px/w_calm.mp4 https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/14102d62a00ed0a39e2b5fe61c686eea82cf9e4bd6e322e90e4dd7928126025c/tmpvxf2385y.mp4
-+ cp /tmp/px/w_calm.mp4 out/ci/d06k/gen/w_calm.mp4
++ cp -n /tmp/px/w_calm.mp4 out/ci/d06k/gen/w_calm.mp4
 + read n u
 + for id in 8713110 8713112 8713104
 + '[' -s /tmp/px/p8713110.mp4 ']'
@@ -100,7 +94,7 @@ tools/reel/specs/keys_he.prep.sh: line 18: ffmpeg: command not found
 + for f in $G/ky_*.mp4
 ++ basename '/s17/gen/ky_*.mp4' .mp4
 + n='ky_*'
-+ ffmpeg -v error -y -i '/s17/gen/ky_*.mp4' -vf fps=5,scale=180:-2,tile=18x1 -frames:v 1 'out/ci/d06k/review/cut_ky_*.jpg'
++ ffmpeg -v error -y -i '/s17/gen/ky_*.mp4' -vf fps=5,scale=180:-2,tile=18x1 -frames:v 1 out/ci/d06k/review/cut_ky_app.jpg out/ci/d06k/review/cut_ky_calm.jpg out/ci/d06k/review/cut_ky_car.jpg out/ci/d06k/review/cut_ky_friend.jpg out/ci/d06k/review/cut_ky_lock.jpg out/ci/d06k/review/cut_ky_tmrw.jpg out/ci/d06k/review/cut_ky_walk.jpg
 tools/reel/specs/keys_he.prep.sh: line 19: ffmpeg: command not found
 + ls -la '/s17/gen/ky_*'
 ls: cannot access '/s17/gen/ky_*': No such file or directory
