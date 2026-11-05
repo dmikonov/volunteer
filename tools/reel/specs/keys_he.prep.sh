@@ -2,7 +2,7 @@
 [ -f /s17/gen/ky_app.mp4 ] && [ -s /s17/gen/ky_tyre.mp4 ] && exit 0
 G=/s17/gen; R=out/ci/d06k/review; mkdir -p $G /tmp/px $R out/ci/d06k/gen
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
-while read n u; do [ -s /tmp/px/$n.mp4 ] || curl -sSfL -m 120 -o /tmp/px/$n.mp4 "$u" || echo "FETCH FAIL $n"; cp /tmp/px/$n.mp4 out/ci/d06k/gen/$n.mp4 2>/dev/null; done < tools/reel/ci/d06k_list.txt
+while read n u; do [ -s /tmp/px/$n.mp4 ] || curl -sSfL -m 120 -o /tmp/px/$n.mp4 "$u" || cp out/ci/d06k/gen/$n.mp4 /tmp/px/$n.mp4 || echo "FETCH FAIL $n"; cp -n /tmp/px/$n.mp4 out/ci/d06k/gen/$n.mp4 2>/dev/null; done < tools/reel/ci/d06k_list.txt
 for id in 8713110 8713112 8713104; do [ -s /tmp/px/p$id.mp4 ] || curl -sSfL -A "$UA" -m 300 -o /tmp/px/p$id.mp4 https://videos.pexels.com/video-files/$id/$id-hd_1080_1920_25fps.mp4; done
 # gen clip -> 1080x1920 (Wan gives ~480x832)
 g(){ n=$1; ss=$2; t=$3; o=$4; ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/$n.mp4 -vf "scale=1080:1920:flags=lanczos,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$o.mp4; }
