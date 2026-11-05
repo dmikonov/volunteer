@@ -1,12 +1,12 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=3.06 dur=2.61 | ref: I thought warming up was wasted surf time. | asr: I thought warming up was wasted surf time.
-L2 OK match=0.85 wps=2.86 dur=2.45 | ref: Then my arms died twenty minutes in. | asr: Then my arms died 20 minutes in.
+L1 OK match=0.85 wps=3.15 dur=2.22 | ref: You think warming up wastes surf time? | asr: You think warming up ways serve time?
+L2 OK match=0.86 wps=3.13 dur=2.24 | ref: Then your arms die twenty minutes in. | asr: Then your arms die 20 minutes in.
 L3 OK match=1.00 wps=1.59 dur=2.51 | ref: Three fixes. Five minutes. | asr: Three fixes, five minutes.
 L4 CHECK match=0.83 wps=1.82 dur=3.85 | ref: One. Deep side lunges, five each side. | asr: 1. Deep side lunges. 5. Each side.
-L5 OK match=0.91 wps=2.36 dur=2.54 | ref: Two. Belly down, chest up, hold. | asr: 2. Belly down, chest up, hold
+L5 OK match=0.91 wps=2.36 dur=2.54 | ref: Two. Belly down, chest up, hold. | asr: 2. Belly down, chest up, hold.
 L6 CHECK match=0.82 wps=2.15 dur=2.32 | ref: Three. Side plank, arm up. | asr: 3. Side plank, arm up.
-L7 OK match=1.00 wps=2.63 dur=1.90 | ref: First paddle felt way easier. | asr: First paddle felt way easier.
+L7 OK match=1.00 wps=2.47 dur=2.43 | ref: Your first paddle feels way easier. | asr: Your first paddle feels way easier.
 L8 OK match=1.00 wps=4.80 dur=2.08 | ref: Save it for the next time you skip the warm-up. | asr: Save it for the next time you skip the warm-up.
-L9 OK match=1.00 wps=3.26 dur=2.76 | ref: Surf Tribe picks land drills from your own wave. | asr: Surf Tribe picks land drills from your own wave.
+L9 OK match=1.00 wps=3.16 dur=3.17 | ref: Film one wave, Surf Tribe tells you what to train. | asr: Film One Wave, Surf Tribe tells you what to train.
 L10 OK match=1.00 wps=2.56 dur=2.74 | ref: Tomorrow: why your first board needs volume. | asr: Tomorrow, why your first board needs volume.
 TOTAL wps=2.64 lines_to_check=2
