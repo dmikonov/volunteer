@@ -17,14 +17,14 @@
 #גלישה #גלישהבישראל #תחזיתגלים #surftribe_il
 
 ## EN 08.11, warmup_en (5-minute warm-up, Ф01 moved from 10.11)
-Used to skip the warm-up. Twenty minutes in, my arms were gone.
+Skip the warm-up and your arms are gone twenty minutes in.
 
 Five minutes on the sand before you paddle out:
 1. Deep side lunges, five each side.
 2. Belly down, lift your chest, hold.
 3. Side plank, arm up.
 
-Send SurfTribe a clip and it shows which drills you need.
+Film one wave and SurfTribe shows you what to train on land.
 
 Save it for the next time you skip the warm-up.
 
