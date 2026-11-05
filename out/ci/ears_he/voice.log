@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.1 dur 4.06 | מים באוזן אחרי קל סשן בחורף זה לא רק מעצבן.
+take 0 1 wer 0.2 dur 4.06 | מים באוזן אחרי קל סשן בחורף זה לא רק מעצבנה.
+take 1 2 wer 0.0 dur 5.11 | מים קרים ורוח חורף אחרי חורף והעצם באוזן מתחילה לגדול.
+take 1 3 wer 0.0 dur 5.11 | מים קרים ורוח חורף אחרי חורף והעצם באוזן מתחילה לגדול.
+take 2 4 wer 0.0 dur 3.05 | ככה שומרים על האוזניים. שני דברים
+take 2 5 wer 0.0 dur 3.05 | ככה שומרים על האוזניים שני דברים.
+take 3 6 wer 0.111 dur 5.29 | אחת, יטמי אוזניים לגלישה, שומעים דרכם והמים נשארים בחוץ.
+take 3 7 wer 0.111 dur 5.29 | אחת יטמי אוזניים לגלישה, שומעים דרכם והמים נשארים בחוץ.
+take 4 8 wer 0.143 dur 3.47 | 2. בימים הכי קרים גם כובע נאופרן.
+take 4 9 wer 0.143 dur 3.47 | שתיים בימים הכי קרים גם כובע נאופרן.
+take 5 10 wer 0.143 dur 3.32 | ככה גולשים קל החורף בלי אוזן סתומה.
+take 5 11 wer 0.0 dur 3.32 | ככה גולשים כל החורף בלי אוזן סתומה.
+take 6 12 wer 0.25 dur 3.8 | אייסס, תשלחו את זה לחבר שגולש בחורף בלי התמים.
+take 6 13 wer 0.0 dur 3.8 | תשלחו את זה לחבר שגולש בחורף בלי אטמים.
+take 7 14 wer 0.222 dur 4.33 | ובתחזית של סרפטרייב רואים מראש כמה קרים המים.
+take 7 15 wer 0.222 dur 4.33 | ובתחזית של סרפטרייב רואים מראש כמה קרים המים.
+take 8 16 wer 0.143 dur 3.43 | ומחר חימום של 5 דקות לפני שנכנסים.
+take 8 17 wer 0.143 dur 3.43 | ומחר חימום של 5 דקות לפני שנכנסים.
+PICK 0 wer 0.1 | final level (+0.0 st, expected fall) | pitch 111 Hz (level -1.1 st) | range 14.2 st | מים באוזן אחרי קל סשן בחורף זה לא רק מעצבן.
+PICK 1 wer 0.0 | final fall (-4.8 st, expected fall) | pitch 118 Hz (level -0.0 st) | range 11.3 st | מים קרים ורוח חורף אחרי חורף והעצם באוזן מתחילה לגדול.
+PICK 2 wer 0.0 | final fall (-4.8 st, expected fall) | pitch 128 Hz (level +1.4 st) | range 9.7 st | ככה שומרים על האוזניים שני דברים.
+PICK 3 wer 0.111 | final fall (-4.4 st, expected fall) | pitch 119 Hz (level +0.1 st) | range 8.8 st | אחת, יטמי אוזניים לגלישה, שומעים דרכם והמים נשארים בחוץ.
+PICK 4 wer 0.143 | final level (-1.1 st, expected fall) | pitch 115 Hz (level -0.4 st) | range 5.9 st | 2. בימים הכי קרים גם כובע נאופרן.
+PICK 5 wer 0.0 | final fall (-3.8 st, expected fall) | pitch 123 Hz (level +0.8 st) | range 13.8 st | ככה גולשים כל החורף בלי אוזן סתומה.
+PICK 6 wer 0.0 | final fall (-7.8 st, expected fall) | pitch 111 Hz (level -1.1 st) | range 14.1 st | תשלחו את זה לחבר שגולש בחורף בלי אטמים.
+PICK 7 wer 0.222 | final fall (-6.0 st, expected fall) | pitch 118 Hz (level +0.0 st) | range 12.1 st | ובתחזית של סרפטרייב רואים מראש כמה קרים המים.
+PICK 8 wer 0.143 | final rise (+1.8 st, expected fall) | pitch 118 Hz (level +0.0 st) | range 14.5 st | ומחר חימום של 5 דקות לפני שנכנסים.
+he f5 T 33.753 [('L1', 0.12, np.float64(3.72), 0.1), ('L2', np.float64(4.035), np.float64(4.42), 0.0), ('L3', np.float64(8.854), np.float64(2.53), 0.0), ('L4', np.float64(11.582), np.float64(4.84), 0.11), ('L5', np.float64(16.621), np.float64(2.99), 0.14), ('L6', np.float64(19.957), np.float64(2.62), 0.0), ('L7', np.float64(22.777), np.float64(2.96), 0.0), ('L8', np.float64(26.139), np.float64(3.83), 0.22), ('L9', np.float64(30.166), np.float64(2.69), 0.14)]
