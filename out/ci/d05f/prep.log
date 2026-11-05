@@ -2,17 +2,31 @@
 + G=/s17/gen
 + mkdir -p /s17/gen /tmp/px out/ci/d05f/review out/ci/d05f/gen
 + UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'
-+ for id in 22451 48824 48525 5016 1075 1032
-+ '[' -s /tmp/px/m22451.mp4 ']'
++ for id in 20889 1070 1127 48824 48525 5016 1220
++ '[' -s /tmp/px/m20889.mp4 ']'
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m22451.mp4 https://assets.mixkit.co/videos/22451/22451-1080.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m20889.mp4 https://assets.mixkit.co/videos/20889/20889-1080.mp4
 curl: (22) The requested URL returned error: 403
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m22451.mp4 https://assets.mixkit.co/videos/22451/22451-720.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m20889.mp4 https://assets.mixkit.co/videos/20889/20889-720.mp4
 + break
-+ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m22451.mp4
++ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m20889.mp4
 tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
-+ for id in 22451 48824 48525 5016 1075 1032
++ for id in 20889 1070 1127 48824 48525 5016 1220
++ '[' -s /tmp/px/m1070.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1070.mp4 https://assets.mixkit.co/videos/1070/1070-1080.mp4
++ break
++ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m1070.mp4
+tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
++ for id in 20889 1070 1127 48824 48525 5016 1220
++ '[' -s /tmp/px/m1127.mp4 ']'
++ for q in 1080 720
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1127.mp4 https://assets.mixkit.co/videos/1127/1127-1080.mp4
++ break
++ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m1127.mp4
+tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
++ for id in 20889 1070 1127 48824 48525 5016 1220
 + '[' -s /tmp/px/m48824.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48824.mp4 https://assets.mixkit.co/videos/48824/48824-1080.mp4
@@ -22,7 +36,7 @@ curl: (22) The requested URL returned error: 403
 + break
 + ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m48824.mp4
 tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
-+ for id in 22451 48824 48525 5016 1075 1032
++ for id in 20889 1070 1127 48824 48525 5016 1220
 + '[' -s /tmp/px/m48525.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m48525.mp4 https://assets.mixkit.co/videos/48525/48525-1080.mp4
@@ -32,42 +46,35 @@ curl: (22) The requested URL returned error: 403
 + break
 + ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m48525.mp4
 tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
-+ for id in 22451 48824 48525 5016 1075 1032
++ for id in 20889 1070 1127 48824 48525 5016 1220
 + '[' -s /tmp/px/m5016.mp4 ']'
 + for q in 1080 720
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m5016.mp4 https://assets.mixkit.co/videos/5016/5016-1080.mp4
 + break
 + ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m5016.mp4
 tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
-+ for id in 22451 48824 48525 5016 1075 1032
-+ '[' -s /tmp/px/m1075.mp4 ']'
++ for id in 20889 1070 1127 48824 48525 5016 1220
++ '[' -s /tmp/px/m1220.mp4 ']'
 + for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1075.mp4 https://assets.mixkit.co/videos/1075/1075-1080.mp4
++ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1220.mp4 https://assets.mixkit.co/videos/1220/1220-1080.mp4
 + break
-+ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m1075.mp4
++ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m1220.mp4
 tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
-+ for id in 22451 48824 48525 5016 1075 1032
-+ '[' -s /tmp/px/m1032.mp4 ']'
-+ for q in 1080 720
-+ curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/m1032.mp4 https://assets.mixkit.co/videos/1032/1032-1080.mp4
-+ break
-+ ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 /tmp/px/m1032.mp4
-tools/reel/specs/forecast_he.prep.sh: line 6: ffprobe: command not found
-+ half m48824 1.0 6.8 0.5 /tmp/px/top.mp4
-+ src=m48824
-+ ss=1.0
-+ t=6.8
-+ c=0.5
++ half m20889 0.0 5.9 0.66 /tmp/px/top.mp4
++ src=m20889
++ ss=0.0
++ t=5.9
++ c=0.66
 + o=/tmp/px/top.mp4
-+ ffmpeg -v error -y -ss 1.0 -t 6.8 -i /tmp/px/m48824.mp4 -vf 'scale=-2:960:flags=lanczos,crop=1080:960:'\''max(0,min(iw-1080,0.5*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /tmp/px/top.mp4
++ ffmpeg -v error -y -ss 0.0 -t 5.9 -i /tmp/px/m20889.mp4 -vf 'scale=-2:960:flags=lanczos,crop=1080:960:'\''max(0,min(iw-1080,0.66*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /tmp/px/top.mp4
 tools/reel/specs/forecast_he.prep.sh: line 10: ffmpeg: command not found
-+ half m48525 1.5 6.8 0.5 /tmp/px/bot.mp4
-+ src=m48525
-+ ss=1.5
-+ t=6.8
++ half m1070 0.0 5.9 0.5 /tmp/px/bot.mp4
++ src=m1070
++ ss=0.0
++ t=5.9
 + c=0.5
 + o=/tmp/px/bot.mp4
-+ ffmpeg -v error -y -ss 1.5 -t 6.8 -i /tmp/px/m48525.mp4 -vf 'scale=-2:960:flags=lanczos,crop=1080:960:'\''max(0,min(iw-1080,0.5*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /tmp/px/bot.mp4
++ ffmpeg -v error -y -ss 0.0 -t 5.9 -i /tmp/px/m1070.mp4 -vf 'scale=-2:960:flags=lanczos,crop=1080:960:'\''max(0,min(iw-1080,0.5*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /tmp/px/bot.mp4
 tools/reel/specs/forecast_he.prep.sh: line 10: ffmpeg: command not found
 + ffmpeg -v error -y -i /tmp/px/top.mp4 -i /tmp/px/bot.mp4 -filter_complex '[0:v][1:v]vstack=2,drawbox=x=0:y=956:w=1080:h=8:color=white@0.9:t=fill,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_split.mp4
 tools/reel/specs/forecast_he.prep.sh: line 13: ffmpeg: command not found
@@ -80,14 +87,14 @@ tools/reel/specs/forecast_he.prep.sh: line 13: ffmpeg: command not found
 + n=fc_lines
 + ffmpeg -v error -y -ss 0.0 -t 3.0 -i /tmp/px/m48525.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.40+(0.48-0.40)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_lines.mp4
 tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
-+ cut m22451 2.0 3.0 0.50 0.55 fc_chop
-+ src=m22451
-+ ss=2.0
++ cut m48824 5.0 3.0 0.20 0.22 fc_chop
++ src=m48824
++ ss=5.0
 + t=3.0
-+ c0=0.50
-+ c1=0.55
++ c0=0.20
++ c1=0.22
 + n=fc_chop
-+ ffmpeg -v error -y -ss 2.0 -t 3.0 -i /tmp/px/m22451.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.55-0.50)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_chop.mp4
++ ffmpeg -v error -y -ss 5.0 -t 3.0 -i /tmp/px/m48824.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.20+(0.22-0.20)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_chop.mp4
 tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
 + cut m5016 1.0 3.0 0.40 0.45 fc_small
 + src=m5016
@@ -98,39 +105,26 @@ tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
 + n=fc_small
 + ffmpeg -v error -y -ss 1.0 -t 3.0 -i /tmp/px/m5016.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.40+(0.45-0.40)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_small.mp4
 tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
-+ cut m1075 0.0 6.0 0.50 0.50 fc_ride
-+ src=m1075
-+ ss=0.0
-+ t=6.0
++ cut m1127 8.5 6.5 0.50 0.58 fc_ride
++ src=m1127
++ ss=8.5
++ t=6.5
 + c0=0.50
-+ c1=0.50
++ c1=0.58
 + n=fc_ride
-+ ffmpeg -v error -y -ss 0.0 -t 6.0 -i /tmp/px/m1075.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/6.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_ride.mp4
++ ffmpeg -v error -y -ss 8.5 -t 6.5 -i /tmp/px/m1127.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.58-0.50)*t/6.5)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_ride.mp4
 tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
-+ cut m1032 2.0 4.0 0.50 0.50 fc_tmrw
-+ src=m1032
-+ ss=2.0
++ cut m1127 0.0 4.0 0.45 0.50 fc_peak
++ src=m1127
++ ss=0.0
 + t=4.0
-+ c0=0.50
++ c0=0.45
 + c1=0.50
-+ n=fc_tmrw
-+ ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1032.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_tmrw.mp4
++ n=fc_peak
++ ffmpeg -v error -y -ss 0.0 -t 4.0 -i /tmp/px/m1127.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.45+(0.50-0.45)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_peak.mp4
 tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
-+ app period 680 870 290 400 2.1 fc_app_p
-+ f=period
-+ x=680
-+ y=870
-+ w=290
-+ h=400
-+ s=2.1
-+ n=fc_app_p
-++ python3 -c 'print(int(290*2.1)//2*2)'
-+ W2=608
-++ python3 -c 'print(int(400*2.1)//2*2)'
-+ H2=840
-+ X=236
-+ ffmpeg -v error -y -ss 4.2 -t 2.3 -i app-screens/forecast/forecast_he_period.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=290:400:680:870,scale=608:840:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=236:560,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/fc_app_p.mp4
-tools/reel/specs/forecast_he.prep.sh: line 22: ffmpeg: command not found
++ ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1220.mp4 -vf scale=1080:1920:flags=lanczos,fps=25,format=yuv420p -an -c:v libx264 -crf 15 /s17/gen/fc_tmrw.mp4
+tools/reel/specs/forecast_he.prep.sh: line 19: ffmpeg: command not found
 + app period 136 896 244 348 2.4 fc_app_w
 + f=period
 + x=136
@@ -145,7 +139,7 @@ tools/reel/specs/forecast_he.prep.sh: line 22: ffmpeg: command not found
 + H2=834
 + X=248
 + ffmpeg -v error -y -ss 4.2 -t 2.3 -i app-screens/forecast/forecast_he_period.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=244:348:136:896,scale=584:834:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=248:560,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/fc_app_w.mp4
-tools/reel/specs/forecast_he.prep.sh: line 22: ffmpeg: command not found
+tools/reel/specs/forecast_he.prep.sh: line 23: ffmpeg: command not found
 + app height 530 490 440 410 2.0 fc_app_h
 + f=height
 + x=530
@@ -160,7 +154,7 @@ tools/reel/specs/forecast_he.prep.sh: line 22: ffmpeg: command not found
 + H2=820
 + X=100
 + ffmpeg -v error -y -ss 4.2 -t 2.3 -i app-screens/forecast/forecast_he_height.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=440:410:530:490,scale=880:820:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=100:560,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/fc_app_h.mp4
-tools/reel/specs/forecast_he.prep.sh: line 22: ffmpeg: command not found
+tools/reel/specs/forecast_he.prep.sh: line 23: ffmpeg: command not found
 + ffmpeg -v error -y -ss 0.3 -t 3.8 -i app-screens/forecast/forecast_he_best.mp4 -filter_complex '[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=1080:1400:0:330,scale=770:998:flags=lanczos[fg];[bg][fg]overlay=155:560,format=yuv420p[v]' -map '[v]' -an -c:v libx264 -crf 14 /s17/gen/fc_app_all.mp4
 tools/reel/specs/forecast_he.prep.sh: line 27: ffmpeg: command not found
 + for f in $G/fc_*.mp4
