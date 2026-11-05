@@ -11,7 +11,7 @@ half(){ src=$1; ss=$2; t=$3; c=$4; o=$5
 half m20889 0.0 5.9 0.66 /tmp/px/top.mp4
 half m1070 0.0 5.9 0.5 /tmp/px/bot.mp4
 ffmpeg -v error -y -i /tmp/px/top.mp4 -i /tmp/px/bot.mp4 -filter_complex "[0:v][1:v]vstack=2,drawbox=x=0:y=956:w=1080:h=8:color=white@0.9:t=fill,format=yuv420p" -an -c:v libx264 -crf 15 $G/fc_split.mp4
-cut m48525 0.0 3.0 0.40 0.48 fc_lines
+cut m1070 7.0 4.0 0.50 0.50 fc_lines
 cut m48824 5.0 3.0 0.20 0.22 fc_chop
 cut m5016 1.0 3.0 0.40 0.45 fc_small
 cut m1127 8.5 6.5 0.50 0.58 fc_ride
