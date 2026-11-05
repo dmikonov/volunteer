@@ -17,7 +17,7 @@
 #גלישה #גלישהבישראל #תחזיתגלים #surftribe_il
 
 ## EN 08.11, warmup_en (5-minute warm-up, Ф01 moved from 10.11)
-Skip the warm-up and your arms are gone twenty minutes in.
+Skip the warm-up and run straight in? Twenty minutes later your arms are gone.
 
 Five minutes on the sand before you paddle out:
 1. Deep side lunges, five each side.

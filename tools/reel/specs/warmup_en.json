@@ -17,7 +17,7 @@
  "lang": "en",
  "out": "reel_warmup_en.mp4",
  "lines": [
-  "You think warming up wastes surf time?",
+  "You skip the warm-up and run straight in?",
   "Then your arms die twenty minutes in.",
   "Three fixes. Five minutes.",
   "One. Deep side lunges, five each side.",
@@ -30,8 +30,8 @@
  ],
  "titles": {
   "L1": [
-   "Warm-up =",
-   "wasted surf time?",
+   "Skip the warm-up",
+   "and run straight in?",
    null,
    null
   ],
