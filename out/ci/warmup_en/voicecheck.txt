@@ -7,6 +7,6 @@ L5 OK match=0.91 wps=2.36 dur=2.54 | ref: Two. Belly down, chest up, hold. | asr
 L6 CHECK match=0.82 wps=2.15 dur=2.32 | ref: Three. Side plank, arm up. | asr: 3. Side plank, arm up.
 L7 OK match=1.00 wps=2.63 dur=1.90 | ref: First paddle felt way easier. | asr: First paddle felt way easier.
 L8 OK match=1.00 wps=4.80 dur=2.08 | ref: Save it for the next time you skip the warm-up. | asr: Save it for the next time you skip the warm-up.
-L9 OK match=1.00 wps=3.08 dur=2.60 | ref: Surf Tribe picks drills for your weak spot. | asr: Surf Tribe picks drills for your weak spot.
+L9 OK match=1.00 wps=3.26 dur=2.76 | ref: Surf Tribe picks land drills from your own wave. | asr: Surf Tribe picks land drills from your own wave.
 L10 OK match=1.00 wps=2.56 dur=2.74 | ref: Tomorrow: why your first board needs volume. | asr: Tomorrow, why your first board needs volume.
-TOTAL wps=2.62 lines_to_check=2
+TOTAL wps=2.64 lines_to_check=2
