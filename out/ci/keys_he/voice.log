@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/s17/rp/voice_f5.py", line 9, in <module>
+    LINES = S['lines']; TAKES = S['f5_takes']
+                                ~^^^^^^^^^^^^
+KeyError: 'f5_takes'
