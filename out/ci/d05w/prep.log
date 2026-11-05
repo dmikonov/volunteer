@@ -5,9 +5,6 @@
 + for id in 6299679 6299681 6299684
 + '[' -s /tmp/px/p6299679.mp4 ']'
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p6299679.mp4 https://videos.pexels.com/video-files/6299679/6299679-uhd_2560_1440_25fps.mp4
-curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)
-+ echo 'FAIL 6299679'
-FAIL 6299679
 + for id in 6299679 6299681 6299684
 + '[' -s /tmp/px/p6299681.mp4 ']'
 + curl -sSfL -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36' -m 300 -o /tmp/px/p6299681.mp4 https://videos.pexels.com/video-files/6299681/6299681-uhd_2560_1440_25fps.mp4
@@ -156,13 +153,13 @@ FAIL 6299679
 + n=wu_tmrw
 + ffmpeg -v error -y -i /s17/gen/wu_tmrw.mp4 -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05w/cuts/cut_wu_tmrw.jpg
 + ls -la /s17/gen/wu_app.mp4 /s17/gen/wu_dog.mp4 /s17/gen/wu_glide.mp4 /s17/gen/wu_hook.mp4 /s17/gen/wu_lunge.mp4 /s17/gen/wu_plank.mp4 /s17/gen/wu_save.mp4 /s17/gen/wu_three.mp4 /s17/gen/wu_tired.mp4 /s17/gen/wu_tmrw.mp4
--rw-r--r-- 1 runner runner   99395 Nov  5 00:40 /s17/gen/wu_app.mp4
--rw-r--r-- 1 runner runner 2263983 Nov  5 00:40 /s17/gen/wu_dog.mp4
--rw-r--r-- 1 runner runner 7680050 Nov  5 00:40 /s17/gen/wu_glide.mp4
--rw-r--r-- 1 runner runner 7719282 Nov  5 00:40 /s17/gen/wu_hook.mp4
--rw-r--r-- 1 runner runner 2793606 Nov  5 00:40 /s17/gen/wu_lunge.mp4
--rw-r--r-- 1 runner runner 2554399 Nov  5 00:40 /s17/gen/wu_plank.mp4
--rw-r--r-- 1 runner runner 7282074 Nov  5 00:40 /s17/gen/wu_save.mp4
--rw-r--r-- 1 runner runner 2141580 Nov  5 00:40 /s17/gen/wu_three.mp4
--rw-r--r-- 1 runner runner 7602405 Nov  5 00:40 /s17/gen/wu_tired.mp4
--rw-r--r-- 1 runner runner 6622494 Nov  5 00:40 /s17/gen/wu_tmrw.mp4
+-rw-r--r-- 1 runner runner   99395 Nov  5 00:51 /s17/gen/wu_app.mp4
+-rw-r--r-- 1 runner runner 2263983 Nov  5 00:51 /s17/gen/wu_dog.mp4
+-rw-r--r-- 1 runner runner 7680050 Nov  5 00:51 /s17/gen/wu_glide.mp4
+-rw-r--r-- 1 runner runner 7719282 Nov  5 00:50 /s17/gen/wu_hook.mp4
+-rw-r--r-- 1 runner runner 2793606 Nov  5 00:51 /s17/gen/wu_lunge.mp4
+-rw-r--r-- 1 runner runner 2554399 Nov  5 00:51 /s17/gen/wu_plank.mp4
+-rw-r--r-- 1 runner runner 7282074 Nov  5 00:51 /s17/gen/wu_save.mp4
+-rw-r--r-- 1 runner runner 2141580 Nov  5 00:50 /s17/gen/wu_three.mp4
+-rw-r--r-- 1 runner runner 7602405 Nov  5 00:50 /s17/gen/wu_tired.mp4
+-rw-r--r-- 1 runner runner 6622494 Nov  5 00:51 /s17/gen/wu_tmrw.mp4
