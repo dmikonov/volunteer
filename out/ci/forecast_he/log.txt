@@ -1,6 +1,6 @@
 + k=/s17/rp/forecast_he
 + python3 build.py /s17/rp/forecast_he
-[('L1', 'fc_split.mp4', 0.0, 2.871, 0.0), ('L2', 'fc_split.mp4', 2.6, 2.825, 2.871), ('L3', '/fc_peak.mp4', 0.0, 3.823, 5.696), ('L4', 'fc_lines.mp4', 0.0, 3.833, 9.519), ('L5', '/fc_chop.mp4', 0, 1.5, 13.352), ('L5', 'fc_app_w.mp4', 0.0, 2.805, 14.852), ('L6', 'fc_small.mp4', 0, 1.5, 17.657), ('L6', 'fc_app_h.mp4', 0.0, 2.104, 19.157), ('L7', '/fc_ride.mp4', 0.0, 2.2, 21.261), ('L8', '/fc_ride.mp4', 2.3, 3.192, 23.461), ('L9', '/fc_tmrw.mp4', 0.0, 3.704, 26.653)]
+[('L1', 'fc_split.mp4', 0.0, 2.871, 0.0), ('L2', 'fc_split.mp4', 2.6, 2.825, 2.871), ('L3', '/fc_peak.mp4', 0.0, 3.823, 5.696), ('L4', 'fc_lines.mp4', 0.0, 3.833, 9.519), ('L5', 'c_glassy.mp4', 0, 1.5, 13.352), ('L5', 'fc_app_w.mp4', 0.0, 2.805, 14.852), ('L6', 'fc_small.mp4', 0, 1.5, 17.657), ('L6', 'fc_app_h.mp4', 0.0, 2.104, 19.157), ('L7', '/fc_ride.mp4', 0.0, 2.2, 21.261), ('L8', '/fc_ride.mp4', 2.3, 3.192, 23.461), ('L9', '/fc_tmrw.mp4', 0.0, 3.704, 26.653)]
 cat 30.48 T 30.357
 + python3 ov_png.py /s17/rp/forecast_he
 realcuts True [0.0, 2.88, 5.72, 9.56, 13.4, 17.72, 21.36, 23.56, 26.76, 30.357]
@@ -9,7 +9,7 @@ ovplan 24
 + python3 ov_ff.py /s17/rp/forecast_he
 done /s17/rp/forecast_he/reel_forecast_he.mp4 30.357 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/forecast_he
-trimmed /s17/rp/forecast_he/reel_forecast_he.mp4 29.83
+trimmed /s17/rp/forecast_he/reel_forecast_he.mp4 29.85
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/forecast_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/forecast_he/reel_forecast_he.mp4
 /s17/rp/forecast_he/reel_forecast_he.mp4 before -13.1 after -14.5 peak -1.9
