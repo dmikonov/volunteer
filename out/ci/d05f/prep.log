@@ -78,14 +78,14 @@ tools/reel/specs/forecast_he.prep.sh: line 10: ffmpeg: command not found
 tools/reel/specs/forecast_he.prep.sh: line 10: ffmpeg: command not found
 + ffmpeg -v error -y -i /tmp/px/top.mp4 -i /tmp/px/bot.mp4 -filter_complex '[0:v][1:v]vstack=2,drawbox=x=0:y=956:w=1080:h=8:color=white@0.9:t=fill,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_split.mp4
 tools/reel/specs/forecast_he.prep.sh: line 13: ffmpeg: command not found
-+ cut m48525 0.0 3.0 0.40 0.48 fc_lines
-+ src=m48525
-+ ss=0.0
-+ t=3.0
-+ c0=0.40
-+ c1=0.48
++ cut m1070 7.0 4.0 0.50 0.50 fc_lines
++ src=m1070
++ ss=7.0
++ t=4.0
++ c0=0.50
++ c1=0.50
 + n=fc_lines
-+ ffmpeg -v error -y -ss 0.0 -t 3.0 -i /tmp/px/m48525.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.40+(0.48-0.40)*t/3.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_lines.mp4
++ ffmpeg -v error -y -ss 7.0 -t 4.0 -i /tmp/px/m1070.mp4 -vf 'scale=-2:1920:flags=lanczos,crop=1080:1920:'\''max(0,min(iw-1080,(0.50+(0.50-0.50)*t/4.0)*iw-540))'\'':0,fps=25,format=yuv420p' -an -c:v libx264 -crf 15 /s17/gen/fc_lines.mp4
 tools/reel/specs/forecast_he.prep.sh: line 8: ffmpeg: command not found
 + cut m48824 5.0 3.0 0.20 0.22 fc_chop
 + src=m48824
@@ -169,7 +169,7 @@ tools/reel/specs/forecast_he.prep.sh: line 28: ffmpeg: command not found
 + for f in $G/fc_*.mp4
 ++ basename '/s17/gen/fc_*.mp4' .mp4
 + n='fc_*'
-+ ffmpeg -v error -y -i '/s17/gen/fc_*.mp4' -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05f/review/cut_fc_app_all.jpg out/ci/d05f/review/cut_fc_app_h.jpg out/ci/d05f/review/cut_fc_app_p.jpg out/ci/d05f/review/cut_fc_app_w.jpg out/ci/d05f/review/cut_fc_chop.jpg out/ci/d05f/review/cut_fc_hook.jpg out/ci/d05f/review/cut_fc_lines.jpg out/ci/d05f/review/cut_fc_peak.jpg out/ci/d05f/review/cut_fc_ride.jpg out/ci/d05f/review/cut_fc_small.jpg out/ci/d05f/review/cut_fc_split.jpg out/ci/d05f/review/cut_fc_tmrw.jpg
++ ffmpeg -v error -y -i '/s17/gen/fc_*.mp4' -vf fps=4,scale=180:-2,tile=16x1 -frames:v 1 out/ci/d05f/review/cut_fc_app_all.jpg out/ci/d05f/review/cut_fc_app_h.jpg out/ci/d05f/review/cut_fc_app_p.jpg out/ci/d05f/review/cut_fc_app_w.jpg out/ci/d05f/review/cut_fc_chop.jpg out/ci/d05f/review/cut_fc_glassy.jpg out/ci/d05f/review/cut_fc_hook.jpg out/ci/d05f/review/cut_fc_lines.jpg out/ci/d05f/review/cut_fc_peak.jpg out/ci/d05f/review/cut_fc_ride.jpg out/ci/d05f/review/cut_fc_small.jpg out/ci/d05f/review/cut_fc_split.jpg out/ci/d05f/review/cut_fc_tmrw.jpg
 tools/reel/specs/forecast_he.prep.sh: line 29: ffmpeg: command not found
 + ls -la '/s17/gen/fc_*'
 ls: cannot access '/s17/gen/fc_*': No such file or directory
