@@ -9,7 +9,7 @@ ovplan 24
 + python3 ov_ff.py /s17/rp/forecast_he
 done /s17/rp/forecast_he/reel_forecast_he.mp4 30.357 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/forecast_he
-trimmed /s17/rp/forecast_he/reel_forecast_he.mp4 29.85
+trimmed /s17/rp/forecast_he/reel_forecast_he.mp4 29.83
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/forecast_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/forecast_he/reel_forecast_he.mp4
 /s17/rp/forecast_he/reel_forecast_he.mp4 before -13.1 after -14.5 peak -1.9
