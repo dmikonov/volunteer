@@ -21,11 +21,11 @@
   "Then my arms died twenty minutes in.",
   "Three fixes. Five minutes.",
   "One. Deep side lunges, five each side.",
-  "Two. Chest up, and hold it.",
+  "Two. Belly down, chest up, hold.",
   "Three. Side plank, arm up.",
-  "Now your first paddle feels easy.",
-  "Save it for your next session.",
-  "Drills for your weak spot? Surf Tribe.",
+  "First paddle felt way easier.",
+  "Save it for the next time you skip the warm-up.",
+  "Surf Tribe picks drills for your weak spot.",
   "Tomorrow: why your first board needs volume."
  ],
  "titles": {
@@ -54,8 +54,8 @@
    null
   ],
   "L5": [
-   "2. Chest up",
-   "hold it",
+   "2. Chest lift",
+   "hold",
    null,
    null
   ],
@@ -67,19 +67,19 @@
   ],
   "L7": [
    "First paddle",
-   "feels easy",
+   "way easier",
    null,
    null
   ],
   "L8": [
-   "Save it for",
-   "your next session",
+   "Save it for next time",
+   "you skip the warm-up",
    null,
    null
   ],
   "L9": [
-   "Drills for",
-   "your weak spot",
+   "SurfTribe picks drills",
+   "for your weak spot",
    null,
    null
   ]
