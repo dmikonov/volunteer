@@ -1,29 +1,26 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-take 0 0 wer 1.0 dur 2.75 | אה, מפתל אלס, כמה ראשונים שגנבוק?
-take 0 1 wer 0.625 dur 2.75 | אה, זה המקום הרשן שגנב וודק.
-take 1 2 wer 0.0 dur 3.2 | ואז אתם במים וחושבים רק על האוטו.
-take 1 3 wer 0.0 dur 3.2 | ואז אתם במים וחושבים רק על האוטו.
-take 2 4 wer 0.0 dur 2.75 | אז איפה משאירים אותו? שתי דרכים
-take 2 5 wer 0.0 dur 2.75 | אז איפה משאירים אותו שתי דרכים?
-take 3 6 wer 1.0 dur 2.28 | קלאוסטט אית את הפילם
-take 3 7 wer 0.714 dur 2.28 | כולל האוטו והמפתח רפינם
-take 4 8 wer 0.75 dur 2.45 | שיטי עם השלט ונשאר לך על החוף
-take 4 9 wer 0.75 dur 2.45 | שיטים השלפון נשלחר על החוף.
-take 5 10 wer 0.286 dur 3.56 | שיצלם אתכם ובסרפטרייב רואים מה לתקן.
-take 5 11 wer 0.286 dur 3.56 | שיצלם אתכם ובסרפטרייב רואים מה לתקן.
-take 6 12 wer 0.0 dur 2.85 | ועכשיו אפשר לחשוב רק על הגלים.
-take 6 13 wer 0.0 dur 2.85 | ועכשיו אפשר לחשוב רק על הגלים.
-take 7 14 wer 0.0 dur 2.67 | תשמרו את זה לנסיעה הבאה לים.
-take 7 15 wer 0.0 dur 2.67 | תשמרו את זה לנסיעה הבאה לים.
-take 8 16 wer 0.0 dur 4.03 | ומחר הסערה הראשונה של החורף ומתי לא נכנסים.
-take 8 17 wer 0.0 dur 4.03 | ומחר, הסערה הראשונה של החורף ומתי לא נכנסים.
-PICK 0 wer 0.625 | final level (+0.5 st, expected fall) | pitch 109 Hz (level -0.3 st) | range 8.5 st | אה, זה המקום הרשן שגנב וודק.
-PICK 1 wer 0.0 | final fall (-5.0 st, expected fall) | pitch 106 Hz (level -0.9 st) | range 9.6 st | ואז אתם במים וחושבים רק על האוטו.
-PICK 2 wer 0.0 | final fall (-7.7 st, expected fall) | pitch 133 Hz (level +3.2 st) | range 8.9 st | אז איפה משאירים אותו שתי דרכים?
-PICK 3 wer 0.714 | final rise (+4.2 st, expected fall) | pitch 111 Hz (level +0.0 st) | range 15.9 st | כולל האוטו והמפתח רפינם
-PICK 4 wer 0.75 | final level (-0.3 st, expected fall) | pitch 111 Hz (level -0.0 st) | range 11.9 st | שיטי עם השלט ונשאר לך על החוף
-PICK 5 wer 0.286 | final fall (-7.7 st, expected fall) | pitch 124 Hz (level +1.9 st) | range 9.6 st | שיצלם אתכם ובסרפטרייב רואים מה לתקן.
-PICK 6 wer 0.0 | final level (+0.9 st, expected fall) | pitch 110 Hz (level -0.2 st) | range 9.8 st | ועכשיו אפשר לחשוב רק על הגלים.
-PICK 7 wer 0.0 | final level (+0.2 st, expected fall) | pitch 99 Hz (level -1.9 st) | range 7.8 st | תשמרו את זה לנסיעה הבאה לים.
-PICK 8 wer 0.0 | final level (+0.1 st, expected fall) | pitch 110 Hz (level -0.1 st) | range 8.7 st | ומחר הסערה הראשונה של החורף ומתי לא נכנסים.
-he f5 T 23.69 [('L1', 0.12, np.float64(2.02), 0.62), ('L2', np.float64(2.339), np.float64(2.57), 0.0), ('L3', np.float64(5.314), np.float64(1.92), 0.0), ('L4', np.float64(7.429), np.float64(1.92), 0.71), ('L5', np.float64(9.549), np.float64(1.79), 0.75), ('L6', np.float64(11.542), np.float64(2.64), 0.29), ('L7', np.float64(14.527), np.float64(2.09), 0.0), ('L8', np.float64(16.816), np.float64(1.85), 0.0), ('L9', np.float64(19.064), np.float64(3.73), 0.0)]
+take 0 0 wer 0.0 dur 4.54 | המפתח על הגלגל זה המקום הראשון שגנבים בודקים.
+take 0 1 wer 0.0 dur 4.54 | המפתח על הגלגל זה המקום הראשון שגנבים בודקים.
+take 1 2 wer 0.0 dur 2.78 | וכל הסשן אתם חושבים על האוטו.
+take 1 3 wer 0.0 dur 2.78 | וכל הסשן אתם חושבים על האוטו.
+take 2 4 wer 0.0 dur 3.3 | אז איפה כן להשאיר אותו? יש שתי דרכים.
+take 2 5 wer 0.0 dur 3.3 | אז איפה כן להשאיר אותו? יש שתי דרכים.
+take 3 6 wer 0.0 dur 4.18 | מפתח רגיל, כספת קטנה עם קוד שתלויה על האוטו
+take 3 7 wer 0.111 dur 4.18 | אהה, מפתח רגיל, כספת קטנה עם קוד שתלויה על האוטו
+take 4 8 wer 0.0 dur 4.43 | יש לכם שלט. משאירים אותו אצל חבר על החוף עם הטלפון.
+take 4 9 wer 0.0 dur 4.43 | יש לכם שלט משאירים אותו אצל חבר על החוף עם הטלפון.
+take 5 10 wer 0.286 dur 3.73 | ושיצלם אתכם. בסוף רייב תראו מה לתקן.
+take 5 11 wer 0.286 dur 3.73 | ושיצלם אתכם. בסרפט רייב תראו מה לתקן.
+take 6 12 wer 0.125 dur 3.53 | שווייסט, תשמרו את זה, זה יעזור בנסיעה הבאה לים.
+take 6 13 wer 0.25 dur 3.53 | תשמרו את זה, זה יעזור בנסיעה בעל הים.
+take 7 14 wer 0.143 dur 3.68 | למחר, מתי לא נכנסים למים בסערה הראשונה?
+take 7 15 wer 0.0 dur 3.68 | מחר, מתי לא נכנסים למים בסערה הראשונה?
+PICK 0 wer 0.0 | final level (+0.9 st, expected fall) | pitch 125 Hz (level -0.1 st) | range 14.5 st | המפתח על הגלגל זה המקום הראשון שגנבים בודקים.
+PICK 1 wer 0.0 | final rise (+3.0 st, expected fall) | pitch 129 Hz (level +0.5 st) | range 14.4 st | וכל הסשן אתם חושבים על האוטו.
+PICK 2 wer 0.0 | final fall (-7.6 st, expected fall) | pitch 139 Hz (level +1.7 st) | range 16.0 st | אז איפה כן להשאיר אותו? יש שתי דרכים.
+PICK 3 wer 0.111 | final level (+1.3 st, expected fall) | pitch 132 Hz (level +0.9 st) | range 12.8 st | אהה, מפתח רגיל, כספת קטנה עם קוד שתלויה על האוטו
+PICK 4 wer 0.0 | final fall (-5.7 st, expected fall) | pitch 127 Hz (level +0.2 st) | range 16.0 st | יש לכם שלט משאירים אותו אצל חבר על החוף עם הטלפון.
+PICK 5 wer 0.286 | final fall (-7.9 st, expected fall) | pitch 125 Hz (level +0.0 st) | range 14.1 st | ושיצלם אתכם. בסוף רייב תראו מה לתקן.
+PICK 6 wer 0.125 | final fall (-4.0 st, expected fall) | pitch 120 Hz (level -0.8 st) | range 16.8 st | שווייסט, תשמרו את זה, זה יעזור בנסיעה הבאה לים.
+PICK 7 wer 0.0 | final fall (-2.0 st, expected fall) | pitch 105 Hz (level -3.1 st) | range 14.4 st | מחר, מתי לא נכנסים למים בסערה הראשונה?
+he f5 T 28.874 [('L1', 0.12, np.float64(4.02), 0.0), ('L2', np.float64(4.338), np.float64(2.23), 0.0), ('L3', np.float64(6.968), np.float64(2.61), 0.0), ('L4', np.float64(9.776), np.float64(3.79), 0.11), ('L5', np.float64(13.762), np.float64(4.09), 0.0), ('L6', np.float64(18.053), np.float64(3.3), 0.29), ('L7', np.float64(21.705), np.float64(2.97), 0.12), ('L8', np.float64(25.07), np.float64(2.9), 0.0)]

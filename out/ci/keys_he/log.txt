@@ -1,18 +1,18 @@
 + k=/s17/rp/keys_he
 + python3 build.py /s17/rp/keys_he
-[('L1', '/ky_tyre.mp4', 0.0, 2.239, 0.0), ('L2', 'ky_worry.mp4', 0.0, 2.975, 2.239), ('L3', 'n/ky_car.mp4', 0.0, 2.115, 5.214), ('L4', '/ky_lock.mp4', 0.0, 2.12, 7.329), ('L5', 'y_friend.mp4', 0.0, 1.993, 9.449), ('L6', 'y_friend.mp4', 2.2, 1.2, 11.442), ('L6', 'n/ky_app.mp4', 0.0, 1.785, 12.642), ('L7', '/ky_calm.mp4', 0.0, 2.289, 14.427), ('L8', '/ky_walk.mp4', 0.0, 2.248, 16.716), ('L9', '/ky_tmrw.mp4', 0.0, 4.726, 18.964)]
-cat 23.68 T 23.69
+[('L1', '/ky_tyre.mp4', 0.0, 4.238, 0.0), ('L2', 'ky_worry.mp4', 0.0, 2.63, 4.238), ('L3', 'n/ky_car.mp4', 0.0, 2.808, 6.868), ('L4', '/ky_lock.mp4', 0.0, 3.986, 9.676), ('L5', 'y_friend.mp4', 0.0, 4.291, 13.662), ('L6', 'y_friend.mp4', 2.2, 1.2, 17.953), ('L6', 'n/ky_app.mp4', 0.0, 2.452, 19.153), ('L7', '/ky_calm.mp4', 0.0, 1.4, 21.605), ('L7', '/ky_walk.mp4', 0.0, 1.965, 23.005), ('L8', '/ky_tmrw.mp4', 0.0, 3.904, 24.97)]
+cat 28.88 T 28.874
 + python3 ov_png.py /s17/rp/keys_he
-realcuts True [0.0, 2.24, 5.2, 7.32, 9.44, 11.44, 14.44, 16.72, 18.96, 23.69]
+realcuts True [0.0, 4.24, 6.88, 9.68, 13.68, 17.96, 21.6, 24.96, 28.874]
 safe-zone violations []
-ovplan 21
+ovplan 19
 + python3 ov_ff.py /s17/rp/keys_he
-done /s17/rp/keys_he/reel_keys_he.mp4 23.69 lufs before -15.1 gain 0.6
+done /s17/rp/keys_he/reel_keys_he.mp4 28.874 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/keys_he
-trimmed /s17/rp/keys_he/reel_keys_he.mp4 22.79
+trimmed /s17/rp/keys_he/reel_keys_he.mp4 28.3
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/keys_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/keys_he/reel_keys_he.mp4
-/s17/rp/keys_he/reel_keys_he.mp4 before -13.0 after -14.5 peak -2.9
+/s17/rp/keys_he/reel_keys_he.mp4 before -13.1 after -14.5 peak -2.9
 + python3 post_cz.py /s17/rp/keys_he
 post ok
 + echo 'EXIT /s17/rp/keys_he 0'
