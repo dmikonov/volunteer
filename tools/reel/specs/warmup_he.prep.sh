@@ -25,8 +25,10 @@ wide $W 7.8 3.8 0.47 wm_swing
 full man-washing-his-surfboar 8.0 4.0 0.50 0.48 wm_after
 full man-carrying-a-surfboard 6.0 4.6 0.50 0.40 wm_save
 full man-looking-at-the-sea-n 11.0 3.8 0.60 0.57 wm_tmrw
-# app insert 1080x608: body mechanics card (shoulder rotation) + coach button, text about 45 px
+# app: "שאלו את המאמן" button only (no empty tiles), 1080x225, text about 45 px, over the same man after the session (no static dark screen)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
-ffmpeg -v error -y -loop 1 -t 4.0 -i /tmp/px/he_coach.png -filter_complex "[0:v]split=2[a][b];[a]crop=1080:1920:0:214,boxblur=28,eq=brightness=-0.3[bg];[b]crop=960:540:60:1100,scale=1080:608:flags=lanczos,unsharp=5:5:0.5[fg];[bg][fg]overlay=0:700,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/wm_app.mp4
+full man-washing-his-surfboar 11.0 3.6 0.45 0.45 wm_appbg
+ffmpeg -v error -y -i $G/wm_appbg.mp4 -loop 1 -i /tmp/px/he_coach.png -filter_complex "[1:v]crop=980:220:50:1440,scale=1080:242:flags=lanczos[fg];[0:v][fg]overlay=0:1020:shortest=1,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/wm_app.mp4
+rm -f $G/wm_appbg.mp4
 for f in $G/wm_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 $R/cut_$n.jpg; done
 ls -la $G/wm_*
