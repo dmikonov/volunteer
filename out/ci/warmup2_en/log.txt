@@ -1,0 +1,19 @@
++ k=/s17/rp/warmup2_en
++ python3 build.py /s17/rp/warmup2_en
+[('L1', '/wm_hook.mp4', 0.0, 2.253, 0.0), ('L2', 'shoulder.mp4', 0.0, 4.009, 2.253), ('L3', 'm_bridge.mp4', 0.0, 3.592, 6.262), ('L4', 'en/wm_up.mp4', 0.0, 1.893, 9.854), ('L5', '/wm_head.mp4', 0.0, 2.491, 11.747), ('L6', 'wm_swing.mp4', 0.0, 2.745, 14.238), ('L7', 'wm_after.mp4', 0.0, 2.94, 16.983), ('L8', '/wm_save.mp4', 0.0, 2.175, 19.923), ('L9', 'n/we_app.mp4', 0.0, 3.455, 22.098), ('L10', '/wm_tmrw.mp4', 0.0, 3.069, 25.553)]
+cat 28.6 T 28.622
++ python3 ov_png.py /s17/rp/warmup2_en
+realcuts True [0.0, 2.24, 6.24, 9.84, 11.72, 14.2, 16.96, 19.92, 22.08, 25.52, 28.622]
+safe-zone violations []
+ovplan 23
++ python3 ov_ff.py /s17/rp/warmup2_en
+done /s17/rp/warmup2_en/reel_warmup2_en.mp4 28.622 lufs before -14.9 gain 0.4
++ python3 trim_tail.py /s17/rp/warmup2_en
+trimmed /s17/rp/warmup2_en/reel_warmup2_en.mp4 28.12
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/warmup2_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/warmup2_en/reel_warmup2_en.mp4
+/s17/rp/warmup2_en/reel_warmup2_en.mp4 before -13.0 after -14.6 peak -3.6
++ python3 post_cz.py /s17/rp/warmup2_en
+post ok
++ echo 'EXIT /s17/rp/warmup2_en 0'
+EXIT /s17/rp/warmup2_en 0
