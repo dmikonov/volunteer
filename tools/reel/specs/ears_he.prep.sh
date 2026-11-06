@@ -19,6 +19,6 @@ p 8713103 1.0 3.0 er_cold2
 ffmpeg -v error -y -ss 2.0 -t 4.0 -i /tmp/px/m1032.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:(iw-1080)/2:0,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/er_tmrw.mp4
 # app: water temperature tile, whole screen blurred behind, tile x2 in the centre band
 ffmpeg -v error -y -i app-screens/forecast/forecast_he_water.mp4 -vf "fps=1,scale=270:-2,tile=8x1" -frames:v 1 $R/app_water_sheet.jpg
-ffmpeg -v error -y -ss 4.2 -t 2.3 -i app-screens/forecast/forecast_he_water.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=550:366:130:1254,scale=962:640:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=59:640,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/er_app.mp4
+ffmpeg -v error -y -ss 4.2 -t 2.3 -i app-screens/forecast/forecast_he_water.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.30[bg];[b]crop=550:366:130:1254,scale=962:640:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=59:800,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/er_app.mp4
 for f in $G/er_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=5,scale=180:-2,tile=18x1" -frames:v 1 $R/cut_$n.jpg; done
 ls -la $G/er_*
