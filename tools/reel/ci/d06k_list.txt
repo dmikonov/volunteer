@@ -3,3 +3,4 @@ w_worry https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/
 w_friend https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/eba3515c2a1d8adc8daf50b7c580bb598034f42451daade0a05ec5c949b56384/tmpdzuu4d_v.mp4
 w_lock https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/d8ebc70e390bb1582e6eef296b359a4183bf6a72cc9ae72d2870dc4e859b00ff/tmp4g9d4bmi.mp4
 w_calm https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/14102d62a00ed0a39e2b5fe61c686eea82cf9e4bd6e322e90e4dd7928126025c/tmpvxf2385y.mp4
+w_thief https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/49eb2505e97d73a240b62e764746dff4e0648089d31b686b79d4c3256edd6496/tmpaxknlh80.mp4

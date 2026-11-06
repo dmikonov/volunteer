@@ -1,5 +1,5 @@
 # 06.11 night: HE 06.11 "where to leave the car key" (Л, быт). Generated: Z-Image Turbo 61101/61107/61104/61108 + Wan 2.2 (hand/key/lockbox/friend/worried surfer). Real: Pexels 8713110 (car at dawn), 8713112 (walking into water), 8713104 (shore), Taryn Elliott. App: HE recording 28.09 15:24 replay.
-[ -f /s17/gen/ky_app.mp4 ] && [ -s /s17/gen/ky_tyre.mp4 ] && exit 0
+[ -f /s17/gen/ky_app.mp4 ] && [ -s /s17/gen/ky_thief.mp4 ] && exit 0
 G=/s17/gen; R=out/ci/d06k/review; mkdir -p $G /tmp/px $R out/ci/d06k/gen
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
 while read n u; do [ -s /tmp/px/$n.mp4 ] || curl -sSfL -m 120 -o /tmp/px/$n.mp4 "$u" || cp out/ci/d06k/gen/$n.mp4 /tmp/px/$n.mp4 || echo "FETCH FAIL $n"; cp -n /tmp/px/$n.mp4 out/ci/d06k/gen/$n.mp4 2>/dev/null; done < tools/reel/ci/d06k_list.txt
@@ -11,7 +11,8 @@ g w_tyre 0 3.5 ky_tyre
 g w_worry 0 3.5 ky_worry
 g w_lock 0 3.0 ky_lock
 g w_friend 0 3.5 ky_friend
-g w_calm 0 3.5 ky_calm
+g w_calm 0 2.9 ky_calm
+g w_thief 0 2.5 ky_thief
 p 8713110 0.0 4.0 ky_car
 p 8713112 2.0 5.0 ky_walk
 p 8713104 4.0 4.0 ky_tmrw

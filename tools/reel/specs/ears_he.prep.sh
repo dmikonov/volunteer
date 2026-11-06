@@ -1,5 +1,5 @@
 # 06.11 night: HE 09.11 (swapped from 11.11) "ears in winter: surf earplugs + hood". Generated: Z-Image Turbo 61121/61124/61123/61125/61126 + Wan 2.2 (same man). Real: Pexels 8713107 (cold sea from above), 8713106 (walking into the sea), Mixkit 1032 (running on the beach). App: HE forecast, water temperature tile.
-[ -f /s17/gen/er_app.mp4 ] && [ -s /s17/gen/er_hook.mp4 ] && exit 0
+[ -f /s17/gen/er_app.mp4 ] && [ -s /s17/gen/er_ear.mp4 ] && exit 0
 G=/s17/gen; R=out/ci/d06e/review; mkdir -p $G /tmp/px $R out/ci/d06e/gen
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
 while read n u; do [ -s /tmp/px/$n.mp4 ] || curl -sSfL -m 120 -o /tmp/px/$n.mp4 "$u" || cp out/ci/d06e/gen/$n.mp4 /tmp/px/$n.mp4 || echo "FETCH FAIL $n"; cp -n /tmp/px/$n.mp4 out/ci/d06e/gen/$n.mp4 2>/dev/null; done < tools/reel/ci/d06e_list.txt
@@ -8,6 +8,7 @@ for id in 1032; do [ -s /tmp/px/m$id.mp4 ] || for q in 1080 720; do curl -sSfL -
 g(){ n=$1; ss=$2; t=$3; o=$4; ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/$n.mp4 -vf "scale=1080:1920:flags=lanczos,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$o.mp4; }
 p(){ id=$1; ss=$2; t=$3; o=$4; ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/p$id.mp4 -vf "scale=1080:1920:flags=lanczos,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$o.mp4; }
 g e_hook 0 3.5 er_hook
+g e_ear 0 3.0 er_ear
 g e_plug 0 3.0 er_plug
 g e_hood 0 3.0 er_hood
 g e_ride 0 3.0 er_ride

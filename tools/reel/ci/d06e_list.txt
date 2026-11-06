@@ -3,3 +3,4 @@ e_plug https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/g
 e_hood https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/33fc517b2610dc57e4587dbb26ae3ed5aac8991cfd1eae252e9a16409a54c1de/tmpdyi66g7f.mp4
 e_ride https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/64c938a1a9f6a20870dd57c334fad1ec69a43afc5b8e974283ecc6f6517f9919/tmp3yqz6ard.mp4
 e_towel https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/ce7c6e41086bca90716c649db892a7e7dc3f89d47e35b2e5c000d93f4aed4ac5/tmpibc2zf4z.mp4
+e_ear https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/sl45d/gradio_api/file=/tmp/gradio/25e2f857e9a660a597f5b086c1d9932e1a19ad46eb040c4034192472312451d0/tmptzas4lh3.mp4
