@@ -18,14 +18,14 @@
  "out": "reel_warmup2_en.mp4",
  "lines": [
   "Running straight in without a warm-up?",
-  "Here's what happens: your shoulders are done in ten minutes.",
-  "Five minutes on the sand fixes it. Three moves.",
+  "Do that and your shoulders are gone in ten minutes.",
+  "Give it five minutes on the sand. Three moves.",
   "First, arms up and out to the sides, nice and slow.",
   "Hands behind your head, elbows back.",
-  "Then wide swings back, until you're warm.",
-  "After the session, your shoulders still feel fine.",
-  "Save this one for your next session.",
-  "Not sure? Ask the coach in the Surf Tribe app.",
+  "Then big swings back till you feel warm.",
+  "Two hours in, your shoulders are still good.",
+  "Save it, you'll forget by tomorrow.",
+  "Stuck on a move? Ask the coach in the Surf Tribe app.",
   "Tomorrow: how to count a set."
  ],
  "titles": {
@@ -36,7 +36,7 @@
    null
   ],
   "L2": [
-   "Shoulders done",
+   "Shoulders gone",
    "in 10 minutes",
    null,
    null
@@ -60,26 +60,26 @@
    null
   ],
   "L6": [
-   "3. Wide swings back",
+   "3. Big swings back",
    "30 seconds",
    null,
    null
   ],
   "L7": [
-   "After the session",
-   "shoulders still fine",
+   "Two hours in",
+   "shoulders still good",
    null,
    null
   ],
   "L8": [
-   "Save it for",
-   "your next session",
+   "Save it",
+   "you'll forget by tomorrow",
    null,
    null
   ],
   "L9": [
-   "Not sure?",
-   "Ask the coach",
+   "Stuck on a move?",
+   null,
    null,
    null
   ]
