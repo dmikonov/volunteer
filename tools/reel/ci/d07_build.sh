@@ -12,5 +12,5 @@ for i,u in tk:
     else: print('TAKE LOST',i,u[-30:])
 json.dump(out,open(p,'w'))
 PY
-printf "warmup_he\nwarmup2_en\n" > tools/reel/ci/NAMES
+printf "warmup2_en\n" > tools/reel/ci/NAMES
 timeout 2700 bash tools/reel/ci/build_reels.sh
