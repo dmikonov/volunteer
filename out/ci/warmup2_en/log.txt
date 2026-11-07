@@ -12,7 +12,7 @@ done /s17/rp/warmup2_en/reel_warmup2_en.mp4 31.928 lufs before -15.0 gain 0.5
 trimmed /s17/rp/warmup2_en/reel_warmup2_en.mp4 31.43
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/warmup2_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/warmup2_en/reel_warmup2_en.mp4
-/s17/rp/warmup2_en/reel_warmup2_en.mp4 before -13.1 after -14.5 peak -3.1
+/s17/rp/warmup2_en/reel_warmup2_en.mp4 before -13.1 after -14.5 peak -3.2
 + python3 post_cz.py /s17/rp/warmup2_en
 post ok
 + echo 'EXIT /s17/rp/warmup2_en 0'
