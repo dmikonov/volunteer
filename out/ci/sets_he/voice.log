@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.0 dur 2.63 | נחשו, איזה גל מהסט הזה שלכם?
+take 0 1 wer 0.0 dur 2.63 | נחשו איזה גל מהסט הזה שלכם.
+take 1 2 wer 0.143 dur 3.15 | לוקחים את הראשון, קל הסט נשבר עליכם.
+take 1 3 wer 0.286 dur 3.15 | לוקחים את הראשון כי הלסת נשבר עליכם
+take 2 4 wer 0.0 dur 2.63 | קודם סופרים ורק אז נכנסים למים
+take 2 5 wer 0.0 dur 2.63 | קודם סופרים ורק אז נכנסים למים
+take 3 6 wer 0.0 dur 3.58 | חמש דקות על החוף וסופרים כמה גלים בסט.
+take 3 7 wer 0.0 dur 3.58 | חמש דקות על החוף וסופרים כמה גלים בסט.
+take 4 8 wer 0.0 dur 3.53 | אחרי הגל האחרון יש שקט ואז חותרים החוצה.
+take 4 9 wer 0.0 dur 3.53 | אחרי הגל האחרון יש שקט, ואז חותרים החוצה.
+take 5 10 wer 0.167 dur 2.97 | ובמים לוקחים דקה את האחרון בסט.
+take 5 11 wer 0.167 dur 2.97 | ובמים לוקחים דה את האחרון בסט.
+take 6 12 wer 0.0 dur 3.3 | מאחוריו אין כלום וחותרים בחזרה בשקט.
+take 6 13 wer 0.0 dur 3.3 | מאחוריו אין כלום וחותרים בחזרה בשקט.
+take 7 14 wer 0.0 dur 2.97 | תשמרו ותספרו בפעם הבאה בחוף.
+take 7 15 wer 0.2 dur 2.97 | תשמעו ותספרו בפעם הבאה בחוף.
+take 8 16 wer 0.167 dur 4.78 | כמה שניות בין גל לגל? זמן הגל בתחזית של סרף טרייבו.
+take 8 17 wer 0.083 dur 4.78 | כמה שניות בין גל לגל? זה זמן הגל בתחזית של סרף טרייבו.
+take 9 18 wer 0.2 dur 2.3 | איך מייבשים חליפה נכון?
+take 9 19 wer 0.2 dur 2.3 | איך מייבשים חליפה נכון?
+PICK 0 wer 0.0 | final fall (-2.6 st, expected rise) | pitch 124 Hz (level +0.4 st) | range 12.1 st | נחשו איזה גל מהסט הזה שלכם.
+PICK 1 wer 0.143 | final level (+0.0 st, expected fall) | pitch 170 Hz (level +5.9 st) | range 15.4 st | לוקחים את הראשון, קל הסט נשבר עליכם.
+PICK 2 wer 0.0 | final fall (-4.0 st, expected fall) | pitch 109 Hz (level -1.8 st) | range 15.4 st | קודם סופרים ורק אז נכנסים למים
+PICK 3 wer 0.0 | final fall (-2.6 st, expected fall) | pitch 130 Hz (level +1.3 st) | range 13.0 st | חמש דקות על החוף וסופרים כמה גלים בסט.
+PICK 4 wer 0.0 | final level (+0.0 st, expected fall) | pitch 121 Hz (level +0.0 st) | range 8.4 st | אחרי הגל האחרון יש שקט, ואז חותרים החוצה.
+PICK 5 wer 0.167 | final level (-0.3 st, expected fall) | pitch 132 Hz (level +1.6 st) | range 12.3 st | ובמים לוקחים דקה את האחרון בסט.
+PICK 6 wer 0.0 | final rise (+1.8 st, expected fall) | pitch 104 Hz (level -2.5 st) | range 7.5 st | מאחוריו אין כלום וחותרים בחזרה בשקט.
+PICK 7 wer 0.0 | final level (-1.3 st, expected fall) | pitch 125 Hz (level +0.6 st) | range 14.8 st | תשמרו ותספרו בפעם הבאה בחוף.
+PICK 8 wer 0.083 | final fall (-3.4 st, expected fall) | pitch 112 Hz (level -1.2 st) | range 10.0 st | כמה שניות בין גל לגל? זה זמן הגל בתחזית של סרף טרייבו.
+PICK 9 wer 0.2 | final fall (-6.0 st, expected fall) | pitch 118 Hz (level -0.3 st) | range 16.5 st | איך מייבשים חליפה נכון?
+he f5 T 28.278 [('L1', 0.12, np.float64(1.93), 0.0), ('L2', np.float64(2.251), np.float64(2.66), 0.14), ('L3', np.float64(5.311), np.float64(1.98), 0.0), ('L4', np.float64(7.638), np.float64(2.48), 0.0), ('L5', np.float64(10.318), np.float64(2.65), 0.0), ('L6', np.float64(13.168), np.float64(2.22), 0.17), ('L7', np.float64(15.584), np.float64(2.69), 0.0), ('L8', np.float64(18.629), np.float64(2.5), 0.0), ('L9', np.float64(21.58), np.float64(3.93), 0.08), ('L10', np.float64(25.715), np.float64(1.66), 0.2)]
