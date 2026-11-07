@@ -4,14 +4,14 @@ G=/s17/gen; R=out/ci/d08/review; S=out/ci/d08/src; mkdir -p $G $R
 [ -f $G/st_tmrw.mp4 ] || {
 cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
   ffmpeg -v error -y -ss $ss -t $t -i $S/$src.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:'max(0,min(iw-1080,($c0+($c1-$c0)*t/$t)*iw-540))':0,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$n.mp4; }
-cut m38939 0.0 4.0 0.40 0.44 st_hook
-cut m1071  4.0 4.0 0.55 0.55 st_hit
-cut m38933 15.6 4.0 0.45 0.50 st_bridge
+cut m1071  3.8 4.0 0.55 0.55 st_hook
+cut m1071  6.6 4.0 0.55 0.52 st_hit
+cut m38939 0.0 4.0 0.40 0.44 st_bridge
 cut m38939 9.8 4.6 0.42 0.42 st_count
-cut m38933 0.3 4.2 0.48 0.44 st_lull
+cut m51460 0.0 4.5 0.70 0.52 st_lull
 cut m38927 0.0 4.0 0.30 0.42 st_last
-cut m38933 8.5 4.0 0.50 0.50 st_back
-cut m38927 5.5 4.5 0.42 0.38 st_save
+cut m38927 6.0 4.4 0.40 0.36 st_back
+cut m38933 15.6 4.0 0.45 0.50 st_save
 cut m38939 4.8 3.6 0.38 0.40 st_tmrw
 }
 app(){ l=$1; x=$2; y=$3; w=$4; h=$5; s=$6; n=$7
