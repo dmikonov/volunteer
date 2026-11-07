@@ -10,6 +10,22 @@ HERE = Path(__file__).resolve().parent
 API = 'https://staging.surftribe.rest/api/story/forecast'
 CYAN, CORAL, GREEN, FOAM, GREY, SUN = '#00CDFE', '#FF5150', '#68C090', '#F5F1F7', '#9A8F98', '#FFC857'
 DAYS_HE = ['שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת', 'ראשון']
+# Dima 06.11: the story stopped averaging the coast spots into one number,
+# so the daily story now names each spot - Hebrew place names, not translated.
+# 8-spot list (Director 07.11, Dima's permanent decision, north to south),
+# easy to extend - add a key here whenever COAST_SPOTS in
+# backend/routers/story_bridge.py grows. The two Tel Aviv additions' Hebrew
+# is Director's own wording, verbatim - do not retranslate.
+SPOT_HE = {
+    'Haifa - Bat Galim': 'חיפה - בת גלים',
+    'Givat Olga - Hadera': 'גבעת אולגה - חדרה',
+    'Netanya - Sironit': 'נתניה - סירונית',
+    'Tel Aviv - Hilton': 'תל אביב - הילטון',
+    'Tel Aviv - Dolphinarium': 'תל אביב - דולפינריום',
+    'Tel Aviv - Maravi': 'תל אביב - מערבי',
+    'Bat Yam': 'בת ים',
+    'Ashdod - The Lighthouse': 'אשדוד - המגדלור',
+}
 def qk(f):
     w = (f.get('quality_word') or f.get('quality') or '').lower()
     return w if w in Q else ('flat' if w in ('poor',) else w)
@@ -49,6 +65,22 @@ def css():
             ".lbl{font-size:30px;opacity:.7}.val{font-size:74px;font-weight:800;margin-top:6px}")
 
 
+# Director 06.11: a daily story must not run the same background two days
+# running. The approved set lives under backgrounds/ (she fills it; starts
+# empty, falls back to the original bg_lines.jpg). Picking by date ordinal
+# mod len(bgs) guarantees adjacent days differ whenever there's more than one
+# background - no state file needed.
+BG_DIR = HERE / 'backgrounds'
+
+def pick_bg(date_str):
+    import datetime as _dt
+    bgs = sorted(BG_DIR.glob('*.jpg')) if BG_DIR.is_dir() else []
+    if not bgs:
+        return HERE / 'bg_lines.jpg'
+    day_ord = _dt.date.fromisoformat(date_str).toordinal()
+    return bgs[day_ord % len(bgs)]
+
+
 def page(body, idx, total, h=1350):
     ft = (f'<div dir=ltr style="position:absolute;left:44px;bottom:30px;font:500 23px Rubik;opacity:.82">'
           f'{idx}/{total}&nbsp;&nbsp;·&nbsp;&nbsp;@surftribe_il</div>') if idx else ''
@@ -72,13 +104,20 @@ def rank(f):
     return (Q.get(qk(f), ('', '', 0))[2], WIND.get(f['wind_kind'], ('', 0))[1], -abs(f['wave_height_m'] - 1.0))
 
 
+def pick_spot(day):
+    """The API gives each day as 4 per-spot rows now (Dima 06.11: no averaging).
+    The weekend/week carousels still show ONE headline number per day - take
+    that day's best spot, by the same ranking as picking the best day."""
+    return {**max(day['spots'], key=rank), 'date': day['date'], 'day': day['day']}
+
+
 def build(friday, outdir, api_file=None):
     api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(friday)
-    days = [f for f in api['forecast']][:2]
+    days = [pick_spot(d) for d in api['forecast']][:2]
     pick = max(days, key=rank)
     surfable = Q.get(qk(pick), ('', '', 0))[2] >= 1
     total = 5
-    bg = b64(HERE / 'bg_lines.jpg')
+    bg = b64(pick_bg(friday))
     pages = []
     pages.append(page(
         f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover"></div>'
@@ -115,7 +154,7 @@ def build(friday, outdir, api_file=None):
     pages.append(page(
         MARK + '<div style="position:absolute;left:80px;right:80px;top:0;bottom:110px;display:flex;flex-direction:column;justify-content:center">'
         '<div class=k>הבחירה שלנו</div><div class=h style="font-size:84px;margin-top:12px">היום של הסופ״ש</div>'
-        f'{pk}<div style="font-size:28px;margin-top:60px;opacity:.6">ממוצע לאורך החוף המרכזי, שעות היום. התחזית משתנה, בדקו שוב בבוקר</div></div>', 4, total))
+        f'{pk}<div style="font-size:28px;margin-top:60px;opacity:.6">לפי ספוט נבחר בחוף המרכז, שעות היום. התחזית משתנה, בדקו שוב בבוקר</div></div>', 4, total))
     pages.append(page(
         MARK + '<div style="position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">'
         '<div class=h style="font-size:92px">שמרו ובדקו שוב בבוקר</div>'
@@ -150,7 +189,7 @@ def build(friday, outdir, api_file=None):
         lines += ['', f'הבחירה שלנו: {DAYS_HE[dt.date.fromisoformat(pick["date"]).weekday()]} בבוקר.']
     if any((f.get('uv_max') or 0) >= 6 for f in days):
         lines.append('UV גבוה, אל תשכחו קרם הגנה.')
-    lines += ['', 'ממוצע לאורך החוף המרכזי. התחזית משתנה, בדקו שוב בבוקר.', '',
+    lines += ['', 'לפי ספוט נבחר בחוף המרכז. התחזית משתנה, בדקו שוב בבוקר.', '',
               'שמרו את הפוסט ושלחו לחבר שגולש איתכם.', 'עקבו אחרי @surftribe_il לתחזית חדשה כל יום חמישי.',
               'תחזית לחוף שלכם, שעה אחרי שעה, ב-SurfTribe. הקישור בביו.', '', 'התמונה נוצרה ב-AI', '',
               '#גלישה #תחזיתגלים #surfisrael #גלישהבישראל #surftribe_il']
@@ -162,26 +201,46 @@ def build_today(day, outdir, api_file=None):
     """Daily morning story 1080x1920: today's sea."""
     api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(day, 1)
     f = api['forecast'][0]
-    qn, qc, _ = Q.get(qk(f), (qk(f), FOAM, 0))
-    wk = WIND.get(f['wind_kind'], (f['wind_kind'], 0))[0]
-    bg = b64(HERE / 'bg_lines.jpg')
-    cell = lambda l, v, sub='': (f'<div class=cell><div class=lbl style="font-size:36px">{l}</div><div class=val style="font-size:88px">{v}</div>'
-                                 + (f'<div style="font-size:38px;margin-top:6px">{sub}</div>' if sub else '') + '</div>')
-    uv = (f'<div style="margin-top:34px;font-size:42px;color:{SUN}">UV {L(f["uv_max"])}: קרם הגנה ולייקרה</div>'
-          if (f.get('uv_max') or 0) >= 6 else '')
+    spots = f['spots']
+    bg = b64(pick_bg(day))
+
+    # 07.11 round 3 (Director): 6 spots -> 8 (two more Tel Aviv beaches). The
+    # old 38px gap-only squeeze from round 2 has no room left for 2 more rows,
+    # so this round compresses every spot row uniformly (fonts + both inner
+    # margins + the border/padding above each row), plus the header/footer -
+    # under two floors Director set for the 8-spot cap: the digit line (wave/
+    # period/wind numbers) never below 44px, and the gap between spots (the
+    # row's own margin-top) never below 24px. Measured via real Playwright
+    # render (tune_8spots.py) at these exact values: bottom=1640px, under the
+    # 1670 Instagram reply-field cap with ~30px to spare.
+    def spot_row(s, first=False):
+        qn, qc, _ = Q.get(qk(s), (qk(s), FOAM, 0))
+        wk = WIND.get(s['wind_kind'], (s['wind_kind'], 0))[0]
+        top = 'margin-top:18px' if first else 'margin-top:25px;padding-top:15px;border-top:2px solid rgba(245,241,247,.14)'
+        return (
+            f'<div style="{top}">'
+            '<div style="display:flex;justify-content:space-between;align-items:baseline">'
+            f'<div class=k style="font-size:28px">{SPOT_HE.get(s["name"], s["name"])}</div>'
+            f'<span style="font-size:21px;font-weight:700;color:#2D242A;background:{qc};'
+            f'padding:5px 16px;border-radius:999px">{qn}</span></div>'
+            f'<div style="font-size:44px;margin-top:4px">{L(wh(s))} מ׳ · {L(s["wave_period_s"])} שנ׳ · '
+            f'{wk} {L(s["wind_kmh"])} קמ״ש</div>'
+            f'<div style="font-size:22px;margin-top:2px;opacity:.75">הכי טוב ב-{L(s["best_window"])}</div>'
+            '</div>')
+
+    uv_max = max((s.get('uv_max') or 0) for s in spots)
+    uv = (f'<div style="margin-top:10px;font-size:25px;color:{SUN}">UV {L(uv_max)}: קרם הגנה ולייקרה</div>'
+          if uv_max >= 6 else '')
     html = page(
         f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.3)"></div>'
-        '<div style="position:absolute;left:80px;right:80px;top:260px">'
-        f'<div class=k style="font-size:44px">{label(f["date"])} · חוף המרכז</div>'
-        '<div class=h style="font-size:130px;margin-top:10px">הים היום</div>'
-        f'<div class=h style="font-size:230px;color:{qc};margin-top:10px">{qn}</div>'
-        + (f'<div style="font-size:52px;margin-top:10px">הכי טוב בסביבות {L(f["best_window"])}</div>' if f.get("best_window") else '') +
-        '<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:60px;margin-top:40px">'
-        + cell('גלים', f'{L(wh(f))} מ׳') + cell('פריוד', f'{L(f["wave_period_s"])} שנ׳')
-        + cell('רוח', f'{L(f["wind_kmh"])} קמ״ש', wk) + cell('מים', L(str(f['water_temp_c']) + '°C')) +
-        f'</div>{uv}'
-        '<div style="font-size:44px;font-weight:700;margin-top:60px">תחזית לחוף שלכם ב-SurfTribe</div>'
-        f'<div style="font-size:40px;margin-top:12px">עקבו אחרי {L("@surftribe_il")}</div></div>', 0, 0, h=1920)
+        '<div style="position:absolute;left:80px;right:80px;top:150px;bottom:110px">'
+        f'<div class=k style="font-size:27px">{label(f["date"])}</div>'
+        '<div class=h style="font-size:58px;margin-top:3px">הים היום</div>'
+        # 07.11 (Director): the subtitle was internal shop talk, not for
+        # readers - dropped; also frees space toward the y<=1670 cap below.
+        + ''.join(spot_row(s, i == 0) for i, s in enumerate(spots)) + uv +
+        '<div style="font-size:26px;font-weight:700;margin-top:14px">תחזית לחוף שלכם ב-SurfTribe</div>'
+        f'<div style="font-size:22px;margin-top:5px">עקבו אחרי {L("@surftribe_il")}</div></div>', 0, 0, h=1920)
     from playwright.sync_api import sync_playwright
     out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
@@ -194,9 +253,9 @@ def build_today(day, outdir, api_file=None):
 def build_week(sunday, outdir, api_file=None):
     """Weekly overview (Sun-Sat): cover, week table, best days, CTA + story."""
     api = json.loads(Path(api_file).read_text(encoding='utf-8')) if api_file else fetch(sunday, 7)
-    days = api['forecast'][:7]
+    days = [pick_spot(d) for d in api['forecast'][:7]]
     total = 4
-    bg = b64(HERE / 'bg_lines.jpg')
+    bg = b64(pick_bg(sunday))
     ranked = sorted([f for f in days if Q.get(qk(f), ('', '', 0))[2] >= 1], key=rank, reverse=True)[:2]
     rng = f'{dt.date.fromisoformat(days[0]["date"]):%d.%m}-{dt.date.fromisoformat(days[-1]["date"]):%d.%m}'
     pages = [page(
@@ -230,7 +289,7 @@ def build_week(sunday, outdir, api_file=None):
     pages.append(page(
         MARK + '<div style="position:absolute;left:80px;right:80px;top:0;bottom:110px;display:flex;flex-direction:column;justify-content:center">'
         '<div class=k>הבחירה שלנו</div><div class=h style="font-size:84px;margin:12px 0 20px">הימים הכי טובים</div>'
-        f'{best}<div style="font-size:28px;margin-top:40px;opacity:.6">ממוצע לאורך החוף המרכזי. התחזית משתנה, נעדכן כל בוקר בסטורי</div></div>', 3, total))
+        f'{best}<div style="font-size:28px;margin-top:40px;opacity:.6">לפי ספוט נבחר בחוף המרכז. התחזית משתנה, נעדכן כל בוקר בסטורי</div></div>', 3, total))
     pages.append(page(
         MARK + '<div style="position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">'
         '<div class=h style="font-size:92px">שמרו את השבוע</div>'
@@ -264,7 +323,7 @@ def build_week(sunday, outdir, api_file=None):
         lines.append(f'{label(f["date"])}: {Q.get(qk(f), (qk(f),))[0]}, {wh(f)} מ׳, {WIND.get(f["wind_kind"], ("",))[0]}, הכי טוב ב-{f["best_window"]}.')
     if ranked:
         lines += ['', 'הבחירה שלנו: ' + ' ו'.join(DAYS_HE[dt.date.fromisoformat(f["date"]).weekday()] for f in ranked) + '.']
-    lines += ['', 'ממוצע לאורך החוף המרכזי. התחזית משתנה, נעדכן כל בוקר בסטורי.', '',
+    lines += ['', 'לפי ספוט נבחר בחוף המרכז. התחזית משתנה, נעדכן כל בוקר בסטורי.', '',
               'שמרו את הפוסט ושלחו לחבר שגולש איתכם.', 'עקבו אחרי @surftribe_il: תחזית לשבוע כל ראשון, לסופ״ש כל חמישי.',
               'תחזית לחוף שלכם, שעה אחרי שעה, ב-SurfTribe. הקישור בביו.', '', 'התמונה נוצרה ב-AI', '',
               '#גלישה #תחזיתגלים #surfisrael #גלישהבישראל #surftribe_il']
