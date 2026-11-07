@@ -24,7 +24,7 @@ full $W 6.9 3.0 0.47 0.47 wm_head
 full $W 7.9 3.8 0.47 0.47 wm_swing
 full man-washing-his-surfboar 8.0 4.0 0.50 0.48 wm_after
 full man-carrying-a-surfboard 6.0 4.6 0.50 0.40 wm_save
-full $W 9.0 2.4 0.47 0.47 wm_tmrw
+full man-looking-at-the-sea-n 0.2 3.0 0.62 0.62 wm_tmrw
 # app: "שאלו את המאמן" button only (no empty tiles), 1080x225, text about 45 px, over the same man after the session (no static dark screen)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
 full man-washing-his-surfboar 11.0 3.6 0.45 0.45 wm_appbg
