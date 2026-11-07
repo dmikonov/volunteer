@@ -1,12 +1,12 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=2.40 dur=2.08 | ref: Running straight into cold water? | asr: running straight into cold water
+L1 OK match=1.00 wps=2.64 dur=2.27 | ref: Running straight in without a warm-up? | asr: Running straight in without a warm up?
 L2 OK match=0.95 wps=2.73 dur=3.66 | ref: Here's what happens: your shoulders are done in ten minutes. | asr: Here's what happens. Your shoulders are done in 10 minutes.
 L3 OK match=1.00 wps=2.62 dur=3.44 | ref: Five minutes on the sand fixes it. Three moves. | asr: Five minutes on the sand fixes it. Three moves.
-L4 OK match=1.00 wps=4.02 dur=1.74 | ref: Arms up and out, big and slow. | asr: Arms up and out, big and slow.
+L4 OK match=1.00 wps=2.91 dur=3.78 | ref: First, arms up and out to the sides, nice and slow. | asr: First, arms up and out to the sides, nice and slow.
 L5 OK match=0.98 wps=2.56 dur=2.34 | ref: Hands behind your head, elbows back. | asr: Hand behind your head, elbows back.
 L6 OK match=1.00 wps=2.92 dur=2.40 | ref: Then wide swings back, until you're warm. | asr: Then wide swings back until you're warm.
-L7 OK match=1.00 wps=2.51 dur=2.79 | ref: Now your shoulders last the whole session. | asr: Now your shoulders last the whole session.
-L8 OK match=1.00 wps=3.84 dur=1.82 | ref: Save this for your next cold morning. | asr: Save this for your next cold morning.
+L7 OK match=1.00 wps=2.32 dur=3.44 | ref: After the session, your shoulders still feel fine. | asr: After the session, your shoulders still feel fine.
+L8 OK match=1.00 wps=3.89 dur=1.80 | ref: Save this one for your next session. | asr: Save this one for your next session.
 L9 OK match=1.00 wps=3.03 dur=3.31 | ref: Not sure? Ask the coach in the Surf Tribe app. | asr: Not sure? Ask the coach in the Surf Tribe app.
 L10 OK match=1.00 wps=2.90 dur=2.07 | ref: Tomorrow: how to count a set. | asr: Tomorrow, how to count a set.
-TOTAL wps=2.88 lines_to_check=0
+TOTAL wps=2.81 lines_to_check=0
