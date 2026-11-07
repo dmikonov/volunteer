@@ -17,21 +17,21 @@
  "lang": "he",
  "out": "reel_warmup_he.mp4",
  "lines": [
-  "יורדים ישר למים בבוקר קר?",
+  "יורדים ישר למים בלי חימום?",
   "אחרי עשר דקות חתירה הכתפיים גמורות.",
   "חמש דקות על החול, שלושה תרגילים.",
   "קודם מרימים ידיים למעלה ולצדדים.",
   "אחר כך ידיים מאחורי הראש, פותחים מרפקים אחורה.",
   "ובסוף מניפים ידיים רחב אחורה, עד שחם.",
-  "ואז הן מחזיקות סשן שלם.",
-  "תשמרו את זה לבוקר הבא.",
+  "ואחרי הסשן, הכתפיים עדיין בסדר.",
+  "תשמרו את זה לסשן הבא.",
   "לא בטוחים? תשאלו את המאמן בסרף טרייב.",
   "מחר, איך סופרים גלים בסט."
  ],
  "titles": {
   "L1": [
    "ישר למים",
-   "בבוקר קר?",
+   "בלי חימום?",
    null,
    null
   ],
@@ -48,31 +48,31 @@
    null
   ],
   "L4": [
-   "1. ידיים למעלה",
-   "ולצדדים",
+   "1. ידיים למעלה ולצדדים",
+   "10 פעמים",
    null,
    null
   ],
   "L5": [
    "2. ידיים מאחורי הראש",
-   "מרפקים אחורה",
+   "10 פעמים",
    null,
    null
   ],
   "L6": [
    "3. הנפות רחבות",
-   "עד שחם",
+   "30 שניות",
    null,
    null
   ],
   "L7": [
-   "מחזיקות",
-   "סשן שלם",
+   "אחרי הסשן",
+   "הכתפיים בסדר",
    null,
    null
   ],
   "L8": [
-   "שמרו לבוקר הבא",
+   "שמרו לסשן הבא",
    null,
    null,
    null
@@ -100,7 +100,13 @@
    "k": "LST",
    "line": "L8",
    "d0": 0.1,
-   "html": "<div style='position:absolute;left:70px;top:620px;width:780px;padding:40px 44px;background:rgba(45,36,42,.9);border-radius:36px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 60px R;color:#fff;line-height:1.5\">1. ידיים למעלה ולצדדים<br>2. ידיים מאחורי הראש<br>3. הנפות רחבות אחורה</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:620px;width:780px;padding:40px 44px;background:rgba(45,36,42,.9);border-radius:36px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 60px R;color:#fff;line-height:1.5\">1. ידיים למעלה ולצדדים x10<br>2. ידיים מאחורי הראש x10<br>3. הנפות רחבות 30 שניות</div></div>"
+  },
+  {
+   "k": "LST2",
+   "line": "L9",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:620px;width:780px;padding:40px 44px;background:rgba(45,36,42,.9);border-radius:36px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 60px R;color:#fff;line-height:1.5\">1. ידיים למעלה ולצדדים x10<br>2. ידיים מאחורי הראש x10<br>3. הנפות רחבות 30 שניות</div></div>"
   }
  ],
  "gap": 0.2,
@@ -112,7 +118,7 @@
  },
  "ttop": {
   "L1": 380,
-  "L2": 1000,
+  "L2": 380,
   "L3": 380,
   "L4": 380,
   "L5": 380,
@@ -132,7 +138,7 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/wm_shoulder.mp4",
+    "src": "/s17/gen/wm_walk.mp4",
     "a": 0.0
    }
   ],

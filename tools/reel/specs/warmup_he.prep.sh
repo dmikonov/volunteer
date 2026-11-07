@@ -14,10 +14,10 @@ full(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
   ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/$src.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:'max(0,min(iw-1080,($c0+($c1-$c0)*t/$t)*iw-540))':0,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$n.mp4; }
 # wide: arms stay in frame: fg 1200 high (centre x c) over the same clip blurred
 wide(){ src=$1; ss=$2; t=$3; c=$4; n=$5
-  ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/$src.mp4 -filter_complex "[0:v]split=2[a][b];[a]scale=-2:1920,crop=1080:1920,boxblur=30,eq=brightness=-0.12[bg];[b]scale=-2:1300:flags=lanczos,crop=1080:1300:'max(0,min(iw-1080,$c*iw-540))':0[fg];[bg][fg]overlay=0:310,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 15 $G/$n.mp4; }
+  ffmpeg -v error -y -ss $ss -t $t -i /tmp/px/$src.mp4 -filter_complex "[0:v]split=2[a][b];[a]scale=-2:1920,crop=1080:1920,drawbox=c=0x1d181b:t=fill[bg];[b]scale=-2:1400:flags=lanczos,crop=1080:1400:'max(0,min(iw-1080,$c*iw-540))':0[fg];[bg][fg]overlay=0:260,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 15 $G/$n.mp4; }
 W=doing-a-warm-up-before-s
 full man-carrying-a-surfboard 0.0 3.2 0.75 0.70 wm_hook
-full man-looking-at-the-sea-n 2.6 4.0 0.70 0.70 wm_shoulder
+full man-carrying-a-surfboard 2.6 3.6 0.70 0.55 wm_walk
 wide $W 0.0 3.6 0.46 wm_bridge
 wide $W 1.6 3.6 0.47 wm_up
 wide $W 6.3 3.0 0.47 wm_head
@@ -28,7 +28,7 @@ full man-looking-at-the-sea-n 11.0 3.8 0.60 0.57 wm_tmrw
 # app: "שאלו את המאמן" button only (no empty tiles), 1080x225, text about 45 px, over the same man after the session (no static dark screen)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
 full man-washing-his-surfboar 11.0 3.6 0.45 0.45 wm_appbg
-ffmpeg -v error -y -i $G/wm_appbg.mp4 -loop 1 -i /tmp/px/he_coach.png -filter_complex "[1:v]crop=980:220:50:1440,scale=1080:242:flags=lanczos[fg];[0:v][fg]overlay=0:1020:shortest=1,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/wm_app.mp4
+ffmpeg -v error -y -i $G/wm_appbg.mp4 -loop 1 -i /tmp/px/he_coach.png -filter_complex "[1:v]crop=980:220:50:1440,scale=1080:242:flags=lanczos[fg];[0:v][fg]overlay=0:1250:shortest=1,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/wm_app.mp4
 rm -f $G/wm_appbg.mp4
 for f in $G/wm_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 $R/cut_$n.jpg; done
 ls -la $G/wm_*
