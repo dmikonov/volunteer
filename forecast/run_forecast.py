@@ -5,11 +5,15 @@
 import os, subprocess, json, datetime as _dt, urllib.request
 D = '/mnt/files/forecast'
 RAW = 'https://raw.githubusercontent.com/dmikonov/volunteer/surftribe-media/forecast/'
+BACKGROUNDS = ('cand_01_p10433263.jpg', 'cand_06_p34626644.jpg', 'cand_07_p36316616.jpg', 'cand_08_p37444280.jpg')
 
 def setup():
     os.makedirs(D, exist_ok=True)
+    os.makedirs(f'{D}/backgrounds', exist_ok=True)
     for f in ('make_forecast.py', 'Rubik.ttf', 'bg_lines.jpg', 'run_forecast.py'):
         urllib.request.urlretrieve(f'{RAW}{f}?v={_dt.datetime.now().timestamp()}', f'{D}/{f}')
+    for f in BACKGROUNDS:
+        urllib.request.urlretrieve(f'{RAW}backgrounds/{f}?v={_dt.datetime.now().timestamp()}', f'{D}/backgrounds/{f}')
     try:
         import playwright  # noqa
     except ImportError:
