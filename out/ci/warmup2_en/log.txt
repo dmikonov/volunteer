@@ -1,18 +1,18 @@
 + k=/s17/rp/warmup2_en
 + python3 build.py /s17/rp/warmup2_en
-[('L1', '/wm_hook.mp4', 0.0, 2.443, 0.0), ('L2', '/wm_walk.mp4', 0.0, 4.009, 2.443), ('L3', 'm_bridge.mp4', 0.0, 3.592, 6.452), ('L4', 'en/wm_up.mp4', 0.0, 3.931, 10.044), ('L5', '/wm_head.mp4', 0.0, 2.491, 13.975), ('L6', 'wm_swing.mp4', 0.0, 2.746, 16.466), ('L7', 'wm_after.mp4', 0.0, 3.591, 19.212), ('L8', '/wm_save.mp4', 0.0, 2.148, 22.803), ('L9', 'n/we_app.mp4', 0.0, 3.456, 24.951), ('L10', '/wm_tmrw.mp4', 0.0, 3.069, 28.407)]
-cat 31.48 T 31.476
+[('L1', '/wm_hook.mp4', 0.0, 2.443, 0.0), ('L2', '/wm_walk.mp4', 0.0, 3.194, 2.443), ('L3', 'm_bridge.mp4', 0.0, 3.252, 5.637), ('L4', 'en/wm_up.mp4', 0.0, 3.931, 8.889), ('L5', '/wm_head.mp4', 0.0, 2.491, 12.82), ('L6', 'wm_swing.mp4', 0.0, 2.868, 15.311), ('L7', 'wm_after.mp4', 0.0, 2.736, 18.179), ('L8', '/wm_save.mp4', 0.0, 2.65, 20.915), ('L9', 'n/we_app.mp4', 0.0, 3.7, 23.565), ('L10', '/wm_tmrw.mp4', 0.0, 3.069, 27.265)]
+cat 30.32 T 30.334
 + python3 ov_png.py /s17/rp/warmup2_en
-realcuts True [0.0, 2.44, 6.44, 10.04, 13.96, 16.44, 19.2, 22.8, 24.96, 28.4, 31.476]
+realcuts True [0.0, 2.44, 5.64, 8.88, 12.8, 15.28, 18.16, 20.88, 23.52, 27.24, 30.334]
 safe-zone violations []
 ovplan 24
 + python3 ov_ff.py /s17/rp/warmup2_en
-done /s17/rp/warmup2_en/reel_warmup2_en.mp4 31.476 lufs before -14.9 gain 0.4
+done /s17/rp/warmup2_en/reel_warmup2_en.mp4 30.334 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/warmup2_en
-trimmed /s17/rp/warmup2_en/reel_warmup2_en.mp4 30.98
+trimmed /s17/rp/warmup2_en/reel_warmup2_en.mp4 29.83
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/warmup2_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/warmup2_en/reel_warmup2_en.mp4
-/s17/rp/warmup2_en/reel_warmup2_en.mp4 before -13.1 after -14.5 peak -3.5
+/s17/rp/warmup2_en/reel_warmup2_en.mp4 before -13.1 after -14.5 peak -3.4
 + python3 post_cz.py /s17/rp/warmup2_en
 post ok
 + echo 'EXIT /s17/rp/warmup2_en 0'

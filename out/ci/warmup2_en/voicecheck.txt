@@ -1,12 +1,12 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 L1 OK match=1.00 wps=2.64 dur=2.27 | ref: Running straight in without a warm-up? | asr: Running straight in without a warm up?
-L2 OK match=0.95 wps=2.73 dur=3.66 | ref: Here's what happens: your shoulders are done in ten minutes. | asr: Here's what happens. Your shoulders are done in 10 minutes.
-L3 OK match=1.00 wps=2.62 dur=3.44 | ref: Five minutes on the sand fixes it. Three moves. | asr: Five minutes on the sand fixes it. Three moves.
+L2 OK match=0.94 wps=3.52 dur=2.84 | ref: Do that and your shoulders are gone in ten minutes. | asr: Do that and your shoulders are gone in 10 minutes.
+L3 OK match=0.96 wps=2.90 dur=3.10 | ref: Give it five minutes on the sand. Three moves. | asr: Get five minutes on the sand. Three moves.
 L4 OK match=1.00 wps=2.91 dur=3.78 | ref: First, arms up and out to the sides, nice and slow. | asr: First, arms up and out to the sides, nice and slow.
 L5 OK match=0.98 wps=2.56 dur=2.34 | ref: Hands behind your head, elbows back. | asr: Hand behind your head, elbows back.
-L6 OK match=1.00 wps=2.92 dur=2.40 | ref: Then wide swings back, until you're warm. | asr: Then wide swings back until you're warm.
-L7 OK match=1.00 wps=2.32 dur=3.44 | ref: After the session, your shoulders still feel fine. | asr: After the session, your shoulders still feel fine.
-L8 OK match=1.00 wps=3.89 dur=1.80 | ref: Save this one for your next session. | asr: Save this one for your next session.
-L9 OK match=1.00 wps=3.03 dur=3.31 | ref: Not sure? Ask the coach in the Surf Tribe app. | asr: Not sure? Ask the coach in the Surf Tribe app.
+L6 OK match=1.00 wps=3.18 dur=2.52 | ref: Then big swings back till you feel warm. | asr: Then big swings back till you feel warm.
+L7 OK match=1.00 wps=3.09 dur=2.59 | ref: Two hours in, your shoulders are still good. | asr: Two hours in, your shoulders are still good.
+L8 OK match=1.00 wps=2.61 dur=2.30 | ref: Save it, you'll forget by tomorrow. | asr: Save it. You'll forget by tomorrow.
+L9 OK match=1.00 wps=3.38 dur=3.55 | ref: Stuck on a move? Ask the coach in the Surf Tribe app. | asr: Stuck on a move? Ask the coach in the Surf Tribe app.
 L10 OK match=1.00 wps=2.90 dur=2.07 | ref: Tomorrow: how to count a set. | asr: Tomorrow, how to count a set.
-TOTAL wps=2.81 lines_to_check=0
+TOTAL wps=3.00 lines_to_check=0
