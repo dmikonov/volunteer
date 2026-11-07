@@ -17,16 +17,16 @@
  "lang": "en",
  "out": "reel_sets_en.mp4",
  "lines": [
-  "Guess which wave in this set is yours.",
-  "Most people take the first. Then the whole set lands on them.",
+  "Which wave in this set is yours?",
+  "Take the first one, and the whole set lands on your head.",
   "Three fixes.",
-  "One. Count from the sand for five minutes.",
-  "Two. Paddle out right after the last wave.",
-  "Three. Let the first one go.",
-  "Nothing behind you. Easy paddle back.",
-  "Save it, then count before your next paddle-out.",
+  "One. Five minutes on the sand, count the set.",
+  "Two. Paddle out right after the last one.",
+  "Three. Skip the first, take the last.",
+  "Nothing behind it, easy paddle back.",
+  "Save it for the drive to the beach.",
   "Check the period in Surf Tribe.",
-  "Tomorrow: the one-more-wave trap."
+  "Tomorrow: just one more wave."
  ],
  "titles": {
   "L1": [
@@ -48,32 +48,32 @@
    null
   ],
   "L4": [
-   "1. Count from the sand",
-   "5 minutes",
+   "1. Count the set",
+   "5 minutes on the sand",
    null,
    null
   ],
   "L5": [
    "2. Paddle out",
-   "after the last wave",
+   "after the last one",
    null,
    null
   ],
   "L6": [
-   "3. Let the first",
-   "one go",
+   "3. Skip the first",
+   "take the last",
    null,
    null
   ],
   "L7": [
-   "Nothing behind you",
+   "Nothing behind it",
    null,
    null,
    null
   ],
   "L8": [
-   "Save it",
-   "count next time",
+   "For the drive",
+   "to the beach",
    null,
    null
   ],
@@ -86,7 +86,7 @@
  },
  "teaser": [
   "Tomorrow",
-  "The one-more-wave trap"
+  "Just one more wave"
  ],
  "extra": [
   {
@@ -111,7 +111,7 @@
    "k": "LST",
    "line": "L8",
    "d0": 0.0,
-   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box'><div style=\"font:800 52px R;color:#fff;line-height:1.45;white-space:nowrap\">1. Count 5 min from the sand<br>2. Go out after the last wave<br>3. Let the first one go</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box'><div style=\"font:800 52px R;color:#fff;line-height:1.45;white-space:nowrap\">1. 5 min on the sand, count<br>2. Go right after the last one<br>3. Skip the first, take the last</div></div>"
   }
  ],
  "gap": 0.15,
