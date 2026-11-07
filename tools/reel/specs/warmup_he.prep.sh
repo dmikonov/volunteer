@@ -18,13 +18,13 @@ wide(){ src=$1; ss=$2; t=$3; c=$4; n=$5
 W=doing-a-warm-up-before-s
 full man-carrying-a-surfboard 0.0 3.2 0.75 0.70 wm_hook
 full man-carrying-a-surfboard 2.6 3.6 0.70 0.55 wm_walk
-wide $W 0.0 3.6 0.46 wm_bridge
-wide $W 1.6 3.6 0.47 wm_up
-wide $W 6.3 3.0 0.47 wm_head
-wide $W 7.8 3.8 0.47 wm_swing
+full $W 0.0 3.6 0.46 0.46 wm_bridge
+full $W 1.6 3.6 0.47 0.47 wm_up
+full $W 6.9 3.0 0.47 0.47 wm_head
+full $W 7.9 3.8 0.47 0.47 wm_swing
 full man-washing-his-surfboar 8.0 4.0 0.50 0.48 wm_after
 full man-carrying-a-surfboard 6.0 4.6 0.50 0.40 wm_save
-full man-looking-at-the-sea-n 11.0 3.8 0.60 0.57 wm_tmrw
+full $W 9.0 2.4 0.47 0.47 wm_tmrw
 # app: "שאלו את המאמן" button only (no empty tiles), 1080x225, text about 45 px, over the same man after the session (no static dark screen)
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
 full man-washing-his-surfboar 11.0 3.6 0.45 0.45 wm_appbg
