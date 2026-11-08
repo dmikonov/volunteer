@@ -7,8 +7,8 @@ cut p7938443 3.0 3.2 0.56 0.48 lw_hook
 cut p7938443 6.0 3.8 0.46 0.52 lw_tired
 cut m1076 3.0 3.2 0.42 0.52 lw_bridge
 cut m1075 8.5 3.6 0.40 0.55 lw_late
-cut p7938445 3.2 3.4 0.40 0.52 lw_rise
-cut m1076 9.8 3.4 0.58 0.50 lw_small
+cut m1127 12.0 3.2 0.50 0.56 lw_rise
+cut m1127 15.0 2.6 0.52 0.58 lw_small
 cut p7938104 4.0 4.2 0.44 0.52 lw_out
 cut p7938106 0.5 4.0 0.40 0.45 lw_save
 cut m1127 7.5 3.4 0.50 0.58 lw_tmrw
