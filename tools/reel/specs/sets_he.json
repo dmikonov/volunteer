@@ -24,8 +24,8 @@
   "הגל האחרון עבר? רגע של שקט, חותרים החוצה.",
   "בליינאפ? קחו את האחרון בסט.",
   "אין אחריו אף גל, חוזרים רגוע.",
-  "תשמרו את זה לנסיעה הבאה לחוף.",
   "השניות בין גל לגל? זה זמן גל בתחזית של סרף טרייב.",
+  "תשמרו את זה לנסיעה הבאה לחוף.",
   "מחר בבוקר, איך לא להרוס חליפה בייבוש."
  ],
  "titles": {
@@ -72,14 +72,14 @@
    null
   ],
   "L8": [
-   "לנסיעה הבאה לחוף",
-   null,
+   "זמן גל",
+   "= שניות בין גלים",
    null,
    null
   ],
   "L9": [
-   "זמן גל",
-   "= שניות בין גלים",
+   "שמרו",
+   "לנסיעה הבאה לחוף",
    null,
    null
   ]
@@ -109,7 +109,13 @@
   },
   {
    "k": "LST",
-   "line": "L8",
+   "line": "L9",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:60px;top:640px;width:800px;padding:36px 40px;background:rgba(45,36,42,.9);border-radius:36px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 56px R;color:#fff;line-height:1.55;white-space:nowrap\">1. 10 דקות סופרים מהחוף<br>2. יוצאים אחרי האחרון<br>3. בליינאפ לוקחים את האחרון</div></div>"
+  },
+  {
+   "k": "LST2",
+   "line": "L10",
    "d0": 0.0,
    "html": "<div style='position:absolute;left:60px;top:640px;width:800px;padding:36px 40px;background:rgba(45,36,42,.9);border-radius:36px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 56px R;color:#fff;line-height:1.55;white-space:nowrap\">1. 10 דקות סופרים מהחוף<br>2. יוצאים אחרי האחרון<br>3. בליינאפ לוקחים את האחרון</div></div>"
   }
@@ -119,7 +125,7 @@
   "L2": 0.2,
   "L3": 0.15,
   "L7": 0.15,
-  "L8": 0.5
+  "L9": 0.3
  },
  "ttop": {
   "L1": 380,
@@ -184,15 +190,15 @@
   ],
   "L8": [
    {
-    "kind": "gen",
-    "src": "/s17/gen/st_save.mp4",
+    "kind": "app",
+    "src": "/s17/gen/st_app_he.mp4",
     "a": 0.0
    }
   ],
   "L9": [
    {
-    "kind": "app",
-    "src": "/s17/gen/st_app_he.mp4",
+    "kind": "gen",
+    "src": "/s17/gen/st_save.mp4",
     "a": 0.0
    }
   ],
@@ -217,8 +223,8 @@
   "הגל האחרון עבר? רגע של שקט, חותרים החוצה.",
   "בליינאפ? קחו את האחרון בסט.",
   "אין אחריו אף גל, חוזרים רגוע.",
-  "תשמרו את זה לנסיעה הבאה לחוף.",
   "השניות בין גל לגל? זה זמן גל בתחזית של סרף טרייב.",
+  "תשמרו את זה לנסיעה הבאה לחוף.",
   "מחר בבוקר, איך לא להרוס חליפה בייבוש."
  ]
 }

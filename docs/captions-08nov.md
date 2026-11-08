@@ -3,7 +3,7 @@
 ## HE @surftribe_il, Ср 11.11
 לקחתם את הגל הראשון בסט, וכל השאר נשברו עליכם בדרך חזרה?
 
-1. 5 דקות על החוף, סופרים את הסט
+1. 10 דקות על החוף, סופרים את הסט
 2. יוצאים מיד אחרי האחרון
 3. בליינאפ לוקחים את האחרון
 
@@ -16,7 +16,7 @@
 ## EN @surftribe_world, Wed 11.11
 Took the first wave of the set and ate the rest on the paddle back?
 
-1. Sit on the sand 5 min, count the set
+1. Sit on the sand 10 min, count the set
 2. Go right after the last one
 3. Skip the first, take the last
 
