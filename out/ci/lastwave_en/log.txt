@@ -1,18 +1,18 @@
 + k=/s17/rp/lastwave_en
 + python3 build.py /s17/rp/lastwave_en
-[('L1', '/lw_hook.mp4', 0, 3.122, 0.0), ('L2', 'lw_tired.mp4', 0, 3.829, 3.122), ('L3', 'w_bridge.mp4', 0, 1.938, 6.951), ('L4', '/lw_late.mp4', 0, 2.264, 8.889), ('L5', '/lw_rise.mp4', 0, 2.648, 11.153), ('L6', 'lw_small.mp4', 0, 2.25, 13.801), ('L7', 'n/lw_out.mp4', 0, 2.131, 16.051), ('L8', 'w_app_en.mp4', 0, 3.187, 18.182), ('L9', '/lw_save.mp4', 0, 2.679, 21.369), ('L10', '/lw_tmrw.mp4', 0, 4.677, 24.048)]
-cat 28.72 T 28.725
+[('L1', '/lw_hook.mp4', 0, 3.739, 0.0), ('L2', 'lw_tired.mp4', 0, 4.064, 3.739), ('L3', 'w_bridge.mp4', 0, 2.105, 7.803), ('L4', '/lw_late.mp4', 0, 2.517, 9.908), ('L5', '/lw_rise.mp4', 0, 2.967, 12.425), ('L6', 'lw_small.mp4', 0, 2.501, 15.392), ('L7', 'n/lw_out.mp4', 0, 2.203, 17.893), ('L8', 'w_app_en.mp4', 0, 3.848, 20.096), ('L9', '/lw_save.mp4', 0, 2.833, 23.944), ('L10', '/lw_tmrw.mp4', 0, 5.034, 26.777)]
+cat 31.84 T 31.811
 + python3 ov_png.py /s17/rp/lastwave_en
-realcuts True [0.0, 3.12, 6.96, 8.88, 11.16, 13.8, 16.04, 18.16, 21.36, 24.04, 28.725]
-safe-zone violations []
+realcuts True [0.0, 3.72, 7.8, 9.92, 12.44, 15.4, 17.92, 20.12, 23.96, 26.8, 31.811]
+safe-zone violations [('TL1c', [230, 850, 1180, 1461]), ('TL2c', [230, 850, 1180, 1461])]
 ovplan 24
 + python3 ov_ff.py /s17/rp/lastwave_en
-done /s17/rp/lastwave_en/reel_lastwave_en.mp4 28.725 lufs before -15.1 gain 0.6
+done /s17/rp/lastwave_en/reel_lastwave_en.mp4 31.811 lufs before -15.0 gain 0.5
 + python3 trim_tail.py /s17/rp/lastwave_en
-trimmed /s17/rp/lastwave_en/reel_lastwave_en.mp4 28.22
+trimmed /s17/rp/lastwave_en/reel_lastwave_en.mp4 31.31
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/lastwave_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/lastwave_en/reel_lastwave_en.mp4
-/s17/rp/lastwave_en/reel_lastwave_en.mp4 before -13.0 after -14.6 peak -3.4
+/s17/rp/lastwave_en/reel_lastwave_en.mp4 before -13.1 after -14.5 peak -3.5
 + python3 post_cz.py /s17/rp/lastwave_en
 post ok
 + echo 'EXIT /s17/rp/lastwave_en 0'

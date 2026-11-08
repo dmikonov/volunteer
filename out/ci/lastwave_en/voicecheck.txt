@@ -1,12 +1,12 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=3.39 dur=2.95 | ref: One more wave and we're out? We all say that. | asr: One more wave and we're out? We all say that.
-L2 OK match=1.00 wps=3.16 dur=3.48 | ref: Your arms are already gone, and that's when people get hurt. | asr: Your arms are already gone, and that's when people get hurt.
-L3 OK match=1.00 wps=4.74 dur=1.69 | ref: So how do you know you've had enough? | asr: So how do you know you've had enough?
-L4 OK match=0.94 wps=3.78 dur=2.11 | ref: You're late on two waves in a row. | asr: You're late on two ways in a row.
-L5 OK match=1.00 wps=3.60 dur=2.50 | ref: You're slow getting up, and your feet land wrong. | asr: You're slow getting up and your feet land wrong.
-L6 OK match=1.00 wps=2.86 dur=2.10 | ref: So grab a small, easy one. | asr: So grab a small, easy one.
-L7 OK match=1.00 wps=4.37 dur=1.83 | ref: Ride it all the way to the sand. | asr: Ride it all the way to the sand.
-L8 OK match=1.00 wps=3.62 dur=3.04 | ref: Film it, and Surf Tribe will show you what went wrong. | asr: film it, and Surf Tribe will show you what went wrong.
-L9 OK match=1.00 wps=4.49 dur=2.23 | ref: Save this for the next time you're tired out there. | asr: Save this for the next time you're tired out there.
-L10 OK match=1.00 wps=2.45 dur=3.68 | ref: Tomorrow, how to get from whitewater to real waves. | asr: Tomorrow, how to get from white water to real waves.
-TOTAL wps=3.52 lines_to_check=0
+L1 OK match=1.00 wps=2.80 dur=3.57 | ref: One more wave and we're out? We all say that. | asr: One more wave, and we're out. We all say that.
+L2 OK match=1.00 wps=2.96 dur=3.71 | ref: Your arms are already gone, and that's when people get hurt. | asr: Your arms are already gone, and that's when people get hurt.
+L3 OK match=1.00 wps=4.31 dur=1.85 | ref: So how do you know you've had enough? | asr: So how do you know you've had enough?
+L4 OK match=0.90 wps=3.38 dur=2.37 | ref: You're late on two waves in a row. | asr: You're late on two ways a row.
+L5 OK match=0.96 wps=3.20 dur=2.82 | ref: You're slow getting up, and your feet land wrong. | asr: You're slow getting up and your feet lay wrong.
+L6 OK match=1.00 wps=2.55 dur=2.35 | ref: So grab a small, easy one. | asr: So grab a small, easy one.
+L7 OK match=1.00 wps=4.20 dur=1.90 | ref: Ride it all the way to the sand. | asr: Ride it all the way to the sand.
+L8 OK match=1.00 wps=2.97 dur=3.70 | ref: Film it, and Surf Tribe will show you what went wrong. | asr: film it, and Surf Tribe will show you what went wrong.
+L9 OK match=1.00 wps=4.20 dur=2.38 | ref: Save this for the next time you're tired out there. | asr: Save this for the next time you're tired out there.
+L10 OK match=1.00 wps=2.23 dur=4.03 | ref: Tomorrow, how to get from whitewater to real waves. | asr: Tomorrow, how to get from whitewater to real waves.
+TOTAL wps=3.14 lines_to_check=0
