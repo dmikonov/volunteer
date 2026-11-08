@@ -18,13 +18,14 @@ DAYS_HE = ['שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שב
 # is Director's own wording, verbatim - do not retranslate.
 SPOT_HE = {
     'Haifa - Bat Galim': 'חיפה - בת גלים',
+    'Caesarea': 'שדות ים',
     'Givat Olga - Hadera': 'גבעת אולגה - חדרה',
-    'Netanya - Sironit': 'נתניה - סירונית',
     'Tel Aviv - Hilton': 'תל אביב - הילטון',
     'Tel Aviv - Dolphinarium': 'תל אביב - דולפינריום',
     'Tel Aviv - Maravi': 'תל אביב - מערבי',
     'Bat Yam': 'בת ים',
     'Ashdod - The Lighthouse': 'אשדוד - המגדלור',
+    'Ashkelon - Delilah Beach': 'אשקלון - דלילה',
 }
 def qk(f):
     w = (f.get('quality_word') or f.get('quality') or '').lower()
@@ -216,16 +217,20 @@ def build_today(day, outdir, api_file=None):
     def spot_row(s, first=False):
         qn, qc, _ = Q.get(qk(s), (qk(s), FOAM, 0))
         wk = WIND.get(s['wind_kind'], (s['wind_kind'], 0))[0]
-        top = 'margin-top:18px' if first else 'margin-top:25px;padding-top:15px;border-top:2px solid rgba(245,241,247,.14)'
+        # 08.11 Dima: "make the daily story readable" - every text bigger (name 34,
+        # numbers 48, best time 27; 9 spots since 08.11 at full opacity); room comes from one footer
+        # line instead of two and a slightly smaller title. Floors kept: digits >= 44,
+        # gap between spots >= 24 (margin+padding).
+        top = 'margin-top:14px' if first else 'margin-top:14px;padding-top:10px;border-top:2px solid rgba(245,241,247,.18)'
         return (
             f'<div style="{top}">'
-            '<div style="display:flex;justify-content:space-between;align-items:baseline">'
-            f'<div class=k style="font-size:28px">{SPOT_HE.get(s["name"], s["name"])}</div>'
-            f'<span style="font-size:21px;font-weight:700;color:#2D242A;background:{qc};'
-            f'padding:5px 16px;border-radius:999px">{qn}</span></div>'
-            f'<div style="font-size:44px;margin-top:4px">{L(wh(s))} מ׳ · {L(s["wave_period_s"])} שנ׳ · '
-            f'{wk} {L(s["wind_kmh"])} קמ״ש</div>'
-            f'<div style="font-size:22px;margin-top:2px;opacity:.75">הכי טוב ב-{L(s["best_window"])}</div>'
+            '<div style="display:flex;justify-content:space-between;align-items:center">'
+            f'<div class=k style="font-size:33px;line-height:1.15">{SPOT_HE.get(s["name"], s["name"])}</div>'
+            f'<span style="font-size:26px;font-weight:700;color:#2D242A;background:{qc};'
+            f'padding:4px 18px;border-radius:999px">{qn}</span></div>'
+            f'<div style="font-size:48px;font-weight:700;line-height:1.08;margin-top:0">{L(wh(s))} מ׳ · {L(s["wave_period_s"])} שנ׳ · '
+            f'{wk} {L(s["wind_kmh"])}</div>'
+            f'<div style="font-size:27px;line-height:1.15;margin-top:1px">הכי טוב ב-{L(s["best_window"])}</div>'
             '</div>')
 
     uv_max = max((s.get('uv_max') or 0) for s in spots)
@@ -235,12 +240,11 @@ def build_today(day, outdir, api_file=None):
         f'<div style="position:absolute;inset:0;background:url(data:image/jpeg;base64,{bg}) center/cover;filter:brightness(.3)"></div>'
         '<div style="position:absolute;left:80px;right:80px;top:150px;bottom:110px">'
         f'<div class=k style="font-size:27px">{label(f["date"])}</div>'
-        '<div class=h style="font-size:58px;margin-top:3px">הים היום</div>'
+        '<div class=h style="font-size:52px;margin-top:3px">הים היום</div>'
         # 07.11 (Director): the subtitle was internal shop talk, not for
         # readers - dropped; also frees space toward the y<=1670 cap below.
         + ''.join(spot_row(s, i == 0) for i, s in enumerate(spots)) + uv +
-        '<div style="font-size:26px;font-weight:700;margin-top:14px">תחזית לחוף שלכם ב-SurfTribe</div>'
-        f'<div style="font-size:22px;margin-top:5px">עקבו אחרי {L("@surftribe_il")}</div></div>', 0, 0, h=1920)
+        '<div style="font-size:27px;font-weight:700;margin-top:16px">רוח בקמ״ש · תחזית לחוף שלכם ב-SurfTribe</div></div>', 0, 0, h=1920)
     from playwright.sync_api import sync_playwright
     out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
