@@ -1,0 +1,19 @@
++ k=/s17/rp/lastwave_en
++ python3 build.py /s17/rp/lastwave_en
+[('L1', '/lw_hook.mp4', 0, 3.122, 0.0), ('L2', 'lw_tired.mp4', 0, 3.829, 3.122), ('L3', 'w_bridge.mp4', 0, 1.938, 6.951), ('L4', '/lw_late.mp4', 0, 2.264, 8.889), ('L5', '/lw_rise.mp4', 0, 2.648, 11.153), ('L6', 'lw_small.mp4', 0, 2.25, 13.801), ('L7', 'n/lw_out.mp4', 0, 2.131, 16.051), ('L8', 'w_app_en.mp4', 0, 3.187, 18.182), ('L9', '/lw_save.mp4', 0, 2.679, 21.369), ('L10', '/lw_tmrw.mp4', 0, 4.677, 24.048)]
+cat 28.72 T 28.725
++ python3 ov_png.py /s17/rp/lastwave_en
+realcuts True [0.0, 3.12, 6.96, 8.88, 11.16, 13.8, 16.04, 18.16, 21.36, 24.04, 28.725]
+safe-zone violations []
+ovplan 24
++ python3 ov_ff.py /s17/rp/lastwave_en
+done /s17/rp/lastwave_en/reel_lastwave_en.mp4 28.725 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/lastwave_en
+trimmed /s17/rp/lastwave_en/reel_lastwave_en.mp4 28.22
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/lastwave_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/lastwave_en/reel_lastwave_en.mp4
+/s17/rp/lastwave_en/reel_lastwave_en.mp4 before -13.0 after -14.6 peak -3.4
++ python3 post_cz.py /s17/rp/lastwave_en
+post ok
++ echo 'EXIT /s17/rp/lastwave_en 0'
+EXIT /s17/rp/lastwave_en 0
