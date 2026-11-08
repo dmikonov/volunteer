@@ -26,7 +26,7 @@
   "Nothing behind it, easy paddle back.",
   "Check the period in Surf Tribe.",
   "Save it for the drive to the beach.",
-  "Tomorrow: why one last wave goes wrong."
+  "Tomorrow: when to call it a day."
  ],
  "titles": {
   "L1": [
@@ -72,7 +72,7 @@
    null
   ],
   "L8": [
-   "Period",
+   "Period in SurfTribe",
    "= gap between waves",
    null,
    null
@@ -86,7 +86,7 @@
  },
  "teaser": [
   "Tomorrow",
-  "Why one last wave goes wrong"
+  "When to call it a day"
  ],
  "extra": [
   {
