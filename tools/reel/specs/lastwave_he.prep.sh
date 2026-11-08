@@ -4,10 +4,10 @@ G=/s17/gen; S=out/ci/d09/src; R=out/ci/d09/review; mkdir -p $G $R
 cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
   ffmpeg -v error -y -ss $ss -t $t -i $S/$src.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:'max(0,min(iw-1080,($c0+($c1-$c0)*t/$t)*iw-540))':0,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$n.mp4; }
 cut p7938443 3.0 3.2 0.56 0.48 lw_hook
-cut p7938443 6.0 3.8 0.46 0.52 lw_tired
+cut p7938432 1.0 3.6 0.40 0.45 lw_tired
 cut m1076 3.0 3.2 0.42 0.52 lw_bridge
-cut m1075 8.5 3.6 0.40 0.55 lw_late
-cut m1127 12.0 3.2 0.50 0.56 lw_rise
+cut m1042 1.5 3.4 0.48 0.52 lw_late
+cut m1127 19.2 3.2 0.55 0.60 lw_rise
 cut m1127 15.0 2.6 0.52 0.58 lw_small
 cut p7938104 4.0 4.2 0.44 0.52 lw_out
 cut p7938106 0.5 4.0 0.40 0.45 lw_save
