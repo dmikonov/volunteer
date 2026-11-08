@@ -8,5 +8,5 @@ L6 OK match=1.00 wps=2.20 dur=3.18 | ref: Three. Skip the first, take the last. 
 L7 OK match=1.00 wps=2.43 dur=2.47 | ref: Nothing behind it, easy paddle back. | asr: Nothing behind it. Easy paddle back.
 L8 OK match=1.00 wps=3.09 dur=1.94 | ref: Check the period in Surf Tribe. | asr: Check the period in Surf Tribe.
 L9 OK match=1.00 wps=3.55 dur=2.26 | ref: Save it for the drive to the beach. | asr: Save it for the drive to the beach.
-L10 OK match=1.00 wps=2.35 dur=2.98 | ref: Tomorrow: why one last wave goes wrong. | asr: Tomorrow. Why one last wave goes wrong?
-TOTAL wps=2.70 lines_to_check=0
+L10 CHECK match=0.80 wps=3.16 dur=2.21 | ref: Tomorrow: when to call it a day. | asr: Tomorrow. Wanna call a day.
+TOTAL wps=2.78 lines_to_check=1
