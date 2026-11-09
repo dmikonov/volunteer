@@ -1,0 +1,19 @@
++ k=/s17/rp/thunder_he
++ python3 build.py /s17/rp/thunder_he
+[('L1', '/th_hook.mp4', 0.0, 2.326, 0.0), ('L2', 'th_sit_c.mp4', 0.0, 2.833, 2.326), ('L3', '/th_prom.mp4', 0.0, 1.808, 5.159), ('L4', 'paddle_c.mp4', 0.0, 2.433, 6.967), ('L5', 'helter_c.mp4', 0.0, 2.607, 9.4), ('L6', 'th_car_c.mp4', 0.0, 2.19, 12.007), ('L7', 'n/th_sky.mp4', 0.0, 3.626, 14.197), ('L8', 'n/th_app.mp4', 0.0, 2.9, 17.823), ('L9', '/th_save.mp4', 0.0, 2.484, 20.723), ('L10', '/th_tmrw.mp4', 0.0, 4.094, 23.207)]
+cat 27.32 T 27.301
++ python3 ov_png.py /s17/rp/thunder_he
+realcuts True [0.0, 2.32, 5.16, 6.96, 9.4, 12.0, 14.2, 17.84, 20.76, 23.24, 27.301]
+safe-zone violations []
+ovplan 24
++ python3 ov_ff.py /s17/rp/thunder_he
+done /s17/rp/thunder_he/reel_thunder_he.mp4 27.301 lufs before -15.0 gain 0.5
++ python3 trim_tail.py /s17/rp/thunder_he
+trimmed /s17/rp/thunder_he/reel_thunder_he.mp4 26.79
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/thunder_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/thunder_he/reel_thunder_he.mp4
+/s17/rp/thunder_he/reel_thunder_he.mp4 before -13.0 after -14.5 peak -2.5
++ python3 post_cz.py /s17/rp/thunder_he
+post ok
++ echo 'EXIT /s17/rp/thunder_he 0'
+EXIT /s17/rp/thunder_he 0
