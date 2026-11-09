@@ -12,7 +12,7 @@ done /s17/rp/lastwave_en/reel_lastwave_en.mp4 31.811 lufs before -15.0 gain 0.5
 trimmed /s17/rp/lastwave_en/reel_lastwave_en.mp4 31.31
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/lastwave_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/lastwave_en/reel_lastwave_en.mp4
-/s17/rp/lastwave_en/reel_lastwave_en.mp4 before -13.1 after -14.5 peak -3.5
+/s17/rp/lastwave_en/reel_lastwave_en.mp4 before -13.1 after -14.5 peak -3.4
 + python3 post_cz.py /s17/rp/lastwave_en
 post ok
 + echo 'EXIT /s17/rp/lastwave_en 0'
