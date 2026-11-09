@@ -1,0 +1,207 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "he",
+ "out": "reel_thunder_he.mp4",
+ "lines": [
+  "שמעתם רעם? יוצאים מהמים, עכשיו.",
+  "במים, אין שום דבר יותר גבוה מכם.",
+  "אז ככה עושים את זה נכון.",
+  "חותרים ישר לחוף, גם אם הגלים מעולים.",
+  "לא מחכים בסככה או ליד עמוד תאורה.",
+  "נכנסים לאוטו וסוגרים חלונות.",
+  "וחוזרים למים רק חצי שעה אחרי הרעם האחרון.",
+  "ולפני שנכנסים, תבדקו תחזית בסרף טרייב.",
+  "תשמרו את זה, החורף רק התחיל.",
+  "מחר בבוקר נגיד לכם איפה מתחילים לגלוש בחורף."
+ ],
+ "titles": {
+  "L1": [
+   "שמעתם רעם?",
+   "יוצאים מהמים",
+   null,
+   null
+  ],
+  "L2": [
+   "במים אתם",
+   "הדבר הכי גבוה",
+   null,
+   null
+  ],
+  "L3": [
+   "ככה עושים",
+   "את זה נכון",
+   null,
+   null
+  ],
+  "L4": [
+   "ישר לחוף",
+   "גם אם הגלים טובים",
+   null,
+   null
+  ],
+  "L5": [
+   "סככה ועמוד",
+   "זה לא מחסה",
+   null,
+   null
+  ],
+  "L6": [
+   "לאוטו",
+   "חלונות סגורים",
+   null,
+   null
+  ],
+  "L7": [
+   "חצי שעה",
+   "אחרי הרעם האחרון",
+   null,
+   null
+  ],
+  "L8": [
+   "לפני שנכנסים",
+   "בודקים תחזית",
+   null,
+   null
+  ],
+  "L9": [
+   "תשמרו",
+   "החורף רק התחיל",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "מחר",
+  "איפה להתחיל בחורף"
+ ],
+ "extra": [
+  {
+   "k": "RED",
+   "line": "L8",
+   "d0": 0.6,
+   "html": "<div style='position:absolute;left:30px;top:830px;width:380px;height:420px;border:9px solid rgba(255,81,80,.95);border-radius:36px;box-sizing:border-box'></div><div style='position:absolute;left:30px;top:1270px;width:380px;display:flex;justify-content:center'><span style=\"font:800 56px R;color:#fff;background:rgba(255,81,80,.95);padding:4px 26px;border-radius:30px\">לא נכנסים</span></div>"
+  },
+  {
+   "k": "LST",
+   "line": "L9",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">רעם? ישר לחוף<br>מחכים באוטו<br>חצי שעה, ואז חוזרים</div></div>"
+  },
+  {
+   "k": "LST2",
+   "line": "L10",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">רעם? ישר לחוף<br>מחכים באוטו<br>חצי שעה, ואז חוזרים</div></div>"
+  }
+ ],
+ "gap": 0.2,
+ "gap_after": {
+  "L2": 0.2,
+  "L3": 0.15,
+  "L7": 0.15,
+  "L9": 0.3
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L8": 380,
+  "L9": 380,
+  "L10": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_sit_c.mp4",
+    "a": 0.0
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_prom.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_paddle_c.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_shelter_c.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_car_c.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_sky.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/th_app.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_save.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/th_tmrw.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "בסרף טרייב": "ב-SurfTribe",
+  "סרף טרייב": "SurfTribe"
+ },
+ "f5": true
+}
