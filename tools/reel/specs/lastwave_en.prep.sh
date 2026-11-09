@@ -6,7 +6,7 @@ cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
 cut p7938443 3.0 3.2 0.56 0.48 lw_hook
 cut p7938432 1.0 3.6 0.40 0.45 lw_tired
 cut m1076 3.0 3.2 0.42 0.52 lw_bridge
-cut m1042 1.5 3.4 0.48 0.52 lw_late
+cut p7938432 5.0 3.4 0.45 0.50 lw_late
 cut m1127 19.2 3.2 0.55 0.60 lw_rise
 cut m1127 15.0 2.6 0.52 0.58 lw_small
 cut p7938104 4.0 4.2 0.44 0.52 lw_out
