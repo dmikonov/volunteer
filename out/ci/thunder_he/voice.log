@@ -3,7 +3,7 @@ take 0 0 wer 0.0 dur 3.05 | שמעתם רעם? יוצאים מהמים עכשי�
 take 0 1 wer 0.0 dur 3.05 | שמעתם רעם יוצאים מהמים עכשיו.
 take 0 2 wer 0.4 dur 3.05 | ארכיב, שמעתם רם? יוצאים מהמים עכשיו?
 take 1 3 wer 0.0 dur 3.02 | במים אין שום דבר יותר גבוה מכם.
-take 1 4 wer 0.0 dur 3.02 | במים אין שום דבר יותר גבוה מכם
+take 1 4 wer 0.0 dur 3.02 | במים אין שום דבר יותר גבוה מכם.
 take 1 5 wer 0.0 dur 3.02 | במים אין שום דבר יותר גבוה מכם.
 take 2 6 wer 0.0 dur 1.95 | אז ככה עושים את זה נכון.
 take 2 7 wer 0.0 dur 1.95 | אז ככה עושים את זה נכון.
@@ -11,8 +11,8 @@ take 2 8 wer 0.0 dur 1.95 | אז ככה עושים את זה נכון.
 take 3 9 wer 0.286 dur 3.15 | חותרים ישר לחוף גם עם עגלים מעולים
 take 3 10 wer 0.286 dur 3.15 | חותרים ישר לחוף גם עם עגלים מעולים.
 take 3 11 wer 0.286 dur 3.15 | חותרים ישר לחוף גם עם עגלים מעולים.
-take 4 12 wer 0.0 dur 3.3 | לא מחכים בסככה או ליד עמוד תאורה.
-take 4 13 wer 0.0 dur 3.3 | לא מחכים בסככה או ליד עמוד תאורה
+take 4 12 wer 0.143 dur 3.3 | לא מחקים בסככה או ליד עמוד תאורה.
+take 4 13 wer 0.0 dur 3.3 | לא מחכים בסככה או ליד עמוד תאורה.
 take 4 14 wer 0.0 dur 3.3 | לא מחכים בסככה או ליד עמוד תאורה.
 take 5 15 wer 0.0 dur 2.55 | נכנסים לאוטו וסוגרים חלונות.
 take 5 16 wer 0.0 dur 2.55 | נכנסים לאוטו וסוגרים חלונות.
@@ -23,20 +23,20 @@ take 6 20 wer 0.0 dur 3.8 | וחוזרים למים רק חצי שעה אחרי 
 take 8 21 wer 0.0 dur 2.4 | תשמרו את זה, החורף רק התחיל.
 take 8 22 wer 0.0 dur 2.4 | תשמרו את זה, החורף רק התחיל.
 take 8 23 wer 0.0 dur 2.4 | תשמרו את זה, החורף רק התחיל.
-take 7 24 wer 0.333 dur 3.83 | ולפני שנכנסים תבדקו תחזית בסרפט רייב.
-take 7 25 wer 0.0 dur 3.83 | ולפני שנכנסים תבדקו תחזית בסרף טרייב.
-take 7 26 wer 0.333 dur 3.83 | ולפני שנכנסים תבדקו תחזית בסרפט רייב
+take 7 24 wer 0.333 dur 3.83 | ולפני שנכנסים, תבדקו תחזית בסרפטרייב.
+take 7 25 wer 0.333 dur 3.83 | ולפני שנכנסים תבדקו תחזית בסרפט רייב.
+take 7 26 wer 0.333 dur 3.83 | ולפני שנכנסים תבדקו תחזית בסרפטרייב
 take 9 27 wer 0.125 dur 4.03 | ביי, מחר בבוקר נגיד לכם איפה מתחילים לגלוש בחורף.
 take 9 28 wer 0.0 dur 4.03 | מחר בבוקר נגיד לכם איפה מתחילים לגלוש בחורף.
 take 9 29 wer 0.0 dur 4.03 | מחר בבוקר נגיד לכם איפה מתחילים לגלוש בחורף.
-PICK 0 wer 0.0 | final level (-1.1 st, expected fall) | pitch 108 Hz (level -1.5 st) | range 14.3 st | שמעתם רעם יוצאים מהמים עכשיו.
+PICK 0 wer 0.0 | final level (-1.1 st, expected fall) | pitch 108 Hz (level -1.6 st) | range 14.3 st | שמעתם רעם יוצאים מהמים עכשיו.
 PICK 1 wer 0.0 | final fall (-7.8 st, expected fall) | pitch 123 Hz (level +0.7 st) | range 8.4 st | במים אין שום דבר יותר גבוה מכם.
-PICK 2 wer 0.0 | final fall (-5.6 st, expected fall) | pitch 114 Hz (level -0.6 st) | range 7.6 st | אז ככה עושים את זה נכון.
-PICK 3 wer 0.286 | final fall (-3.0 st, expected fall) | pitch 118 Hz (level +0.1 st) | range 14.6 st | חותרים ישר לחוף גם עם עגלים מעולים.
-PICK 4 wer 0.0 | final fall (-1.7 st, expected fall) | pitch 118 Hz (level +0.1 st) | range 7.7 st | לא מחכים בסככה או ליד עמוד תאורה.
+PICK 2 wer 0.0 | final fall (-5.6 st, expected fall) | pitch 114 Hz (level -0.7 st) | range 7.6 st | אז ככה עושים את זה נכון.
+PICK 3 wer 0.286 | final fall (-3.0 st, expected fall) | pitch 118 Hz (level +0.0 st) | range 14.6 st | חותרים ישר לחוף גם עם עגלים מעולים.
+PICK 4 wer 0.0 | final fall (-1.7 st, expected fall) | pitch 118 Hz (level +0.0 st) | range 7.7 st | לא מחכים בסככה או ליד עמוד תאורה.
 PICK 5 wer 0.0 | final fall (-6.3 st, expected fall) | pitch 105 Hz (level -2.0 st) | range 13.4 st | נכנסים לאוטו וסוגרים חלונות.
 PICK 6 wer 0.0 | final fall (-3.0 st, expected fall) | pitch 120 Hz (level +0.3 st) | range 10.1 st | וחוזרים למים רק חצי שעה אחרי הרעם האחרון.
-PICK 7 wer 0.0 | final fall (-5.0 st, expected fall) | pitch 140 Hz (level +3.0 st) | range 15.9 st | ולפני שנכנסים תבדקו תחזית בסרף טרייב.
-PICK 8 wer 0.0 | final fall (-1.5 st, expected fall) | pitch 118 Hz (level +0.1 st) | range 8.8 st | תשמרו את זה, החורף רק התחיל.
-PICK 9 wer 0.0 | final fall (-5.4 st, expected fall) | pitch 118 Hz (level +0.1 st) | range 9.6 st | מחר בבוקר נגיד לכם איפה מתחילים לגלוש בחורף.
-he f5 T 27.301 [('L1', 0.12, np.float64(2.11), 0.0), ('L2', np.float64(2.426), np.float64(2.43), 0.0), ('L3', np.float64(5.259), np.float64(1.46), 0.0), ('L4', np.float64(7.067), np.float64(2.23), 0.29), ('L5', np.float64(9.5), np.float64(2.41), 0.0), ('L6', np.float64(12.107), np.float64(1.99), 0.0), ('L7', np.float64(14.297), np.float64(3.28), 0.0), ('L8', np.float64(17.923), np.float64(2.7), 0.0), ('L9', np.float64(20.823), np.float64(1.98), 0.0), ('L10', np.float64(23.307), np.float64(3.09), 0.0)]
+PICK 7 wer 0.333 | final fall (-1.9 st, expected fall) | pitch 125 Hz (level +1.0 st) | range 14.8 st | ולפני שנכנסים, תבדקו תחזית בסרפטרייב.
+PICK 8 wer 0.0 | final fall (-1.5 st, expected fall) | pitch 118 Hz (level +0.0 st) | range 8.8 st | תשמרו את זה, החורף רק התחיל.
+PICK 9 wer 0.0 | final fall (-5.4 st, expected fall) | pitch 118 Hz (level +0.0 st) | range 9.6 st | מחר בבוקר נגיד לכם איפה מתחילים לגלוש בחורף.
+he f5 T 27.876 [('L1', 0.12, np.float64(2.11), 0.0), ('L2', np.float64(2.426), np.float64(2.43), 0.0), ('L3', np.float64(5.259), np.float64(1.46), 0.0), ('L4', np.float64(7.067), np.float64(2.23), 0.29), ('L5', np.float64(9.5), np.float64(2.41), 0.0), ('L6', np.float64(12.107), np.float64(1.99), 0.0), ('L7', np.float64(14.297), np.float64(3.28), 0.0), ('L8', np.float64(17.923), np.float64(3.28), 0.33), ('L9', np.float64(21.399), np.float64(1.98), 0.0), ('L10', np.float64(23.882), np.float64(3.09), 0.0)]

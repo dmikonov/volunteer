@@ -1,0 +1,19 @@
++ k=/s17/rp/sunset_en
++ python3 build.py /s17/rp/sunset_en
+[('L1', '/en_hook.mp4', 0.0, 4.918, 0.0), ('L2', '/en_dark.mp4', 0.0, 4.806, 4.918), ('L3', 'n_bridge.mp4', 0.0, 1.219, 9.724), ('L4', 'n/en_sun.mp4', 0.0, 3.575, 10.943), ('L5', 'en_buddy.mp4', 0.0, 2.572, 14.518), ('L6', 'n/en_set.mp4', 0.0, 3.652, 17.09), ('L7', 'n/en_car.mp4', 0.0, 3.313, 20.742), ('L8', 'n/en_app.mp4', 0.0, 4.229, 24.055), ('L9', '/en_save.mp4', 0.0, 2.48, 28.284), ('L10', '/en_tmrw.mp4', 0.0, 3.509, 30.764)]
+cat 34.24 T 34.273
++ python3 ov_png.py /s17/rp/sunset_en
+realcuts True [0.0, 4.92, 9.72, 10.92, 14.48, 17.04, 20.68, 24.0, 28.24, 30.72, 34.273]
+safe-zone violations []
+ovplan 23
++ python3 ov_ff.py /s17/rp/sunset_en
+done /s17/rp/sunset_en/reel_sunset_en.mp4 34.273 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/sunset_en
+trimmed /s17/rp/sunset_en/reel_sunset_en.mp4 33.77
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/sunset_en/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/sunset_en/reel_sunset_en.mp4
+/s17/rp/sunset_en/reel_sunset_en.mp4 before -13.0 after -14.5 peak -2.9
++ python3 post_cz.py /s17/rp/sunset_en
+post ok
++ echo 'EXIT /s17/rp/sunset_en 0'
+EXIT /s17/rp/sunset_en 0
