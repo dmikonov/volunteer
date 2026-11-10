@@ -3,7 +3,7 @@
 # Pexels 5902497 (dark patches near shore), st_rip1 from rip3 (rip channel, jetty at the end), Pexels 18224893 (sandy beach aerial), 20256023 (coast aerial).
 G=/s17/gen; S=out/ci/d11/src; R=out/ci/d11/review; mkdir -p $G $R /tmp/px
 [ -f $G/sp_tmrw.mp4 ] && exit 0
-ROCK=${ROCK:-m1081}; RSS=${RSS:-1.8}; RC=${RC:-0.45}
+ROCK=${ROCK:-m9294}; RSS=${RSS:-0.0}; RC=${RC:-0.30}
 cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
   ffmpeg -v error -y -ss $ss -t $t -i $S/$src.mp4 -vf "scale=-2:1920:flags=lanczos,crop=1080:1920:'max(0,min(iw-1080,($c0+($c1-$c0)*t/$t)*iw-540))':0,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$n.mp4; }
 cut p9823083 0.0 4.2 0.60 0.64 sp_hook
