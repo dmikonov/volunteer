@@ -20,6 +20,6 @@ gen th_shelter2 "crop=iw:ih:0:0" th_shelter_c
 gen th_car2 "crop=iw*0.86:ih*0.86:iw*0.07:0"
 cut p8713103 0.0 3.6 0.50 0.50 th_shore
 cut p8713104 13.0 4.0 0.50 0.50 th_back
-ffmpeg -v error -y -ss 2.0 -t 4.2 -i app-screens/forecast/forecast_he_best.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=600:450:365:1150,scale=1080:810:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:660,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/th_app.mp4
+ffmpeg -v error -y -ss 2.0 -t 4.2 -i app-screens/forecast/forecast_he_best.mp4 -filter_complex "[0:v]fps=25,split=2[a][b];[a]crop=1080:1920:0:209,boxblur=28,eq=brightness=-0.28[bg];[b]crop=715:450:365:1150,scale=1080:680:flags=lanczos,unsharp=5:5:0.4[fg];[bg][fg]overlay=0:660,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/th_app.mp4
 for f in $G/th_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 $R/cut_$n.jpg; done
 ls -la $G/th_*

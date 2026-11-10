@@ -17,5 +17,5 @@ json.dump(out,open(p,'w'))
 PY
 sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
 for f in $W/*.mp4; do n=$(basename $f .mp4); ffmpeg -nostdin -v error -y -i $f -vf "fps=5,scale=200:-1,tile=9x2" -frames:v 1 out/ci/d10/review/wan_$n.jpg; ffprobe -v error -show_entries stream=width,height:format=duration -of csv=p=0 $f | tr '\n' ' ' > out/ci/d10/review/wan_$n.info; done
-printf "thunder_he\nsunset_en\n" > tools/reel/ci/NAMES
+printf "thunder_he\n" > tools/reel/ci/NAMES
 timeout 2700 bash tools/reel/ci/build_reels.sh
