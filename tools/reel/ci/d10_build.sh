@@ -3,7 +3,7 @@ set -x
 sudo mkdir -p /s17/gen && sudo chown -R $USER /s17
 W=out/ci/d10/gen; mkdir -p $W out/ci/d10/takes out/ci/d10/review
 B=https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space/--replicas/lptw2/gradio_api/file=/tmp/gradio
-while read n u; do [ -s $W/$n.mp4 ] || curl -sSfL --retry 2 -m 120 -o $W/$n.mp4 "$B/$u" || echo "WAN LOST $n"; done < tools/reel/ci/d10_wan.txt
+while read n u; do case $u in http*) U=$u;; *) U=$B/$u;; esac; [ -s $W/$n.mp4 ] || curl -sSfL --retry 2 -m 120 -o $W/$n.mp4 "$U" || echo "WAN LOST $n"; done < tools/reel/ci/d10_wan.txt
 python3 - <<'PY'
 import json, os, subprocess as sp, hashlib
 p='tools/reel/specs/thunder_he.takes.json'; tk=json.load(open(p)); out=[]

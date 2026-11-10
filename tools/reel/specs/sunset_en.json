@@ -7,7 +7,41 @@
   []
  ],
  "app_lines": [],
- "v2subs": {},
+ "v2subs": {
+  "L1": [
+   "Sunset session in November?",
+   "It gets dark way faster than you think."
+  ],
+  "L2": [
+   "So when is it actually time to go in?"
+  ],
+  "L3": [
+   "The sun touches the water.",
+   "Take your next wave in."
+  ],
+  "L4": [
+   "Can't spot your buddy out there?",
+   "Go in."
+  ],
+  "L5": [
+   "A set shows up before you saw it?",
+   "You're already late."
+  ],
+  "L6": [
+   "Then pack up",
+   "and watch the rest from the car."
+  ],
+  "L7": [
+   "Or go early.",
+   "shows the best hour of the day."
+  ],
+  "L8": [
+   "Save it, the days are short now."
+  ],
+  "L9": [
+   "Tomorrow: why you're slow once you're up."
+  ]
+ },
  "v2_sub_top": 1358,
  "logo": {
   "top": 240,
@@ -18,11 +52,11 @@
  "out": "reel_sunset_en.mp4",
  "lines": [
   "Sunset session in November? It gets dark way faster than you think.",
-  "So when is it time to go in?",
+  "So when is it actually time to go in?",
   "The sun touches the water. Take your next wave in.",
   "Can't spot your buddy out there? Go in.",
   "A set shows up before you saw it? You're already late.",
-  "Last wave in, and you watch the rest from the car.",
+  "Then pack up and watch the rest from the car.",
   "Or go early. Surf Tribe shows the best hour of the day.",
   "Save it, the days are short now.",
   "Tomorrow: why you're slow once you're up."
@@ -59,8 +93,8 @@
    null
   ],
   "L6": [
-   "Out before",
-   "dark",
+   "Pack up",
+   "watch from the car",
    null,
    null
   ],
@@ -86,13 +120,7 @@
    "k": "LST",
    "line": "L8",
    "d0": 0,
-   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;text-align:left'><div style=\"font:800 52px R;color:#fff;line-height:1.5;white-space:nowrap\">Sun on the water: last wave<br>Lost your buddy: go in<br>Surprised by a set: late</div></div>"
-  },
-  {
-   "k": "LST2",
-   "line": "L9",
-   "d0": 0,
-   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;text-align:left'><div style=\"font:800 52px R;color:#fff;line-height:1.5;white-space:nowrap\">Sun on the water: last wave<br>Lost your buddy: go in<br>Surprised by a set: late</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;text-align:left'><div style=\"font:800 54px R;color:#fff;line-height:1.5;white-space:nowrap\">Sun on the water: next wave in<br>Lost your buddy: go in<br>Surprised by a set: late</div></div>"
   }
  ],
  "gap": 0.15,
@@ -100,7 +128,7 @@
   "L1": 0.2,
   "L2": 0.1,
   "L5": 0.15,
-  "L8": 0.3
+  "L8": 0.5
  },
  "ttop": {
   "L1": 250,
@@ -138,7 +166,7 @@
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/en_buddy.mp4",
+    "src": "/s17/gen/en_dark.mp4",
     "a": 0.0
    }
   ],
