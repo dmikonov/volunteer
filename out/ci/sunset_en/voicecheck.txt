@@ -1,11 +1,11 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 L1 OK match=1.00 wps=2.26 dur=5.31 | ref: Sunset session in November? It gets dark way faster than you think. | asr: Sunset Session in November, it gets dark way faster than you think.
-L2 OK match=0.88 wps=5.89 dur=1.36 | ref: So when is it time to go in? | asr: So when's the time to go in?
+L2 OK match=1.00 wps=4.68 dur=1.92 | ref: So when is it actually time to go in? | asr: So when is it actually time to go in?
 L3 OK match=0.93 wps=2.81 dur=3.56 | ref: The sun touches the water. Take your next wave in. | asr: The sun touches the water. Take a next wave in.
 L4 OK match=1.00 wps=3.22 dur=2.48 | ref: Can't spot your buddy out there? Go in. | asr: Can't spot your buddy out there? Go in.
 L5 OK match=1.00 wps=3.07 dur=3.58 | ref: A set shows up before you saw it? You're already late. | asr: A set shows up before you saw it. You're already late.
-L6 OK match=1.00 wps=3.52 dur=3.12 | ref: Last wave in, and you watch the rest from the car. | asr: Last wave in and you watch the rest from the car.
+L6 OK match=1.00 wps=3.68 dur=2.72 | ref: Then pack up and watch the rest from the car. | asr: Then pack up and watch the rest from the car.
 L7 OK match=1.00 wps=2.74 dur=4.37 | ref: Or go early. Surf Tribe shows the best hour of the day. | asr: or go early. Surf Tribe shows the best hour of the day.
 L8 OK match=1.00 wps=2.84 dur=2.47 | ref: Save it, the days are short now. | asr: Save it. The days are short now.
 L9 OK match=1.00 wps=2.56 dur=2.73 | ref: Tomorrow: why you're slow once you're up. | asr: Tomorrow. Why you're slow once you're up.
-TOTAL wps=2.97 lines_to_check=0
+TOTAL wps=2.95 lines_to_check=0
