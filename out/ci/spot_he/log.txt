@@ -1,11 +1,20 @@
 + k=/s17/rp/spot_he
 + python3 build.py /s17/rp/spot_he
-Traceback (most recent call last):
-  File "/s17/rp/build.py", line 25, in <module>
-    sd = dur(src); sdur = round(dm * spd, 3)
-  File "/s17/rp/build.py", line 10, in dur
-    h, m, s = r.split('Duration: ')[1].split(',')[0].split(':'); return int(h) * 3600 + int(m) * 60 + float(s)
-              ~~~~~~~~~~~~~~~~~~~~~^^^
-IndexError: list index out of range
-+ echo 'EXIT /s17/rp/spot_he 1'
-EXIT /s17/rp/spot_he 1
+[('L1', '/sp_hook.mp4', 0.0, 4.22, 0.0), ('L2', 'sp_rocks.mp4', 0.0, 3.923, 4.22), ('L3', '/sp_look.mp4', 0.0, 4.188, 8.143), ('L4', '/sp_dark.mp4', 0.0, 4.756, 12.331), ('L5', '/st_rip1.mp4', 3.0, 5.272, 17.087), ('L6', '/sp_fall.mp4', 0.0, 2.591, 22.359), ('L7', '/sp_send.mp4', 0.0, 3.091, 24.95), ('L8', 'n/sp_app.mp4', 0.0, 5.263, 28.041), ('L9', '/sp_tmrw.mp4', 0.0, 4.475, 33.304)]
+cat 37.84 T 37.779
++ python3 ov_png.py /s17/rp/spot_he
+realcuts True [0.0, 4.24, 8.16, 12.36, 17.12, 22.4, 25.0, 28.08, 33.36, 37.779]
+V2 SUB NOT IN VOICE L8 תשאלו את המאמן באפליקציה של SurfTribe.
+safe-zone violations []
+ovplan 39
++ python3 ov_ff.py /s17/rp/spot_he
+done /s17/rp/spot_he/reel_spot_he.mp4 37.779 lufs before -15.2 gain 0.7
++ python3 trim_tail.py /s17/rp/spot_he
+trimmed /s17/rp/spot_he/reel_spot_he.mp4 37.21
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/spot_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/spot_he/reel_spot_he.mp4
+/s17/rp/spot_he/reel_spot_he.mp4 before -13.0 after -14.5 peak -3.1
++ python3 post_cz.py /s17/rp/spot_he
+post ok
++ echo 'EXIT /s17/rp/spot_he 0'
+EXIT /s17/rp/spot_he 0
