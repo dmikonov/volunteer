@@ -5,8 +5,8 @@
  "app_lines": [],
  "v2subs": {
   "L1": [
-   "שמתם לב שמדריכים תמיד לוקחים",
-   "מתחילים לחוף הכי משעמם?"
+   "שמתם לב שמדריכים תמיד לוקחים מתחילים",
+   "לחוף הכי משעמם?"
   ],
   "L2": [
    "בחורף הים חזק,",
@@ -35,8 +35,8 @@
    "תשאלו את המאמן ב-SurfTribe."
   ],
   "L9": [
-   "מחר בבוקר נסביר למה גולשים ותיקים",
-   "משתמשים בזרם הזה."
+   "מחר בבוקר, איך ותיקים מנצלים את הזרם,",
+   "ולמה מתחילים לא."
   ]
  },
  "v2_sub_top": 1358,
@@ -56,7 +56,7 @@
   "על חול נופלים למים וקמים, זה הכול.",
   "שלחו את זה למי שבא איתכם לים בשבת.",
   "לא בטוחים? תשאלו את המאמן בסרף טרייב.",
-  "מחר בבוקר נסביר למה גולשים ותיקים משתמשים בזרם הזה."
+  "מחר בבוקר, איך ותיקים מנצלים את הזרם, ולמה מתחילים לא."
  ],
  "titles": {
   "L1": [
@@ -110,7 +110,7 @@
  },
  "teaser": [
   "מחר",
-  "למה ותיקים משתמשים בזרם"
+  "ותיקים מנצלים זרם, מתחילים לא"
  ],
  "extra": [
   {
@@ -143,6 +143,18 @@
    "line": "L9",
    "d0": 0,
    "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 58px R;color:#fff;line-height:1.5;white-space:nowrap\">כתמים כהים? כנראה סלעים<br>פס בלי גלים? זרם<br>חוף חול? נכנסים</div></div>"
+  },
+  {
+   "k": "LST3",
+   "line": "L8",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right'><div style=\"font:800 58px R;color:#fff;line-height:1.5;white-space:nowrap\">כתמים כהים? כנראה סלעים<br>פס בלי גלים? זרם<br>חוף חול? נכנסים</div></div>"
+  },
+  {
+   "k": "CHP",
+   "line": "L3",
+   "d0": 1.2,
+   "html": "<div style='position:absolute;left:70px;top:1010px;width:780px;display:flex;flex-direction:column;align-items:flex-end;gap:22px;direction:rtl'><span style=\"font:800 54px R;color:#fff;background:rgba(45,36,42,.85);padding:10px 30px;border-radius:30px;white-space:nowrap\">1. כתמים כהים במים</span><span style=\"font:800 54px R;color:#fff;background:rgba(45,36,42,.85);padding:10px 30px;border-radius:30px;white-space:nowrap\">2. פס בלי גלים ליד המזח</span></div>"
   }
  ],
  "gap": 0.2,
@@ -222,8 +234,8 @@
   ],
   "L8": [
    {
-    "kind": "app",
-    "src": "/s17/gen/sp_app.mp4",
+    "kind": "gen",
+    "src": "/s17/gen/sp_appbg.mp4",
     "a": 0.0
    }
   ],
@@ -249,7 +261,7 @@
   "על חול נופלים למים וקמים, זה הכול.",
   "שלחו את זה למי שבא איתכם לים בשבת.",
   "לא בטוחים? תשאלו את המאמן בסרף טרייב.",
-  "מחר בבוקר נסביר למה גולשים ותיקים משתמשים בזרם הזה."
+  "מחר בבוקר, איך ותיקים מנצלים את הזרם, ולמה מתחילים לא."
  ],
  "recap": [
   "",

@@ -20,7 +20,8 @@ cut p20256023 1.5 4.0 0.50 0.54 sp_tmrw
 # app: "שאלו את המאמן" button (HE recording 28.09 15:24 at 11.6 s) big over the sandy beach aerial
 ffmpeg -v error -y -ss 11.6 -i app-screens/ScreenRecording_09-28-2026_15-24-29_1.mp4 -frames:v 1 /tmp/px/he_coach.png
 cut p20256023 8.0 4.0 0.50 0.52 sp_appbg
-ffmpeg -v error -y -i $G/sp_appbg.mp4 -loop 1 -i /tmp/px/he_coach.png -filter_complex "[1:v]crop=980:220:50:1440,scale=1080:242:flags=lanczos[fg];[0:v][fg]overlay=0:1060:shortest=1,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/sp_app.mp4
-rm -f $G/sp_appbg.mp4
+# r6: no button band (blind viewer: fake UI); coach named in voice, title and subtitle
+: ffmpeg -v error -y -i $G/sp_appbg.mp4 -loop 1 -i /tmp/px/he_coach.png -filter_complex "[1:v]crop=980:220:50:1440,scale=1080:242:flags=lanczos[fg];[0:v][fg]overlay=0:1060:shortest=1,fps=25,format=yuv420p[v]" -map "[v]" -an -c:v libx264 -crf 14 $G/sp_app.mp4
+
 for f in $G/sp_*.mp4; do n=$(basename $f .mp4); ffmpeg -v error -y -i $f -vf "fps=4,scale=180:-2,tile=16x1" -frames:v 1 $R/cut_$n.jpg; done
 ls -la $G/sp_*
