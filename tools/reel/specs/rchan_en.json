@@ -1,0 +1,283 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "app_lines": [],
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "en",
+ "out": "reel_rchan_en.mp4",
+ "lines": [
+  "Nobody tells you why good surfers paddle out where no waves break.",
+  "That calm strip is a rip, pulling the water back out to sea.",
+  "For them it's a free ride to the lineup. Two moves.",
+  "One. From the sand, find the gap where the waves don't break.",
+  "Two. Paddle out in it, then slide sideways to the peak.",
+  "You get there with fresh arms.",
+  "New to surfing? Stay out of rips. Caught in one? Paddle parallel to the beach.",
+  "Save it for the next paddle-out that takes forever.",
+  "Bigger swell, stronger rip. Check the wave height in Surf Tribe first.",
+  "Tomorrow, why big boards aren't just for beginners."
+ ],
+ "edge": true,
+ "rate": "-12%",
+ "v2subs": {
+  "L1": [
+   "Nobody tells you why good surfers",
+   "paddle out where no waves break."
+  ],
+  "L2": [
+   "That calm strip is a rip,",
+   "pulling the water back out to sea."
+  ],
+  "L3": [
+   "For them it's a free ride",
+   "to the lineup. Two moves."
+  ],
+  "L4": [
+   "One. From the sand,",
+   "find the gap",
+   "where the waves don't break."
+  ],
+  "L5": [
+   "Two. Paddle out in it,",
+   "then slide sideways to the peak."
+  ],
+  "L6": [
+   "You get there",
+   "with fresh arms."
+  ],
+  "L7": [
+   "New to surfing? Stay out of rips.",
+   "Caught in one?",
+   "Paddle parallel to the beach."
+  ],
+  "L8": [
+   "Save it for the next",
+   "paddle-out that takes forever."
+  ],
+  "L9": [
+   "Bigger swell, stronger rip.",
+   "Check the wave height",
+   "in SurfTribe first."
+  ],
+  "L10": [
+   "Tomorrow, why big boards",
+   "aren't just for beginners."
+  ]
+ },
+ "titles": {
+  "L1": [
+   "Good surfers paddle",
+   "where no waves break",
+   null,
+   null
+  ],
+  "L2": [
+   "That calm strip",
+   "is a rip",
+   null,
+   null
+  ],
+  "L3": [
+   "A free ride out",
+   "two moves",
+   null,
+   null
+  ],
+  "L4": [
+   "1. Find the gap",
+   "where waves don't break",
+   null,
+   null
+  ],
+  "L5": [
+   "2. Paddle out in it",
+   "then slide to the peak",
+   null,
+   null
+  ],
+  "L6": [
+   "Fresh arms",
+   "at the lineup",
+   null,
+   null
+  ],
+  "L7": [
+   "New to surfing?",
+   "stay out of rips",
+   null,
+   null
+  ],
+  "L8": [
+   "Save this",
+   "for long paddle-outs",
+   null,
+   null
+  ],
+  "L9": [
+   "Bigger swell",
+   "stronger rip",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "Tomorrow",
+  "Big boards aren't just for beginners"
+ ],
+ "extra": [
+  {
+   "k": "FOLLOW",
+   "line": "L1",
+   "d0": 1.6,
+   "d1": 3.4,
+   "html": "<style>.fl::before{content:'';position:absolute;inset:-26px -50px;z-index:-1;background:radial-gradient(closest-side,rgba(45,36,42,.6),rgba(45,36,42,.4) 60%,rgba(45,36,42,0))}</style><div style='position:absolute;top:1020px;left:70px;width:780px;display:flex;justify-content:center;direction:ltr'><span class='fl' style=\"white-space:nowrap;font:700 54px R;position:relative;color:#fff;text-shadow:0 2px 5px rgba(45,36,42,.75),0 4px 16px rgba(45,36,42,.6)\">Follow for a surf tip every day</span></div>"
+  },
+  {
+   "k": "ARW",
+   "line": "L2",
+   "d0": 0.3,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M300 1150 L300 470\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M334 531 L300 470 L266 531\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+  },
+  {
+   "k": "RING",
+   "line": "L4",
+   "d0": 0.4,
+   "html": "<div style='position:absolute;left:600px;top:540px;width:460px;height:700px;border:9px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div>"
+  },
+  {
+   "k": "ARW2",
+   "line": "L5",
+   "d0": 0.3,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M860 980 L520 1190\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M555 1129 L520 1190 L590 1186\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+  },
+  {
+   "k": "ARW3",
+   "line": "L7",
+   "d0": 1.6,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M200 760 L880 760\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M819 794 L880 760 L819 726\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+  },
+  {
+   "k": "LST",
+   "line": "L8",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">No breaking waves? Rip<br>Paddle out in it<br>Slide to the peak<br>Beginners: stay out</div></div>"
+  },
+  {
+   "k": "LST2",
+   "line": "L10",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">No breaking waves? Rip<br>Paddle out in it<br>Slide to the peak<br>Beginners: stay out</div></div>"
+  }
+ ],
+ "gap": 0.15,
+ "gap_after": {
+  "L2": 0.2,
+  "L3": 0.1,
+  "L6": 0.15,
+  "L7": 0.15,
+  "L9": 0.3
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L8": 380,
+  "L9": 380,
+  "L10": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_side.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_rip2.mp4",
+    "a": 0.5
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_out.mp4",
+    "a": 0,
+    "dd": 1.8
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_big.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_gap.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_lineup.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_par.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_save.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_app_en.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_tmrw_en.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "Surf Tribe": "SurfTribe"
+ },
+ "recap": [
+  "",
+  []
+ ]
+}

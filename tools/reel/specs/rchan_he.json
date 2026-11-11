@@ -1,0 +1,286 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "app_lines": [],
+ "v2_sub_top": 1358,
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "he",
+ "out": "reel_rchan_he.mp4",
+ "lines": [
+  "למה גולשים ותיקים חותרים החוצה בדיוק איפה שאין גלים?",
+  "כי שם יש זרם, והוא מחזיר לים את המים שהגלים זרקו לחוף.",
+  "בשבילם זה טרמפ חינם לליינאפ. ככה משתמשים בו.",
+  "מהחוף מחפשים פס שהגלים לא נשברים בו.",
+  "חותרים בתוכו, וקצת לפני השבירה זזים הצידה לגל.",
+  "ומגיעים לליינאפ עם ידיים טריות.",
+  "רק התחלתם לגלוש? לא נכנסים לזרם. ואם הוא תפס, חותרים במקביל לחוף.",
+  "שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.",
+  "ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בסרף טרייב.",
+  "מחר בבוקר, איך מתלבשים ברוח ולא קופאים."
+ ],
+ "ref_lines": [
+  "למה גולשים ותיקים חותרים החוצה בדיוק איפה שאין גלים?",
+  "כי שם יש זרם, והוא מחזיר לים את המים שהגלים זרקו לחוף.",
+  "בשבילם זה טרמפ חינם לליינאפ. ככה משתמשים בו.",
+  "מהחוף מחפשים פס שהגלים לא נשברים בו.",
+  "חותרים בתוכו, וקצת לפני השבירה זזים הצידה לגל.",
+  "ומגיעים לליינאפ עם ידיים טריות.",
+  "רק התחלתם לגלוש? לא נכנסים לזרם. ואם הוא תפס, חותרים במקביל לחוף.",
+  "שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.",
+  "ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בסרף טרייב.",
+  "מחר בבוקר, איך מתלבשים ברוח ולא קופאים."
+ ],
+ "f5": true,
+ "v2subs": {
+  "L1": [
+   "למה גולשים ותיקים חותרים",
+   "החוצה בדיוק איפה שאין גלים?"
+  ],
+  "L2": [
+   "כי שם יש זרם, והוא מחזיר לים",
+   "את המים שהגלים זרקו לחוף."
+  ],
+  "L3": [
+   "בשבילם זה טרמפ חינם לליינאפ.",
+   "ככה משתמשים בו."
+  ],
+  "L4": [
+   "מהחוף מחפשים פס",
+   "שהגלים לא נשברים בו."
+  ],
+  "L5": [
+   "חותרים בתוכו, וקצת לפני",
+   "השבירה זזים הצידה לגל."
+  ],
+  "L6": [
+   "ומגיעים לליינאפ עם ידיים טריות."
+  ],
+  "L7": [
+   "רק התחלתם לגלוש?",
+   "לא נכנסים לזרם.",
+   "ואם הוא תפס, חותרים במקביל לחוף."
+  ],
+  "L8": [
+   "שמרו את זה לבוקר הבא",
+   "שהיציאה לוקחת לכם נצח."
+  ],
+  "L9": [
+   "ביום של גל גבוה הזרם חזק יותר,",
+   "אז תבדקו את הגובה ב-SurfTribe."
+  ],
+  "L10": [
+   "מחר בבוקר,",
+   "איך מתלבשים ברוח ולא קופאים."
+  ]
+ },
+ "titles": {
+  "L1": [
+   "למה ותיקים חותרים",
+   "איפה שאין גלים?",
+   null,
+   null
+  ],
+  "L2": [
+   "שם יש זרם",
+   "שמחזיר את המים לים",
+   null,
+   null
+  ],
+  "L3": [
+   "טרמפ לליינאפ",
+   "ככה משתמשים בו",
+   null,
+   null
+  ],
+  "L4": [
+   "1. פס בלי שבירה",
+   "מחפשים מהחוף",
+   null,
+   null
+  ],
+  "L5": [
+   "2. חותרים בתוכו",
+   "ולפני הגל זזים הצידה",
+   null,
+   null
+  ],
+  "L6": [
+   "ידיים טריות",
+   "בליינאפ",
+   null,
+   null
+  ],
+  "L7": [
+   "רק התחלתם?",
+   "לא נכנסים לזרם",
+   null,
+   null
+  ],
+  "L8": [
+   "שמרו את זה",
+   "ליציאה הבאה",
+   null,
+   null
+  ],
+  "L9": [
+   "גל גבוה?",
+   "הזרם חזק יותר",
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "מחר",
+  "מתלבשים ברוח בלי לקפוא"
+ ],
+ "extra": [
+  {
+   "k": "ARW",
+   "line": "L2",
+   "d0": 0.3,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M300 1150 L300 470\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M334 531 L300 470 L266 531\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+  },
+  {
+   "k": "RING",
+   "line": "L4",
+   "d0": 0.4,
+   "html": "<div style='position:absolute;left:600px;top:540px;width:460px;height:700px;border:9px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div>"
+  },
+  {
+   "k": "ARW2",
+   "line": "L5",
+   "d0": 0.3,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M860 980 L520 1190\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M555 1129 L520 1190 L590 1186\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+  },
+  {
+   "k": "ARW3",
+   "line": "L7",
+   "d0": 1.6,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M200 760 L880 760\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M819 794 L880 760 L819 726\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+  },
+  {
+   "k": "LST",
+   "line": "L8",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>מתחילים: לא נכנסים</div></div>"
+  },
+  {
+   "k": "LST2",
+   "line": "L10",
+   "d0": 0,
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>מתחילים: לא נכנסים</div></div>"
+  }
+ ],
+ "gap": 0.2,
+ "gap_after": {
+  "L1": 0.15,
+  "L2": 0.15,
+  "L3": 0.1,
+  "L6": 0.15,
+  "L7": 0.2,
+  "L9": 0.25
+ },
+ "ttop": {
+  "L1": 380,
+  "L2": 380,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L8": 380,
+  "L9": 380,
+  "L10": 380
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_side.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/st_rip2.mp4",
+    "a": 0.5
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_out.mp4",
+    "a": 0,
+    "dd": 1.8
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_big.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_gap.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_lineup.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_par.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_save.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_app_he.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/rc_tmrw_he.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "בסרף טרייב": "ב-SurfTribe",
+  "סרף טרייב": "SurfTribe"
+ },
+ "recap": [
+  "",
+  []
+ ]
+}
