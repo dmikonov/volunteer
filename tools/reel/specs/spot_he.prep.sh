@@ -10,10 +10,11 @@ cut(){ src=$1; ss=$2; t=$3; c0=$4; c1=$5; n=$6
 cutz(){ src=$1; ss=$2; t=$3; cx=$4; cy=$5; z=$6; n=$7
   ffmpeg -v error -y -ss $ss -t $t -i $S/$src.mp4 -vf "scale=-2:$z:flags=lanczos,crop=1080:1920:'max(0,min(iw-1080,$cx*iw-540))':'max(0,min(ih-1920,$cy*ih-960))',fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/$n.mp4; }
 cutz p9823083 0.0 4.2 0.66 0.73 3200 sp_hook
-cut $ROCK $RSS 4.0 $RC $RC sp_rocks
+cut $ROCK $RSS 1.6 $RC $RC sp_crash
+cut m6963 8.8 4.0 0.40 0.45 sp_rocks
 cut p4093785 1.0 4.4 0.30 0.36 sp_look
-cut p5902497 4.0 4.6 0.20 0.22 sp_dark
-cutz p9823083 11.0 3.6 0.33 0.77 3000 sp_fall
+ffmpeg -v error -y -ss 3.0 -t 4.8 -i $S/m51502.mp4 -vf "scale=1080:1920:flags=lanczos,fps=25,format=yuv420p" -an -c:v libx264 -crf 15 $G/sp_dark.mp4
+cutz p9823083 11.0 3.6 0.33 0.583 3600 sp_fall
 cut p18224893 0.0 3.4 0.42 0.46 sp_send
 cut p20256023 1.5 4.0 0.50 0.54 sp_tmrw
 # app: "שאלו את המאמן" button (HE recording 28.09 15:24 at 11.6 s) big over the sandy beach aerial
