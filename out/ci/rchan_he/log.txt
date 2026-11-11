@@ -1,0 +1,20 @@
++ k=/s17/rp/rchan_he
++ python3 build.py /s17/rp/rchan_he
+[('L1', '/rc_side.mp4', 0.0, 3.948, 0.0), ('L2', '/st_rip2.mp4', 0.5, 4.123, 3.948), ('L3', 'n/rc_out.mp4', 0, 1.8, 8.071), ('L3', 'n/rc_big.mp4', 0.0, 1.944, 9.871), ('L4', 'n/rc_gap.mp4', 0.0, 2.726, 11.815), ('L5', '/rc_hook.mp4', 0.0, 3.588, 14.541), ('L6', 'c_lineup.mp4', 0.0, 2.327, 18.129), ('L7', 'n/rc_par.mp4', 0.0, 5.627, 20.456), ('L8', '/rc_save.mp4', 0.0, 3.45, 26.083), ('L9', 'c_app_he.mp4', 0.0, 4.995, 29.533), ('L10', '_tmrw_he.mp4', 0.0, 4.11, 34.528)]
+cat 38.68 T 38.638
++ python3 ov_png.py /s17/rp/rchan_he
+realcuts True [0.0, 3.96, 8.08, 11.84, 14.56, 18.16, 20.48, 26.12, 29.56, 34.56, 38.638]
+V2 SUB NOT IN VOICE L9 אז תבדקו את הגובה ב-SurfTribe.
+safe-zone violations []
+ovplan 46
++ python3 ov_ff.py /s17/rp/rchan_he
+done /s17/rp/rchan_he/reel_rchan_he.mp4 38.638 lufs before -15.1 gain 0.6
++ python3 trim_tail.py /s17/rp/rchan_he
+trimmed /s17/rp/rchan_he/reel_rchan_he.mp4 38.03
+++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rchan_he/spec.json'\''))['\''out'\''])'
++ python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rchan_he/reel_rchan_he.mp4
+/s17/rp/rchan_he/reel_rchan_he.mp4 before -12.9 after -14.6 peak -2.4
++ python3 post_cz.py /s17/rp/rchan_he
+post ok
++ echo 'EXIT /s17/rp/rchan_he 0'
+EXIT /s17/rp/rchan_he 0

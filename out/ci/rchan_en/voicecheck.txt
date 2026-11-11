@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+L1 OK match=1.00 wps=2.66 dur=4.51 | ref: Nobody tells you why good surfers paddle out where no waves break. | asr: Nobody tells you why good surfers paddle out where no waves break
+L2 OK match=1.00 wps=3.22 dur=4.03 | ref: That calm strip is a rip, pulling the water back out to sea. | asr: That calm strip is a rip pulling the water back out to sea.
+L3 OK match=1.00 wps=2.69 dur=4.09 | ref: For them it's a free ride to the lineup. Two moves. | asr: For them, it's a free ride to the lineup. Two moves.
+L4 OK match=0.96 wps=2.58 dur=4.64 | ref: One. From the sand, find the gap where the waves don't break. | asr: 1. From the sand, find the gap where the waves don't break.
+L5 OK match=1.00 wps=2.23 dur=4.94 | ref: Two. Paddle out in it, then slide sideways to the peak. | asr: Two, paddle out in it, then slide sideways to the peak.
+L6 OK match=1.00 wps=3.30 dur=1.82 | ref: You get there with fresh arms. | asr: You get there with fresh arms.
+L7 OK match=1.00 wps=2.43 dur=6.18 | ref: New to surfing? Stay out of rips. Caught in one? Paddle parallel to the beach. | asr: New to surfing? Stay out of rips. Caught in one. Paddle parallel to the beach.
+L8 OK match=1.00 wps=2.95 dur=3.05 | ref: Save it for the next paddle-out that takes forever. | asr: Save it for the next paddle out, that takes forever.
+L9 OK match=0.97 wps=2.21 dur=5.42 | ref: Bigger swell, stronger rip. Check the wave height in Surf Tribe first. | asr: Bigger swell, stronger rip. Check the wave height and surf tribe first.
+L10 OK match=1.00 wps=2.40 dur=3.34 | ref: Tomorrow, why big boards aren't just for beginners. | asr: Tomorrow. Why big boards aren't just for beginners.
+TOTAL wps=2.59 lines_to_check=0
