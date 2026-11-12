@@ -13,14 +13,14 @@
  "out": "reel_rchan_en.mp4",
  "lines": [
   "Nobody tells you why good surfers paddle out where no waves break.",
-  "That calm strip is a rip. It pulls the water back out.",
+  "That strip is a rip. It pulls the water back out.",
   "For them it's a free ride to the lineup. Two moves.",
   "One. From the sand, find the gap in the breaking waves.",
   "Two. Paddle out in it, then slide over to the peak.",
   "You get there with fresh arms.",
   "New to surfing? Stay out. Caught in one? Paddle parallel to the beach.",
   "Save it for your next long paddle-out.",
-  "Bigger swell, stronger rip. Check the height in Surf Tribe.",
+  "Bigger swell, stronger rip. Check it in Surf Tribe.",
   "Tomorrow, why big boards aren't just for beginners."
  ],
  "edge": true,
@@ -31,7 +31,7 @@
    "paddle out where no waves break."
   ],
   "L2": [
-   "That calm strip is a rip.",
+   "That strip is a rip.",
    "It pulls the water back out."
   ],
   "L3": [
@@ -59,7 +59,7 @@
   ],
   "L9": [
    "Bigger swell, stronger rip.",
-   "Check the height in SurfTribe."
+   "Check it in Surf Tribe."
   ],
   "L10": [
    "Tomorrow, why big boards",
@@ -74,20 +74,20 @@
    null
   ],
   "L2": [
-   "That calm strip",
-   "is a rip",
+   "This is a rip",
+   "water going back out",
    null,
    null
   ],
   "L3": [
-   "A free ride out",
-   "two moves",
+   "They paddle here",
+   "no waves breaking",
    null,
    null
   ],
   "L4": [
-   "1. Find the gap",
-   "in the breaking waves",
+   "1. From the sand",
+   "spot this gap",
    null,
    null
   ],
@@ -138,19 +138,19 @@
    "k": "ARW",
    "line": "L2",
    "d0": 0.3,
-   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M300 1150 L300 470\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M334 531 L300 470 L266 531\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M300 1250 L300 640\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M334 701 L300 640 L266 701\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
   },
   {
    "k": "RING",
    "line": "L4",
    "d0": 1.0,
-   "html": "<div style='position:absolute;left:560px;top:860px;width:470px;height:540px;border:9px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div>"
+   "html": "<div style='position:absolute;left:380px;top:600px;width:460px;height:520px;border:9px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div>"
   },
   {
    "k": "ARW2",
    "line": "L5",
    "d0": 0.6,
-   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M180 1180 L450 1010\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M416 1071 L450 1010 L380 1014\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M840 1700 L840 1250 L640 1150\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M710 1147 L640 1150 L680 1207\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
   },
   {
    "k": "ARW3",
@@ -168,7 +168,13 @@
    "k": "LST2",
    "line": "L10",
    "d0": 0,
-   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">No breaking waves? Rip<br>Paddle out in it<br>Slide to the peak<br>Beginners: stay out</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:960px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">No breaking waves? Rip<br>Paddle out in it<br>Slide to the peak<br>Beginners: stay out</div></div>"
+  },
+  {
+   "k": "ARW5",
+   "line": "L3",
+   "d0": 0.4,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M560 1750 L560 800\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M594 861 L560 800 L526 861\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
   }
  ],
  "gap": 0.15,
@@ -209,22 +215,22 @@
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/rc_big.mp4",
+    "src": "/s17/gen/rc_chan.mp4",
     "a": 0.0
    }
   ],
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/rc_hook.mp4",
-    "a": 0.0
+    "src": "/s17/gen/st_rip1.mp4",
+    "a": 1.0
    }
   ],
   "L5": [
    {
     "kind": "gen",
-    "src": "/s17/gen/rc_gap.mp4",
-    "a": 0.3
+    "src": "/s17/gen/rc_hook.mp4",
+    "a": 0.0
    }
   ],
   "L6": [

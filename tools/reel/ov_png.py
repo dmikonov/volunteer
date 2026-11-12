@@ -172,7 +172,9 @@ if V2:
         for j, (ch, s0) in enumerate(starts):
             s1 = starts[j + 1][1] - 0.04 if j + 1 < len(starts) else cuts[i + 1] - 0.04
             V2SUB.append((f'S{len(V2SUB):02d}', ch, max(s0, cuts[i] + 0.04), s1))
-    for kk, ch, s0, s1 in V2SUB: cards[kk] = f"<div class=s2><span>{ch}</span></div>"
+    for kk, ch, s0, s1 in V2SUB:
+        for k0, v0 in S.get('sub_replace', {}).items(): ch = ch.replace(k0, v0)  # 12.11: v2 subs match the voice words, brand shown as SurfTribe
+        cards[kk] = f"<div class=s2><span>{ch}</span></div>"
 os.makedirs(f'{W}/ov', exist_ok=True); pos = {}; boxes = {}
 with sync_playwright() as p:
     br = p.chromium.launch(); pg = br.new_page(viewport={'width': 1080, 'height': 1920})

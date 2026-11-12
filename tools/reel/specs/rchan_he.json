@@ -17,10 +17,10 @@
   "בשבילם זה טרמפ חינם לליינאפ. ככה משתמשים בו.",
   "מהחוף מחפשים פס שהגלים לא נשברים בו.",
   "חותרים בתוכו, וקצת לפני השבירה זזים הצידה לגל.",
-  "ומגיעים לליינאפ עם ידיים טריות.",
-  "רק התחלתם? לא נכנסים לזרם. תפס אתכם? חותרים במקביל לחוף.",
+  "ומגיעים לליינאפ בלי להתעייף.",
+  "רק התחלתם לגלוש? לא נכנסים לזרם. ואם הוא תפס, חותרים במקביל לחוף.",
   "שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.",
-  "גל גבוה, זרם חזק, אז תבדקו את הגובה בסרף טרייב.",
+  "ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בסרף טרייב.",
   "מחר בבוקר, איך מתלבשים ברוח ולא קופאים."
  ],
  "ref_lines": [
@@ -29,10 +29,10 @@
   "בשבילם זה טרמפ חינם לליינאפ. ככה משתמשים בו.",
   "מהחוף מחפשים פס שהגלים לא נשברים בו.",
   "חותרים בתוכו, וקצת לפני השבירה זזים הצידה לגל.",
-  "ומגיעים לליינאפ עם ידיים טריות.",
-  "רק התחלתם? לא נכנסים לזרם. תפס אתכם? חותרים במקביל לחוף.",
+  "ומגיעים לליינאפ בלי להתעייף.",
+  "רק התחלתם לגלוש? לא נכנסים לזרם. ואם הוא תפס, חותרים במקביל לחוף.",
   "שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.",
-  "גל גבוה, זרם חזק, אז תבדקו את הגובה בסרף טרייב.",
+  "ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בסרף טרייב.",
   "מחר בבוקר, איך מתלבשים ברוח ולא קופאים."
  ],
  "f5": true,
@@ -58,20 +58,20 @@
    "השבירה זזים הצידה לגל."
   ],
   "L6": [
-   "ומגיעים לליינאפ עם ידיים טריות."
+   "ומגיעים לליינאפ בלי להתעייף."
   ],
   "L7": [
-   "רק התחלתם? לא נכנסים לזרם.",
-   "תפס אתכם?",
-   "חותרים במקביל לחוף."
+   "רק התחלתם לגלוש?",
+   "לא נכנסים לזרם.",
+   "ואם הוא תפס, חותרים במקביל לחוף."
   ],
   "L8": [
    "שמרו את זה לבוקר הבא",
    "שהיציאה לוקחת לכם נצח."
   ],
   "L9": [
-   "גל גבוה, זרם חזק,",
-   "אז תבדקו את הגובה ב-SurfTribe."
+   "ביום של גל גבוה הזרם חזק יותר,",
+   "אז תבדקו את הגובה בסרף טרייב."
   ],
   "L10": [
    "מחר בבוקר,",
@@ -86,20 +86,20 @@
    null
   ],
   "L2": [
-   "שם יש זרם",
-   "שמחזיר את המים לים",
+   "כאן המים",
+   "חוזרים לים",
    null,
    null
   ],
   "L3": [
-   "טרמפ לליינאפ",
-   "ככה משתמשים בו",
+   "חותרים כאן",
+   "בלי גלים בפנים",
    null,
    null
   ],
   "L4": [
-   "1. פס בלי שבירה",
-   "מחפשים מהחוף",
+   "1. מהחול",
+   "מחפשים את הפס הזה",
    null,
    null
   ],
@@ -110,8 +110,8 @@
    null
   ],
   "L6": [
-   "ידיים טריות",
    "בליינאפ",
+   "בלי להתעייף",
    null,
    null
   ],
@@ -128,8 +128,8 @@
    null
   ],
   "L9": [
-   "גל גבוה?",
-   "הזרם חזק יותר",
+   "לפני שנכנסים",
+   "בודקים גובה גל",
    null,
    null
   ]
@@ -143,19 +143,19 @@
    "k": "ARW",
    "line": "L2",
    "d0": 0.3,
-   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M300 1150 L300 470\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M334 531 L300 470 L266 531\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M830 1500 L830 720\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M864 781 L830 720 L796 781\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
   },
   {
    "k": "RING",
    "line": "L4",
    "d0": 1.0,
-   "html": "<div style='position:absolute;left:560px;top:860px;width:470px;height:540px;border:9px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div>"
+   "html": "<div style='position:absolute;left:100px;top:560px;width:420px;height:560px;border:9px solid rgba(255,81,80,.95);border-radius:50%;box-sizing:border-box'></div>"
   },
   {
    "k": "ARW2",
    "line": "L5",
    "d0": 0.6,
-   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M180 1180 L450 1010\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M416 1071 L450 1010 L380 1014\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M960 1750 L960 1300 L800 1180\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M869 1190 L800 1180 L829 1244\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
   },
   {
    "k": "ARW3",
@@ -173,7 +173,13 @@
    "k": "LST2",
    "line": "L10",
    "d0": 0,
-   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>מתחילים: לא נכנסים</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:960px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>מתחילים: לא נכנסים</div></div>"
+  },
+  {
+   "k": "ARW5",
+   "line": "L3",
+   "d0": 0.4,
+   "html": "<svg style='position:absolute;left:0;top:0' width=\"1080\" height=\"1920\"><path d=\"M560 1750 L560 800\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><path d=\"M594 861 L560 800 L526 861\" stroke=\"#FF5150\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></svg>"
   }
  ],
  "gap": 0.2,
@@ -208,22 +214,22 @@
   "L2": [
    {
     "kind": "gen",
-    "src": "/s17/gen/st_rip2.mp4",
-    "a": 0.5
+    "src": "/s17/gen/rc_hook.mp4",
+    "a": 0.0
    }
   ],
   "L3": [
    {
     "kind": "gen",
-    "src": "/s17/gen/rc_big.mp4",
+    "src": "/s17/gen/rc_chan.mp4",
     "a": 0.0
    }
   ],
   "L4": [
    {
     "kind": "gen",
-    "src": "/s17/gen/rc_hook.mp4",
-    "a": 0.0
+    "src": "/s17/gen/st_rip2.mp4",
+    "a": 0.5
    }
   ],
   "L5": [
