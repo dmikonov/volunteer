@@ -1,9 +1,9 @@
-tts retry 2 0 NoAudioReceived
 tts retry 3 0 NoAudioReceived
+tts retry 3 1 NoAudioReceived
 tts retry 4 0 NoAudioReceived
-tts retry 8 0 NoAudioReceived
-tts retry 9 0 NoAudioReceived
-tts retry 9 1 NoAudioReceived
+tts retry 4 1 NoAudioReceived
+tts retry 5 0 NoAudioReceived
+tts retry 7 0 NoAudioReceived
+tts retry 7 1 NoAudioReceived
 tts retry 10 0 NoAudioReceived
-tts retry 10 1 NoAudioReceived
-en T 45.295 [('L1', 0.12, 4.51), ('L2', 4.785, 4.03), ('L3', 9.167, 4.09), ('L4', 13.506, 4.64), ('L5', 18.299, 4.94), ('L6', 23.39, 1.82), ('L7', 25.506, 6.18), ('L8', 31.983, 3.05), ('L9', 35.185, 5.42), ('L10', 41.059, 3.34)]
+en T 39.55 [('L1', 0.12, 4.37), ('L2', 4.639, 3.42), ('L3', 8.413, 3.61), ('L4', 12.274, 4.26), ('L5', 16.686, 3.74), ('L6', 20.58, 1.68), ('L7', 22.563, 5.46), ('L8', 28.322, 2.08), ('L9', 30.553, 4.37), ('L10', 35.372, 3.28)]

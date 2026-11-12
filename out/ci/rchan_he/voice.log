@@ -1,9 +1,9 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 take 0 0 wer 0.0 dur 4.67 | למה גולשים ותיקים חותרים החוצה בדיוק איפה שאין גלים?
 take 0 1 wer 0.0 dur 4.67 | למה גולשים ותיקים חותרים החוצה בדיוק איפה שאין גלים?
-take 1 2 wer 0.0 dur 4.85 | כי שם יש זרם והוא מחזיר לים את המים שהגלים זרקו לחוף.
-take 1 3 wer 0.0 dur 4.85 | כי שם יש זרם והוא מחזיר לים את המים שהגלים זרקו לחוף.
-take 2 4 wer 0.0 dur 4.32 | בשבילם זה טרמפ חינם לליינאפ, ככה משתמשים בו.
+take 1 2 wer 0.0 dur 3.02 | כי שם יש זרם שמחזיר את המים לים.
+take 1 3 wer 0.0 dur 3.02 | כי שם יש זרם שמחזיר את המים לים.
+take 2 4 wer 0.0 dur 4.32 | בשבילם זה טרמפ חינם לליינאפ. ככה משתמשים בו.
 take 2 5 wer 0.125 dur 4.32 | בשבילם זה פרמפ חינם לליינאפ, ככה משתמשים בו.
 take 3 6 wer 0.0 dur 3.51 | מהחוף מחפשים פס שהגלים לא נשברים בו.
 take 3 7 wer 0.0 dur 3.51 | מהחוף מחפשים פס שהגלים לא נשברים בו.
@@ -11,22 +11,22 @@ take 4 8 wer 0.0 dur 4.15 | חותרים בתוכו וקצת לפני השביר
 take 4 9 wer 0.0 dur 4.15 | חותרים בתוכו וקצת לפני השבירה זזים הצידה לגל...
 take 5 10 wer 0.4 dur 2.75 | ומגיעים לליין -אפ עם ידיים טריות.
 take 5 11 wer 0.4 dur 2.75 | ומגיעים לליין -אפ עם ידיים טריות.
-take 6 12 wer 0.0 dur 5.72 | רק התחלתם לגלוש, לא נכנסים לזרם, ואם הוא תפס חותרים במקביל לחוף.
-take 6 13 wer 0.0 dur 5.72 | רק התחלתם לגלוש, לא נכנסים לזרם, ואם הוא תפס חותרים במקביל לחוף.
+take 6 12 wer 0.7 dur 4.96 | החלטתי, אתם לא נכנסים לזרם?
+take 6 13 wer 0.2 dur 4.96 | לא נכנסים לזרם תפס אתכם חותרים במקביל לחוף
 take 7 14 wer 0.0 dur 3.98 | שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.
 take 7 15 wer 0.0 dur 3.98 | שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.
-take 8 16 wer 0.0 dur 5.75 | ביום של גל גבוה הזרם חזק יותר אז תבדקו את הגובה בסרף טרייב.
-take 8 17 wer 0.077 dur 5.75 | ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בססרף טרייב.
+take 8 16 wer 0.0 dur 4.42 | גל גבוה זרם חזק אז תבדקו את הגובה בסרף טרייב.
+take 8 17 wer 0.2 dur 4.42 | גל גבוה זרם חזק אז תבדקו את הגובה בסרפט רייב.
 take 9 18 wer 0.143 dur 3.66 | מחר בבוקר, איך מתלבשים ברוח ולא כופים?
-take 9 19 wer 0.143 dur 3.66 | מחר בבוקר, איך מתלבשים ברוח ולא כופים?
-PICK 0 wer 0.0 | final fall (-3.0 st, expected fall) | pitch 115 Hz (level +0.1 st) | range 10.7 st | למה גולשים ותיקים חותרים החוצה בדיוק איפה שאין גלים?
-PICK 1 wer 0.0 | final fall (-1.5 st, expected fall) | pitch 113 Hz (level -0.1 st) | range 8.9 st | כי שם יש זרם והוא מחזיר לים את המים שהגלים זרקו לחוף.
-PICK 2 wer 0.0 | final fall (-5.3 st, expected fall) | pitch 113 Hz (level -0.2 st) | range 11.4 st | בשבילם זה טרמפ חינם לליינאפ, ככה משתמשים בו.
-PICK 3 wer 0.0 | final fall (-4.3 st, expected fall) | pitch 120 Hz (level +0.9 st) | range 11.2 st | מהחוף מחפשים פס שהגלים לא נשברים בו.
-PICK 4 wer 0.0 | final fall (-3.3 st, expected fall) | pitch 113 Hz (level -0.1 st) | range 12.7 st | חותרים בתוכו וקצת לפני השבירה זזים הצידה לגל...
-PICK 5 wer 0.4 | final fall (-2.9 st, expected fall) | pitch 111 Hz (level -0.5 st) | range 9.7 st | ומגיעים לליין -אפ עם ידיים טריות.
-PICK 6 wer 0.0 | final level (-1.4 st, expected fall) | pitch 132 Hz (level +2.5 st) | range 11.7 st | רק התחלתם לגלוש, לא נכנסים לזרם, ואם הוא תפס חותרים במקביל לחוף.
-PICK 7 wer 0.0 | final level (+0.0 st, expected fall) | pitch 134 Hz (level +2.8 st) | range 10.7 st | שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.
-PICK 8 wer 0.0 | final fall (-5.2 st, expected fall) | pitch 125 Hz (level +1.6 st) | range 9.5 st | ביום של גל גבוה הזרם חזק יותר אז תבדקו את הגובה בסרף טרייב.
-PICK 9 wer 0.143 | final fall (-10.1 st, expected fall) | pitch 121 Hz (level +1.0 st) | range 15.8 st | מחר בבוקר, איך מתלבשים ברוח ולא כופים?
-he f5 T 38.638 [('L1', 0.12, np.float64(3.58), 0.0), ('L2', np.float64(4.048), np.float64(3.77), 0.0), ('L3', np.float64(8.171), np.float64(3.44), 0.0), ('L4', np.float64(11.915), np.float64(2.53), 0.0), ('L5', np.float64(14.641), np.float64(3.39), 0.0), ('L6', np.float64(18.229), np.float64(1.98), 0.4), ('L7', np.float64(20.556), np.float64(5.23), 0.0), ('L8', np.float64(26.183), np.float64(3.25), 0.0), ('L9', np.float64(29.633), np.float64(4.54), 0.0), ('L10', np.float64(34.628), np.float64(3.11), 0.14)]
+take 9 19 wer 0.143 dur 3.66 | מחר בבוקר איך מתלבשים ברוח ולא כופים?
+PICK 0 wer 0.0 | final fall (-3.0 st, expected fall) | pitch 115 Hz (level +0.3 st) | range 10.7 st | למה גולשים ותיקים חותרים החוצה בדיוק איפה שאין גלים?
+PICK 1 wer 0.0 | final level (-0.9 st, expected fall) | pitch 107 Hz (level -0.9 st) | range 10.6 st | כי שם יש זרם שמחזיר את המים לים.
+PICK 2 wer 0.0 | final fall (-5.3 st, expected fall) | pitch 113 Hz (level -0.0 st) | range 11.4 st | בשבילם זה טרמפ חינם לליינאפ. ככה משתמשים בו.
+PICK 3 wer 0.0 | final fall (-4.3 st, expected fall) | pitch 120 Hz (level +1.0 st) | range 11.2 st | מהחוף מחפשים פס שהגלים לא נשברים בו.
+PICK 4 wer 0.0 | final fall (-3.3 st, expected fall) | pitch 113 Hz (level +0.0 st) | range 12.7 st | חותרים בתוכו וקצת לפני השבירה זזים הצידה לגל...
+PICK 5 wer 0.4 | final fall (-2.9 st, expected fall) | pitch 111 Hz (level -0.3 st) | range 9.7 st | ומגיעים לליין -אפ עם ידיים טריות.
+PICK 6 wer 0.2 | final rise (+6.2 st, expected fall) | pitch 162 Hz (level +6.2 st) | range 15.8 st | לא נכנסים לזרם תפס אתכם חותרים במקביל לחוף
+PICK 7 wer 0.0 | final level (+0.0 st, expected fall) | pitch 134 Hz (level +2.9 st) | range 10.7 st | שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.
+PICK 8 wer 0.0 | final fall (-3.0 st, expected fall) | pitch 116 Hz (level +0.4 st) | range 9.3 st | גל גבוה זרם חזק אז תבדקו את הגובה בסרף טרייב.
+PICK 9 wer 0.143 | final fall (-10.1 st, expected fall) | pitch 121 Hz (level +1.2 st) | range 15.8 st | מחר בבוקר איך מתלבשים ברוח ולא כופים?
+he f5 T 35.156 [('L1', 0.12, np.float64(3.58), 0.0), ('L2', np.float64(4.048), np.float64(2.33), 0.0), ('L3', np.float64(6.732), np.float64(3.44), 0.0), ('L4', np.float64(10.476), np.float64(2.53), 0.0), ('L5', np.float64(13.202), np.float64(3.39), 0.0), ('L6', np.float64(16.79), np.float64(1.98), 0.4), ('L7', np.float64(19.117), np.float64(4.22), 0.2), ('L8', np.float64(23.732), np.float64(3.25), 0.0), ('L9', np.float64(27.182), np.float64(3.51), 0.0), ('L10', np.float64(31.146), np.float64(3.11), 0.14)]
