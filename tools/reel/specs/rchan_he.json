@@ -19,7 +19,7 @@
   "חותרים בתוכו, וקצת לפני השבירה זזים הצידה לגל.",
   "ומגיעים לליינאפ בלי להתעייף.",
   "רק התחלתם לגלוש? לא נכנסים לזרם. ואם הוא תפס, חותרים במקביל לחוף.",
-  "שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.",
+  "שמרו את זה לפעם הבאה שקשה לכם לצאת לליינאפ.",
   "ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בסרף טרייב.",
   "מחר בבוקר, איך מתלבשים ברוח ולא קופאים."
  ],
@@ -31,7 +31,7 @@
   "חותרים בתוכו, וקצת לפני השבירה זזים הצידה לגל.",
   "ומגיעים לליינאפ בלי להתעייף.",
   "רק התחלתם לגלוש? לא נכנסים לזרם. ואם הוא תפס, חותרים במקביל לחוף.",
-  "שמרו את זה לבוקר הבא שהיציאה לוקחת לכם נצח.",
+  "שמרו את זה לפעם הבאה שקשה לכם לצאת לליינאפ.",
   "ביום של גל גבוה הזרם חזק יותר, אז תבדקו את הגובה בסרף טרייב.",
   "מחר בבוקר, איך מתלבשים ברוח ולא קופאים."
  ],
@@ -66,8 +66,8 @@
    "ואם הוא תפס, חותרים במקביל לחוף."
   ],
   "L8": [
-   "שמרו את זה לבוקר הבא",
-   "שהיציאה לוקחת לכם נצח."
+   "שמרו את זה לפעם הבאה",
+   "שקשה לכם לצאת לליינאפ."
   ],
   "L9": [
    "ביום של גל גבוה הזרם חזק יותר,",
@@ -93,12 +93,12 @@
   ],
   "L3": [
    "חותרים כאן",
-   "בלי גלים בפנים",
+   "פה לא נשבר גל",
    null,
    null
   ],
   "L4": [
-   "1. מהחול",
+   "1. מהחוף",
    "מחפשים את הפס הזה",
    null,
    null
@@ -116,8 +116,8 @@
    null
   ],
   "L7": [
-   "רק התחלתם?",
-   "לא נכנסים לזרם",
+   "נתפסתם בזרם?",
+   "חותרים במקביל לחוף",
    null,
    null
   ],
@@ -167,13 +167,13 @@
    "k": "LST",
    "line": "L8",
    "d0": 0,
-   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>מתחילים: לא נכנסים</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:700px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 52px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>נתפסתם? במקביל לחוף<br>מתחילים: לא נכנסים</div></div>"
   },
   {
    "k": "LST2",
    "line": "L10",
    "d0": 0,
-   "html": "<div style='position:absolute;left:70px;top:960px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 56px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>מתחילים: לא נכנסים</div></div>"
+   "html": "<div style='position:absolute;left:70px;top:960px;width:780px;padding:34px 40px;background:rgba(45,36,42,.85);border-radius:34px;box-sizing:border-box;direction:rtl;text-align:right;'><div style=\"font:800 52px R;color:#fff;line-height:1.5;white-space:nowrap\">פס בלי שבירה? זה הזרם<br>חותרים בתוכו<br>לפני הגל: הצידה<br>נתפסתם? במקביל לחוף<br>מתחילים: לא נכנסים</div></div>"
   },
   {
    "k": "ARW5",
