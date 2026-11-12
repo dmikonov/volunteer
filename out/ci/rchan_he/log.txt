@@ -1,19 +1,18 @@
 + k=/s17/rp/rchan_he
 + python3 build.py /s17/rp/rchan_he
-[('L1', '/rc_side.mp4', 0.0, 3.948, 0.0), ('L2', '/st_rip2.mp4', 0.5, 2.684, 3.948), ('L3', 'n/rc_big.mp4', 0.0, 3.744, 6.632), ('L4', '/rc_hook.mp4', 0.0, 2.726, 10.376), ('L5', 'n/rc_gap.mp4', 0.3, 3.588, 13.102), ('L6', 'c_lineup.mp4', 0.0, 2.327, 16.69), ('L7', 'n/rc_par.mp4', 0.0, 4.615, 19.017), ('L8', '/rc_save.mp4', 0.0, 3.45, 23.632), ('L9', 'c_app_he.mp4', 0.0, 3.964, 27.082), ('L10', '_tmrw_he.mp4', 0.0, 4.11, 31.046)]
-cat 35.16 T 35.156
+[('L1', '/rc_side.mp4', 0.0, 3.948, 0.0), ('L2', '/rc_hook.mp4', 0.0, 2.684, 3.948), ('L3', '/rc_chan.mp4', 0.0, 3.744, 6.632), ('L4', '/st_rip2.mp4', 0.5, 2.726, 10.376), ('L5', 'n/rc_gap.mp4', 0.3, 3.588, 13.102), ('L6', 'c_lineup.mp4', 0.0, 2.379, 16.69), ('L7', 'n/rc_par.mp4', 0.0, 5.628, 19.069), ('L8', '/rc_save.mp4', 0.0, 3.449, 24.697), ('L9', 'c_app_he.mp4', 0.0, 4.995, 28.146), ('L10', '_tmrw_he.mp4', 0.0, 4.11, 33.141)]
+cat 37.28 T 37.251
 + python3 ov_png.py /s17/rp/rchan_he
-realcuts True [0.0, 3.96, 6.64, 10.4, 13.12, 16.72, 19.04, 23.64, 27.08, 31.04, 35.156]
-V2 SUB NOT IN VOICE L9 אז תבדקו את הגובה ב-SurfTribe.
+realcuts True [0.0, 3.96, 6.64, 10.4, 13.12, 16.72, 19.08, 24.72, 28.16, 33.16, 37.251]
 safe-zone violations []
-ovplan 46
+ovplan 48
 + python3 ov_ff.py /s17/rp/rchan_he
-done /s17/rp/rchan_he/reel_rchan_he.mp4 35.156 lufs before -15.2 gain 0.7
+done /s17/rp/rchan_he/reel_rchan_he.mp4 37.251 lufs before -15.1 gain 0.6
 + python3 trim_tail.py /s17/rp/rchan_he
-trimmed /s17/rp/rchan_he/reel_rchan_he.mp4 34.55
+trimmed /s17/rp/rchan_he/reel_rchan_he.mp4 36.65
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rchan_he/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rchan_he/reel_rchan_he.mp4
-/s17/rp/rchan_he/reel_rchan_he.mp4 before -13.0 after -14.5 peak -2.9
+/s17/rp/rchan_he/reel_rchan_he.mp4 before -13.0 after -14.5 peak -2.8
 + python3 post_cz.py /s17/rp/rchan_he
 post ok
 + echo 'EXIT /s17/rp/rchan_he 0'

@@ -1,12 +1,12 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 L1 OK match=1.00 wps=2.75 dur=4.37 | ref: Nobody tells you why good surfers paddle out where no waves break. | asr: Nobody tells you why good surfers paddle out where no waves break.
-L2 OK match=1.00 wps=3.50 dur=3.42 | ref: That calm strip is a rip. It pulls the water back out. | asr: That calm strip is a rip. It pulls the water back out.
+L2 OK match=1.00 wps=3.60 dur=3.05 | ref: That strip is a rip. It pulls the water back out. | asr: That strip is a rip. It pulls the water back out.
 L3 OK match=1.00 wps=3.05 dur=3.61 | ref: For them it's a free ride to the lineup. Two moves. | asr: For them, it's a free ride to the lineup. Two moves.
 L4 OK match=0.95 wps=2.58 dur=4.26 | ref: One. From the sand, find the gap in the breaking waves. | asr: 1. From the sand, find the gap in the breaking waves.
-L5 OK match=1.00 wps=2.94 dur=3.74 | ref: Two. Paddle out in it, then slide over to the peak. | asr: Two. Paddle out in it, then slide over to the peak.
+L5 OK match=1.00 wps=2.94 dur=3.74 | ref: Two. Paddle out in it, then slide over to the peak. | asr: Two, paddle out in it, then slide over to the peak.
 L6 OK match=1.00 wps=3.57 dur=1.68 | ref: You get there with fresh arms. | asr: You get there with fresh arms.
 L7 OK match=1.00 wps=2.38 dur=5.46 | ref: New to surfing? Stay out. Caught in one? Paddle parallel to the beach. | asr: New to surfing? Stay out. Caught in one. Paddle parallel to the beach.
 L8 OK match=1.00 wps=3.36 dur=2.08 | ref: Save it for your next long paddle-out. | asr: Save it for your next long paddle out.
-L9 OK match=1.00 wps=2.29 dur=4.37 | ref: Bigger swell, stronger rip. Check the height in Surf Tribe. | asr: Bigger swell, stronger rip. Check the height in Surf Tribe.
-L10 OK match=1.00 wps=2.44 dur=3.28 | ref: Tomorrow, why big boards aren't just for beginners. | asr: Tomorrow. Why big boards aren't just for beginners.
-TOTAL wps=2.78 lines_to_check=0
+L9 OK match=0.97 wps=2.47 dur=3.64 | ref: Bigger swell, stronger rip. Check it in Surf Tribe. | asr: Bigger swell, stronger rip. Check in Surf Tribe.
+L10 OK match=1.00 wps=2.70 dur=2.96 | ref: Tomorrow, why big boards aren't just for beginners. | asr: Tomorrow, why big boards aren't just for beginners.
+TOTAL wps=2.84 lines_to_check=0

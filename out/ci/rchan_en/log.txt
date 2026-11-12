@@ -1,19 +1,18 @@
 + k=/s17/rp/rchan_en
 + python3 build.py /s17/rp/rchan_en
-[('L1', '/rc_side.mp4', 0.0, 4.539, 0.0), ('L2', '/st_rip2.mp4', 0.5, 3.774, 4.539), ('L3', 'n/rc_big.mp4', 0.0, 3.861, 8.313), ('L4', '/rc_hook.mp4', 0.0, 4.412, 12.174), ('L5', 'n/rc_gap.mp4', 0.3, 3.894, 16.586), ('L6', 'c_lineup.mp4', 0.0, 1.983, 20.48), ('L7', 'n/rc_par.mp4', 0.0, 5.759, 22.463), ('L8', '/rc_save.mp4', 0.0, 2.231, 28.222), ('L9', 'c_app_en.mp4', 0.0, 4.819, 30.453), ('L10', '_tmrw_en.mp4', 0.0, 4.278, 35.272)]
-cat 39.52 T 39.55
+[('L1', '/rc_side.mp4', 0.0, 4.539, 0.0), ('L2', '/st_rip2.mp4', 0.5, 3.402, 4.539), ('L3', '/rc_chan.mp4', 0.0, 3.861, 7.941), ('L4', '/st_rip1.mp4', 1.0, 4.412, 11.802), ('L5', '/rc_hook.mp4', 0.0, 3.894, 16.214), ('L6', 'c_lineup.mp4', 0.0, 1.982, 20.108), ('L7', 'n/rc_par.mp4', 0.0, 5.76, 22.09), ('L8', '/rc_save.mp4', 0.0, 2.231, 27.85), ('L9', 'c_app_en.mp4', 0.0, 4.087, 30.081), ('L10', '_tmrw_en.mp4', 0.0, 3.959, 34.168)]
+cat 38.12 T 38.127
 + python3 ov_png.py /s17/rp/rchan_en
-realcuts True [0.0, 4.52, 8.28, 12.16, 16.56, 20.44, 22.44, 28.2, 30.44, 35.24, 39.55]
-V2 SUB NOT IN VOICE L9 Check the height in SurfTribe.
+realcuts True [0.0, 4.52, 7.92, 11.8, 16.2, 20.08, 22.08, 27.84, 30.08, 34.16, 38.127]
 safe-zone violations []
-ovplan 46
+ovplan 48
 + python3 ov_ff.py /s17/rp/rchan_en
-done /s17/rp/rchan_en/reel_rchan_en.mp4 39.55 lufs before -15.2 gain 0.7
+done /s17/rp/rchan_en/reel_rchan_en.mp4 38.127 lufs before -15.2 gain 0.7
 + python3 trim_tail.py /s17/rp/rchan_en
-trimmed /s17/rp/rchan_en/reel_rchan_en.mp4 39.05
+trimmed /s17/rp/rchan_en/reel_rchan_en.mp4 37.63
 ++ python3 -c 'import json;print(json.load(open('\''/s17/rp/rchan_en/spec.json'\''))['\''out'\''])'
 + python3 /home/runner/work/volunteer/volunteer/tools/reel/loudfix.py /s17/rp/rchan_en/reel_rchan_en.mp4
-/s17/rp/rchan_en/reel_rchan_en.mp4 before -13.1 after -14.5 peak -3.1
+/s17/rp/rchan_en/reel_rchan_en.mp4 before -13.0 after -14.5 peak -3.1
 + python3 post_cz.py /s17/rp/rchan_en
 post ok
 + echo 'EXIT /s17/rp/rchan_en 0'
