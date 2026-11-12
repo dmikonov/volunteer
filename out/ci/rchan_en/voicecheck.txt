@@ -1,5 +1,5 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-L1 OK match=1.00 wps=2.75 dur=4.37 | ref: Nobody tells you why good surfers paddle out where no waves break. | asr: Nobody tells you why good surfers paddle out where no waves break.
+L1 OK match=1.00 wps=2.75 dur=4.37 | ref: Nobody tells you why good surfers paddle out where no waves break. | asr: Nobody tells you why good surfers paddle out where no waves break
 L2 OK match=1.00 wps=3.60 dur=3.05 | ref: That strip is a rip. It pulls the water back out. | asr: That strip is a rip. It pulls the water back out.
 L3 OK match=1.00 wps=3.05 dur=3.61 | ref: For them it's a free ride to the lineup. Two moves. | asr: For them, it's a free ride to the lineup. Two moves.
 L4 OK match=0.95 wps=2.58 dur=4.26 | ref: One. From the sand, find the gap in the breaking waves. | asr: 1. From the sand, find the gap in the breaking waves.
