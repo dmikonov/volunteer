@@ -1,0 +1,27 @@
+SOURCES for p21 (Generated P21 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary surf photograph in calm deep water beyond the breaking waves: a man in his mid 40s with a short dark beard and tanned skin, in a plain black wetsuit, sitting upright astride a plain white surfboard with legs dangling in the water on both sides, turning his head over his shoulder toward the camera with an irritated frowning look, both hands resting on the board, smooth swell behind him, Mediterranean morning light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary surf photograph: a beginner surfer, a woman in her early 30s with dark wavy hair and olive skin, sitting on a large soft-top surfboard in the lineup, looking around a little unsure and curious at the other surfers in the distance, calm green water, soft late afternoon light, Mediterranean sea, subject centered, realistic anatomy, plain wetsuit, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary surf photograph at water level in calm deep water: in the foreground a middle-aged woman with short grey hair sits astride her white surfboard waiting, seen from the side; just behind her a young man with long blond hair lies prone on a blue surfboard paddling fast past her on the outside, both people clearly different, two separate boards, gentle swell, Mediterranean morning light, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary surf photograph: a slim surfer in his 30s with a buzz cut stands on a plain surfboard riding down the green face of a small wave, while in the foreground a different surfer, a broad-shouldered man in his 50s with a grey ponytail, sits on his board in the water behind the wave watching it go with his arms spread in disbelief, Mediterranean sea, bright midday light, two clearly different people, realistic anatomy and boards, no text, no logos"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary surf photograph: a surf lineup seen from the water at eye level, three very different adults sitting astride plain unbranded surfboards spaced apart in deep calm water beyond the waves, all looking out to sea: a young woman with a red-brown bun, an older bald man with a white beard, and a heavy-set man in his 30s with black curly hair and no hat, plain wetsuits without logos, a swell rising on the horizon, soft morning light, no text, no logos, no caps"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary surf photograph at golden hour: a single clean peeling wave breaking along a sandy Mediterranean beach with one surfer riding it in the distance, the wave peak glowing in warm backlight, empty calm water around, wide calm composition, no other people, no text, no logos, no flags, no signs"
+

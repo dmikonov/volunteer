@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 1.4 dur 3.22 | עוד גל אחד ויוצאים. כולנו אומרים את זה.
+take 0 1 wer 1.4 dur 3.22 | עוד גל אחד ויוצאים, כולנו אומרים את זה.
+take 1 2 wer 1.0 dur 3.22 | אה, הידיים כבר גמורות, ובדיוק אז נפצעים.
+take 1 3 wer 1.0 dur 3.22 | הידיים כבר גמורות ודיוק אז נפצעים.
+take 2 4 wer 0.833 dur 1.85 | אז איך יודעים שמספיק?
+take 2 5 wer 0.833 dur 1.85 | אז איך יודעים שמספיק?
+take 3 6 wer 1.0 dur 3.48 | חתרתם מאוחר ופספסתם פעמיים ברצף.
+take 3 7 wer 1.0 dur 3.48 | חתרתם מאוחר ופספסתם פעמיים ברצף.
+take 4 8 wer 1.0 dur 2.87 | אתם קמים לאט והרגליים לא במקום
+take 4 9 wer 1.0 dur 2.87 | אתם קמים לאט והרגליים לא במקום.
+take 5 10 wer 1.0 dur 1.93 | אז זה היה חוגל קטן
+take 5 11 wer 1.0 dur 1.93 | ‫אז קחו גל קטן משהו קל.
+take 6 12 wer 1.0 dur 2.37 | גולשים עליו עד החוף ויוצאים.
+take 6 13 wer 1.0 dur 2.37 | גולשים עליו עד החוף ויוצאים
+take 7 14 wer 1.0 dur 4.2 | תצלמו את הגל האחרון ובסרפטרייב תראו מה לא עבד
+take 7 15 wer 1.0 dur 4.2 | תצלמו את הגל האחרון ובסרף טרייב תראו מה לא עבד.
+take 8 16 wer 0.833 dur 3.83 | פווסט, תשמרו את זה לפעם הבאה שאתם עייפים במים.
+take 8 17 wer 0.667 dur 3.83 | תשמרו את זה לפעם הבאה שאתם עייפים במים.
+take 9 18 wer 0.571 dur 3.48 | מחר בבוקר, איך עוברים מהקצף לגל אמיתי?
+take 9 19 wer 0.571 dur 3.48 | מחר בבוקר, איך עוברים מהקצף לגל אמיתי?
+PICK 0 wer 1.4 | final fall (-4.7 st, expected fall) | pitch 126 Hz (level +0.0 st) | range 10.2 st | עוד גל אחד ויוצאים, כולנו אומרים את זה.
+PICK 1 wer 1.0 | final fall (-6.9 st, expected fall) | pitch 123 Hz (level -0.5 st) | range 12.0 st | הידיים כבר גמורות ודיוק אז נפצעים.
+PICK 2 wer 0.833 | final fall (-5.8 st, expected fall) | pitch 162 Hz (level +4.3 st) | range 14.1 st | אז איך יודעים שמספיק?
+PICK 3 wer 1.0 | final rise (+5.0 st, expected fall) | pitch 120 Hz (level -0.9 st) | range 15.4 st | חתרתם מאוחר ופספסתם פעמיים ברצף.
+PICK 4 wer 1.0 | final fall (-3.3 st, expected fall) | pitch 104 Hz (level -3.3 st) | range 15.6 st | אתם קמים לאט והרגליים לא במקום.
+PICK 5 wer 1.0 | final rise (+4.5 st, expected fall) | pitch 105 Hz (level -3.3 st) | range 10.4 st | ‫אז קחו גל קטן משהו קל.
+PICK 6 wer 1.0 | final fall (-2.0 st, expected fall) | pitch 133 Hz (level +0.9 st) | range 14.2 st | גולשים עליו עד החוף ויוצאים.
+PICK 7 wer 1.0 | final rise (+7.5 st, expected fall) | pitch 123 Hz (level -0.4 st) | range 11.6 st | תצלמו את הגל האחרון ובסרף טרייב תראו מה לא עבד.
+PICK 8 wer 0.667 | final fall (-4.9 st, expected fall) | pitch 120 Hz (level -0.9 st) | range 9.0 st | תשמרו את זה לפעם הבאה שאתם עייפים במים.
+PICK 9 wer 0.571 | final rise (+1.5 st, expected fall) | pitch 119 Hz (level -1.1 st) | range 8.0 st | מחר בבוקר, איך עוברים מהקצף לגל אמיתי?
+he f5 T 26.473 [('L1', 0.12, np.float64(2.49), 1.4), ('L2', np.float64(2.809), np.float64(2.39), 1.0), ('L3', np.float64(5.601), np.float64(1.41), 0.83), ('L4', np.float64(7.359), np.float64(2.46), 1.0), ('L5', np.float64(10.018), np.float64(2.12), 1.0), ('L6', np.float64(12.335), np.float64(1.47), 1.0), ('L7', np.float64(14.004), np.float64(1.73), 1.0), ('L8', np.float64(16.079), np.float64(3.29), 1.0), ('L9', np.float64(19.569), np.float64(2.88), 0.67), ('L10', np.float64(22.953), np.float64(2.62), 0.57)]

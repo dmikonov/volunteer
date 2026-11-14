@@ -1,0 +1,282 @@
+{
+ "lang": "en",
+ "out": "reel_look2_en.mp4",
+ "app_lines": [
+  "L7"
+ ],
+ "app_top": 250,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 880,
+ "lines": [
+  "It's not your legs. It's your eyes.",
+  "Eyes down, you stall. Eyes ahead, you keep riding.",
+  "Here's the fix. Three steps.",
+  "One. Chin up, right away.",
+  "Two. Look along the wave.",
+  "Three. Turn your shoulders that way. The board follows.",
+  "SurfTribe tracks your body on every wave.",
+  "Save this."
+ ],
+ "titles": {
+  "L1": [
+   "NOT YOUR LEGS",
+   "YOUR EYES",
+   null,
+   null
+  ],
+  "L3": [
+   "HOW TO FIX IT",
+   "3 STEPS",
+   null,
+   null
+  ],
+  "L4": [
+   "CHIN UP",
+   "RIGHT AWAY",
+   "1",
+   "CK"
+  ],
+  "L5": [
+   "LOOK ALONG",
+   "THE WAVE",
+   "2",
+   "CK"
+  ],
+  "L6": [
+   "SHOULDERS",
+   "LEAD THE WAY",
+   "3",
+   "CK"
+  ],
+  "L7": [
+   "SURFTRIBE",
+   "TRACKS EVERY MOVE",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "SAVE THIS",
+  [
+   "Chin up",
+   "Look along the wave",
+   "Shoulders lead"
+  ]
+ ],
+ "extra": [
+  {
+   "k": "SPL",
+   "line": "L2",
+   "d0": 0.0,
+   "d1": 1.64,
+   "html": "<div style=\"position:absolute;top:330px;left:70px;width:467px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #FF5150;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;line-height:1.1;color:#fff;white-space:nowrap\">EYES<br>DOWN</span></div><div style=\"position:absolute;top:330px;left:543px;width:277px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.72);border:5px solid #00d4ff;border-radius:20px;padding:12px 18px;font-family:R;font-weight:800;font-size:44px;line-height:1.1;color:#fff;white-space:nowrap\">EYES<br>AHEAD</span></div>"
+  },
+  {
+   "k": "ANG",
+   "line": "L7",
+   "d0": 0.15,
+   "html": "<div style=\"position:absolute;top:1150px;left:70px;width:780px;text-align:center\"><span style=\"display:inline-block;background:rgba(10,18,38,.85);border:4px solid #00d4ff;border-radius:18px;padding:10px 20px;font-family:R;font-weight:800;font-size:44px;color:#fff;white-space:nowrap\">Skeleton + knee angle, live</span></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_down.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 0.9
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_down.mp4",
+    "a": 0.9,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/l_split_en.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.64
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_along.mp4",
+    "a": 1.1,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.45,
+     0.45
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_level.mp4",
+    "a": 0.4,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_lift.mp4",
+    "a": 1.25,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.75,
+     0.75
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_ahead2.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_turn3.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 1.2
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_turn.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ],
+    "dd": 1.0
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_turn3.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.8,
+     0.8
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/g_loop.mp4",
+    "a": [
+     "loop",
+     1.7
+    ],
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ]
+ },
+ "gap": 0.3,
+ "ttop": {
+  "L4": 960
+ },
+ "rate": "+4%",
+ "music_vol": 0.7,
+ "no_flash": true
+}

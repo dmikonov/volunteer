@@ -1,0 +1,27 @@
+SOURCES for p28 (Generated P28 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary surf photograph on a cold grey winter day: a woman in her 40s with a thick winter wetsuit and hood, cheeks red from cold, walking out of the sea onto the beach with her surfboard under her arm, determined and calm, heading to get warm, dark winter clouds over the Mediterranean, subject centered, realistic anatomy, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical close-up documentary photograph: two cold wet hands of an adult surfer with reddish stiff fingers on the deck of a plain white surfboard in grey winter sea water, water droplets, black wetsuit sleeves at the wrists, cold winter light, exactly two hands with five fingers each, realistic anatomy, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical extreme close-up documentary photograph: one cold pale wet adult hand with stiff half-bent fingers trying to grip the edge of a white surfboard rail in grey winter water, black wetsuit cuff at the wrist, water droplets, shallow depth of field, cold blue light, exactly one hand with five fingers, realistic anatomy, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary photograph on a winter beach: a young man in his late 20s with wet dark curly hair and a thin moustache, after surfing, wrapped in a thick hooded towel poncho, warming up, holding a steaming cup, his surfboard on the sand beside him, grey sea behind, cool overcast light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary surf photograph on a cold winter day: a surfer, a lean man in his 50s with a grey goatee in a hooded winter wetsuit, lying prone on his surfboard and paddling calmly toward the beach in small whitewater, heading in to end the session, grey sky, Mediterranean winter sea, subject centered, realistic anatomy, no text, no logos"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary photograph of a winter Mediterranean beach at late afternoon: a surfer seen from behind walking away along the sand toward the dunes wrapped in a long warm hooded changing robe, carrying a surfboard under one arm, grey-blue sea with clean waves on the left, low warm sun breaking through clouds, calm cozy mood, no text, no logos, no flags, no signs"
+

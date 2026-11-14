@@ -1,0 +1,230 @@
+{
+ "style": "v2",
+ "no_marka": true,
+ "music_vol": 0.9,
+ "recap": [
+  "",
+  []
+ ],
+ "app_lines": [],
+ "v2subs": {},
+ "v2_sub_top": 1358,
+ "ttop": {
+  "L1": 380,
+  "L2": 230,
+  "L3": 380,
+  "L4": 380,
+  "L5": 380,
+  "L6": 380,
+  "L7": 380,
+  "L9": 230,
+  "L8": 380
+ },
+ "logo": {
+  "top": 240,
+  "left": 60,
+  "size": 124
+ },
+ "lang": "he",
+ "out": "reel_tar_he.mp4",
+ "lines": [
+  "זפת על הרגליים? לא צריך טרפנטין, מספיק שמן.",
+  "טרפנטין ובנזין שורפים את העור, והזפת נשארת.",
+  "ככה היא יורדת בלי לשפשף חזק.",
+  "אחת, שמן זית או שמן תינוקות, ישר על הכתם.",
+  "שתיים, מחכים דקה, עד שהזפת מתרככת.",
+  "שלוש, מנגבים בנייר מגבת, ואחר כך סבון ומים.",
+  "שמרו את זה לפעם הבאה שהים מביא זפת.",
+  "אגב, יש לכם שאלה על הים? שאלו את המאמן בסרף טרייב.",
+  "רגליים נקיות, בלי טרפנטין ובלי כאב.",
+  "מחר, למה גובה הגל בתחזית לא אומר הרבה."
+ ],
+ "titles": {
+  "L1": [
+   "זפת על הרגליים?",
+   "מספיק שמן",
+   null,
+   null
+  ],
+  "L2": [
+   "טרפנטין ובנזין",
+   "שורפים את העור",
+   null,
+   null
+  ],
+  "L3": [
+   "ככה היא יורדת",
+   null,
+   null,
+   null
+  ],
+  "L4": [
+   "1. שמן זית",
+   "או שמן תינוקות",
+   null,
+   null
+  ],
+  "L5": [
+   "2. מחכים דקה",
+   null,
+   null,
+   null
+  ],
+  "L6": [
+   "3. מנגבים בנייר",
+   "ואז סבון ומים",
+   null,
+   null
+  ],
+  "L7": [
+   "שמרו לפעם הבאה",
+   null,
+   null,
+   null
+  ],
+  "L8": [
+   "שאלו את המאמן",
+   null,
+   null,
+   null
+  ],
+  "L9": [
+   "רגליים נקיות",
+   null,
+   null,
+   null
+  ]
+ },
+ "teaser": [
+  "מחר",
+  "מה גובה הגל לא אומר"
+ ],
+ "extra": [
+  {
+   "k": "BEF",
+   "line": "L9",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:860px;width:780px;display:flex;justify-content:center'><span style=\"font:800 60px R;color:#fff;background:rgba(255,81,80,.92);padding:8px 28px;border-radius:40px\">לפני</span></div>"
+  },
+  {
+   "k": "AFT",
+   "line": "L9",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:1720px;width:780px;display:flex;justify-content:center'><span style=\"font:800 60px R;color:#fff;background:rgba(0,160,190,.92);padding:8px 28px;border-radius:40px\">אחרי</span></div>"
+  },
+  {
+   "k": "CLK",
+   "line": "L5",
+   "d0": 0.0,
+   "html": "<div style='position:absolute;left:70px;top:1000px;width:780px;display:flex;justify-content:center'><span style=\"font:800 96px R;color:#fff;background:rgba(45,36,42,.82);padding:6px 36px;border-radius:30px\">1:00</span></div>"
+  }
+ ],
+ "gap": 0.2,
+ "gap_after": {
+  "L2": 0.2,
+  "L6": 0.2,
+  "L8": 0.2
+ },
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_hook.mp4",
+    "a": 0.0
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_gas.mp4",
+    "a": 0.0,
+    "dd": 1.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_red.mp4",
+    "a": 0.0,
+    "z": 1.4,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.36,
+     0.36
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_oil.mp4",
+    "a": 0.0
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_pour.mp4",
+    "a": 0.0
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_pour.mp4",
+    "a": 2.9,
+    "frz": 0.0,
+    "z": 1.35,
+    "cx": [
+     0.6,
+     0.6
+    ],
+    "cy": [
+     0.6,
+     0.6
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_wipe.mp4",
+    "a": 0.0
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_clean.mp4",
+    "a": 0.0
+   }
+  ],
+  "L8": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_app.mp4",
+    "a": 0.0
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/tr_split.mp4",
+    "a": 0.0
+   }
+  ],
+  "L10": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/tr_tmrw.mp4",
+    "a": 0.0
+   }
+  ]
+ },
+ "sub_replace": {
+  "בסרף טרייב": "ב-SurfTribe",
+  "סרף טרייב": "SurfTribe"
+ },
+ "f5": true
+}

@@ -1,0 +1,294 @@
+{
+ "lang": "en",
+ "out": "reel_foam_en2.mp4",
+ "app_lines": [
+  "L8"
+ ],
+ "app_top": 340,
+ "no_marka": true,
+ "hook_cy": true,
+ "recap_top": 880,
+ "badge": [
+  "DAILY FIX",
+  "#3"
+ ],
+ "follow": {
+  "line": "L2"
+ },
+ "teaser": [
+  "TOMORROW",
+  "Which wave in<br>a set is yours",
+  "FOLLOW SO YOU DON'T MISS IT"
+ ],
+ "lines": [
+  "Foam isn't just for day one.",
+  "Follow. One surf fix a day.",
+  "You're paddling out too soon.",
+  "Three fixes.",
+  "One. Pop up on every foam wave.",
+  "Two. Ride the foam on an angle.",
+  "Three. Ten foam rides beat an hour out back.",
+  "Ask the SurfTribe coach.",
+  "Tomorrow: which wave is yours. Follow so you don't miss it."
+ ],
+ "titles": {
+  "L1": [
+   "FOAM ISN'T",
+   "JUST FOR DAY ONE",
+   null,
+   null
+  ],
+  "L2": [
+   "FOLLOW",
+   "1 FIX A DAY",
+   null,
+   null
+  ],
+  "L3": [
+   "PADDLING OUT",
+   "TOO SOON?",
+   null,
+   "X"
+  ],
+  "L5": [
+   "POP UP",
+   "ON EVERY FOAM WAVE",
+   "1",
+   "CK"
+  ],
+  "L6": [
+   "RIDE IT",
+   "ON AN ANGLE",
+   "2",
+   "CK"
+  ],
+  "L7": [
+   "10 FOAM RIDES",
+   "BEAT 1 HOUR OUT BACK",
+   "3",
+   "CK"
+  ],
+  "L8": [
+   "ASK THE COACH",
+   "IN SURFTRIBE",
+   null,
+   null
+  ],
+  "L4": [
+   "THREE FIXES",
+   "",
+   null,
+   null
+  ]
+ },
+ "recap": [
+  "",
+  []
+ ],
+ "extra": [
+  {
+   "k": "ARROW",
+   "line": "L6",
+   "d0": 0.3,
+   "html": "<div style=\"position:absolute;top:1440px;left:300px;width:640px;height:140px\"><svg width=\"640\" height=\"140\" viewBox=\"0 0 640 140\"><path d=\"M20 110 Q300 80 560 60\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"rgba(10,18,38,.55)\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 110 Q300 80 560 60\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M515 25 L598 58 L528 104\" stroke=\"#00d4ff\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>"
+  }
+ ],
+ "plan": {
+  "L1": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_hook.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.43,
+     0.43
+    ]
+   }
+  ],
+  "L2": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_side2.mp4",
+    "a": 0.0,
+    "z": 1.1,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L3": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_back.mp4",
+    "a": 0.0,
+    "z": 1.3,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.42,
+     0.42
+    ]
+   }
+  ],
+  "L5": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_prone.mp4",
+    "a": 0.9,
+    "z": 1.24,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.3,
+     0.3
+    ],
+    "dd": 0.6
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_up.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L6": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_angle2.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L7": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_ride3.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.43,
+     0.43
+    ],
+    "dd": 1.5
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_woman.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.62,
+     0.62
+    ]
+   }
+  ],
+  "L8": [
+   {
+    "kind": "app",
+    "src": "/s17/gen/app_en.mp4",
+    "a": 0.0,
+    "z": 1.15,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.47,
+     0.52
+    ]
+   }
+  ],
+  "L9": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_watch.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ],
+    "dd": 2.0
+   },
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_walk.mp4",
+    "a": 0.0,
+    "z": 1.0,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "L4": [
+   {
+    "kind": "gen",
+    "src": "/s17/gen/f_prone.mp4",
+    "a": 0.0,
+    "z": 1.24,
+    "cx": [
+     0.5,
+     0.5
+    ],
+    "cy": [
+     0.3,
+     0.3
+    ]
+   }
+  ]
+ },
+ "gap": 0.14,
+ "ttop": {
+  "L5": 820,
+  "L6": 760
+ },
+ "music_vol": 0.7,
+ "kokoro_speed": 0.86
+}
