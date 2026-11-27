@@ -1,0 +1,27 @@
+SOURCES for p20 (Generated P20 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Z-Image Turbo via Hugging Face (mcp-tools/Z-Image-Turbo).
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic vertical documentary surf photograph: a man in his late 30s with a shaved head and stubble, stocky build, in a plain black wetsuit with no logos, sitting on a plain white surfboard in the calm lineup beyond the breaking waves, seen from the side, looking at the horizon thoughtfully waiting for a wave, Mediterranean sea, soft overcast winter light, subject centered, no text, no logos"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical documentary surf photograph: an older man in his early 50s with grey curly hair and a grey beard, lean build, in a plain black wetsuit, walking slowly out of the sea onto a sandy Mediterranean beach carrying a plain white surfboard under his arm with the fins pointing back behind him, head tilted down thinking, tired after a session, soft golden late afternoon light, subject centered, realistic anatomy, no text, no logos"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical documentary surf photograph: an adult woman in her early 30s with curly brown hair in a black unbranded wetsuit riding a soft-top beginner surfboard standing up in white foam whitewater close to shore, small broken wave, Mediterranean sandy beach, warm late afternoon light, subject centered in frame, realistic hands and feet, single surfboard with leash on ankle, no text, no logos"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical documentary photograph on a sandy beach: a woman in her mid 40s with short blonde hair in a plain navy wetsuit with no logos, standing on the sand at the water's edge holding a smartphone with both hands, filming a friend surfing out in the sea, seen from behind over her shoulder, the phone screen not visible, waves breaking in the background with a small distant surfer, soft afternoon light, realistic hands, no text, no logos"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical documentary surf photograph: a slim young man in his late 20s with long dark hair tied back, in a grey unbranded wetsuit, standing on a plain unbranded surfboard riding a small clean unbroken green wave face, the wave shoulder still green and glassy, white water only behind him, warm morning light, Mediterranean sea, subject centered in frame, realistic anatomy, no text, no logos"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal documentary surf photograph: a young woman in her late 20s with a long black braid and darker skin, in a plain black wetsuit, walking across a wide sandy Mediterranean beach toward the sea at sunrise carrying a plain unbranded mid-length surfboard under her arm, seen from behind at a distance, small clean waves, warm golden light, wide calm composition, no text, no logos, no flags"
+

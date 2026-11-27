@@ -1,0 +1,27 @@
+SOURCES for p16 (Generated P16 Hebrew Carousel Images)
+============================================================
+
+All photos generated using Google Imagen 3 via Antigravity generate_image tool.
+Licence: Clean generated assets, 100% rights, no third-party copyright, no celebrities, adults 25+.
+Language: Hebrew (HE) Only per directive (Claude & Dima 28.10.2026).
+
+IMAGE PROMPTS AND ROLES:
+------------------------------------------------------------
+Slide 1 (Cover):
+Prompt: "Photorealistic surf photograph of an adult surfer riding a clean peeling ocean wave with confident athletic stance, crisp ocean water, sunny coastal lighting, authentic documentary surf photography, no logos, 8k quality"
+
+Slide 2 (Stake):
+Prompt: "Photorealistic vertical surf photo of an adult surfer losing balance on a surfboard in ocean whitewater, awkward unbalanced stance, dynamic water spray, natural lighting, no logos on board or wetsuit, documentary surf photo, 8k quality"
+
+Slide 3 (Idea 01):
+Prompt: "Photorealistic vertical surf photo looking down at a plain unbranded surfboard deck. Regular stance with left foot forward near middle and right foot back on traction pad, natural sunlight, wax texture, clear water, no logos, no text, 8k quality"
+
+Slide 4 (Idea 02):
+Prompt: "Photorealistic vertical surf photo looking down at a plain unbranded surfboard deck. Goofy stance with right foot forward near middle and left foot back on traction pad, natural sunlight, wax texture, clear water, no logos, no text, 8k quality"
+
+Slide 5 (Idea 03):
+Prompt: "Photorealistic vertical surf photo of two adult friends on a sandy beach, one friend lightly pushes the other from behind to test natural balance and front foot stance, spontaneous beach moment, medium distance, sunny day, no logos, 8k quality"
+
+Slide 7 (Final):
+Prompt: "Photorealistic horizontal surf photograph of adult surfers sitting relaxed on coastal grass dunes overlooking an ocean surf spot, golden hour afternoon light, documentary coastal surf photography, no logos on clothing or boards, 8k quality"
+

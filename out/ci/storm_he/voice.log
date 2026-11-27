@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+take 0 0 wer 0.0 dur 3.48 | סערה בים, כולם חושבים שזה גלים טובים.
+take 0 1 wer 0.0 dur 3.48 | סערה בים, כולם חושבים שזה גלים טובים.
+take 1 2 wer 0.111 dur 4.2 | תכלס רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
+take 1 3 wer 0.111 dur 4.2 | תכלס, רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
+take 2 4 wer 0.143 dur 2.95 | אה, אז מתי נשארים על החול שלושה סימנים?
+take 2 5 wer 0.143 dur 2.95 | אז מתי נשארים על החול השלושה סימנים?
+take 3 6 wer 0.0 dur 2.49 | אחת יש ברקים לא נכנסים בכלל
+take 3 7 wer 0.0 dur 2.49 | אחת יש ברקים, לא נכנסים בכלל
+take 4 8 wer 0.0 dur 3.74 | 2. כל הים קצף עד האופק, נשארים על החול.
+take 4 9 wer 0.111 dur 3.45 | שתיים קל הים קצף עד האופק, נשארים על החול.
+take 5 10 wer 0.0 dur 3.13 | 3. אין הפסקה בין הגלים, סט אחרי סט.
+take 5 11 wer 0.0 dur 3.13 | 3. אין הפסקה בין הגלים סט אחרי סט.
+take 6 12 wer 0.143 dur 4.0 | ואז מחכים יומיים שהרוח תרגע והים יסתדר.
+take 6 13 wer 0.0 dur 4.0 | ואז מחכים יומיים שהרוח תירגע והים יסתדר.
+take 7 14 wer 0.0 dur 2.4 | ותראו מה זה הים יומיים אחרי.
+take 7 15 wer 0.0 dur 2.4 | ותראו מה זה, הים יומיים אחרי.
+take 8 16 wer 0.125 dur 3.45 | שווייסט, תשמרו את זה, תצטרכו את זה בסערה הבאה.
+take 8 17 wer 0.0 dur 3.45 | תשמרו את זה, תצטרכו את זה בסערה הבאה.
+take 9 18 wer 0.222 dur 4.3 | ובתחזית של סרפטרייב רואים מראש את הימים האדומים.
+take 9 19 wer 0.222 dur 4.3 | ובתחזית של סרפטרייב רואים מראש את הימים האדומים
+take 10 20 wer 0.0 dur 4.35 | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
+take 10 21 wer 0.0 dur 4.35 | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
+PICK 0 wer 0.0 | final fall (-8.7 st, expected fall) | pitch 123 Hz (level +1.1 st) | range 15.3 st | סערה בים, כולם חושבים שזה גלים טובים.
+PICK 1 wer 0.111 | final fall (-6.2 st, expected fall) | pitch 115 Hz (level -0.1 st) | range 12.5 st | תכלס רוח חזקה מהים, הכל מבולגן ויש סחף חזק.
+PICK 2 wer 0.143 | final rise (+3.2 st, expected fall) | pitch 111 Hz (level -0.7 st) | range 7.2 st | אז מתי נשארים על החול השלושה סימנים?
+PICK 3 wer 0.0 | final fall (-6.2 st, expected fall) | pitch 145 Hz (level +3.9 st) | range 16.5 st | אחת יש ברקים, לא נכנסים בכלל
+PICK 4 wer 0.111 | final fall (-8.0 st, expected fall) | pitch 134 Hz (level +2.6 st) | range 12.5 st | שתיים קל הים קצף עד האופק, נשארים על החול.
+PICK 5 wer 0.0 | final fall (-8.3 st, expected fall) | pitch 115 Hz (level -0.0 st) | range 13.0 st | 3. אין הפסקה בין הגלים סט אחרי סט.
+PICK 6 wer 0.0 | final rise (+7.3 st, expected fall) | pitch 105 Hz (level -1.6 st) | range 10.2 st | ואז מחכים יומיים שהרוח תירגע והים יסתדר.
+PICK 7 wer 0.0 | final level (+0.5 st, expected fall) | pitch 116 Hz (level +0.1 st) | range 13.5 st | ותראו מה זה הים יומיים אחרי.
+PICK 8 wer 0.0 | final fall (-6.0 st, expected fall) | pitch 107 Hz (level -1.3 st) | range 14.4 st | תשמרו את זה, תצטרכו את זה בסערה הבאה.
+PICK 9 wer 0.222 | final level (-0.4 st, expected fall) | pitch 104 Hz (level -1.9 st) | range 8.4 st | ובתחזית של סרפטרייב רואים מראש את הימים האדומים.
+PICK 10 wer 0.0 | final fall (-3.5 st, expected fall) | pitch 122 Hz (level +0.9 st) | range 12.6 st | מחר, למה החרטום נכנס למים כשאתם קמים על הגלשן?
+he f5 T 35.364 [('L1', 0.12, np.float64(2.86), 0.0), ('L2', np.float64(3.176), np.float64(3.85), 0.11), ('L3', np.float64(7.428), np.float64(2.45), 0.14), ('L4', np.float64(10.08), np.float64(1.88), 0.0), ('L5', np.float64(12.162), np.float64(2.86), 0.11), ('L6', np.float64(15.217), np.float64(2.48), 0.0), ('L7', np.float64(17.896), np.float64(3.54), 0.0), ('L8', np.float64(21.788), np.float64(1.86), 0.0), ('L9', np.float64(23.85), np.float64(2.61), 0.0), ('L10', np.float64(26.658), np.float64(3.71), 0.22), ('L11', np.float64(30.772), np.float64(3.69), 0.0)]
